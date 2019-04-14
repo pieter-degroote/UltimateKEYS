@@ -17,7 +17,7 @@ This project is a fork based on the EurKEY Keyboard Layout.
 
 - **https://eurkey.steffen.bruentjen.eu/download/windows/1.3/eurkey-layout-complete.pdf**
 
-**For UltimateKEYS, the majority (99%) of the documentation is the same. In UltimateKEYS, the math symbols have been fixed. Furthermore, some additions/changes have been made to support even more letters and symbols, mostly under combinations with the dead keys.**
+**For UltimateKEYS, the majority (99%) of the documentation is the same. In UltimateKEYS, the math symbols have been restored. Furthermore, some additions/changes have been made to support even more letters and symbols, mostly concerning dead key combinations.**
 
 EurKEY website (by Steffen Brüntjen) :  https://eurkey.steffen.bruentjen.eu/
 
