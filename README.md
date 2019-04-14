@@ -14,6 +14,10 @@ This project is a fork based on the EurKEY Keyboard Layout by Steffen Brüntjen.
 
 EurKEY website :  https://eurkey.steffen.bruentjen.eu/
 
-### Please note :  In case you have installed a previous version of UltimateKEYS, you need to uninstall it before, followed by restarting your computer. Then you can continue installing another version.
+### Please note :
+
+**In case you have installed a previous version of UltimateKEYS, you need to uninstall it before, followed by restarting your computer. Then you can continue installing another version.**
+
+**The current version(s) should be sufficiently stable and reliable for everyday use, but are NOT certified for mission-critical systems !**
 
 ### Have fun and enjoy !
