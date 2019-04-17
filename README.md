@@ -13,12 +13,17 @@ This project is a fork based on the EurKEY Keyboard Layout.
 - **The current version(s) should be sufficiently stable and reliable for everyday use, but are NOT certified for mission-critical systems !**
 
 
-#### Documentation (about EurKEY 1.3 [beta], 2017) :
+### Documentation :
+
+- **https://raw.githubusercontent.com/pieter-degroote/UltimateKEYS/master/UltimateKEYS%20-%20Keyboard%20Layout%20Image.png**
+
+
+#### Additional documentation (about EurKEY 1.3 [beta], 2017) :
 
 - **https://eurkey.steffen.bruentjen.eu/download/windows/1.3/eurkey-layout-complete.pdf**
+- EurKEY website (by Steffen Brüntjen) :  https://eurkey.steffen.bruentjen.eu/
 
 **For UltimateKEYS, the majority (99%) of the documentation is the same. In UltimateKEYS, the math symbols have been restored. Furthermore, some additions/changes have been made to support even more letters and symbols, mostly concerning dead key combinations.**
 
-EurKEY website (by Steffen Brüntjen) :  https://eurkey.steffen.bruentjen.eu/
 
-### Have fun and enjoy !
+### Enjoy and have fun !
