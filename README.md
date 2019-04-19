@@ -26,7 +26,7 @@ This project is a fork based on the EurKEY Keyboard Layout.
 **For UltimateKEYS, the majority (99%) of the documentation is the same. In UltimateKEYS, the math symbols have been restored. Furthermore, some additions/changes have been made to support even more letters and symbols, mostly concerning dead key combinations.**
 
 
-### Another handy tool for handling '.KLC' files (found in the 'source' folder of the UltimateKEYS package) :
+### Another useful tool for handling '.KLC' files (found in the 'source' folder of the UltimateKEYS package) :
 
 - **KbdEdit :  http://www.kbdedit.com/**
 
