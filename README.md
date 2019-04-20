@@ -1,5 +1,5 @@
 # UltimateKEYS Keyboard Layout (Windows)
-This project is a fork based on the EurKEY Keyboard Layout.
+This project is a fork based on US-QWERTY and the EurKEY Keyboard Layout (by Steffen Brüntjen).
 
 ### Download the latest version here :
 
