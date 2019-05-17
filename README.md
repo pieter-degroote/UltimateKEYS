@@ -3,7 +3,7 @@ This project is a fork based on US-QWERTY and the EurKEY Keyboard Layout (by Ste
 
 ### Download the latest version here :
 
-- **https://github.com/pieter-degroote/UltimateKEYS/raw/master/UltimateKEYS%20-%202019-04-22.zip**
+- **https://github.com/pieter-degroote/UltimateKEYS/raw/master/UltimateKEYS%20-%202019-05-17.zip**
 
 
 ### Please note :
@@ -13,17 +13,9 @@ This project is a fork based on US-QWERTY and the EurKEY Keyboard Layout (by Ste
 - **The current version(s) should be sufficiently stable and reliable for everyday use, but are NOT certified for mission-critical systems !**
 
 
-### Documentation :
+### Documentation - Keyboard Layout Image :
 
 - **https://raw.githubusercontent.com/pieter-degroote/UltimateKEYS/master/UltimateKEYS%20-%20Keyboard%20Layout%20Image.png**
-
-
-#### Additional documentation (about EurKEY 1.3 [beta], 2017) :
-
-- **https://eurkey.steffen.bruentjen.eu/download/windows/1.3/eurkey-layout-complete.pdf**
-- EurKEY website (by Steffen Brüntjen) :  https://eurkey.steffen.bruentjen.eu/
-
-**For UltimateKEYS, the majority (99%) of the documentation is the same. In UltimateKEYS, the math symbols have been restored. Furthermore, some additions/changes have been made to support even more letters and symbols, mostly concerning dead key combinations.**
 
 
 ### Another useful tool for handling '.KLC' files (found in the 'source' folder of the UltimateKEYS package) :
