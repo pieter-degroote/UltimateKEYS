@@ -3,7 +3,7 @@ This project is a fork based on US-QWERTY and the EurKEY Keyboard Layout (by Ste
 
 ### Download the latest version here :
 
-- **https://github.com/pieter-degroote/UltimateKEYS/raw/master/UltimateKEYS%20-%202019-05-17.zip**
+- **https://github.com/pieter-degroote/UltimateKEYS/raw/master/UltimateKEYS%20-%202019-05-19.zip**
 
 
 ### Please note :
