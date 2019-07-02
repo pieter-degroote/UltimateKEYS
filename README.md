@@ -1,9 +1,9 @@
 # UltimateKEYS Keyboard Layout (Windows)
-This project is a fork based on US-QWERTY and the EurKEY Keyboard Layout (by Steffen Brüntjen).
+This project is based on US-QWERTY and is forked from the EurKEY Keyboard Layout.
 
 ## Download the latest version
 
-- **https://github.com/pieter-degroote/UltimateKEYS/raw/master/UltimateKEYS%20-%202019-06-24.zip**
+- **https://github.com/pieter-degroote/UltimateKEYS/releases**
 
 
 ## Installation Instructions
