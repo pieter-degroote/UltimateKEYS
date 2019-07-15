@@ -27,7 +27,7 @@ In case you have already installed a previous version of UltimateKEYS, uninstall
 3. Log off and back on.
 4. Optionally, enable UltimateKEYS as the preferred keyboard layout in the 'language bar'.
 
-## Documentation - Keyboard Layout Image and Dead Key Descriptions
+## Documentation - Keyboard Layout Image, Dead Key Descriptions
 
 - **https://pieter-degroote.github.io/UltimateKEYS/documentation.html**
 - **https://pieter-degroote.github.io/UltimateKEYS/**
@@ -41,3 +41,5 @@ The source '.KLC' file is found in the 'source' folder of the UltimateKEYS packa
 - **KbdEdit :  http://www.kbdedit.com/**
 
 ## Enjoy and have fun !
+
+Pieter Degroote
