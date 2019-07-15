@@ -34,7 +34,7 @@ In case you have already installed a previous version of UltimateKEYS, uninstall
 
 ## Script for AutoHotkey
 
-In case you prefer this approach, you can find highly customizable, slimmed down script. Just note that there are no dead keys when using this script (plus some small modifications have been made). To work properly, the Windows keyboard has to be set to standard US-QWERTY.
+In case you prefer this approach, there is also a highly customizable, slimmed down script. Just note that there are no dead keys when using this script (plus some small modifications have been made). To work properly, the Windows keyboard has to be set to standard US-QWERTY.
 
 - **AutoHotkey website :  https://www.autohotkey.com/**
 - **Download the 'UltimateKEYS - YYYY-MM-DD.ahk' file from this repository**
