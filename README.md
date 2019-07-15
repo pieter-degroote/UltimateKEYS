@@ -29,7 +29,8 @@ In case you have already installed a previous version of UltimateKEYS, uninstall
 
 ## Documentation - Keyboard Layout Image
 
-- **https://raw.githubusercontent.com/pieter-degroote/UltimateKEYS/master/UltimateKEYS%20-%20Keyboard%20Layout%20Image.png**
+- **https://pieter-degroote.github.io/UltimateKEYS/documentation.html**
+- **https://pieter-degroote.github.io/UltimateKEYS/**
 
 
 ### Another useful tool for handling '.KLC' files (found in the 'source' folder of the UltimateKEYS package) :
