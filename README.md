@@ -37,7 +37,7 @@ In case you have already installed a previous version of UltimateKEYS, uninstall
 In case you prefer this approach, there is also a highly customizable, slimmed down script. Just note that there are no dead keys when using this script (plus some small modifications have been made). To work properly, the Windows keyboard has to be set to standard US-QWERTY.
 
 - **AutoHotkey website :  https://www.autohotkey.com/**
-- **Download the 'UltimateKEYS - YYYY-MM-DD.ahk' file from this repository**
+- **Download the 'UltimateKEYS - YYYY-MM-DD.ahk' file from this repository.**
 - **After AutoHotkey is installed, you can optionally put the AHK file in the 'Startup' folder.**
 
 ## Tools for opening and handling KLC files
