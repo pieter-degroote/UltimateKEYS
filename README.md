@@ -33,8 +33,9 @@ In case you have already installed a previous version of UltimateKEYS, uninstall
 - **https://pieter-degroote.github.io/UltimateKEYS/**
 
 
-### Another useful tool for handling '.KLC' files (found in the 'source' folder of the UltimateKEYS package) :
+### Tools for handling '.KLC' files (found in the 'source' folder of the UltimateKEYS package) :
 
+- **Microsoft Keyboard Layout Creator 1.4 :  https://www.microsoft.com/en-us/download/details.aspx?id=22339**
 - **KbdEdit :  http://www.kbdedit.com/**
 
 ## Enjoy and have fun !
