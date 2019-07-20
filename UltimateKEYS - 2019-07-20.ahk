@@ -887,4 +887,4 @@ return
   Send % dkCedillaOgonek.item(key)
 return
 
->!space::Send  
+>!space::Send     ; no-break space
