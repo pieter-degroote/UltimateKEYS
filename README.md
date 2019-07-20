@@ -34,7 +34,7 @@ In case you have already installed a previous version of UltimateKEYS, uninstall
 
 ## Script for AutoHotkey
 
-In case you prefer this approach, there is also a highly customizable AutoHotkey script available. To work properly, the Windows keyboard has to be set to standard US-QWERTY.
+In case you prefer this approach, there is also a highly customizable AutoHotkey script available. To work properly, the Windows keyboard has to be set to standard US-QWERTY and at least AutoHotkey 1.1 (AutoHotkey_L) is required.
 
 - **AutoHotkey website :  https://www.autohotkey.com/**
 - **Download the 'UltimateKEYS - YYYY-MM-DD.ahk' file from this repository.**
