@@ -263,7 +263,7 @@ dkGraveAccent.item("w") := "ẁ"
 dkGraveAccent.item("W") := "Ẁ"
 dkGraveAccent.item("y") := "ỳ"
 dkGraveAccent.item("Y") := "Ỳ"
-dkGraveAccent.item(" ") := "`"
+dkGraveAccent.item(" ") := "``"
 
 
 dkTilde := ComObjCreate("Scripting.Dictionary")
@@ -343,7 +343,7 @@ dkSymbols.item("5") := "‰"
 dkSymbols.item("%") := "‰"
 dkSymbols.item("6") := "№"
 dkSymbols.item("^") := "№"
-dkSymbols.item("`") := "≈"
+dkSymbols.item("``") := "≈"
 dkSymbols.item("~") := "≈"
 dkSymbols.item("=") := "↔"
 dkSymbols.item("+") := "⇔"
