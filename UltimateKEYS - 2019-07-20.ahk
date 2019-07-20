@@ -291,6 +291,8 @@ dkTilde.item(" ") := "~"
 
 
 dkSymbols := ComObjCreate("Scripting.Dictionary")
+dkSymbols.item("a") := "ª"  ; feminine ordinal indicator (Spanish, Portuguese, Italian, Galician)
+dkSymbols.item("A") := "ª"  ; feminine ordinal indicator (Spanish, Portuguese, Italian, Galician)
 dkSymbols.item("b") := "•"
 dkSymbols.item("B") := "¦"
 dkSymbols.item("c") := "©"
@@ -311,8 +313,8 @@ dkSymbols.item("m") := "♂"
 dkSymbols.item("M") := "♂"
 dkSymbols.item("n") := "ⁿ"
 dkSymbols.item("N") := "¬"
-dkSymbols.item("o") := "Ω"
-dkSymbols.item("O") := "Ω"
+dkSymbols.item("o") := "°"  ; masculine ordinal indicator (Spanish, Portuguese, Italian, Galician)
+dkSymbols.item("O") := "°"  ; masculine ordinal indicator (Spanish, Portuguese, Italian, Galician)
 dkSymbols.item("p") := "℗"
 dkSymbols.item("P") := "℗"
 dkSymbols.item("q") := "¶"
@@ -321,10 +323,14 @@ dkSymbols.item("r") := "®"
 dkSymbols.item("R") := "®"
 dkSymbols.item("s") := "§"
 dkSymbols.item("S") := "§"
+dkSymbols.item("v") := "→"
+dkSymbols.item("V") := "⇒"
 dkSymbols.item("x") := "✗"
 dkSymbols.item("X") := "✗"
 dkSymbols.item("y") := "✓"
 dkSymbols.item("Y") := "✓"
+dkSymbols.item("z") := "←"
+dkSymbols.item("Z") := "⇐"
 dkSymbols.item("1") := "≠"
 dkSymbols.item("!") := "≠"
 dkSymbols.item("2") := "√"
@@ -335,13 +341,18 @@ dkSymbols.item("4") := "∜"
 dkSymbols.item("$") := "∜"
 dkSymbols.item("5") := "‰"
 dkSymbols.item("%") := "‰"
+dkSymbols.item("6") := "№"
+dkSymbols.item("^") := "№"
 dkSymbols.item("`") := "≈"
 dkSymbols.item("~") := "≈"
+dkSymbols.item("=") := "↔"
+dkSymbols.item("+") := "⇔"
 dkSymbols.item(",") := "≤"
 dkSymbols.item("<") := "≤"
 dkSymbols.item(".") := "≥"
 dkSymbols.item(">") := "≥"
 dkSymbols.item("-") := "±"
+dkSymbols.item("_") := "±"
 dkSymbols.item("\") := "⁞"
 dkSymbols.item("|") := "⁞"
 dkSymbols.item(" ") := "©"
@@ -382,6 +393,64 @@ dkCedillaOgonek.item("u") := "ų"
 dkCedillaOgonek.item("U") := "Ų"
 dkCedillaOgonek.item(".") := "˛"
 dkCedillaOgonek.item(" ") := "¸"
+
+
+dkGreekAlphabet := ComObjCreate("Scripting.Dictionary")
+dkGreekAlphabet.item("a") := "α"
+dkGreekAlphabet.item("A") := "Α"
+dkGreekAlphabet.item("b") := "β"
+dkGreekAlphabet.item("B") := "Β"
+dkGreekAlphabet.item("v") := "β"
+dkGreekAlphabet.item("V") := "Β"
+dkGreekAlphabet.item("g") := "γ"
+dkGreekAlphabet.item("G") := "Γ"
+dkGreekAlphabet.item("d") := "δ"
+dkGreekAlphabet.item("D") := "Δ"
+dkGreekAlphabet.item("e") := "ε"
+dkGreekAlphabet.item("E") := "Ε"
+dkGreekAlphabet.item("z") := "ζ"
+dkGreekAlphabet.item("Z") := "Ζ"
+dkGreekAlphabet.item("i") := "η"
+dkGreekAlphabet.item("I") := "Η"
+dkGreekAlphabet.item("h") := "θ"
+dkGreekAlphabet.item("H") := "Θ"
+dkGreekAlphabet.item("j") := "ι"
+dkGreekAlphabet.item("J") := "Ι"
+dkGreekAlphabet.item("k") := "κ"
+dkGreekAlphabet.item("K") := "Κ"
+dkGreekAlphabet.item("l") := "λ"
+dkGreekAlphabet.item("L") := "Λ"
+dkGreekAlphabet.item("m") := "μ"
+dkGreekAlphabet.item("M") := "Μ"
+dkGreekAlphabet.item("n") := "ν"
+dkGreekAlphabet.item("N") := "Ν"
+dkGreekAlphabet.item("x") := "ξ"
+dkGreekAlphabet.item("X") := "Ξ"
+dkGreekAlphabet.item("o") := "ο"
+dkGreekAlphabet.item("O") := "Ο"
+dkGreekAlphabet.item("p") := "π"
+dkGreekAlphabet.item("P") := "Π"
+dkGreekAlphabet.item("r") := "ρ"
+dkGreekAlphabet.item("R") := "Ρ"
+dkGreekAlphabet.item("s") := "σ"
+dkGreekAlphabet.item("S") := "Σ"
+dkGreekAlphabet.item("ß") := "ς"
+dkGreekAlphabet.item("ẞ") := "Σ"
+dkGreekAlphabet.item("t") := "τ"
+dkGreekAlphabet.item("T") := "Τ"
+dkGreekAlphabet.item("y") := "υ"
+dkGreekAlphabet.item("Y") := "Υ"
+dkGreekAlphabet.item("f") := "φ"
+dkGreekAlphabet.item("F") := "Φ"
+dkGreekAlphabet.item("c") := "χ"
+dkGreekAlphabet.item("C") := "Χ"
+dkGreekAlphabet.item("w") := "ψ"
+dkGreekAlphabet.item("W") := "Ψ"
+dkGreekAlphabet.item("q") := "ω"
+dkGreekAlphabet.item("Q") := "Ω"
+dkGreekAlphabet.item("u") := "ω"
+dkGreekAlphabet.item("U") := "Ω"
+dkGreekAlphabet.item(" ") := "μ"
 
 
 >!a::
@@ -722,53 +791,56 @@ return
     Send ý
 return
 
->!k::Send †
->!+k::Send ‡
+>!k::Send †   ; dagger
+>!+k::Send ‡  ; double dagger
 
->!m::Send µ
->!+m::Send ±
+>!m::
+  Input, key, L1, {delete}{esc}{home}{end}
+  Send % dkGreekAlphabet.item(key)
+return
+>!+m::Send ±  ; plus-minus sign
 
->!/::Send ¿
->!?::Send §
+>!/::Send ¿   ; inverted question mark
+>!?::Send §   ; section sign
 
->!1::Send ¡
->!+1::Send ¹
+>!1::Send ¡   ; inverted exclamation mark
+>!+1::Send ¹  ; superscript 1
 
->!2::Send ²
->!+2::Send ⁿ
+>!2::Send ²   ; superscript 2
+>!+2::Send ⁿ  ; superscript n
 
->!3::Send ³
->!+3::Send ∞
+>!3::Send ³   ; superscript 3
+>!+3::Send ∞  ; infinity
 
->!4::Send £
->!+4::Send ¥
+>!4::Send £   ; pound sign
+>!+4::Send ¥  ; yen sign
 
->!5::Send €
->!+5::Send ¢
+>!5::Send €   ; euro sign
+>!+5::Send ¢  ; cent sign (dollar)
 
->!8::Send „
->!+8::Send ‚
+>!8::Send „   ; double low-9 quotation mark
+>!+8::Send ‚  ; single low-9 quotation mark
 
->!9::Send “
->!+9::Send ‘
+>!9::Send “   ; left double quotation mark
+>!+9::Send ‘  ; left single quotation mark
 
->!0::Send ”
->!+0::Send ’
+>!0::Send ”   ; right double quotation mark
+>!+0::Send ’  ; right single quotation mark
 
->!=::Send ×
->!+=::Send ÷
+>!=::Send ×   ; multiplication sign
+>!+=::Send ÷  ; division sign
 
->![::Send «
->!{::Send ‹
+>![::Send «   ; left-pointing double angle quotation mark
+>!{::Send ‹   ; left-pointing single angle quotation mark
 
->!]::Send »
->!}::Send ›
+>!]::Send »   ; right-pointing double angle quotation mark
+>!}::Send ›   ; right-pointing single angle quotation mark
 
->!;::Send °
->!+;::Send ¶
+>!;::Send °   ; degree sign
+>!+;::Send ¶  ; pilcrow sign
 
->!\::Send ¬
->!|::Send ¦
+>!\::Send ¬   ; not sign
+>!|::Send ¦   ; broken bar
 
 >!`::
   Input, key, L1, {delete}{esc}{home}{end}
