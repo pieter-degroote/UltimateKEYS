@@ -122,8 +122,7 @@ dkRingDotAbove.item("ÿ") := "ẏ"  ; y with dot above
 dkRingDotAbove.item("Ÿ") := "Ẏ"  ; Y with dot above
 dkRingDotAbove.item("z") := "ż"  ; z with dot above
 dkRingDotAbove.item("Z") := "Ż"  ; Z with dot above
-dkRingDotAbove.item(".") := "˙"  ; dot above
-dkRingDotAbove.item(" ") := "˚"  ; ring above
+dkRingDotAbove.item(" ") := "˙"  ; dot above
 
 
 dkMacron := ComObjCreate("Scripting.Dictionary")
