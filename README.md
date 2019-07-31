@@ -9,9 +9,10 @@ In that way, it is - somehow - similar to the layout "United States-Internationa
 
 This AutoHotkey script is a highly customizable version of UltimateKEYS. To work properly, the Windows keyboard has to be set to standard US-QWERTY and at least AutoHotkey 1.1 (AutoHotkey_L) is required.
 
-- **AutoHotkey website :  https://www.autohotkey.com/**
+- **AutoHotkey website : &nbsp;https://www.autohotkey.com/**
 - **Download the 'UltimateKEYS - YYYY-MM-DD.ahk' file from this repository.**
 - **After AutoHotkey is installed, you can optionally put the AHK file in the 'Startup' folder.**
+- **Please note : &nbsp;this is an overlay script, specifically designed for the keyboard layout 'US-QWERTY'.**
 
 ## Download the latest release
 
