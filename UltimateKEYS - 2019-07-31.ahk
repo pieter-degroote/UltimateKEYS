@@ -7,6 +7,48 @@
 ; Website :  https://github.com/pieter-degroote/UltimateKEYS
 
 
+dkGraveAccent := ComObjCreate("Scripting.Dictionary")
+dkGraveAccent.item("a") := "à"  ; a with grave
+dkGraveAccent.item("A") := "À"  ; A with grave
+dkGraveAccent.item("e") := "è"  ; e with grave
+dkGraveAccent.item("E") := "È"  ; E with grave
+dkGraveAccent.item("i") := "ì"  ; i with grave
+dkGraveAccent.item("I") := "Ì"  ; I with grave
+dkGraveAccent.item("n") := "ǹ"  ; n with grave
+dkGraveAccent.item("N") := "Ǹ"  ; N with grave
+dkGraveAccent.item("o") := "ò"  ; o with grave
+dkGraveAccent.item("O") := "Ò"  ; O with grave
+dkGraveAccent.item("u") := "ù"  ; u with grave
+dkGraveAccent.item("U") := "Ù"  ; U with grave
+dkGraveAccent.item("w") := "ẁ"  ; w with grave
+dkGraveAccent.item("W") := "Ẁ"  ; W with grave
+dkGraveAccent.item("y") := "ỳ"  ; y with grave
+dkGraveAccent.item("Y") := "Ỳ"  ; Y with grave
+dkGraveAccent.item("``") := "``"  ; grave accent
+dkGraveAccent.item(" ") := "``"   ; grave accent
+
+
+dkTilde := ComObjCreate("Scripting.Dictionary")
+dkTilde.item("a") := "ã"  ; a with tilde
+dkTilde.item("A") := "Ã"  ; A with tilde
+dkTilde.item("e") := "ẽ"  ; e with tilde
+dkTilde.item("E") := "Ẽ"  ; E with tilde
+dkTilde.item("i") := "ĩ"  ; i with tilde
+dkTilde.item("I") := "Ĩ"  ; I with tilde
+dkTilde.item("n") := "ñ"  ; n with tilde
+dkTilde.item("N") := "Ñ"  ; N with tilde
+dkTilde.item("o") := "õ"  ; o with tilde
+dkTilde.item("O") := "Õ"  ; O with tilde
+dkTilde.item("u") := "ũ"  ; u with tilde
+dkTilde.item("U") := "Ũ"  ; U with tilde
+dkTilde.item("v") := "ṽ"  ; v with tilde
+dkTilde.item("V") := "Ṽ"  ; V with tilde
+dkTilde.item("y") := "ỹ"  ; y with tilde
+dkTilde.item("Y") := "Ỹ"  ; Y with tilde
+dkTilde.item("~") := "~"  ; tilde
+dkTilde.item(" ") := "~"  ; tilde
+
+
 dkCircumflex := ComObjCreate("Scripting.Dictionary")
 dkCircumflex.item("a") := "â"  ; a with circumflex
 dkCircumflex.item("A") := "Â"  ; A with circumflex
@@ -228,50 +270,8 @@ dkDiaeresis.item("x") := "ẍ"  ; x with diaeresis
 dkDiaeresis.item("X") := "Ẍ"  ; X with diaeresis
 dkDiaeresis.item("y") := "ÿ"  ; y with diaeresis
 dkDiaeresis.item("Y") := "Ÿ"  ; Y with diaeresis
-dkDiaeresis.item("""") := "¨"  ; diaeresis
-dkDiaeresis.item(" ") := "¨"   ; diaeresis
-
-
-dkGraveAccent := ComObjCreate("Scripting.Dictionary")
-dkGraveAccent.item("a") := "à"  ; a with grave
-dkGraveAccent.item("A") := "À"  ; A with grave
-dkGraveAccent.item("e") := "è"  ; e with grave
-dkGraveAccent.item("E") := "È"  ; E with grave
-dkGraveAccent.item("i") := "ì"  ; i with grave
-dkGraveAccent.item("I") := "Ì"  ; I with grave
-dkGraveAccent.item("n") := "ǹ"  ; n with grave
-dkGraveAccent.item("N") := "Ǹ"  ; N with grave
-dkGraveAccent.item("o") := "ò"  ; o with grave
-dkGraveAccent.item("O") := "Ò"  ; O with grave
-dkGraveAccent.item("u") := "ù"  ; u with grave
-dkGraveAccent.item("U") := "Ù"  ; U with grave
-dkGraveAccent.item("w") := "ẁ"  ; w with grave
-dkGraveAccent.item("W") := "Ẁ"  ; W with grave
-dkGraveAccent.item("y") := "ỳ"  ; y with grave
-dkGraveAccent.item("Y") := "Ỳ"  ; Y with grave
-dkGraveAccent.item("``") := "``"  ; grave accent
-dkGraveAccent.item(" ") := "``"   ; grave accent
-
-
-dkTilde := ComObjCreate("Scripting.Dictionary")
-dkTilde.item("a") := "ã"  ; a with tilde
-dkTilde.item("A") := "Ã"  ; A with tilde
-dkTilde.item("e") := "ẽ"  ; e with tilde
-dkTilde.item("E") := "Ẽ"  ; E with tilde
-dkTilde.item("i") := "ĩ"  ; i with tilde
-dkTilde.item("I") := "Ĩ"  ; I with tilde
-dkTilde.item("n") := "ñ"  ; n with tilde
-dkTilde.item("N") := "Ñ"  ; N with tilde
-dkTilde.item("o") := "õ"  ; o with tilde
-dkTilde.item("O") := "Õ"  ; O with tilde
-dkTilde.item("u") := "ũ"  ; u with tilde
-dkTilde.item("U") := "Ũ"  ; U with tilde
-dkTilde.item("v") := "ṽ"  ; v with tilde
-dkTilde.item("V") := "Ṽ"  ; V with tilde
-dkTilde.item("y") := "ỹ"  ; y with tilde
-dkTilde.item("Y") := "Ỹ"  ; Y with tilde
-dkTilde.item("~") := "~"  ; tilde
-dkTilde.item(" ") := "~"  ; tilde
+dkDiaeresis.item("""") := "¨" ; diaeresis
+dkDiaeresis.item(" ") := "¨"  ; diaeresis
 
 
 dkCedillaOgonek := ComObjCreate("Scripting.Dictionary")
