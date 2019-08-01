@@ -18,6 +18,11 @@ This AutoHotkey script is a highly customizable version of UltimateKEYS. To work
 
 - **https://github.com/pieter-degroote/UltimateKEYS/releases**
 
+## Documentation - Keyboard Layout Image, Dead Key Descriptions
+
+- **https://pieter-degroote.github.io/UltimateKEYS/documentation.html**
+- **https://pieter-degroote.github.io/UltimateKEYS/**
+
 ## Enjoy and have fun !
 
 Pieter Degroote
