@@ -3,7 +3,7 @@ International US-QWERTY layout with AltGr dead keys via AutoHotkey script (Windo
 
 In UltimateKEYS, all keys remain exactly organized as US-QWERTY. Except, when AltGr or AltGr+Shift is pressed in combination with another key, other diacritics and symbols are accessible and some keys become dead keys.
 
-In that way, it is - somehow - similar to the layout "United States-International" (on Windows), although this project moves all dead key combinations to the modifiers AltGr and AltGr+Shift. That way, this project solves the most typical caveats, among which the quotes (' and ") can be used as usual (without pressing the spacebar afterwards), while the acute accent (&#x00b4;) and diaeresis (&#x00a8;) are found under Alt and Alt+Shift respectively. This project has borrowed several aspects from the EurKEY Keyboard Layout.
+In that way, it is - somehow - similar to the layout "United States-International" (on Windows), although this project moves all dead key combinations to the modifiers AltGr and AltGr+Shift. That way, this project solves the most typical caveats, among which the quotes (' and ") can be used as usual (without pressing the spacebar afterwards), while the acute accent (&#x00b4;) and diaeresis (&#x00a8;) are found under Alt and Alt+Shift respectively. This project has borrowed several aspects from the EurKEY Keyboard Layout (by Steffen Br&uuml;ntjen).
 
 ## Script for AutoHotkey
 
