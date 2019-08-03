@@ -7,48 +7,6 @@
 ; Website :  https://github.com/pieter-degroote/UltimateKEYS
 
 
-dkGraveAccent := ComObjCreate("Scripting.Dictionary")
-dkGraveAccent.item("a") := "à"  ; a with grave
-dkGraveAccent.item("A") := "À"  ; A with grave
-dkGraveAccent.item("e") := "è"  ; e with grave
-dkGraveAccent.item("E") := "È"  ; E with grave
-dkGraveAccent.item("i") := "ì"  ; i with grave
-dkGraveAccent.item("I") := "Ì"  ; I with grave
-dkGraveAccent.item("n") := "ǹ"  ; n with grave
-dkGraveAccent.item("N") := "Ǹ"  ; N with grave
-dkGraveAccent.item("o") := "ò"  ; o with grave
-dkGraveAccent.item("O") := "Ò"  ; O with grave
-dkGraveAccent.item("u") := "ù"  ; u with grave
-dkGraveAccent.item("U") := "Ù"  ; U with grave
-dkGraveAccent.item("w") := "ẁ"  ; w with grave
-dkGraveAccent.item("W") := "Ẁ"  ; W with grave
-dkGraveAccent.item("y") := "ỳ"  ; y with grave
-dkGraveAccent.item("Y") := "Ỳ"  ; Y with grave
-dkGraveAccent.item("``") := "``"  ; grave accent
-dkGraveAccent.item(" ") := "``"   ; grave accent
-
-
-dkTilde := ComObjCreate("Scripting.Dictionary")
-dkTilde.item("a") := "ã"  ; a with tilde
-dkTilde.item("A") := "Ã"  ; A with tilde
-dkTilde.item("e") := "ẽ"  ; e with tilde
-dkTilde.item("E") := "Ẽ"  ; E with tilde
-dkTilde.item("i") := "ĩ"  ; i with tilde
-dkTilde.item("I") := "Ĩ"  ; I with tilde
-dkTilde.item("n") := "ñ"  ; n with tilde
-dkTilde.item("N") := "Ñ"  ; N with tilde
-dkTilde.item("o") := "õ"  ; o with tilde
-dkTilde.item("O") := "Õ"  ; O with tilde
-dkTilde.item("u") := "ũ"  ; u with tilde
-dkTilde.item("U") := "Ũ"  ; U with tilde
-dkTilde.item("v") := "ṽ"  ; v with tilde
-dkTilde.item("V") := "Ṽ"  ; V with tilde
-dkTilde.item("y") := "ỹ"  ; y with tilde
-dkTilde.item("Y") := "Ỹ"  ; Y with tilde
-dkTilde.item("~") := "~"  ; tilde
-dkTilde.item(" ") := "~"  ; tilde
-
-
 dkCircumflex := ComObjCreate("Scripting.Dictionary")
 dkCircumflex.item("a") := "â"  ; a with circumflex
 dkCircumflex.item("A") := "Â"  ; A with circumflex
@@ -199,6 +157,69 @@ dkMacron.item("Y") := "Ȳ"  ; Y with macron
 dkMacron.item(" ") := "¯"  ; macron
 
 
+dkCedillaOgonek := ComObjCreate("Scripting.Dictionary")
+dkCedillaOgonek.item("a") := "ą"  ; a with ogonek
+dkCedillaOgonek.item("A") := "Ą"  ; A with ogonek
+dkCedillaOgonek.item("c") := "ç"  ; c with cedilla
+dkCedillaOgonek.item("C") := "Ç"  ; C with cedilla
+dkCedillaOgonek.item("d") := "ḑ"  ; d with cedilla
+dkCedillaOgonek.item("D") := "Ḑ"  ; D with cedilla
+dkCedillaOgonek.item("e") := "ę"  ; e with ogonek
+dkCedillaOgonek.item("E") := "Ę"  ; E with ogonek
+dkCedillaOgonek.item("ë") := "ȩ"  ; e with cedilla
+dkCedillaOgonek.item("Ë") := "Ȩ"  ; E with cedilla
+dkCedillaOgonek.item("g") := "ģ"  ; g with cedilla
+dkCedillaOgonek.item("G") := "Ģ"  ; G with cedilla
+dkCedillaOgonek.item("h") := "ḩ"  ; h with cedilla
+dkCedillaOgonek.item("H") := "Ḩ"  ; H with cedilla
+dkCedillaOgonek.item("i") := "į"  ; i with ogonek
+dkCedillaOgonek.item("I") := "Į"  ; I with ogonek
+dkCedillaOgonek.item("k") := "ķ"  ; k with cedilla
+dkCedillaOgonek.item("K") := "Ķ"  ; K with cedilla
+dkCedillaOgonek.item("l") := "ļ"  ; l with cedilla
+dkCedillaOgonek.item("L") := "Ļ"  ; L with cedilla
+dkCedillaOgonek.item("n") := "ņ"  ; n with cedilla
+dkCedillaOgonek.item("N") := "Ņ"  ; N with cedilla
+dkCedillaOgonek.item("o") := "ǫ"  ; o with ogonek
+dkCedillaOgonek.item("O") := "Ǫ"  ; O with ogonek
+dkCedillaOgonek.item("r") := "ŗ"  ; r with cedilla
+dkCedillaOgonek.item("R") := "Ŗ"  ; R with cedilla
+dkCedillaOgonek.item("s") := "ş"  ; s with cedilla
+dkCedillaOgonek.item("S") := "Ş"  ; S with cedilla
+dkCedillaOgonek.item("t") := "ţ"  ; t with cedilla
+dkCedillaOgonek.item("T") := "Ţ"  ; T with cedilla
+dkCedillaOgonek.item("u") := "ų"  ; u with ogonek
+dkCedillaOgonek.item("U") := "Ų"  ; U with ogonek
+dkCedillaOgonek.item(".") := "˛"  ; ogonek
+dkCedillaOgonek.item(" ") := "¸"  ; cedilla
+
+
+dkBreveSpecial := ComObjCreate("Scripting.Dictionary")
+dkBreveSpecial.item("a") := "ă"  ; a with breve
+dkBreveSpecial.item("A") := "Ă"  ; A with breve
+dkBreveSpecial.item("e") := "ĕ"  ; e with breve
+dkBreveSpecial.item("E") := "Ĕ"  ; E with breve
+dkBreveSpecial.item("f") := "ə"  ; small letter schwa (Azerbaijani)
+dkBreveSpecial.item("F") := "Ə"  ; capital letter schwa (Azerbaijani)
+dkBreveSpecial.item("g") := "ğ"  ; g with breve
+dkBreveSpecial.item("G") := "Ğ"  ; G with breve
+dkBreveSpecial.item("i") := "ĭ"  ; i with breve
+dkBreveSpecial.item("I") := "Ĭ"  ; I with breve
+dkBreveSpecial.item("j") := "ĳ"  ; ligature ij
+dkBreveSpecial.item("J") := "Ĳ"  ; ligature IJ
+dkBreveSpecial.item("n") := "ŋ"  ; small letter eng(ma)
+dkBreveSpecial.item("N") := "Ŋ"  ; capital letter eng(ma)
+dkBreveSpecial.item("o") := "ŏ"  ; o with breve
+dkBreveSpecial.item("O") := "Ŏ"  ; O with breve
+dkBreveSpecial.item("s") := "ș"  ; s with comma below (Romanian)
+dkBreveSpecial.item("S") := "Ș"  ; S with comma below (Romanian)
+dkBreveSpecial.item("t") := "ț"  ; t with comma below (Romanian)
+dkBreveSpecial.item("T") := "Ț"  ; T with comma below (Romanian)
+dkBreveSpecial.item("u") := "ŭ"  ; u with breve
+dkBreveSpecial.item("U") := "Ŭ"  ; U with breve
+dkBreveSpecial.item(" ") := "˘"  ; breve
+
+
 dkAcuteAccent := ComObjCreate("Scripting.Dictionary")
 dkAcuteAccent.item("a") := "á"  ; a with acute
 dkAcuteAccent.item("A") := "Á"  ; A with acute
@@ -274,67 +295,46 @@ dkDiaeresis.item("""") := "¨" ; diaeresis
 dkDiaeresis.item(" ") := "¨"  ; diaeresis
 
 
-dkCedillaOgonek := ComObjCreate("Scripting.Dictionary")
-dkCedillaOgonek.item("a") := "ą"  ; a with ogonek
-dkCedillaOgonek.item("A") := "Ą"  ; A with ogonek
-dkCedillaOgonek.item("c") := "ç"  ; c with cedilla
-dkCedillaOgonek.item("C") := "Ç"  ; C with cedilla
-dkCedillaOgonek.item("d") := "ḑ"  ; d with cedilla
-dkCedillaOgonek.item("D") := "Ḑ"  ; D with cedilla
-dkCedillaOgonek.item("e") := "ę"  ; e with ogonek
-dkCedillaOgonek.item("E") := "Ę"  ; E with ogonek
-dkCedillaOgonek.item("ë") := "ȩ"  ; e with cedilla
-dkCedillaOgonek.item("Ë") := "Ȩ"  ; E with cedilla
-dkCedillaOgonek.item("g") := "ģ"  ; g with cedilla
-dkCedillaOgonek.item("G") := "Ģ"  ; G with cedilla
-dkCedillaOgonek.item("h") := "ḩ"  ; h with cedilla
-dkCedillaOgonek.item("H") := "Ḩ"  ; H with cedilla
-dkCedillaOgonek.item("i") := "į"  ; i with ogonek
-dkCedillaOgonek.item("I") := "Į"  ; I with ogonek
-dkCedillaOgonek.item("k") := "ķ"  ; k with cedilla
-dkCedillaOgonek.item("K") := "Ķ"  ; K with cedilla
-dkCedillaOgonek.item("l") := "ļ"  ; l with cedilla
-dkCedillaOgonek.item("L") := "Ļ"  ; L with cedilla
-dkCedillaOgonek.item("n") := "ņ"  ; n with cedilla
-dkCedillaOgonek.item("N") := "Ņ"  ; N with cedilla
-dkCedillaOgonek.item("o") := "ǫ"  ; o with ogonek
-dkCedillaOgonek.item("O") := "Ǫ"  ; O with ogonek
-dkCedillaOgonek.item("r") := "ŗ"  ; r with cedilla
-dkCedillaOgonek.item("R") := "Ŗ"  ; R with cedilla
-dkCedillaOgonek.item("s") := "ş"  ; s with cedilla
-dkCedillaOgonek.item("S") := "Ş"  ; S with cedilla
-dkCedillaOgonek.item("t") := "ţ"  ; t with cedilla
-dkCedillaOgonek.item("T") := "Ţ"  ; T with cedilla
-dkCedillaOgonek.item("u") := "ų"  ; u with ogonek
-dkCedillaOgonek.item("U") := "Ų"  ; U with ogonek
-dkCedillaOgonek.item(".") := "˛"  ; ogonek
-dkCedillaOgonek.item(" ") := "¸"  ; cedilla
+dkGraveAccent := ComObjCreate("Scripting.Dictionary")
+dkGraveAccent.item("a") := "à"  ; a with grave
+dkGraveAccent.item("A") := "À"  ; A with grave
+dkGraveAccent.item("e") := "è"  ; e with grave
+dkGraveAccent.item("E") := "È"  ; E with grave
+dkGraveAccent.item("i") := "ì"  ; i with grave
+dkGraveAccent.item("I") := "Ì"  ; I with grave
+dkGraveAccent.item("n") := "ǹ"  ; n with grave
+dkGraveAccent.item("N") := "Ǹ"  ; N with grave
+dkGraveAccent.item("o") := "ò"  ; o with grave
+dkGraveAccent.item("O") := "Ò"  ; O with grave
+dkGraveAccent.item("u") := "ù"  ; u with grave
+dkGraveAccent.item("U") := "Ù"  ; U with grave
+dkGraveAccent.item("w") := "ẁ"  ; w with grave
+dkGraveAccent.item("W") := "Ẁ"  ; W with grave
+dkGraveAccent.item("y") := "ỳ"  ; y with grave
+dkGraveAccent.item("Y") := "Ỳ"  ; Y with grave
+dkGraveAccent.item("``") := "``"  ; grave accent
+dkGraveAccent.item(" ") := "``"   ; grave accent
 
 
-dkBreveSpecial := ComObjCreate("Scripting.Dictionary")
-dkBreveSpecial.item("a") := "ă"  ; a with breve
-dkBreveSpecial.item("A") := "Ă"  ; A with breve
-dkBreveSpecial.item("e") := "ĕ"  ; e with breve
-dkBreveSpecial.item("E") := "Ĕ"  ; E with breve
-dkBreveSpecial.item("f") := "ə"  ; small letter schwa (Azerbaijani)
-dkBreveSpecial.item("F") := "Ə"  ; capital letter schwa (Azerbaijani)
-dkBreveSpecial.item("g") := "ğ"  ; g with breve
-dkBreveSpecial.item("G") := "Ğ"  ; G with breve
-dkBreveSpecial.item("i") := "ĭ"  ; i with breve
-dkBreveSpecial.item("I") := "Ĭ"  ; I with breve
-dkBreveSpecial.item("j") := "ĳ"  ; ligature ij
-dkBreveSpecial.item("J") := "Ĳ"  ; ligature IJ
-dkBreveSpecial.item("n") := "ŋ"  ; small letter eng(ma)
-dkBreveSpecial.item("N") := "Ŋ"  ; capital letter eng(ma)
-dkBreveSpecial.item("o") := "ŏ"  ; o with breve
-dkBreveSpecial.item("O") := "Ŏ"  ; O with breve
-dkBreveSpecial.item("s") := "ș"  ; s with comma below (Romanian)
-dkBreveSpecial.item("S") := "Ș"  ; S with comma below (Romanian)
-dkBreveSpecial.item("t") := "ț"  ; t with comma below (Romanian)
-dkBreveSpecial.item("T") := "Ț"  ; T with comma below (Romanian)
-dkBreveSpecial.item("u") := "ŭ"  ; u with breve
-dkBreveSpecial.item("U") := "Ŭ"  ; U with breve
-dkBreveSpecial.item(" ") := "˘"  ; breve
+dkTilde := ComObjCreate("Scripting.Dictionary")
+dkTilde.item("a") := "ã"  ; a with tilde
+dkTilde.item("A") := "Ã"  ; A with tilde
+dkTilde.item("e") := "ẽ"  ; e with tilde
+dkTilde.item("E") := "Ẽ"  ; E with tilde
+dkTilde.item("i") := "ĩ"  ; i with tilde
+dkTilde.item("I") := "Ĩ"  ; I with tilde
+dkTilde.item("n") := "ñ"  ; n with tilde
+dkTilde.item("N") := "Ñ"  ; N with tilde
+dkTilde.item("o") := "õ"  ; o with tilde
+dkTilde.item("O") := "Õ"  ; O with tilde
+dkTilde.item("u") := "ũ"  ; u with tilde
+dkTilde.item("U") := "Ũ"  ; U with tilde
+dkTilde.item("v") := "ṽ"  ; v with tilde
+dkTilde.item("V") := "Ṽ"  ; V with tilde
+dkTilde.item("y") := "ỹ"  ; y with tilde
+dkTilde.item("Y") := "Ỹ"  ; Y with tilde
+dkTilde.item("~") := "~"  ; tilde
+dkTilde.item(" ") := "~"  ; tilde
 
 
 dkGreekAlphabet := ComObjCreate("Scripting.Dictionary")
@@ -850,15 +850,6 @@ return
 >!\::Send ¬   ; not sign
 >!|::Send ¦   ; broken bar
 
->!`::
-  Input, key, L1, {delete}{esc}{home}{end}
-  Send % dkGraveAccent.item(key)
-return
->!~::
-  Input, key, L1, {delete}{esc}{home}{end}
-  Send % dkTilde.item(key)
-return
-
 >!6::
   Input, key, L1, {delete}{esc}{home}{end}
   Send % dkCircumflex.item(key)
@@ -877,6 +868,15 @@ return
   Send % dkMacron.item(key)
 return
 
+>!-::
+  Input, key, L1, {delete}{esc}{home}{end}
+  Send % dkCedillaOgonek.item(key)
+return
+>!_::
+  Input, key, L1, {delete}{esc}{home}{end}
+  Send % dkBreveSpecial.item(key)
+return
+
 >!'::
   Input, key, L1, {delete}{esc}{home}{end}
   Send % dkAcuteAccent.item(key)
@@ -886,13 +886,13 @@ return
   Send % dkDiaeresis.item(key)
 return
 
->!-::
+>!`::
   Input, key, L1, {delete}{esc}{home}{end}
-  Send % dkCedillaOgonek.item(key)
+  Send % dkGraveAccent.item(key)
 return
->!_::
+>!~::
   Input, key, L1, {delete}{esc}{home}{end}
-  Send % dkBreveSpecial.item(key)
+  Send % dkTilde.item(key)
 return
 
 >!m::
