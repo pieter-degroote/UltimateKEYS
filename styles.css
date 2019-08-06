@@ -2,6 +2,8 @@ body {
   font-family: 'Segoe UI',Helvetica,Arial,sans-serif;
   font-size: 1.25em;
   line-height: 1.5;
+  margin-right: 40px;
+  margin-left: 40px;
 }
 
 @media (prefers-color-scheme: dark) {
