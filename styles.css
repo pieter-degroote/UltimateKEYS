@@ -1,0 +1,15 @@
+body {
+  font-family: 'Segoe UI',Helvetica,Arial,sans-serif;
+  font-size: 1.25em;
+  line-height: 1.5;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background: #000000;
+    color: #00d000;
+  }
+  a {
+    color: #87cefa;
+  }
+}
