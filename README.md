@@ -1,5 +1,5 @@
 # UltimateKEYS Keyboard Layout (Windows)
-International US-QWERTY layout with AltGr dead keys via AutoHotkey script (Windows).
+International US-QWERTY layout with AltGr dead keys via AutoHotkey script and compiled KLC version (Windows).
 
 In UltimateKEYS, all keys remain exactly organized as US-QWERTY. Except, when AltGr or AltGr+Shift is pressed in combination with another key, other diacritics and symbols are accessible and some keys become dead keys.
 
