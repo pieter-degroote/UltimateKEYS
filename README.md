@@ -7,7 +7,7 @@ In that way, it is - somehow - similar to the layout "United States-Internationa
 
 ## Script for AutoHotkey
 
-This AutoHotkey script is a highly customizable version of UltimateKEYS. To work properly, the Windows keyboard has to be set to standard US-QWERTY and at least AutoHotkey 1.1 (AutoHotkey_L) is required.
+This AutoHotkey script is a highly customizable version of UltimateKEYS. To work properly, the Windows keyboard has to be set to standard US-QWERTY and at least AutoHotkey v1.1 (AutoHotkey_L) is required.
 
 - **AutoHotkey website : &nbsp;https://www.autohotkey.com/**
 - **Download the 'UltimateKEYS - YYYY-MM-DD.ahk' file from this repository.**
