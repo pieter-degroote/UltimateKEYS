@@ -501,6 +501,8 @@ dkBrokenBar.item("*") := "⇘"  ; south east double arrow
 dkBrokenBar.item("(") := "⇕"  ; up down double arrow
 dkBrokenBar.item(")") := "↲"  ; downwards arrow with tip leftwards
 dkBrokenBar.item("+") := "⇔"  ; left right double arrow
+dkBrokenBar.item("\") := "¦"  ; broken bar
+dkBrokenBar.item("|") := "¦"  ; broken bar
 dkBrokenBar.item(" ") := "¦"  ; broken bar
 
 
