@@ -9,7 +9,7 @@
 
 ; Requirements :
 
-; Keyboard layout (on Windows OS) :  US-QWERTY
+; Keyboard layout (on Windows OS) :  US QWERTY
 
 ; AutoHotkey v1.1 (https://www.autohotkey.com/)
 
@@ -684,7 +684,7 @@ dkMathSymbols.item("|") := "∨"  ; logical or
 dkMathSymbols.item(" ") := "√"  ; square root
 
 
-; Configuration :  Right Alt on US-QWERTY
+; Configuration :  Right Alt on US QWERTY
 
 >!+a::
   if GetKeyState("CapsLock", "T")
