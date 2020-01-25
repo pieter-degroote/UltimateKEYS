@@ -684,7 +684,7 @@ dkMathSymbols.item("|") := "∨"  ; logical or
 dkMathSymbols.item(" ") := "√"  ; square root
 
 
-; Configuration :  AltGr modifiers for US-QWERTY
+; Configuration :  Right Alt on US-QWERTY
 
 >!+a::
   if GetKeyState("CapsLock", "T")
