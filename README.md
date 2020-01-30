@@ -24,6 +24,6 @@ This AutoHotkey script is a highly customizable version of UltimateKEYS. To work
 - **https://pieter-degroote.github.io/UltimateKEYS/documentation.html**
 - **https://pieter-degroote.github.io/UltimateKEYS/**
 
-## Enjoy and have fun !
+## Enjoy and have fun ! &nbsp;- &nbsp;Veel plezier ! &nbsp;☺
 
 Pieter Degroote
