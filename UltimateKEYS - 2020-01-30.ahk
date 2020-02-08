@@ -731,336 +731,336 @@ dkMathSymbols.item(" ") := "√"  ; square root
 
 ; Configuration :  Right Alt on US QWERTY
 
->!+a::
-  if GetKeyState("CapsLock", "T")
-    Send ä  ; a with diaeresis
-  else
-    Send Ä  ; A with diaeresis
-return
 >!a::
   if GetKeyState("CapsLock", "T")
     Send Ä  ; A with diaeresis
   else
     Send ä  ; a with diaeresis
 return
-
->!+z::
+>!+a::
   if GetKeyState("CapsLock", "T")
-    Send à  ; a with grave
+    Send ä  ; a with diaeresis
   else
-    Send À  ; A with grave
+    Send Ä  ; A with diaeresis
 return
+
 >!z::
   if GetKeyState("CapsLock", "T")
     Send À  ; A with grave
   else
     Send à  ; a with grave
 return
-
->!+x::
+>!+z::
   if GetKeyState("CapsLock", "T")
-    Send á  ; a with acute
+    Send à  ; a with grave
   else
-    Send Á  ; A with acute
+    Send À  ; A with grave
 return
+
 >!x::
   if GetKeyState("CapsLock", "T")
     Send Á  ; A with acute
   else
     Send á  ; a with acute
 return
-
->!+q::
+>!+x::
   if GetKeyState("CapsLock", "T")
-    Send æ  ; letter ae
+    Send á  ; a with acute
   else
-    Send Æ  ; letter AE
+    Send Á  ; A with acute
 return
+
 >!q::
   if GetKeyState("CapsLock", "T")
     Send Æ  ; letter AE
   else
     Send æ  ; letter ae
 return
-
->!+w::
+>!+q::
   if GetKeyState("CapsLock", "T")
-    Send å  ; a with ring above
+    Send æ  ; letter ae
   else
-    Send Å  ; A with ring above
+    Send Æ  ; letter AE
 return
+
 >!w::
   if GetKeyState("CapsLock", "T")
     Send Å  ; A with ring above
   else
     Send å  ; a with ring above
 return
-
->!+c::
+>!+w::
   if GetKeyState("CapsLock", "T")
-    Send ç  ; c with cedilla
+    Send å  ; a with ring above
   else
-    Send Ç  ; C with cedilla
+    Send Å  ; A with ring above
 return
+
 >!c::
   if GetKeyState("CapsLock", "T")
     Send Ç  ; C with cedilla
   else
     Send ç  ; c with cedilla
 return
-
->!+d::
+>!+c::
   if GetKeyState("CapsLock", "T")
-    Send ð  ; small letter eth
+    Send ç  ; c with cedilla
   else
-    Send Ð  ; capital letter eth
+    Send Ç  ; C with cedilla
 return
+
 >!d::
   if GetKeyState("CapsLock", "T")
     Send Ð  ; capital letter eth
   else
     Send ð  ; small letter eth
 return
-
->!+e::
+>!+d::
   if GetKeyState("CapsLock", "T")
-    Send ë  ; e with diaeresis
+    Send ð  ; small letter eth
   else
-    Send Ë  ; E with diaeresis
+    Send Ð  ; capital letter eth
 return
+
 >!e::
   if GetKeyState("CapsLock", "T")
     Send Ë  ; E with diaeresis
   else
     Send ë  ; e with diaeresis
 return
-
->!+f::
+>!+e::
   if GetKeyState("CapsLock", "T")
-    Send è  ; e with grave
+    Send ë  ; e with diaeresis
   else
-    Send È  ; E with grave
+    Send Ë  ; E with diaeresis
 return
+
 >!f::
   if GetKeyState("CapsLock", "T")
     Send È  ; E with grave
   else
     Send è  ; e with grave
 return
-
->!+g::
+>!+f::
   if GetKeyState("CapsLock", "T")
-    Send é  ; e with acute
+    Send è  ; e with grave
   else
-    Send É  ; E with acute
+    Send È  ; E with grave
 return
+
 >!g::
   if GetKeyState("CapsLock", "T")
     Send É  ; E with acute
   else
     Send é  ; e with acute
 return
-
->!+i::
+>!+g::
   if GetKeyState("CapsLock", "T")
-    Send ï  ; i with diaeresis
+    Send é  ; e with acute
   else
-    Send Ï  ; I with diaeresis
+    Send É  ; E with acute
 return
+
 >!i::
   if GetKeyState("CapsLock", "T")
     Send Ï  ; I with diaeresis
   else
     Send ï  ; i with diaeresis
 return
-
->!+v::
+>!+i::
   if GetKeyState("CapsLock", "T")
-    Send ì  ; i with grave
+    Send ï  ; i with diaeresis
   else
-    Send Ì  ; I with grave
+    Send Ï  ; I with diaeresis
 return
+
 >!v::
   if GetKeyState("CapsLock", "T")
     Send Ì  ; I with grave
   else
     Send ì  ; i with grave
 return
-
->!+b::
+>!+v::
   if GetKeyState("CapsLock", "T")
-    Send í  ; i with acute
+    Send ì  ; i with grave
   else
-    Send Í  ; I with acute
+    Send Ì  ; I with grave
 return
+
 >!b::
   if GetKeyState("CapsLock", "T")
     Send Í  ; I with acute
   else
     Send í  ; i with acute
 return
-
->!+o::
+>!+b::
   if GetKeyState("CapsLock", "T")
-    Send ö  ; o with diaeresis
+    Send í  ; i with acute
   else
-    Send Ö  ; O with diaeresis
+    Send Í  ; I with acute
 return
+
 >!o::
   if GetKeyState("CapsLock", "T")
     Send Ö  ; O with diaeresis
   else
     Send ö  ; o with diaeresis
 return
-
->!<::
+>!+o::
   if GetKeyState("CapsLock", "T")
-    Send ò  ; o with grave
+    Send ö  ; o with diaeresis
   else
-    Send Ò  ; O with grave
+    Send Ö  ; O with diaeresis
 return
+
 >!,::
   if GetKeyState("CapsLock", "T")
     Send Ò  ; O with grave
   else
     Send ò  ; o with grave
 return
-
->!>::
+>!<::
   if GetKeyState("CapsLock", "T")
-    Send ó  ; o with acute
+    Send ò  ; o with grave
   else
-    Send Ó  ; O with acute
+    Send Ò  ; O with grave
 return
+
 >!.::
   if GetKeyState("CapsLock", "T")
     Send Ó  ; O with acute
   else
     Send ó  ; o with acute
 return
-
->!+l::
+>!>::
   if GetKeyState("CapsLock", "T")
-    Send ø  ; o with stroke
+    Send ó  ; o with acute
   else
-    Send Ø  ; O with stroke
+    Send Ó  ; O with acute
 return
+
 >!l::
   if GetKeyState("CapsLock", "T")
     Send Ø  ; O with stroke
   else
     Send ø  ; o with stroke
 return
-
->!+p::
+>!+l::
   if GetKeyState("CapsLock", "T")
-    Send œ  ; ligature oe
+    Send ø  ; o with stroke
   else
-    Send Œ  ; ligature OE
+    Send Ø  ; O with stroke
 return
+
 >!p::
   if GetKeyState("CapsLock", "T")
     Send Œ  ; ligature OE
   else
     Send œ  ; ligature oe
 return
-
->!+n::
+>!+p::
   if GetKeyState("CapsLock", "T")
-    Send ñ  ; n with tilde
+    Send œ  ; ligature oe
   else
-    Send Ñ  ; N with tilde
+    Send Œ  ; ligature OE
 return
+
 >!n::
   if GetKeyState("CapsLock", "T")
     Send Ñ  ; N with tilde
   else
     Send ñ  ; n with tilde
 return
-
->!+t::
+>!+n::
   if GetKeyState("CapsLock", "T")
-    Send þ  ; small letter thorn
+    Send ñ  ; n with tilde
   else
-    Send Þ  ; capital letter thorn
+    Send Ñ  ; N with tilde
 return
+
 >!t::
   if GetKeyState("CapsLock", "T")
     Send Þ  ; capital letter thorn
   else
     Send þ  ; small letter thorn
 return
-
->!+u::
+>!+t::
   if GetKeyState("CapsLock", "T")
-    Send ü  ; u with diaeresis
+    Send þ  ; small letter thorn
   else
-    Send Ü  ; U with diaeresis
+    Send Þ  ; capital letter thorn
 return
+
 >!u::
   if GetKeyState("CapsLock", "T")
     Send Ü  ; U with diaeresis
   else
     Send ü  ; u with diaeresis
 return
-
->!+h::
+>!+u::
   if GetKeyState("CapsLock", "T")
-    Send ù  ; u with grave
+    Send ü  ; u with diaeresis
   else
-    Send Ù  ; U with grave
+    Send Ü  ; U with diaeresis
 return
+
 >!h::
   if GetKeyState("CapsLock", "T")
     Send Ù  ; U with grave
   else
     Send ù  ; u with grave
 return
-
->!+j::
+>!+h::
   if GetKeyState("CapsLock", "T")
-    Send ú  ; u with acute
+    Send ù  ; u with grave
   else
-    Send Ú  ; U with acute
+    Send Ù  ; U with grave
 return
+
 >!j::
   if GetKeyState("CapsLock", "T")
     Send Ú  ; U with acute
   else
     Send ú  ; u with acute
 return
-
->!+y::
+>!+j::
   if GetKeyState("CapsLock", "T")
-    Send ÿ  ; y with diaeresis
+    Send ú  ; u with acute
   else
-    Send Ÿ  ; Y with diaeresis
+    Send Ú  ; U with acute
 return
+
 >!y::
   if GetKeyState("CapsLock", "T")
     Send Ÿ  ; Y with diaeresis
   else
     Send ÿ  ; y with diaeresis
 return
-
->!+r::
+>!+y::
   if GetKeyState("CapsLock", "T")
-    Send ý  ; y with acute
+    Send ÿ  ; y with diaeresis
   else
-    Send Ý  ; Y with acute
+    Send Ÿ  ; Y with diaeresis
 return
+
 >!r::
   if GetKeyState("CapsLock", "T")
     Send Ý  ; Y with acute
   else
     Send ý  ; y with acute
 return
+>!+r::
+  if GetKeyState("CapsLock", "T")
+    Send ý  ; y with acute
+  else
+    Send Ý  ; Y with acute
+return
 
 >!k::Send †   ; dagger
 >!+k::Send ‡  ; double dagger
 
 >!s::Send ß   ; small sharp s (Eszett)
->!+s::Send §   ; section sign
+>!+s::Send §  ; section sign
 
 >!/::Send ¿   ; inverted question mark
 >!?::Send ¶   ; pilcrow sign
@@ -1165,3 +1165,4 @@ return
 return
 
 >!space::Send     ; no-break space
+>!+space::Send    ; no-break space
