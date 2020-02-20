@@ -30,7 +30,7 @@ An MSKLC source file is available for integration on Windows OSes (although not 
 
 ## XKB integration (Linux)
 
-Experimental support for GNU/Linux via XKB integration (X11) : &nbsp;see the branch 'linux' in this repository.
+Experimental support for GNU/Linux via XKB integration (X11) : &nbsp;see the 'linux' branch in this repository.
 
 ## Enjoy and have fun ! &nbsp;- &nbsp;Veel plezier ! &nbsp;☺
 
