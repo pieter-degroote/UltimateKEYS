@@ -11,7 +11,7 @@ This AutoHotkey script is a highly customizable version of UltimateKEYS. To work
 
 - **AutoHotkey website : &nbsp;https://www.autohotkey.com/**
 - **Install the latest release of the current v1.1 branch (preferably as 'Unicode 64-bit', on 32-bit Windows as 'Unicode 32-bit').**
-- **Download (and run) the 'UltimateKEYS - YYYY-MM-DD.ahk' file from this repository.**
+- **Download (and run) the "UltimateKEYS - YYYY-MM-DD.ahk" file from this repository.**
 - **Optionally, you can put the AHK file in the 'Startup' folder to launch at startup.**
 - **Please note : &nbsp;this is an overlay script, specifically designed for the keyboard layout 'US QWERTY'.**
 
