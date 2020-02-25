@@ -30,7 +30,13 @@ An MSKLC source file is available for integration on Windows OSes (although not 
 
 ## XKB integration (Linux)
 
-Experimental support for GNU/Linux via XKB integration (X11) : &nbsp;see the 'linux' branch in this repository.
+Experimental support for GNU/Linux via XKB integration (X11) : &nbsp;see the 'linux' folder in this repository.
+
+Follow these steps for experimental integration (at your own risk!) :
+
+- Download the files `ultkeys` and `rule.xml` from the 'linux' folder.
+- Copy `ultkeys` to `/usr/share/X11/xkb/symbols` (root required).
+- Paste the contents of `rule.xml` to either `/usr/share/X11/xkb/rules/evdev.xml` or `/usr/share/X11/xkb/rules/evdex.extras.xml`, this between the tags `<layoutList>` and `</layoutList>` (root required).
 
 ## Enjoy and have fun ! &nbsp;- &nbsp;Veel plezier ! &nbsp;☺
 
