@@ -45,11 +45,11 @@
 <p>This AutoHotkey script is a highly customizable version of UltimateKEYS. To work properly, the Windows keyboard has to be set to standard US QWERTY and at least AutoHotkey v1.1 (preferably as 'Unicode 64-bit', on 32-bit Windows as 'Unicode 32-bit') is required.</p>
 
 <ul>
-<li><strong>AutoHotkey website : &nbsp;<a href="https://www.autohotkey.com/" target="_blank">https://www.autohotkey.com/</a></strong></li>
-<li><strong>Install the latest release of the current v1.1 branch (preferably as 'Unicode 64-bit', on 32-bit Windows as 'Unicode 32-bit').</strong></li>
-<li><strong>Download (and run) the 'UltimateKEYS - YYYY-MM-DD.ahk' file from this repository.</strong></li>
-<li><strong>Optionally, you can put the AHK file in the 'Startup' folder to launch at startup.</strong></li>
-<li><strong>Please note : &nbsp;this is an overlay script, specifically designed for the keyboard layout 'US QWERTY'.</strong></li>
+<li>AutoHotkey website : &nbsp;<a href="https://www.autohotkey.com/" target="_blank"><strong>https://www.autohotkey.com/</strong></a></li>
+<li>Install the latest release of the current v1.1 branch (<strong>preferably as 'Unicode 64-bit'</strong>, on 32-bit Windows as 'Unicode 32-bit').</li>
+<li>Download (and run) the 'UltimateKEYS - YYYY-MM-DD.ahk' file from this repository.</li>
+<li>Optionally, you can put the AHK file in the 'Startup' folder to launch at startup.</li>
+<li>Please note : &nbsp;this is an overlay script, specifically designed for the keyboard layout 'US QWERTY'.</li>
 </ul>
 
 <p>&nbsp;</p>
@@ -65,14 +65,22 @@
 <h2>Installation - Integration in Windows OS using the MSKLC source (not recommended on Win 10 and not recommended in a production environment)</h2>
 
 <ul>
-<li style="font-size: 120%;"><a href="integration-msklc.html" target="_blank"><strong>Installation - Integration in Windows OS using the MSKLC source (not recommended on Win 10 and not recommended in a production environment)</strong></a></li>
+<li><a href="integration-msklc.html" target="_blank"><strong>Installation - Integration in Windows OS using the MSKLC source (not recommended on Win 10 and not recommended in a production environment)</strong></a></li>
 </ul>
 
 <p>&nbsp;</p>
 
 <h2>XKB integration (Linux)</h2>
 
-<p>Experimental support for GNU/Linux via XKB integration (X11) : &nbsp;see the <a href="https://github.com/pieter-degroote/UltimateKEYS/tree/linux" target="_blank">'linux' branch</a> in this repository.</p>
+<p>Experimental support for GNU/Linux via XKB integration (X11) : &nbsp;see the <a href="https://github.com/pieter-degroote/UltimateKEYS/tree/master/linux-xkb" target="_blank">'linux-xkb' folder</a> in this repository.</p>
+
+<p>Follow these steps for experimental integration (at your own risk!) :</p>
+
+<ul>
+<li>Download the files <strong>ultkeys</strong> and <strong>rule.xml</strong> from the 'linux-xkb' folder.</li>
+<li>Copy <strong>ultkeys</strong> to <strong>/usr/share/X11/xkb/symbols</strong> (root required).</li>
+<li>Paste the contents of <strong>rule.xml</strong> to either <strong>/usr/share/X11/xkb/rules/evdev.xml</strong> or <strong>/usr/share/X11/xkb/rules/evdex.extras.xml</strong>, this between the tags <strong>&lt;layoutList&gt;</strong> and <strong>&lt;/layoutList&gt;</strong> (root required).</li>
+</ul>
 
 <p>&nbsp;</p>
 
