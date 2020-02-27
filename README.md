@@ -36,7 +36,7 @@ Follow these steps for experimental integration (at your own risk!) :
 
 - Download the files `ultkeys` and `rule.xml` from the 'linux-xkb' folder.
 - Copy `ultkeys` to `/usr/share/X11/xkb/symbols` (root required).
-- Paste the contents of `rule.xml` to either `/usr/share/X11/xkb/rules/evdev.xml` or `/usr/share/X11/xkb/rules/evdex.extras.xml`, this between the tags `<layoutList>` and `</layoutList>` (root required).
+- Paste the contents of `rule.xml` to either `/usr/share/X11/xkb/rules/evdev.xml` or `/usr/share/X11/xkb/rules/evdev.extras.xml`, this between the tags `<layoutList>` and `</layoutList>` (root required).
 
 ## Enjoy and have fun ! &nbsp;- &nbsp;Veel plezier ! &nbsp;☺
 
