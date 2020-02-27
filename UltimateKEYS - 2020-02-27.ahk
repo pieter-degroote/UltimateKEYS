@@ -86,6 +86,8 @@ dkCaron.item("u") := "ǔ"  ; u with caron
 dkCaron.item("U") := "Ǔ"  ; U with caron
 dkCaron.item("z") := "ž"  ; z with caron
 dkCaron.item("Z") := "Ž"  ; Z with caron
+dkCaron.item("3") := "ǯ"  ; small letter ezh with caron
+dkCaron.item("#") := "Ǯ"  ; capital letter ezh with caron
 dkCaron.item(" ") := "ˇ"  ; caron
 
 
@@ -267,10 +269,8 @@ dkBreveSpecial.item("w") := "ƿ"  ; small letter wynn
 dkBreveSpecial.item("W") := "Ƿ"  ; capital letter wynn
 dkBreveSpecial.item("y") := "ȝ"  ; small letter yogh
 dkBreveSpecial.item("Y") := "Ȝ"  ; capital letter yogh
-dkBreveSpecial.item("z") := "ʒ"  ; small letter ezh
-dkBreveSpecial.item("Z") := "Ʒ"  ; capital letter ezh
-dkBreveSpecial.item("à") := "ǯ"  ; small letter ezh with caron
-dkBreveSpecial.item("À") := "Ǯ"  ; capital letter ezh with caron
+dkBreveSpecial.item("3") := "ʒ"  ; small letter ezh
+dkBreveSpecial.item("#") := "Ʒ"  ; capital letter ezh
 dkBreveSpecial.item(" ") := "˘"  ; breve
 
 
