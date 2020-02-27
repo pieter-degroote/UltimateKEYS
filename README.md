@@ -26,7 +26,7 @@ This AutoHotkey script is a highly customizable version of UltimateKEYS. To work
 
 ## MSKLC integration (Windows)
 
-An MSKLC source file is available for integration on Windows OSes (although not recommended on Windows 10 and not recommended in a production environment).
+An MSKLC source file is available for integration on Windows OSes (although not recommended on Windows 10 and/or in a production environment).
 
 ## XKB integration (Linux)
 
