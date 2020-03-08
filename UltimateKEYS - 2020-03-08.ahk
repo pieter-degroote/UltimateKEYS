@@ -433,6 +433,7 @@ dkGraveAccent.item("7") := " "  ; en quad
 dkGraveAccent.item("8") := " "  ; em quad
 dkGraveAccent.item("9") := " "  ; figure space
 dkGraveAccent.item("0") := "​"   ; zero-width space
+dkGraveAccent.item("-") := " "  ; non-breaking space
 dkGraveAccent.item("``") := "``"  ; grave accent
 dkGraveAccent.item(" ") := "``"   ; grave accent
 
@@ -1187,5 +1188,5 @@ return
   Send % dkMathSymbols.item(key)
 return
 
->!space::Send     ; no-break space
->!+space::Send    ; no-break space
+>!space::Send     ; non-breaking space
+>!+space::Send    ; non-breaking space
