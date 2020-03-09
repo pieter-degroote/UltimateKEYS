@@ -334,8 +334,8 @@ dkAcuteAccent.item("æ") := "ǽ"  ; ae with acute
 dkAcuteAccent.item("Æ") := "Ǽ"  ; AE with acute
 dkAcuteAccent.item("ø") := "ǿ"  ; o with stroke and acute
 dkAcuteAccent.item("Ø") := "Ǿ"  ; O with stroke and acute
+dkAcuteAccent.item("2") := "♫"  ; beamed eighth notes
 dkAcuteAccent.item("8") := "♪"  ; eighth note
-dkAcuteAccent.item("*") := "♫"  ; beamed eighth notes
 dkAcuteAccent.item("'") := "´"  ; acute accent
 dkAcuteAccent.item(" ") := "´"  ; acute accent
 
