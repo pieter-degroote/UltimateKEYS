@@ -29,7 +29,7 @@ xkb_symbols "basic" {
         key <AC05> { [              g,                 G,               eacute,               Eacute ] };
         key <AC06> { [              h,                 H,               ugrave,               Ugrave ] };
         key <AC07> { [              j,                 J,               uacute,               Uacute ] };
-        key <AC08> { [              k,                 K,               dagger,         doubledagger ] };
+        key <AC08> { [              k,                 K,                   oe,                   OE ] };
         key <AC09> { [              l,                 L,               oslash,               Oslash ] };
         key <AC10> { [      semicolon,             colon,               degree,       periodcentered ] };
         key <AC11> { [     apostrophe,          quotedbl,           dead_acute,        dead_diaeresis] };
@@ -42,7 +42,7 @@ xkb_symbols "basic" {
         key <AD07> { [              u,                 U,           udiaeresis,           Udiaeresis ] };
         key <AD08> { [              i,                 I,           idiaeresis,           Idiaeresis ] };
         key <AD09> { [              o,                 O,           odiaeresis,           Odiaeresis ] };
-        key <AD10> { [              p,                 P,                   oe,                   OE ] };
+        key <AD10> { [              p,                 P,               dagger,         doubledagger ] };
         key <AD11> { [    bracketleft,         braceleft,        guillemotleft,                U2039 ] };
         key <AD12> { [   bracketright,        braceright,       guillemotright,                U203A ] };
         key <AE01> { [              1,            exclam,           exclamdown,          onesuperior ] };
