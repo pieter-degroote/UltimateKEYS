@@ -59,7 +59,7 @@ xkb_symbols "basic" {
         key <AE12> { [        equal,         plus,             multiply,             division ] };
         key <BKSL> { [    backslash,          bar,              notsign,            brokenbar ] };
         key <TLDE> { [        grave,   asciitilde,           dead_grave,           dead_tilde ] };
-        key <LSGT> { [    backslash,          bar                                             ] };
+        key <LSGT> { [    backslash,          bar,            backslash,                  bar ] };
         key <SPCE> { [        space,        space,         nobreakspace,         nobreakspace ] };
 
         include "level3(ralt_switch)"
