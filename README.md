@@ -1,4 +1,5 @@
 # UltimateKEYS Keyboard Layout (Windows/Linux)
+
 International US QWERTY layout with AltGr (Right Alt) dead keys via AutoHotkey script (Win), MSKLC source (Win) and XKB integration (Linux).
 
 [![GitHub Release](https://img.shields.io/github/release/pieter-degroote/UltimateKEYS.svg)](https://github.com/pieter-degroote/UltimateKEYS/releases)
@@ -9,10 +10,10 @@ In that way, it is - somehow - similar to the layout "United States-Internationa
 
 ## Difference between Classic edition and SW edition
 
-- **Classic** : &nbsp;Keeps all standard keys on US QWERTY and adds customizations to the `Right Alt (+Shift)` modifier.
+- **Classic** : &nbsp;Keeps all standard keys on US QWERTY and adds customizations to the `Right Alt (+Shift)` modifier.\
 [**-> Layout image of Classic edition**](https://pieter-degroote.github.io/UltimateKEYS/images/UltimateKEYS%20-%20Keyboard%20Layout%20Image.png)
 
-- **SW (switched)** : &nbsp;Also adds customizations to the `Right Alt (+Shift)` modifier, but also makes the symbols !, @, #, $, %, ^, &, \*, ( and ) accessible without holding down Shift. The numbers have moved to Shift (as most computers have a separate numpad).
+- **SW (switched)** : &nbsp;Also adds customizations to the `Right Alt (+Shift)` modifier, but also makes the symbols !, @, #, $, %, ^, &, \*, ( and ) accessible without holding down Shift. The numbers have moved to Shift (as most computers have a separate numpad).\
 [**-> Layout image of SW edition**](https://pieter-degroote.github.io/UltimateKEYS/images/UltimateKEYS%20SW%20-%20Keyboard%20Layout%20Image.png)
 
 ## Script for AutoHotkey (Windows)
