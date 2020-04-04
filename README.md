@@ -11,7 +11,7 @@ In that way, it is - somehow - similar to the layout "United States-Internationa
 
 Classic : &nbsp;Keeps all standard keys on US QWERTY and adds customizations via the `Right Alt (+Shift)` modifier.
 
-SW (switched) edition : &nbsp;Adds customizations via the `Right Alt (+Shift)` modifier, but makes the symbols !, @, #, $, %, ^, &, \*, ( and ) accessible without holding Shift. The numbers have moved to Shift (as most computers also have a separate numpad).
+SW (switched) edition : &nbsp;Adds customizations via the `Right Alt (+Shift)` modifier, but makes the symbols !, @, #, $, %, ^, &, \*, ( and ) accessible without holding down Shift. The numbers have moved to Shift (as most computers also have a separate numpad).
 
 ## Script for AutoHotkey (Windows)
 
