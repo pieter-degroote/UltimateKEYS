@@ -45,9 +45,10 @@ Experimental support for GNU/Linux via XKB integration (X11) : &nbsp;see the 'li
 
 Follow these steps for experimental integration (at your own risk!) :
 
-- Download the files `ultkeys[-sw]` and `rule[-sw].xml` from the 'linux-xkb' folder.
+- Download the files `ultkeys`, `ultkeys-sw`, `rule.xml` and `rule-sw.xml` from the 'linux-xkb' folder.
 - Copy `ultkeys[-sw]` to `/usr/share/X11/xkb/symbols` (root required).
 - Paste the contents of `rule[-sw].xml` to either `/usr/share/X11/xkb/rules/evdev.xml` or `/usr/share/X11/xkb/rules/evdev.extras.xml`, this between the tags `<layoutList>` and `</layoutList>` (root required).
+- Both the Classic (files without '-sw') and SW layouts (files with '-sw') can be installed alongside each other. The user interface will distinguish them as `UltimateKEYS` and `UltimateKEYS SW`.
 
 ## Enjoy and have fun ! &nbsp;- &nbsp;Veel plezier ! &nbsp;☺
 
