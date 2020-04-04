@@ -9,9 +9,9 @@ In that way, it is - somehow - similar to the layout "United States-Internationa
 
 ## Difference between classic edition and SW edition
 
-**Classic** : &nbsp;Keeps all standard keys on US QWERTY and adds customizations via the `Right Alt (+Shift)` modifier.
+**Classic** : &nbsp;Keeps all standard keys on US QWERTY and adds customizations to the `Right Alt (+Shift)` modifier.
 
-**SW (switched) edition** : &nbsp;Also adds customizations via the `Right Alt (+Shift)` modifier, but also makes the symbols !, @, #, $, %, ^, &, \*, ( and ) accessible without holding down Shift. The numbers have moved to Shift (as most computers have a separate numpad).
+**SW (switched) edition** : &nbsp;Also adds customizations to the `Right Alt (+Shift)` modifier, but also makes the symbols !, @, #, $, %, ^, &, \*, ( and ) accessible without holding down Shift. The numbers have moved to Shift (as most computers have a separate numpad).
 
 ## Script for AutoHotkey (Windows)
 
