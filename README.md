@@ -15,13 +15,13 @@ In that way, it is - somehow - similar to the layout "United States-Internationa
 
 ## Script for AutoHotkey (Windows)
 
-This AutoHotkey script is a highly customizable version of UltimateKEYS. To work properly, the Windows keyboard has to be set to standard US QWERTY and at least AutoHotkey v1.1 (preferably as 'Unicode 64-bit', on 32-bit Windows as 'Unicode 32-bit') is required.
+These AutoHotkey scripts are highly customizable editions of UltimateKEYS. To work properly, the Windows keyboard has to be set to standard US QWERTY and at least AutoHotkey v1.1 (preferably as 'Unicode 64-bit', on 32-bit Windows as 'Unicode 32-bit') is required.
 
 - **AutoHotkey website : &nbsp;https://www.autohotkey.com/ / https://github.com/Lexikos/AutoHotkey_L/releases**
 - **Install the latest release of the current v1.1 branch (preferably as 'Unicode 64-bit', on 32-bit Windows as 'Unicode 32-bit').**
 - **Download (and run) the "UltimateKEYS \[SW\] - YYYY-MM-DD.ahk" file from this repository.**
-- **Optionally, you can put the AHK file in the 'Startup' folder to launch at startup.**
-- **Please note : &nbsp;this is an overlay script, specifically designed for the keyboard layout 'US QWERTY'.**
+- **Optionally, you can put one of the AHK files in the 'Startup' folder to launch at startup.**
+- **Please note : &nbsp;these are overlay scripts, specifically designed for the keyboard layout 'US QWERTY'.**
 
 ## Download the latest release
 
