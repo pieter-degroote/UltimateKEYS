@@ -7,7 +7,7 @@ In UltimateKEYS, all keys remain exactly organized as US QWERTY. Except, when `A
 
 In that way, it is - somehow - similar to the layout "United States-International" (on Windows), although this project moves all dead key combinations to the modifiers `AltGr` and `AltGr+Shift`. That way, this project solves the most typical issues, among which the quotes (' and ") can be used as usual (without pressing the spacebar afterwards), while the acute accent (&#x00b4;) and diaeresis (&#x00a8;) are found on `AltGr+'` and `AltGr+Shift+"` respectively. This project has borrowed several aspects from the EurKEY Keyboard Layout (by Steffen Br&uuml;ntjen).
 
-## Difference between classic edition and SW edition
+## Difference between Classic edition and SW edition
 
 - **Classic** : &nbsp;Keeps all standard keys on US QWERTY and adds customizations to the `Right Alt (+Shift)` modifier.
 
