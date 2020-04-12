@@ -50,6 +50,6 @@ Follow these steps for experimental integration (at your own risk!) :
 - Paste the contents of `rule[-sw].xml` to either `/usr/share/X11/xkb/rules/evdev.xml` or `/usr/share/X11/xkb/rules/evdev.extras.xml`, this between the tags `<layoutList>` and `</layoutList>` (root required).
 - Both the Classic (files without '-sw') and SW layouts (files with '-sw') can be installed alongside each other. The user interface will distinguish them as `UltimateKEYS` and `UltimateKEYS SW`.
 
-## Enjoy and have fun !&emsp;-&emsp;Veel plezier !&emsp;☺
+## Enjoy and have fun !&emsp;-&emsp;Veel plezier !
 
 Pieter Degroote
