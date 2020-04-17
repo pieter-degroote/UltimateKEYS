@@ -363,9 +363,11 @@ dkAcuteAccent.item("ø") := "ǿ"  ; o with stroke and acute
 dkAcuteAccent.item("Ø") := "Ǿ"  ; O with stroke and acute
 dkAcuteAccent.item("2") := "♫"  ; beamed eighth notes
 dkAcuteAccent.item("3") := "⁂"  ; asterism
+dkAcuteAccent.item("4") := "★"  ; black star
+dkAcuteAccent.item("5") := "☆"  ; white star
+dkAcuteAccent.item("6") := "✽"  ; heavy teardrop-spoked asterisk
+dkAcuteAccent.item("7") := "✻"  ; teardrop-spoked asterisk
 dkAcuteAccent.item("8") := "♪"  ; eighth note
-dkAcuteAccent.item("9") := "★"  ; black star
-dkAcuteAccent.item("0") := "☆"  ; white star
 dkAcuteAccent.item("'") := "´"  ; acute accent
 dkAcuteAccent.item(" ") := "´"  ; acute accent
 
