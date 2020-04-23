@@ -18,7 +18,7 @@ xkb_symbols "basic" {
         key <AB04> { [            v,            V,               igrave,               Igrave ] };
         key <AB05> { [            b,            B,               iacute,               Iacute ] };
         key <AB06> { [            n,            N,               ntilde,               Ntilde ] };
-        key <AB07> { [            m,            M,           dead_greek,            Multi_key ] };
+        key <AB07> { [            m,            M,            Multi_key,            Multi_key ] };
         key <AB08> { [        comma,         less,               ograve,               Ograve ] };
         key <AB09> { [       period,      greater,               oacute,               Oacute ] };
         key <AB10> { [        slash,     question,         questiondown,            paragraph ] };
@@ -57,7 +57,7 @@ xkb_symbols "basic" {
         key <AE10> { [            0,   parenright, rightdoublequotemark, rightsinglequotemark ] };
         key <AE11> { [        minus,   underscore,         dead_cedilla,           dead_breve ] };
         key <AE12> { [        equal,         plus,             multiply,             division ] };
-        key <BKSL> { [    backslash,          bar,              notsign,            brokenbar ] };
+        key <BKSL> { [    backslash,          bar,           dead_greek,        dead_currency ] };
         key <TLDE> { [        grave,   asciitilde,           dead_grave,           dead_tilde ] };
         key <LSGT> { [    backslash,          bar,            backslash,                  bar ] };
         key <SPCE> { [        space,        space,         nobreakspace,         nobreakspace ] };
