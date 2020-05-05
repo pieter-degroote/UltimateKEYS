@@ -1,0 +1,26 @@
+    <layout>
+      <configItem>
+        <name>ultkeys-sw</name>
+        <shortDescription>ultkeys-sw</shortDescription>
+        <description>UltimateKEYS SW</description>
+          <languageList>
+            <iso639Id>cat</iso639Id>
+            <iso639Id>dan</iso639Id>
+            <iso639Id>eng</iso639Id>
+            <iso639Id>est</iso639Id>
+            <iso639Id>fao</iso639Id>
+            <iso639Id>fin</iso639Id>
+            <iso639Id>ger</iso639Id>
+            <iso639Id>gre</iso639Id>
+            <iso639Id>gsw</iso639Id>
+            <iso639Id>ita</iso639Id>
+            <iso639Id>lav</iso639Id>
+            <iso639Id>lit</iso639Id>
+            <iso639Id>nld</iso639Id>
+            <iso639Id>nor</iso639Id>
+            <iso639Id>por</iso639Id>
+            <iso639Id>spa</iso639Id>
+            <iso639Id>swe</iso639Id>
+        </languageList>
+      </configItem>
+    </layout>
