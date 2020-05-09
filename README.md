@@ -16,7 +16,7 @@ In that way, it is - somehow - similar to the layout "United States-Internationa
 - **SW (switched)** : &nbsp;Also adds customizations to the `Right Alt (+Shift)` modifier, but also makes the symbols !, @, #, $, %, ^, &, \*, ( and ) accessible without holding down Shift. The numbers have moved to Shift (as most computers have a separate numpad).\
 [**-> Layout image of SW edition**](https://pieter-degroote.github.io/UltimateKEYS/image-sw.html)
 
-## Script for AutoHotkey (Windows)
+## Script for AutoHotkey (recommended for Windows)
 
 The AutoHotkey scripts are highly customizable editions of UltimateKEYS. To work properly, the Windows keyboard has to be set to standard US QWERTY and at least AutoHotkey v1.1 (preferably as 'Unicode 64-bit', on 32-bit Windows as 'Unicode 32-bit') is required.
 
