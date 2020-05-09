@@ -953,7 +953,7 @@ return
   if GetKeyState("CapsLock", "T")
     Send ì  ; (u+00ec) i with grave
   else
-    Send Ì  ; (U+00cc) I with grave
+    Send Ì  ; (u+00cc) I with grave
 return
 
 >!b::
