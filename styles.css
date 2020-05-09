@@ -8,10 +8,10 @@ body {
 
 @media (prefers-color-scheme: dark) {
   body {
-    background: #000000;
-    color: #00ff00;
+    background: Black;
+    color: Lime;
   }
   a {
-    color: #87cefa;
+    color: LightSkyBlue;
   }
 }
