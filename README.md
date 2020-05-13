@@ -39,9 +39,9 @@ The AutoHotkey scripts are highly customizable editions of UltimateKEYS. To work
 
 - **https://github.com/pieter-degroote/UltimateKEYS-testing**
 
-## MSKLC integration (Windows - obsolete)
+## MSKLC integration (Windows - obsolete, not recommended)
 
-Two MSKLC source files are available for integration on Windows OSes (although not recommended on Windows 10 and/or in a production environment).
+[Two MSKLC source files are available for integration on Windows OSes (although not recommended on Windows 10 and/or in a production environment).](https://pieter-degroote.github.io/UltimateKEYS/integration-msklc.html)
 
 ## XKB integration (Linux - experimental)
 
