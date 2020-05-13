@@ -13,7 +13,7 @@ In that way, it is - somehow - similar to the layout "United States-Internationa
 - **Classic** : &nbsp;Keeps all standard keys on US QWERTY and adds customizations to the `Right Alt (+Shift)` modifier.\
 [**-> Layout image of Classic edition**](https://pieter-degroote.github.io/UltimateKEYS/image-classic.html)
 
-- **SW (switched)** : &nbsp;Also adds customizations to the `Right Alt (+Shift)` modifier, but also makes the symbols !, @, #, $, %, ^, &, \*, ( and ) accessible without holding down Shift. The numbers have moved to Shift (as most computers have a separate numpad).\
+- **SW (switched)** : &nbsp;Also adds customizations to the `Right Alt (+Shift)` modifier, but also makes the symbols !, @, #, $, %, ^, &, \*, ( and ) accessible without holding down Shift. The numbers have moved to Shift (as many computers have a separate numpad).\
 [**-> Layout image of SW edition**](https://pieter-degroote.github.io/UltimateKEYS/image-sw.html)
 
 ## Script for AutoHotkey (recommended method for Windows)
@@ -35,11 +35,15 @@ The AutoHotkey scripts are highly customizable editions of UltimateKEYS. To work
 - **https://pieter-degroote.github.io/UltimateKEYS/documentation.html**
 - **https://pieter-degroote.github.io/UltimateKEYS/**
 
-## MSKLC integration (Windows)
+## Testing Repository - Additional experimental versions
+
+- **https://github.com/pieter-degroote/UltimateKEYS-testing**
+
+## MSKLC integration (Windows - obsolete)
 
 Two MSKLC source files are available for integration on Windows OSes (although not recommended on Windows 10 and/or in a production environment).
 
-## XKB integration (Linux)
+## XKB integration (Linux - experimental)
 
 Experimental support for GNU/Linux via XKB integration (X11) : &nbsp;see the 'linux-xkb' folder in this repository.
 
