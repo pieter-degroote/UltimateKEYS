@@ -8,10 +8,6 @@ International US QWERTY layout with AltGr (Right Alt) dead keys via AutoHotkey s
 
 ## Releases : &nbsp;https://github.com/pieter-degroote/UltimateKEYS/releases
 
-## Testing Repository - Additional experimental versions
+## Testing Repository - Additional experimental versions :
 
 - **https://github.com/pieter-degroote/UltimateKEYS-testing**
-
-## Enjoy and have fun !&emsp;-&emsp;Veel plezier !
-
-Pieter Degroote
