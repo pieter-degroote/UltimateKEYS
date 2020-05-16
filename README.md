@@ -10,4 +10,4 @@ International US QWERTY layout with AltGr (Right Alt) dead keys via AutoHotkey s
 
 ## Testing Repository - Additional experimental versions :
 
-- **https://github.com/pieter-degroote/UltimateKEYS-testing**
+## https://github.com/pieter-degroote/UltimateKEYS-testing
