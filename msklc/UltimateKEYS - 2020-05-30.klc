@@ -844,6 +844,8 @@ DEADKEY	0020	// Dead Key :  Math Symbols
 005f	2296	// _ -> ⊖    circled minus
 003d	225d	// = -> ≝    equal to by definition
 002b	2295	// + -> ⊕    exclusive or
+00d7	2261	// × -> ≡    identical to
+00f7	2262	// ÷ -> ≢    not identical to
 003b	2235	// ; -> ∵    because sign
 003a	2234	// : -> ∴    therefore sign
 0027	2032	// ' -> ′    prime
