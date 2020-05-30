@@ -826,6 +826,8 @@ dkMathSymbols.item["-"] := "{u+00b1}"  ; (±) plus-minus sign
 dkMathSymbols.item["_"] := "{u+2296}"  ; (⊖) circled minus
 dkMathSymbols.item["="] := "{u+225d}"  ; (≝) equal to by definition
 dkMathSymbols.item["+"] := "{u+2295}"  ; (⊕) exclusive or
+dkMathSymbols.item[chr(0x00d7)] := "{u+2261}"  ; (× -> ≡) identical to
+dkMathSymbols.item[chr(0x00f7)] := "{u+2262}"  ; (÷ -> ≢) not identical to
 dkMathSymbols.item[";"] := "{u+2235}"  ; (∵) because sign
 dkMathSymbols.item[":"] := "{u+2234}"  ; (∴) therefore sign
 dkMathSymbols.item["'"] := "{u+2032}"  ; (′) prime
