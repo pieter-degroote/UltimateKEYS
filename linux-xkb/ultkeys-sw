@@ -21,7 +21,7 @@ xkb_symbols "basic" {
         key <AB07> { [            m,            M,            Multi_key,            Multi_key ] };
         key <AB08> { [        comma,         less,               ograve,               Ograve ] };
         key <AB09> { [       period,      greater,               oacute,               Oacute ] };
-        key <AB10> { [        slash,     question,         questiondown,            paragraph ] };
+        key <AB10> { [        slash,     question,         questiondown,             ellipsis ] };
         key <AC01> { [            a,            A,           adiaeresis,           Adiaeresis ] };
         key <AC02> { [            s,            S,               ssharp,              section ] };
         key <AC03> { [            d,            D,                  eth,                  Eth ] };
@@ -52,7 +52,7 @@ xkb_symbols "basic" {
         key <AE05> { [      percent,            5,             EuroSign,                 cent ] };
         key <AE06> { [  asciicircum,            6,      dead_circumflex,           dead_caron ] };
         key <AE07> { [    ampersand,            7,       dead_abovering,          dead_macron ] };
-        key <AE08> { [     asterisk,            8,   doublelowquotemark,   singlelowquotemark ] };
+        key <AE08> { [     asterisk,            8,   doublelowquotemark,            paragraph ] };
         key <AE09> { [    parenleft,            9,  leftdoublequotemark,  leftsinglequotemark ] };
         key <AE10> { [   parenright,            0, rightdoublequotemark, rightsinglequotemark ] };
         key <AE11> { [        minus,   underscore,         dead_cedilla,           dead_breve ] };
