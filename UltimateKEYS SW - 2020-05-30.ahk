@@ -517,7 +517,7 @@ dkGraveAccent.item["8"] := "{u+200a}"  ; hair space
 dkGraveAccent.item["("] := "{u+2007}"  ; figure space
 dkGraveAccent.item["9"] := "{u+2007}"  ; figure space
 dkGraveAccent.item[")"] := "{u+200b}"  ; zero-width space
-dkGraveAccent.item["0"] := "​{u+200b}"  ; zero-width space
+dkGraveAccent.item["0"] := "{u+200b}"  ; zero-width space
 dkGraveAccent.item["-"] := "{u+00a0}"  ; non-breaking space
 dkGraveAccent.item["="] := "{u+202f}"  ; narrow no-break space
 dkGraveAccent.item["1"] := "{u+2000}"  ; en quad
