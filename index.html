@@ -26,6 +26,12 @@
 
 <p>Additionally, recent releases also feature "Smart error-tolerant optimization for circumflex in French", allowing you to type the letters &acirc;/&Acirc;, &ecirc;/&Ecirc;, &icirc;/&Icirc;, &ocirc;/&Ocirc;, &ucirc;/&Ucirc; more easily.</p>
 
+<h2>Important - Security note :</h2>
+
+<p style="font-weight: bold;">=&gt; Win/Linux : &nbsp;<span style="text-decoration: underline;">Only use "BASIC LATIN" characters (codes 32 to 126) for the Windows, Microsoft Live and Linux passwords !</span><br />
+Otherwise, it might be impossible to type any Unicode character higher than "Basic Latin" at the login screen/prompt (due to a different keyboard configuration), resulting in a lockout of your account !<br />
+=&gt; Win/Linux : &nbsp;<span style="text-decoration: underline;">ALWAYS make your system passwords VISIBLE during modification !</span></p>
+
 <p>&nbsp;</p>
 
 <h2>Keyboard Layout Image (Classic)</h2>
@@ -69,15 +75,16 @@
 
 <p>&nbsp;</p>
 
-<h2>Important - Known limitations of AutoHotkey</h2>
+<h2>Important - Known limitations of AutoHotkey, Windows and Linux</h2>
 
-<p>When changing the Windows/Microsoft password, using the SW variant (and other scripts) can INTERFERE in some cases where your keystrokes are either registered via the SW variant (and other scripts) or as standard US QWERTY (depending on application layer versus system layer...).</p>
+<p>Win/Linux : &nbsp;When changing the Windows/Microsoft Live/Linux password, using another keyboard layout (like SW) can INTERFERE in some cases where your keystrokes are either registered via the other layout or as standard US QWERTY.</p>
 
-<p>On the login screen, the script will NOT be loaded (normally), which can result in the WRONG input !</p>
+<p>Win (AHK) : &nbsp;On the login screen, the layout script will NOT be loaded, which can result in the WRONG input !<br />
+Linux : &nbsp;On the login screen, the layout might NOT be available, which can result in the WRONG input !</p>
 
-<p>To be "better safe than sorry", you should ALWAYS make your password VISIBLE during modification, to avoid being locked out of your account !</p>
-
-<p style="font-size: 120%; font-weight: bold;">=&gt; <span style="text-decoration: underline;">Also make sure to use only "BASIC LATIN" characters (codes 32 to 126) for the Windows/Microsoft password. Otherwise, it might become impossible to type any Unicode character higher than "Basic Latin" at the login screen/prompt !</span></p>
+<p style="font-weight: bold;">=&gt; Win/Linux : &nbsp;<span style="text-decoration: underline;">Only use "BASIC LATIN" characters (codes 32 to 126) for the Windows, Microsoft Live and Linux passwords !</span><br />
+Otherwise, it might be impossible to type any Unicode character higher than "Basic Latin" at the login screen/prompt (due to a different keyboard configuration), resulting in a lockout of your account !<br />
+=&gt; Win/Linux : &nbsp;To be "better safe than sorry", <span style="text-decoration: underline;">ALWAYS make your system passwords VISIBLE during modification !</span></p>
 
 <p>&nbsp;</p>
 
@@ -109,8 +116,7 @@
 <li>Paste the contents of "rule[-sw]_xml" to either "/usr/share/X11/xkb/rules/evdev.xml" or "/usr/share/X11/xkb/rules/evdev.extras.xml", this between the tags &lt;layoutList&gt; and &lt;/layoutList&gt; (root required).</li>
 <li>Both the Classic (files without '-sw') and SW layouts (files with '-sw') can be installed alongside each other. The user interface will distinguish them as "UltimateKEYS" and "UltimateKEYS SW".</li>
 <li>Additionally, the file ".XCompose" can be put in the user's home directory (~) to apply custom dead key definitions for UltimateKEYS [SW].</li>
-<li><span style="text-decoration: underline;">Also make sure to use only "BASIC LATIN" characters (codes 32 to 126) for all user account passwords. Otherwise, it might become impossible to type any Unicode character higher than "Basic Latin" at the login screen/prompt !<br />
-Plus, ALWAYS make your admin/root password VISIBLE during modification !</span></li>
+<li><span style="text-decoration: underline;">System passwords : &nbsp;only "BASIC LATIN" (codes 32 to 126); ALWAYS make the admin/root password VISIBLE during modification !</span></li>
 </ul>
 
 <p>&nbsp;</p>
