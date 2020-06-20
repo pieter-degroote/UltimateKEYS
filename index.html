@@ -22,7 +22,7 @@
 
 <p>In UltimateKEYS, all keys remain exactly organized as US QWERTY. Except, when <em>AltGr (Right Alt)</em> or <em>AltGr+Shift (Right Alt + Shift)</em> is pressed in combination with another key, other diacritics and symbols are accessible and some keys become dead keys.</p>
 
-<p>In that way, it is - somehow - similar to the layout "United States-International" (on Windows), although this project moves all dead key combinations to the modifiers <em>AltGr</em> and <em>AltGr+Shift</em>. That way, this project solves the most typical issues, among which the quotes (' and ") can be used as usual (without pressing the space bar afterwards), while the acute accent (&#x00b4;) and diaeresis (&#x00a8;) are found on <em>AltGr+'</em> and <em>AltGr+Shift+"</em> respectively. This project has adopted several aspects from EurKEY (by Steffen Br&uuml;ntjen).</p>
+<p>In that way, it is - somehow - similar to the layout "United States-International" (on Windows), although this project moves all dead key combinations to the modifiers <em>AltGr</em> and <em>AltGr+Shift</em>. That way, this project solves the most typical issues, among which the quotes (' and ") can be used as usual (without pressing the space bar afterwards), while the acute accent (&#x00b4;) and diaeresis (&#x00a8;) are found on <em>AltGr+'</em> and <em>AltGr+Shift+"</em> respectively. The layout of this project is derived from EurKEY (by Steffen Br&uuml;ntjen).</p>
 
 <p>Additionally, recent releases also feature "Smart error-tolerant optimization for circumflex in French", allowing you to type the letters &acirc;, &ecirc;, &icirc;, &ocirc;, &ucirc; more easily.</p>
 
@@ -60,72 +60,30 @@ Otherwise, it might be impossible to type any Unicode character higher than "Bas
 
 <p>&nbsp;</p>
 
-<h2>Installation - AutoHotkey Script (recommended method for Windows)</h2>
+<h2><a href="documentation.html" target="_blank">Documentation - Keyboard Layout Image, Dead Key Descriptions (Win)</a></h2>
 
-<p>The AutoHotkey scripts are highly customizable editions of UltimateKEYS. To work properly, the Windows keyboard has to be set to standard US QWERTY and at least AutoHotkey v1.1 is required.</p>
+<p>&nbsp;</p>
+
+<h2>Installation - Windows</h2>
 
 <ul>
-<li>AutoHotkey website : &nbsp;<a href="https://www.autohotkey.com/" target="_blank"><strong>https://www.autohotkey.com/</strong></a> / <a href="https://github.com/Lexikos/AutoHotkey_L" target="_blank"><strong>https://github.com/Lexikos/AutoHotkey_L</strong></a>[<a href="https://github.com/Lexikos/AutoHotkey_L/releases" target="_blank"><strong>/releases</strong></a>]</li>
-<li>Install the latest release of the current v1.1 branch (<strong>preferably as 'Unicode 64-bit'</strong>, on 32-bit Windows as 'Unicode 32-bit').</li>
-<li>Download (and run) the "UltimateKEYS [SW] - YYYY-MM-DD.ahk" file from this repository.</li>
-<li>Optionally, you can put one of the AHK files in the 'Startup' folder to launch at startup.</li>
-<li>Please note : &nbsp;these are overlay scripts, specifically designed for the keyboard layout 'US QWERTY'.</li>
-<li>Please note : &nbsp;for reliability, only a single instance of one of these scripts should run at the same time !</li>
+<li style="font-size: 120%;"><a href="autohotkey-win.html" target="_blank"><strong>AutoHotkey Script (recommended method for Windows)</strong></a></li>
+<li style="font-size: 120%;"><a href="integration-msklc.html" target="_blank">Integration in Windows OS using MSKLC (obsolete, not recommended)</a></a></li>
 </ul>
 
 <p>&nbsp;</p>
 
-<h2>Important - Known limitations of AutoHotkey, Windows and Linux</h2>
-
-<p>Win/Linux : &nbsp;When changing the Windows/Microsoft Live/Linux password, using another keyboard layout (like SW) can INTERFERE in some cases where your keystrokes are either registered via the other layout or as standard US QWERTY.</p>
-
-<p>Win (AHK) : &nbsp;On the login screen, the layout script will NOT be loaded, which can result in the WRONG input !<br />
-Linux : &nbsp;On the login screen, the layout might NOT be available, which can result in the WRONG input !</p>
-
-<p style="font-weight: bold;">=&gt; Win/Linux : &nbsp;<span style="text-decoration: underline;">Only use "BASIC LATIN" characters (codes 32 to 126) for the Windows, Microsoft Live and Linux passwords !</span><br />
-Otherwise, it might be impossible to type any Unicode character higher than "Basic Latin" at the login screen/prompt (due to a different keyboard configuration) !&emsp;-&gt;&emsp;ACCOUNT LOCKOUT<br />
-=&gt; Win/Linux : &nbsp;To be "better safe than sorry", <span style="text-decoration: underline;">ALWAYS make your system passwords VISIBLE during modification !</span></p>
+<h2><a href="linux-xkb.html" target="_blank">Linux (X11) : &nbsp;XKB integration (experimental)</a></h2>
 
 <p>&nbsp;</p>
 
-<h2>Documentation - Keyboard Layout Image, Dead Key Descriptions (Win version)</h2>
-
-<ul>
-<li style="font-size: 120%;"><a href="documentation.html" target="_blank"><strong>Documentation - Keyboard Layout Image, Dead Key Descriptions</strong></a></li>
-</ul>
+<h2><a href="list-keyboard-layouts.html" target="_blank">List similar-looking of alternate US-International (UK-) keyboard layouts</a></h2>
 
 <p>&nbsp;</p>
 
-<h2>Integration in Windows OS using MSKLC (obsolete, not recommended)</h2>
+<h2>License of UltimateKEYS</h2>
 
-<ul>
-<li style="font-size: 120%;"><a href="integration-msklc.html" target="_blank"><strong>Integration in Windows OS using MSKLC (not recommended on Win 10 and/or in a production environment)</strong></a></li>
-</ul>
-
-<p>&nbsp;</p>
-
-<h2>XKB integration (Linux, experimental)</h2>
-
-<p>Experimental support for GNU/Linux via XKB integration (X11) : &nbsp;see the <a href="https://github.com/pieter-degroote/UltimateKEYS/tree/master/linux-xkb" target="_blank">'linux-xkb' folder</a> in this repository.</p>
-
-<p>Follow these steps for experimental integration (at your own risk!) :</p>
-
-<ul>
-<li>Download/Unpack the files "ultkeys", "ultkeys-sw", "rule_xml" and "rule-sw_xml" from the "linux-xkb" folder.</li>
-<li>Copy "ultkeys[-sw]" to "/usr/share/X11/xkb/symbols" (root required).</li>
-<li>Paste the contents of "rule[-sw]_xml" to either "/usr/share/X11/xkb/rules/evdev.xml" or "/usr/share/X11/xkb/rules/evdev.extras.xml", this between the tags &lt;layoutList&gt; and &lt;/layoutList&gt; (root required).</li>
-<li>Both the Classic (files without '-sw') and SW layouts (files with '-sw') can be installed alongside each other. The user interface will distinguish them as "UltimateKEYS" and "UltimateKEYS SW".</li>
-<li>Additionally, the file ".XCompose" can be put in the user's home directory (~) to apply custom dead key definitions for UltimateKEYS [SW].</li>
-<li><span style="text-decoration: underline;">System passwords : &nbsp;only "BASIC LATIN" (codes 32 to 126); ALWAYS make the admin/root password VISIBLE during modification !</span></li>
-</ul>
-
-<p>&nbsp;</p>
-
-<h2>List of alternate US-International (UK-) keyboard layouts</h2>
-
-<ul>
-<li style="font-size: 120%;"><a href="list-keyboard-layouts.html" target="_blank"><strong>List of similar-looking alternate US-International (UK-) keyboard layouts</strong></a></li>
-</ul>
+<p><strong>UltimateKEYS is Free Software and is licensed under the <a href="https://www.gnu.org/licenses/gpl-3.0.html" target="_blank">GNU General Public License Version 3</a>.</strong></p>
 
 <p>&nbsp;</p>
 

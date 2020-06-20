@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+
+<title>UltimateKEYS Keyboard Layout</title>
+
+<link rel="shortcut icon" href="favicon.ico" />
+<link rel="fluid-icon" href="fluid-icon.png" title="UltimateKEYS" />
+
+<link rel="stylesheet" type="text/css" href="styles.css" />
+
+</head>
+
+<body>
+<h4><a href="https://pieter-degroote.github.io/UltimateKEYS/">Home Page</a></h4>
+
+<h1>UltimateKEYS Keyboard Layout (Windows/Linux)</h1>
+
+<p>International US QWERTY layout with AltGr (Right Alt) dead keys via AutoHotkey script (Win), MSKLC source (Win, obsolete) and XKB integration (Linux, experimental).<br />
+<a href="https://github.com/pieter-degroote/UltimateKEYS/releases" target="_blank"><img src="https://img.shields.io/github/release/pieter-degroote/UltimateKEYS.svg" alt="GitHub Release" /></a></p>
+
+<h2>Download the latest release</h2>
+
+<ul>
+<li style="font-size: 120%;"><a href="https://github.com/pieter-degroote/UltimateKEYS/releases" target="_blank"><strong>Download - UltimateKEYS - Latest Release</strong></a></li>
+<li style="font-size: 120%;"><a href="https://github.com/pieter-degroote/UltimateKEYS" target="_blank"><strong>UltimateKEYS - GitHub Project Site</strong></a></li>
+<li style="font-size: 120%;"><a href="https://github.com/pieter-degroote/UltimateKEYS-testing" target="_blank"><strong>UltimateKEYS - Testing Repository</strong></a></li>
+</ul>
+
+<p>&nbsp;</p>
+
+<h2>XKB integration (Linux, experimental)</h2>
+
+<p>Experimental support for GNU/Linux via XKB integration (X11) : &nbsp;see the <a href="https://github.com/pieter-degroote/UltimateKEYS/tree/master/linux-xkb" target="_blank">'linux-xkb' folder</a> in this repository.</p>
+
+<p>Follow these steps for experimental integration (at your own risk!) :</p>
+
+<ul>
+<li>Download/Unpack the files "ultkeys", "ultkeys-sw", "rule_xml" and "rule-sw_xml" from the "linux-xkb" folder.</li>
+<li>Copy "ultkeys[-sw]" to "/usr/share/X11/xkb/symbols" (root required).</li>
+<li>Paste the contents of "rule[-sw]_xml" to either "/usr/share/X11/xkb/rules/evdev.xml" or "/usr/share/X11/xkb/rules/evdev.extras.xml", this between the tags &lt;layoutList&gt; and &lt;/layoutList&gt; (root required).</li>
+<li>Both the Classic (files without '-sw') and SW layouts (files with '-sw') can be installed alongside each other. The user interface will distinguish them as "UltimateKEYS" and "UltimateKEYS SW".</li>
+<li>Additionally, the file ".XCompose" can be put in the user's home directory (~) to apply custom dead key definitions for UltimateKEYS [SW].</li>
+<li><span style="text-decoration: underline;">System passwords : &nbsp;only "BASIC LATIN" (codes 32 to 126); ALWAYS make the admin/root password VISIBLE during modification !</span></li>
+</ul>
+
+<p>&nbsp;</p>
+
+<h2>Important - Known limitations of AutoHotkey, Windows and Linux</h2>
+
+<p>Win/Linux : &nbsp;When changing the Windows/Microsoft Live/Linux password, using another keyboard layout (like SW) can INTERFERE in some cases where your keystrokes are either registered via the other layout or as standard US QWERTY.</p>
+
+<p>Win (AHK) : &nbsp;On the login screen, the layout script will NOT be loaded, which can result in the WRONG input !<br />
+Linux : &nbsp;On the login screen, the layout might NOT be available, which can result in the WRONG input !</p>
+
+<p style="font-weight: bold;">=&gt; Win/Linux : &nbsp;<span style="text-decoration: underline;">Only use "BASIC LATIN" characters (codes 32 to 126) for the Windows, Microsoft Live and Linux passwords !</span><br />
+Otherwise, it might be impossible to type any Unicode character higher than "Basic Latin" at the login screen/prompt (due to a different keyboard configuration) !&emsp;-&gt;&emsp;ACCOUNT LOCKOUT<br />
+=&gt; Win/Linux : &nbsp;To be "better safe than sorry", <span style="text-decoration: underline;">ALWAYS make your system passwords VISIBLE during modification !</span></p>
+
+<h4><a href="https://pieter-degroote.github.io/UltimateKEYS/">Home Page</a></h4>
+</body>
+</html>
