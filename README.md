@@ -13,7 +13,7 @@ Otherwise, it might be impossible to type any Unicode character higher than "Bas
 
 ## Website : &nbsp;[ultimatekeys.info](https://pieter-degroote.github.io/UltimateKEYS/)
 
-### [(https://pieter-degroote.github.io/UltimateKEYS/)](https://pieter-degroote.github.io/UltimateKEYS/)
+### ([https://pieter-degroote.github.io/UltimateKEYS/](https://pieter-degroote.github.io/UltimateKEYS/))
 
 ## Releases : &nbsp;https://github.com/pieter-degroote/UltimateKEYS/releases
 
