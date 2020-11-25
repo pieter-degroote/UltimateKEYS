@@ -1466,7 +1466,7 @@ $+0::Send 0   ; digit 0
   Send {blind}{vkE8}  ; suppresses 'Right Alt + Shift' hotkey, circles around mouse pointer and/or other issues (for second character)
   return
 >!+6::
-  Send {blind}{vkE8}  ; suppresses 'Right Alt + Shift' hotkey and/or circles around mouse pointer
+  Send {blind}{vkE8}  ; suppresses 'Right Alt + Shift' hotkey, circles around mouse pointer and/or other issues
   Input, key, L1, {bs}{del}{esc}{home}{end}
   Send % dkCaron.item[key]
   key := ""  ; avoids leaking content via debug properties
