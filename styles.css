@@ -14,4 +14,17 @@ body {
   a {
     color: LightSkyBlue;
   }
+  ::-webkit-scrollbar {
+    background-color: Black;
+    color: #c1b6a6;
+  }
+  ::-webkit-scrollbar-corner {
+    background-color: Black;
+  }
+  ::-webkit-scrollbar-thumb {
+    background-color: #282f34;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #434d53;
+  }
 }
