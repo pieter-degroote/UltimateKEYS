@@ -9,7 +9,7 @@ body {
 @media (prefers-color-scheme: dark) {
   body {
     background: Black;
-    color: Lime;
+    color: LimeGreen;
   }
   a {
     color: LightSkyBlue;
