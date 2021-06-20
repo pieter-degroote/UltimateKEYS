@@ -23,16 +23,16 @@
 
 <p>&nbsp;</p>
 
-<p><strong>Some of the changes concerning the sources include :</strong></p>
+<p><strong>Some of the changes concerning the sources include&nbsp;:</strong></p>
 
-<p>AutoHotkey : &nbsp;a new kind of script to achieve the same functions as with MSLKC, all keys and dead key combinations (etc.) have been 'well-documented' in the comments. :)</p>
+<p>AutoHotkey&nbsp;: &nbsp;a new kind of script to achieve the same functions as with MSLKC, all keys and dead key combinations (etc.) have been ‘well-documented’ in the comments. :)</p>
 
-<p>MSKLC : &nbsp;another implementation, now also with comments for all keys.</p>
+<p>MSKLC&nbsp;: &nbsp;another implementation, now also with comments for all keys.</p>
 
-<p>Linux (X11/xkb, xkeyboard-config) version : &nbsp;a 'very similar (experimental)' implementation, not all dead key descriptions could be 'enforced', due to the more centralized nature of the "/usr/share/X11/locale/en_US.UTF-8/Compose" and "~/.XCompose" files in place... (see: <a href="https://wiki.debian.org/XCompose" target="_blank" rel="noopener">https://wiki.debian.org/XCompose</a>)<br />
-Most hidden characters can be accessed via the 'Multi_key' (AltGr+M).</p>
+<p>Linux (X11/xkb, xkeyboard-config) version&nbsp;: &nbsp;a ‘very similar (experimental)’ implementation, not all dead key descriptions could be ‘enforced’, due to the more centralized nature of the "/usr/share/X11/locale/en_US.UTF-8/Compose" and "~/.XCompose" files in place... (see: <a href="https://wiki.debian.org/XCompose" target="_blank" rel="noopener">https://wiki.debian.org/XCompose</a>)<br />
+Most hidden characters can be accessed via the ‘Multi_key’ (AltGr+M).</p>
 
-<p>Keyboard layout images : &nbsp;<a href="layout-generator-urls.html" target="_blank" rel="noopener">sources available on keyboard-layout-editor.com</a></p>
+<p>Keyboard layout images&nbsp;: &nbsp;<a href="layout-generator-urls.html" target="_blank" rel="noopener">sources available on keyboard-layout-editor.com</a></p>
 
 <p>&nbsp;</p>
 
@@ -40,43 +40,43 @@ Most hidden characters can be accessed via the 'Multi_key' (AltGr+M).</p>
 
 <p>Moved the ligature œ/Œ to AltGr+(Shift+)K (corresponds with existing Linux implementations).</p>
 
-<p>Moved the ligature ij/IJ (ĳ/Ĳ) to the dead key AltGr+' (or AltGr+Shift+_), followed by 'j/J' (normally <em>always</em> two separate characters in Dutch/Flemish).</p>
+<p>Moved the ligature ij/IJ (ĳ/Ĳ) to the dead key AltGr+' (or AltGr+Shift+_), followed by ‘j/J’ (normally <em>always</em> two separate characters in Dutch/Flemish).</p>
 
-<p>Avoid confusion with signs similar to the degree sign (°) : &nbsp;removed 'empty ring above'
+<p>Avoid confusion with signs similar to the degree sign (°)&nbsp;: &nbsp;removed ‘empty ring above’
 and put masculine (º) and feminine (ª) ordinal indicator to dead key (AltGr+\) (º and ª are only applicable for Spanish, Portuguese, Italian, Galician).</p>
 
 <p>Added copyright sign (©) to AltGr+2, instead of ª.</p>
 
 <p>Added plus-minus sign (±) to AltGr+3, instead of º (no confusion with degree sign anymore... ;) ).</p>
 
-<p>AltGr+7, followed by 'space' (or not allowed character in MSKLC implementation) : &nbsp;produces 'empty dot above' (˙) (no confusion with degree sign either).</p>
+<p>AltGr+7, followed by ‘space’ (or not allowed character in MSKLC implementation)&nbsp;: &nbsp;produces ‘empty dot above’ (˙) (no confusion with degree sign either).</p>
 
-<p>The letter 'eth' (ð/Ð) has been put back, accompanying 'thorn' (þ/Þ) on the layout...<br />
-Indeed, the languages Icelandic, Faroese (and Elfdalian) are not that widely used/spoken, but that's a 'different something' for the future...</p>
+<p>The letter ‘eth’ (ð/Ð) has been put back, accompanying ‘thorn’ (þ/Þ) on the layout...<br />
+Indeed, the languages Icelandic, Faroese (and Elfdalian) are not that widely used/spoken, but that’s a ‘different something’ for the future...</p>
 
 <p>Added back the dagger (†), plus double dagger (‡) to the layout (AltGr+(Shift+)P).</p>
 
-<p>Added a separate dead key for 'cedilla/ogonek' and 'breve/special' (AltGr+(Shift+)-).</p>
+<p>Added a separate dead key for ‘cedilla/ogonek’ and ‘breve/special’ (AltGr+(Shift+)-).</p>
 
-<p>The pilcrow sign (¶) also got a place on the main layout (AltGr+Shift+8), as the 'single low-9 quotation mark' (‚) is rather rarely used... and is thus put on a dead key combination (AltGr+\ then 'q/Q').</p>
+<p>The pilcrow sign (¶) also got a place on the main layout (AltGr+Shift+8), as the ‘single low-9 quotation mark’ (‚) is rather rarely used... and is thus put on a dead key combination (AltGr+\ then ‘q/Q’).</p>
 
-<p>The capital Eszett (ẞ) got its place on the dead key AltGr+' (or AltGr+Shift+_), followed by 'ß' (AltGr+s) (not widely used at the time...).<br />
-The section sign (§) got its place back on 'AltGr+Shift+S'.</p>
+<p>The capital Eszett (ẞ) got its place on the dead key AltGr+' (or AltGr+Shift+_), followed by ‘ß’ (AltGr+s) (not widely used at the time...).<br />
+The section sign (§) got its place back on ‘AltGr+Shift+S’.</p>
 
-<p>Added support for the Hungarian letters ő/Ő and ű/Ű via AltGr+', followed by 'ö/Ö' or 'ü/Ü'.</p>
+<p>Added support for the Hungarian letters ő/Ő and ű/Ű via AltGr+', followed by ‘ö/Ö’ or ‘ü/Ü’.</p>
 
 
-<p>Another tweak : &nbsp;recent releases also feature "Smart error-tolerant optimization for circumflex in French", allowing you to type the letters â, ê, î, ô, û more easily (for AHK, MSKLC and Linux).</p>
+<p>Another tweak&nbsp;: &nbsp;recent releases also feature “Smart error-tolerant optimization for circumflex in French”, allowing you to type the letters â, ê, î, ô, û more easily (for AHK, MSKLC and Linux).</p>
 
 <p>Plus lots of other changes and/or improvements... ;)</p>
 
 <p>&nbsp;</p>
 
-<h2>Important - Security Warning :</h2>
+<h2>Important - Security Warning&nbsp;:</h2>
 
-<p><strong>=&gt; Win/Linux : &nbsp;<span style="text-decoration: underline;">Only use "BASIC LATIN" characters (codes 32 to 126) for your Windows, Microsoft Live and Linux passwords !</span></strong><br />
-Otherwise, it might be impossible to type any Unicode character higher than "Basic Latin" at the login screen/prompt (due to a different keyboard configuration) !&emsp;<strong>=&gt;&emsp;ACCOUNT LOCKOUT<br />
-=&gt; Win/Linux : &nbsp;<span style="text-decoration: underline;">ALWAYS make your system passwords VISIBLE during modification !</span></strong></p>
+<p><strong>=&gt; Win/Linux&nbsp;: &nbsp;<span style="text-decoration: underline;">Only use “BASIC LATIN” characters (codes 32 to 126) for your Windows, Microsoft Live and Linux passwords&nbsp;!</span></strong><br />
+Otherwise, it might be impossible to type any Unicode character higher than “Basic Latin” at the login screen/prompt (due to a different keyboard configuration)&nbsp;!&emsp;<strong>=&gt;&emsp;ACCOUNT LOCKOUT<br />
+=&gt; Win/Linux&nbsp;: &nbsp;<span style="text-decoration: underline;">ALWAYS make your system passwords VISIBLE during modification&nbsp;!</span></strong></p>
 
 <p>&nbsp;</p>
 
