@@ -1,6 +1,6 @@
 # UltimateKEYS Keyboard Layout (Windows/Linux)
 
-International US QWERTY layout with AltGr (Right Alt) dead keys via AutoHotkey (Win), MSKLC (Win) and XKB integration (Linux, experimental). Derived from EurKEY (by Steffen Br&uuml;ntjen).
+International US QWERTY layout with AltGr (Right Alt) dead keys via AutoHotkey (Win), MSKLC (Win) and XKB integration (Linux, experimental). Derived from EurKEY (by Steffen Brüntjen).
 
 **Official release&nbsp;:**&emsp;[![GitHub Release](https://img.shields.io/github/release/pieter-degroote/UltimateKEYS.svg)](https://github.com/pieter-degroote/UltimateKEYS/releases)  
 **Testing release&nbsp;:**&emsp;[![GitHub Testing](https://img.shields.io/github/release/pieter-degroote/UltimateKEYS-testing.svg?label=testing)](https://github.com/pieter-degroote/UltimateKEYS-testing/releases)
