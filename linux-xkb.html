@@ -19,7 +19,7 @@
 
 <h1>UltimateKEYS Keyboard Layout (Windows/Linux)</h1>
 
-<p>International US QWERTY layout with AltGr (Right Alt) dead keys via AutoHotkey (Win), MSKLC (Win) and XKB integration (Linux).</p>
+<p>International US QWERTY layout with AltGr (Right Alt) dead keys via AutoHotkey (Win), MSKLC (Win) and XKB (Linux).</p>
 
 <h2>Download the latest release</h2>
 
@@ -33,7 +33,7 @@
 
 <h2>XKB integration (Linux, experimental)</h2>
 
-<p>Experimental support for GNU/Linux via XKB integration (X11)&nbsp;: &nbsp;see the <a href="https://github.com/pieter-degroote/UltimateKEYS/tree/master/linux-xkb" target="_blank" rel="noopener">'linux-xkb' folder</a> in this repository.</p>
+<p>Experimental support for GNU/Linux via XKB integration (X11)&nbsp;: &nbsp;see the <a href="https://github.com/pieter-degroote/UltimateKEYS/tree/master/linux-xkb" target="_blank" rel="noopener">‘linux-xkb’ folder</a> in this repository.</p>
 
 <p>Follow these steps for experimental integration (at your own risk!)&nbsp;:</p>
 
@@ -42,7 +42,7 @@
 <li>Copy "ultkeys[-sw]" to "/usr/share/X11/xkb/symbols" (root required).</li>
 <li>Paste the contents of "rule[-sw]_xml" to either "/usr/share/X11/xkb/rules/evdev.xml" or "/usr/share/X11/xkb/rules/evdev.extras.xml", this between the tags &lt;layoutList&gt; and &lt;/layoutList&gt; (root required).<br />
 <span style="text-decoration: underline;">Make sure to keep a backup copy of the original files.</span></li>
-<li>Both the Classic (files without ‘-sw’) and SW layouts (files with ‘-sw’) can be installed alongside each other. The user interface will distinguish them as "UltimateKEYS" and "UltimateKEYS SW".</li>
+<li>Both the Classic (files without ‘-sw’) and SW layouts (files with ‘-sw’) can be installed alongside each other. The user interface will display them as "UltimateKEYS" and "UltimateKEYS SW".</li>
 <li>Additionally, the file ".XCompose" can be put in the user’s home directory (~) to apply custom dead key definitions for UltimateKEYS [SW].</li>
 <li><span style="text-decoration: underline;">System passwords&nbsp;: &nbsp;only “BASIC LATIN” (codes 32 to 126); ALWAYS make the admin/root password VISIBLE during modification&nbsp;!</span></li>
 </ul>
