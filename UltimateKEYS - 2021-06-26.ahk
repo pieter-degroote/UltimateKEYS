@@ -2,9 +2,9 @@
 
 ; Created by :  Pieter Degroote
 
-; License :  GNU General Public License Version 3
+; License :     GNU General Public License Version 3
 
-; GitHub :   https://github.com/pieter-degroote/UltimateKEYS
+; GitHub :      https://github.com/pieter-degroote/UltimateKEYS
 
 
 ; Requirements :
