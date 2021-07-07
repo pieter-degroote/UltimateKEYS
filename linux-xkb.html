@@ -1,0 +1,93 @@
+<!doctype html>
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+
+<title>UltimateKEYS Keyboard Layout</title>
+
+<link rel="shortcut icon" href="favicon.ico" />
+<link rel="fluid-icon" href="fluid-icon.png" title="UltimateKEYS" />
+
+<link rel="stylesheet" type="text/css" href="styles.css" />
+
+</head>
+
+<body>
+<h4><a href="https://pieter-degroote.github.io/UltimateKEYS/">UltimateKEYS.info</a>&emsp;&emsp;<a href="https://pieter-degroote.github.io/">Pieter-Degroote.info</a>&emsp;&emsp;<a href="https://github.com/pieter-degroote/UltimateKEYS/releases" target="_blank" rel="noopener"><img src="https://img.shields.io/github/release/pieter-degroote/UltimateKEYS.svg" alt="GitHub Release" /></a>&emsp;&emsp;<a href="https://github.com/pieter-degroote/UltimateKEYS-testing/releases" target="_blank" rel="noopener"><img src="https://img.shields.io/github/release/pieter-degroote/UltimateKEYS-testing.svg?label=testing" alt="GitHub Testing" /></a></h4>
+
+<h1>UltimateKEYS Keyboard Layout (Windows/Linux)</h1>
+
+<p>International US QWERTY layout with AltGr (Right Alt) dead keys via AutoHotkey (Win), MSKLC (Win), Xmodmap (Linux) and XKB (Linux).</p>
+
+<h2>Download the latest release</h2>
+
+<ul style="font-size: 120%;">
+<li><a href="https://github.com/pieter-degroote/UltimateKEYS/releases" target="_blank" rel="noopener"><strong>Download - UltimateKEYS - Latest Release</strong></a></li>
+<li><a href="https://github.com/pieter-degroote/UltimateKEYS" target="_blank" rel="noopener"><strong>UltimateKEYS - GitHub Project Site</strong></a></li>
+<li><a href="https://github.com/pieter-degroote/UltimateKEYS-testing" target="_blank" rel="noopener"><strong>UltimateKEYS - Testing Repository</strong></a></li>
+</ul>
+
+<p>&nbsp;</p>
+
+<h2>XKB integration (Linux, experimental)</h2>
+
+<p>Experimental support for GNU/Linux via XKB integration (X11)&nbsp;: &nbsp;see the <a href="https://github.com/pieter-degroote/UltimateKEYS/tree/master/linux-xkb" target="_blank" rel="noopener">‘linux-xkb’ folder</a> in this repository.</p>
+
+<p>Follow these steps for experimental integration (at your own risk!)&nbsp;:</p>
+
+<ul>
+<li>Download/Unpack the files "ultkeys", "ultkeys-sw", "rule_xml" and "rule-sw_xml" from the "linux-xkb" folder.</li>
+<li>Copy "ultkeys[-sw]" to "/usr/share/X11/xkb/symbols" (root required).</li>
+<li>Paste the contents of "rule[-sw]_xml" to either "/usr/share/X11/xkb/rules/evdev.xml" or "/usr/share/X11/xkb/rules/evdev.extras.xml", this between the tags &lt;layoutList&gt; and &lt;/layoutList&gt; (root required).<br />
+<span style="text-decoration: underline;">Make sure to keep a backup copy of the original files.</span></li>
+<li>Both the Classic (files without ‘-sw’) and SW layouts (files with ‘-sw’) can be installed alongside each other. The user interface will display them as "UltimateKEYS" and "UltimateKEYS SW".</li>
+<li>Additionally, the file ".XCompose" can be put in the user’s home directory (~) to apply custom dead key definitions for UltimateKEYS [SW].</li>
+<li><span style="text-decoration: underline;">System passwords&nbsp;: &nbsp;only “BASIC LATIN” (codes 32 to 126); ALWAYS make the admin/root password VISIBLE during modification&nbsp;!</span></li>
+</ul>
+
+<p>&nbsp;</p>
+
+<h2>Important - Known limitations of AutoHotkey, Windows and Linux</h2>
+
+<p>Win/Linux&nbsp;: &nbsp;When changing the Windows/Microsoft Live/Linux password, using another keyboard layout (like SW) can INTERFERE in some cases where your keystrokes are either registered via the other layout or as standard US QWERTY.</p>
+
+<p>Win (AHK)&nbsp;: &nbsp;On the login screen, the layout script will NOT be loaded, which can result in the WRONG input&nbsp;!<br />
+Linux&nbsp;: &nbsp;On the login screen, the layout might NOT be available, which can result in the WRONG input&nbsp;!</p>
+
+<p><strong>=&gt; Win/Linux&nbsp;: &nbsp;<span style="text-decoration: underline;">Only use “BASIC LATIN” characters (codes 32 to 126) for your Windows, Microsoft Live and Linux passwords&nbsp;!</span></strong><br />
+Otherwise, it might be impossible to type any Unicode character higher than “Basic Latin” at the login screen/prompt (due to a different keyboard configuration)&nbsp;!&emsp;<strong>=&gt;&emsp;ACCOUNT LOCKOUT<br />
+=&gt; Win/Linux&nbsp;: &nbsp;To be “better safe than sorry”, <span style="text-decoration: underline;">ALWAYS make your system passwords VISIBLE during modification&nbsp;!</span></strong></p>
+
+<p>&nbsp;</p>
+
+<h2>Keyboard Layout Image - Classic (Linux)</h2>
+
+<img src="images/UltimateKEYS (Linux) - Keyboard Layout Image.png" width="1208" height="425" alt="UltimateKEYS (Linux) - Keyboard Layout Image.png" />
+
+<p>-&gt; Blue keys&nbsp;: &nbsp;dead keys in combination with <em>AltGr (+Shift)</em>.<br />
+-&gt; Mk (see M)&nbsp;: &nbsp;defined as ‘Multi_key’ in combination with <em>AltGr (+Shift)</em>.</p>
+
+<p>&nbsp;</p>
+
+<h2>Keyboard Layout Image - SW (Linux)</h2>
+
+<img src="images/UltimateKEYS SW (Linux) - Keyboard Layout Image.png" width="1208" height="425" alt="UltimateKEYS SW (Linux) - Keyboard Layout Image.png" />
+
+<p>-&gt; Blue keys&nbsp;: &nbsp;dead keys in combination with <em>AltGr (+Shift)</em>.<br />
+-&gt; Mk (see M)&nbsp;: &nbsp;defined as ‘Multi_key’ in combination with <em>AltGr (+Shift)</em>.</p>
+
+<p>&nbsp;</p>
+
+<p><a href="layout-generator-urls.html" target="_blank" rel="noopener">Sources available on keyboard-layout-editor.com</a></p>
+
+<p>&nbsp;</p>
+
+<h4><a href="https://pieter-degroote.github.io/UltimateKEYS/">UltimateKEYS.info</a>&emsp;&emsp;<a href="https://pieter-degroote.github.io/">Pieter-Degroote.info</a>&emsp;&emsp;<a href="https://github.com/pieter-degroote/UltimateKEYS/releases" target="_blank" rel="noopener"><img src="https://img.shields.io/github/release/pieter-degroote/UltimateKEYS.svg" alt="GitHub Release" /></a>&emsp;&emsp;<a href="https://github.com/pieter-degroote/UltimateKEYS-testing/releases" target="_blank" rel="noopener"><img src="https://img.shields.io/github/release/pieter-degroote/UltimateKEYS-testing.svg?label=testing" alt="GitHub Testing" /></a></h4>
+
+<p style="font-size: 10px;">UltimateKEYS is Free Software and is licensed under the <a href="https://www.gnu.org/licenses/gpl-3.0.html" target="_blank" rel="noopener">GNU General Public License Version 3</a>.<br />
+This website and its contents are licensed under the <a href="https://www.gnu.org/licenses/fdl-1.3.html" target="_blank" rel="noopener">GNU Free Documentation License Version 1.3</a>.</p>
+
+</body>
+</html>
