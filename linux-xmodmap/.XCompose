@@ -1,0 +1,23 @@
+# UltimateKEYS [SW]  (~/.XCompose)
+
+# Created by :  Pieter Degroote
+
+# License :     GNU General Public License Version 3
+
+# GitHub :      https://github.com/pieter-degroote/UltimateKEYS
+
+
+include "%L"
+
+# Smart error-tolerant optimization for circumflex in French
+
+<dead_circumflex> <adiaeresis> : "â"   acircumflex # LATIN SMALL LETTER A WITH CIRCUMFLEX
+<dead_circumflex> <Adiaeresis> : "Â"   Acircumflex # LATIN CAPITAL LETTER A WITH CIRCUMFLEX
+<dead_circumflex> <ediaeresis> : "ê"   ecircumflex # LATIN SMALL LETTER E WITH CIRCUMFLEX
+<dead_circumflex> <Ediaeresis> : "Ê"   Ecircumflex # LATIN CAPITAL LETTER E WITH CIRCUMFLEX
+<dead_circumflex> <idiaeresis> : "î"   icircumflex # LATIN SMALL LETTER I WITH CIRCUMFLEX
+<dead_circumflex> <Idiaeresis> : "Î"   Icircumflex # LATIN CAPITAL LETTER I WITH CIRCUMFLEX
+<dead_circumflex> <odiaeresis> : "ô"   ocircumflex # LATIN SMALL LETTER O WITH CIRCUMFLEX
+<dead_circumflex> <Odiaeresis> : "Ô"   Ocircumflex # LATIN CAPITAL LETTER O WITH CIRCUMFLEX
+<dead_circumflex> <udiaeresis> : "û"   ucircumflex # LATIN SMALL LETTER U WITH CIRCUMFLEX
+<dead_circumflex> <Udiaeresis> : "Û"   Ucircumflex # LATIN CAPITAL LETTER U WITH CIRCUMFLEX

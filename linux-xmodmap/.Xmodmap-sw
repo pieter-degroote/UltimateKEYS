@@ -1,0 +1,60 @@
+! UltimateKEYS SW  (~/.Xmodmap-sw)
+
+! Created by :  Pieter Degroote
+
+! License :     GNU General Public License Version 3
+
+! GitHub :      https://github.com/pieter-degroote/UltimateKEYS
+
+
+keycode  10 = exclam       1            exclamdown           onesuperior
+keycode  11 = at           2            copyright            twosuperior
+keycode  12 = numbersign   3            plusminus            threesuperior
+keycode  13 = dollar       4            sterling             yen
+keycode  14 = percent      5            EuroSign             cent
+keycode  15 = asciicircum  6            dead_circumflex      dead_caron
+keycode  16 = ampersand    7            dead_abovering       dead_macron
+keycode  17 = asterisk     8            doublelowquotemark   paragraph
+keycode  18 = parenleft    9            leftdoublequotemark  leftsinglequotemark
+keycode  19 = parenright   0            rightdoublequotemark rightsinglequotemark
+keycode  20 = minus        underscore   dead_cedilla         dead_breve
+keycode  21 = equal        plus         multiply             division
+keycode  24 = q            Q            ae                   AE
+keycode  25 = w            W            aring                Aring
+keycode  26 = e            E            ediaeresis           Ediaeresis
+keycode  27 = r            R            yacute               Yacute
+keycode  28 = t            T            thorn                THORN
+keycode  29 = y            Y            ydiaeresis           Ydiaeresis
+keycode  30 = u            U            udiaeresis           Udiaeresis
+keycode  31 = i            I            idiaeresis           Idiaeresis
+keycode  32 = o            O            odiaeresis           Odiaeresis
+keycode  33 = p            P            dagger               doubledagger
+keycode  34 = bracketleft  braceleft    guillemotleft        U2039
+keycode  35 = bracketright braceright   guillemotright       U203A
+keycode  38 = a            A            adiaeresis           Adiaeresis
+keycode  39 = s            S            ssharp               section
+keycode  40 = d            D            eth                  ETH
+keycode  41 = f            F            egrave               Egrave
+keycode  42 = g            G            eacute               Eacute
+keycode  43 = h            H            ugrave               Ugrave
+keycode  44 = j            J            uacute               Uacute
+keycode  45 = k            K            oe                   OE
+keycode  46 = l            L            oslash               Ooblique
+keycode  47 = semicolon    colon        degree               periodcentered
+keycode  48 = apostrophe   quotedbl     dead_acute           dead_diaeresis
+keycode  49 = grave        asciitilde   dead_grave           dead_tilde
+keycode  51 = backslash    bar          dead_greek           dead_currency
+keycode  52 = z            Z            agrave               Agrave
+keycode  53 = x            X            aacute               Aacute
+keycode  54 = c            C            ccedilla             Ccedilla
+keycode  55 = v            V            igrave               Igrave
+keycode  56 = b            B            iacute               Iacute
+keycode  57 = n            N            ntilde               Ntilde
+keycode  58 = m            M            Multi_key            Multi_key
+keycode  59 = comma        less         ograve               Ograve
+keycode  60 = period       greater      oacute               Oacute
+keycode  61 = slash        question     questiondown         ellipsis
+keycode  65 = space        space        nobreakspace         nobreakspace
+keycode  91 = KP_Delete    KP_Decimal
+keycode  94 = backslash    bar          backslash            bar
+keycode 108 = Mode_switch  Mode_switch
