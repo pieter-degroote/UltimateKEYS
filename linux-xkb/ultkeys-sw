@@ -51,7 +51,7 @@ xkb_symbols "basic" {
         key <AE04> { [ dollar,       4,            sterling,             yen                  ] };
         key <AE05> { [ percent,      5,            EuroSign,             cent                 ] };
         key <AE06> { [ asciicircum,  6,            dead_circumflex,      dead_caron           ] };
-        key <AE07> { [ ampersand,    7,            dead_abovering,       dead_macron          ] };
+        key <AE07> { [ ampersand,    7,            dead_abovedot,        dead_macron          ] };
         key <AE08> { [ asterisk,     8,            doublelowquotemark,   paragraph            ] };
         key <AE09> { [ parenleft,    9,            leftdoublequotemark,  leftsinglequotemark  ] };
         key <AE10> { [ parenright,   0,            rightdoublequotemark, rightsinglequotemark ] };
