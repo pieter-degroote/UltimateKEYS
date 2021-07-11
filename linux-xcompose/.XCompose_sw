@@ -157,11 +157,12 @@ include "%L"
 <dead_greek> <q>      : "ω"  U03C9  # small omega
 <dead_greek> <Q>      : "Ω"  U03A9  # capital omega
 
-<Multi_key> <asciitilde> <asciitilde> : "≈"  U2248    # almost equal to
+<Multi_key> <e> <p>                   : "∎"  U220E    # end of proof
 <Multi_key> <v> <3>                   : "∛"  U221B    # cube root
 <Multi_key> <3> <v>                   : "∛"  U221B    # cube root
 <Multi_key> <v> <4>                   : "∜"  U221C    # fourth root
 <Multi_key> <4> <v>                   : "∜"  U221C    # fourth root
+<Multi_key> <asciitilde> <asciitilde> : "≈"  U2248    # almost equal to
 
 
 # Smart error-tolerant optimization for circumflex in French
