@@ -31,20 +31,23 @@
 
 <p>&nbsp;</p>
 
-<h2>XKB integration (Linux) -> without root</h2>
+<h2>XKB integration (Linux)</h2>
+
+<p>Integration in GNU/Linux via XKB (X11)&nbsp;: &nbsp;see the folders ‘<a href="https://github.com/pieter-degroote/UltimateKEYS/tree/master/linux-xkb" target="_blank" rel="noopener">linux-xkb</a>’ and ‘<a href="https://github.com/pieter-degroote/UltimateKEYS/tree/master/linux-xcompose" target="_blank" rel="noopener">linux-xcompose</a>’ in this repository.</p>
+
+<h3>-&gt; without root</h3>
 
 <ul>
 <li>Download/Unpack the files "ultkeys", "ultkeys-sw", "map" and "map_sw" from the "linux-xkb" folder.</li>
 <li>Copy "ultkeys[-sw]" to "~/.config/xkb/symbols".</li>
 <li>Copy "map" to "~/.config/xkb/" (or rename "map_sw" to "map" and copy to this location).</li>
 <li>Activation&nbsp;: &nbsp;xkbcomp -w 0 -I$HOME/.config/xkb $HOME/.config/xkb/map $DISPLAY</i>
+<li>Additionally, the file ".XCompose" can be put in the user’s home directory (~) to apply custom dead key definitions for UltimateKEYS [SW] (see the folder "linux-xcompose").</li>
 </ul>
 
 <p>&nbsp;</p>
 
-<h2>XKB integration (Linux) -> with root - experimental</h2>
-
-<p>Experimental support for GNU/Linux via XKB integration (X11)&nbsp;: &nbsp;see the <a href="https://github.com/pieter-degroote/UltimateKEYS/tree/master/linux-xkb" target="_blank" rel="noopener">‘linux-xkb’ folder</a> in this repository.</p>
+<h3>-&gt; with root - experimental</h3>
 
 <p>Follow these steps for experimental integration (at your own risk!)&nbsp;:</p>
 
@@ -54,7 +57,7 @@
 <li>Paste the contents of "rule[-sw]_xml" to either "/usr/share/X11/xkb/rules/evdev.xml" or "/usr/share/X11/xkb/rules/evdev.extras.xml", this between the tags &lt;layoutList&gt; and &lt;/layoutList&gt; (root required).<br />
 <span style="text-decoration: underline;">Make sure to keep a backup copy of the original files.</span></li>
 <li>Both the Classic (files without ‘-sw’) and SW layouts (files with ‘-sw’) can be installed alongside each other. The user interface will display them as "UltimateKEYS" and "UltimateKEYS SW".</li>
-<li>Additionally, the file ".XCompose" can be put in the user’s home directory (~) to apply custom dead key definitions for UltimateKEYS [SW].</li>
+<li>Additionally, the file ".XCompose" can be put in the user’s home directory (~) to apply custom dead key definitions for UltimateKEYS [SW] (see the folder "linux-xcompose").</li>
 </ul>
 
 <p>&nbsp;</p>
