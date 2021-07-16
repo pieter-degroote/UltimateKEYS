@@ -31,7 +31,18 @@
 
 <p>&nbsp;</p>
 
-<h2>XKB integration (Linux, experimental - root required)</h2>
+<h2>XKB integration (Linux, without root)</h2>
+
+<ul>
+<li>Download/Unpack the files "ultkeys", "ultkeys-sw", "map" and "map_sw" from the "linux-xkb" folder.</li>
+<li>Copy "ultkeys[-sw]" to "~/.config/xkb/symbols".</li>
+<li>Copy "map" to "~/.config/xkb/" (or rename "map_sw" to "map" and copy to this location).</li>
+<li>Activation&nbsp;: &nbsp;xkbcomp -w 0 -I$HOME/.config/xkb $HOME/.config/xkb/map $DISPLAY</i>
+</ul>
+
+<p>&nbsp;</p>
+
+<h2>XKB integration (Linux, with root - experimental)</h2>
 
 <p>Experimental support for GNU/Linux via XKB integration (X11)&nbsp;: &nbsp;see the <a href="https://github.com/pieter-degroote/UltimateKEYS/tree/master/linux-xkb" target="_blank" rel="noopener">‘linux-xkb’ folder</a> in this repository.</p>
 
@@ -39,12 +50,11 @@
 
 <ul>
 <li>Download/Unpack the files "ultkeys", "ultkeys-sw", "rule_xml" and "rule-sw_xml" from the "linux-xkb" folder.</li>
-<li>Copy "ultkeys[-sw]" to "/usr/share/X11/xkb/symbols" (root required).</li>
+<li>Copy "ultkeys[-sw]" to "/usr/share/X11/xkb/symbols/" (root required).</li>
 <li>Paste the contents of "rule[-sw]_xml" to either "/usr/share/X11/xkb/rules/evdev.xml" or "/usr/share/X11/xkb/rules/evdev.extras.xml", this between the tags &lt;layoutList&gt; and &lt;/layoutList&gt; (root required).<br />
 <span style="text-decoration: underline;">Make sure to keep a backup copy of the original files.</span></li>
 <li>Both the Classic (files without ‘-sw’) and SW layouts (files with ‘-sw’) can be installed alongside each other. The user interface will display them as "UltimateKEYS" and "UltimateKEYS SW".</li>
 <li>Additionally, the file ".XCompose" can be put in the user’s home directory (~) to apply custom dead key definitions for UltimateKEYS [SW].</li>
-<li><span style="text-decoration: underline;">System passwords&nbsp;: &nbsp;only “BASIC LATIN” (codes 32 to 126); ALWAYS make the admin/root password VISIBLE during modification&nbsp;!</span></li>
 </ul>
 
 <p>&nbsp;</p>
