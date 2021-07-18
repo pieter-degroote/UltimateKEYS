@@ -77,6 +77,10 @@ include "%L"
 <dead_breve> <F>          : "Ə"  U018F  # capital letter schwa (Azerbaijani)
 <dead_breve> <eacute>     : "ɣ"  U0263  # latin small gamma
 <dead_breve> <Eacute>     : "Ɣ"  U0194  # latin capital gamma
+<dead_breve> <h>          : "ꜧ"  UA727  # small letter heng
+<dead_breve> <H>          : "Ꜧ"  UA726  # capital letter heng
+<dead_breve> <k>          : "ƙ"  U0199  # k with hook
+<dead_breve> <K>          : "Ƙ"  U0198  # K with hook
 <dead_breve> <m>          : "ɱ"  U0271  # m with hook
 <dead_breve> <M>          : "Ɱ"  U2C6E  # M with hook
 <dead_breve> <n>          : "ŋ"  U014B  # small letter eng(ma)
@@ -85,6 +89,10 @@ include "%L"
 <dead_breve> <Ntilde>     : "Ɲ"  U019D  # N with left hook
 <dead_breve> <odiaeresis> : "ɔ"  U0254  # small open o
 <dead_breve> <Odiaeresis> : "Ɔ"  U0186  # capital open O
+<dead_breve> <p>          : "ƥ"  U01A5  # p with hook
+<dead_breve> <P>          : "Ƥ"  U01A4  # P with hook
+<dead_breve> <r>          : "ɽ"  U027D  # r with tail
+<dead_breve> <R>          : "Ɽ"  U2C64  # R with tail
 <dead_breve> <s>          : "ș"  U0219  # s with comma below (Romanian)
 <dead_breve> <S>          : "Ș"  U0218  # S with comma below (Romanian)
 <dead_breve> <t>          : "ț"  U021B  # t with comma below (Romanian)
@@ -97,6 +105,8 @@ include "%L"
 <dead_breve> <Aring>      : "Ⱳ"  U2C72  # W with hook
 <dead_breve> <y>          : "ȝ"  U021D  # small letter yogh
 <dead_breve> <Y>          : "Ȝ"  U021C  # capital letter yogh
+<dead_breve> <z>          : "ȥ"  U0225  # z with hook
+<dead_breve> <Z>          : "Ȥ"  U0224  # Z with hook
 <dead_breve> <3>          : "ʒ"  U0292  # small letter ezh
 <dead_breve> <numbersign> : "Ʒ"  U01B7  # capital letter ezh
 
@@ -114,20 +124,8 @@ include "%L"
 <dead_acute> <Eacute>      : "Ɠ"  U0193    # G with hook
 <dead_acute> <h>           : "ɦ"  U0266    # h with hook
 <dead_acute> <H>           : "Ɦ"  UA7AA    # H with hook
-<dead_acute> <ugrave>      : "ꜧ"  UA727    # small letter heng
-<dead_acute> <Ugrave>      : "Ꜧ"  UA726    # capital letter heng
-<dead_acute> <k>           : "ƙ"  U0199    # k with hook
-<dead_acute> <K>           : "Ƙ"  U0198    # K with hook
-<dead_acute> <oe>          : "ḱ"  U1E31    # k with acute
-<dead_acute> <OE>          : "Ḱ"  U1E30    # K with acute
-<dead_acute> <p>           : "ƥ"  U01A5    # p with hook
-<dead_acute> <P>           : "Ƥ"  U01A4    # P with hook
-<dead_acute> <ocircumflex> : "ṕ"  U1E55    # p with acute
-<dead_acute> <Ocircumflex> : "Ṕ"  U1E54    # P with acute
 <dead_acute> <q>           : "ɋ"  U024B    # q with tail
 <dead_acute> <Q>           : "Ɋ"  U024A    # Q with tail
-<dead_acute> <ecircumflex> : "ɽ"  U027D    # r with tail
-<dead_acute> <Ecircumflex> : "Ɽ"  U2C64    # R with tail
 <dead_acute> <t>           : "ƭ"  U01AD    # t with hook
 <dead_acute> <T>           : "Ƭ"  U01AC    # T with hook
 <dead_acute> <v>           : "ʋ"  U028B    # v with hook
@@ -136,23 +134,22 @@ include "%L"
 <dead_acute> <Igrave>      : "Ʌ"  U0245    # latin capital letter turned V
 <dead_acute> <ucircumflex> : "ƴ"  U01B4    # y with hook
 <dead_acute> <Ucircumflex> : "Ƴ"  U01B3    # Y with hook
-<dead_acute> <agrave>      : "ȥ"  U0225    # z with hook
-<dead_acute> <Agrave>      : "Ȥ"  U0224    # Z with hook
 
 <dead_grave> <d> : "ð"  eth    # small letter eth
 <dead_grave> <D> : "Ð"  ETH    # capital letter eth
-<dead_grave> <t> : "þ"  thorn  #small letter thorn
-<dead_grave> <T> : "Þ"  THORN  #capital letter thorn
+<dead_grave> <t> : "þ"  thorn  # small letter thorn
+<dead_grave> <T> : "Þ"  THORN  # capital letter thorn
 
 <dead_tilde> <g> : "ꬶ"  UAB36  # cross-tailed g
 <dead_tilde> <h> : "ɧ"  U0267  # small letter heng with hook
+<dead_tilde> <k> : "ĸ"  U0138  # small letter kra
 <dead_tilde> <s> : "ʃ"  U0283  # small letter esh
 <dead_tilde> <S> : "Ʃ"  U01A9  # capital letter esh
 
 <dead_greek> <v>      : "β"  U03B2  # small beta
 <dead_greek> <V>      : "Β"  U0392  # capital beta
-<dead_greek> <comma>  : "ς"  U03C2  # small sigma, in word-final position
-<dead_greek> <ssharp> : "ς"  U03C2  # small sigma, in word-final position
+<dead_greek> <comma>  : "ς"  U03C2  # small final sigma
+<dead_greek> <ssharp> : "ς"  U03C2  # small final sigma
 <dead_greek> <y>      : "υ"  U03C5  # small upsilon
 <dead_greek> <Y>      : "Υ"  U03A5  # capital upsilon
 <dead_greek> <c>      : "χ"  U03C7  # small chi
