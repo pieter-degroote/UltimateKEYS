@@ -1,4 +1,4 @@
-KBD	ultkeys	"UltimateKEYS SW - 2021-07-15"
+KBD	ultksw	"UltimateKEYS SW - 2021-07-17"
 
 COPYRIGHT	"License: GNU General Public License Version 3"
 
@@ -389,11 +389,14 @@ DEADKEY	02d8	// Dead Key :  Breve/Special
 0047	011e	// G -> Ğ    G with breve
 00e9	0263	// é -> ɣ    latin small gamma
 00c9	0194	// É -> Ɣ    latin capital gamma
+0068	a727	// h -> ꜧ    small letter heng
+0048	a726	// H -> Ꜧ    capital letter heng
 0069	012d	// i -> ĭ    i with breve
 0049	012c	// I -> Ĭ    I with breve
 006a	0133	// j -> ĳ    ligature ij
 004a	0132	// J -> Ĳ    ligature IJ
-006b	0138	// k -> ĸ    small letter kra
+006b	0199	// k -> ƙ    k with hook
+004b	0198	// K -> Ƙ    K with hook
 006d	0271	// m -> ɱ    m with hook
 004d	2c6e	// M -> Ɱ    M with hook
 006e	014b	// n -> ŋ    small letter eng(ma)
@@ -404,6 +407,10 @@ DEADKEY	02d8	// Dead Key :  Breve/Special
 004f	014e	// O -> Ŏ    O with breve
 00f6	0254	// ö -> ɔ    small open o
 00d6	0186	// Ö -> Ɔ    capital open O
+0070	01a5	// p -> ƥ    p with hook
+0050	01a4	// P -> Ƥ    P with hook
+0072	027d	// r -> ɽ    r with tail
+0052	2c64	// R -> Ɽ    R with tail
 0073	0219	// s -> ș    s with comma below (Romanian)
 0053	0218	// S -> Ș    S with comma below (Romanian)
 00df	1e9e	// ß -> ẞ    capital sharp S (capital Eszett)
@@ -419,6 +426,8 @@ DEADKEY	02d8	// Dead Key :  Breve/Special
 00c5	2c72	// Å -> Ⱳ    W with hook
 0079	021d	// y -> ȝ    small letter yogh
 0059	021c	// Y -> Ȝ    capital letter yogh
+007a	0225	// z -> ȥ    z with hook
+005a	0224	// Z -> Ȥ    Z with hook
 0023	0292	// # -> ʒ    small letter ezh
 0033	01b7	// 3 -> Ʒ    capital letter ezh
 0020	02d8	//   -> ˘    breve
@@ -449,16 +458,12 @@ DEADKEY	00b4	// Dead Key :  Acute Accent
 00c9	0193	// É -> Ɠ    G with hook
 0068	0266	// h -> ɦ    h with hook
 0048	a7aa	// H -> Ɦ    H with hook
-00f9	a727	// ù -> ꜧ    small letter heng
-00d9	a726	// Ù -> Ꜧ    capital letter heng
 0069	00ed	// i -> í    i with acute
 0049	00cd	// I -> Í    I with acute
 006a	0133	// j -> ĳ    ligature ij
 004a	0132	// J -> Ĳ    ligature IJ
-006b	0199	// k -> ƙ    k with hook
-004b	0198	// K -> Ƙ    K with hook
-0153	1e31	// œ -> ḱ    k with acute
-0152	1e30	// Œ -> Ḱ    K with acute
+006b	1e31	// k -> ḱ    k with acute
+004b	1e30	// K -> Ḱ    K with acute
 006c	013a	// l -> ĺ    l with acute
 004c	0139	// L -> Ĺ    L with acute
 006d	1e3f	// m -> ḿ    m with acute
@@ -469,16 +474,12 @@ DEADKEY	00b4	// Dead Key :  Acute Accent
 004f	00d3	// O -> Ó    O with acute
 00f6	0151	// ö -> ő    o with double acute
 00d6	0150	// Ö -> Ő    O with double acute
-0070	01a5	// p -> ƥ    p with hook
-0050	01a4	// P -> Ƥ    P with hook
-00f4	1e55	// ô -> ṕ    p with acute
-00d4	1e54	// Ô -> Ṕ    P with acute
+0070	1e55	// p -> ṕ    p with acute
+0050	1e54	// P -> Ṕ    P with acute
 0071	024b	// q -> ɋ    q with hook tail
 0051	024a	// Q -> Ɋ    Q with hook tail
 0072	0155	// r -> ŕ    r with acute
 0052	0154	// R -> Ŕ    R with acute
-00ea	027d	// ê -> ɽ    r with tail
-00ca	2c64	// Ê -> Ɽ    R with tail
 0073	015b	// s -> ś    s with acute
 0053	015a	// S -> Ś    S with acute
 00df	1e9e	// ß -> ẞ    capital sharp S (capital Eszett)
@@ -500,8 +501,6 @@ DEADKEY	00b4	// Dead Key :  Acute Accent
 00db	01b3	// Û -> Ƴ    Y with hook
 007a	017a	// z -> ź    z with acute
 005a	0179	// Z -> Ź    Z with acute
-00e0	0225	// à -> ȥ    z with hook
-00c0	0224	// À -> Ȥ    Z with hook
 00e5	01fb	// å -> ǻ    a with ring above and acute
 00c5	01fa	// Å -> Ǻ    A with ring above and acute
 00e6	01fd	// æ -> ǽ    ae with acute
@@ -625,6 +624,7 @@ DEADKEY	007e	// Dead Key :  Tilde
 0059	1ef8	// Y -> Ỹ    Y with tilde
 0067	ab36	// g -> ꬶ    cross-tailed g
 0068	0267	// h -> ɧ    small letter heng with hook
+006b	0138	// k -> ĸ    small letter kra
 0073	0283	// s -> ʃ    small letter esh
 0053	01a9	// S -> Ʃ    capital letter esh
 00df	017f	// ß -> ſ    small long s
@@ -802,8 +802,8 @@ DEADKEY	03bc	// Dead Key :  Greek Alphabet
 0052	03a1	// R -> Ρ    capital rho
 0073	03c3	// s -> σ    small sigma
 0053	03a3	// S -> Σ    capital sigma
-002c	03c2	// , -> ς    small sigma, in word-final position
-00df	03c2	// ß -> ς    small sigma, in word-final position
+002c	03c2	// , -> ς    small final sigma
+00df	03c2	// ß -> ς    small final sigma
 0074	03c4	// t -> τ    small tau
 0054	03a4	// T -> Τ    capital tau
 0075	03c5	// u -> υ    small upsilon
