@@ -1,27 +1,36 @@
 body {
-  color: #00cc00;
-  background: Black;
+  color: White;
+  background: #000033;
   font-family: 'Liberation Mono', 'Courier New';
   font-size: 1em;
   line-height: 2;
-  margin-right: 40px;
-  margin-left: 40px;
+  margin-left: 60px;
+  margin-right: 60px;
 }
 
 a {
-  color: LightSkyBlue;
+  color: Yellow;
 }
 
-::-webkit-scrollbar {
-  background-color: Black;
-  color: #c1b6a6;
-}
-::-webkit-scrollbar-corner {
-  background-color: Black;
-}
-::-webkit-scrollbar-thumb {
-  background-color: #282f34;
-}
-::-webkit-scrollbar-thumb:hover {
-  background: #434d53;
+@media (prefers-color-scheme: dark) {
+  body {
+    background: Black;
+    color: #00cc00;
+  }
+  a {
+    color: LightSkyBlue;
+  }
+  ::-webkit-scrollbar {
+    background-color: Black;
+    color: #c1b6a6;
+  }
+  ::-webkit-scrollbar-corner {
+    background-color: Black;
+  }
+  ::-webkit-scrollbar-thumb {
+    background-color: #282f34;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #434d53;
+  }
 }
