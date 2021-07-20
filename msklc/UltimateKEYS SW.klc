@@ -927,6 +927,8 @@ DEADKEY	0020	// Dead Key :  Math Symbols
 003e	2265	// > -> ≥    greater-than or equal to
 002d	2296	// - -> ⊖    circled minus
 005f	2298	// _ -> ⊘    circled division slash
+003d	00d7	// = -> ×    multiplication sign
+002b	00f7	// + -> ÷    division sign
 00f5	2261	// õ -> ≡    identical to
 00d5	2262	// Õ -> ≢    not identical to
 003b	2235	// ; -> ∵    because sign
