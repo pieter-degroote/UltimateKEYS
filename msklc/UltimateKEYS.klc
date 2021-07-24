@@ -1,4 +1,4 @@
-KBD	ultkeys	"UltimateKEYS - 2021-07-17"
+KBD	ultkeys	"UltimateKEYS - 2021-07-24"
 
 COPYRIGHT	"License: GNU General Public License Version 3"
 
@@ -22,7 +22,7 @@ SHIFTSTATE
 
 LAYOUT	// @ symbol at the end: defined as dead key
 
-//SC	VK		Cap	0	1	2	6	7		Descriptions
+//SC	VK_		Cap	0	1	2	6	7		Descriptions
 //--	----		----	----	----	----	----	----		------------
 
 02	1		0	1	0021	-1	00a1	00b9		// 1, !, ¡, ¹    digit 1, exclamation mark, inverted exclamation mark, superscript 1
@@ -61,7 +61,7 @@ LAYOUT	// @ symbol at the end: defined as dead key
 27	OEM_1		0	003b	003a	-1	00b0	00b7		// ;, :, °, ·    semicolon, colon, degree sign, middle dot
 28	OEM_7		0	0027	0022	-1	00b4@	00a8@		// ', ", ´, ¨    apostrophe, quotation mark, acute accent (dead key), diaeresis (dead key)
 29	OEM_3		0	0060	007e	-1	0060@	007e@		// `, ~, `, ~    grave accent, tilde, grave accent (dead key), tilde (dead key)
-2b	OEM_5		0	005c	007c	001c	00ac@	00a6@		// \, |, ¬, ¦    reverse solidus (backslash), vertical line, not sign (dead key), broken bar (dead key)    information separator four (001c)
+2b	OEM_5		0	005c	007c	001c	00d7@	00a4@		// \, |, ×, ¤    reverse solidus (backslash), vertical line, multiplication sign (dead key), currency (dead key)    information separator four (001c)
 2c	Z		5	z	Z	-1	00e0	00c0		// z, Z, à, À    letter z, letter Z, a with grave, A with grave
 2d	X		5	x	X	-1	00e1	00c1		// x, X, á, Á    letter x, letter X, a with acute, A with acute
 2e	C		5	c	C	-1	00e7	00c7		// c, C, ç, Ç    letter c, letter C, c with cedilla, C with cedilla
@@ -572,6 +572,10 @@ DEADKEY	0060	// Dead Key :  Grave Accent
 0057	1e80	// W -> Ẁ    W with grave
 0079	1ef3	// y -> ỳ    y with grave
 0059	1ef2	// Y -> Ỳ    Y with grave
+00f6	01a1	// ö -> ơ    o with horn
+00d6	01a0	// Ö -> Ơ    O with horn
+00fc	01b0	// ü -> ư    u with horn
+00dc	01af	// Ü -> Ư    U with horn
 0063	2663	// c -> ♣    black club suit
 0043	2667	// C -> ♧    white club suit
 006d	2666	// m -> ♦    black diamond suit
@@ -634,7 +638,7 @@ DEADKEY	007e	// Dead Key :  Tilde
 0040	2001	// @ ->      em quad
 0020	007e	//   -> ~    tilde
 
-DEADKEY	00ac	// Dead Key :  Not Sign
+DEADKEY	00d7	// Dead Key :  Simple Symbols
 
 0061	00aa	// a -> ª    feminine ordinal indicator (Spanish, Portuguese, Italian, Galician)
 0041	00aa	// A -> ª    feminine ordinal indicator (Spanish, Portuguese, Italian, Galician)
@@ -642,20 +646,18 @@ DEADKEY	00ac	// Dead Key :  Not Sign
 00c4	214d	// Ä -> ⅍    aktieselskab
 0062	2022	// b -> •    bullet
 0042	25e6	// B -> ◦    white bullet
-0063	00a4	// c -> ¤    currency sign
-0043	00a4	// C -> ¤    currency sign
-00e7	2105	// ç -> ℅    care of
-00c7	2105	// Ç -> ℅    care of
+0063	2105	// c -> ℅    care of
+0043	2105	// C -> ℅    care of
 0064	2020	// d -> †    dagger
 0044	2021	// D -> ‡    double dagger
-00e2	22c4	// â -> ⋄    diamond operator
-00c2	22c4	// Â -> ⋄    diamond operator
 0065	212e	// e -> ℮    estimated symbol
 0045	2709	// E -> ✉   envolope
 0066	2640	// f -> ♀    Venus symbol (female)
 0046	2640	// F -> ♀    Venus symbol (female)
 0068	2766	// h -> ❦    floral heart
 0048	2767	// H -> ❧    rotated floral heart bullet
+0069	22c4	// i -> ⋄    diamond operator
+0049	22c4	// I -> ⋄    diamond operator
 006c	2113	// l -> ℓ    script small l
 004c	2112	// L -> ℒ    Laplace transform
 006d	2642	// m -> ♂    Mars symbol (male)
@@ -705,7 +707,9 @@ DEADKEY	00ac	// Dead Key :  Not Sign
 0028	215d	// ( -> ⅝    vulgar fraction 5/8
 0029	215e	// ) -> ⅞    vulgar fraction 7/8
 002d	2043	// - -> ⁃    hyphen bullet
-003d	2023	// = -> ‣    triangular bullet
+005f	2023	// _ -> ‣    triangular bullet
+003d	00d7	// = -> ×    multiplication sign
+002b	00f7	// + -> ÷    division sign
 003b	263a	// ; -> ☺    white smiling face
 003a	263b	// : -> ☻    black smiling face
 002f	203c	// / -> ‼    double exclamation mark
@@ -713,10 +717,10 @@ DEADKEY	00ac	// Dead Key :  Not Sign
 00bf	2e18	// ¿ -> ⸘    inverted interrobang
 2026	2e2e	// … -> ⸮    reversed question mark
 005c	205e	// \ -> ⁞    vertical four dots
-007c	205e	// | -> ⁞    vertical four dots
-0020	00ac	//   -> ¬    not sign
+007c	00a6	// | -> ¦    broken bar
+0020	00d7	//   -> ×    multiplication sign
 
-DEADKEY	00a6	// Dead Key :  Broken Bar
+DEADKEY	00a4	// Dead Key :  Currency
 
 0061	20b3	// a -> ₳    Argentine austral
 0041	20b3	// A -> ₳    Argentine austral
@@ -754,13 +758,9 @@ DEADKEY	00a6	// Dead Key :  Broken Bar
 0054	20b8	// T -> ₸    Kazakh tenge
 0077	20a9	// w -> ₩    South Korean won
 0057	20a9	// W -> ₩    South Korean won
-006f	01a1	// o -> ơ    o with horn
-004f	01a0	// O -> Ơ    O with horn
-0075	01b0	// u -> ư    u with horn
-0055	01af	// U -> Ư    U with horn
-005c	00a6	// \ -> ¦    broken bar
-007c	00a6	// | -> ¦    broken bar
-0020	00a6	//   -> ¦    broken bar
+0078	00a4	// x -> ¤    currency sign
+0058	00a4	// X -> ¤    currency sign
+0020	00a4	//   -> ¤    currency sign
 
 DEADKEY	03bc	// Dead Key :  Greek Alphabet
 
@@ -927,10 +927,8 @@ DEADKEY	0020	// Dead Key :  Math Symbols
 003e	2265	// > -> ≥    greater-than or equal to
 002d	2296	// - -> ⊖    circled minus
 005f	2298	// _ -> ⊘    circled division slash
-003d	00d7	// = -> ×    multiplication sign
-002b	00f7	// + -> ÷    division sign
-00f5	2261	// õ -> ≡    identical to
-00d5	2262	// Õ -> ≢    not identical to
+003d	2261	// = -> ≡    identical to
+002b	2262	// + -> ≢    not identical to
 003b	2235	// ; -> ∵    because sign
 003a	2234	// : -> ∴    therefore sign
 0027	2032	// ' -> ′    prime
@@ -1033,10 +1031,10 @@ KEYNAME_DEAD
 00a8	"Diaeresis"
 0060	"Grave Accent"
 007e	"Tilde"
-00ac	"Not Sign"
-00a6	"Broken Bar"
+00d7	"Simple Symbols"
+00a4	"Currency"
 03bc	"Greek Alphabet"
-0020	"Math Symbols"	// To avoid issues, the space (0020) has been assigned, instead of the 'square root' (221a).
+0020	"Math Symbols"	// To avoid issues, the space (0020) has been assigned, instead of 'square root' (221a, √).
 
 
 DESCRIPTIONS
