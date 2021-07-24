@@ -588,6 +588,12 @@ S -> ♤    (u+2664) white spade suit
 0 ->      (u+200b) zero-width space
 - ->      (u+00a0) non-breaking space  (see also :  AltGr + Space)
 = ->      (u+202f) narrow no-break space
+
+ö (AltGr + o) -> ơ    (u+01a1) o with horn
+Ö (AltGr + O) -> Ơ    (u+01a0) O with horn
+ü (AltGr + u) -> ư    (u+01b0) u with horn
+Ü (AltGr + U) -> Ư    (u+01af) U with horn
+
 (space) -> `    (u+0060) grave accent
 </pre>
 
@@ -636,20 +642,18 @@ A -> ª    (u+00aa) feminine ordinal indicator (Spanish, Portuguese, Italian, Ga
 Ä (AltGr + A) -> ⅍    (u+214d) aktieselskab
 b -> •    (u+2022) bullet
 B -> ◦    (u+25e6) white bullet
-c -> ¤    (u+00a4) currency sign
-C -> ¤    (u+00a4) currency sign
-ç (AltGr + c) -> ℅    (u+2105) care of
-Ç (AltGr + C) -> ℅    (u+2105) care of
+c -> ℅    (u+2105) care of
+C -> ℅    (u+2105) care of
 d -> †    (u+2020) dagger
 D -> ‡    (u+2021) double dagger
-â (AltGr + d) -> ⋄    (u+22c4) diamond operator
-Â (AltGr + D) -> ⋄    (u+22c4) diamond operator
 e -> ℮    (u+212e) estimated symbol
 E -> ✉   (u+2709) envolope
 f -> ♀    (u+2640) Venus symbol (female)
 F -> ♀    (u+2640) Venus symbol (female)
 h -> ❦    (u+2766) floral heart
 H -> ❧    (u+2767) rotated floral heart bullet
+i -> ⋄    (u+22c4) diamond operator
+I -> ⋄    (u+22c4) diamond operator
 l -> ℓ    (u+2113) script small l
 L -> ℒ    (u+2112) Laplace transform
 m -> ♂    (u+2642) Mars symbol (male)
@@ -658,8 +662,8 @@ n -> ¬    (u+00ac) not sign
 N -> ¬    (u+00ac) not sign
 o -> º    (u+00ba) masculine ordinal indicator (Spanish, Portuguese, Italian, Galician)
 O -> º    (u+00ba) masculine ordinal indicator (Spanish, Portuguese, Italian, Galician)
-ö (AltGr + o) -> ⅍    (u+2126) ohm sign (backwards compatibility)
-Ö (AltGr + O) -> ⅍    (u+2126) ohm sign (backwards compatibility)
+ö (AltGr + o) -> Ω    (u+2126) ohm sign (backwards compatibility)
+Ö (AltGr + O) -> Ω    (u+2126) ohm sign (backwards compatibility)
 p -> ¶    (u+00b6) pilcrow sign
 P -> ℗    (u+2117) sound recording copyright
 q -> „    (u+201e) double low-9 quotation mark
@@ -690,17 +694,19 @@ Y -> ☒    (u+2612) ballot box with x
 9 -> ⅝    (u+215d) vulgar fraction 5/8
 0 -> ⅞    (u+215e) vulgar fraction 7/8
 
-- -> ⁃    (u+2043) hyphen bullet
-= -> ‣    (u+2023) triangular bullet
-; -> ☺    (u+263a) white smiling face
-: -> ☻    (u+263b) black smiling face
-/ -> ‼    (u+203c) double exclamation mark
-? -> ‽    (u+203d) interrobang
-¿ (AltGr + /) -> ⸘    (u+2e18) inverted interrobang
-… (AltGr + ?) -> ⸮    (u+2e2e) reversed question mark
-\ -> ⁞    (u+205e) vertical four dots
-| -> ⁞    (u+205e) vertical four dots
-(space) -> ¬    (u+00ac) not sign
+- (hyphen-minus)   -> ⁃    (u+2043) hyphen bullet
+_ (underscore)     -> ‣    (u+2023) triangular bullet
+= (equals sign)    -> ×    (u+00d7) multiplication sign
++ (plus)           -> ÷    (u+00f7) division sign
+; (semicolon)      -> ☺    (u+263a) white smiling face
+: (colon)          -> ☻    (u+263b) black smiling face
+/ (solidus/slash)  -> ‼    (u+203c) double exclamation mark
+? (question mark)  -> ‽    (u+203d) interrobang
+¿ (AltGr + /)      -> ⸘    (u+2e18) inverted interrobang
+… (AltGr + ?)      -> ⸮    (u+2e2e) reversed question mark
+\ (backslash)      -> ⁞    (u+205e) vertical four dots
+| (vertical slash) -> ¦    (u+00a6) broken bar
+(space)            -> ×    (u+00d7) multiplication sign
 </pre>
 
 <p>&nbsp;</p>
@@ -745,14 +751,7 @@ T -> ₸    (u+20b8) Kazakh tenge
 w -> ₩    (u+20a9) South Korean won
 W -> ₩    (u+20a9) South Korean won
 
-o -> ơ    (u+01a1) o with horn
-O -> Ơ    (u+01a0) O with horn
-u -> ư    (u+01b0) u with horn
-U -> Ư    (u+01af) U with horn
-
-\       -> ¦    (u+00a6) broken bar
-|       -> ¦    (u+00a6) broken bar
-(space) -> ¦    (u+00a6) broken bar
+(space) -> ¤    (u+00a4) currency sign
 </pre>
 
 <p>&nbsp;</p>
@@ -924,10 +923,8 @@ Z -> ℤ    (u+2124) whole numbers
 &gt; (greater than)   -> ≥    (u+2265) greater-than or equal to
 - (hyphen-minus)   -> ⊖    (u+2296) circled minus
 _ (underscore)     -> ⊘    (u+2298) circled division slash
-= (equals sign)    -> ×    (u+00d7) multiplication sign
-+ (plus)           -> ÷    (u+00f7) division sign
-õ (AltGr + =)      -> ≡    (u+2261) identical to
-Õ (AltGr+Shift+ +) -> ≢    (u+2262) not identical to
+= (equals sign)    -> ≡    (u+2261) identical to
++ (plus)           -> ≢    (u+2262) not identical to
 ; (semicolon)      -> ∵    (u+2235) because sign
 : (colon)          -> ∴    (u+2234) therefore sign
 ' (apostrophe)     -> ′    (u+2032) prime
