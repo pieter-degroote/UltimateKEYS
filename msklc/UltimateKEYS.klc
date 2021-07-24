@@ -638,7 +638,7 @@ DEADKEY	007e	// Dead Key :  Tilde
 0040	2001	// @ ->      em quad
 0020	007e	//   -> ~    tilde
 
-DEADKEY	00d7	// Dead Key :  Simple Symbols
+DEADKEY	00d7	// Dead Key :  General Symbols
 
 0061	00aa	// a -> ª    feminine ordinal indicator (Spanish, Portuguese, Italian, Galician)
 0041	00aa	// A -> ª    feminine ordinal indicator (Spanish, Portuguese, Italian, Galician)
@@ -1031,7 +1031,7 @@ KEYNAME_DEAD
 00a8	"Diaeresis"
 0060	"Grave Accent"
 007e	"Tilde"
-00d7	"Simple Symbols"
+00d7	"General Symbols"
 00a4	"Currency"
 03bc	"Greek Alphabet"
 0020	"Math Symbols"	// To avoid issues, the space (0020) has been assigned, instead of 'square root' (221a, √).
