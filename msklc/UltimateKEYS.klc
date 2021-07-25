@@ -1,4 +1,4 @@
-KBD	ultkeys	"UltimateKEYS - 2021-07-24"
+KBD	ultkeys	"UltimateKEYS - 2021-07-25"
 
 COPYRIGHT	"License: GNU General Public License Version 3"
 
@@ -863,6 +863,8 @@ DEADKEY	0020	// Dead Key :  Math Symbols
 00c7	2247	// Ç -> ≇    not congruent to
 0064	2206	// d -> ∆    increment operator
 0044	2207	// D -> ∇    nable/del operator
+00e2	225d	// â -> ≝    equal to by definition
+00c2	225d	// Â -> ≝    equal to by definition
 0065	2203	// e -> ∃    there exists
 0045	2204	// E -> ∄    there does not exist
 0066	0192	// f -> ƒ    f with hook
@@ -896,7 +898,7 @@ DEADKEY	0020	// Dead Key :  Math Symbols
 0077	2118	// w -> ℘    Weierstrass elliptic function
 0057	2118	// W -> ℘    Weierstrass elliptic function
 0078	2295	// x -> ⊕    exclusive or
-0058	225d	// X -> ≝    equal to by definition
+0058	2295	// X -> ⊕    exclusive or
 007a	21af	// z -> ↯    downwards zigzag arrow
 005a	2124	// Z -> ℤ    whole numbers
 0031	2260	// 1 -> ≠    not equal to
