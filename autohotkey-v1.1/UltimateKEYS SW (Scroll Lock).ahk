@@ -1,4 +1,4 @@
-; UltimateKEYS SW (Scroll Lock).ahk - 2021-07-25
+; UltimateKEYS SW (Scroll Lock).ahk - 2021-07-26
 
 ; Created by :  Pieter Degroote
 
@@ -830,6 +830,8 @@ dkMathSymbols.item["b"] := "{u+2286}"  ; (⊆) subset of or equal to
 dkMathSymbols.item["B"] := "{u+2287}"  ; (⊇) superset of or equal to
 dkMathSymbols.item["c"] := "{u+221d}"  ; (∝) proportional to
 dkMathSymbols.item["C"] := "{u+2102}"  ; (ℂ) complex numbers
+dkMathSymbols.item[chr(0x00e7)] := "{u+2245}"  ; (ç -> ≅) congruent to
+dkMathSymbols.item[chr(0x00c7)] := "{u+2247}"  ; (Ç -> ≇) not congruent to
 dkMathSymbols.item["d"] := "{u+2206}"  ; (∆) increment operator
 dkMathSymbols.item["D"] := "{u+2207}"  ; (∇) nable/del operator
 dkMathSymbols.item["e"] := "{u+2203}"  ; (∃) there exists
@@ -864,8 +866,6 @@ dkMathSymbols.item["u"] := "{u+222a}"  ; (∪) set union
 dkMathSymbols.item["U"] := "{u+2216}"  ; (∖) set minus
 dkMathSymbols.item["w"] := "{u+2118}"  ; (℘) Weierstrass elliptic function
 dkMathSymbols.item["W"] := "{u+2118}"  ; (℘) Weierstrass elliptic function
-dkMathSymbols.item["x"] := "{u+2295}"  ; (⊕) exclusive or
-dkMathSymbols.item["X"] := "{u+2295}"  ; (⊕) exclusive or
 dkMathSymbols.item["z"] := "{u+21af}"  ; (↯) downwards zigzag arrow
 dkMathSymbols.item["Z"] := "{u+2124}"  ; (ℤ) whole numbers
 dkMathSymbols.item["1"] := "{u+2260}"  ; (≠) not equal to
@@ -896,8 +896,10 @@ dkMathSymbols.item["."] := "{u+2265}"  ; (≥) greater-than or equal to
 dkMathSymbols.item[">"] := "{u+2265}"  ; (≥) greater-than or equal to
 dkMathSymbols.item["-"] := "{u+2296}"  ; (⊖) circled minus
 dkMathSymbols.item["_"] := "{u+2298}"  ; (⊘) circled division slash
-dkMathSymbols.item["="] := "{u+2261}"  ; (≡) identical to
-dkMathSymbols.item["+"] := "{u+2262}"  ; (≢) not identical to
+dkMathSymbols.item["="] := "{u+225d}"  ; (≝) equal to by definition
+dkMathSymbols.item["+"] := "{u+2295}"  ; (⊕) circled plus
+dkMathSymbols.item[chr(0x00f5)] := "{u+2261}"  ; (õ -> ≡) identical to
+dkMathSymbols.item[chr(0x00d5)] := "{u+2262}"  ; (Õ -> ≢) not identical to
 dkMathSymbols.item[";"] := "{u+2235}"  ; (∵) because sign
 dkMathSymbols.item[":"] := "{u+2234}"  ; (∴) therefore sign
 dkMathSymbols.item["'"] := "{u+2032}"  ; (′) prime
@@ -906,10 +908,6 @@ dkMathSymbols.item["/"] := "{u+2034}"  ; (‴) triple prime
 dkMathSymbols.item["?"] := "{u+2057}"  ; (⁗) quadruple prime
 dkMathSymbols.item["\"] := "{u+2228}"  ; (∨) logical or
 dkMathSymbols.item["|"] := "{u+2228}"  ; (∨) logical or
-dkMathSymbols.item[chr(0x00e7)] := "{u+2245}"  ; (ç -> ≅) congruent to
-dkMathSymbols.item[chr(0x00c7)] := "{u+2247}"  ; (Ç -> ≇) not congruent to
-dkMathSymbols.item[chr(0x00e2)] := "{u+225d}"  ; (â -> ≝) equal to by definition
-dkMathSymbols.item[chr(0x00c2)] := "{u+225d}"  ; (Â -> ≝) equal to by definition
 dkMathSymbols.item[" "] := "{u+221a}"  ; (√) square root
 
 
