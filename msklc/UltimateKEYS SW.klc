@@ -911,8 +911,8 @@ DEADKEY	0020	// Dead Key :  Math Symbols
 005e	2220	// ^ -> ∠    angle symbol
 0037	2227	// 7 -> ∧    logical and
 0026	2227	// & -> ∧    logical and
-0038	2297	// 8 -> ⊗    tensor product
-002a	2297	// * -> ⊗    tensor product
+0038	2297	// 8 -> ⊗    circled times
+002a	2297	// * -> ⊗    circled times
 0039	221f	// 9 -> ∟    right angle
 0028	221f	// ( -> ∟    right angle
 0030	2221	// 0 -> ∡    measured angle
