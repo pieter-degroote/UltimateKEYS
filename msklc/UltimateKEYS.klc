@@ -61,7 +61,7 @@ LAYOUT	// @ symbol at the end: defined as dead key
 27	OEM_1		0	003b	003a	-1	00b0	00b7		// ;, :, °, ·    semicolon, colon, degree sign, middle dot
 28	OEM_7		0	0027	0022	-1	00b4@	00a8@		// ', ", ´, ¨    apostrophe, quotation mark, acute accent (dead key), diaeresis (dead key)
 29	OEM_3		0	0060	007e	-1	0060@	007e@		// `, ~, `, ~    grave accent, tilde, grave accent (dead key), tilde (dead key)
-2b	OEM_5		0	005c	007c	001c	00d7@	00a4@		// \, |, ×, ¤    reverse solidus (backslash), vertical line, multiplication sign (dead key), currency (dead key)    information separator four (001c)
+2b	OEM_5		0	005c	007c	001c	00d7@	00a4@		// \, |, ×, ¤    reverse solidus (backslash), vertical line, multiplication sign (dead key), currency sign (dead key)    information separator four (001c)
 2c	Z		5	z	Z	-1	00e0	00c0		// z, Z, à, À    letter z, letter Z, a with grave, A with grave
 2d	X		5	x	X	-1	00e1	00c1		// x, X, á, Á    letter x, letter X, a with acute, A with acute
 2e	C		5	c	C	-1	00e7	00c7		// c, C, ç, Ç    letter c, letter C, c with cedilla, C with cedilla
