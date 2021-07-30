@@ -1,4 +1,4 @@
-KBD	ultksw	"UltimateKEYS SW - 2021-07-26"
+KBD	ultksw	"UltimateKEYS SW - 2021-07-30"
 
 COPYRIGHT	"License: GNU General Public License Version 3"
 
@@ -79,26 +79,28 @@ LAYOUT	// @ symbol at the end: defined as dead key
 
 DEADKEY	005e	// Dead Key :  Circumflex Accent
 
-0061	00e2	// a -> â    a with circumflex
-0041	00c2	// A -> Â    A with circumflex
+0061	0203	// a -> ȃ    a with inverted breve
+0041	0202	// A -> Ȃ    A with inverted breve
 0063	0109	// c -> ĉ    c with circumflex
 0043	0108	// C -> Ĉ    C with circumflex
-0065	00ea	// e -> ê    e with circumflex
-0045	00ca	// E -> Ê    E with circumflex
+0065	0207	// e -> ȇ    e with inverted breve
+0045	0206	// E -> Ȇ    E with inverted breve
 0067	011d	// g -> ĝ    g with circumflex
 0047	011c	// G -> Ĝ    G with circumflex
 0068	0125	// h -> ĥ    h with circumflex
 0048	0124	// H -> Ĥ    H with circumflex
-0069	00ee	// i -> î    i with circumflex
-0049	00ce	// I -> Î    I with circumflex
+0069	020b	// i -> ȋ    i with inverted breve
+0049	020a	// I -> Ȋ    I with inverted breve
 006a	0135	// j -> ĵ    j with circumflex
 004a	0134	// J -> Ĵ    J with circumflex
-006f	00f4	// o -> ô    o with circumflex
-004f	00d4	// O -> Ô    O with circumflex
+006f	020f	// o -> ȏ    o with inverted breve
+004f	020e	// O -> Ȏ    O with inverted breve
+0072	0213	// r -> ȓ    r with inverted breve
+0052	0212	// R -> Ȓ    R with inverted breve
 0073	015d	// s -> ŝ    s with circumflex
 0053	015c	// S -> Ŝ    S with circumflex
-0075	00fb	// u -> û    u with circumflex
-0055	00db	// U -> Û    U with circumflex
+0075	0217	// u -> ȗ    u with inverted breve
+0055	0216	// U -> Ȗ    U with inverted breve
 0077	0175	// w -> ŵ    w with circumflex
 0057	0174	// W -> Ŵ    W with circumflex
 0079	0177	// y -> ŷ    y with circumflex
@@ -321,8 +323,6 @@ DEADKEY	00b8	// Dead Key :  Cedilla/Ogonek
 
 0061	0105	// a -> ą    a with ogonek
 0041	0104	// A -> Ą    A with ogonek
-0063	00e7	// c -> ç    c with cedilla
-0043	00c7	// C -> Ç    C with cedilla
 0064	1e11	// d -> ḑ    d with cedilla
 0044	1e10	// D -> Ḑ    D with cedilla
 0065	0119	// e -> ę    e with ogonek
@@ -434,10 +434,8 @@ DEADKEY	02d8	// Dead Key :  Breve/Special
 
 DEADKEY	00b4	// Dead Key :  Acute Accent
 
-0061	00e1	// a -> á    a with acute
-0041	00c1	// A -> Á    A with acute
-00e4	0251	// ä -> ɑ    latin small letter alpha
-00c4	2c6d	// Ä -> Ɑ    latin capital letter alpha
+0061	0251	// a -> ɑ    latin small letter alpha
+0041	2c6d	// A -> Ɑ    latin capital letter alpha
 0062	0253	// b -> ɓ    b with hook
 0042	0181	// B -> Ɓ    B with hook
 0063	0107	// c -> ć    c with acute
@@ -446,10 +444,8 @@ DEADKEY	00b4	// Dead Key :  Acute Accent
 00c7	1e08	// Ç -> Ḉ    C with cedilla and acute
 0064	0257	// d -> ɗ    d with hook
 0044	018a	// D -> Ɗ    D with hook
-0065	00e9	// e -> é    e with acute
-0045	00c9	// E -> É    E with acute
-00eb	025b	// ë -> ɛ    small open e (latin small epsilon)
-00cb	0190	// Ë -> Ɛ    capital open E (latin capital epsilon)
+0065	025b	// e -> ɛ    small letter open e (latin small epsilon)
+0045	0190	// E -> Ɛ    capital letter open E (latin capital epsilon)
 0066	0192	// f -> ƒ    f with hook
 0046	0191	// F -> Ƒ    F with hook
 0067	01f5	// g -> ǵ    g with acute
@@ -458,8 +454,8 @@ DEADKEY	00b4	// Dead Key :  Acute Accent
 00c9	0193	// É -> Ɠ    G with hook
 0068	0266	// h -> ɦ    h with hook
 0048	a7aa	// H -> Ɦ    H with hook
-0069	00ed	// i -> í    i with acute
-0049	00cd	// I -> Í    I with acute
+0069	0269	// i -> ɩ    latin small letter iota
+0049	0196	// I -> Ɩ    latin capital letter iota
 006a	0133	// j -> ĳ    ligature ij
 004a	0132	// J -> Ĳ    ligature IJ
 006b	1e31	// k -> ḱ    k with acute
@@ -470,10 +466,8 @@ DEADKEY	00b4	// Dead Key :  Acute Accent
 004d	1e3e	// M -> Ḿ    M with acute
 006e	0144	// n -> ń    n with acute
 004e	0143	// N -> Ń    N with acute
-006f	00f3	// o -> ó    o with acute
-004f	00d3	// O -> Ó    O with acute
-00f6	0151	// ö -> ő    o with double acute
-00d6	0150	// Ö -> Ő    O with double acute
+006f	0151	// o -> ő    o with double acute
+004f	0150	// O -> Ő    O with double acute
 0070	1e55	// p -> ṕ    p with acute
 0050	1e54	// P -> Ṕ    P with acute
 0071	024b	// q -> ɋ    q with hook tail
@@ -485,10 +479,8 @@ DEADKEY	00b4	// Dead Key :  Acute Accent
 00df	1e9e	// ß -> ẞ    capital sharp S (capital Eszett)
 0074	01ad	// t -> ƭ    t with hook
 0054	01ac	// T -> Ƭ    T with hook
-0075	00fa	// u -> ú    u with acute
-0055	00da	// U -> Ú    U with acute
-00fc	0171	// ü -> ű    u with double acute
-00dc	0170	// Ü -> Ű    U with double acute
+0075	0171	// u -> ű    u with double acute
+0055	0170	// U -> Ű    U with double acute
 0076	028b	// v -> ʋ    v with hook
 0056	01b2	// V -> Ʋ    V with hook
 00ec	028c	// ì -> ʌ    latin small letter turned v
@@ -507,6 +499,10 @@ DEADKEY	00b4	// Dead Key :  Acute Accent
 00c6	01fc	// Æ -> Ǽ    AE with acute
 00f8	01ff	// ø -> ǿ    o with stroke and acute
 00d8	01fe	// Ø -> Ǿ    O with stroke and acute
+00f6	01a1	// ö -> ơ    o with horn
+00d6	01a0	// Ö -> Ơ    O with horn
+00fc	01b0	// ü -> ư    u with horn
+00dc	01af	// Ü -> Ư    U with horn
 0032	266b	// 2 -> ♫    beamed eighth notes
 0033	2042	// 3 -> ⁂    asterism
 0034	2605	// 4 -> ★    black star
@@ -529,19 +525,9 @@ DEADKEY	00b4	// Dead Key :  Acute Accent
 
 DEADKEY	00a8	// Dead Key :  Diaeresis
 
-0061	00e4	// a -> ä    a with diaeresis
-0041	00c4	// A -> Ä    A with diaeresis
-0065	00eb	// e -> ë    e with diaeresis
-0045	00cb	// E -> Ë    E with diaeresis
 0068	1e27	// h -> ḧ    h with diaeresis
 0048	1e26	// H -> Ḧ    H with diaeresis
-0069	00ef	// i -> ï    i with diaeresis
-0049	00cf	// I -> Ï    I with diaeresis
-006f	00f6	// o -> ö    o with diaeresis
-004f	00d6	// O -> Ö    O with diaeresis
 0074	1e97	// t -> ẗ    t with diaeresis
-0075	00fc	// u -> ü    u with diaeresis
-0055	00dc	// U -> Ü    U with diaeresis
 0077	1e85	// w -> ẅ    w with diaeresis
 0057	1e84	// W -> Ẅ    W with diaeresis
 0078	1e8d	// x -> ẍ    x with diaeresis
@@ -552,36 +538,34 @@ DEADKEY	00a8	// Dead Key :  Diaeresis
 
 DEADKEY	0060	// Dead Key :  Grave Accent
 
-0061	00e0	// a -> à    a with grave
-0041	00c0	// A -> À    A with grave
+0061	0201	// a -> ȁ    a with double grave
+0041	0200	// A -> Ȁ    A with double grave
 0064	00f0	// d -> ð    small letter eth
 0044	00d0	// D -> Ð    capital letter eth
-0065	00e8	// e -> è    e with grave
-0045	00c8	// E -> È    E with grave
-0069	00ec	// i -> ì    i with grave
-0049	00cc	// I -> Ì    I with grave
+0065	0205	// e -> ȅ    e with double grave
+0045	0204	// E -> Ȅ    E with double grave
+0069	0209	// i -> ȉ    i with double grave
+0049	0208	// I -> Ȉ    I with double grave
 006e	01f9	// n -> ǹ    n with grave
 004e	01f8	// N -> Ǹ    N with grave
-006f	00f2	// o -> ò    o with grave
-004f	00d2	// O -> Ò    O with grave
+006f	020d	// o -> ȍ    o with double grave
+004f	020c	// O -> Ȍ    O with double grave
+0072	0211	// r -> ȑ    r with double grave
+0052	0210	// R -> Ȑ    R with double grave
 0074	00fe	// t -> þ    small letter thorn
 0054	00de	// T -> Þ    capital letter thorn
-0075	00f9	// u -> ù    u with grave
-0055	00d9	// U -> Ù    U with grave
+0075	0215	// u -> ȕ    u with double grave
+0055	0214	// U -> Ȕ    U with double grave
 0077	1e81	// w -> ẁ    w with grave
 0057	1e80	// W -> Ẁ    W with grave
 0079	1ef3	// y -> ỳ    y with grave
 0059	1ef2	// Y -> Ỳ    Y with grave
-00f6	01a1	// ö -> ơ    o with horn
-00d6	01a0	// Ö -> Ơ    O with horn
-00fc	01b0	// ü -> ư    u with horn
-00dc	01af	// Ü -> Ư    U with horn
 0063	2663	// c -> ♣    black club suit
 0043	2667	// C -> ♧    white club suit
-006d	2666	// m -> ♦    black diamond suit
-004d	2662	// M -> ♢    white diamond suit
 0068	2665	// h -> ♥    black heart suit
 0048	2661	// H -> ♡    white heart suit
+006d	2666	// m -> ♦    black diamond suit
+004d	2662	// M -> ♢    white diamond suit
 0073	2660	// s -> ♠    black spade suit
 0053	2664	// S -> ♤    white spade suit
 0031	2002	// 1 ->      en space
@@ -610,16 +594,10 @@ DEADKEY	0060	// Dead Key :  Grave Accent
 
 DEADKEY	007e	// Dead Key :  Tilde
 
-0061	00e3	// a -> ã    a with tilde
-0041	00c3	// A -> Ã    A with tilde
 0065	1ebd	// e -> ẽ    e with tilde
 0045	1ebc	// E -> Ẽ    E with tilde
 0069	0129	// i -> ĩ    i with tilde
 0049	0128	// I -> Ĩ    I with tilde
-006e	00f1	// n -> ñ    n with tilde
-004e	00d1	// N -> Ñ    N with tilde
-006f	00f5	// o -> õ    o with tilde
-004f	00d5	// O -> Õ    O with tilde
 0075	0169	// u -> ũ    u with tilde
 0055	0168	// U -> Ũ    U with tilde
 0076	1e7d	// v -> ṽ    v with tilde
@@ -862,7 +840,7 @@ DEADKEY	0020	// Dead Key :  Math Symbols
 00e7	2245	// ç -> ≅    congruent to
 00c7	2247	// Ç -> ≇    not congruent to
 0064	2206	// d -> ∆    increment operator
-0044	2207	// D -> ∇    nable/del operator
+0044	2207	// D -> ∇    nabla/del operator
 0065	2203	// e -> ∃    there exists
 0045	2204	// E -> ∄    there does not exist
 0066	0192	// f -> ƒ    f with hook
