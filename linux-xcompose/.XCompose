@@ -11,6 +11,19 @@ include "%L"
 
 # Additional dead key descriptions
 
+<dead_circumflex> <a> : "ȃ"  U0203  # a with inverted breve
+<dead_circumflex> <A> : "Ȃ"  U0202  # A with inverted breve
+<dead_circumflex> <e> : "ȇ"  U0207  # e with inverted breve
+<dead_circumflex> <E> : "Ȇ"  U0206  # E with inverted breve
+<dead_circumflex> <i> : "ȋ"  U020B  # i with inverted breve
+<dead_circumflex> <I> : "Ȋ"  U020A  # I with inverted breve
+<dead_circumflex> <o> : "ȏ"  U020F  # o with inverted breve
+<dead_circumflex> <O> : "Ȏ"  U020E  # O with inverted breve
+<dead_circumflex> <r> : "ȓ"  U0213  # r with inverted breve
+<dead_circumflex> <R> : "Ȓ"  U0212  # R with inverted breve
+<dead_circumflex> <u> : "ȗ"  U0217  # u with inverted breve
+<dead_circumflex> <U> : "Ȗ"  U0216  # U with inverted breve
+
 <dead_caron> <3>          : "ǯ"  U01EF  # small letter ezh with caron
 <dead_caron> <numbersign> : "Ǯ"  U01EE  # capital letter ezh with caron
 
@@ -110,35 +123,57 @@ include "%L"
 <dead_breve> <3>          : "ʒ"  U0292  # small letter ezh
 <dead_breve> <numbersign> : "Ʒ"  U01B7  # capital letter ezh
 
-<dead_acute> <adiaeresis>  : "ɑ"  U0251    # latin small letter alpha
-<dead_acute> <Adiaeresis>  : "Ɑ"  U2C6D    # latin capital letter alpha
+<dead_acute> <a>           : "ɑ"  U0251    # latin small letter alpha
+<dead_acute> <A>           : "Ɑ"  U2C6D    # latin capital letter alpha
 <dead_acute> <b>           : "ɓ"  U0253    # b with hook
 <dead_acute> <B>           : "Ɓ"  U0181    # B with hook
 <dead_acute> <d>           : "ɗ"  U0257    # d with hook
 <dead_acute> <D>           : "Ɗ"  U018A    # D with hook
-<dead_acute> <ediaeresis>  : "ɛ"  U025B    # small open e (latin small epsilon)
-<dead_acute> <Ediaeresis>  : "Ɛ"  U0190    # capital open E (latin capital epsilon)
+<dead_acute> <e>           : "ɛ"  U025B    # small letter open e (latin small epsilon)
+<dead_acute> <E>           : "Ɛ"  U0190    # capital letter open E (latin capital epsilon)
 <dead_acute> <f>           : "ƒ"  function # f with hook
 <dead_acute> <F>           : "Ƒ"  U0191    # F with hook
 <dead_acute> <eacute>      : "ɠ"  U0260    # g with hook
 <dead_acute> <Eacute>      : "Ɠ"  U0193    # G with hook
 <dead_acute> <h>           : "ɦ"  U0266    # h with hook
 <dead_acute> <H>           : "Ɦ"  UA7AA    # H with hook
+<dead_acute> <i>           : "ɩ"  U0269    # latin small letter iota
+<dead_acute> <I>           : "Ɩ"  U0196    # latin capital letter iota
+<dead_acute> <o>           : "ő"  U0151    # o with double acute
+<dead_acute> <O>           : "Ő"  U0150    # O with double acute
 <dead_acute> <q>           : "ɋ"  U024B    # q with tail
 <dead_acute> <Q>           : "Ɋ"  U024A    # Q with tail
 <dead_acute> <t>           : "ƭ"  U01AD    # t with hook
 <dead_acute> <T>           : "Ƭ"  U01AC    # T with hook
+<dead_acute> <u>           : "ű"  U0171    # u with double acute
+<dead_acute> <U>           : "Ű"  U0170    # U with double acute
 <dead_acute> <v>           : "ʋ"  U028B    # v with hook
 <dead_acute> <V>           : "Ʋ"  U01B2    # V with hook
 <dead_acute> <igrave>      : "ʌ"  U028C    # latin small letter turned v
 <dead_acute> <Igrave>      : "Ʌ"  U0245    # latin capital letter turned V
 <dead_acute> <ucircumflex> : "ƴ"  U01B4    # y with hook
 <dead_acute> <Ucircumflex> : "Ƴ"  U01B3    # Y with hook
+<dead_acute> <odiaeresis>  : "ơ"  U01A1    # o with horn
+<dead_acute> <Odiaeresis>  : "Ơ"  U01A0    # O with horn
+<dead_acute> <udiaeresis>  : "ư"  U01B0    # u with horn
+<dead_acute> <Udiaeresis>  : "Ư"  U01AF    # U with horn
 
+<dead_grave> <a> : "ȁ"  U0201  # a with double grave
+<dead_grave> <A> : "Ȁ"  U0200  # A with double grave
 <dead_grave> <d> : "ð"  eth    # small letter eth
 <dead_grave> <D> : "Ð"  ETH    # capital letter eth
+<dead_grave> <e> : "ȅ"  U0205  # e with double grave
+<dead_grave> <E> : "Ȅ"  U0204  # E with double grave
+<dead_grave> <i> : "ȉ"  U0209  # i with double grave
+<dead_grave> <I> : "Ȉ"  U0208  # I with double grave
+<dead_grave> <o> : "ȍ"  U020D  # o with double grave
+<dead_grave> <O> : "Ȍ"  U020C  # O with double grave
+<dead_grave> <r> : "ȑ"  U0211  # r with double grave
+<dead_grave> <R> : "Ȑ"  U0210  # R with double grave
 <dead_grave> <t> : "þ"  thorn  # small letter thorn
 <dead_grave> <T> : "Þ"  THORN  # capital letter thorn
+<dead_grave> <u> : "ȕ"  U0215  # u with double grave
+<dead_grave> <U> : "Ȕ"  U0214  # U with double grave
 
 <dead_tilde> <g> : "ꬶ"  UAB36  # cross-tailed g
 <dead_tilde> <h> : "ɧ"  U0267  # small letter heng with hook
@@ -146,18 +181,18 @@ include "%L"
 <dead_tilde> <s> : "ʃ"  U0283  # small letter esh
 <dead_tilde> <S> : "Ʃ"  U01A9  # capital letter esh
 
-<dead_greek> <v>      : "β"  U03B2  # small beta
-<dead_greek> <V>      : "Β"  U0392  # capital beta
-<dead_greek> <comma>  : "ς"  U03C2  # small final sigma
-<dead_greek> <ssharp> : "ς"  U03C2  # small final sigma
-<dead_greek> <y>      : "υ"  U03C5  # small upsilon
-<dead_greek> <Y>      : "Υ"  U03A5  # capital upsilon
 <dead_greek> <c>      : "χ"  U03C7  # small chi
 <dead_greek> <C>      : "Χ"  U03A7  # capital chi
-<dead_greek> <w>      : "ψ"  U03C8  # small psi
-<dead_greek> <W>      : "Ψ"  U03A8  # capital spi
 <dead_greek> <q>      : "ω"  U03C9  # small omega
 <dead_greek> <Q>      : "Ω"  U03A9  # capital omega
+<dead_greek> <v>      : "β"  U03B2  # small beta
+<dead_greek> <V>      : "Β"  U0392  # capital beta
+<dead_greek> <w>      : "ψ"  U03C8  # small psi
+<dead_greek> <W>      : "Ψ"  U03A8  # capital spi
+<dead_greek> <y>      : "υ"  U03C5  # small upsilon
+<dead_greek> <Y>      : "Υ"  U03A5  # capital upsilon
+<dead_greek> <comma>  : "ς"  U03C2  # small final sigma
+<dead_greek> <ssharp> : "ς"  U03C2  # small final sigma
 
 <Multi_key> <d> <d> : "†"  dagger        # dagger
 <Multi_key> <D> <D> : "‡"  doubledagger  # double dagger
