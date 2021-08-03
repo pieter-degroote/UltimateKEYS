@@ -1,4 +1,4 @@
-KBD	ultksw	"UltimateKEYS SW - 2021-07-30"
+KBD	ultksw	"UltimateKEYS SW - 2021-08-03"
 
 COPYRIGHT	"License: GNU General Public License Version 3"
 
@@ -275,8 +275,8 @@ DEADKEY	00af	// Dead Key :  Macron/Stroke
 004a	0248	// J -> Ɉ    J with stroke
 006c	0142	// l -> ł    l with stroke
 004c	0141	// L -> Ł    L with stroke
-00f8	1e3b	// ø -> ḻ    l with line below
-00d8	1e3a	// Ø -> Ḻ    L with line below
+00f8	019a	// ø -> ƚ    l with bar
+00d8	023d	// Ø -> Ƚ    L with bar
 006f	014d	// o -> ō    o with macron
 004f	014c	// O -> Ō    O with macron
 00f6	01ed	// ö -> ǭ    o with ogonek and macron
@@ -598,6 +598,10 @@ DEADKEY	007e	// Dead Key :  Tilde
 0045	1ebc	// E -> Ẽ    E with tilde
 0069	0129	// i -> ĩ    i with tilde
 0049	0128	// I -> Ĩ    I with tilde
+006c	026b	// l -> ɫ    l with middle tilde
+004c	2c62	// L -> Ɫ    L with middle tilde
+0073	0283	// s -> ʃ    small letter esh
+0053	01a9	// S -> Ʃ    capital letter esh
 0075	0169	// u -> ũ    u with tilde
 0055	0168	// U -> Ũ    U with tilde
 0076	1e7d	// v -> ṽ    v with tilde
@@ -607,8 +611,6 @@ DEADKEY	007e	// Dead Key :  Tilde
 0067	ab36	// g -> ꬶ    cross-tailed g
 0068	0267	// h -> ɧ    small letter heng with hook
 006b	0138	// k -> ĸ    small letter kra
-0073	0283	// s -> ʃ    small letter esh
-0053	01a9	// S -> Ʃ    capital letter esh
 00df	017f	// ß -> ſ    small long s
 0031	2000	// 1 ->      en quad
 0032	2001	// 2 ->      em quad
