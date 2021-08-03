@@ -46,8 +46,8 @@ include "%L"
 <dead_macron> <J>           : "Ɉ"  U0248  # J with stroke
 <dead_macron> <l>           : "ł"  U0142  # l with stroke
 <dead_macron> <L>           : "Ł"  U0141  # L with stroke
-<dead_macron> <oslash>      : "ḻ"  U1E3B  # l with line below
-<dead_macron> <Ooblique>    : "Ḻ"  U1E3A  # L with line below
+<dead_macron> <oslash>      : "ƚ"  U019A  # l with bar
+<dead_macron> <Ooblique>    : "Ƚ"  U023D  # L with bar
 <dead_macron> <odiaeresis>  : "ǭ"  U01ED  # o with ogonek and macron
 <dead_macron> <Odiaeresis>  : "Ǭ"  U01EC  # O with ogonek and macron
 <dead_macron> <p>           : "ᵽ"  U1D7D  # p with stroke
@@ -178,6 +178,8 @@ include "%L"
 <dead_tilde> <g> : "ꬶ"  UAB36  # cross-tailed g
 <dead_tilde> <h> : "ɧ"  U0267  # small letter heng with hook
 <dead_tilde> <k> : "ĸ"  U0138  # small letter kra
+<dead_tilde> <l> : "ɫ"  U026B  # l with middle tilde
+<dead_tilde> <L> : "Ɫ"  U2C62  # L with middle tilde
 <dead_tilde> <s> : "ʃ"  U0283  # small letter esh
 <dead_tilde> <S> : "Ʃ"  U01A9  # capital letter esh
 
