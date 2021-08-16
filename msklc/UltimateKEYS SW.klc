@@ -1,4 +1,4 @@
-KBD	ultksw	"UltimateKEYS SW - 2021-08-03"
+KBD	ultksw	"UltimateKEYS SW - 2021-08-16"
 
 COPYRIGHT	"License: GNU General Public License Version 3"
 
@@ -323,6 +323,8 @@ DEADKEY	00b8	// Dead Key :  Cedilla/Ogonek
 
 0061	0105	// a -> ą    a with ogonek
 0041	0104	// A -> Ą    A with ogonek
+0063	00e7	// c -> ç    c with cedilla
+0043	00c7	// C -> Ç    C with cedilla
 0064	1e11	// d -> ḑ    d with cedilla
 0044	1e10	// D -> Ḑ    D with cedilla
 0065	0119	// e -> ę    e with ogonek
@@ -525,9 +527,19 @@ DEADKEY	00b4	// Dead Key :  Acute Accent
 
 DEADKEY	00a8	// Dead Key :  Diaeresis
 
+0061	00e4	// a -> ä    a with diaeresis
+0041	00c4	// A -> Ä    A with diaeresis
+0065	00eb	// e -> ë    e with diaeresis
+0045	00cb	// E -> Ë    E with diaeresis
 0068	1e27	// h -> ḧ    h with diaeresis
 0048	1e26	// H -> Ḧ    H with diaeresis
+0069	00ef	// i -> ï    i with diaeresis
+0049	00cf	// I -> Ï    I with diaeresis
+006f	00f6	// o -> ö    o with diaeresis
+004f	00d6	// O -> Ö    O with diaeresis
 0074	1e97	// t -> ẗ    t with diaeresis
+0075	00fc	// u -> ü    u with diaeresis
+0055	00dc	// U -> Ü    U with diaeresis
 0077	1e85	// w -> ẅ    w with diaeresis
 0057	1e84	// W -> Ẅ    W with diaeresis
 0078	1e8d	// x -> ẍ    x with diaeresis
@@ -594,12 +606,18 @@ DEADKEY	0060	// Dead Key :  Grave Accent
 
 DEADKEY	007e	// Dead Key :  Tilde
 
+0061	00e3	// a -> ã    a with tilde
+0041	00c3	// A -> Ã    A with tilde
 0065	1ebd	// e -> ẽ    e with tilde
 0045	1ebc	// E -> Ẽ    E with tilde
 0069	0129	// i -> ĩ    i with tilde
 0049	0128	// I -> Ĩ    I with tilde
 006c	026b	// l -> ɫ    l with middle tilde
 004c	2c62	// L -> Ɫ    L with middle tilde
+006e	00f1	// n -> ñ    n with tilde
+004e	00d1	// N -> Ñ    N with tilde
+006f	00f5	// o -> õ    o with tilde
+004f	00d5	// O -> Õ    O with tilde
 0073	0283	// s -> ʃ    small letter esh
 0053	01a9	// S -> Ʃ    capital letter esh
 0075	0169	// u -> ũ    u with tilde
