@@ -1,4 +1,4 @@
-; UltimateKEYS SW (Scroll Lock).ahk - 2021-08-03
+; UltimateKEYS SW (Scroll Lock).ahk - 2021-08-16
 
 ; Created by :  Pieter Degroote
 
@@ -276,6 +276,8 @@ dkMacronStroke.item[" "] := "{u+00af}"  ; (¯) macron
 dkCedillaOgonek := ComObjCreate("Scripting.Dictionary")
 dkCedillaOgonek.item["a"] := "{u+0105}"  ; (ą) a with ogonek
 dkCedillaOgonek.item["A"] := "{u+0104}"  ; (Ą) A with ogonek
+dkCedillaOgonek.item["c"] := "{u+00e7}"  ; (ç) c with cedilla
+dkCedillaOgonek.item["C"] := "{u+00c7}"  ; (Ç) C with cedilla
 dkCedillaOgonek.item["d"] := "{u+1e11}"  ; (ḑ) d with cedilla
 dkCedillaOgonek.item["D"] := "{u+1e10}"  ; (Ḑ) D with cedilla
 dkCedillaOgonek.item["e"] := "{u+0119}"  ; (ę) e with ogonek
@@ -484,9 +486,19 @@ dkAcuteAccent.item[" "] := "{u+00b4}"  ; (´) acute accent
 ; Dead Key :  Diaeresis
 
 dkDiaeresis := ComObjCreate("Scripting.Dictionary")
+dkDiaeresis.item["a"] := "{u+00e4}"  ; (ä) a with diaeresis
+dkDiaeresis.item["A"] := "{u+00c4}"  ; (Ä) A with diaeresis
+dkDiaeresis.item["e"] := "{u+00eb}"  ; (ë) e with diaeresis
+dkDiaeresis.item["E"] := "{u+00cb}"  ; (Ë) E with diaeresis
 dkDiaeresis.item["h"] := "{u+1e27}"  ; (ḧ) h with diaeresis
 dkDiaeresis.item["H"] := "{u+1e26}"  ; (Ḧ) H with diaeresis
+dkDiaeresis.item["i"] := "{u+00ef}"  ; (ï) i with diaeresis
+dkDiaeresis.item["I"] := "{u+00cf}"  ; (Ï) I with diaeresis
+dkDiaeresis.item["o"] := "{u+00f6}"  ; (ö) o with diaeresis
+dkDiaeresis.item["O"] := "{u+00d6}"  ; (Ö) O with diaeresis
 dkDiaeresis.item["t"] := "{u+1e97}"  ; (ẗ) t with diaeresis
+dkDiaeresis.item["u"] := "{u+00fc}"  ; (ü) u with diaeresis
+dkDiaeresis.item["U"] := "{u+00dc}"  ; (Ü) U with diaeresis
 dkDiaeresis.item["w"] := "{u+1e85}"  ; (ẅ) w with diaeresis
 dkDiaeresis.item["W"] := "{u+1e84}"  ; (Ẅ) W with diaeresis
 dkDiaeresis.item["x"] := "{u+1e8d}"  ; (ẍ) x with diaeresis
@@ -557,12 +569,18 @@ dkGraveAccent.item[" "] := "``"        ; grave accent
 ; Dead Key :  Tilde
 
 dkTilde := ComObjCreate("Scripting.Dictionary")
+dkTilde.item["a"] := "{u+00e3}"  ; (ã) a with tilde
+dkTilde.item["A"] := "{u+00c3}"  ; (Ã) A with tilde
 dkTilde.item["e"] := "{u+1ebd}"  ; (ẽ) e with tilde
 dkTilde.item["E"] := "{u+1ebc}"  ; (Ẽ) E with tilde
 dkTilde.item["i"] := "{u+0129}"  ; (ĩ) i with tilde
 dkTilde.item["I"] := "{u+0128}"  ; (Ĩ) I with tilde
 dkTilde.item["l"] := "{u+026b}"  ; (ɫ) l with middle tilde
 dkTilde.item["L"] := "{u+2c62}"  ; (Ɫ) L with middle tilde
+dkTilde.item["n"] := "{u+00f1}"  ; (ñ) n with tilde
+dkTilde.item["N"] := "{u+00d1}"  ; (Ñ) N with tilde
+dkTilde.item["o"] := "{u+00f5}"  ; (õ) o with tilde
+dkTilde.item["O"] := "{u+00d5}"  ; (Õ) O with tilde
 dkTilde.item["s"] := "{u+0283}"  ; (ʃ) small letter esh
 dkTilde.item["S"] := "{u+01a9}"  ; (Ʃ) capital letter esh
 dkTilde.item["u"] := "{u+0169}"  ; (ũ) u with tilde
