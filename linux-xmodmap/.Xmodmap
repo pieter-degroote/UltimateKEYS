@@ -9,7 +9,7 @@
 
 keycode  10 = 1            exclam       exclamdown           onesuperior
 keycode  11 = 2            at           copyright            twosuperior
-keycode  12 = 3            numbersign   plusminus            threesuperior
+keycode  12 = 3            numbersign   section              threesuperior
 keycode  13 = 4            dollar       sterling             yen
 keycode  14 = 5            percent      EuroSign             cent
 keycode  15 = 6            asciicircum  dead_circumflex      dead_caron
@@ -32,7 +32,7 @@ keycode  33 = p            P            ocircumflex          Ocircumflex
 keycode  34 = bracketleft  braceleft    guillemotleft        U2039
 keycode  35 = bracketright braceright   guillemotright       U203A
 keycode  38 = a            A            adiaeresis           Adiaeresis
-keycode  39 = s            S            ssharp               section
+keycode  39 = s            S            ssharp               U1E9E
 keycode  40 = d            D            acircumflex          Acircumflex
 keycode  41 = f            F            egrave               Egrave
 keycode  42 = g            G            eacute               Eacute
