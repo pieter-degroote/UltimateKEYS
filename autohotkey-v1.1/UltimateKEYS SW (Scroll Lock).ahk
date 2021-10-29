@@ -1,4 +1,4 @@
-; UltimateKEYS SW (Scroll Lock).ahk - 2021-08-16
+; UltimateKEYS SW (Scroll Lock).ahk - 2021-10-28
 
 ; Created by :  Pieter Degroote
 
@@ -384,7 +384,6 @@ dkBreveSpecial.item[chr(0x00f1)] := "{u+0272}"  ; (ñ -> ɲ) n with left hook
 dkBreveSpecial.item[chr(0x00d1)] := "{u+019d}"  ; (Ñ -> Ɲ) N with left hook
 dkBreveSpecial.item[chr(0x00f6)] := "{u+0254}"  ; (ö -> ɔ) small open o
 dkBreveSpecial.item[chr(0x00d6)] := "{u+0186}"  ; (Ö -> Ɔ) capital open O
-dkBreveSpecial.item[chr(0x00df)] := "{u+1e9e}"  ; (ß -> ẞ) capital sharp S (capital Eszett)
 dkBreveSpecial.item[chr(0x00e5)] := "{u+2c73}"  ; (å -> ⱳ) w with hook
 dkBreveSpecial.item[chr(0x00c5)] := "{u+2c72}"  ; (Å -> Ⱳ) W with hook
 dkBreveSpecial.item[" "] := "{u+02d8}"  ; (˘) breve
@@ -471,7 +470,6 @@ dkAcuteAccent.item[chr(0x00e7)] := "{u+1e09}"  ; (ç -> ḉ) c with cedilla and 
 dkAcuteAccent.item[chr(0x00c7)] := "{u+1e08}"  ; (Ç -> Ḉ) C with cedilla and acute
 dkAcuteAccent.item[chr(0x00e9)] := "{u+0260}"  ; (é -> ɠ) g with hook
 dkAcuteAccent.item[chr(0x00c9)] := "{u+0193}"  ; (É -> Ɠ) G with hook
-dkAcuteAccent.item[chr(0x00df)] := "{u+1e9e}"  ; (ß -> ẞ) capital sharp S (capital Eszett)
 dkAcuteAccent.item[chr(0x00ec)] := "{u+028c}"  ; (ì -> ʌ) latin small letter turned v
 dkAcuteAccent.item[chr(0x00cc)] := "{u+0245}"  ; (Ì -> Ʌ) latin capital letter turned V
 dkAcuteAccent.item[chr(0x00fb)] := "{u+01b4}"  ; (û -> ƴ) y with hook
@@ -496,6 +494,8 @@ dkDiaeresis.item["i"] := "{u+00ef}"  ; (ï) i with diaeresis
 dkDiaeresis.item["I"] := "{u+00cf}"  ; (Ï) I with diaeresis
 dkDiaeresis.item["o"] := "{u+00f6}"  ; (ö) o with diaeresis
 dkDiaeresis.item["O"] := "{u+00d6}"  ; (Ö) O with diaeresis
+dkDiaeresis.item["s"] := "{u+0283}"  ; (ʃ) small letter esh
+dkDiaeresis.item["S"] := "{u+01a9}"  ; (Ʃ) capital letter esh
 dkDiaeresis.item["t"] := "{u+1e97}"  ; (ẗ) t with diaeresis
 dkDiaeresis.item["u"] := "{u+00fc}"  ; (ü) u with diaeresis
 dkDiaeresis.item["U"] := "{u+00dc}"  ; (Ü) U with diaeresis
@@ -581,8 +581,6 @@ dkTilde.item["n"] := "{u+00f1}"  ; (ñ) n with tilde
 dkTilde.item["N"] := "{u+00d1}"  ; (Ñ) N with tilde
 dkTilde.item["o"] := "{u+00f5}"  ; (õ) o with tilde
 dkTilde.item["O"] := "{u+00d5}"  ; (Õ) O with tilde
-dkTilde.item["s"] := "{u+0283}"  ; (ʃ) small letter esh
-dkTilde.item["S"] := "{u+01a9}"  ; (Ʃ) capital letter esh
 dkTilde.item["u"] := "{u+0169}"  ; (ũ) u with tilde
 dkTilde.item["U"] := "{u+0168}"  ; (Ũ) U with tilde
 dkTilde.item["v"] := "{u+1e7d}"  ; (ṽ) v with tilde
@@ -592,11 +590,11 @@ dkTilde.item["Y"] := "{u+1ef8}"  ; (Ỹ) Y with tilde
 dkTilde.item["g"] := "{u+ab36}"  ; (ꬶ) cross-tailed g
 dkTilde.item["h"] := "{u+0267}"  ; (ɧ) small letter heng with hook
 dkTilde.item["k"] := "{u+0138}"  ; (ĸ) small letter kra
+dkTilde.item["s"] := "{u+017f}"  ; (ſ) small long s
 dkTilde.item["1"] := "{u+2000}"  ; en quad
 dkTilde.item["2"] := "{u+2001}"  ; em quad
 dkTilde.item["!"] := "{u+2000}"  ; en quad
 dkTilde.item["@"] := "{u+2001}"  ; em quad
-dkTilde.item[chr(0x00df)] := "{u+017f}"  ; (ß -> ſ) small long s
 dkTilde.item[" "] := "~"         ; tilde
 
 
@@ -890,20 +888,23 @@ dkMathSymbols.item[","] := "{u+2264}"  ; (≤) less-than or equal to
 dkMathSymbols.item["<"] := "{u+2264}"  ; (≤) less-than or equal to
 dkMathSymbols.item["."] := "{u+2265}"  ; (≥) greater-than or equal to
 dkMathSymbols.item[">"] := "{u+2265}"  ; (≥) greater-than or equal to
-dkMathSymbols.item["-"] := "{u+2296}"  ; (⊖) circled minus
-dkMathSymbols.item["_"] := "{u+2298}"  ; (⊘) circled division slash
+dkMathSymbols.item["-"] := "{u+00b1}"  ; (±) plus-minus sign
+dkMathSymbols.item["_"] := "{u+2296}"  ; (⊖) circled minus
+dkMathSymbols.item["/"] := "{u+2298}"  ; (⊘) circled division slash
 dkMathSymbols.item["="] := "{u+225d}"  ; (≝) equal to by definition
 dkMathSymbols.item["+"] := "{u+2295}"  ; (⊕) circled plus
 dkMathSymbols.item[";"] := "{u+2235}"  ; (∵) because sign
 dkMathSymbols.item[":"] := "{u+2234}"  ; (∴) therefore sign
 dkMathSymbols.item["'"] := "{u+2032}"  ; (′) prime
 dkMathSymbols.item[chr(34)] := "{u+2033}"  ; (″) double prime
-dkMathSymbols.item["/"] := "{u+2034}"  ; (‴) triple prime
-dkMathSymbols.item["?"] := "{u+2057}"  ; (⁗) quadruple prime
+dkMathSymbols.item["["] := "{u+2034}"  ; (‴) triple prime
+dkMathSymbols.item["]"] := "{u+2057}"  ; (⁗) quadruple prime
 dkMathSymbols.item["\"] := "{u+2228}"  ; (∨) logical or
 dkMathSymbols.item["|"] := "{u+2228}"  ; (∨) logical or
 dkMathSymbols.item[chr(0x00e7)] := "{u+2245}"  ; (ç -> ≅) congruent to
 dkMathSymbols.item[chr(0x00c7)] := "{u+2247}"  ; (Ç -> ≇) not congruent to
+dkMathSymbols.item[chr(0x00f6)] := "{u+2300}"  ; (ö -> ⌀) diameter sign
+dkMathSymbols.item[chr(0x00d6)] := "{u+2300}"  ; (Ö -> ⌀) diameter sign
 dkMathSymbols.item[chr(0x00f5)] := "{u+2261}"  ; (õ -> ≡) identical to
 dkMathSymbols.item[chr(0x00d5)] := "{u+2262}"  ; (Õ -> ≢) not identical to
 dkMathSymbols.item[" "] := "{u+221a}"  ; (√) square root
@@ -1404,6 +1405,20 @@ $+0::
   Send {blind}{vkE8}
   return
 
+>!s::
+  if GetKeyState("CapsLock", "T")
+    Send {u+1e9e}  ; (ẞ) capital sharp S (capital Eszett)
+  else
+    Send {u+00df}  ; (ß) small sharp s (Eszett)
+  return
+>!+s::
+  if GetKeyState("CapsLock", "T")
+    Send {u+00df}  ; (ß) small sharp s (Eszett)
+  else
+    Send {u+1e9e}  ; (ẞ) capital sharp S (capital Eszett)
+  Send {blind}{vkE8}
+  return
+
 >!u::
   if GetKeyState("CapsLock", "T")
     Send {u+00dc}  ; (Ü) U with diaeresis
@@ -1488,12 +1503,6 @@ $+0::
   Send {blind}{vkE8}
   return
 
->!s::Send {u+00df}  ; (ß) small sharp s (Eszett)
->!+s::
-  Send {u+00a7}     ; (§) section sign
-  Send {blind}{vkE8}  ; suppresses 'Right Alt + Shift' hotkey
-  return
-
 >!1::Send {u+00a1}  ; (¡) inverted exclamation mark
 >!+1::
   Send {u+00b9}     ; (¹) superscript 1
@@ -1503,10 +1512,10 @@ $+0::
 >!2::Send {u+00a9}  ; (©) copyright sign
 >!+2::
   Send {u+00b2}     ; (²) superscript 2
-  Send {blind}{vkE8}
+  Send {blind}{vkE8}  ; suppresses 'Right Alt + Shift' hotkey
   return
 
->!3::Send {u+00b1}  ; (±) plus-minus sign
+>!3::Send {u+00a7}  ; (§) section sign
 >!+3::
   Send {u+00b3}     ; (³) superscript 3
   Send {blind}{vkE8}
