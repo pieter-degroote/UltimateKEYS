@@ -158,6 +158,9 @@ include "%L"
 <dead_acute> <udiaeresis>  : "ư"  U01B0    # u with horn
 <dead_acute> <Udiaeresis>  : "Ư"  U01AF    # U with horn
 
+<dead_diaeresis> <s> : "ʃ"  U0283  # small letter esh
+<dead_diaeresis> <S> : "Ʃ"  U01A9  # capital letter esh
+
 <dead_grave> <a> : "ȁ"  U0201  # a with double grave
 <dead_grave> <A> : "Ȁ"  U0200  # A with double grave
 <dead_grave> <d> : "ð"  eth    # small letter eth
@@ -175,13 +178,12 @@ include "%L"
 <dead_grave> <u> : "ȕ"  U0215  # u with double grave
 <dead_grave> <U> : "Ȕ"  U0214  # U with double grave
 
+<dead_tilde> <l> : "ɫ"  U026B  # l with middle tilde
+<dead_tilde> <L> : "Ɫ"  U2C62  # L with middle tilde
 <dead_tilde> <g> : "ꬶ"  UAB36  # cross-tailed g
 <dead_tilde> <h> : "ɧ"  U0267  # small letter heng with hook
 <dead_tilde> <k> : "ĸ"  U0138  # small letter kra
-<dead_tilde> <l> : "ɫ"  U026B  # l with middle tilde
-<dead_tilde> <L> : "Ɫ"  U2C62  # L with middle tilde
-<dead_tilde> <s> : "ʃ"  U0283  # small letter esh
-<dead_tilde> <S> : "Ʃ"  U01A9  # capital letter esh
+<dead_tilde> <s> : "ſ"  U017F  # small long s
 
 <dead_greek> <c>      : "χ"  U03C7  # small chi
 <dead_greek> <C>      : "Χ"  U03A7  # capital chi
