@@ -1,4 +1,4 @@
-KBD	ultkeys	"UltimateKEYS - 2021-08-16"
+KBD	ultkeys	"UltimateKEYS - 2021-10-28"
 
 COPYRIGHT	"License: GNU General Public License Version 3"
 
@@ -27,7 +27,7 @@ LAYOUT	// @ symbol at the end: defined as dead key
 
 02	1		0	1	0021	-1	00a1	00b9		// 1, !, ¡, ¹    digit 1, exclamation mark, inverted exclamation mark, superscript 1
 03	2		0	2	0040	-1	00a9	00b2		// 2, @, ©, ²    digit 2, at sign, copyright sign, superscript 2
-04	3		0	3	0023	-1	00b1	00b3		// 3, #, ±, ³    digit 3, number sign, plus-minus sign, superscript 3
+04	3		0	3	0023	-1	00a7	00b3		// 3, #, §, ³    digit 3, number sign, section sign, superscript 3
 05	4		0	4	0024	-1	00a3	00a5		// 4, $, £, ¥    digit 4, dollar sign, pound sign, yen sign
 06	5		0	5	0025	-1	20ac	00a2		// 5, %, €, ¢    digit 5, percent sign, euro sign, cent sign (dollar)
 07	6		0	6	005e	-1	005e@	02c7@		// 6, ^, ^, ˇ    digit 6, circumflex accent, circumflex accent (dead key), caron (dead key)
@@ -50,7 +50,7 @@ LAYOUT	// @ symbol at the end: defined as dead key
 1a	OEM_4		0	005b	007b	001b	00ab	2039		// [, {, «, ‹    left square bracket, left curly bracket, left-pointing double angle quotation mark, left-pointing single angle quotation mark    escape (001b)
 1b	OEM_6		0	005d	007d	001d	00bb	203a		// ], }, », ›    right square bracket, right curly bracket, right-pointing double angle quotation mark, right-pointing single angle quotation mark    information separator three (001d)
 1e	A		5	a	A	-1	00e4	00c4		// a, A, ä, Ä    letter a, letter A, a with diaeresis, A with diaeresis
-1f	S		1	s	S	-1	00df	00a7		// s, S, ß, §    letter s, letter S, small sharp s (Eszett), section sign
+1f	S		5	s	S	-1	00df	1e9e		// s, S, ß, ẞ    letter s, letter S, small sharp s (Eszett), capital sharp S (capital Eszett)
 20	D		5	d	D	-1	00e2	00c2		// d, D, â, Â    letter d, letter D, a with circumflex, A with circumflex
 21	F		5	f	F	-1	00e8	00c8		// f, F, è, È    letter f, letter F, e with grave, E with grave
 22	G		5	g	G	-1	00e9	00c9		// g, G, é, É    letter g, letter G, e with acute, E with acute
@@ -415,7 +415,6 @@ DEADKEY	02d8	// Dead Key :  Breve/Special
 0052	2c64	// R -> Ɽ    R with tail
 0073	0219	// s -> ș    s with comma below (Romanian)
 0053	0218	// S -> Ș    S with comma below (Romanian)
-00df	1e9e	// ß -> ẞ    capital sharp S (capital Eszett)
 0074	021b	// t -> ț    t with comma below (Romanian)
 0054	021a	// T -> Ț    T with comma below (Romanian)
 0075	016d	// u -> ŭ    u with breve
@@ -478,7 +477,6 @@ DEADKEY	00b4	// Dead Key :  Acute Accent
 0052	0154	// R -> Ŕ    R with acute
 0073	015b	// s -> ś    s with acute
 0053	015a	// S -> Ś    S with acute
-00df	1e9e	// ß -> ẞ    capital sharp S (capital Eszett)
 0074	01ad	// t -> ƭ    t with hook
 0054	01ac	// T -> Ƭ    T with hook
 0075	0171	// u -> ű    u with double acute
@@ -537,6 +535,8 @@ DEADKEY	00a8	// Dead Key :  Diaeresis
 0049	00cf	// I -> Ï    I with diaeresis
 006f	00f6	// o -> ö    o with diaeresis
 004f	00d6	// O -> Ö    O with diaeresis
+0073	0283	// s -> ʃ    small letter esh
+0053	01a9	// S -> Ʃ    capital letter esh
 0074	1e97	// t -> ẗ    t with diaeresis
 0075	00fc	// u -> ü    u with diaeresis
 0055	00dc	// U -> Ü    U with diaeresis
@@ -618,8 +618,6 @@ DEADKEY	007e	// Dead Key :  Tilde
 004e	00d1	// N -> Ñ    N with tilde
 006f	00f5	// o -> õ    o with tilde
 004f	00d5	// O -> Õ    O with tilde
-0073	0283	// s -> ʃ    small letter esh
-0053	01a9	// S -> Ʃ    capital letter esh
 0075	0169	// u -> ũ    u with tilde
 0055	0168	// U -> Ũ    U with tilde
 0076	1e7d	// v -> ṽ    v with tilde
@@ -629,7 +627,7 @@ DEADKEY	007e	// Dead Key :  Tilde
 0067	ab36	// g -> ꬶ    cross-tailed g
 0068	0267	// h -> ɧ    small letter heng with hook
 006b	0138	// k -> ĸ    small letter kra
-00df	017f	// ß -> ſ    small long s
+0073	017f	// s -> ſ    small long s
 0031	2000	// 1 ->      en quad
 0032	2001	// 2 ->      em quad
 0021	2000	// ! ->      en quad
@@ -881,6 +879,8 @@ DEADKEY	0020	// Dead Key :  Math Symbols
 004e	2115	// N -> ℕ    natural numbers
 006f	2218	// o -> ∘    ring operator
 004f	2205	// O -> ∅    empty set
+00f6	2300	// ö -> ⌀    diameter sign
+00d6	2300	// Ö -> ⌀    diameter sign
 0070	2202	// p -> ∂    partial differential
 0050	2119	// P -> ℙ    prime numbers
 0071	211a	// q -> ℚ    rational numbers
@@ -921,8 +921,9 @@ DEADKEY	0020	// Dead Key :  Math Symbols
 003c	2264	// < -> ≤    less-than or equal to
 002e	2265	// . -> ≥    greater-than or equal to
 003e	2265	// > -> ≥    greater-than or equal to
-002d	2296	// - -> ⊖    circled minus
-005f	2298	// _ -> ⊘    circled division slash
+002d	00b1	// - -> ±    plus-minus sign
+005f	2296	// _ -> ⊖    circled minus
+002f	2298	// / -> ⊘    circled division slash
 003d	225d	// = -> ≝    equal to by definition
 002b	2295	// + -> ⊕    circled plus
 00f5	2261	// õ -> ≡    identical to
@@ -931,8 +932,8 @@ DEADKEY	0020	// Dead Key :  Math Symbols
 003a	2234	// : -> ∴    therefore sign
 0027	2032	// ' -> ′    prime
 0022	2033	// " -> ″    double prime
-002f	2034	// / -> ‴    triple prime
-003f	2057	// ? -> ⁗    quadruple prime
+005b	2034	// [ -> ‴    triple prime
+005d	2057	// ] -> ⁗    quadruple prime
 005c	2228	// \ -> ∨    logical or
 007c	2228	// | -> ∨    logical or
 0020	221a	//   -> √    square root
