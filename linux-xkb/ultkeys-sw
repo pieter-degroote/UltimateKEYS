@@ -18,7 +18,7 @@ xkb_symbols "basic" {
     key <AB04> { [ v,            V,            igrave,               Igrave               ] };
     key <AB05> { [ b,            B,            iacute,               Iacute               ] };
     key <AB06> { [ n,            N,            ntilde,               Ntilde               ] };
-    key <AB07> { [ m,            M,            Multi_key,            Multi_key            ] };
+    key <AB07> { [ m,            M,            dead_greek,           dead_hook            ] };
     key <AB08> { [ comma,        less,         ograve,               Ograve               ] };
     key <AB09> { [ period,       greater,      oacute,               Oacute               ] };
     key <AB10> { [ slash,        question,     questiondown,         ellipsis             ] };
@@ -57,10 +57,10 @@ xkb_symbols "basic" {
     key <AE10> { [ parenright,   0,            rightdoublequotemark, rightsinglequotemark ] };
     key <AE11> { [ minus,        underscore,   atilde,               Atilde               ] };
     key <AE12> { [ equal,        plus,         otilde,               Otilde               ] };
-    key <BKSL> { [ backslash,    bar,          dead_greek,           dead_currency        ] };
-    key <TLDE> { [ grave,        asciitilde,   dead_grave,           dead_tilde           ] };
+    key <BKSL> { [ backslash,    bar,          dead_stroke,          dead_currency        ] };
     key <LSGT> { [ backslash,    bar,          backslash,            bar                  ] };
     key <SPCE> { [ space,        space,        nobreakspace,         nobreakspace         ] };
+    key <TLDE> { [ grave,        asciitilde,   dead_grave,           dead_tilde           ] };
     key <KPDL> { [ KP_Delete,    KP_Decimal                                               ] };
 
     include "level3(ralt_switch)"
