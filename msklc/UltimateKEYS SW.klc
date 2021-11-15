@@ -1,4 +1,4 @@
-KBD	ultksw	"UltimateKEYS SW - 2021-10-28"
+KBD	ultksw	"UltimateKEYS SW - 2021-11-14"
 
 COPYRIGHT	"License: GNU General Public License Version 3"
 
@@ -718,14 +718,14 @@ DEADKEY	00d7	// Dead Key :  General Symbols
 
 DEADKEY	00a4	// Dead Key :  Currency
 
-0061	20b3	// a -> ₳    Argentine austral
+0061	058f	// a -> ֏    Armenian dram
 0041	20b3	// A -> ₳    Argentine austral
 0062	20bf	// b -> ₿    bitcoin
-0042	20bf	// B -> ₿    bitcoin
+0042	0e3f	// B -> ฿    Thai baht
 0063	20a1	// c -> ₡    Costa Rican colón
 0043	20b5	// C -> ₵    Ghanaian cedi
 00e7	20a2	// ç -> ₢    Brazilian cruzeiro
-00c7	20a2	// Ç -> ₢    Brazilian cruzeiro
+00c7	20a0	// Ç -> ₠    euro-currency sign
 0064	20ab	// d -> ₫    Vietnamese dong
 0044	20af	// D -> ₯    Greek drachma
 0066	20a3	// f -> ₣    French franc
@@ -743,11 +743,13 @@ DEADKEY	00a4	// Dead Key :  Currency
 006d	20bc	// m -> ₼    Azerbaijani manat
 004d	20a5	// M -> ₥    mill sign
 006e	20a6	// n -> ₦    Nigerian naira
-004e	20a6	// N -> ₦    Nigerian naira
+004e	20bb	// N -> ₻    nordic mark
 0070	20b1	// p -> ₱    Philippine peso
-0050	20b1	// P -> ₱    Philippine peso
+0050	20a7	// P -> ₧    Spanish pesetas
 0072	20b9	// r -> ₹    Indian rupee
 0052	20bd	// R -> ₽    Russian ruble
+00ea	20a8	// ê -> ₨    rupee sign
+00ca	20a8	// Ê -> ₨    rupee sign
 0073	20aa	// s -> ₪    Israeli new shekel
 0053	20b7	// S -> ₷    spesmilo
 0074	20ae	// t -> ₮    Mongolian tögrög (tugrik)
@@ -909,7 +911,7 @@ DEADKEY	0020	// Dead Key :  Math Symbols
 005e	2220	// ^ -> ∠    angle symbol
 0037	2227	// 7 -> ∧    logical and
 0026	2227	// & -> ∧    logical and
-0038	2297	// 8 -> ⊗    circled times
+0038	2299	// 8 -> ⊙    circled dot operator
 002a	2297	// * -> ⊗    circled times
 0039	221f	// 9 -> ∟    right angle
 0028	221f	// ( -> ∟    right angle
