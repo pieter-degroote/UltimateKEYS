@@ -1,4 +1,4 @@
-; UltimateKEYS SW (Scroll Lock).ahk - 2021-10-28
+; UltimateKEYS SW (Scroll Lock).ahk - 2021-11-14
 
 ; Created by :  Pieter Degroote
 
@@ -685,10 +685,10 @@ dkSymbols.item[" "] := "{u+00d7}"  ; (×) multiplication sign
 ; Dead Key :  Currency
 
 dkCurrency := ComObjCreate("Scripting.Dictionary")
-dkCurrency.item["a"] := "{u+20b3}"  ; (₳) Argentine austral
+dkCurrency.item["a"] := "{u+058f}"  ; (֏) Armenian dram
 dkCurrency.item["A"] := "{u+20b3}"  ; (₳) Argentine austral
 dkCurrency.item["b"] := "{u+20bf}"  ; (₿) bitcoin
-dkCurrency.item["B"] := "{u+20bf}"  ; (₿) bitcoin
+dkCurrency.item["B"] := "{u+0e3f}"  ; (฿) Thai baht
 dkCurrency.item["c"] := "{u+20a1}"  ; (₡) Costa Rican colón
 dkCurrency.item["C"] := "{u+20b5}"  ; (₵) Ghanaian cedi
 dkCurrency.item["d"] := "{u+20ab}"  ; (₫) Vietnamese dong
@@ -706,9 +706,9 @@ dkCurrency.item["L"] := "{u+20be}"  ; (₾) Georgian lari
 dkCurrency.item["m"] := "{u+20bc}"  ; (₼) Azerbaijani manat
 dkCurrency.item["M"] := "{u+20a5}"  ; (₥) mill sign
 dkCurrency.item["n"] := "{u+20a6}"  ; (₦) Nigerian naira
-dkCurrency.item["N"] := "{u+20a6}"  ; (₦) Nigerian naira
+dkCurrency.item["N"] := "{u+20bb}"  ; (₻) nordic mark
 dkCurrency.item["p"] := "{u+20b1}"  ; (₱) Philippine peso
-dkCurrency.item["P"] := "{u+20b1}"  ; (₱) Philippine peso
+dkCurrency.item["P"] := "{u+20a7}"  ; (₧) Spanish pesetas
 dkCurrency.item["r"] := "{u+20b9}"  ; (₹) Indian rupee
 dkCurrency.item["R"] := "{u+20bd}"  ; (₽) Russian ruble
 dkCurrency.item["s"] := "{u+20aa}"  ; (₪) Israeli new shekel
@@ -720,9 +720,11 @@ dkCurrency.item["W"] := "{u+20a9}"  ; (₩) South Korean won
 dkCurrency.item["x"] := "{u+00a4}"  ; (¤) currency sign
 dkCurrency.item["X"] := "{u+00a4}"  ; (¤) currency sign
 dkCurrency.item[chr(0x00e7)] := "{u+20a2}"  ; (ç -> ₢) Brazilian cruzeiro
-dkCurrency.item[chr(0x00c7)] := "{u+20a2}"  ; (Ç -> ₢) Brazilian cruzeiro
+dkCurrency.item[chr(0x00c7)] := "{u+20a0}"  ; (Ç -> ₠) euro-currency sign
 dkCurrency.item[chr(0x00f8)] := "{u+20a4}"  ; (ø -> ₤) lira
 dkCurrency.item[chr(0x00d8)] := "{u+20b6}"  ; (Ø -> ₶) livre tournois
+dkCurrency.item[chr(0x00ea)] := "{u+20a8}"  ; (ê -> ₨) rupee sign
+dkCurrency.item[chr(0x00ca)] := "{u+20a8}"  ; (Ê -> ₨) rupee sign
 dkCurrency.item[" "] := "{u+00a4}"  ; (¤) currency sign
 
 
@@ -877,7 +879,7 @@ dkMathSymbols.item["^"] := "{u+2220}"  ; (∠) angle symbol
 dkMathSymbols.item["7"] := "{u+2227}"  ; (∧) logical and
 dkMathSymbols.item["&"] := "{u+2227}"  ; (∧) logical and
 dkMathSymbols.item["8"] := "{u+2297}"  ; (⊗) circled times
-dkMathSymbols.item["*"] := "{u+2297}"  ; (⊗) circled times
+dkMathSymbols.item["*"] := "{u+2299}"  ; (⊙) circled dot operator
 dkMathSymbols.item["9"] := "{u+221f}"  ; (∟) right angle
 dkMathSymbols.item["("] := "{u+221f}"  ; (∟) right angle
 dkMathSymbols.item["0"] := "{u+2221}"  ; (∡) measured angle
