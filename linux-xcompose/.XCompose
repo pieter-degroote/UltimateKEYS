@@ -1,4 +1,4 @@
-# UltimateKEYS  (~/.XCompose) - 2021-11-14
+# UltimateKEYS  (~/.XCompose) - 2021-11-18
 
 # Created by :  Pieter Degroote
 
@@ -218,6 +218,8 @@
 <dead_macron> <T> : "Ŧ"  U0166  # T with stroke
 <dead_macron> <u> : "ū"  U016B  # u with macron
 <dead_macron> <U> : "Ū"  U016A  # U with macron
+<dead_macron> <v> : "ǖ"  U01D6  # u with diaeresis and macron
+<dead_macron> <V> : "Ǖ"  U01D5  # U with diaeresis and macron
 <dead_macron> <y> : "ȳ"  U0233  # y with macron
 <dead_macron> <Y> : "Ȳ"  U0232  # Y with macron
 <dead_macron> <z> : "ƶ"  U01B6  # z with stroke
@@ -487,6 +489,8 @@
 <dead_diaeresis> <t> : "ẗ"  U1E97  # t with diaeresis
 <dead_diaeresis> <u> : "ü"  U00FC  # u with diaeresis
 <dead_diaeresis> <U> : "Ü"  U00DC  # U with diaeresis
+<dead_diaeresis> <v> : "ǘ"  U01D8  # u with diaeresis and acute
+<dead_diaeresis> <V> : "Ǘ"  U01D7  # U with diaeresis and acute
 <dead_diaeresis> <w> : "ẅ"  U1E85  # w with diaeresis
 <dead_diaeresis> <W> : "Ẅ"  U1E84  # W with diaeresis
 <dead_diaeresis> <x> : "ẍ"  U1E8D  # x with diaeresis
@@ -517,6 +521,8 @@
 <dead_grave> <T> : "Þ"  U00DE  # capital letter thorn
 <dead_grave> <u> : "ȕ"  U0215  # u with double grave
 <dead_grave> <U> : "Ȕ"  U0214  # U with double grave
+<dead_grave> <v> : "ǜ"  U01DC  # u with diaeresis and grave
+<dead_grave> <V> : "Ǜ"  U01DB  # U with diaeresis and grave
 <dead_grave> <w> : "ẁ"  U1E81  # w with grave
 <dead_grave> <W> : "Ẁ"  U1E80  # W with grave
 <dead_grave> <y> : "ỳ"  U1EF3  # y with grave
