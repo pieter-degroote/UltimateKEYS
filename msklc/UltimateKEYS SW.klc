@@ -1,4 +1,4 @@
-KBD	ultksw	"UltimateKEYS SW - 2021-11-14"
+KBD	ultksw	"UltimateKEYS SW - 2021-11-18"
 
 COPYRIGHT	"License: GNU General Public License Version 3"
 
@@ -291,6 +291,8 @@ DEADKEY	00af	// Dead Key :  Macron/Stroke
 0055	016a	// U -> Ū    U with macron
 00fc	0289	// ü -> ʉ    u with bar
 00dc	0244	// Ü -> Ʉ    U with bar
+0076	01d6	// v -> ǖ    u with diaeresis and macron
+0056	01d5	// V -> Ǖ    U with diaeresis and macron
 0079	0233	// y -> ȳ    y with macron
 0059	0232	// Y -> Ȳ    Y with macron
 00fb	024f	// û -> ɏ    y with stroke
@@ -540,6 +542,8 @@ DEADKEY	00a8	// Dead Key :  Diaeresis
 0074	1e97	// t -> ẗ    t with diaeresis
 0075	00fc	// u -> ü    u with diaeresis
 0055	00dc	// U -> Ü    U with diaeresis
+0076	01d8	// v -> ǘ    u with diaeresis and acute
+0056	01d7	// V -> Ǘ    U with diaeresis and acute
 0077	1e85	// w -> ẅ    w with diaeresis
 0057	1e84	// W -> Ẅ    W with diaeresis
 0078	1e8d	// x -> ẍ    x with diaeresis
@@ -568,6 +572,8 @@ DEADKEY	0060	// Dead Key :  Grave Accent
 0054	00de	// T -> Þ    capital letter thorn
 0075	0215	// u -> ȕ    u with double grave
 0055	0214	// U -> Ȕ    U with double grave
+0076	01dc	// v -> ǜ    u with diaeresis and grave
+0056	01db	// V -> Ǜ    U with diaeresis and grave
 0077	1e81	// w -> ẁ    w with grave
 0057	1e80	// W -> Ẁ    W with grave
 0079	1ef3	// y -> ỳ    y with grave
