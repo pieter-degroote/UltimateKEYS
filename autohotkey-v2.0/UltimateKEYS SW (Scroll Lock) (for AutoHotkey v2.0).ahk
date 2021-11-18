@@ -1,4 +1,4 @@
-; UltimateKEYS SW (Scroll Lock) (for AutoHotkey v2.0).ahk - 2021-11-14
+; UltimateKEYS SW (Scroll Lock) (for AutoHotkey v2.0).ahk - 2021-11-18
 
 ; Created by :  Pieter Degroote
 
@@ -232,6 +232,8 @@ dkMacronStroke["t"] := "{u+0167}"  ; (ŧ) t with stroke
 dkMacronStroke["T"] := "{u+0166}"  ; (Ŧ) T with stroke
 dkMacronStroke["u"] := "{u+016b}"  ; (ū) u with macron
 dkMacronStroke["U"] := "{u+016a}"  ; (Ū) U with macron
+dkMacronStroke["v"] := "{u+01d6}"  ; (ǖ) u with diaeresis and macron
+dkMacronStroke["V"] := "{u+01d5}"  ; (Ǖ) U with diaeresis and macron
 dkMacronStroke["y"] := "{u+0233}"  ; (ȳ) y with macron
 dkMacronStroke["Y"] := "{u+0232}"  ; (Ȳ) Y with macron
 dkMacronStroke["z"] := "{u+01b6}"  ; (ƶ) z with stroke
@@ -501,6 +503,8 @@ dkDiaeresis["S"] := "{u+01a9}"  ; (Ʃ) capital letter esh
 dkDiaeresis["t"] := "{u+1e97}"  ; (ẗ) t with diaeresis
 dkDiaeresis["u"] := "{u+00fc}"  ; (ü) u with diaeresis
 dkDiaeresis["U"] := "{u+00dc}"  ; (Ü) U with diaeresis
+dkDiaeresis["v"] := "{u+01d8}"  ; (ǘ) u with diaeresis and acute
+dkDiaeresis["V"] := "{u+01d7}"  ; (Ǘ) U with diaeresis and acute
 dkDiaeresis["w"] := "{u+1e85}"  ; (ẅ) w with diaeresis
 dkDiaeresis["W"] := "{u+1e84}"  ; (Ẅ) W with diaeresis
 dkDiaeresis["x"] := "{u+1e8d}"  ; (ẍ) x with diaeresis
@@ -531,6 +535,8 @@ dkGraveAccent["t"] := "{u+00fe}"  ; (þ) small letter thorn
 dkGraveAccent["T"] := "{u+00de}"  ; (Þ) capital letter thorn
 dkGraveAccent["u"] := "{u+0215}"  ; (ȕ) u with double grave
 dkGraveAccent["U"] := "{u+0214}"  ; (Ȕ) U with double grave
+dkGraveAccent["v"] := "{u+01dc}"  ; (ǜ) u with diaeresis and grave
+dkGraveAccent["V"] := "{u+01db}"  ; (Ǜ) U with diaeresis and grave
 dkGraveAccent["w"] := "{u+1e81}"  ; (ẁ) w with grave
 dkGraveAccent["W"] := "{u+1e80}"  ; (Ẁ) W with grave
 dkGraveAccent["y"] := "{u+1ef3}"  ; (ỳ) y with grave
