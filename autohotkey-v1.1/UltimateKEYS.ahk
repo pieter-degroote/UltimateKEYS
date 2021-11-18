@@ -1,4 +1,4 @@
-; UltimateKEYS.ahk - 2021-11-14
+; UltimateKEYS.ahk - 2021-11-18
 
 ; Created by :  Pieter Degroote
 
@@ -230,6 +230,8 @@ dkMacronStroke.item["t"] := "{u+0167}"  ; (ŧ) t with stroke
 dkMacronStroke.item["T"] := "{u+0166}"  ; (Ŧ) T with stroke
 dkMacronStroke.item["u"] := "{u+016b}"  ; (ū) u with macron
 dkMacronStroke.item["U"] := "{u+016a}"  ; (Ū) U with macron
+dkMacronStroke.item["v"] := "{u+01d6}"  ; (ǖ) u with diaeresis and macron
+dkMacronStroke.item["V"] := "{u+01d5}"  ; (Ǖ) U with diaeresis and macron
 dkMacronStroke.item["y"] := "{u+0233}"  ; (ȳ) y with macron
 dkMacronStroke.item["Y"] := "{u+0232}"  ; (Ȳ) Y with macron
 dkMacronStroke.item["z"] := "{u+01b6}"  ; (ƶ) z with stroke
@@ -499,6 +501,8 @@ dkDiaeresis.item["S"] := "{u+01a9}"  ; (Ʃ) capital letter esh
 dkDiaeresis.item["t"] := "{u+1e97}"  ; (ẗ) t with diaeresis
 dkDiaeresis.item["u"] := "{u+00fc}"  ; (ü) u with diaeresis
 dkDiaeresis.item["U"] := "{u+00dc}"  ; (Ü) U with diaeresis
+dkDiaeresis.item["v"] := "{u+01d8}"  ; (ǘ) u with diaeresis and acute
+dkDiaeresis.item["V"] := "{u+01d7}"  ; (Ǘ) U with diaeresis and acute
 dkDiaeresis.item["w"] := "{u+1e85}"  ; (ẅ) w with diaeresis
 dkDiaeresis.item["W"] := "{u+1e84}"  ; (Ẅ) W with diaeresis
 dkDiaeresis.item["x"] := "{u+1e8d}"  ; (ẍ) x with diaeresis
@@ -529,6 +533,8 @@ dkGraveAccent.item["t"] := "{u+00fe}"  ; (þ) small letter thorn
 dkGraveAccent.item["T"] := "{u+00de}"  ; (Þ) capital letter thorn
 dkGraveAccent.item["u"] := "{u+0215}"  ; (ȕ) u with double grave
 dkGraveAccent.item["U"] := "{u+0214}"  ; (Ȕ) U with double grave
+dkGraveAccent.item["v"] := "{u+01dc}"  ; (ǜ) u with diaeresis and grave
+dkGraveAccent.item["V"] := "{u+01db}"  ; (Ǜ) U with diaeresis and grave
 dkGraveAccent.item["w"] := "{u+1e81}"  ; (ẁ) w with grave
 dkGraveAccent.item["W"] := "{u+1e80}"  ; (Ẁ) W with grave
 dkGraveAccent.item["y"] := "{u+1ef3}"  ; (ỳ) y with grave
