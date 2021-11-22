@@ -1,10 +1,10 @@
-# UltimateKEYS  (~/.XCompose) - 2021-11-18
+# UltimateKEYS  (~/.XCompose) - 2021-11-22
 
-# Created by :  Pieter Degroote
+# Website :  www.ultimatekeys.info (pieter-degroote.github.io/UltimateKEYS/)
 
-# License :     GNU General Public License Version 3
+# License :  GNU General Public License Version 3
 
-# GitHub :      https://github.com/pieter-degroote/UltimateKEYS
+# GitHub :   github.com/pieter-degroote/UltimateKEYS
 
 
 # Dead key descriptions for UltimateKEYS
@@ -901,6 +901,10 @@ Dead Key :  Greek Alphabet
 <dead_hook> <Ccedilla>     : "≇"  U2247  # not congruent to
 <dead_hook> <odiaeresis>   : "⌀"  U2300  # diameter sign
 <dead_hook> <Odiaeresis>   : "⌀"  U2300  # diameter sign
+<dead_hook> <ograve>       : "⩽"  U2A7D  # less-than or slanted equal to
+<dead_hook> <Ograve>       : "⩽"  U2A7D  # less-than or slanted equal to
+<dead_hook> <oacute>       : "⩾"  U2A7E  # greater-than or slanted equal to
+<dead_hook> <Oacute>       : "⩾"  U2A7E  # greater-than or slanted equal to
 <dead_hook> <otilde>       : "≡"  U2261  # identical to
 <dead_hook> <Otilde>       : "≢"  U2262  # not identical to
 <dead_hook> <space>        : "√"  U221A  # square root
