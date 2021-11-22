@@ -1,10 +1,10 @@
 ! UltimateKEYS  (~/.Xmodmap)
 
-! Created by :  Pieter Degroote
+! Website :  www.ultimatekeys.info (pieter-degroote.github.io/UltimateKEYS/)
 
-! License :     GNU General Public License Version 3
+! License :  GNU General Public License Version 3
 
-! GitHub :      https://github.com/pieter-degroote/UltimateKEYS
+! GitHub :   github.com/pieter-degroote/UltimateKEYS
 
 
 keycode  10 = 1            exclam       exclamdown           onesuperior
