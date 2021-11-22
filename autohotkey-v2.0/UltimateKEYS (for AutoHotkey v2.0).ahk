@@ -1,17 +1,17 @@
-; UltimateKEYS (for AutoHotkey v2.0).ahk - 2021-11-18
+; UltimateKEYS (for AutoHotkey v2.0).ahk - 2021-11-22
 
-; Created by :  Pieter Degroote
+; Website :  www.ultimatekeys.info (pieter-degroote.github.io/UltimateKEYS/)
 
-; License :     GNU General Public License Version 3
+; License :  GNU General Public License Version 3
 
-; GitHub :      https://github.com/pieter-degroote/UltimateKEYS
+; GitHub :   github.com/pieter-degroote/UltimateKEYS
 
 
 ; Requirements :
 
-; Keyboard layout (on Windows OS) :  US QWERTY
+; Keyboard layout (on Windows) :  US QWERTY
 
-; AutoHotkey v2.0 (https://www.autohotkey.com/)
+; AutoHotkey v2.0 (www.autohotkey.com)
 
 
 
@@ -915,6 +915,10 @@ dkMathSymbols[chr(0x00e7)] := "{u+2245}"  ; (ç -> ≅) congruent to
 dkMathSymbols[chr(0x00c7)] := "{u+2247}"  ; (Ç -> ≇) not congruent to
 dkMathSymbols[chr(0x00f6)] := "{u+2300}"  ; (ö -> ⌀) diameter sign
 dkMathSymbols[chr(0x00d6)] := "{u+2300}"  ; (Ö -> ⌀) diameter sign
+dkMathSymbols[chr(0x00f2)] := "{u+2a7d}"  ; (ò -> ⩽) less-than or slanted equal to
+dkMathSymbols[chr(0x00d2)] := "{u+2a7d}"  ; (Ò -> ⩽) less-than or slanted equal to
+dkMathSymbols[chr(0x00f3)] := "{u+2a7e}"  ; (ó -> ⩾) greater-than or slanted equal to
+dkMathSymbols[chr(0x00d3)] := "{u+2a7e}"  ; (Ó -> ⩾) greater-than or slanted equal to
 dkMathSymbols[chr(0x00f5)] := "{u+2261}"  ; (õ -> ≡) identical to
 dkMathSymbols[chr(0x00d5)] := "{u+2262}"  ; (Õ -> ≢) not identical to
 dkMathSymbols[" "] := "{u+221a}"  ; (√) square root
