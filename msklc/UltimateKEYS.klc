@@ -1,10 +1,10 @@
-KBD	ultkeys	"UltimateKEYS - 2021-11-18"
+KBD	ultkeys	"UltimateKEYS - 2021-11-22"
 
-COPYRIGHT	"License: GNU General Public License Version 3"
+COPYRIGHT	"GNU General Public License Version 3"
 
-COMPANY		"Created by: Pieter Degroote"
+COMPANY		"github.com/pieter-degroote/UltimateKEYS"
 
-// GitHub :  https://github.com/pieter-degroote/UltimateKEYS
+// Website :  www.ultimatekeys.info (pieter-degroote.github.io/UltimateKEYS/)
 
 LOCALENAME	"en-US"
 
@@ -934,6 +934,10 @@ DEADKEY	0020	// Dead Key :  Math Symbols
 002f	2298	// / -> ⊘    circled division slash
 003d	225d	// = -> ≝    equal to by definition
 002b	2295	// + -> ⊕    circled plus
+00f2	2a7d	// ò -> ⩽    less-than or slanted equal to
+00d2	2a7d	// Ò -> ⩽    less-than or slanted equal to
+00f3	2a7e	// ó -> ⩾    greater-than or slanted equal to
+00d3	2a7e	// Ó -> ⩾    greater-than or slanted equal to
 00f5	2261	// õ -> ≡    identical to
 00d5	2262	// Õ -> ≢    not identical to
 003b	2235	// ; -> ∵    because sign
