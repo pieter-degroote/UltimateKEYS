@@ -1,4 +1,4 @@
-# UltimateKEYS  (~/.XCompose) - 2021-11-22
+# UltimateKEYS  (~/.XCompose) - 2021-12-28
 
 # Website :  www.ultimatekeys.info (pieter-degroote.github.io/UltimateKEYS/)
 
@@ -432,6 +432,7 @@
 <dead_acute> <Y> : "Ý"  U00DD  # Y with acute
 <dead_acute> <z> : "ź"  U017A  # z with acute
 <dead_acute> <Z> : "Ź"  U0179  # Z with acute
+<dead_acute> <1> : "⚠"  U26A0  # warning sign
 <dead_acute> <2> : "♫"  U266B  # beamed eighth notes
 <dead_acute> <3> : "⁂"  U2042  # asterism
 <dead_acute> <4> : "★"  U2605  # black star
@@ -441,6 +442,7 @@
 <dead_acute> <8> : "♪"  U266A  # eighth note
 <dead_acute> <9> : "✆"  U2706  # telephone location sign
 <dead_acute> <0> : "✉"  U2709  # envelope
+<dead_acute> <exclam>      : "⚠"  U26A0  # warning sign
 <dead_acute> <at>          : "♫"  U266B  # beamed eighth notes
 <dead_acute> <numbersign>  : "⁂"  U2042  # asterism
 <dead_acute> <dollar>      : "★"  U2605  # black star
@@ -607,6 +609,8 @@
 <dead_stroke> <E> : "✉"  U2709  # envelope
 <dead_stroke> <f> : "♀"  U2640  # Venus symbol (female)
 <dead_stroke> <F> : "♀"  U2640  # Venus symbol (female)
+<dead_stroke> <g> : "❀"  U2740  # white florette
+<dead_stroke> <G> : "✿"  U273F  # black florette
 <dead_stroke> <h> : "❦"  U2766  # floral heart
 <dead_stroke> <H> : "❧"  U2767  # rotated floral heart bullet
 <dead_stroke> <i> : "⋄"  U22C4  # diamond operator
@@ -633,6 +637,8 @@
 <dead_stroke> <U> : "☐"  U2610  # ballot box
 <dead_stroke> <v> : "✓"  U2713  # check mark
 <dead_stroke> <V> : "✔"  U2714  # heavy check mark
+<dead_stroke> <w> : "⚠"  U26A0  # warning sign
+<dead_stroke> <W> : "⚠"  U26A0  # warning sign
 <dead_stroke> <x> : "✗"  U2717  # ballot x
 <dead_stroke> <X> : "✘"  U2718  # heavy ballot x
 <dead_stroke> <y> : "☑"  U2611  # ballot box with check
