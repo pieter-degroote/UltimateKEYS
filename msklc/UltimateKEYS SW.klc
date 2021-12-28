@@ -1,4 +1,4 @@
-KBD	ultksw	"UltimateKEYS SW - 2021-11-22"
+KBD	ultksw	"UltimateKEYS SW - 2021-12-28"
 
 COPYRIGHT	"GNU General Public License Version 3"
 
@@ -505,6 +505,7 @@ DEADKEY	00b4	// Dead Key :  Acute Accent
 00d6	01a0	// Ö -> Ơ    O with horn
 00fc	01b0	// ü -> ư    u with horn
 00dc	01af	// Ü -> Ư    U with horn
+0031	26a0	// 1 -> ⚠   warning sign
 0032	266b	// 2 -> ♫    beamed eighth notes
 0033	2042	// 3 -> ⁂    asterism
 0034	2605	// 4 -> ★    black star
@@ -514,6 +515,7 @@ DEADKEY	00b4	// Dead Key :  Acute Accent
 0038	266a	// 8 -> ♪    eighth note
 0039	2706	// 9 -> ✆    telephone location sign
 0030	2709	// 0 -> ✉   envolope
+0021	26a0	// ! -> ⚠   warning sign
 0040	266b	// @ -> ♫    beamed eighth notes
 0023	2042	// # -> ⁂    asterism
 0024	2605	// $ -> ★    black star
@@ -656,6 +658,8 @@ DEADKEY	00d7	// Dead Key :  General Symbols
 0045	2709	// E -> ✉   envolope
 0066	2640	// f -> ♀    Venus symbol (female)
 0046	2640	// F -> ♀    Venus symbol (female)
+0067	2740	// g -> ❀    white florette
+0047	273f	// G -> ✿    black florette
 0068	2766	// h -> ❦    floral heart
 0048	2767	// H -> ❧    rotated floral heart bullet
 0069	22c4	// i -> ⋄    diamond operator
@@ -684,6 +688,8 @@ DEADKEY	00d7	// Dead Key :  General Symbols
 0055	2610	// U -> ☐    ballot box
 0076	2713	// v -> ✓    check mark
 0056	2714	// V -> ✔    heavy check mark
+0077	26a0	// w -> ⚠   warning sign
+0057	26a0	// W -> ⚠   warning sign
 0078	2717	// x -> ✗    ballot x
 0058	2718	// X -> ✘    heavy ballot x
 0079	2611	// y -> ☑    ballot box with check
