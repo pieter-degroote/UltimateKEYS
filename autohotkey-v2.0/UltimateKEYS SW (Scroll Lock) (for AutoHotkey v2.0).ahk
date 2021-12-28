@@ -1,4 +1,4 @@
-; UltimateKEYS SW (Scroll Lock) (for AutoHotkey v2.0).ahk - 2021-11-22
+; UltimateKEYS SW (Scroll Lock) (for AutoHotkey v2.0).ahk - 2021-12-28
 
 ; Website :  www.ultimatekeys.info (pieter-degroote.github.io/UltimateKEYS/)
 
@@ -446,6 +446,7 @@ dkAcuteAccent["y"] := "{u+00fd}"  ; (ý) y with acute
 dkAcuteAccent["Y"] := "{u+00dd}"  ; (Ý) Y with acute
 dkAcuteAccent["z"] := "{u+017a}"  ; (ź) z with acute
 dkAcuteAccent["Z"] := "{u+0179}"  ; (Ź) Z with acute
+dkAcuteAccent["1"] := "{u+26a0}"  ; (⚠) warning sign
 dkAcuteAccent["2"] := "{u+266b}"  ; (♫) beamed eighth notes
 dkAcuteAccent["3"] := "{u+2042}"  ; (⁂) asterism
 dkAcuteAccent["4"] := "{u+2605}"  ; (★) black star
@@ -455,6 +456,7 @@ dkAcuteAccent["7"] := "{u+273b}"  ; (✻) teardrop-spoked asterisk
 dkAcuteAccent["8"] := "{u+266a}"  ; (♪) eighth note
 dkAcuteAccent["9"] := "{u+2706}"  ; (✆) telephone location sign
 dkAcuteAccent["0"] := "{u+2709}"  ; (✉) envelope
+dkAcuteAccent["!"] := "{u+26a0}"  ; (⚠) warning sign
 dkAcuteAccent["@"] := "{u+266b}"  ; (♫) beamed eighth notes
 dkAcuteAccent["#"] := "{u+2042}"  ; (⁂) asterism
 dkAcuteAccent["$"] := "{u+2605}"  ; (★) black star
@@ -621,6 +623,8 @@ dkSymbols["e"] := "{u+212e}"  ; (℮) estimated symbol
 dkSymbols["E"] := "{u+2709}"  ; (✉) envelope
 dkSymbols["f"] := "{u+2640}"  ; (♀) Venus symbol (female)
 dkSymbols["F"] := "{u+2640}"  ; (♀) Venus symbol (female)
+dkSymbols["g"] := "{u+2740}"  ; (❀) white florette
+dkSymbols["G"] := "{u+273f}"  ; (✿) black florette
 dkSymbols["h"] := "{u+2766}"  ; (❦) floral heart
 dkSymbols["H"] := "{u+2767}"  ; (❧) rotated floral heart bullet
 dkSymbols["i"] := "{u+22c4}"  ; (⋄) diamond operator
@@ -647,6 +651,8 @@ dkSymbols["u"] := "{u+2610}"  ; (☐) ballot box
 dkSymbols["U"] := "{u+2610}"  ; (☐) ballot box
 dkSymbols["v"] := "{u+2713}"  ; (✓) check mark
 dkSymbols["V"] := "{u+2714}"  ; (✔) heavy check mark
+dkSymbols["w"] := "{u+26a0}"  ; (⚠) warning sign
+dkSymbols["W"] := "{u+26a0}"  ; (⚠) warning sign
 dkSymbols["x"] := "{u+2717}"  ; (✗) ballot x
 dkSymbols["X"] := "{u+2718}"  ; (✘) heavy ballot x
 dkSymbols["y"] := "{u+2611}"  ; (☑) ballot box with check
