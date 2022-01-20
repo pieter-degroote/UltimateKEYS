@@ -39,11 +39,15 @@
 <h3>-&gt; without root</h3>
 
 <ul>
-<li>Download/Unpack the files "ultkeys", "ultkeys-sw", "map" and "map_sw" from the "linux-xkb" folder.</li>
+<li>Download/Unpack the files "ultkeys", "ultkeys-sw", "map" and "map-sw" from the "linux-xkb" folder.</li>
 <li>Copy "ultkeys[-sw]" to "~/.config/xkb/symbols/".</li>
-<li>Copy "map" to "~/.config/xkb/" (or rename "map_sw" to "map" and copy to this location).</li>
+<li>Copy "map[-sw]" to "~/.config/xkb/".</li>
 <li>Also put the file ".XCompose" in the user’s home directory (~) to apply all custom dead key definitions for UltimateKEYS [SW] (see folder "linux-xcompose").</li>
-<li>Activation&nbsp;: &nbsp;xkbcomp -w 0 -I$HOME/.config/xkb $HOME/.config/xkb/map $DISPLAY</i>
+<li>Activation&nbsp;:
+<ul>
+<li>Classic&nbsp;: &nbsp;xkbcomp -w 0 -I$HOME/.config/xkb $HOME/.config/xkb/map $DISPLAY</li>
+<li>SW edition&nbsp;: &nbsp;xkbcomp -w 0 -I$HOME/.config/xkb $HOME/.config/xkb/map-sw $DISPLAY</li>
+</ul></li>
 </ul>
 
 <p>&nbsp;</p>
