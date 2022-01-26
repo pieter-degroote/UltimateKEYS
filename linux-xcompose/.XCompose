@@ -729,7 +729,7 @@
 <dead_currency> <dead_currency> : "¤"  U00A4  # currency sign
 
 
-Dead Key :  Greek Alphabet
+# Dead Key :  Greek Alphabet
 
 <dead_greek> <a> : "α"  U03B1  # small alpha
 <dead_greek> <A> : "Α"  U0391  # capital alpha
