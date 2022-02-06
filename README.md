@@ -10,7 +10,7 @@ International US QWERTY layout with AltGr (Right Alt) dead keys via AutoHotkey (
 
 ![UltimateKEYS - Keyboard Layout Image](images/UltimateKEYS%20-%20Keyboard%20Layout%20Image.png)
 
-SW (switched) edition&nbsp;: &nbsp;symbols !, @, #, $, %, ^, &, \*, (, ) are directly accessible; numbers are accessible via Shift.
+SW (switched) edition&nbsp;: &nbsp;symbols !, @, #, $, %, ^, &, \*, (, ) are directly accessible; numbers via Shift.
 
 ## Important - Security Warning&nbsp;:
 
