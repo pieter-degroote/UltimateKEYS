@@ -6,6 +6,12 @@ International US QWERTY layout with AltGr (Right Alt) dead keys via AutoHotkey (
 **Testing release&nbsp;:**&emsp;[![GitHub Testing](https://img.shields.io/github/release/pieter-degroote/UltimateKEYS-testing.svg?label=testing)](https://github.com/pieter-degroote/UltimateKEYS-testing/releases)  
 **Legacy release&nbsp;:**&emsp;[![GitHub Legacy](https://img.shields.io/github/release/pieter-degroote/UltimateKEYS-legacy.svg?label=legacy)](https://github.com/pieter-degroote/UltimateKEYS-legacy/releases)
 
+## Keyboard Layout Image (Classic)&nbsp;:
+
+![UltimateKEYS - Keyboard Layout Image](images/UltimateKEYS%20-%20Keyboard%20Layout%20Image.png)
+
+SW (switched) edition&nbsp;: &nbsp;symbols !, @, #, $, %, ^, &, \*, (, ) are accessible without Shift; the numbers are accessible via Shift.
+
 ## Important - Security Warning&nbsp;:
 
 **=&gt; Win/Linux&nbsp;: &nbsp;Only use “BASIC LATIN” characters (codes 32 to 126) for your Windows, Microsoft Live and Linux passwords&nbsp;!**  
