@@ -1,4 +1,4 @@
-; UltimateKEYS (for AutoHotkey v2.0).ahk - 2022-02-04
+; UltimateKEYS (for AutoHotkey v2.0) ({blind}{vkE8}).ahk - 2022-02-04
 
 ; Website :  www.ultimatekeys.info (pieter-degroote.github.io/UltimateKEYS/)
 
@@ -889,6 +889,7 @@ dkMathSymbols[" "] := "{u+221a}"  ; (√) square root
     Send "{u+00e4}"  ; (ä) a with diaeresis
   else
     Send "{u+00c4}"  ; (Ä) A with diaeresis
+  Send "{blind}{vkE8}"  ; suppresses 'Right Alt + Shift' hotkey
 }
 
 >!q:: {
@@ -902,6 +903,7 @@ dkMathSymbols[" "] := "{u+221a}"  ; (√) square root
     Send "{u+00e6}"  ; (æ) letter ae
   else
     Send "{u+00c6}"  ; (Æ) letter AE
+  Send "{blind}{vkE8}"  ; suppresses 'Right Alt + Shift' hotkey
 }
 
 >!w:: {
@@ -915,6 +917,7 @@ dkMathSymbols[" "] := "{u+221a}"  ; (√) square root
     Send "{u+00e5}"  ; (å) a with ring above
   else
     Send "{u+00c5}"  ; (Å) A with ring above
+  Send "{blind}{vkE8}"
 }
 
 >!z:: {
@@ -928,6 +931,7 @@ dkMathSymbols[" "] := "{u+221a}"  ; (√) square root
     Send "{u+00e0}"  ; (à) a with grave
   else
     Send "{u+00c0}"  ; (À) A with grave
+  Send "{blind}{vkE8}"
 }
 
 >!x:: {
@@ -941,6 +945,7 @@ dkMathSymbols[" "] := "{u+221a}"  ; (√) square root
     Send "{u+00e1}"  ; (á) a with acute
   else
     Send "{u+00c1}"  ; (Á) A with acute
+  Send "{blind}{vkE8}"
 }
 
 >!d:: {
@@ -954,6 +959,7 @@ dkMathSymbols[" "] := "{u+221a}"  ; (√) square root
     Send "{u+00e2}"  ; (â) a with circumflex
   else
     Send "{u+00c2}"  ; (Â) A with circumflex
+  Send "{blind}{vkE8}"
 }
 
 >!c:: {
@@ -967,6 +973,7 @@ dkMathSymbols[" "] := "{u+221a}"  ; (√) square root
     Send "{u+00e7}"  ; (ç) c with cedilla
   else
     Send "{u+00c7}"  ; (Ç) C with cedilla
+  Send "{blind}{vkE8}"
 }
 
 >!e:: {
@@ -980,6 +987,7 @@ dkMathSymbols[" "] := "{u+221a}"  ; (√) square root
     Send "{u+00eb}"  ; (ë) e with diaeresis
   else
     Send "{u+00cb}"  ; (Ë) E with diaeresis
+  Send "{blind}{vkE8}"
 }
 
 >!f:: {
@@ -993,6 +1001,7 @@ dkMathSymbols[" "] := "{u+221a}"  ; (√) square root
     Send "{u+00e8}"  ; (è) e with grave
   else
     Send "{u+00c8}"  ; (È) E with grave
+  Send "{blind}{vkE8}"
 }
 
 >!g:: {
@@ -1006,6 +1015,7 @@ dkMathSymbols[" "] := "{u+221a}"  ; (√) square root
     Send "{u+00e9}"  ; (é) e with acute
   else
     Send "{u+00c9}"  ; (É) E with acute
+  Send "{blind}{vkE8}"
 }
 
 >!r:: {
@@ -1019,6 +1029,7 @@ dkMathSymbols[" "] := "{u+221a}"  ; (√) square root
     Send "{u+00ea}"  ; (ê) e with circumflex
   else
     Send "{u+00ca}"  ; (Ê) E with circumflex
+  Send "{blind}{vkE8}"
 }
 
 >!i:: {
@@ -1032,6 +1043,7 @@ dkMathSymbols[" "] := "{u+221a}"  ; (√) square root
     Send "{u+00ef}"  ; (ï) i with diaeresis
   else
     Send "{u+00cf}"  ; (Ï) I with diaeresis
+  Send "{blind}{vkE8}"
 }
 
 >!v:: {
@@ -1045,6 +1057,7 @@ dkMathSymbols[" "] := "{u+221a}"  ; (√) square root
     Send "{u+00ec}"  ; (ì) i with grave
   else
     Send "{u+00cc}"  ; (Ì) I with grave
+  Send "{blind}{vkE8}"
 }
 
 >!b:: {
@@ -1058,6 +1071,7 @@ dkMathSymbols[" "] := "{u+221a}"  ; (√) square root
     Send "{u+00ed}"  ; (í) i with acute
   else
     Send "{u+00cd}"  ; (Í) I with acute
+  Send "{blind}{vkE8}"
 }
 
 >!t:: {
@@ -1071,6 +1085,7 @@ dkMathSymbols[" "] := "{u+221a}"  ; (√) square root
     Send "{u+00ee}"  ; (î) i with circumflex
   else
     Send "{u+00ce}"  ; (Î) I with circumflex
+  Send "{blind}{vkE8}"
 }
 
 >!n:: {
@@ -1084,6 +1099,7 @@ dkMathSymbols[" "] := "{u+221a}"  ; (√) square root
     Send "{u+00f1}"  ; (ñ) n with tilde
   else
     Send "{u+00d1}"  ; (Ñ) N with tilde
+  Send "{blind}{vkE8}"
 }
 
 >!o:: {
@@ -1097,6 +1113,7 @@ dkMathSymbols[" "] := "{u+221a}"  ; (√) square root
     Send "{u+00f6}"  ; (ö) o with diaeresis
   else
     Send "{u+00d6}"  ; (Ö) O with diaeresis
+  Send "{blind}{vkE8}"
 }
 
 >!k:: {
@@ -1110,6 +1127,7 @@ dkMathSymbols[" "] := "{u+221a}"  ; (√) square root
     Send "{u+0153}"  ; (œ) ligature oe
   else
     Send "{u+0152}"  ; (Œ) ligature OE
+  Send "{blind}{vkE8}"
 }
 
 >!l:: {
@@ -1123,6 +1141,7 @@ dkMathSymbols[" "] := "{u+221a}"  ; (√) square root
     Send "{u+00f8}"  ; (ø) o with stroke
   else
     Send "{u+00d8}"  ; (Ø) O with stroke
+  Send "{blind}{vkE8}"
 }
 
 >!,:: {
@@ -1136,6 +1155,7 @@ dkMathSymbols[" "] := "{u+221a}"  ; (√) square root
     Send "{u+00f2}"  ; (ò) o with grave
   else
     Send "{u+00d2}"  ; (Ò) O with grave
+  Send "{blind}{vkE8}"
 }
 
 >!.:: {
@@ -1149,6 +1169,7 @@ dkMathSymbols[" "] := "{u+221a}"  ; (√) square root
     Send "{u+00f3}"  ; (ó) o with acute
   else
     Send "{u+00d3}"  ; (Ó) O with acute
+  Send "{blind}{vkE8}"
 }
 
 >!p:: {
@@ -1162,6 +1183,7 @@ dkMathSymbols[" "] := "{u+221a}"  ; (√) square root
     Send "{u+00f4}"  ; (ô) o with circumflex
   else
     Send "{u+00d4}"  ; (Ô) O with circumflex
+  Send "{blind}{vkE8}"
 }
 
 >!s:: {
@@ -1175,6 +1197,7 @@ dkMathSymbols[" "] := "{u+221a}"  ; (√) square root
     Send "{u+00df}"  ; (ß) small sharp s (Eszett)
   else
     Send "{u+1e9e}"  ; (ẞ) capital sharp S (capital Eszett)
+  Send "{blind}{vkE8}"
 }
 
 >!u:: {
@@ -1188,6 +1211,7 @@ dkMathSymbols[" "] := "{u+221a}"  ; (√) square root
     Send "{u+00fc}"  ; (ü) u with diaeresis
   else
     Send "{u+00dc}"  ; (Ü) U with diaeresis
+  Send "{blind}{vkE8}"
 }
 
 >!h:: {
@@ -1201,6 +1225,7 @@ dkMathSymbols[" "] := "{u+221a}"  ; (√) square root
     Send "{u+00f9}"  ; (ù) u with grave
   else
     Send "{u+00d9}"  ; (Ù) U with grave
+  Send "{blind}{vkE8}"
 }
 
 >!j:: {
@@ -1214,6 +1239,7 @@ dkMathSymbols[" "] := "{u+221a}"  ; (√) square root
     Send "{u+00fa}"  ; (ú) u with acute
   else
     Send "{u+00da}"  ; (Ú) U with acute
+  Send "{blind}{vkE8}"
 }
 
 >!y:: {
@@ -1227,6 +1253,7 @@ dkMathSymbols[" "] := "{u+221a}"  ; (√) square root
     Send "{u+00fb}"  ; (û) u with circumflex
   else
     Send "{u+00db}"  ; (Û) U with circumflex
+  Send "{blind}{vkE8}"
 }
 
 >!-:: {
@@ -1240,6 +1267,7 @@ dkMathSymbols[" "] := "{u+221a}"  ; (√) square root
     Send "{u+00e3}"  ; (ã) a with tilde
   else
     Send "{u+00c3}"  ; (Ã) A with tilde
+  Send "{blind}{vkE8}"
 }
 
 >!=:: {
@@ -1253,148 +1281,213 @@ dkMathSymbols[" "] := "{u+221a}"  ; (√) square root
     Send "{u+00f5}"  ; (õ) o with tilde
   else
     Send "{u+00d5}"  ; (Õ) O with tilde
+  Send "{blind}{vkE8}"
 }
 
->!1::Send "{u+00a1}"   ; (¡) inverted exclamation mark
->!+1::Send "{u+00b9}"  ; (¹) superscript 1
+>!1::Send "{u+00a1}"  ; (¡) inverted exclamation mark
+>!+1:: {
+  Send "{u+00b9}"     ; (¹) superscript 1
+  Send "{blind}{vkE8}"  ; suppresses 'Right Alt + Shift' hotkey
+}
 
->!2::Send "{u+00a9}"   ; (©) copyright sign
->!+2::Send "{u+00b2}"  ; (²) superscript 2
+>!2::Send "{u+00a9}"  ; (©) copyright sign
+>!+2:: {
+  Send "{u+00b2}"     ; (²) superscript 2
+  Send "{blind}{vkE8}"  ; suppresses 'Right Alt + Shift' hotkey
+}
 
->!3::Send "{u+00a7}"   ; (§) section sign
->!+3::Send "{u+00b3}"  ; (³) superscript 3
+>!3::Send "{u+00a7}"  ; (§) section sign
+>!+3:: {
+  Send "{u+00b3}"     ; (³) superscript 3
+  Send "{blind}{vkE8}"
+}
 
->!4::Send "{u+00a3}"   ; (£) pound sign
->!+4::Send "{u+00a5}"  ; (¥) yen sign
+>!4::Send "{u+00a3}"  ; (£) pound sign
+>!+4:: {
+  Send "{u+00a5}"     ; (¥) yen sign
+  Send "{blind}{vkE8}"
+}
 
->!5::Send "{u+20ac}"   ; (€) euro sign
->!+5::Send "{u+00a2}"  ; (¢) cent sign (dollar)
+>!5::Send "{u+20ac}"  ; (€) euro sign
+>!+5:: {
+  Send "{u+00a2}"     ; (¢) cent sign (dollar)
+  Send "{blind}{vkE8}"
+}
 
->!9::Send "{u+201c}"   ; (“) left double quotation mark
->!+9::Send "{u+2018}"  ; (‘) left single quotation mark
+>!9::Send "{u+201c}"  ; (“) left double quotation mark
+>!+9:: {
+  Send "{u+2018}"     ; (‘) left single quotation mark
+  Send "{blind}{vkE8}"
+}
 
->!0::Send "{u+201d}"   ; (”) right double quotation mark
->!+0::Send "{u+2019}"  ; (’) right single quotation mark
+>!0::Send "{u+201d}"  ; (”) right double quotation mark
+>!+0:: {
+  Send "{u+2019}"     ; (’) right single quotation mark
+  Send "{blind}{vkE8}"
+}
 
->![::Send "{u+00ab}"   ; («) left-pointing double angle quotation mark
->!{::Send "{u+2039}"   ; (‹) left-pointing single angle quotation mark
+>![::Send "{u+00ab}"  ; («) left-pointing double angle quotation mark
+>!{:: {
+  Send "{u+2039}"     ; (‹) left-pointing single angle quotation mark
+  Send "{blind}{vkE8}"
+}
 
->!]::Send "{u+00bb}"   ; (») right-pointing double angle quotation mark
->!}::Send "{u+203a}"   ; (›) right-pointing single angle quotation mark
+>!]::Send "{u+00bb}"  ; (») right-pointing double angle quotation mark
+>!}:: {
+  Send "{u+203a}"     ; (›) right-pointing single angle quotation mark
+  Send "{blind}{vkE8}"
+}
 
->!;::Send "{u+00b0}"   ; (°) degree sign
->!+;::Send "{u+00b7}"  ; (·) middle dot
+>!;::Send "{u+00b0}"  ; (°) degree sign
+>!+;:: {
+  Send "{u+00b7}"     ; (·) middle dot
+  Send "{blind}{vkE8}"
+}
 
->!/::Send "{u+00bf}"   ; (¿) inverted question mark
->!?::Send "{u+2026}"   ; (…) horizontal ellipsis
+>!/::Send "{u+00bf}"  ; (¿) inverted question mark
+>!?:: {
+  Send "{u+2026}"     ; (…) horizontal ellipsis
+  Send "{blind}{vkE8}"
+}
 
->!space::Send "{u+00a0}"   ; non-breaking space
->!+space::Send "{u+00a0}"  ; non-breaking space
+>!space::Send "{u+00a0}"  ; non-breaking space
+>!+space:: {
+  Send "{u+00a0}"         ; non-breaking space
+  Send "{blind}{vkE8}"
+}
 
 
 ; Configuration :  Dead Keys on 'Right Alt' and 'Right Alt + Shift'
 
 >!6:: {
+  Send "{blind}{vkE8}"  ; suppresses circles around mouse pointer
   ih := InputHook("L1", dkEndKeys)
   ih.Start()
   ih.Wait()
   if dkCircumflex.Has(ih.Input)
     Send dkCircumflex[ih.Input]
+  Send "{blind}{vkE8}"  ; suppresses 'Right Alt + Shift' hotkey (for second character with 'Right Alt + Shift')
 }
 >!+6:: {
+  Send "{blind}{vkE8}"  ; suppresses 'Right Alt + Shift' hotkey
   ih := InputHook("L1", dkEndKeys)
   ih.Start()
   ih.Wait()
   if dkCaron.Has(ih.Input)
     Send dkCaron[ih.Input]
+  Send "{blind}{vkE8}"  ; suppresses 'Right Alt + Shift' hotkey (for second character with 'Right Alt + Shift')
 }
 
 >!7:: {
+  Send "{blind}{vkE8}"
   ih := InputHook("L1", dkEndKeys)
   ih.Start()
   ih.Wait()
   if dkDotAbove.Has(ih.Input)
     Send dkDotAbove[ih.Input]
+  Send "{blind}{vkE8}"
 }
 >!+7:: {
+  Send "{blind}{vkE8}"
   ih := InputHook("L1", dkEndKeys)
   ih.Start()
   ih.Wait()
   if dkMacronStroke.Has(ih.Input)
     Send dkMacronStroke[ih.Input]
+  Send "{blind}{vkE8}"
 }
 
 >!8:: {
+  Send "{blind}{vkE8}"
   ih := InputHook("L1", dkEndKeys)
   ih.Start()
   ih.Wait()
   if dkCedillaOgonek.Has(ih.Input)
     Send dkCedillaOgonek[ih.Input]
+  Send "{blind}{vkE8}"
 }
 >!+8:: {
+  Send "{blind}{vkE8}"
   ih := InputHook("L1", dkEndKeys)
   ih.Start()
   ih.Wait()
   if dkBreveSpecial.Has(ih.Input)
     Send dkBreveSpecial[ih.Input]
+  Send "{blind}{vkE8}"
 }
 
 >!':: {
+  Send "{blind}{vkE8}"
   ih := InputHook("L1", dkEndKeys)
   ih.Start()
   ih.Wait()
   if dkAcuteAccent.Has(ih.Input)
     Send dkAcuteAccent[ih.Input]
+  Send "{blind}{vkE8}"
 }
 >!":: {
+  Send "{blind}{vkE8}"
   ih := InputHook("L1", dkEndKeys)
   ih.Start()
   ih.Wait()
   if dkDiaeresis.Has(ih.Input)
     Send dkDiaeresis[ih.Input]
+  Send "{blind}{vkE8}"
 }
 
 >!`:: {
+  Send "{blind}{vkE8}"
   ih := InputHook("L1", dkEndKeys)
   ih.Start()
   ih.Wait()
   if dkGraveAccent.Has(ih.Input)
     Send dkGraveAccent[ih.Input]
+  Send "{blind}{vkE8}"
 }
 >!~:: {
+  Send "{blind}{vkE8}"
   ih := InputHook("L1", dkEndKeys)
   ih.Start()
   ih.Wait()
   if dkTilde.Has(ih.Input)
     Send dkTilde[ih.Input]
+  Send "{blind}{vkE8}"
 }
 
 >!\:: {
+  Send "{blind}{vkE8}"
   ih := InputHook("L1", dkEndKeys)
   ih.Start()
   ih.Wait()
   if dkSymbols.Has(ih.Input)
     Send dkSymbols[ih.Input]
+  Send "{blind}{vkE8}"
 }
 >!|:: {
+  Send "{blind}{vkE8}"
   ih := InputHook("L1", dkEndKeys)
   ih.Start()
   ih.Wait()
   if dkCurrency.Has(ih.Input)
     Send dkCurrency[ih.Input]
+  Send "{blind}{vkE8}"
 }
 
 >!m:: {
+  Send "{blind}{vkE8}"
   ih := InputHook("L1", dkEndKeys)
   ih.Start()
   ih.Wait()
   if dkGreekAlphabet.Has(ih.Input)
     Send dkGreekAlphabet[ih.Input]
+  Send "{blind}{vkE8}"
 }
 >!+m:: {
+  Send "{blind}{vkE8}"
   ih := InputHook("L1", dkEndKeys)
   ih.Start()
   ih.Wait()
   if dkMathSymbols.Has(ih.Input)
     Send dkMathSymbols[ih.Input]
+  Send "{blind}{vkE8}"
 }
