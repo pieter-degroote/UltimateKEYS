@@ -1366,7 +1366,6 @@ dkMathSymbols[" "] := "{u+221a}"  ; (√) square root
   ih.Wait()
   if dkCircumflex.Has(ih.Input)
     Send dkCircumflex[ih.Input]
-  Send "{blind}{vkE8}"  ; suppresses 'Right Alt + Shift' hotkey (for second character with 'Right Alt + Shift')
 }
 >!+6:: {
   Send "{blind}{vkE8}"  ; suppresses 'Right Alt + Shift' hotkey
@@ -1375,7 +1374,6 @@ dkMathSymbols[" "] := "{u+221a}"  ; (√) square root
   ih.Wait()
   if dkCaron.Has(ih.Input)
     Send dkCaron[ih.Input]
-  Send "{blind}{vkE8}"  ; suppresses 'Right Alt + Shift' hotkey (for second character with 'Right Alt + Shift')
 }
 
 >!7:: {
@@ -1385,7 +1383,6 @@ dkMathSymbols[" "] := "{u+221a}"  ; (√) square root
   ih.Wait()
   if dkDotAbove.Has(ih.Input)
     Send dkDotAbove[ih.Input]
-  Send "{blind}{vkE8}"
 }
 >!+7:: {
   Send "{blind}{vkE8}"
@@ -1394,7 +1391,6 @@ dkMathSymbols[" "] := "{u+221a}"  ; (√) square root
   ih.Wait()
   if dkMacronStroke.Has(ih.Input)
     Send dkMacronStroke[ih.Input]
-  Send "{blind}{vkE8}"
 }
 
 >!8:: {
@@ -1404,7 +1400,6 @@ dkMathSymbols[" "] := "{u+221a}"  ; (√) square root
   ih.Wait()
   if dkCedillaOgonek.Has(ih.Input)
     Send dkCedillaOgonek[ih.Input]
-  Send "{blind}{vkE8}"
 }
 >!+8:: {
   Send "{blind}{vkE8}"
@@ -1413,7 +1408,6 @@ dkMathSymbols[" "] := "{u+221a}"  ; (√) square root
   ih.Wait()
   if dkBreveSpecial.Has(ih.Input)
     Send dkBreveSpecial[ih.Input]
-  Send "{blind}{vkE8}"
 }
 
 >!':: {
@@ -1423,7 +1417,6 @@ dkMathSymbols[" "] := "{u+221a}"  ; (√) square root
   ih.Wait()
   if dkAcuteAccent.Has(ih.Input)
     Send dkAcuteAccent[ih.Input]
-  Send "{blind}{vkE8}"
 }
 >!":: {
   Send "{blind}{vkE8}"
@@ -1432,7 +1425,6 @@ dkMathSymbols[" "] := "{u+221a}"  ; (√) square root
   ih.Wait()
   if dkDiaeresis.Has(ih.Input)
     Send dkDiaeresis[ih.Input]
-  Send "{blind}{vkE8}"
 }
 
 >!`:: {
@@ -1442,7 +1434,6 @@ dkMathSymbols[" "] := "{u+221a}"  ; (√) square root
   ih.Wait()
   if dkGraveAccent.Has(ih.Input)
     Send dkGraveAccent[ih.Input]
-  Send "{blind}{vkE8}"
 }
 >!~:: {
   Send "{blind}{vkE8}"
@@ -1451,7 +1442,6 @@ dkMathSymbols[" "] := "{u+221a}"  ; (√) square root
   ih.Wait()
   if dkTilde.Has(ih.Input)
     Send dkTilde[ih.Input]
-  Send "{blind}{vkE8}"
 }
 
 >!\:: {
@@ -1461,7 +1451,6 @@ dkMathSymbols[" "] := "{u+221a}"  ; (√) square root
   ih.Wait()
   if dkSymbols.Has(ih.Input)
     Send dkSymbols[ih.Input]
-  Send "{blind}{vkE8}"
 }
 >!|:: {
   Send "{blind}{vkE8}"
@@ -1470,7 +1459,6 @@ dkMathSymbols[" "] := "{u+221a}"  ; (√) square root
   ih.Wait()
   if dkCurrency.Has(ih.Input)
     Send dkCurrency[ih.Input]
-  Send "{blind}{vkE8}"
 }
 
 >!m:: {
@@ -1480,7 +1468,6 @@ dkMathSymbols[" "] := "{u+221a}"  ; (√) square root
   ih.Wait()
   if dkGreekAlphabet.Has(ih.Input)
     Send dkGreekAlphabet[ih.Input]
-  Send "{blind}{vkE8}"
 }
 >!+m:: {
   Send "{blind}{vkE8}"
@@ -1489,5 +1476,4 @@ dkMathSymbols[" "] := "{u+221a}"  ; (√) square root
   ih.Wait()
   if dkMathSymbols.Has(ih.Input)
     Send dkMathSymbols[ih.Input]
-  Send "{blind}{vkE8}"
 }
