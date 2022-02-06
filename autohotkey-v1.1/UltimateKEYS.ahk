@@ -1,4 +1,4 @@
-; UltimateKEYS.ahk - 2021-12-28
+; UltimateKEYS.ahk - 2022-02-04
 
 ; Website :  www.ultimatekeys.info (pieter-degroote.github.io/UltimateKEYS/)
 
@@ -18,7 +18,7 @@
 ListLines Off   ; omits recently executed lines from history (for privacy and security)
 #KeyHistory 0   ; disables the key history (for privacy and security)
 
-SendMode Event  ; allows chaining of customized key combinations (default)
+SendMode Input  ; optimizes for faster and more reliable input
 
 
 ; Dead Key :  Circumflex Accent
@@ -158,6 +158,7 @@ dkDotAbove.item["o"] := "{u+022f}"  ; (ȯ) o with dot above
 dkDotAbove.item["O"] := "{u+022e}"  ; (Ȯ) O with dot above
 dkDotAbove.item["p"] := "{u+1e57}"  ; (ṗ) p with dot above
 dkDotAbove.item["P"] := "{u+1e56}"  ; (Ṗ) P with dot above
+dkDotAbove.item["q"] := "{u+1e9b}"  ; (ẛ) long s with dot above
 dkDotAbove.item["r"] := "{u+1e59}"  ; (ṙ) r with dot above
 dkDotAbove.item["R"] := "{u+1e58}"  ; (Ṙ) R with dot above
 dkDotAbove.item["s"] := "{u+1e61}"  ; (ṡ) s with dot above
@@ -194,8 +195,6 @@ dkDotAbove.item["&"] := "{u+2196}"  ; (↖) north west arrow
 dkDotAbove.item["*"] := "{u+2191}"  ; (↑) upwards arrow
 dkDotAbove.item["("] := "{u+2197}"  ; (↗) north east arrow
 dkDotAbove.item[")"] := "{u+2194}"  ; (↔) left right arrow
-dkDotAbove.item[chr(0x00e5)] := "{u+1e98}"  ; (å -> ẘ) w with ring above
-dkDotAbove.item[chr(0x00fb)] := "{u+1e99}"  ; (û -> ẙ) y with ring above
 dkDotAbove.item[" "] := "{u+02d9}"  ; (˙) dot above
 
 
@@ -224,6 +223,8 @@ dkMacronStroke.item["o"] := "{u+014d}"  ; (ō) o with macron
 dkMacronStroke.item["O"] := "{u+014c}"  ; (Ō) O with macron
 dkMacronStroke.item["p"] := "{u+1d7d}"  ; (ᵽ) p with stroke
 dkMacronStroke.item["P"] := "{u+2c63}"  ; (Ᵽ) P with stroke
+dkMacronStroke.item["q"] := "{u+01ed}"  ; (ǭ) o with ogonek and macron
+dkMacronStroke.item["Q"] := "{u+01ec}"  ; (Ǭ) O with ogonek and macron
 dkMacronStroke.item["r"] := "{u+024d}"  ; (ɍ) r with stroke
 dkMacronStroke.item["R"] := "{u+024c}"  ; (Ɍ) R with stroke
 dkMacronStroke.item["t"] := "{u+0167}"  ; (ŧ) t with stroke
@@ -232,6 +233,8 @@ dkMacronStroke.item["u"] := "{u+016b}"  ; (ū) u with macron
 dkMacronStroke.item["U"] := "{u+016a}"  ; (Ū) U with macron
 dkMacronStroke.item["v"] := "{u+01d6}"  ; (ǖ) u with diaeresis and macron
 dkMacronStroke.item["V"] := "{u+01d5}"  ; (Ǖ) U with diaeresis and macron
+dkMacronStroke.item["w"] := "{u+01e3}"  ; (ǣ) ae with macron
+dkMacronStroke.item["W"] := "{u+01e2}"  ; (Ǣ) AE with macron
 dkMacronStroke.item["y"] := "{u+0233}"  ; (ȳ) y with macron
 dkMacronStroke.item["Y"] := "{u+0232}"  ; (Ȳ) Y with macron
 dkMacronStroke.item["z"] := "{u+01b6}"  ; (ƶ) z with stroke
@@ -256,20 +259,6 @@ dkMacronStroke.item["&"] := "{u+21b0}"  ; (↰) upwards arrow with tip leftwards
 dkMacronStroke.item["*"] := "{u+21c5}"  ; (⇅) upwards arrow leftwards of downwards arrow
 dkMacronStroke.item["("] := "{u+21b1}"  ; (↱) upwards arrow with tip rightwards
 dkMacronStroke.item[")"] := "{u+21b9}"  ; (↹) leftwards arrow to bar over rightwards arrow to bar
-dkMacronStroke.item[chr(0x00e6)] := "{u+01e3}"  ; (æ -> ǣ) ae with macron
-dkMacronStroke.item[chr(0x00c6)] := "{u+01e2}"  ; (Æ -> Ǣ) AE with macron
-dkMacronStroke.item[chr(0x00e9)] := "{u+1e21}"  ; (é -> ḡ) g with macron
-dkMacronStroke.item[chr(0x00c9)] := "{u+1e20}"  ; (É -> Ḡ) G with macron
-dkMacronStroke.item[chr(0x00ef)] := "{u+0268}"  ; (ï -> ɨ) i with stroke
-dkMacronStroke.item[chr(0x00cf)] := "{u+0197}"  ; (Ï -> Ɨ) I with stroke
-dkMacronStroke.item[chr(0x00f8)] := "{u+019a}"  ; (ø -> ƚ) l with bar
-dkMacronStroke.item[chr(0x00d8)] := "{u+023d}"  ; (Ø -> Ƚ) L with bar
-dkMacronStroke.item[chr(0x00f6)] := "{u+01ed}"  ; (ö -> ǭ) o with ogonek and macron
-dkMacronStroke.item[chr(0x00d6)] := "{u+01ec}"  ; (Ö -> Ǭ) O with ogonek and macron
-dkMacronStroke.item[chr(0x00fc)] := "{u+0289}"  ; (ü -> ʉ) u with bar
-dkMacronStroke.item[chr(0x00dc)] := "{u+0244}"  ; (Ü -> Ʉ) U with bar
-dkMacronStroke.item[chr(0x00fb)] := "{u+024f}"  ; (û -> ɏ) y with stroke
-dkMacronStroke.item[chr(0x00db)] := "{u+024e}"  ; (Û -> Ɏ) Y with stroke
 dkMacronStroke.item[" "] := "{u+00af}"  ; (¯) macron
 
 
@@ -284,6 +273,8 @@ dkCedillaOgonek.item["d"] := "{u+1e11}"  ; (ḑ) d with cedilla
 dkCedillaOgonek.item["D"] := "{u+1e10}"  ; (Ḑ) D with cedilla
 dkCedillaOgonek.item["e"] := "{u+0119}"  ; (ę) e with ogonek
 dkCedillaOgonek.item["E"] := "{u+0118}"  ; (Ę) E with ogonek
+dkCedillaOgonek.item["f"] := "{u+0229}"  ; (ȩ) e with cedilla
+dkCedillaOgonek.item["F"] := "{u+0228}"  ; (Ȩ) E with cedilla
 dkCedillaOgonek.item["g"] := "{u+0123}"  ; (ģ) g with cedilla
 dkCedillaOgonek.item["G"] := "{u+0122}"  ; (Ģ) G with cedilla
 dkCedillaOgonek.item["h"] := "{u+1e29}"  ; (ḩ) h with cedilla
@@ -306,6 +297,10 @@ dkCedillaOgonek.item["t"] := "{u+0163}"  ; (ţ) t with cedilla
 dkCedillaOgonek.item["T"] := "{u+0162}"  ; (Ţ) T with cedilla
 dkCedillaOgonek.item["u"] := "{u+0173}"  ; (ų) u with ogonek
 dkCedillaOgonek.item["U"] := "{u+0172}"  ; (Ų) U with ogonek
+dkCedillaOgonek.item["w"] := "{u+01bf}"  ; (ƿ) small letter wynn
+dkCedillaOgonek.item["W"] := "{u+01f7}"  ; (Ƿ) capital letter wynn
+dkCedillaOgonek.item["y"] := "{u+021d}"  ; (ȝ) small letter yogh
+dkCedillaOgonek.item["Y"] := "{u+021c}"  ; (Ȝ) capital letter yogh
 dkCedillaOgonek.item["1"] := "{u+2013}"  ; (–) en dash
 dkCedillaOgonek.item["2"] := "{u+2014}"  ; (—) em dash
 dkCedillaOgonek.item["3"] := "{u+2015}"  ; (―) horizontal bar
@@ -319,11 +314,6 @@ dkCedillaOgonek.item["$"] := "{u+2010}"  ; (‐) hyphen
 dkCedillaOgonek.item["("] := "{u+2012}"  ; (‒) figure dash
 dkCedillaOgonek.item[")"] := "{u+00ad}"  ; (­) soft hyphen
 dkCedillaOgonek.item["-"] := "{u+2011}"  ; (‑) non-breaking hyphen
-dkCedillaOgonek.item["."] := "{u+02db}"  ; (˛) ogonek
-dkCedillaOgonek.item[chr(0x00eb)] := "{u+0229}"  ; (ë -> ȩ) e with cedilla
-dkCedillaOgonek.item[chr(0x00cb)] := "{u+0228}"  ; (Ë -> Ȩ) E with cedilla
-dkCedillaOgonek.item[chr(0x00f6)] := "{u+01ed}"  ; (ö -> ǭ) o with ogonek and macron
-dkCedillaOgonek.item[chr(0x00d6)] := "{u+01ec}"  ; (Ö -> Ǭ) O with ogonek and macron
 dkCedillaOgonek.item[" "] := "{u+00b8}"  ; (¸) cedilla
 
 
@@ -342,8 +332,8 @@ dkBreveSpecial.item["f"] := "{u+0259}"  ; (ə) small letter schwa (Azerbaijani)
 dkBreveSpecial.item["F"] := "{u+018f}"  ; (Ə) capital letter schwa (Azerbaijani)
 dkBreveSpecial.item["g"] := "{u+011f}"  ; (ğ) g with breve
 dkBreveSpecial.item["G"] := "{u+011e}"  ; (Ğ) G with breve
-dkBreveSpecial.item["h"] := "{u+a727}"  ; (ꜧ) small letter heng
-dkBreveSpecial.item["H"] := "{u+a726}"  ; (Ꜧ) capital letter heng
+dkBreveSpecial.item["h"] := "{u+0260}"  ; (ɠ) g with hook
+dkBreveSpecial.item["H"] := "{u+0193}"  ; (Ɠ) G with hook
 dkBreveSpecial.item["i"] := "{u+012d}"  ; (ĭ) i with breve
 dkBreveSpecial.item["I"] := "{u+012c}"  ; (Ĭ) I with breve
 dkBreveSpecial.item["j"] := "{u+0133}"  ; (ĳ) ligature ij
@@ -358,6 +348,8 @@ dkBreveSpecial.item["o"] := "{u+014f}"  ; (ŏ) o with breve
 dkBreveSpecial.item["O"] := "{u+014e}"  ; (Ŏ) O with breve
 dkBreveSpecial.item["p"] := "{u+01a5}"  ; (ƥ) p with hook
 dkBreveSpecial.item["P"] := "{u+01a4}"  ; (Ƥ) P with hook
+dkBreveSpecial.item["q"] := "{u+024b}"  ; (ɋ) q with hook tail
+dkBreveSpecial.item["Q"] := "{u+024a}"  ; (Ɋ) Q with hook tail
 dkBreveSpecial.item["r"] := "{u+027d}"  ; (ɽ) r with tail
 dkBreveSpecial.item["R"] := "{u+2c64}"  ; (Ɽ) R with tail
 dkBreveSpecial.item["s"] := "{u+0219}"  ; (ș) s with comma below (Romanian)
@@ -366,52 +358,40 @@ dkBreveSpecial.item["t"] := "{u+021b}"  ; (ț) t with comma below (Romanian)
 dkBreveSpecial.item["T"] := "{u+021a}"  ; (Ț) T with comma below (Romanian)
 dkBreveSpecial.item["u"] := "{u+016d}"  ; (ŭ) u with breve
 dkBreveSpecial.item["U"] := "{u+016c}"  ; (Ŭ) U with breve
-dkBreveSpecial.item["v"] := "{u+028a}"  ; (ʊ) latin small letter upsilon
-dkBreveSpecial.item["V"] := "{u+01b1}"  ; (Ʊ) latin capital letter upsilon
-dkBreveSpecial.item["w"] := "{u+01bf}"  ; (ƿ) small letter wynn
-dkBreveSpecial.item["W"] := "{u+01f7}"  ; (Ƿ) capital letter wynn
-dkBreveSpecial.item["y"] := "{u+021d}"  ; (ȝ) small letter yogh
-dkBreveSpecial.item["Y"] := "{u+021c}"  ; (Ȝ) capital letter yogh
+dkBreveSpecial.item["v"] := "{u+028b}"  ; (ʋ) v with hook
+dkBreveSpecial.item["V"] := "{u+01b2}"  ; (Ʋ) V with hook
+dkBreveSpecial.item["w"] := "{u+2c73}"  ; (ⱳ) w with hook
+dkBreveSpecial.item["W"] := "{u+2c72}"  ; (Ⱳ) W with hook
+dkBreveSpecial.item["y"] := "{u+01b4}"  ; (ƴ) y with hook
+dkBreveSpecial.item["Y"] := "{u+01b3}"  ; (Ƴ) Y with hook
 dkBreveSpecial.item["z"] := "{u+0225}"  ; (ȥ) z with hook
 dkBreveSpecial.item["Z"] := "{u+0224}"  ; (Ȥ) Z with hook
 dkBreveSpecial.item["3"] := "{u+0292}"  ; (ʒ) small letter ezh
 dkBreveSpecial.item["#"] := "{u+01b7}"  ; (Ʒ) capital letter ezh
-dkBreveSpecial.item[chr(0x00e4)] := "{u+0252}"  ; (ä -> ɒ) latin small letter turned alpha
-dkBreveSpecial.item[chr(0x00c4)] := "{u+2c70}"  ; (Ä -> Ɒ) latin capital letter turned alpha
-dkBreveSpecial.item[chr(0x00eb)] := "{u+01dd}"  ; (ë -> ǝ) small turned e
-dkBreveSpecial.item[chr(0x00cb)] := "{u+018e}"  ; (Ë -> Ǝ) capital reversed E
-dkBreveSpecial.item[chr(0x00e9)] := "{u+0263}"  ; (é -> ɣ) latin small gamma
-dkBreveSpecial.item[chr(0x00c9)] := "{u+0194}"  ; (É -> Ɣ) latin capital gamma
-dkBreveSpecial.item[chr(0x00f1)] := "{u+0272}"  ; (ñ -> ɲ) n with left hook
-dkBreveSpecial.item[chr(0x00d1)] := "{u+019d}"  ; (Ñ -> Ɲ) N with left hook
-dkBreveSpecial.item[chr(0x00f6)] := "{u+0254}"  ; (ö -> ɔ) small open o
-dkBreveSpecial.item[chr(0x00d6)] := "{u+0186}"  ; (Ö -> Ɔ) capital open O
-dkBreveSpecial.item[chr(0x00e5)] := "{u+2c73}"  ; (å -> ⱳ) w with hook
-dkBreveSpecial.item[chr(0x00c5)] := "{u+2c72}"  ; (Å -> Ⱳ) W with hook
 dkBreveSpecial.item[" "] := "{u+02d8}"  ; (˘) breve
 
 
 ; Dead Key :  Acute Accent
 
 dkAcuteAccent := ComObjCreate("Scripting.Dictionary")
-dkAcuteAccent.item["a"] := "{u+0251}"  ; (ɑ) latin small letter alpha
-dkAcuteAccent.item["A"] := "{u+2c6d}"  ; (Ɑ) latin capital letter alpha
+dkAcuteAccent.item["a"] := "{u+01fb}"  ; (ǻ) a with ring above and acute
+dkAcuteAccent.item["A"] := "{u+01fa}"  ; (Ǻ) A with ring above and acute
 dkAcuteAccent.item["b"] := "{u+0253}"  ; (ɓ) b with hook
 dkAcuteAccent.item["B"] := "{u+0181}"  ; (Ɓ) B with hook
 dkAcuteAccent.item["c"] := "{u+0107}"  ; (ć) c with acute
 dkAcuteAccent.item["C"] := "{u+0106}"  ; (Ć) C with acute
 dkAcuteAccent.item["d"] := "{u+0257}"  ; (ɗ) d with hook
 dkAcuteAccent.item["D"] := "{u+018a}"  ; (Ɗ) D with hook
-dkAcuteAccent.item["e"] := "{u+025b}"  ; (ɛ) small letter open e (latin small epsilon)
-dkAcuteAccent.item["E"] := "{u+0190}"  ; (Ɛ) capital letter open E (latin capital epsilon)
+dkAcuteAccent.item["e"] := "{u+01fd}"  ; (ǽ) ae with acute
+dkAcuteAccent.item["E"] := "{u+01fc}"  ; (Ǽ) AE with acute
 dkAcuteAccent.item["f"] := "{u+0192}"  ; (ƒ) f with hook
 dkAcuteAccent.item["F"] := "{u+0191}"  ; (Ƒ) F with hook
 dkAcuteAccent.item["g"] := "{u+01f5}"  ; (ǵ) g with acute
 dkAcuteAccent.item["G"] := "{u+01f4}"  ; (Ǵ) G with acute
 dkAcuteAccent.item["h"] := "{u+0266}"  ; (ɦ) h with hook
 dkAcuteAccent.item["H"] := "{u+a7aa}"  ; (Ɦ) H with hook
-dkAcuteAccent.item["i"] := "{u+0269}"  ; (ɩ) latin small letter iota
-dkAcuteAccent.item["I"] := "{u+0196}"  ; (Ɩ) latin capital letter iota
+dkAcuteAccent.item["i"] := "{u+01ff}"  ; (ǿ) o with stroke and acute
+dkAcuteAccent.item["I"] := "{u+01fe}"  ; (Ǿ) O with stroke and acute
 dkAcuteAccent.item["j"] := "{u+0133}"  ; (ĳ) ligature ij
 dkAcuteAccent.item["J"] := "{u+0132}"  ; (Ĳ) ligature IJ
 dkAcuteAccent.item["k"] := "{u+1e31}"  ; (ḱ) k with acute
@@ -426,8 +406,8 @@ dkAcuteAccent.item["o"] := "{u+0151}"  ; (ő) o with double acute
 dkAcuteAccent.item["O"] := "{u+0150}"  ; (Ő) O with double acute
 dkAcuteAccent.item["p"] := "{u+1e55}"  ; (ṕ) p with acute
 dkAcuteAccent.item["P"] := "{u+1e54}"  ; (Ṕ) P with acute
-dkAcuteAccent.item["q"] := "{u+024b}"  ; (ɋ) q with hook tail
-dkAcuteAccent.item["Q"] := "{u+024a}"  ; (Ɋ) Q with hook tail
+dkAcuteAccent.item["q"] := "{u+1e09}"  ; (ḉ) c with cedilla and acute
+dkAcuteAccent.item["Q"] := "{u+1e08}"  ; (Ḉ) C with cedilla and acute
 dkAcuteAccent.item["r"] := "{u+0155}"  ; (ŕ) r with acute
 dkAcuteAccent.item["R"] := "{u+0154}"  ; (Ŕ) R with acute
 dkAcuteAccent.item["s"] := "{u+015b}"  ; (ś) s with acute
@@ -436,15 +416,14 @@ dkAcuteAccent.item["t"] := "{u+01ad}"  ; (ƭ) t with hook
 dkAcuteAccent.item["T"] := "{u+01ac}"  ; (Ƭ) T with hook
 dkAcuteAccent.item["u"] := "{u+0171}"  ; (ű) u with double acute
 dkAcuteAccent.item["U"] := "{u+0170}"  ; (Ű) U with double acute
-dkAcuteAccent.item["v"] := "{u+028b}"  ; (ʋ) v with hook
-dkAcuteAccent.item["V"] := "{u+01b2}"  ; (Ʋ) V with hook
+dkAcuteAccent.item["v"] := "{u+01d8}"  ; (ǘ) u with diaeresis and acute
+dkAcuteAccent.item["V"] := "{u+01d7}"  ; (Ǘ) U with diaeresis and acute
 dkAcuteAccent.item["w"] := "{u+1e83}"  ; (ẃ) w with acute
 dkAcuteAccent.item["W"] := "{u+1e82}"  ; (Ẃ) W with acute
 dkAcuteAccent.item["y"] := "{u+00fd}"  ; (ý) y with acute
 dkAcuteAccent.item["Y"] := "{u+00dd}"  ; (Ý) Y with acute
 dkAcuteAccent.item["z"] := "{u+017a}"  ; (ź) z with acute
 dkAcuteAccent.item["Z"] := "{u+0179}"  ; (Ź) Z with acute
-dkAcuteAccent.item["1"] := "{u+26a0}"  ; (⚠) warning sign
 dkAcuteAccent.item["2"] := "{u+266b}"  ; (♫) beamed eighth notes
 dkAcuteAccent.item["3"] := "{u+2042}"  ; (⁂) asterism
 dkAcuteAccent.item["4"] := "{u+2605}"  ; (★) black star
@@ -452,9 +431,6 @@ dkAcuteAccent.item["5"] := "{u+2606}"  ; (☆) white star
 dkAcuteAccent.item["6"] := "{u+273d}"  ; (✽) heavy teardrop-spoked asterisk
 dkAcuteAccent.item["7"] := "{u+273b}"  ; (✻) teardrop-spoked asterisk
 dkAcuteAccent.item["8"] := "{u+266a}"  ; (♪) eighth note
-dkAcuteAccent.item["9"] := "{u+2706}"  ; (✆) telephone location sign
-dkAcuteAccent.item["0"] := "{u+2709}"  ; (✉) envelope
-dkAcuteAccent.item["!"] := "{u+26a0}"  ; (⚠) warning sign
 dkAcuteAccent.item["@"] := "{u+266b}"  ; (♫) beamed eighth notes
 dkAcuteAccent.item["#"] := "{u+2042}"  ; (⁂) asterism
 dkAcuteAccent.item["$"] := "{u+2605}"  ; (★) black star
@@ -462,26 +438,6 @@ dkAcuteAccent.item["%"] := "{u+2606}"  ; (☆) white star
 dkAcuteAccent.item["^"] := "{u+273d}"  ; (✽) heavy teardrop-spoked asterisk
 dkAcuteAccent.item["&"] := "{u+273b}"  ; (✻) teardrop-spoked asterisk
 dkAcuteAccent.item["*"] := "{u+266a}"  ; (♪) eighth note
-dkAcuteAccent.item["("] := "{u+2706}"  ; (✆) telephone location sign
-dkAcuteAccent.item[")"] := "{u+2709}"  ; (✉) envelope
-dkAcuteAccent.item[chr(0x00e5)] := "{u+01fb}"  ; (å -> ǻ) a with ring above and acute
-dkAcuteAccent.item[chr(0x00c5)] := "{u+01fa}"  ; (Å -> Ǻ) A with ring above and acute
-dkAcuteAccent.item[chr(0x00e6)] := "{u+01fd}"  ; (æ -> ǽ) ae with acute
-dkAcuteAccent.item[chr(0x00c6)] := "{u+01fc}"  ; (Æ -> Ǽ) AE with acute
-dkAcuteAccent.item[chr(0x00f8)] := "{u+01ff}"  ; (ø -> ǿ) o with stroke and acute
-dkAcuteAccent.item[chr(0x00d8)] := "{u+01fe}"  ; (Ø -> Ǿ) O with stroke and acute
-dkAcuteAccent.item[chr(0x00e7)] := "{u+1e09}"  ; (ç -> ḉ) c with cedilla and acute
-dkAcuteAccent.item[chr(0x00c7)] := "{u+1e08}"  ; (Ç -> Ḉ) C with cedilla and acute
-dkAcuteAccent.item[chr(0x00e9)] := "{u+0260}"  ; (é -> ɠ) g with hook
-dkAcuteAccent.item[chr(0x00c9)] := "{u+0193}"  ; (É -> Ɠ) G with hook
-dkAcuteAccent.item[chr(0x00ec)] := "{u+028c}"  ; (ì -> ʌ) latin small letter turned v
-dkAcuteAccent.item[chr(0x00cc)] := "{u+0245}"  ; (Ì -> Ʌ) latin capital letter turned V
-dkAcuteAccent.item[chr(0x00fb)] := "{u+01b4}"  ; (û -> ƴ) y with hook
-dkAcuteAccent.item[chr(0x00db)] := "{u+01b3}"  ; (Û -> Ƴ) Y with hook
-dkAcuteAccent.item[chr(0x00f6)] := "{u+01a1}"  ; (ö -> ơ) o with horn
-dkAcuteAccent.item[chr(0x00d6)] := "{u+01a0}"  ; (Ö -> Ơ) O with horn
-dkAcuteAccent.item[chr(0x00fc)] := "{u+01b0}"  ; (ü -> ư) u with horn
-dkAcuteAccent.item[chr(0x00dc)] := "{u+01af}"  ; (Ü -> Ư) U with horn
 dkAcuteAccent.item[" "] := "{u+00b4}"  ; (´) acute accent
 
 
@@ -503,8 +459,6 @@ dkDiaeresis.item["S"] := "{u+01a9}"  ; (Ʃ) capital letter esh
 dkDiaeresis.item["t"] := "{u+1e97}"  ; (ẗ) t with diaeresis
 dkDiaeresis.item["u"] := "{u+00fc}"  ; (ü) u with diaeresis
 dkDiaeresis.item["U"] := "{u+00dc}"  ; (Ü) U with diaeresis
-dkDiaeresis.item["v"] := "{u+01d8}"  ; (ǘ) u with diaeresis and acute
-dkDiaeresis.item["V"] := "{u+01d7}"  ; (Ǘ) U with diaeresis and acute
 dkDiaeresis.item["w"] := "{u+1e85}"  ; (ẅ) w with diaeresis
 dkDiaeresis.item["W"] := "{u+1e84}"  ; (Ẅ) W with diaeresis
 dkDiaeresis.item["x"] := "{u+1e8d}"  ; (ẍ) x with diaeresis
@@ -595,9 +549,6 @@ dkTilde.item["v"] := "{u+1e7d}"  ; (ṽ) v with tilde
 dkTilde.item["V"] := "{u+1e7c}"  ; (Ṽ) V with tilde
 dkTilde.item["y"] := "{u+1ef9}"  ; (ỹ) y with tilde
 dkTilde.item["Y"] := "{u+1ef8}"  ; (Ỹ) Y with tilde
-dkTilde.item["g"] := "{u+ab36}"  ; (ꬶ) cross-tailed g
-dkTilde.item["h"] := "{u+0267}"  ; (ɧ) small letter heng with hook
-dkTilde.item["k"] := "{u+0138}"  ; (ĸ) small letter kra
 dkTilde.item["s"] := "{u+017f}"  ; (ſ) small long s
 dkTilde.item["1"] := "{u+2000}"  ; en quad
 dkTilde.item["2"] := "{u+2001}"  ; em quad
@@ -627,6 +578,10 @@ dkSymbols.item["h"] := "{u+2766}"  ; (❦) floral heart
 dkSymbols.item["H"] := "{u+2767}"  ; (❧) rotated floral heart bullet
 dkSymbols.item["i"] := "{u+22c4}"  ; (⋄) diamond operator
 dkSymbols.item["I"] := "{u+22c4}"  ; (⋄) diamond operator
+dkSymbols.item["j"] := "{u+2126}"  ; (Ω) ohm sign (backwards compatibility)
+dkSymbols.item["J"] := "{u+2126}"  ; (Ω) ohm sign (backwards compatibility)
+dkSymbols.item["k"] := "{u+214d}"  ; (⅍) aktieselskab
+dkSymbols.item["K"] := "{u+214d}"  ; (⅍) aktieselskab
 dkSymbols.item["l"] := "{u+2113}"  ; (ℓ) script small l
 dkSymbols.item["L"] := "{u+2112}"  ; (ℒ) Laplace transform
 dkSymbols.item["m"] := "{u+2642}"  ; (♂) Mars symbol (male)
@@ -640,13 +595,13 @@ dkSymbols.item["P"] := "{u+2117}"  ; (℗) sound recording copyright
 dkSymbols.item["q"] := "{u+201e}"  ; („) double low-9 quotation mark
 dkSymbols.item["Q"] := "{u+201a}"  ; (‚) single low-9 quotation mark
 dkSymbols.item["r"] := "{u+00ae}"  ; (®) registered sign
-dkSymbols.item["R"] := "{u+2619}"  ; (☙) reversed rotated floral heart bullet
+dkSymbols.item["R"] := "{u+211e}"  ; (℞) prescription take (Recipere)
 dkSymbols.item["s"] := "{u+2120}"  ; (℠) service mark
 dkSymbols.item["S"] := "{u+2120}"  ; (℠) service mark
 dkSymbols.item["t"] := "{u+2122}"  ; (™) trademark symbol
 dkSymbols.item["T"] := "{u+2706}"  ; (✆) telephone location sign
 dkSymbols.item["u"] := "{u+2610}"  ; (☐) ballot box
-dkSymbols.item["U"] := "{u+2610}"  ; (☐) ballot box
+dkSymbols.item["U"] := "{u+2619}"  ; (☙) reversed rotated floral heart bullet
 dkSymbols.item["v"] := "{u+2713}"  ; (✓) check mark
 dkSymbols.item["V"] := "{u+2714}"  ; (✔) heavy check mark
 dkSymbols.item["w"] := "{u+26a0}"  ; (⚠) warning sign
@@ -681,16 +636,12 @@ dkSymbols.item["="] := "{u+00d7}"  ; (×) multiplication sign
 dkSymbols.item["+"] := "{u+00f7}"  ; (÷) division sign
 dkSymbols.item[";"] := "{u+263a}"  ; (☺) white smiling face
 dkSymbols.item[":"] := "{u+263b}"  ; (☻) black smiling face
-dkSymbols.item["/"] := "{u+203c}"  ; (‼) double exclamation mark
-dkSymbols.item["?"] := "{u+203d}"  ; (‽) interrobang
+dkSymbols.item["."] := "{u+203c}"  ; (‼) double exclamation mark
+dkSymbols.item[">"] := "{u+2e2e}"  ; (⸮) reversed question mark
+dkSymbols.item["/"] := "{u+203d}"  ; (‽) interrobang
+dkSymbols.item["?"] := "{u+2e18}"  ; (⸘) inverted interrobang
 dkSymbols.item["\"] := "{u+205e}"  ; (⁞) vertical four dots
 dkSymbols.item["|"] := "{u+00a6}"  ; (¦) broken bar
-dkSymbols.item[chr(0x00e4)] := "{u+214d}"  ; (ä -> ⅍) aktieselskab
-dkSymbols.item[chr(0x00c4)] := "{u+214d}"  ; (Ä -> ⅍) aktieselskab
-dkSymbols.item[chr(0x00f6)] := "{u+2126}"  ; (ö -> Ω) ohm sign (backwards compatibility)
-dkSymbols.item[chr(0x00d6)] := "{u+2126}"  ; (Ö -> Ω) ohm sign (backwards compatibility)
-dkSymbols.item[chr(0x00bf)] := "{u+2e18}"  ; (¿ -> ⸘) inverted interrobang
-dkSymbols.item[chr(0x2026)] := "{u+2e2e}"  ; (… -> ⸮) reversed question mark
 dkSymbols.item[" "] := "{u+00d7}"  ; (×) multiplication sign
 
 
@@ -705,12 +656,16 @@ dkCurrency.item["c"] := "{u+20a1}"  ; (₡) Costa Rican colón
 dkCurrency.item["C"] := "{u+20b5}"  ; (₵) Ghanaian cedi
 dkCurrency.item["d"] := "{u+20ab}"  ; (₫) Vietnamese dong
 dkCurrency.item["D"] := "{u+20af}"  ; (₯) Greek drachma
+dkCurrency.item["e"] := "{u+20a2}"  ; (₢) Brazilian cruzeiro
+dkCurrency.item["E"] := "{u+20a0}"  ; (₠) euro-currency sign
 dkCurrency.item["f"] := "{u+20a3}"  ; (₣) French franc
 dkCurrency.item["F"] := "{u+20a3}"  ; (₣) French franc
 dkCurrency.item["g"] := "{u+20b2}"  ; (₲) Paraguayan guaraní
 dkCurrency.item["G"] := "{u+20b2}"  ; (₲) Paraguayan guaraní
 dkCurrency.item["h"] := "{u+20b4}"  ; (₴) Ukrainian hryvnia
 dkCurrency.item["H"] := "{u+20b4}"  ; (₴) Ukrainian hryvnia
+dkCurrency.item["i"] := "{u+20a4}"  ; (₤) lira
+dkCurrency.item["I"] := "{u+20b6}"  ; (₶) livre tournois
 dkCurrency.item["k"] := "{u+20ad}"  ; (₭) Laotian kip
 dkCurrency.item["K"] := "{u+20ad}"  ; (₭) Laotian kip
 dkCurrency.item["l"] := "{u+20ba}"  ; (₺) Turkish lira
@@ -727,16 +682,12 @@ dkCurrency.item["s"] := "{u+20aa}"  ; (₪) Israeli new shekel
 dkCurrency.item["S"] := "{u+20b7}"  ; (₷) spesmilo
 dkCurrency.item["t"] := "{u+20ae}"  ; (₮) Mongolian tögrög (tugrik)
 dkCurrency.item["T"] := "{u+20b8}"  ; (₸) Kazakh tenge
+dkCurrency.item["u"] := "{u+20a8}"  ; (₨) rupee sign
+dkCurrency.item["U"] := "{u+20a8}"  ; (₨) rupee sign
 dkCurrency.item["w"] := "{u+20a9}"  ; (₩) South Korean won
 dkCurrency.item["W"] := "{u+20a9}"  ; (₩) South Korean won
 dkCurrency.item["x"] := "{u+00a4}"  ; (¤) currency sign
 dkCurrency.item["X"] := "{u+00a4}"  ; (¤) currency sign
-dkCurrency.item[chr(0x00e7)] := "{u+20a2}"  ; (ç -> ₢) Brazilian cruzeiro
-dkCurrency.item[chr(0x00c7)] := "{u+20a0}"  ; (Ç -> ₠) euro-currency sign
-dkCurrency.item[chr(0x00f8)] := "{u+20a4}"  ; (ø -> ₤) lira
-dkCurrency.item[chr(0x00d8)] := "{u+20b6}"  ; (Ø -> ₶) livre tournois
-dkCurrency.item[chr(0x00ea)] := "{u+20a8}"  ; (ê -> ₨) rupee sign
-dkCurrency.item[chr(0x00ca)] := "{u+20a8}"  ; (Ê -> ₨) rupee sign
 dkCurrency.item[" "] := "{u+00a4}"  ; (¤) currency sign
 
 
@@ -827,7 +778,6 @@ dkGreekAlphabet.item[chr(34)] := "{u+208a}"  ; (₊) subscript +
 dkGreekAlphabet.item["{"] := "{u+208d}"  ; (₍) subscript (
 dkGreekAlphabet.item["}"] := "{u+208e}"  ; (₎) subscript )
 dkGreekAlphabet.item["."] := "{u+00b5}"  ; (µ) micro sign
-dkGreekAlphabet.item[chr(0x00df)] := "{u+03c2}"  ; (ß -> ς) small final sigma
 dkGreekAlphabet.item[" "] := "{u+03bc}"  ; (μ) small mu
 
 
@@ -852,6 +802,8 @@ dkMathSymbols.item["h"] := "{u+2283}"  ; (⊃) superset of
 dkMathSymbols.item["H"] := "{u+2285}"  ; (⊅) not a superset of
 dkMathSymbols.item["i"] := "{u+221e}"  ; (∞) infinity symbol
 dkMathSymbols.item["I"] := "{u+2111}"  ; (ℑ) imaginary numbers
+dkMathSymbols.item["j"] := "{u+2245}"  ; (≅) congruent to
+dkMathSymbols.item["J"] := "{u+2247}"  ; (≇) not congruent to
 dkMathSymbols.item["k"] := "{u+220b}"  ; (∋) contains as member
 dkMathSymbols.item["K"] := "{u+220c}"  ; (∌) does not contain as member
 dkMathSymbols.item["l"] := "{u+2225}"  ; (∥) parallel to
@@ -870,8 +822,12 @@ dkMathSymbols.item["r"] := "{u+221a}"  ; (√) square root
 dkMathSymbols.item["R"] := "{u+211d}"  ; (ℝ) real numbers
 dkMathSymbols.item["s"] := "{u+2229}"  ; (∩) set intersection
 dkMathSymbols.item["S"] := "{u+222b}"  ; (∫) integral symbol
+dkMathSymbols.item["t"] := "{u+2300}"  ; (⌀) diameter sign
+dkMathSymbols.item["T"] := "{u+2300}"  ; (⌀) diameter sign
 dkMathSymbols.item["u"] := "{u+222a}"  ; (∪) set union
 dkMathSymbols.item["U"] := "{u+2216}"  ; (∖) set minus
+dkMathSymbols.item["v"] := "{u+2261}"  ; (≡) identical to
+dkMathSymbols.item["V"] := "{u+2262}"  ; (≢) not identical to
 dkMathSymbols.item["w"] := "{u+2118}"  ; (℘) Weierstrass elliptic function
 dkMathSymbols.item["W"] := "{u+2118}"  ; (℘) Weierstrass elliptic function
 dkMathSymbols.item["z"] := "{u+21af}"  ; (↯) downwards zigzag arrow
@@ -899,9 +855,9 @@ dkMathSymbols.item[")"] := "{u+2221}"  ; (∡) measured angle
 dkMathSymbols.item["``"] := "{u+2248}" ; (≈) almost equal to
 dkMathSymbols.item["~"] := "{u+2248}"  ; (≈) almost equal to
 dkMathSymbols.item[","] := "{u+2264}"  ; (≤) less-than or equal to
-dkMathSymbols.item["<"] := "{u+2264}"  ; (≤) less-than or equal to
+dkMathSymbols.item["<"] := "{u+2a7d}"  ; (⩽) less-than or slanted equal to
 dkMathSymbols.item["."] := "{u+2265}"  ; (≥) greater-than or equal to
-dkMathSymbols.item[">"] := "{u+2265}"  ; (≥) greater-than or equal to
+dkMathSymbols.item[">"] := "{u+2a7e}"  ; (⩾) greater-than or slanted equal to
 dkMathSymbols.item["-"] := "{u+00b1}"  ; (±) plus-minus sign
 dkMathSymbols.item["_"] := "{u+2296}"  ; (⊖) circled minus
 dkMathSymbols.item["/"] := "{u+2298}"  ; (⊘) circled division slash
@@ -915,16 +871,6 @@ dkMathSymbols.item["["] := "{u+2034}"  ; (‴) triple prime
 dkMathSymbols.item["]"] := "{u+2057}"  ; (⁗) quadruple prime
 dkMathSymbols.item["\"] := "{u+2228}"  ; (∨) logical or
 dkMathSymbols.item["|"] := "{u+2228}"  ; (∨) logical or
-dkMathSymbols.item[chr(0x00e7)] := "{u+2245}"  ; (ç -> ≅) congruent to
-dkMathSymbols.item[chr(0x00c7)] := "{u+2247}"  ; (Ç -> ≇) not congruent to
-dkMathSymbols.item[chr(0x00f6)] := "{u+2300}"  ; (ö -> ⌀) diameter sign
-dkMathSymbols.item[chr(0x00d6)] := "{u+2300}"  ; (Ö -> ⌀) diameter sign
-dkMathSymbols.item[chr(0x00f2)] := "{u+2a7d}"  ; (ò -> ⩽) less-than or slanted equal to
-dkMathSymbols.item[chr(0x00d2)] := "{u+2a7d}"  ; (Ò -> ⩽) less-than or slanted equal to
-dkMathSymbols.item[chr(0x00f3)] := "{u+2a7e}"  ; (ó -> ⩾) greater-than or slanted equal to
-dkMathSymbols.item[chr(0x00d3)] := "{u+2a7e}"  ; (Ó -> ⩾) greater-than or slanted equal to
-dkMathSymbols.item[chr(0x00f5)] := "{u+2261}"  ; (õ -> ≡) identical to
-dkMathSymbols.item[chr(0x00d5)] := "{u+2262}"  ; (Õ -> ≢) not identical to
 dkMathSymbols.item[" "] := "{u+221a}"  ; (√) square root
 
 
@@ -941,7 +887,6 @@ dkMathSymbols.item[" "] := "{u+221a}"  ; (√) square root
     Send {u+00e4}  ; (ä) a with diaeresis
   else
     Send {u+00c4}  ; (Ä) A with diaeresis
-  Send {blind}{vkE8}  ; suppresses 'Right Alt + Shift' hotkey
   return
 
 >!q::
@@ -955,7 +900,6 @@ dkMathSymbols.item[" "] := "{u+221a}"  ; (√) square root
     Send {u+00e6}  ; (æ) letter ae
   else
     Send {u+00c6}  ; (Æ) letter AE
-  Send {blind}{vkE8}  ; suppresses 'Right Alt + Shift' hotkey
   return
 
 >!w::
@@ -969,7 +913,6 @@ dkMathSymbols.item[" "] := "{u+221a}"  ; (√) square root
     Send {u+00e5}  ; (å) a with ring above
   else
     Send {u+00c5}  ; (Å) A with ring above
-  Send {blind}{vkE8}
   return
 
 >!z::
@@ -983,7 +926,6 @@ dkMathSymbols.item[" "] := "{u+221a}"  ; (√) square root
     Send {u+00e0}  ; (à) a with grave
   else
     Send {u+00c0}  ; (À) A with grave
-  Send {blind}{vkE8}
   return
 
 >!x::
@@ -997,7 +939,6 @@ dkMathSymbols.item[" "] := "{u+221a}"  ; (√) square root
     Send {u+00e1}  ; (á) a with acute
   else
     Send {u+00c1}  ; (Á) A with acute
-  Send {blind}{vkE8}
   return
 
 >!d::
@@ -1011,7 +952,6 @@ dkMathSymbols.item[" "] := "{u+221a}"  ; (√) square root
     Send {u+00e2}  ; (â) a with circumflex
   else
     Send {u+00c2}  ; (Â) A with circumflex
-  Send {blind}{vkE8}
   return
 
 >!c::
@@ -1025,7 +965,6 @@ dkMathSymbols.item[" "] := "{u+221a}"  ; (√) square root
     Send {u+00e7}  ; (ç) c with cedilla
   else
     Send {u+00c7}  ; (Ç) C with cedilla
-  Send {blind}{vkE8}
   return
 
 >!e::
@@ -1039,7 +978,6 @@ dkMathSymbols.item[" "] := "{u+221a}"  ; (√) square root
     Send {u+00eb}  ; (ë) e with diaeresis
   else
     Send {u+00cb}  ; (Ë) E with diaeresis
-  Send {blind}{vkE8}
   return
 
 >!f::
@@ -1053,7 +991,6 @@ dkMathSymbols.item[" "] := "{u+221a}"  ; (√) square root
     Send {u+00e8}  ; (è) e with grave
   else
     Send {u+00c8}  ; (È) E with grave
-  Send {blind}{vkE8}
   return
 
 >!g::
@@ -1067,7 +1004,6 @@ dkMathSymbols.item[" "] := "{u+221a}"  ; (√) square root
     Send {u+00e9}  ; (é) e with acute
   else
     Send {u+00c9}  ; (É) E with acute
-  Send {blind}{vkE8}
   return
 
 >!r::
@@ -1081,7 +1017,6 @@ dkMathSymbols.item[" "] := "{u+221a}"  ; (√) square root
     Send {u+00ea}  ; (ê) e with circumflex
   else
     Send {u+00ca}  ; (Ê) E with circumflex
-  Send {blind}{vkE8}
   return
 
 >!i::
@@ -1095,7 +1030,6 @@ dkMathSymbols.item[" "] := "{u+221a}"  ; (√) square root
     Send {u+00ef}  ; (ï) i with diaeresis
   else
     Send {u+00cf}  ; (Ï) I with diaeresis
-  Send {blind}{vkE8}
   return
 
 >!v::
@@ -1109,7 +1043,6 @@ dkMathSymbols.item[" "] := "{u+221a}"  ; (√) square root
     Send {u+00ec}  ; (ì) i with grave
   else
     Send {u+00cc}  ; (Ì) I with grave
-  Send {blind}{vkE8}
   return
 
 >!b::
@@ -1123,7 +1056,6 @@ dkMathSymbols.item[" "] := "{u+221a}"  ; (√) square root
     Send {u+00ed}  ; (í) i with acute
   else
     Send {u+00cd}  ; (Í) I with acute
-  Send {blind}{vkE8}
   return
 
 >!t::
@@ -1137,7 +1069,6 @@ dkMathSymbols.item[" "] := "{u+221a}"  ; (√) square root
     Send {u+00ee}  ; (î) i with circumflex
   else
     Send {u+00ce}  ; (Î) I with circumflex
-  Send {blind}{vkE8}
   return
 
 >!n::
@@ -1151,7 +1082,6 @@ dkMathSymbols.item[" "] := "{u+221a}"  ; (√) square root
     Send {u+00f1}  ; (ñ) n with tilde
   else
     Send {u+00d1}  ; (Ñ) N with tilde
-  Send {blind}{vkE8}
   return
 
 >!o::
@@ -1165,7 +1095,6 @@ dkMathSymbols.item[" "] := "{u+221a}"  ; (√) square root
     Send {u+00f6}  ; (ö) o with diaeresis
   else
     Send {u+00d6}  ; (Ö) O with diaeresis
-  Send {blind}{vkE8}
   return
 
 >!k::
@@ -1179,7 +1108,6 @@ dkMathSymbols.item[" "] := "{u+221a}"  ; (√) square root
     Send {u+0153}  ; (œ) ligature oe
   else
     Send {u+0152}  ; (Œ) ligature OE
-  Send {blind}{vkE8}
   return
 
 >!l::
@@ -1193,7 +1121,6 @@ dkMathSymbols.item[" "] := "{u+221a}"  ; (√) square root
     Send {u+00f8}  ; (ø) o with stroke
   else
     Send {u+00d8}  ; (Ø) O with stroke
-  Send {blind}{vkE8}
   return
 
 >!,::
@@ -1207,7 +1134,6 @@ dkMathSymbols.item[" "] := "{u+221a}"  ; (√) square root
     Send {u+00f2}  ; (ò) o with grave
   else
     Send {u+00d2}  ; (Ò) O with grave
-  Send {blind}{vkE8}
   return
 
 >!.::
@@ -1221,7 +1147,6 @@ dkMathSymbols.item[" "] := "{u+221a}"  ; (√) square root
     Send {u+00f3}  ; (ó) o with acute
   else
     Send {u+00d3}  ; (Ó) O with acute
-  Send {blind}{vkE8}
   return
 
 >!p::
@@ -1235,7 +1160,6 @@ dkMathSymbols.item[" "] := "{u+221a}"  ; (√) square root
     Send {u+00f4}  ; (ô) o with circumflex
   else
     Send {u+00d4}  ; (Ô) O with circumflex
-  Send {blind}{vkE8}
   return
 
 >!s::
@@ -1249,7 +1173,6 @@ dkMathSymbols.item[" "] := "{u+221a}"  ; (√) square root
     Send {u+00df}  ; (ß) small sharp s (Eszett)
   else
     Send {u+1e9e}  ; (ẞ) capital sharp S (capital Eszett)
-  Send {blind}{vkE8}
   return
 
 >!u::
@@ -1263,7 +1186,6 @@ dkMathSymbols.item[" "] := "{u+221a}"  ; (√) square root
     Send {u+00fc}  ; (ü) u with diaeresis
   else
     Send {u+00dc}  ; (Ü) U with diaeresis
-  Send {blind}{vkE8}
   return
 
 >!h::
@@ -1277,7 +1199,6 @@ dkMathSymbols.item[" "] := "{u+221a}"  ; (√) square root
     Send {u+00f9}  ; (ù) u with grave
   else
     Send {u+00d9}  ; (Ù) U with grave
-  Send {blind}{vkE8}
   return
 
 >!j::
@@ -1291,7 +1212,6 @@ dkMathSymbols.item[" "] := "{u+221a}"  ; (√) square root
     Send {u+00fa}  ; (ú) u with acute
   else
     Send {u+00da}  ; (Ú) U with acute
-  Send {blind}{vkE8}
   return
 
 >!y::
@@ -1305,7 +1225,6 @@ dkMathSymbols.item[" "] := "{u+221a}"  ; (√) square root
     Send {u+00fb}  ; (û) u with circumflex
   else
     Send {u+00db}  ; (Û) U with circumflex
-  Send {blind}{vkE8}
   return
 
 >!-::
@@ -1319,7 +1238,6 @@ dkMathSymbols.item[" "] := "{u+221a}"  ; (√) square root
     Send {u+00e3}  ; (ã) a with tilde
   else
     Send {u+00c3}  ; (Ã) A with tilde
-  Send {blind}{vkE8}
   return
 
 >!=::
@@ -1333,185 +1251,120 @@ dkMathSymbols.item[" "] := "{u+221a}"  ; (√) square root
     Send {u+00f5}  ; (õ) o with tilde
   else
     Send {u+00d5}  ; (Õ) O with tilde
-  Send {blind}{vkE8}
   return
 
->!1::Send {u+00a1}  ; (¡) inverted exclamation mark
->!+1::
-  Send {u+00b9}     ; (¹) superscript 1
-  Send {blind}{vkE8}  ; suppresses 'Right Alt + Shift' hotkey
-  return
+>!1::Send {u+00a1}   ; (¡) inverted exclamation mark
+>!+1::Send {u+00b9}  ; (¹) superscript 1
 
->!2::Send {u+00a9}  ; (©) copyright sign
->!+2::
-  Send {u+00b2}     ; (²) superscript 2
-  Send {blind}{vkE8}  ; suppresses 'Right Alt + Shift' hotkey
-  return
+>!2::Send {u+00a9}   ; (©) copyright sign
+>!+2::Send {u+00b2}  ; (²) superscript 2
 
->!3::Send {u+00a7}  ; (§) section sign
->!+3::
-  Send {u+00b3}     ; (³) superscript 3
-  Send {blind}{vkE8}
-  return
+>!3::Send {u+00a7}   ; (§) section sign
+>!+3::Send {u+00b3}  ; (³) superscript 3
 
->!4::Send {u+00a3}  ; (£) pound sign
->!+4::
-  Send {u+00a5}     ; (¥) yen sign
-  Send {blind}{vkE8}
-  return
+>!4::Send {u+00a3}   ; (£) pound sign
+>!+4::Send {u+00a5}  ; (¥) yen sign
 
->!5::Send {u+20ac}  ; (€) euro sign
->!+5::
-  Send {u+00a2}     ; (¢) cent sign (dollar)
-  Send {blind}{vkE8}
-  return
+>!5::Send {u+20ac}   ; (€) euro sign
+>!+5::Send {u+00a2}  ; (¢) cent sign (dollar)
 
->!9::Send {u+201c}  ; (“) left double quotation mark
->!+9::
-  Send {u+2018}     ; (‘) left single quotation mark
-  Send {blind}{vkE8}
-  return
+>!9::Send {u+201c}   ; (“) left double quotation mark
+>!+9::Send {u+2018}  ; (‘) left single quotation mark
 
->!0::Send {u+201d}  ; (”) right double quotation mark
->!+0::
-  Send {u+2019}     ; (’) right single quotation mark
-  Send {blind}{vkE8}
-  return
+>!0::Send {u+201d}   ; (”) right double quotation mark
+>!+0::Send {u+2019}  ; (’) right single quotation mark
 
->![::Send {u+00ab}  ; («) left-pointing double angle quotation mark
->!{::
-  Send {u+2039}     ; (‹) left-pointing single angle quotation mark
-  Send {blind}{vkE8}
-  return
+>![::Send {u+00ab}   ; («) left-pointing double angle quotation mark
+>!{::Send {u+2039}   ; (‹) left-pointing single angle quotation mark
 
->!]::Send {u+00bb}  ; (») right-pointing double angle quotation mark
->!}::
-  Send {u+203a}     ; (›) right-pointing single angle quotation mark
-  Send {blind}{vkE8}
-  return
+>!]::Send {u+00bb}   ; (») right-pointing double angle quotation mark
+>!}::Send {u+203a}   ; (›) right-pointing single angle quotation mark
 
->!;::Send {u+00b0}  ; (°) degree sign
->!+;::
-  Send {u+00b7}     ; (·) middle dot
-  Send {blind}{vkE8}
-  return
+>!;::Send {u+00b0}   ; (°) degree sign
+>!+;::Send {u+00b7}  ; (·) middle dot
 
->!/::Send {u+00bf}  ; (¿) inverted question mark
->!?::
-  Send {u+2026}     ; (…) horizontal ellipsis
-  Send {blind}{vkE8}
-  return
+>!/::Send {u+00bf}   ; (¿) inverted question mark
+>!?::Send {u+2026}   ; (…) horizontal ellipsis
 
->!space::Send {u+00a0}  ; non-breaking space
->!+space::
-  Send {u+00a0}         ; non-breaking space
-  Send {blind}{vkE8}
-  return
+>!space::Send {u+00a0}   ; non-breaking space
+>!+space::Send {u+00a0}  ; non-breaking space
 
 
 ; Configuration :  Dead Keys on 'Right Alt' and 'Right Alt + Shift'
 
 >!6::
-  Send {blind}{vkE8}  ; suppresses circles around mouse pointer
   Input, key, L1, {bs}{del}{esc}{home}{end}
   Send % dkCircumflex.item[key]
   key := ""  ; avoids leaking content via debug properties
-  Send {blind}{vkE8}  ; suppresses 'Right Alt + Shift' hotkey (for second character with 'Right Alt + Shift')
   return
 >!+6::
-  Send {blind}{vkE8}  ; suppresses 'Right Alt + Shift' hotkey
   Input, key, L1, {bs}{del}{esc}{home}{end}
   Send % dkCaron.item[key]
   key := ""  ; avoids leaking content via debug properties
-  Send {blind}{vkE8}  ; suppresses 'Right Alt + Shift' hotkey (for second character with 'Right Alt + Shift')
   return
 
 >!7::
-  Send {blind}{vkE8}
   Input, key, L1, {bs}{del}{esc}{home}{end}
   Send % dkDotAbove.item[key]
   key := ""
-  Send {blind}{vkE8}
   return
 >!+7::
-  Send {blind}{vkE8}
   Input, key, L1, {bs}{del}{esc}{home}{end}
   Send % dkMacronStroke.item[key]
   key := ""
-  Send {blind}{vkE8}
   return
 
 >!8::
-  Send {blind}{vkE8}
   Input, key, L1, {bs}{del}{esc}{home}{end}
   Send % dkCedillaOgonek.item[key]
   key := ""
-  Send {blind}{vkE8}
   return
 >!+8::
-  Send {blind}{vkE8}
   Input, key, L1, {bs}{del}{esc}{home}{end}
   Send % dkBreveSpecial.item[key]
   key := ""
-  Send {blind}{vkE8}
   return
 
 >!'::
-  Send {blind}{vkE8}
   Input, key, L1, {bs}{del}{esc}{home}{end}
   Send % dkAcuteAccent.item[key]
   key := ""
-  Send {blind}{vkE8}
   return
 >!"::
-  Send {blind}{vkE8}
   Input, key, L1, {bs}{del}{esc}{home}{end}
   Send % dkDiaeresis.item[key]
   key := ""
-  Send {blind}{vkE8}
   return
 
 >!`::
-  Send {blind}{vkE8}
   Input, key, L1, {bs}{del}{esc}{home}{end}
   Send % dkGraveAccent.item[key]
   key := ""
-  Send {blind}{vkE8}
   return
 >!~::
-  Send {blind}{vkE8}
   Input, key, L1, {bs}{del}{esc}{home}{end}
   Send % dkTilde.item[key]
   key := ""
-  Send {blind}{vkE8}
   return
 
 >!\::
-  Send {blind}{vkE8}
   Input, key, L1, {bs}{del}{esc}{home}{end}
   Send % dkSymbols.item[key]
   key := ""
-  Send {blind}{vkE8}
   return
 >!|::
-  Send {blind}{vkE8}
   Input, key, L1, {bs}{del}{esc}{home}{end}
   Send % dkCurrency.item[key]
   key := ""
-  Send {blind}{vkE8}
   return
 
 >!m::
-  Send {blind}{vkE8}
   Input, key, L1, {bs}{del}{esc}{home}{end}
   Send % dkGreekAlphabet.item[key]
   key := ""
-  Send {blind}{vkE8}
   return
 >!+m::
-  Send {blind}{vkE8}
   Input, key, L1, {bs}{del}{esc}{home}{end}
   Send % dkMathSymbols.item[key]
   key := ""
-  Send {blind}{vkE8}
   return

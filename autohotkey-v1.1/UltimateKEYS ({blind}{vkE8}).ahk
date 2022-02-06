@@ -1,4 +1,4 @@
-; UltimateKEYS SW (Scroll Lock).ahk - 2022-02-04
+; UltimateKEYS ({blind}{vkE8}).ahk - 2022-02-04
 
 ; Website :  www.ultimatekeys.info (pieter-degroote.github.io/UltimateKEYS/)
 
@@ -18,7 +18,7 @@
 ListLines Off   ; omits recently executed lines from history (for privacy and security)
 #KeyHistory 0   ; disables the key history (for privacy and security)
 
-SendMode Event  ; allows chaining of customized key combinations
+SendMode Input  ; optimizes for faster and more reliable input
 
 
 ; Dead Key :  Circumflex Accent
@@ -259,8 +259,6 @@ dkMacronStroke.item["&"] := "{u+21b0}"  ; (↰) upwards arrow with tip leftwards
 dkMacronStroke.item["*"] := "{u+21c5}"  ; (⇅) upwards arrow leftwards of downwards arrow
 dkMacronStroke.item["("] := "{u+21b1}"  ; (↱) upwards arrow with tip rightwards
 dkMacronStroke.item[")"] := "{u+21b9}"  ; (↹) leftwards arrow to bar over rightwards arrow to bar
-dkMacronStroke.item[chr(0x00e6)] := "{u+01e3}"  ; (æ -> ǣ) ae with macron
-dkMacronStroke.item[chr(0x00c6)] := "{u+01e2}"  ; (Æ -> Ǣ) AE with macron
 dkMacronStroke.item[" "] := "{u+00af}"  ; (¯) macron
 
 
@@ -440,14 +438,6 @@ dkAcuteAccent.item["%"] := "{u+2606}"  ; (☆) white star
 dkAcuteAccent.item["^"] := "{u+273d}"  ; (✽) heavy teardrop-spoked asterisk
 dkAcuteAccent.item["&"] := "{u+273b}"  ; (✻) teardrop-spoked asterisk
 dkAcuteAccent.item["*"] := "{u+266a}"  ; (♪) eighth note
-dkAcuteAccent.item[chr(0x00e5)] := "{u+01fb}"  ; (å -> ǻ) a with ring above and acute
-dkAcuteAccent.item[chr(0x00c5)] := "{u+01fa}"  ; (Å -> Ǻ) A with ring above and acute
-dkAcuteAccent.item[chr(0x00e6)] := "{u+01fd}"  ; (æ -> ǽ) ae with acute
-dkAcuteAccent.item[chr(0x00c6)] := "{u+01fc}"  ; (Æ -> Ǽ) AE with acute
-dkAcuteAccent.item[chr(0x00f8)] := "{u+01ff}"  ; (ø -> ǿ) o with stroke and acute
-dkAcuteAccent.item[chr(0x00d8)] := "{u+01fe}"  ; (Ø -> Ǿ) O with stroke and acute
-dkAcuteAccent.item[chr(0x00e7)] := "{u+1e09}"  ; (ç -> ḉ) c with cedilla and acute
-dkAcuteAccent.item[chr(0x00c7)] := "{u+1e08}"  ; (Ç -> Ḉ) C with cedilla and acute
 dkAcuteAccent.item[" "] := "{u+00b4}"  ; (´) acute accent
 
 
@@ -788,7 +778,6 @@ dkGreekAlphabet.item[chr(34)] := "{u+208a}"  ; (₊) subscript +
 dkGreekAlphabet.item["{"] := "{u+208d}"  ; (₍) subscript (
 dkGreekAlphabet.item["}"] := "{u+208e}"  ; (₎) subscript )
 dkGreekAlphabet.item["."] := "{u+00b5}"  ; (µ) micro sign
-dkGreekAlphabet.item[chr(0x00df)] := "{u+03c2}"  ; (ß -> ς) small final sigma
 dkGreekAlphabet.item[" "] := "{u+03bc}"  ; (μ) small mu
 
 
@@ -885,191 +874,6 @@ dkMathSymbols.item["|"] := "{u+2228}"  ; (∨) logical or
 dkMathSymbols.item[" "] := "{u+221a}"  ; (√) square root
 
 
-fSendSecondChar(char) {
-; function for keeping correct operation after dead key press when Scroll Lock is enabled
-
-  if GetKeyState("ScrollLock", "T") {
-    if (char == "1")
-      return "!"
-    else if (char == "2")
-      return "@"
-    else if (char == "3")
-      return "#"
-    else if (char == "4")
-      return "$"
-    else if (char == "5")
-      return "%"
-    else if (char == "6")
-      return "^"
-    else if (char == "7")
-      return "&"
-    else if (char == "8")
-      return "*"
-    else if (char == "9")
-      return "("
-    else if (char == "0")
-      return ")"
-    else if (char == "!")
-      return "1"
-    else if (char == "@")
-      return "2"
-    else if (char == "#")
-      return "3"
-    else if (char == "$")
-      return "4"
-    else if (char == "%")
-      return "5"
-    else if (char == "^")
-      return "6"
-    else if (char == "&")
-      return "7"
-    else if (char == "*")
-      return "8"
-    else if (char == "(")
-      return "9"
-    else if (char == ")")
-      return "0"
-    else
-      return char
-  }
-  else
-    return char
-}
-
-
-; Configuration :  Switch positions of symbols and digits with Scroll Lock
-
-$1::
-  if GetKeyState("ScrollLock", "T")
-    Send {!}  ; exclamation mark
-  else
-    Send 1    ; digit 1
-  return
-$+1::
-  if GetKeyState("ScrollLock", "T")
-    Send 1    ; digit 1
-  else
-    Send {!}  ; exclamation mark
-  return
-
-$2::
-  if GetKeyState("ScrollLock", "T")
-    Send @  ; at sign
-  else
-    Send 2  ; digit 2
-  return
-$+2::
-  if GetKeyState("ScrollLock", "T")
-    Send 2  ; digit 2
-  else
-    Send @  ; at sign
-  return
-
-$3::
-  if GetKeyState("ScrollLock", "T")
-    Send {#}  ; number sign
-  else
-    Send 3    ; digit 3
-  return
-$+3::
-  if GetKeyState("ScrollLock", "T")
-    Send 3    ; digit 3
-  else
-    Send {#}  ; number sign
-  return
-
-$4::
-  if GetKeyState("ScrollLock", "T")
-    Send $  ; dollar sign
-  else
-    Send 4  ; digit 4
-  return
-$+4::
-  if GetKeyState("ScrollLock", "T")
-    Send 4  ; digit 4
-  else
-    Send $  ; dollar sign
-  return
-
-$5::
-  if GetKeyState("ScrollLock", "T")
-    Send `%  ; percent sign
-  else
-    Send 5   ; digit 5
-  return
-$+5::
-  if GetKeyState("ScrollLock", "T")
-    Send 5   ; digit 5
-  else
-    Send `%  ; percent sign
-  return
-
-$6::
-  if GetKeyState("ScrollLock", "T")
-    Send {^}  ; circumflex accent
-  else
-    Send 6    ; digit 6
-  return
-$+6::
-  if GetKeyState("ScrollLock", "T")
-    Send 6    ; digit 6
-  else
-    Send {^}  ; circumflex accent
-  return
-
-$7::
-  if GetKeyState("ScrollLock", "T")
-    Send &  ; ampersand
-  else
-    Send 7  ; digit 7
-  return
-$+7::
-  if GetKeyState("ScrollLock", "T")
-    Send 7  ; digit 7
-  else
-    Send &  ; ampersand
-  return
-
-$8::
-  if GetKeyState("ScrollLock", "T")
-    Send *  ; asterisk
-  else
-    Send 8  ; digit 8
-  return
-$+8::
-  if GetKeyState("ScrollLock", "T")
-    Send 8  ; digit 8
-  else
-    Send *  ; asterisk
-  return
-
-$9::
-  if GetKeyState("ScrollLock", "T")
-    Send (  ; left parenthesis
-  else
-    Send 9  ; digit 9
-  return
-$+9::
-  if GetKeyState("ScrollLock", "T")
-    Send 9  ; digit 9
-  else
-    Send (  ; left parenthesis
-  return
-
-$0::
-  if GetKeyState("ScrollLock", "T")
-    Send )  ; right parenthesis
-  else
-    Send 0  ; digit 0
-  return
-$+0::
-  if GetKeyState("ScrollLock", "T")
-    Send 0  ; digit 0
-  else
-    Send )  ; right parenthesis
-  return
-
-
 ; Configuration :  'Right Alt' and 'Right Alt + Shift' on US QWERTY
 
 >!a::
@@ -1083,6 +887,7 @@ $+0::
     Send {u+00e4}  ; (ä) a with diaeresis
   else
     Send {u+00c4}  ; (Ä) A with diaeresis
+  Send {blind}{vkE8}  ; suppresses 'Right Alt + Shift' hotkey
   return
 
 >!q::
@@ -1096,6 +901,7 @@ $+0::
     Send {u+00e6}  ; (æ) letter ae
   else
     Send {u+00c6}  ; (Æ) letter AE
+  Send {blind}{vkE8}  ; suppresses 'Right Alt + Shift' hotkey
   return
 
 >!w::
@@ -1109,6 +915,7 @@ $+0::
     Send {u+00e5}  ; (å) a with ring above
   else
     Send {u+00c5}  ; (Å) A with ring above
+  Send {blind}{vkE8}
   return
 
 >!z::
@@ -1122,6 +929,7 @@ $+0::
     Send {u+00e0}  ; (à) a with grave
   else
     Send {u+00c0}  ; (À) A with grave
+  Send {blind}{vkE8}
   return
 
 >!x::
@@ -1135,6 +943,7 @@ $+0::
     Send {u+00e1}  ; (á) a with acute
   else
     Send {u+00c1}  ; (Á) A with acute
+  Send {blind}{vkE8}
   return
 
 >!d::
@@ -1148,6 +957,7 @@ $+0::
     Send {u+00e2}  ; (â) a with circumflex
   else
     Send {u+00c2}  ; (Â) A with circumflex
+  Send {blind}{vkE8}
   return
 
 >!c::
@@ -1161,6 +971,7 @@ $+0::
     Send {u+00e7}  ; (ç) c with cedilla
   else
     Send {u+00c7}  ; (Ç) C with cedilla
+  Send {blind}{vkE8}
   return
 
 >!e::
@@ -1174,6 +985,7 @@ $+0::
     Send {u+00eb}  ; (ë) e with diaeresis
   else
     Send {u+00cb}  ; (Ë) E with diaeresis
+  Send {blind}{vkE8}
   return
 
 >!f::
@@ -1187,6 +999,7 @@ $+0::
     Send {u+00e8}  ; (è) e with grave
   else
     Send {u+00c8}  ; (È) E with grave
+  Send {blind}{vkE8}
   return
 
 >!g::
@@ -1200,6 +1013,7 @@ $+0::
     Send {u+00e9}  ; (é) e with acute
   else
     Send {u+00c9}  ; (É) E with acute
+  Send {blind}{vkE8}
   return
 
 >!r::
@@ -1213,6 +1027,7 @@ $+0::
     Send {u+00ea}  ; (ê) e with circumflex
   else
     Send {u+00ca}  ; (Ê) E with circumflex
+  Send {blind}{vkE8}
   return
 
 >!i::
@@ -1226,6 +1041,7 @@ $+0::
     Send {u+00ef}  ; (ï) i with diaeresis
   else
     Send {u+00cf}  ; (Ï) I with diaeresis
+  Send {blind}{vkE8}
   return
 
 >!v::
@@ -1239,6 +1055,7 @@ $+0::
     Send {u+00ec}  ; (ì) i with grave
   else
     Send {u+00cc}  ; (Ì) I with grave
+  Send {blind}{vkE8}
   return
 
 >!b::
@@ -1252,6 +1069,7 @@ $+0::
     Send {u+00ed}  ; (í) i with acute
   else
     Send {u+00cd}  ; (Í) I with acute
+  Send {blind}{vkE8}
   return
 
 >!t::
@@ -1265,6 +1083,7 @@ $+0::
     Send {u+00ee}  ; (î) i with circumflex
   else
     Send {u+00ce}  ; (Î) I with circumflex
+  Send {blind}{vkE8}
   return
 
 >!n::
@@ -1278,6 +1097,7 @@ $+0::
     Send {u+00f1}  ; (ñ) n with tilde
   else
     Send {u+00d1}  ; (Ñ) N with tilde
+  Send {blind}{vkE8}
   return
 
 >!o::
@@ -1291,6 +1111,7 @@ $+0::
     Send {u+00f6}  ; (ö) o with diaeresis
   else
     Send {u+00d6}  ; (Ö) O with diaeresis
+  Send {blind}{vkE8}
   return
 
 >!k::
@@ -1304,6 +1125,7 @@ $+0::
     Send {u+0153}  ; (œ) ligature oe
   else
     Send {u+0152}  ; (Œ) ligature OE
+  Send {blind}{vkE8}
   return
 
 >!l::
@@ -1317,6 +1139,7 @@ $+0::
     Send {u+00f8}  ; (ø) o with stroke
   else
     Send {u+00d8}  ; (Ø) O with stroke
+  Send {blind}{vkE8}
   return
 
 >!,::
@@ -1330,6 +1153,7 @@ $+0::
     Send {u+00f2}  ; (ò) o with grave
   else
     Send {u+00d2}  ; (Ò) O with grave
+  Send {blind}{vkE8}
   return
 
 >!.::
@@ -1343,6 +1167,7 @@ $+0::
     Send {u+00f3}  ; (ó) o with acute
   else
     Send {u+00d3}  ; (Ó) O with acute
+  Send {blind}{vkE8}
   return
 
 >!p::
@@ -1356,6 +1181,7 @@ $+0::
     Send {u+00f4}  ; (ô) o with circumflex
   else
     Send {u+00d4}  ; (Ô) O with circumflex
+  Send {blind}{vkE8}
   return
 
 >!s::
@@ -1369,6 +1195,7 @@ $+0::
     Send {u+00df}  ; (ß) small sharp s (Eszett)
   else
     Send {u+1e9e}  ; (ẞ) capital sharp S (capital Eszett)
+  Send {blind}{vkE8}
   return
 
 >!u::
@@ -1382,6 +1209,7 @@ $+0::
     Send {u+00fc}  ; (ü) u with diaeresis
   else
     Send {u+00dc}  ; (Ü) U with diaeresis
+  Send {blind}{vkE8}
   return
 
 >!h::
@@ -1395,6 +1223,7 @@ $+0::
     Send {u+00f9}  ; (ù) u with grave
   else
     Send {u+00d9}  ; (Ù) U with grave
+  Send {blind}{vkE8}
   return
 
 >!j::
@@ -1408,6 +1237,7 @@ $+0::
     Send {u+00fa}  ; (ú) u with acute
   else
     Send {u+00da}  ; (Ú) U with acute
+  Send {blind}{vkE8}
   return
 
 >!y::
@@ -1421,6 +1251,7 @@ $+0::
     Send {u+00fb}  ; (û) u with circumflex
   else
     Send {u+00db}  ; (Û) U with circumflex
+  Send {blind}{vkE8}
   return
 
 >!-::
@@ -1434,6 +1265,7 @@ $+0::
     Send {u+00e3}  ; (ã) a with tilde
   else
     Send {u+00c3}  ; (Ã) A with tilde
+  Send {blind}{vkE8}
   return
 
 >!=::
@@ -1447,120 +1279,185 @@ $+0::
     Send {u+00f5}  ; (õ) o with tilde
   else
     Send {u+00d5}  ; (Õ) O with tilde
+  Send {blind}{vkE8}
   return
 
->!1::Send {u+00a1}   ; (¡) inverted exclamation mark
->!+1::Send {u+00b9}  ; (¹) superscript 1
+>!1::Send {u+00a1}  ; (¡) inverted exclamation mark
+>!+1::
+  Send {u+00b9}     ; (¹) superscript 1
+  Send {blind}{vkE8}  ; suppresses 'Right Alt + Shift' hotkey
+  return
 
->!2::Send {u+00a9}   ; (©) copyright sign
->!+2::Send {u+00b2}  ; (²) superscript 2
+>!2::Send {u+00a9}  ; (©) copyright sign
+>!+2::
+  Send {u+00b2}     ; (²) superscript 2
+  Send {blind}{vkE8}  ; suppresses 'Right Alt + Shift' hotkey
+  return
 
->!3::Send {u+00a7}   ; (§) section sign
->!+3::Send {u+00b3}  ; (³) superscript 3
+>!3::Send {u+00a7}  ; (§) section sign
+>!+3::
+  Send {u+00b3}     ; (³) superscript 3
+  Send {blind}{vkE8}
+  return
 
->!4::Send {u+00a3}   ; (£) pound sign
->!+4::Send {u+00a5}  ; (¥) yen sign
+>!4::Send {u+00a3}  ; (£) pound sign
+>!+4::
+  Send {u+00a5}     ; (¥) yen sign
+  Send {blind}{vkE8}
+  return
 
->!5::Send {u+20ac}   ; (€) euro sign
->!+5::Send {u+00a2}  ; (¢) cent sign (dollar)
+>!5::Send {u+20ac}  ; (€) euro sign
+>!+5::
+  Send {u+00a2}     ; (¢) cent sign (dollar)
+  Send {blind}{vkE8}
+  return
 
->!9::Send {u+201c}   ; (“) left double quotation mark
->!+9::Send {u+2018}  ; (‘) left single quotation mark
+>!9::Send {u+201c}  ; (“) left double quotation mark
+>!+9::
+  Send {u+2018}     ; (‘) left single quotation mark
+  Send {blind}{vkE8}
+  return
 
->!0::Send {u+201d}   ; (”) right double quotation mark
->!+0::Send {u+2019}  ; (’) right single quotation mark
+>!0::Send {u+201d}  ; (”) right double quotation mark
+>!+0::
+  Send {u+2019}     ; (’) right single quotation mark
+  Send {blind}{vkE8}
+  return
 
->![::Send {u+00ab}   ; («) left-pointing double angle quotation mark
->!{::Send {u+2039}   ; (‹) left-pointing single angle quotation mark
+>![::Send {u+00ab}  ; («) left-pointing double angle quotation mark
+>!{::
+  Send {u+2039}     ; (‹) left-pointing single angle quotation mark
+  Send {blind}{vkE8}
+  return
 
->!]::Send {u+00bb}   ; (») right-pointing double angle quotation mark
->!}::Send {u+203a}   ; (›) right-pointing single angle quotation mark
+>!]::Send {u+00bb}  ; (») right-pointing double angle quotation mark
+>!}::
+  Send {u+203a}     ; (›) right-pointing single angle quotation mark
+  Send {blind}{vkE8}
+  return
 
->!;::Send {u+00b0}   ; (°) degree sign
->!+;::Send {u+00b7}  ; (·) middle dot
+>!;::Send {u+00b0}  ; (°) degree sign
+>!+;::
+  Send {u+00b7}     ; (·) middle dot
+  Send {blind}{vkE8}
+  return
 
->!/::Send {u+00bf}   ; (¿) inverted question mark
->!?::Send {u+2026}   ; (…) horizontal ellipsis
+>!/::Send {u+00bf}  ; (¿) inverted question mark
+>!?::
+  Send {u+2026}     ; (…) horizontal ellipsis
+  Send {blind}{vkE8}
+  return
 
->!space::Send {u+00a0}   ; non-breaking space
->!+space::Send {u+00a0}  ; non-breaking space
+>!space::Send {u+00a0}  ; non-breaking space
+>!+space::
+  Send {u+00a0}         ; non-breaking space
+  Send {blind}{vkE8}
+  return
 
 
 ; Configuration :  Dead Keys on 'Right Alt' and 'Right Alt + Shift'
 
 >!6::
+  Send {blind}{vkE8}  ; suppresses circles around mouse pointer
   Input, key, L1, {bs}{del}{esc}{home}{end}
-  Send % dkCircumflex.item[fSendSecondChar(key)]
+  Send % dkCircumflex.item[key]
   key := ""  ; avoids leaking content via debug properties
+  Send {blind}{vkE8}  ; suppresses 'Right Alt + Shift' hotkey (for second character with 'Right Alt + Shift')
   return
 >!+6::
+  Send {blind}{vkE8}  ; suppresses 'Right Alt + Shift' hotkey
   Input, key, L1, {bs}{del}{esc}{home}{end}
-  Send % dkCaron.item[fSendSecondChar(key)]
+  Send % dkCaron.item[key]
   key := ""  ; avoids leaking content via debug properties
+  Send {blind}{vkE8}  ; suppresses 'Right Alt + Shift' hotkey (for second character with 'Right Alt + Shift')
   return
 
 >!7::
+  Send {blind}{vkE8}
   Input, key, L1, {bs}{del}{esc}{home}{end}
-  Send % dkDotAbove.item[fSendSecondChar(key)]
+  Send % dkDotAbove.item[key]
   key := ""
+  Send {blind}{vkE8}
   return
 >!+7::
+  Send {blind}{vkE8}
   Input, key, L1, {bs}{del}{esc}{home}{end}
-  Send % dkMacronStroke.item[fSendSecondChar(key)]
+  Send % dkMacronStroke.item[key]
   key := ""
+  Send {blind}{vkE8}
   return
 
 >!8::
+  Send {blind}{vkE8}
   Input, key, L1, {bs}{del}{esc}{home}{end}
-  Send % dkCedillaOgonek.item[fSendSecondChar(key)]
+  Send % dkCedillaOgonek.item[key]
   key := ""
+  Send {blind}{vkE8}
   return
 >!+8::
+  Send {blind}{vkE8}
   Input, key, L1, {bs}{del}{esc}{home}{end}
-  Send % dkBreveSpecial.item[fSendSecondChar(key)]
+  Send % dkBreveSpecial.item[key]
   key := ""
+  Send {blind}{vkE8}
   return
 
 >!'::
+  Send {blind}{vkE8}
   Input, key, L1, {bs}{del}{esc}{home}{end}
-  Send % dkAcuteAccent.item[fSendSecondChar(key)]
+  Send % dkAcuteAccent.item[key]
   key := ""
+  Send {blind}{vkE8}
   return
 >!"::
+  Send {blind}{vkE8}
   Input, key, L1, {bs}{del}{esc}{home}{end}
-  Send % dkDiaeresis.item[fSendSecondChar(key)]
+  Send % dkDiaeresis.item[key]
   key := ""
+  Send {blind}{vkE8}
   return
 
 >!`::
+  Send {blind}{vkE8}
   Input, key, L1, {bs}{del}{esc}{home}{end}
-  Send % dkGraveAccent.item[fSendSecondChar(key)]
+  Send % dkGraveAccent.item[key]
   key := ""
+  Send {blind}{vkE8}
   return
 >!~::
+  Send {blind}{vkE8}
   Input, key, L1, {bs}{del}{esc}{home}{end}
-  Send % dkTilde.item[fSendSecondChar(key)]
+  Send % dkTilde.item[key]
   key := ""
+  Send {blind}{vkE8}
   return
 
 >!\::
+  Send {blind}{vkE8}
   Input, key, L1, {bs}{del}{esc}{home}{end}
-  Send % dkSymbols.item[fSendSecondChar(key)]
+  Send % dkSymbols.item[key]
   key := ""
+  Send {blind}{vkE8}
   return
 >!|::
+  Send {blind}{vkE8}
   Input, key, L1, {bs}{del}{esc}{home}{end}
-  Send % dkCurrency.item[fSendSecondChar(key)]
+  Send % dkCurrency.item[key]
   key := ""
+  Send {blind}{vkE8}
   return
 
 >!m::
+  Send {blind}{vkE8}
   Input, key, L1, {bs}{del}{esc}{home}{end}
-  Send % dkGreekAlphabet.item[fSendSecondChar(key)]
+  Send % dkGreekAlphabet.item[key]
   key := ""
+  Send {blind}{vkE8}
   return
 >!+m::
+  Send {blind}{vkE8}
   Input, key, L1, {bs}{del}{esc}{home}{end}
-  Send % dkMathSymbols.item[fSendSecondChar(key)]
+  Send % dkMathSymbols.item[key]
   key := ""
+  Send {blind}{vkE8}
   return
