@@ -1362,14 +1362,12 @@ dkMathSymbols.item[" "] := "{u+221a}"  ; (√) square root
   Input, key, L1, {bs}{del}{esc}{home}{end}
   Send % dkCircumflex.item[key]
   key := ""  ; avoids leaking content via debug properties
-  Send {blind}{vkE8}  ; suppresses 'Right Alt + Shift' hotkey (for second character with 'Right Alt + Shift')
   return
 >!+6::
   Send {blind}{vkE8}  ; suppresses 'Right Alt + Shift' hotkey
   Input, key, L1, {bs}{del}{esc}{home}{end}
   Send % dkCaron.item[key]
   key := ""  ; avoids leaking content via debug properties
-  Send {blind}{vkE8}  ; suppresses 'Right Alt + Shift' hotkey (for second character with 'Right Alt + Shift')
   return
 
 >!7::
@@ -1377,14 +1375,12 @@ dkMathSymbols.item[" "] := "{u+221a}"  ; (√) square root
   Input, key, L1, {bs}{del}{esc}{home}{end}
   Send % dkDotAbove.item[key]
   key := ""
-  Send {blind}{vkE8}
   return
 >!+7::
   Send {blind}{vkE8}
   Input, key, L1, {bs}{del}{esc}{home}{end}
   Send % dkMacronStroke.item[key]
   key := ""
-  Send {blind}{vkE8}
   return
 
 >!8::
@@ -1392,14 +1388,12 @@ dkMathSymbols.item[" "] := "{u+221a}"  ; (√) square root
   Input, key, L1, {bs}{del}{esc}{home}{end}
   Send % dkCedillaOgonek.item[key]
   key := ""
-  Send {blind}{vkE8}
   return
 >!+8::
   Send {blind}{vkE8}
   Input, key, L1, {bs}{del}{esc}{home}{end}
   Send % dkBreveSpecial.item[key]
   key := ""
-  Send {blind}{vkE8}
   return
 
 >!'::
@@ -1407,14 +1401,12 @@ dkMathSymbols.item[" "] := "{u+221a}"  ; (√) square root
   Input, key, L1, {bs}{del}{esc}{home}{end}
   Send % dkAcuteAccent.item[key]
   key := ""
-  Send {blind}{vkE8}
   return
 >!"::
   Send {blind}{vkE8}
   Input, key, L1, {bs}{del}{esc}{home}{end}
   Send % dkDiaeresis.item[key]
   key := ""
-  Send {blind}{vkE8}
   return
 
 >!`::
@@ -1422,14 +1414,12 @@ dkMathSymbols.item[" "] := "{u+221a}"  ; (√) square root
   Input, key, L1, {bs}{del}{esc}{home}{end}
   Send % dkGraveAccent.item[key]
   key := ""
-  Send {blind}{vkE8}
   return
 >!~::
   Send {blind}{vkE8}
   Input, key, L1, {bs}{del}{esc}{home}{end}
   Send % dkTilde.item[key]
   key := ""
-  Send {blind}{vkE8}
   return
 
 >!\::
@@ -1437,14 +1427,12 @@ dkMathSymbols.item[" "] := "{u+221a}"  ; (√) square root
   Input, key, L1, {bs}{del}{esc}{home}{end}
   Send % dkSymbols.item[key]
   key := ""
-  Send {blind}{vkE8}
   return
 >!|::
   Send {blind}{vkE8}
   Input, key, L1, {bs}{del}{esc}{home}{end}
   Send % dkCurrency.item[key]
   key := ""
-  Send {blind}{vkE8}
   return
 
 >!m::
@@ -1452,12 +1440,10 @@ dkMathSymbols.item[" "] := "{u+221a}"  ; (√) square root
   Input, key, L1, {bs}{del}{esc}{home}{end}
   Send % dkGreekAlphabet.item[key]
   key := ""
-  Send {blind}{vkE8}
   return
 >!+m::
   Send {blind}{vkE8}
   Input, key, L1, {bs}{del}{esc}{home}{end}
   Send % dkMathSymbols.item[key]
   key := ""
-  Send {blind}{vkE8}
   return
