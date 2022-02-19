@@ -1,4 +1,4 @@
-KBD	ultksw	"UltimateKEYS SW - 2022-02-04"
+KBD	ultksw	"UltimateKEYS SW - 2022-02-19"
 
 COPYRIGHT	"GNU General Public License Version 3"
 
@@ -503,13 +503,13 @@ DEADKEY	00a8	// Dead Key :  Diaeresis
 0048	1e26	// H -> Ḧ    H with diaeresis
 0069	00ef	// i -> ï    i with diaeresis
 0049	00cf	// I -> Ï    I with diaeresis
-006f	00f6	// o -> ö    o with diaeresis
-004f	00d6	// O -> Ö    O with diaeresis
+006f	01a1	// o -> ơ    o with horn
+004f	01a0	// O -> Ơ    O with horn
 0073	0283	// s -> ʃ    small letter esh
 0053	01a9	// S -> Ʃ    capital letter esh
 0074	1e97	// t -> ẗ    t with diaeresis
-0075	00fc	// u -> ü    u with diaeresis
-0055	00dc	// U -> Ü    U with diaeresis
+0075	01b0	// u -> ư    u with horn
+0055	01af	// U -> Ư    U with horn
 0077	1e85	// w -> ẅ    w with diaeresis
 0057	1e84	// W -> Ẅ    W with diaeresis
 0078	1e8d	// x -> ẍ    x with diaeresis
@@ -681,6 +681,8 @@ DEADKEY	00d7	// Dead Key :  General Symbols
 002b	00f7	// + -> ÷    division sign
 003b	263a	// ; -> ☺    white smiling face
 003a	263b	// : -> ☻    black smiling face
+002c	201e	// , -> „    double low-9 quotation mark
+003c	201a	// < -> ‚    single low-9 quotation mark
 002e	203c	// . -> ‼    double exclamation mark
 003e	2e2e	// > -> ⸮    reversed question mark
 002f	203d	// / -> ‽    interrobang
@@ -716,7 +718,7 @@ DEADKEY	00a4	// Dead Key :  Currency
 006d	20bc	// m -> ₼    Azerbaijani manat
 004d	20a5	// M -> ₥    mill sign
 006e	20a6	// n -> ₦    Nigerian naira
-004e	20bb	// N -> ₻    nordic mark
+004e	20bb	// N -> ₻    Nordic mark
 0070	20b1	// p -> ₱    Philippine peso
 0050	20a7	// P -> ₧    Spanish pesetas
 0072	20b9	// r -> ₹    Indian rupee
