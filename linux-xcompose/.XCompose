@@ -1,4 +1,4 @@
-# UltimateKEYS  (~/.XCompose) - 2022-02-04
+# UltimateKEYS  (~/.XCompose) - 2022-02-19
 
 # Website :  www.ultimatekeys.info (pieter-degroote.github.io/UltimateKEYS/)
 
@@ -450,13 +450,13 @@
 <dead_diaeresis> <H> : "Ḧ"  U1E26  # H with diaeresis
 <dead_diaeresis> <i> : "ï"  U00EF  # i with diaeresis
 <dead_diaeresis> <I> : "Ï"  U00CF  # I with diaeresis
-<dead_diaeresis> <o> : "ö"  U00F6  # o with diaeresis
-<dead_diaeresis> <O> : "Ö"  U00D6  # O with diaeresis
+<dead_diaeresis> <o> : "ơ"  U01A1  # o with horn
+<dead_diaeresis> <O> : "Ơ"  U01A0  # O with horn
 <dead_diaeresis> <s> : "ʃ"  U0283  # small letter esh
 <dead_diaeresis> <S> : "Ʃ"  U01A9  # capital letter esh
 <dead_diaeresis> <t> : "ẗ"  U1E97  # t with diaeresis
-<dead_diaeresis> <u> : "ü"  U00FC  # u with diaeresis
-<dead_diaeresis> <U> : "Ü"  U00DC  # U with diaeresis
+<dead_diaeresis> <u> : "ư"  U01B0  # u with horn
+<dead_diaeresis> <U> : "Ư"  U01AF  # U with horn
 <dead_diaeresis> <w> : "ẅ"  U1E85  # w with diaeresis
 <dead_diaeresis> <W> : "Ẅ"  U1E84  # W with diaeresis
 <dead_diaeresis> <x> : "ẍ"  U1E8D  # x with diaeresis
@@ -634,6 +634,8 @@
 <dead_stroke> <plus>        : "÷"  U00F7  # division sign
 <dead_stroke> <semicolon>   : "☺"  U263A  # white smiling face
 <dead_stroke> <colon>       : "☻"  U263B  # black smiling face
+<dead_stroke> <comma>       : "„"  U201E  # double low-9 quotation mark
+<dead_stroke> <less>        : "‚"  U201A  # single low-9 quotation mark
 <dead_stroke> <period>      : "‼"  U203C  # double exclamation mark
 <dead_stroke> <greater>     : "⸮"  U2E2E  # reversed question mark
 <dead_stroke> <slash>       : "‽"  U203D  # interrobang
@@ -671,7 +673,7 @@
 <dead_currency> <m> : "₼"  U20BC  # Azerbaijani manat
 <dead_currency> <M> : "₥"  U20A5  # mill sign
 <dead_currency> <n> : "₦"  U20A6  # Nigerian naira
-<dead_currency> <N> : "₻"  U20BB  # nordic mark
+<dead_currency> <N> : "₻"  U20BB  # Nordic mark
 <dead_currency> <p> : "₱"  U20B1  # Philippine peso
 <dead_currency> <P> : "₧"  U20A7  # Spanish pesetas
 <dead_currency> <r> : "₹"  U20B9  # Indian rupee
