@@ -997,15 +997,15 @@ $+4:: {
 
 $5:: {
   if GetKeyState("ScrollLock", "T")
-    Send "`%"  ; percent sign
+    Send "%"  ; percent sign
   else
-    Send "5"   ; digit 5
+    Send "5"  ; digit 5
 }
 $+5:: {
   if GetKeyState("ScrollLock", "T")
-    Send "5"   ; digit 5
+    Send "5"  ; digit 5
   else
-    Send "`%"  ; percent sign
+    Send "%"  ; percent sign
 }
 
 $6:: {
