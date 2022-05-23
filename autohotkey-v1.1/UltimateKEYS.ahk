@@ -730,6 +730,7 @@ dkQuad.item["3"] := "{u+2001}"  ; em quad
 ; Dead Key :  Arrows and Pointers
 
 dkArrow := ComObjCreate("Scripting.Dictionary")
+dkPlus := ComObjCreate("Scripting.Dictionary")
 dkArrow.item["1"] := "{u+2199}"  ; (↙) south west arrow
 dkArrow.item["2"] := "{u+2193}"  ; (↓) downwards arrow
 dkArrow.item["3"] := "{u+2198}"  ; (↘) south east arrow
@@ -750,14 +751,14 @@ dkDoubleAcute.item["7"] := "{u+21d6}"  ; (⇖) north west double arrow
 dkDoubleAcute.item["8"] := "{u+21d1}"  ; (⇑) upwards double arrow
 dkDoubleAcute.item["9"] := "{u+21d7}"  ; (⇗) north east double arrow
 dkDoubleAcute.item["0"] := "{u+21d4}"  ; (⇔) left right double arrow
-dkHorn.item["2"] := "{u+25bc}"  ; (▼) black down-pointing triangle
-dkHorn.item["@"] := "{u+25bd}"  ; (▽) white down-pointing triangle
-dkHorn.item["4"] := "{u+25c0}"  ; (◀) black left-pointing triangle
-dkHorn.item["$"] := "{u+25c1}"  ; (◁) white left-pointing triangle
-dkHorn.item["6"] := "{u+25b6}"  ; (▶) black right-pointing triangle
-dkHorn.item["^"] := "{u+25b7}"  ; (▷) white right-pointing triangle
-dkHorn.item["8"] := "{u+25b2}"  ; (▲) black up-pointing triangle
-dkHorn.item["*"] := "{u+25b3}"  ; (△) white up-pointing triangle
+dkPlus.item["2"] := "{u+25bc}"  ; (▼) black down-pointing triangle
+dkPlus.item["@"] := "{u+25bd}"  ; (▽) white down-pointing triangle
+dkPlus.item["4"] := "{u+25c0}"  ; (◀) black left-pointing triangle
+dkPlus.item["$"] := "{u+25c1}"  ; (◁) white left-pointing triangle
+dkPlus.item["6"] := "{u+25b6}"  ; (▶) black right-pointing triangle
+dkPlus.item["^"] := "{u+25b7}"  ; (▷) white right-pointing triangle
+dkPlus.item["8"] := "{u+25b2}"  ; (▲) black up-pointing triangle
+dkPlus.item["*"] := "{u+25b3}"  ; (△) white up-pointing triangle
 
 
 ; Dead Key :  Miscellaneous Symbols (s)
@@ -941,7 +942,6 @@ dkAsterisk := ComObjCreate("Scripting.Dictionary")
 dkExclam := ComObjCreate("Scripting.Dictionary")
 dkQuestion := ComObjCreate("Scripting.Dictionary")
 dkParenLeft := ComObjCreate("Scripting.Dictionary")
-dkPlus := ComObjCreate("Scripting.Dictionary")
 dkPercent := ComObjCreate("Scripting.Dictionary")
 dkEight := ComObjCreate("Scripting.Dictionary")
 dkLessThan := ComObjCreate("Scripting.Dictionary")
@@ -1545,6 +1545,8 @@ dkCapitalU.item["``"] := "{u+01db}"      ; (Ǜ) U with diaeresis and grave
     Send % dkQuad.item[keyB]
   else if (keyA == "a")
     Send % dkArrow.item[keyB]
+  else if (keyA == "+")
+    Send % dkPlus.item[keyB]
   else if (keyA == "s")
     Send % dkSymbols.item[keyB]
   else if (keyA == "S")
@@ -1597,8 +1599,6 @@ dkCapitalU.item["``"] := "{u+01db}"      ; (Ǜ) U with diaeresis and grave
     Send % dkQuestion.item[keyB]
   else if (keyA == "(")
     Send % dkParenLeft.item[keyB]
-  else if (keyA == "+")
-    Send % dkPlus.item[keyB]
   else if (keyA == "%")
     Send % dkPercent.item[keyB]
   else if (keyA == "8")
