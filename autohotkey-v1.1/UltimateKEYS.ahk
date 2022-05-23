@@ -147,6 +147,8 @@ cmpDotAbove.item["Z"] := "{u+017b}"  ; (Ż) Z with dot above
 ; Compose :  Ring Above (o)
 
 cmpRingAbove := ComObjCreate("Scripting.Dictionary")
+cmpRingAbove.item["a"] := "{u+00e5}"  ; (å) a with ring above
+cmpRingAbove.item["A"] := "{u+00c5}"  ; (Å) A with ring above
 cmpRingAbove.item["u"] := "{u+016f}"  ; (ů) u with ring above
 cmpRingAbove.item["U"] := "{u+016e}"  ; (Ů) U with ring above
 cmpRingAbove.item["w"] := "{u+1e98}"  ; (ẘ) w with ring above
