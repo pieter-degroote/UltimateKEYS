@@ -18,7 +18,7 @@ xkb_symbols "basic" {
     key <AB04> { [ v,            V,            igrave,               Igrave               ] };
     key <AB05> { [ b,            B,            iacute,               Iacute               ] };
     key <AB06> { [ n,            N,            ntilde,               Ntilde               ] };
-    key <AB07> { [ m,            M,            dead_greek,           dead_hook            ] };
+    key <AB07> { [ m,            M,            mu,                   plusminus            ] };
     key <AB08> { [ comma,        less,         ograve,               Ograve               ] };
     key <AB09> { [ period,       greater,      oacute,               Oacute               ] };
     key <AB10> { [ slash,        question,     questiondown,         ellipsis             ] };
@@ -32,7 +32,7 @@ xkb_symbols "basic" {
     key <AC08> { [ k,            K,            oe,                   OE                   ] };
     key <AC09> { [ l,            L,            oslash,               Ooblique             ] };
     key <AC10> { [ semicolon,    colon,        degree,               periodcentered       ] };
-    key <AC11> { [ apostrophe,   quotedbl,     dead_acute,           dead_diaeresis       ] };
+    key <AC11> { [ apostrophe,   quotedbl,     multiply,             division             ] };
     key <AD01> { [ q,            Q,            ae,                   AE                   ] };
     key <AD02> { [ w,            W,            aring,                Aring                ] };
     key <AD03> { [ e,            E,            ediaeresis,           Ediaeresis           ] };
@@ -46,21 +46,21 @@ xkb_symbols "basic" {
     key <AD11> { [ bracketleft,  braceleft,    guillemotleft,        U2039                ] };
     key <AD12> { [ bracketright, braceright,   guillemotright,       U203A                ] };
     key <AE01> { [ 1,            exclam,       exclamdown,           onesuperior          ] };
-    key <AE02> { [ 2,            at,           copyright,            twosuperior          ] };
-    key <AE03> { [ 3,            numbersign,   section,              threesuperior        ] };
+    key <AE02> { [ 2,            at,           endash,               twosuperior          ] };
+    key <AE03> { [ 3,            numbersign,   emdash,               threesuperior        ] };
     key <AE04> { [ 4,            dollar,       sterling,             yen                  ] };
     key <AE05> { [ 5,            percent,      EuroSign,             cent                 ] };
-    key <AE06> { [ 6,            asciicircum,  dead_circumflex,      dead_caron           ] };
-    key <AE07> { [ 7,            ampersand,    dead_abovedot,        dead_macron          ] };
-    key <AE08> { [ 8,            asterisk,     dead_cedilla,         dead_breve           ] };
+    key <AE06> { [ 6,            asciicircum,  U2264,                U2260                ] };
+    key <AE07> { [ 7,            ampersand,    U2265,                U2248                ] };
+    key <AE08> { [ 8,            asterisk,     doublelowquotemark,   singlelowquotemark   ] };
     key <AE09> { [ 9,            parenleft,    leftdoublequotemark,  leftsinglequotemark  ] };
     key <AE10> { [ 0,            parenright,   rightdoublequotemark, rightsinglequotemark ] };
     key <AE11> { [ minus,        underscore,   atilde,               Atilde               ] };
     key <AE12> { [ equal,        plus,         otilde,               Otilde               ] };
-    key <BKSL> { [ backslash,    bar,          dead_stroke,          dead_currency        ] };
+    key <BKSL> { [ backslash,    bar,          section,              U2030                ] };
     key <LSGT> { [ backslash,    bar,          backslash,            bar                  ] };
     key <SPCE> { [ space,        space,        nobreakspace,         nobreakspace         ] };
-    key <TLDE> { [ grave,        asciitilde,   dead_grave,           dead_tilde           ] };
+    key <TLDE> { [ grave,        asciitilde,   Multi_key,            Multi_key            ] };
     key <KPDL> { [ KP_Delete,    KP_Decimal                                               ] };
 
     include "level3(ralt_switch)"
