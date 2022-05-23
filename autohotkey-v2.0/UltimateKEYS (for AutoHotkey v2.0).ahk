@@ -151,6 +151,8 @@ cmpDotAbove["Z"] := "{u+017b}"  ; (Ż) Z with dot above
 ; Compose :  Ring Above (o)
 
 global cmpRingAbove := Map()
+cmpRingAbove["a"] := "{u+00e5}"  ; (å) a with ring above
+cmpRingAbove["A"] := "{u+00c5}"  ; (Å) A with ring above
 cmpRingAbove["u"] := "{u+016f}"  ; (ů) u with ring above
 cmpRingAbove["U"] := "{u+016e}"  ; (Ů) U with ring above
 cmpRingAbove["w"] := "{u+1e98}"  ; (ẘ) w with ring above
