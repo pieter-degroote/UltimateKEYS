@@ -1,6 +1,7 @@
 # UltimateKEYS for AutoHotkey v2.0
 
-Prerequisite&nbsp;:  
+Prerequisite&nbsp;:
+
 The base keyboard layout has to be configured as US QWERTY.
 
 When two or more languages/keyboards are installed on the system, the default ‘Alt + Shift’ sequence will interfere with the AHK scripts.
