@@ -34,11 +34,11 @@ span.markup {
 
 <p>International US QWERTY layout with AltGr (Right Alt) dead keys via AutoHotkey (Win), MSKLC (Win) and XKB/Xmodmap + .XCompose (Linux).</p>
 
-<p>UltimateKEYS keeps all keys exactly like US QWERTY, but holding down <em>AltGr (Right Alt)</em> or <em>AltGr+Shift (Right Alt + Shift)</em> makes other diacritics and symbols accessible, and turns some keys into dead keys.</p>
+<p>UltimateKEYS keeps all keys exactly like US QWERTY. Holding down <em>Right Alt</em> or <em>Right Alt + Shift</em> makes other diacritics and symbols accessible. With the ‘Compose key’ (CP), even a larger amount of diacritics and symbols are accessible.</p>
 
-<p>This way, it shares some similarities with “US-International”. However, this project attempts to solve the most common difficulties from its counterpart.<br />
-One of those&nbsp;: &nbsp;the <em>quotes issue</em>, with ' and " now accessible as usual. The similar-looking diacritics are now found on AltGr+' and AltGr+Shift+".<br />
-Further on, UltimateKEYS <em>attempts to harmonize</em> languages with Latin-based alphabets on US QWERTY, and has borrowed some aspects from EurKEY (GPL v3).</p>
+<p>It also shares some similarities with “US-International”. However, this project attempts to solve the most common difficulties from this counterpart.<br />
+One of those&nbsp;: &nbsp;the <em>quotes issue</em>, with ' and " now accessible as usual (or expected).<br />
+Further on, UltimateKEYS <em>attempts to harmonize</em> languages with Latin-based alphabets on US QWERTY, and has borrowed some aspects from EurKEY (also GPL v3).</p>
 
 <h2>Important - Security Warning</h2>
 
@@ -48,879 +48,997 @@ Otherwise, it might be impossible to type any Unicode character higher than “B
 
 <p>&nbsp;</p>
 
-<h2>Keyboard Layout Image (Classic)</h2>
+<h2>Keyboard Layout Image</h2>
 
 <img src="images/UltimateKEYS - Keyboard Layout Image.png" width="1208" height="425" alt="UltimateKEYS - Keyboard Layout Image.png" />
 
-<p>-&gt; Blue keys&nbsp;: &nbsp;dead keys in combination with <em>Right Alt (+Shift)</em> or <em>AltGr (+Shift)</em>.</p>
+<p>-&gt; CP key (blue)&nbsp;: &nbsp;Compose key (Multi_key) in combination with <em>Right Alt</em> or <em>AltGr</em>.</p>
+
+<p><a href="layout-generator-urls.html" target="_blank">Sources available on keyboard-layout-editor.com</a></p>
 
 <p>&nbsp;</p>
 
-<h2>Difference between Classic and SW (switched) editions</h2>
+<h2>Compose Key Descriptions (Multi_key)</h2>
 
-<ul>
-<li><strong>Classic</strong>&nbsp;: &nbsp;Keeps all standard keys on US QWERTY and adds customizations to the <em>Right Alt (+Shift)</em> modifier (see image above).</li>
-<li><strong>SW (switched)</strong>&nbsp;: &nbsp;The same as ‘Classic’, but when <span style="text-decoration: underline;">Scroll Lock</span> is enabled, the symbols !, @, #, $, %, ^, &amp;, *, (, ) are directly accessible, the numbers via Shift (as many keyboards have a separate numpad). The Scroll Lock toggle applies to AutoHotkey only.<br />
-<span style="font-size: 120%;"><a href="image-sw.html" target="_blank"><strong>-&gt; Layout image of SW edition (with Scroll Lock in AHK)</strong></a></span>&emsp;
-(<a href="layout-generator-urls.html" target="_blank">sources available on keyboard-layout-editor.com</a>)</li>
-</ul>
-
-<p>&nbsp;</p>
-
-<h2>Dead Key Descriptions (Win and Linux)</h2>
-
-<p>* Dead keys, followed by an AltGr key are marked with an asterisk. They will work with MSKLC, Linux and limited to AutoHotkey scripts where "SendMode Event" is used (like the hybrid SW editions). The classic AHK scripts use the more efficient "SendMode Input", which involves that chaining of those customized key combinations is not possible.</p>
-
-<p><img src="images/AltGr Key.png" width="83" height="70" alt="AltGr" style="vertical-align: middle;" /><span class="markup">+</span><img src="images/6 Key.png" width="70" height="70" alt="6" style="vertical-align: middle;" /></p>
+<p><img src="images/AltGr Key.png" width="83" height="70" alt="AltGr" style="vertical-align: middle;" /><span class="markup">+</span><img src="images/CP Key.png" width="70" height="70" alt="CP" style="vertical-align: middle;" /></p>
 
 <pre style="font-size: 120%;">
-c -> ĉ    (u+0109) c with circumflex
-C -> Ĉ    (u+0108) C with circumflex
-g -> ĝ    (u+011d) g with circumflex
-G -> Ĝ    (u+011c) G with circumflex
-h -> ĥ    (u+0125) h with circumflex
-H -> Ĥ    (u+0124) H with circumflex
-j -> ĵ    (u+0135) j with circumflex
-J -> Ĵ    (u+0134) J with circumflex
-s -> ŝ    (u+015d) s with circumflex
-S -> Ŝ    (u+015c) S with circumflex
-w -> ŵ    (u+0175) w with circumflex
-W -> Ŵ    (u+0174) W with circumflex
-y -> ŷ    (u+0177) y with circumflex
-Y -> Ŷ    (u+0176) Y with circumflex
-z -> ẑ    (u+1e91) z with circumflex
-Z -> Ẑ    (u+1e90) Z with circumflex
-
-a -> ȃ    (u+0203) a with inverted breve
-A -> Ȃ    (u+0202) A with inverted breve
-e -> ȇ    (u+0207) e with inverted breve
-E -> Ȇ    (u+0206) E with inverted breve
-i -> ȋ    (u+020b) i with inverted breve
-I -> Ȋ    (u+020a) I with inverted breve
-o -> ȏ    (u+020f) o with inverted breve
-O -> Ȏ    (u+020e) O with inverted breve
-r -> ȓ    (u+0213) r with inverted breve
-R -> Ȓ    (u+0212) R with inverted breve
-u -> ȗ    (u+0217) u with inverted breve
-U -> Ȗ    (u+0216) U with inverted breve
-
-1 -> ⇙    (u+21d9) south west double arrow    S
-2 -> ⇓    (u+21d3) downwards double arrow     E
-3 -> ⇘    (u+21d8) south east double arrow    E
-4 -> ⇐    (u+21d0) leftwards double arrow         See also numpad
-5 -> ⇕    (u+21d5) up down double arrow       N
-6 -> ⇒    (u+21d2) rightwards double arrow    U   for AutoHotkey
-7 -> ⇖    (u+21d6) north west double arrow    M
-8 -> ⇑    (u+21d1) upwards double arrow       P
-9 -> ⇗    (u+21d7) north east double arrow    A
-0 -> ⇔    (u+21d4) left right double arrow    D
-
-(space) -> ^    (u+005e) circumflex accent
-</pre>
-
-<p>&nbsp;</p>
-
-<p><img src="images/AltGr Key.png" width="83" height="70" alt="AltGr" style="vertical-align: middle;" /><span class="markup">+</span><img src="images/Shift Key.png" width="83" height="70" alt="Shift" style="vertical-align: middle;" /><span class="markup">+</span><img src="images/6 Key.png" width="70" height="70" alt="6" style="vertical-align: middle;" /></p>
-
-<pre style="font-size: 120%;">
-a -> ǎ    (u+01ce) a with caron
-A -> Ǎ    (u+01cd) A with caron
-c -> č    (u+010d) c with caron
-C -> Č    (u+010c) C with caron
-d -> ď    (u+010f) d with caron
-D -> Ď    (u+010e) D with caron
-e -> ě    (u+011b) e with caron
-E -> Ě    (u+011a) E with caron
-g -> ǧ    (u+01e7) g with caron
-G -> Ǧ    (u+01e6) G with caron
-h -> ȟ    (u+021f) h with caron
-H -> Ȟ    (u+021e) H with caron
-i -> ǐ    (u+01d0) i with caron
-I -> Ǐ    (u+01cf) I with caron
-j -> ǰ    (u+01f0) j with caron
-k -> ǩ    (u+01e9) k with caron
-K -> Ǩ    (u+01e8) K with caron
-l -> ľ    (u+013e) l with caron
-L -> Ľ    (u+013d) L with caron
-n -> ň    (u+0148) n with caron
-N -> Ň    (u+0147) N with caron
-o -> ǒ    (u+01d2) o with caron
-O -> Ǒ    (u+01d1) O with caron
-r -> ř    (u+0159) r with caron
-R -> Ř    (u+0158) R with caron
-s -> š    (u+0161) s with caron
-S -> Š    (u+0160) S with caron
-t -> ť    (u+0165) t with caron
-T -> Ť    (u+0164) T with caron
-u -> ǔ    (u+01d4) u with caron
-U -> Ǔ    (u+01d3) U with caron
-v -> ǚ    (u+01da) u with diaeresis and caron
-V -> Ǚ    (u+01d9) U with diaeresis and caron
-z -> ž    (u+017e) z with caron
-Z -> Ž    (u+017d) Z with caron
-3 -> ǯ    (u+01ef) small letter ezh with caron
-# -> Ǯ    (u+01ee) capital letter ezh with caron
-
-2 -> ▼    (u+25bc) black down-pointing triangle         (see also numpad 2 for AutoHotkey)
-@ -> ▽    (u+25bd) white down-pointing triangle
-4 -> ◀    (u+25c0) black left-pointing triangle         (see also numpad 4 for AutoHotkey)
-$ -> ◁    (u+25c1) white left-pointing triangle
-6 -> ▶    (u+25b6) black right-pointing triangle        (see also numpad 6 for AutoHotkey)
-^ -> ▷    (u+25b7) white right-pointing triangle
-8 -> ▲    (u+25b2) black up-pointing triangle           (see also numpad 8 for AutoHotkey)
-* -> △    (u+25b3) white up-pointing triangle
-
-(space) -> ˇ    (u+02c7) caron
-</pre>
-
-<p>&nbsp;</p>
-
-<p><img src="images/AltGr Key.png" width="83" height="70" alt="AltGr" style="vertical-align: middle;" /><span class="markup">+</span><img src="images/7 Key.png" width="70" height="70" alt="7" style="vertical-align: middle;" /></p>
-
-<pre style="font-size: 120%;">
-a -> ȧ    (u+0227) a with dot above
-A -> Ȧ    (u+0226) A with dot above
-b -> ḃ    (u+1e03) b with dot above
-B -> Ḃ    (u+1e02) B with dot above
-c -> ċ    (u+010b) c with dot above
-C -> Ċ    (u+010a) C with dot above
-d -> ḋ    (u+1e0b) d with dot above
-D -> Ḋ    (u+1e0a) D with dot above
-e -> ė    (u+0117) e with dot above
-E -> Ė    (u+0116) E with dot above
-f -> ḟ    (u+1e1f) f with dot above
-F -> Ḟ    (u+1e1e) F with dot above
-g -> ġ    (u+0121) g with dot above
-G -> Ġ    (u+0120) G with dot above
-h -> ḣ    (u+1e23) h with dot above
-H -> Ḣ    (u+1e22) H with dot above
-i -> ı    (u+0131) dotless i (Turkish, Azerbaijani)
-I -> İ    (u+0130) I with dot above (Turkish, Azerbaijani)
-j -> ȷ    (u+0237) dotless j
-l -> ŀ    (u+0140) l with middle dot
-L -> Ŀ    (u+013f) L with middle dot
-m -> ṁ    (u+1e41) m with dot above
-M -> Ṁ    (u+1e40) M with dot above
-n -> ṅ    (u+1e45) n with dot above
-N -> Ṅ    (u+1e44) N with dot above
-o -> ȯ    (u+022f) o with dot above
-O -> Ȯ    (u+022e) O with dot above
-p -> ṗ    (u+1e57) p with dot above
-P -> Ṗ    (u+1e56) P with dot above
-q -> ẛ    (u+1e9b) long s with dot above
-r -> ṙ    (u+1e59) r with dot above
-R -> Ṙ    (u+1e58) R with dot above
-s -> ṡ    (u+1e61) s with dot above
-S -> Ṡ    (u+1e60) S with dot above
-t -> ṫ    (u+1e6b) t with dot above
-T -> Ṫ    (u+1e6a) T with dot above
-u -> ů    (u+016f) u with ring above
-U -> Ů    (u+016e) U with ring above
-w -> ẇ    (u+1e87) w with dot above
-W -> Ẇ    (u+1e86) W with dot above
-x -> ẋ    (u+1e8b) x with dot above
-X -> Ẋ    (u+1e8a) X with dot above
-y -> ẏ    (u+1e8f) y with dot above
-Y -> Ẏ    (u+1e8e) Y with dot above
-z -> ż    (u+017c) z with dot above
-Z -> Ż    (u+017b) Z with dot above
-
-1 -> ↙    (u+2199) south west arrow    S
-2 -> ↓    (u+2193) downwards arrow     E
-3 -> ↘    (u+2198) south east arrow    E
-4 -> ←    (u+2190) leftwards arrow         See also numpad
-5 -> ↕    (u+2195) up down arrow       N
-6 -> →    (u+2192) rightwards arrow    U   for AutoHotkey
-7 -> ↖    (u+2196) north west arrow    M
-8 -> ↑    (u+2191) upwards arrow       P
-9 -> ↗    (u+2197) north east arrow    A
-0 -> ↔    (u+2194) left right arrow    D
-
-(space) -> ˙    (u+02d9) dot above
-</pre>
-
-<p>&nbsp;</p>
-
-<p><img src="images/AltGr Key.png" width="83" height="70" alt="AltGr" style="vertical-align: middle;" /><span class="markup">+</span><img src="images/Shift Key.png" width="83" height="70" alt="Shift" style="vertical-align: middle;" /><span class="markup">+</span><img src="images/7 Key.png" width="70" height="70" alt="7" style="vertical-align: middle;" /></p>
-
-<pre style="font-size: 120%;">
-a -> ā    (u+0101) a with macron
-A -> Ā    (u+0100) A with macron
-b -> ƀ    (u+0180) b with stroke
-B -> Ƀ    (u+0243) B with stroke
-d -> đ    (u+0111) d with stroke
-D -> Đ    (u+0110) D with stroke
-e -> ē    (u+0113) e with macron
-E -> Ē    (u+0112) E with macron
-g -> ǥ    (u+01e5) g with stroke (Skolt Sami)
-G -> Ǥ    (u+01e4) G with stroke (Skolt Sami)
-h -> ħ    (u+0127) h with stroke (Maltese)
-H -> Ħ    (u+0126) H with stroke (Maltese)
-i -> ī    (u+012b) i with macron
-I -> Ī    (u+012a) I with macron
-j -> ɉ    (u+0249) j with stroke
-J -> Ɉ    (u+0248) J with stroke
-l -> ł    (u+0142) l with stroke
-L -> Ł    (u+0141) L with stroke
-o -> ō    (u+014d) o with macron
-O -> Ō    (u+014c) O with macron
-p -> ᵽ    (u+1d7d) p with stroke
-P -> Ᵽ    (u+2c63) P with stroke
-q -> ǭ    (u+01ed) o with ogonek and macron
-Q -> Ǭ    (u+01ec) O with ogonek and macron
-r -> ɍ    (u+024d) r with stroke
-R -> Ɍ    (u+024c) R with stroke
-t -> ŧ    (u+0167) t with stroke
-T -> Ŧ    (u+0166) T with stroke
-u -> ū    (u+016b) u with macron
-U -> Ū    (u+016a) U with macron
-v -> ǖ    (u+01d6) u with diaeresis and macron
-V -> Ǖ    (u+01d5) U with diaeresis and macron
-w -> ǣ    (u+01e3) ae with macron
-W -> Ǣ    (u+01e2) AE with macron
-y -> ȳ    (u+0233) y with macron
-Y -> Ȳ    (u+0232) Y with macron
-z -> ƶ    (u+01b6) z with stroke
-Z -> Ƶ    (u+01b5) Z with stroke
-
-* æ (AltGr + q) -> ǣ    (u+01e3) ae with macron
-* Æ (AltGr + Q) -> Ǣ    (u+01e2) AE with macron
-
-1 -> ↲    (u+21b2) downwards arrow with tip leftwards                   S
-2 -> ⇵    (u+21f5) downwards arrow leftwards of upwards arrow           E
-3 -> ↳    (u+21b3) downwards arrow with tip rightwards                  E
-4 -> ⇆    (u+21c6) leftwards arrow over rightwards arrow                    See also numpad
-5 -> ↨    (u+21a8) up down arrow with base                              N
-6 -> ⇄    (u+21c4) rightwards arrow over leftwards arrow                U   for AutoHotkey
-7 -> ↰    (u+21b0) upwards arrow with tip leftwards                     M
-8 -> ⇅    (u+21c5) upwards arrow leftwards of downwards arrow           P
-9 -> ↱    (u+21b1) upwards arrow with tip rightwards                    A
-0 -> ↹    (u+21b9) leftwards arrow to bar over rightwards arrow to bar  D
-
-(space) -> ¯    (u+00af) macron
-</pre>
-
-<p>&nbsp;</p>
-
-<p><img src="images/AltGr Key.png" width="83" height="70" alt="AltGr" style="vertical-align: middle;" /><span class="markup">+</span><img src="images/8 Key.png" width="70" height="70" alt="8" style="vertical-align: middle;" /></p>
-
-<pre style="font-size: 120%;">
-c -> ç    (u+00e7) c with cedilla
-C -> Ç    (u+00c7) C with cedilla
-d -> ḑ    (u+1e11) d with cedilla
-D -> Ḑ    (u+1e10) D with cedilla
-f -> ȩ    (u+0229) e with cedilla
-F -> Ȩ    (u+0228) E with cedilla
-g -> ģ    (u+0123) g with cedilla
-G -> Ģ    (u+0122) G with cedilla
-h -> ḩ    (u+1e29) h with cedilla
-H -> Ḩ    (u+1e28) H with cedilla
-k -> ķ    (u+0137) k with cedilla
-K -> Ķ    (u+0136) K with cedilla
-l -> ļ    (u+013c) l with cedilla
-L -> Ļ    (u+013b) L with cedilla
-n -> ņ    (u+0146) n with cedilla
-N -> Ņ    (u+0145) N with cedilla
-r -> ŗ    (u+0157) r with cedilla
-R -> Ŗ    (u+0156) R with cedilla
-s -> ş    (u+015f) s with cedilla
-S -> Ş    (u+015e) S with cedilla
-t -> ţ    (u+0163) t with cedilla
-T -> Ţ    (u+0162) T with cedilla
-
-a -> ą    (u+0105) a with ogonek
-A -> Ą    (u+0104) A with ogonek
-e -> ę    (u+0119) e with ogonek
-E -> Ę    (u+0118) E with ogonek
-i -> į    (u+012f) i with ogonek
-I -> Į    (u+012e) I with ogonek
-o -> ǫ    (u+01eb) o with ogonek
-O -> Ǫ    (u+01ea) O with ogonek
-u -> ų    (u+0173) u with ogonek
-U -> Ų    (u+0172) U with ogonek
-
-w -> ƿ    (u+01bf) small letter wynn
-W -> Ƿ    (u+01f7) capital letter wynn
-y -> ȝ    (u+021d) small letter yogh
-Y -> Ȝ    (u+021c) capital letter yogh
-
-1 -> –    (u+2013) en dash
-2 -> —    (u+2014) em dash
-3 -> ―    (u+2015) horizontal bar
-4 -> ‐    (u+2010) hyphen
-9 -> ‒    (u+2012) figure dash
-0 -> -    (u+00ad) soft hyphen
-- -> ‑    (u+2011) non-breaking hyphen
-
-(space) -> ¸    (u+00b8) cedilla
-</pre>
-
-<p>&nbsp;</p>
-
-<p><img src="images/AltGr Key.png" width="83" height="70" alt="AltGr" style="vertical-align: middle;" /><span class="markup">+</span><img src="images/Shift Key.png" width="83" height="70" alt="Shift" style="vertical-align: middle;" /><span class="markup">+</span><img src="images/8 Key.png" width="70" height="70" alt="8" style="vertical-align: middle;" /></p>
-
-<pre style="font-size: 120%;">
-a -> ă    (u+0103) a with breve
-A -> Ă    (u+0102) A with breve
-e -> ĕ    (u+0115) e with breve
-E -> Ĕ    (u+0114) E with breve
-g -> ğ    (u+011f) g with breve
-G -> Ğ    (u+011e) G with breve
-i -> ĭ    (u+012d) i with breve
-I -> Ĭ    (u+012c) I with breve
-o -> ŏ    (u+014f) o with breve
-O -> Ŏ    (u+014e) O with breve
-u -> ŭ    (u+016d) u with breve
-U -> Ŭ    (u+016c) U with breve
-
-c -> ƈ    (u+0188) c with hook
-C -> Ƈ    (u+0187) C with hook
-h -> ɠ    (u+0260) g with hook
-H -> Ɠ    (u+0193) G with hook
-k -> ƙ    (u+0199) k with hook
-K -> Ƙ    (u+0198) K with hook
-m -> ɱ    (u+0271) m with hook
-M -> Ɱ    (u+2c6e) M with hook
-p -> ƥ    (u+01a5) p with hook
-P -> Ƥ    (u+01a4) P with hook
-q -> ɋ    (u+024b) q with hook tail
-Q -> Ɋ    (u+024a) Q with hook tail
-r -> ɽ    (u+027d) r with tail
-R -> Ɽ    (u+2c64) R with tail
-v -> ʋ    (u+028b) v with hook
-V -> Ʋ    (u+01b2) V with hook
-w -> ⱳ    (u+2c73) w with hook
-W -> Ⱳ    (u+2c72) W with hook
-y -> ƴ    (u+01b4) y with hook
-Y -> Ƴ    (u+01b3) Y with hook
-z -> ȥ    (u+0225) z with hook
-Z -> Ȥ    (u+0224) Z with hook
-
-d -> ɖ    (u+0256) small letter d with tail
-D -> Ɖ    (u+0189) capital letter African D
-f -> ə    (u+0259) small letter schwa (Azerbaijani)
-F -> Ə    (u+018f) capital letter schwa (Azerbaijani)
-j -> ĳ    (u+0133) ligature ij
-J -> Ĳ    (u+0132) ligature IJ
-n -> ŋ    (u+014b) small letter eng(ma)
-N -> Ŋ    (u+014a) capital letter eng(ma)
-s -> ș    (u+0219) s with comma below (Romanian)
-S -> Ș    (u+0218) S with comma below (Romanian)
-t -> ț    (u+021b) t with comma below (Romanian)
-T -> Ț    (u+021a) T with comma below (Romanian)
-3 -> ʒ    (u+0292) small letter ezh
-# -> Ʒ    (u+01b7) capital letter ezh
-
-(space) -> ˘    (u+02d8) breve
-</pre>
-
-<p>&nbsp;</p>
-
-<p><img src="images/AltGr Key.png" width="83" height="70" alt="AltGr" style="vertical-align: middle;" /><span class="markup">+</span><img src="images/Apostrophe Quote Key.png" width="70" height="70" alt="Apostrophe/Quote" style="vertical-align: middle;" /></p>
-
-<pre style="font-size: 120%;">
-c -> ć    (u+0107) c with acute
-C -> Ć    (u+0106) C with acute
-g -> ǵ    (u+01f5) g with acute
-G -> Ǵ    (u+01f4) G with acute
-k -> ḱ    (u+1e31) k with acute
-K -> Ḱ    (u+1e30) K with acute
-l -> ĺ    (u+013a) l with acute
-L -> Ĺ    (u+0139) L with acute
-m -> ḿ    (u+1e3f) m with acute
-M -> Ḿ    (u+1e3e) M with acute
-n -> ń    (u+0144) n with acute
-N -> Ń    (u+0143) N with acute
-p -> ṕ    (u+1e55) p with acute
-P -> Ṕ    (u+1e54) P with acute
-r -> ŕ    (u+0155) r with acute
-R -> Ŕ    (u+0154) R with acute
-s -> ś    (u+015b) s with acute
-S -> Ś    (u+015a) S with acute
-w -> ẃ    (u+1e83) w with acute
-W -> Ẃ    (u+1e82) W with acute
-y -> ý    (u+00fd) y with acute
-Y -> Ý    (u+00dd) Y with acute
-z -> ź    (u+017a) z with acute
-Z -> Ź    (u+0179) Z with acute
-
-b -> ɓ    (u+0253) b with hook
-B -> Ɓ    (u+0181) B with hook
-d -> ɗ    (u+0257) d with hook
-D -> Ɗ    (u+018a) D with hook
-f -> ƒ    (u+0192) f with hook
-F -> Ƒ    (u+0191) F with hook
-h -> ɦ    (u+00ed) h with hook
-H -> Ɦ    (u+00cd) H with hook
-t -> ƭ    (u+01ad) t with hook
-T -> Ƭ    (u+01ac) T with hook
-
-a -> ǻ    (u+01fb) a with ring above and acute
-A -> Ǻ    (u+01fa) A with ring above and acute
-e -> ǽ    (u+01fd) ae with acute
-E -> Ǽ    (u+01fc) AE with acute
-i -> ǿ    (u+01ff) o with stroke and acute
-I -> Ǿ    (u+01fe) O with stroke and acute
-q -> ḉ    (u+1e09) c with cedilla and acute
-Q -> Ḉ    (u+1e08) C with cedilla and acute
-j -> ĳ    (u+0133) ligature ij
-J -> Ĳ    (u+0132) ligature IJ
-
-o -> ő    (u+0151) o with double acute
-O -> Ő    (u+0150) O with double acute
-u -> ű    (u+0171) u with double acute
-U -> Ű    (u+0170) U with double acute
-
-v -> ǘ    (u+01d8) u with diaeresis and acute
-V -> Ǘ    (u+01d7) U with diaeresis and acute
-
-* å (AltGr + w) -> ǻ    (u+01fb) a with ring above and acute
-* Å (AltGr + W) -> Ǻ    (u+01fa) A with ring above and acute
-* æ (AltGr + q) -> ǽ    (u+01fd) ae with acute
-* Æ (AltGr + Q) -> Ǽ    (u+01fc) AE with acute
-* ø (AltGr + l) -> ǿ    (u+01ff) o with stroke and acute
-* Ø (AltGr + L) -> Ǿ    (u+01fe) O with stroke and acute
-* ç (AltGr + c) -> ḉ    (u+1e09) c with cedilla and acute
-* Ç (AltGr + C) -> Ḉ    (u+1e08) C with cedilla and acute
-
-2 -> ♫    (u+266b) beamed eighth notes
-3 -> ⁂    (u+2042) asterism
-4 -> ★    (u+2605) black star
-5 -> ☆    (u+2606) white star
-6 -> ✽    (u+273d) heavy teardrop-spoked asterisk
-7 -> ✻    (u+273b) teardrop-spoked asterisk
-8 -> ♪    (u+266a) eighth note
-
-(space) -> ´    (u+00b4) acute accent
-</pre>
-
-<p>&nbsp;</p>
-
-<p><img src="images/AltGr Key.png" width="83" height="70" alt="AltGr" style="vertical-align: middle;" /><span class="markup">+</span><img src="images/Shift Key.png" width="83" height="70" alt="Shift" style="vertical-align: middle;" /><span class="markup">+</span><img src="images/Apostrophe Quote Key.png" width="70" height="70" alt="Apostrophe/Quote" style="vertical-align: middle;" /></p>
-
-<pre style="font-size: 120%;">
-a -> ä    (u+00e4) a with diaeresis
-A -> Ä    (u+00c4) A with diaeresis
-e -> ë    (u+00eb) e with diaeresis
-E -> Ë    (u+00cb) E with diaeresis
-h -> ḧ    (u+1e27) h with diaeresis
-H -> Ḧ    (u+1e26) H with diaeresis
-i -> ï    (u+00ef) i with diaeresis
-I -> Ï    (u+00cf) I with diaeresis
-t -> ẗ    (u+1e97) t with diaeresis
-w -> ẅ    (u+1e85) w with diaeresis
-W -> Ẅ    (u+1e84) W with diaeresis
-x -> ẍ    (u+1e8d) x with diaeresis
-X -> Ẍ    (u+1e8c) X with diaeresis
-y -> ÿ    (u+00ff) y with diaeresis
-Y -> Ÿ    (u+0178) Y with diaeresis
-
-o -> ơ    (u+01a1) o with horn
-O -> Ơ    (u+01a0) O with horn
-u -> ư    (u+01b0) u with horn
-U -> Ư    (u+01af) U with horn
-
-s -> ʃ    (u+0283) small letter esh
-S -> Ʃ    (u+01a9) capital letter esh
-
-(space) -> ¨    (u+00a8) diaeresis
-</pre>
-
-<p>&nbsp;</p>
-
-<p><img src="images/AltGr Key.png" width="83" height="70" alt="AltGr" style="vertical-align: middle;" /><span class="markup">+</span><img src="images/Grave Tilde Key.png" width="70" height="70" alt="Grave/Tilde" style="vertical-align: middle;" /></p>
-
-<pre style="font-size: 120%;">
-n -> ǹ    (u+01f9) n with grave
-N -> Ǹ    (u+01f8) N with grave
-w -> ẁ    (u+1e81) w with grave
-W -> Ẁ    (u+1e80) W with grave
-y -> ỳ    (u+1ef3) y with grave
-Y -> Ỳ    (u+1ef2) Y with grave
-
-a -> ȁ    (u+0201) a with double grave
-A -> Ȁ    (u+0200) A with double grave
-e -> ȅ    (u+0205) e with double grave
-E -> Ȅ    (u+0204) E with double grave
-i -> ȉ    (u+0209) i with double grave
-I -> Ȉ    (u+0208) I with double grave
-o -> ȍ    (u+020d) o with double grave
-O -> Ȍ    (u+020c) O with double grave
-r -> ȑ    (u+0211) r with double grave
-R -> Ȑ    (u+0210) R with double grave
-u -> ȕ    (u+0215) u with double grave
-U -> Ȕ    (u+0214) U with double grave
-
-d -> ð    (u+00f0) small letter eth
-D -> Ð    (u+00d0) capital letter eth
-t -> þ    (u+00fe) small letter thorn
-T -> Þ    (u+00de) capital letter thorn
-v -> ǜ    (u+01dc) u with diaeresis and grave
-V -> Ǜ    (u+01db) U with diaeresis and grave
-
-c -> ♣    (u+2663) black club suit
-C -> ♧    (u+2667) white club suit
-h -> ♥    (u+2665) black heart suit
-H -> ♡    (u+2661) white heart suit
-m -> ♦    (u+2666) black diamond suit
-M -> ♢    (u+2662) white diamond suit
-s -> ♠    (u+2660) black spade suit
-S -> ♤    (u+2664) white spade suit
-
-1 ->      (u+2002) en space
-2 ->      (u+2003) em space
-3 ->      (u+2004) three-per-em space
-4 ->      (u+2005) four-per-em space
-5 ->      (u+2008) punctuation space
-6 ->      (u+2006) six-per-em space
-7 ->      (u+2009) thin space
-8 ->      (u+200a) hair space
-9 ->      (u+2007) figure space
-0 ->      (u+200b) zero-width space
-- ->      (u+00a0) non-breaking space  (see also :  AltGr + Space)
-= ->      (u+202f) narrow no-break space
-
-(space) -> `    (u+0060) grave accent
-</pre>
-
-<p>&nbsp;</p>
-
-<p><img src="images/AltGr Key.png" width="83" height="70" alt="AltGr" style="vertical-align: middle;" /><span class="markup">+</span><img src="images/Shift Key.png" width="83" height="70" alt="Shift" style="vertical-align: middle;" /><span class="markup">+</span><img src="images/Grave Tilde Key.png" width="70" height="70" alt="Grave/Tilde" style="vertical-align: middle;" /></p>
-
-<pre style="font-size: 120%;">
-a -> ã    (u+00e3) a with tilde
-A -> Ã    (u+00c3) A with tilde
-e -> ẽ    (u+1ebd) e with tilde
-E -> Ẽ    (u+1ebc) E with tilde
-i -> ĩ    (u+0129) i with tilde
-I -> Ĩ    (u+0128) I with tilde
-l -> ɫ    (u+026b) l with middle tilde
-L -> Ɫ    (u+2c62) L with middle tilde
-n -> ñ    (u+00f1) n with tilde
-N -> Ñ    (u+00d1) N with tilde
-o -> õ    (u+00f5) o with tilde
-O -> Õ    (u+00d5) O with tilde
-u -> ũ    (u+0169) u with tilde
-U -> Ũ    (u+0168) U with tilde
-v -> ṽ    (u+1e7d) v with tilde
-V -> Ṽ    (u+1e7c) V with tilde
-y -> ỹ    (u+1ef9) y with tilde
-Y -> Ỹ    (u+1ef8) Y with tilde
-
-s -> ſ    (u+017f) small long s
-
-1 ->      (u+2000) en quad
-2 ->      (u+2001) em quad
-(space) -> ~    (u+007e) tilde
-</pre>
-
-<p>&nbsp;</p>
-
-<p><img src="images/AltGr Key.png" width="83" height="70" alt="AltGr" style="vertical-align: middle;" /><span class="markup">+</span><img src="images/Backslash Bar Key.png" width="83" height="70" alt="Backslash/Bar" style="vertical-align: middle;" /></p>
-
-<pre style="font-size: 120%;">
-a -> ª    (u+00aa) feminine ordinal indicator (Spanish, Portuguese, Italian, Galician)
-b -> •    (u+2022) bullet
-B -> ◦    (u+25e6) white bullet
-c -> ℅    (u+2105) care of
-d -> †    (u+2020) dagger
-D -> ‡    (u+2021) double dagger
-e -> ℮    (u+212e) estimated symbol
-E -> ✉   (u+2709) envolope
-f -> ♀    (u+2640) Venus symbol (female)
-g -> ❀    (u+2740) white florette
-G -> ✿    (u+273f) black florette
-h -> ❦    (u+2766) floral heart
-H -> ❧    (u+2767) rotated floral heart bullet
-i -> ⋄    (u+22c4) diamond operator
-j -> Ω    (u+2126) ohm sign (backwards compatibility)
-k -> ⅍    (u+214d) aktieselskab
-l -> ℓ    (u+2113) script small l
-L -> ℒ    (u+2112) Laplace transform
-m -> ♂    (u+2642) Mars symbol (male)
-n -> ¬    (u+00ac) not sign
-o -> º    (u+00ba) masculine ordinal indicator (Spanish, Portuguese, Italian, Galician)
-p -> ¶    (u+00b6) pilcrow sign
-P -> ℗    (u+2117) sound recording copyright
-q -> „    (u+201e) double low-9 quotation mark
-Q -> ‚    (u+201a) single low-9 quotation mark
-r -> ®    (u+00ae) registered sign
-R -> ℞    (u+211e) prescription take (Recipere)
-s -> ℠    (u+2120) service mark
-t -> ™    (u+2122) trademark symbol
-T -> ✆    (u+2706) telephone location sign
-u -> ☐    (u+2610) ballot box
-U -> ☙    (u+2619) reversed rotated floral heart bullet
-v -> ✓    (u+2713) check mark
-V -> ✔    (u+2714) heavy check mark
-w -> ⚠   (u+26a0) warning sign
-x -> ✗    (u+2717) ballot x
-X -> ✘    (u+2718) heavy ballot x
-y -> ☑    (u+2611) ballot box with check
-Y -> ☒    (u+2612) ballot box with x
-
-1 -> №    (u+2116) numero sign
-2 -> ½    (u+00bd) vulgar fraction 1/2
-3 -> ⅓    (u+2153) vulgar fraction 1/3
-4 -> ¼    (u+00bc) vulgar fraction 1/4
-5 -> ⅔    (u+2154) vulgar fraction 2/3
-6 -> ¾    (u+00be) vulgar fraction 3/4
-7 -> ⅛    (u+215b) vulgar fraction 1/8
-8 -> ⅜    (u+215c) vulgar fraction 3/8
-9 -> ⅝    (u+215d) vulgar fraction 5/8
-0 -> ⅞    (u+215e) vulgar fraction 7/8
-
-- (hyphen-minus)   -> ⁃    (u+2043) hyphen bullet
-_ (underscore)     -> ‣    (u+2023) triangular bullet
-= (equals sign)    -> ×    (u+00d7) multiplication sign
-+ (plus)           -> ÷    (u+00f7) division sign
-; (semicolon)      -> ☺    (u+263a) white smiling face
-: (colon)          -> ☻    (u+263b) black smiling face
-, (comma)          -> „    (u+201e) double low-9 quotation mark
-&lt; (less than)      -> ‚    (u+201a) single low-9 quotation mark
-. (period)         -> ‼    (u+203c) double exclamation mark
-&gt; (greater than)   -> ⸮    (u+2e2e) reversed question mark
-/ (solidus/slash)  -> ‽    (u+203d) interrobang
-? (question mark)  -> ⸘    (u+2e18) inverted interrobang
-\ (backslash)      -> ⁞    (u+205e) vertical four dots
-| (vertical slash) -> ¦    (u+00a6) broken bar
-(space)            -> ×    (u+00d7) multiplication sign
-</pre>
-
-<p>&nbsp;</p>
-
-<p><img src="images/AltGr Key.png" width="83" height="70" alt="AltGr" style="vertical-align: middle;" /><span class="markup">+</span><img src="images/Shift Key.png" width="83" height="70" alt="Shift" style="vertical-align: middle;" /><span class="markup">+</span><img src="images/Backslash Bar Key.png" width="83" height="70" alt="Backslash/Bar" style="vertical-align: middle;" /></p>
-
-<pre style="font-size: 120%;">
-a -> ֏    (u+058f) Armenian dram
-A -> ₳    (u+20b3) Argentine austral
-b -> ₿    (u+20bf) bitcoin
-B -> ฿    (u+0e3f) Thai baht
-c -> ₡    (u+20a1) Costa Rican colón
-C -> ₵    (u+20b5) Ghanaian cedi
-d -> ₫    (u+20ab) Vietnamese dong
-D -> ₯    (u+20af) Greek drachma
-e -> ₢    (u+20a2) Brazilian cruzeiro
-E -> ₠    (u+20a0) euro-currency sign
-f -> ₣    (u+20a3) French franc
-F -> ₣    (u+20a3) French franc
-g -> ₲    (u+20b2) Paraguayan guaraní
-G -> ₲    (u+20b2) Paraguayan guaraní
-h -> ₴    (u+20b4) Ukrainian hryvnia
-H -> ₴    (u+20b4) Ukrainian hryvnia
-i -> ₤    (u+20a4) lira
-I -> ₶    (u+20b6) livre tournois
-k -> ₭    (u+20ad) Laotian kip
-K -> ₭    (u+20ad) Laotian kip
-l -> ₺    (u+20ba) Turkish lira
-L -> ₾    (u+20be) Georgian lari
-m -> ₼    (u+20bc) Azerbaijani manat
-M -> ₥    (u+20a5) mill sign
-n -> ₦    (u+20a6) Nigerian naira
-N -> ₻    (u+20bb) Nordic mark
-p -> ₱    (u+20b1) Philippine peso
-P -> ₧    (u+20a7) Spanish pesetas
-r -> ₹    (u+20b9) Indian rupee
-R -> ₽    (u+20bd) Russian ruble
-s -> ₪    (u+20aa) Israeli new shekel
-S -> ₷    (u+20b7) spesmilo
-t -> ₮    (u+20ae) Mongolian tögrög (tugrik)
-T -> ₸    (u+20b8) Kazakh tenge
-u -> ₨    (u+20a8) rupee sign
-U -> ₨    (u+20a8) rupee sign
-w -> ₩    (u+20a9) South Korean won
-W -> ₩    (u+20a9) South Korean won
-x -> ¤    (u+00a4) currency sign
-X -> ¤    (u+00a4) currency sign
-
-(space) -> ¤    (u+00a4) currency sign
-</pre>
-
-<p>&nbsp;</p>
-
-<p><img src="images/AltGr Key.png" width="83" height="70" alt="AltGr" style="vertical-align: middle;" /><span class="markup">+</span><img src="images/M Key.png" width="70" height="70" alt="M" style="vertical-align: middle;" /></p>
-
-<pre style="font-size: 120%;">
-a -> α    (u+03b1) small alpha
-A -> Α    (u+0391) capital alpha
-b -> β    (u+03b2) small beta
-B -> Β    (u+0392) capital beta
-v -> β    (u+03b2) small beta
-V -> Β    (u+0392) capital beta
-g -> γ    (u+03b3) small gamma
-G -> Γ    (u+0393) capital gamma
-d -> δ    (u+03b4) small delta
-D -> Δ    (u+0394) capital delta
-e -> ε    (u+03b5) small epsilon
-E -> Ε    (u+0395) capital epsilon
-z -> ζ    (u+03b6) small zeta
-Z -> Ζ    (u+0396) capital zeta
-h -> η    (u+03b7) small eta
-H -> Η    (u+0397) capital eta
-j -> θ    (u+03b8) small theta
-J -> Θ    (u+0398) capital theta
-i -> ι    (u+03b9) small iota
-I -> Ι    (u+0399) capital iota
-k -> κ    (u+03ba) small kappa
-K -> Κ    (u+039a) capital kappa
-l -> λ    (u+03bb) small lambda
-L -> Λ    (u+039b) capital lambda
-m -> μ    (u+03bc) small mu
-M -> Μ    (u+039c) capital mu
-n -> ν    (u+03bd) small nu
-N -> Ν    (u+039d) capital nu
-x -> ξ    (u+03be) small xi
-X -> Ξ    (u+039e) capital xi
-o -> ο    (u+03bf) small omicron
-O -> Ο    (u+039f) capital omicron
-p -> π    (u+03c0) small pi
-P -> Π    (u+03a0) capital pi
-r -> ρ    (u+03c1) small rho
-R -> Ρ    (u+03a1) capital rho
-s -> σ    (u+03c3) small sigma
-S -> Σ    (u+03a3) capital sigma
-t -> τ    (u+03c4) small tau
-T -> Τ    (u+03a4) capital tau
-u -> υ    (u+03c5) small upsilon
-U -> Υ    (u+03a5) capital upsilon
-y -> υ    (u+03c5) small upsilon
-Y -> Υ    (u+03a5) capital upsilon
-f -> φ    (u+03c6) small phi
-F -> Φ    (u+03a6) capital phi
-c -> χ    (u+03c7) small chi
-C -> Χ    (u+03a7) capital chi
-w -> ψ    (u+03c8) small psi
-W -> Ψ    (u+03a8) capital psi
-q -> ω    (u+03c9) small omega
-Q -> Ω    (u+03a9) capital omega
-
-, (comma)     -> ς    (u+03c2) small final sigma
-* ß (AltGr + s) -> ς    (u+03c2) small final sigma
-
-1 -> ¹    (u+00b9) superscript 1
-2 -> ²    (u+00b2) superscript 2
-3 -> ³    (u+00b3) superscript 3
-4 -> ⁴    (u+2074) superscript 4
-5 -> ⁵    (u+2075) superscript 5
-6 -> ⁶    (u+2076) superscript 6
-7 -> ⁷    (u+2077) superscript 7
-8 -> ⁸    (u+2078) superscript 8
-9 -> ⁹    (u+2079) superscript 9
-0 -> ⁰    (u+2070) superscript 0
-- -> ⁻    (u+207b) superscript -
-= -> ⁼    (u+207c) superscript =
-+ -> ⁺    (u+207a) superscript +
-[ -> ⁽    (u+207d) superscript (
-] -> ⁾    (u+207e) superscript )
-
-! (Shift + 1) -> ₁    (u+2081) subscript 1
-@ (Shift + 2) -> ₂    (u+2082) subscript 2
-# (Shift + 3) -> ₃    (u+2083) subscript 3
-$ (Shift + 4) -> ₄    (u+2084) subscript 4
-% (Shift + 5) -> ₅    (u+2085) subscript 5
-^ (Shift + 6) -> ₆    (u+2086) subscript 6
-& (Shift + 7) -> ₇    (u+2087) subscript 7
-* (Shift + 8) -> ₈    (u+2088) subscript 8
-( (Shift + 9) -> ₉    (u+2089) subscript 9
-) (Shift + 0) -> ₀    (u+2080) subscript 0
-; -> ₋    (u+208b) subscript -
-' -> ₌    (u+208c) subscript =
-" -> ₊    (u+208a) subscript +
-{ -> ₍    (u+208d) subscript (
-} -> ₎    (u+208e) subscript )
-
-. (dot) -> µ    (u+00b5) micro sign
-(space) -> μ    (u+03bc) small mu
-</pre>
-
-<p>&nbsp;</p>
-
-<p><img src="images/AltGr Key.png" width="83" height="70" alt="AltGr" style="vertical-align: middle;" /><span class="markup">+</span><img src="images/Shift Key.png" width="83" height="70" alt="Shift" style="vertical-align: middle;" /><span class="markup">+</span><img src="images/M Key.png" width="70" height="70" alt="M" style="vertical-align: middle;" /></p>
-
-<pre style="font-size: 120%;">
-a -> ∀    (u+2200) for all
-A -> ∀    (u+2200) for all
-b -> ⊆    (u+2286) subset of or equal to
-B -> ⊇    (u+2287) superset of or equal to
-c -> ∝    (u+221d) proportional to
-C -> ℂ    (u+2102) complex numbers
-d -> ∆    (u+2206) increment operator
-D -> ∇    (u+2207) nabla/del operator
-e -> ∃    (u+2203) there exists
-E -> ∄    (u+2204) there does not exist
-f -> ƒ    (u+0192) f with hook
-F -> ∎    (u+220e) end of proof
-g -> ⊂    (u+2282) subset of
-G -> ⊄    (u+2284) not a subset of
-h -> ⊃    (u+2283) superset of
-H -> ⊅    (u+2285) not a superset of
-i -> ∞    (u+221e) infinity symbol
-I -> ℑ    (u+2111) imaginary numbers
-j -> ≅    (u+2245) congruent to
-J -> ≇    (u+2247) not congruent to
-k -> ∋    (u+220b) contains as member
-K -> ∌    (u+220c) does not contain as member
-l -> ∥    (u+2225) parallel to
-L -> ∦    (u+2226) not parallel to
-m -> ∈    (u+2208) element of
-M -> ∉    (u+2209) not an element of
-n -> ⁿ    (u+207f) superscript n
-N -> ℕ    (u+2115) natural numbers
-o -> ∘    (u+2218) ring operator
-O -> ∅    (u+2205) empty set
-p -> ∂    (u+2202) partial differential
-P -> ℙ    (u+2119) prime numbers
-q -> ℚ    (u+211a) rational numbers
-Q -> ℚ    (u+211a) rational numbers
-r -> √    (u+221a) square root
-R -> ℝ    (u+211d) real numbers
-s -> ∩    (u+2229) set intersection
-S -> ∫    (u+222b) integral symbol
-t -> ⌀    (u+2300) diameter sign
-T -> ⌀    (u+2300) diameter sign
-u -> ∪    (u+222a) set union
-U -> ∖    (u+2216) set minus
-v -> ≡    (u+2261) identical to
-V -> ≢    (u+2262) not identical to
-w -> ℘    (u+2118) Weierstrass elliptic function
-W -> ℘    (u+2118) Weierstrass elliptic function
-z -> ↯    (u+21af) downwards zigzag arrow
-Z -> ℤ    (u+2124) whole numbers
-1 -> ≠    (u+2260) not equal to
-! -> ≠    (u+2260) not equal to
-2 -> √    (u+221a) square root
-3 -> ∛    (u+221b) cube root
-4 -> ∜    (u+221c) fourth root
-5 -> ‰    (u+2030) per mille sign
-% -> ‱   (u+2031) per ten thousand sign
-6 -> ∠    (u+2220) angle symbol
-7 -> ∧    (u+2227) logical and
-& -> ∧    (u+2227) logical and
-8 -> ⊗    (u+2297) circled times
-* -> ⊙    (u+2299) circled dot operator
-9 -> ∟    (u+221f) right angle
-0 -> ∡    (u+2221) measured angle
-` (grave accent)   -> ≈    (u+2248) almost equal to
-~ (tilde)          -> ≈    (u+2248) almost equal to
-, (comma)          -> ≤    (u+2264) less-than or equal to
-&lt; (less than)      -> ⩽    (u+2a7d) less-than or slanted equal to
-. (dot)            -> ≥    (u+2265) greater-than or equal to
-&gt; (greater than)   -> ⩾    (u+2a7e) greater-than or slanted equal to
-- (hyphen-minus)   -> ±    (u+00b1) plus-minus sign
-_ (underscore)     -> ⊖    (u+2296) circled minus
-/ (solidus/slash)  -> ⊘    (u+2298) circled division slash
-= (equals sign)    -> ≝    (u+225d) equal to by definition
-+ (plus)           -> ⊕    (u+2295) circled plus
-; (semicolon)      -> ∵    (u+2235) because sign
-: (colon)          -> ∴    (u+2234) therefore sign
-' (apostrophe)     -> ′    (u+2032) prime
-" (quotation mark) -> ″    (u+2033) double prime
-[ (solidus/slash)  -> ‴    (u+2034) triple prime
-] (question mark)  -> ⁗    (u+2057) quadruple prime
-\ (backslash)      -> ∨    (u+2228) logical or
-| (vertical slash) -> ∨    (u+2228) logical or
-
-(space)            -> √    (u+221a) square root
+# Circumflex Accent
+
+&lt;Multi_key&gt; &lt;c&gt; &lt;a&gt; : "â"  U00E2  # a with circumflex
+&lt;Multi_key&gt; &lt;c&gt; &lt;A&gt; : "Â"  U00C2  # A with circumflex
+&lt;Multi_key&gt; &lt;c&gt; &lt;c&gt; : "ĉ"  U0109  # c with circumflex
+&lt;Multi_key&gt; &lt;c&gt; &lt;C&gt; : "Ĉ"  U0108  # C with circumflex
+&lt;Multi_key&gt; &lt;c&gt; &lt;e&gt; : "ê"  U00EA  # e with circumflex
+&lt;Multi_key&gt; &lt;c&gt; &lt;E&gt; : "Ê"  U00CA  # E with circumflex
+&lt;Multi_key&gt; &lt;c&gt; &lt;g&gt; : "ĝ"  U011D  # g with circumflex
+&lt;Multi_key&gt; &lt;c&gt; &lt;G&gt; : "Ĝ"  U011C  # G with circumflex
+&lt;Multi_key&gt; &lt;c&gt; &lt;h&gt; : "ĥ"  U0125  # h with circumflex
+&lt;Multi_key&gt; &lt;c&gt; &lt;H&gt; : "Ĥ"  U0124  # H with circumflex
+&lt;Multi_key&gt; &lt;c&gt; &lt;i&gt; : "î"  U00EE  # i with circumflex
+&lt;Multi_key&gt; &lt;c&gt; &lt;I&gt; : "Î"  U00CE  # I with circumflex
+&lt;Multi_key&gt; &lt;c&gt; &lt;j&gt; : "ĵ"  U0135  # j with circumflex
+&lt;Multi_key&gt; &lt;c&gt; &lt;J&gt; : "Ĵ"  U0134  # J with circumflex
+&lt;Multi_key&gt; &lt;c&gt; &lt;o&gt; : "ô"  U00F4  # o with circumflex
+&lt;Multi_key&gt; &lt;c&gt; &lt;O&gt; : "Ô"  U00D4  # O with circumflex
+&lt;Multi_key&gt; &lt;c&gt; &lt;s&gt; : "ŝ"  U015D  # s with circumflex
+&lt;Multi_key&gt; &lt;c&gt; &lt;S&gt; : "Ŝ"  U015C  # S with circumflex
+&lt;Multi_key&gt; &lt;c&gt; &lt;u&gt; : "û"  U00FB  # u with circumflex
+&lt;Multi_key&gt; &lt;c&gt; &lt;U&gt; : "Û"  U00DB  # U with circumflex
+&lt;Multi_key&gt; &lt;c&gt; &lt;w&gt; : "ŵ"  U0175  # w with circumflex
+&lt;Multi_key&gt; &lt;c&gt; &lt;W&gt; : "Ŵ"  U0174  # W with circumflex
+&lt;Multi_key&gt; &lt;c&gt; &lt;y&gt; : "ŷ"  U0177  # y with circumflex
+&lt;Multi_key&gt; &lt;c&gt; &lt;Y&gt; : "Ŷ"  U0176  # Y with circumflex
+&lt;Multi_key&gt; &lt;c&gt; &lt;z&gt; : "ẑ"  U1E91  # z with circumflex
+&lt;Multi_key&gt; &lt;c&gt; &lt;Z&gt; : "Ẑ"  U1E90  # Z with circumflex
+&lt;Multi_key&gt; &lt;c&gt; &lt;space&gt; : "ˆ"  U02C6  # circumflex accent (modifier)
+
+
+# Caron
+
+&lt;Multi_key&gt; &lt;v&gt; &lt;a&gt; : "ǎ"  U01CE  # a with caron
+&lt;Multi_key&gt; &lt;v&gt; &lt;A&gt; : "Ǎ"  U01CD  # A with caron
+&lt;Multi_key&gt; &lt;v&gt; &lt;c&gt; : "č"  U010D  # c with caron
+&lt;Multi_key&gt; &lt;v&gt; &lt;C&gt; : "Č"  U010C  # C with caron
+&lt;Multi_key&gt; &lt;v&gt; &lt;d&gt; : "ď"  U010F  # d with caron
+&lt;Multi_key&gt; &lt;v&gt; &lt;D&gt; : "Ď"  U010E  # D with caron
+&lt;Multi_key&gt; &lt;v&gt; &lt;e&gt; : "ě"  U011B  # e with caron
+&lt;Multi_key&gt; &lt;v&gt; &lt;E&gt; : "Ě"  U011A  # E with caron
+&lt;Multi_key&gt; &lt;v&gt; &lt;g&gt; : "ǧ"  U01E7  # g with caron
+&lt;Multi_key&gt; &lt;v&gt; &lt;G&gt; : "Ǧ"  U01E6  # G with caron
+&lt;Multi_key&gt; &lt;v&gt; &lt;h&gt; : "ȟ"  U021F  # h with caron
+&lt;Multi_key&gt; &lt;v&gt; &lt;H&gt; : "Ȟ"  U021E  # H with caron
+&lt;Multi_key&gt; &lt;v&gt; &lt;i&gt; : "ǐ"  U01D0  # i with caron
+&lt;Multi_key&gt; &lt;v&gt; &lt;I&gt; : "Ǐ"  U01CF  # I with caron
+&lt;Multi_key&gt; &lt;v&gt; &lt;j&gt; : "ǰ"  U01F0  # j with caron
+&lt;Multi_key&gt; &lt;v&gt; &lt;k&gt; : "ǩ"  U01E9  # k with caron
+&lt;Multi_key&gt; &lt;v&gt; &lt;K&gt; : "Ǩ"  U01E8  # K with caron
+&lt;Multi_key&gt; &lt;v&gt; &lt;l&gt; : "ľ"  U013E  # l with caron
+&lt;Multi_key&gt; &lt;v&gt; &lt;L&gt; : "Ľ"  U013D  # L with caron
+&lt;Multi_key&gt; &lt;v&gt; &lt;n&gt; : "ň"  U0148  # n with caron
+&lt;Multi_key&gt; &lt;v&gt; &lt;N&gt; : "Ň"  U0147  # N with caron
+&lt;Multi_key&gt; &lt;v&gt; &lt;o&gt; : "ǒ"  U01D2  # o with caron
+&lt;Multi_key&gt; &lt;v&gt; &lt;O&gt; : "Ǒ"  U01D1  # O with caron
+&lt;Multi_key&gt; &lt;v&gt; &lt;r&gt; : "ř"  U0159  # r with caron
+&lt;Multi_key&gt; &lt;v&gt; &lt;R&gt; : "Ř"  U0158  # R with caron
+&lt;Multi_key&gt; &lt;v&gt; &lt;s&gt; : "š"  U0161  # s with caron
+&lt;Multi_key&gt; &lt;v&gt; &lt;S&gt; : "Š"  U0160  # S with caron
+&lt;Multi_key&gt; &lt;v&gt; &lt;t&gt; : "ť"  U0165  # t with caron
+&lt;Multi_key&gt; &lt;v&gt; &lt;T&gt; : "Ť"  U0164  # T with caron
+&lt;Multi_key&gt; &lt;v&gt; &lt;u&gt; : "ǔ"  U01D4  # u with caron
+&lt;Multi_key&gt; &lt;v&gt; &lt;U&gt; : "Ǔ"  U01D3  # U with caron
+&lt;Multi_key&gt; &lt;v&gt; &lt;z&gt; : "ž"  U017E  # z with caron
+&lt;Multi_key&gt; &lt;v&gt; &lt;Z&gt; : "Ž"  U017D  # Z with caron
+&lt;Multi_key&gt; &lt;v&gt; &lt;3&gt;           : "ǯ"  U01EF  # small letter ezh with caron
+&lt;Multi_key&gt; &lt;v&gt; &lt;numbersign&gt;  : "Ǯ"  U01EE  # capital letter ezh with caron
+&lt;Multi_key&gt; &lt;v&gt; &lt;space&gt;       : "ˇ"  U02C7  # caron
+
+
+# Dot Above
+
+&lt;Multi_key&gt; &lt;period&gt; &lt;a&gt; : "ȧ"  U0227  # a with dot above
+&lt;Multi_key&gt; &lt;period&gt; &lt;A&gt; : "Ȧ"  U0226  # A with dot above
+&lt;Multi_key&gt; &lt;period&gt; &lt;b&gt; : "ḃ"  U1E03  # b with dot above
+&lt;Multi_key&gt; &lt;period&gt; &lt;B&gt; : "Ḃ"  U1E02  # B with dot above
+&lt;Multi_key&gt; &lt;period&gt; &lt;c&gt; : "ċ"  U010B  # c with dot above
+&lt;Multi_key&gt; &lt;period&gt; &lt;C&gt; : "Ċ"  U010A  # C with dot above
+&lt;Multi_key&gt; &lt;period&gt; &lt;d&gt; : "ḋ"  U1E0B  # d with dot above
+&lt;Multi_key&gt; &lt;period&gt; &lt;D&gt; : "Ḋ"  U1E0A  # D with dot above
+&lt;Multi_key&gt; &lt;period&gt; &lt;e&gt; : "ė"  U0117  # e with dot above
+&lt;Multi_key&gt; &lt;period&gt; &lt;E&gt; : "Ė"  U0116  # E with dot above
+&lt;Multi_key&gt; &lt;period&gt; &lt;f&gt; : "ḟ"  U1E1F  # f with dot above
+&lt;Multi_key&gt; &lt;period&gt; &lt;F&gt; : "Ḟ"  U1E1E  # F with dot above
+&lt;Multi_key&gt; &lt;period&gt; &lt;g&gt; : "ġ"  U0121  # g with dot above
+&lt;Multi_key&gt; &lt;period&gt; &lt;G&gt; : "Ġ"  U0120  # G with dot above
+&lt;Multi_key&gt; &lt;period&gt; &lt;h&gt; : "ḣ"  U1E23  # h with dot above
+&lt;Multi_key&gt; &lt;period&gt; &lt;H&gt; : "Ḣ"  U1E22  # H with dot above
+&lt;Multi_key&gt; &lt;period&gt; &lt;i&gt; : "ı"  U0131  # dotless i (Turkish, Azerbaijani)
+&lt;Multi_key&gt; &lt;period&gt; &lt;I&gt; : "İ"  U0130  # I with dot above (Turkish, Azerbaijani)
+&lt;Multi_key&gt; &lt;period&gt; &lt;j&gt; : "ȷ"  U0237  # dotless j
+&lt;Multi_key&gt; &lt;period&gt; &lt;l&gt; : "ŀ"  U0140  # l with middle dot
+&lt;Multi_key&gt; &lt;period&gt; &lt;L&gt; : "Ŀ"  U013F  # L with middle dot
+&lt;Multi_key&gt; &lt;period&gt; &lt;m&gt; : "ṁ"  U1E41  # m with dot above
+&lt;Multi_key&gt; &lt;period&gt; &lt;M&gt; : "Ṁ"  U1E40  # M with dot above
+&lt;Multi_key&gt; &lt;period&gt; &lt;n&gt; : "ṅ"  U1E45  # n with dot above
+&lt;Multi_key&gt; &lt;period&gt; &lt;N&gt; : "Ṅ"  U1E44  # N with dot above
+&lt;Multi_key&gt; &lt;period&gt; &lt;o&gt; : "ȯ"  U022F  # o with dot above
+&lt;Multi_key&gt; &lt;period&gt; &lt;O&gt; : "Ȯ"  U022E  # O with dot above
+&lt;Multi_key&gt; &lt;period&gt; &lt;p&gt; : "ṗ"  U1E57  # p with dot above
+&lt;Multi_key&gt; &lt;period&gt; &lt;P&gt; : "Ṗ"  U1E56  # P with dot above
+&lt;Multi_key&gt; &lt;period&gt; &lt;r&gt; : "ṙ"  U1E59  # r with dot above
+&lt;Multi_key&gt; &lt;period&gt; &lt;R&gt; : "Ṙ"  U1E58  # R with dot above
+&lt;Multi_key&gt; &lt;period&gt; &lt;s&gt; : "ṡ"  U1E61  # s with dot above
+&lt;Multi_key&gt; &lt;period&gt; &lt;S&gt; : "Ṡ"  U1E60  # S with dot above
+&lt;Multi_key&gt; &lt;period&gt; &lt;t&gt; : "ṫ"  U1E6B  # t with dot above
+&lt;Multi_key&gt; &lt;period&gt; &lt;T&gt; : "Ṫ"  U1E6A  # T with dot above
+&lt;Multi_key&gt; &lt;period&gt; &lt;u&gt; : "ů"  U016F  # u with ring above
+&lt;Multi_key&gt; &lt;period&gt; &lt;U&gt; : "Ů"  U016E  # U with ring above
+&lt;Multi_key&gt; &lt;period&gt; &lt;w&gt; : "ẇ"  U1E87  # w with dot above
+&lt;Multi_key&gt; &lt;period&gt; &lt;W&gt; : "Ẇ"  U1E86  # W with dot above
+&lt;Multi_key&gt; &lt;period&gt; &lt;x&gt; : "ẋ"  U1E8B  # x with dot above
+&lt;Multi_key&gt; &lt;period&gt; &lt;X&gt; : "Ẋ"  U1E8A  # X with dot above
+&lt;Multi_key&gt; &lt;period&gt; &lt;y&gt; : "ẏ"  U1E8F  # y with dot above
+&lt;Multi_key&gt; &lt;period&gt; &lt;Y&gt; : "Ẏ"  U1E8E  # Y with dot above
+&lt;Multi_key&gt; &lt;period&gt; &lt;z&gt; : "ż"  U017C  # z with dot above
+&lt;Multi_key&gt; &lt;period&gt; &lt;Z&gt; : "Ż"  U017B  # Z with dot above
+
+
+# Ring Above
+
+&lt;Multi_key&gt; &lt;o&gt; &lt;a&gt; : "å"  U00E5  # a with ring above
+&lt;Multi_key&gt; &lt;o&gt; &lt;A&gt; : "Å"  U00C5  # A with ring above
+&lt;Multi_key&gt; &lt;o&gt; &lt;u&gt; : "ů"  U016F  # u with ring above
+&lt;Multi_key&gt; &lt;o&gt; &lt;U&gt; : "Ů"  U016E  # U with ring above
+&lt;Multi_key&gt; &lt;o&gt; &lt;w&gt; : "ẘ"  U1E98  # w with ring above
+&lt;Multi_key&gt; &lt;o&gt; &lt;y&gt; : "ẙ"  U1E99  # y with ring above
+
+
+# Macron/Stroke (General)
+
+&lt;Multi_key&gt; &lt;minus&gt; &lt;a&gt; : "ā"  U0101  # a with macron
+&lt;Multi_key&gt; &lt;minus&gt; &lt;A&gt; : "Ā"  U0100  # A with macron
+&lt;Multi_key&gt; &lt;minus&gt; &lt;b&gt; : "ƀ"  U0180  # b with stroke
+&lt;Multi_key&gt; &lt;minus&gt; &lt;B&gt; : "Ƀ"  U0243  # B with stroke
+&lt;Multi_key&gt; &lt;minus&gt; &lt;d&gt; : "đ"  U0111  # d with stroke
+&lt;Multi_key&gt; &lt;minus&gt; &lt;D&gt; : "Đ"  U0110  # D with stroke
+&lt;Multi_key&gt; &lt;minus&gt; &lt;e&gt; : "ē"  U0113  # e with macron
+&lt;Multi_key&gt; &lt;minus&gt; &lt;E&gt; : "Ē"  U0112  # E with macron
+&lt;Multi_key&gt; &lt;minus&gt; &lt;g&gt; : "ǥ"  U01E5  # g with stroke (Skolt Sami)
+&lt;Multi_key&gt; &lt;minus&gt; &lt;G&gt; : "Ǥ"  U01E4  # G with stroke (Skolt Sami)
+&lt;Multi_key&gt; &lt;minus&gt; &lt;h&gt; : "ħ"  U0127  # h with stroke (Maltese)
+&lt;Multi_key&gt; &lt;minus&gt; &lt;H&gt; : "Ħ"  U0126  # H with stroke (Maltese)
+&lt;Multi_key&gt; &lt;minus&gt; &lt;i&gt; : "ī"  U012B  # i with macron
+&lt;Multi_key&gt; &lt;minus&gt; &lt;I&gt; : "Ī"  U012A  # I with macron
+&lt;Multi_key&gt; &lt;minus&gt; &lt;j&gt; : "ɉ"  U0249  # j with stroke
+&lt;Multi_key&gt; &lt;minus&gt; &lt;J&gt; : "Ɉ"  U0248  # J with stroke
+&lt;Multi_key&gt; &lt;minus&gt; &lt;l&gt; : "ł"  U0142  # l with stroke
+&lt;Multi_key&gt; &lt;minus&gt; &lt;L&gt; : "Ł"  U0141  # L with stroke
+&lt;Multi_key&gt; &lt;minus&gt; &lt;o&gt; : "ō"  U014D  # o with macron
+&lt;Multi_key&gt; &lt;minus&gt; &lt;O&gt; : "Ō"  U014C  # O with macron
+&lt;Multi_key&gt; &lt;minus&gt; &lt;p&gt; : "ᵽ"  U1D7D  # p with stroke
+&lt;Multi_key&gt; &lt;minus&gt; &lt;P&gt; : "Ᵽ"  U2C63  # P with stroke
+&lt;Multi_key&gt; &lt;minus&gt; &lt;r&gt; : "ɍ"  U024D  # r with stroke
+&lt;Multi_key&gt; &lt;minus&gt; &lt;R&gt; : "Ɍ"  U024C  # R with stroke
+&lt;Multi_key&gt; &lt;minus&gt; &lt;t&gt; : "ŧ"  U0167  # t with stroke
+&lt;Multi_key&gt; &lt;minus&gt; &lt;T&gt; : "Ŧ"  U0166  # T with stroke
+&lt;Multi_key&gt; &lt;minus&gt; &lt;u&gt; : "ū"  U016B  # u with macron
+&lt;Multi_key&gt; &lt;minus&gt; &lt;U&gt; : "Ū"  U016A  # U with macron
+&lt;Multi_key&gt; &lt;minus&gt; &lt;y&gt; : "ȳ"  U0233  # y with macron
+&lt;Multi_key&gt; &lt;minus&gt; &lt;Y&gt; : "Ȳ"  U0232  # Y with macron
+&lt;Multi_key&gt; &lt;minus&gt; &lt;z&gt; : "ƶ"  U01B6  # z with stroke
+&lt;Multi_key&gt; &lt;minus&gt; &lt;Z&gt; : "Ƶ"  U01B5  # Z with stroke
+&lt;Multi_key&gt; &lt;minus&gt; &lt;space&gt; : "¯"  U00AF  # macron
+
+
+# Macron/Stroke (Additional)
+
+&lt;Multi_key&gt; &lt;underscore&gt; &lt;a&gt; : "ǣ"  U01E3  # ae with macron
+&lt;Multi_key&gt; &lt;underscore&gt; &lt;A&gt; : "Ǣ"  U01E2  # AE with macron
+&lt;Multi_key&gt; &lt;underscore&gt; &lt;g&gt; : "ḡ"  U1E21  # g with macron
+&lt;Multi_key&gt; &lt;underscore&gt; &lt;G&gt; : "Ḡ"  U1E20  # G with macron
+&lt;Multi_key&gt; &lt;underscore&gt; &lt;i&gt; : "ɨ"  U0268  # i with stroke
+&lt;Multi_key&gt; &lt;underscore&gt; &lt;I&gt; : "Ɨ"  U0197  # I with stroke
+&lt;Multi_key&gt; &lt;underscore&gt; &lt;l&gt; : "ƚ"  U019A  # l with bar
+&lt;Multi_key&gt; &lt;underscore&gt; &lt;L&gt; : "Ƚ"  U023D  # L with bar
+&lt;Multi_key&gt; &lt;underscore&gt; &lt;o&gt; : "ǭ"  U01ED  # o with ogonek and macron
+&lt;Multi_key&gt; &lt;underscore&gt; &lt;O&gt; : "Ǭ"  U01EC  # O with ogonek and macron
+&lt;Multi_key&gt; &lt;underscore&gt; &lt;u&gt; : "ʉ"  U0289  # u with bar
+&lt;Multi_key&gt; &lt;underscore&gt; &lt;U&gt; : "Ʉ"  U0244  # U with bar
+&lt;Multi_key&gt; &lt;underscore&gt; &lt;y&gt; : "ɏ"  U024F  # y with stroke
+&lt;Multi_key&gt; &lt;underscore&gt; &lt;Y&gt; : "Ɏ"  U024E  # Y with stroke
+&lt;Multi_key&gt; &lt;underscore&gt; &lt;space&gt; : "¯"  U00AF  # macron
+
+
+# Stroke
+
+&lt;Multi_key&gt; &lt;slash&gt; &lt;a&gt; : "ⱥ"  U2C65  # a with stroke
+&lt;Multi_key&gt; &lt;slash&gt; &lt;A&gt; : "Ⱥ"  U023A  # A with stroke
+&lt;Multi_key&gt; &lt;slash&gt; &lt;c&gt; : "ȼ"  U023C  # c with stroke
+&lt;Multi_key&gt; &lt;slash&gt; &lt;C&gt; : "Ȼ"  U023B  # C with stroke
+&lt;Multi_key&gt; &lt;slash&gt; &lt;e&gt; : "ɇ"  U0247  # e with stroke
+&lt;Multi_key&gt; &lt;slash&gt; &lt;E&gt; : "Ɇ"  U0246  # E with stroke
+&lt;Multi_key&gt; &lt;slash&gt; &lt;f&gt; : "ẜ"  U1E9C  # long s with diagonal stroke
+&lt;Multi_key&gt; &lt;slash&gt; &lt;g&gt; : "ꞡ"  UA7A1  # g with oblique stroke
+&lt;Multi_key&gt; &lt;slash&gt; &lt;G&gt; : "Ꞡ"  UA7A0  # G with oblique stroke
+&lt;Multi_key&gt; &lt;slash&gt; &lt;k&gt; : "ꞣ"  UA7A3  # k with oblique stroke
+&lt;Multi_key&gt; &lt;slash&gt; &lt;K&gt; : "Ꞣ"  UA7A2  # K with oblique stroke
+&lt;Multi_key&gt; &lt;slash&gt; &lt;n&gt; : "ꞥ"  UA7A5  # n with oblique stroke
+&lt;Multi_key&gt; &lt;slash&gt; &lt;N&gt; : "Ꞥ"  UA7A4  # N with oblique stroke
+&lt;Multi_key&gt; &lt;slash&gt; &lt;o&gt; : "ø"  U00F8  # o with stroke
+&lt;Multi_key&gt; &lt;slash&gt; &lt;O&gt; : "Ø"  U00D8  # O with stroke
+&lt;Multi_key&gt; &lt;slash&gt; &lt;r&gt; : "ꞧ"  UA7A7  # r with oblique stroke
+&lt;Multi_key&gt; &lt;slash&gt; &lt;R&gt; : "Ꞧ"  UA7A6  # R with oblique stroke
+&lt;Multi_key&gt; &lt;slash&gt; &lt;s&gt; : "ꞩ"  UA7A9  # s with oblique stroke
+&lt;Multi_key&gt; &lt;slash&gt; &lt;S&gt; : "Ꞩ"  UA7A8  # S with oblique stroke
+&lt;Multi_key&gt; &lt;slash&gt; &lt;t&gt; : "ⱦ"  U2C66  # t with stroke
+&lt;Multi_key&gt; &lt;slash&gt; &lt;T&gt; : "Ⱦ"  U023E  # T with stroke
+
+
+# Cedilla/Ogonek
+
+&lt;Multi_key&gt; &lt;comma&gt; &lt;a&gt; : "ą"  U0105  # a with ogonek
+&lt;Multi_key&gt; &lt;comma&gt; &lt;A&gt; : "Ą"  U0104  # A with ogonek
+&lt;Multi_key&gt; &lt;comma&gt; &lt;c&gt; : "ç"  U00E7  # c with cedilla
+&lt;Multi_key&gt; &lt;comma&gt; &lt;C&gt; : "Ç"  U00C7  # C with cedilla
+&lt;Multi_key&gt; &lt;comma&gt; &lt;d&gt; : "ḑ"  U1E11  # d with cedilla
+&lt;Multi_key&gt; &lt;comma&gt; &lt;D&gt; : "Ḑ"  U1E10  # D with cedilla
+&lt;Multi_key&gt; &lt;comma&gt; &lt;e&gt; : "ę"  U0119  # e with ogonek
+&lt;Multi_key&gt; &lt;comma&gt; &lt;E&gt; : "Ę"  U0118  # E with ogonek
+&lt;Multi_key&gt; &lt;comma&gt; &lt;f&gt; : "ȩ"  U0229  # e with cedilla
+&lt;Multi_key&gt; &lt;comma&gt; &lt;F&gt; : "Ȩ"  U0228  # E with cedilla
+&lt;Multi_key&gt; &lt;comma&gt; &lt;g&gt; : "ģ"  U0123  # g with cedilla
+&lt;Multi_key&gt; &lt;comma&gt; &lt;G&gt; : "Ģ"  U0122  # G with cedilla
+&lt;Multi_key&gt; &lt;comma&gt; &lt;h&gt; : "ḩ"  U1E29  # h with cedilla
+&lt;Multi_key&gt; &lt;comma&gt; &lt;H&gt; : "Ḩ"  U1E28  # H with cedilla
+&lt;Multi_key&gt; &lt;comma&gt; &lt;i&gt; : "į"  U012F  # i with ogonek
+&lt;Multi_key&gt; &lt;comma&gt; &lt;I&gt; : "Į"  U012E  # I with ogonek
+&lt;Multi_key&gt; &lt;comma&gt; &lt;k&gt; : "ķ"  U0137  # k with cedilla
+&lt;Multi_key&gt; &lt;comma&gt; &lt;K&gt; : "Ķ"  U0136  # K with cedilla
+&lt;Multi_key&gt; &lt;comma&gt; &lt;l&gt; : "ļ"  U013C  # l with cedilla
+&lt;Multi_key&gt; &lt;comma&gt; &lt;L&gt; : "Ļ"  U013B  # L with cedilla
+&lt;Multi_key&gt; &lt;comma&gt; &lt;n&gt; : "ņ"  U0146  # n with cedilla
+&lt;Multi_key&gt; &lt;comma&gt; &lt;N&gt; : "Ņ"  U0145  # N with cedilla
+&lt;Multi_key&gt; &lt;comma&gt; &lt;o&gt; : "ǫ"  U01EB  # o with ogonek
+&lt;Multi_key&gt; &lt;comma&gt; &lt;O&gt; : "Ǫ"  U01EA  # O with ogonek
+&lt;Multi_key&gt; &lt;comma&gt; &lt;r&gt; : "ŗ"  U0157  # r with cedilla
+&lt;Multi_key&gt; &lt;comma&gt; &lt;R&gt; : "Ŗ"  U0156  # R with cedilla
+&lt;Multi_key&gt; &lt;comma&gt; &lt;s&gt; : "ş"  U015F  # s with cedilla
+&lt;Multi_key&gt; &lt;comma&gt; &lt;S&gt; : "Ş"  U015E  # S with cedilla
+&lt;Multi_key&gt; &lt;comma&gt; &lt;t&gt; : "ţ"  U0163  # t with cedilla
+&lt;Multi_key&gt; &lt;comma&gt; &lt;T&gt; : "Ţ"  U0162  # T with cedilla
+&lt;Multi_key&gt; &lt;comma&gt; &lt;u&gt; : "ų"  U0173  # u with ogonek
+&lt;Multi_key&gt; &lt;comma&gt; &lt;U&gt; : "Ų"  U0172  # U with ogonek
+&lt;Multi_key&gt; &lt;comma&gt; &lt;period&gt; : "˛"  U02DB  # ogonek
+&lt;Multi_key&gt; &lt;comma&gt; &lt;space&gt;  : "¸"  U00B8  # cedilla
+
+
+# Breve/Special
+
+&lt;Multi_key&gt; &lt;b&gt; &lt;a&gt; : "ă"  U0103  # a with breve
+&lt;Multi_key&gt; &lt;b&gt; &lt;A&gt; : "Ă"  U0102  # A with breve
+&lt;Multi_key&gt; &lt;b&gt; &lt;d&gt; : "ɖ"  U0256  # small letter d with tail
+&lt;Multi_key&gt; &lt;b&gt; &lt;D&gt; : "Ɖ"  U0189  # capital letter African D
+&lt;Multi_key&gt; &lt;b&gt; &lt;e&gt; : "ĕ"  U0115  # e with breve
+&lt;Multi_key&gt; &lt;b&gt; &lt;E&gt; : "Ĕ"  U0114  # E with breve
+&lt;Multi_key&gt; &lt;b&gt; &lt;f&gt; : "ə"  U0259  # small letter schwa (Azerbaijani)
+&lt;Multi_key&gt; &lt;b&gt; &lt;F&gt; : "Ə"  U018F  # capital letter schwa (Azerbaijani)
+&lt;Multi_key&gt; &lt;b&gt; &lt;g&gt; : "ğ"  U011F  # g with breve
+&lt;Multi_key&gt; &lt;b&gt; &lt;G&gt; : "Ğ"  U011E  # G with breve
+&lt;Multi_key&gt; &lt;b&gt; &lt;i&gt; : "ĭ"  U012D  # i with breve
+&lt;Multi_key&gt; &lt;b&gt; &lt;I&gt; : "Ĭ"  U012C  # I with breve
+&lt;Multi_key&gt; &lt;b&gt; &lt;n&gt; : "ŋ"  U014B  # small letter eng(ma)
+&lt;Multi_key&gt; &lt;b&gt; &lt;N&gt; : "Ŋ"  U014A  # capital letter eng(ma)
+&lt;Multi_key&gt; &lt;b&gt; &lt;o&gt; : "ŏ"  U014F  # o with breve
+&lt;Multi_key&gt; &lt;b&gt; &lt;O&gt; : "Ŏ"  U014E  # O with breve
+&lt;Multi_key&gt; &lt;b&gt; &lt;s&gt; : "ș"  U0219  # s with comma below (Romanian)
+&lt;Multi_key&gt; &lt;b&gt; &lt;S&gt; : "Ș"  U0218  # S with comma below (Romanian)
+&lt;Multi_key&gt; &lt;b&gt; &lt;t&gt; : "ț"  U021B  # t with comma below (Romanian)
+&lt;Multi_key&gt; &lt;b&gt; &lt;T&gt; : "Ț"  U021A  # T with comma below (Romanian)
+&lt;Multi_key&gt; &lt;b&gt; &lt;u&gt; : "ŭ"  U016D  # u with breve
+&lt;Multi_key&gt; &lt;b&gt; &lt;U&gt; : "Ŭ"  U016C  # U with breve
+&lt;Multi_key&gt; &lt;b&gt; &lt;w&gt; : "ƿ"  U01BF  # small letter wynn
+&lt;Multi_key&gt; &lt;b&gt; &lt;W&gt; : "Ƿ"  U01F7  # capital letter wynn
+&lt;Multi_key&gt; &lt;b&gt; &lt;y&gt; : "ȝ"  U021D  # small letter yogh
+&lt;Multi_key&gt; &lt;b&gt; &lt;Y&gt; : "Ȝ"  U021C  # capital letter yogh
+&lt;Multi_key&gt; &lt;b&gt; &lt;3&gt;          : "ʒ"  U0292  # small letter ezh
+&lt;Multi_key&gt; &lt;b&gt; &lt;numbersign&gt; : "Ʒ"  U01B7  # capital letter ezh
+&lt;Multi_key&gt; &lt;b&gt; &lt;space&gt;      : "˘"  U02D8  # breve
+
+
+# Inverted Breve
+
+&lt;Multi_key&gt; &lt;B&gt; &lt;a&gt; : "ȃ"  U0203  # a with inverted breve
+&lt;Multi_key&gt; &lt;B&gt; &lt;A&gt; : "Ȃ"  U0202  # A with inverted breve
+&lt;Multi_key&gt; &lt;B&gt; &lt;e&gt; : "ȇ"  U0207  # e with inverted breve
+&lt;Multi_key&gt; &lt;B&gt; &lt;E&gt; : "Ȇ"  U0206  # E with inverted breve
+&lt;Multi_key&gt; &lt;B&gt; &lt;i&gt; : "ȋ"  U020B  # i with inverted breve
+&lt;Multi_key&gt; &lt;B&gt; &lt;I&gt; : "Ȋ"  U020A  # I with inverted breve
+&lt;Multi_key&gt; &lt;B&gt; &lt;o&gt; : "ȏ"  U020F  # o with inverted breve
+&lt;Multi_key&gt; &lt;B&gt; &lt;O&gt; : "Ȏ"  U020E  # O with inverted breve
+&lt;Multi_key&gt; &lt;B&gt; &lt;r&gt; : "ȓ"  U0213  # r with inverted breve
+&lt;Multi_key&gt; &lt;B&gt; &lt;R&gt; : "Ȓ"  U0212  # R with inverted breve
+&lt;Multi_key&gt; &lt;B&gt; &lt;u&gt; : "ȗ"  U0217  # u with inverted breve
+&lt;Multi_key&gt; &lt;B&gt; &lt;U&gt; : "Ȗ"  U0216  # U with inverted breve
+
+
+# Acute Accent
+
+&lt;Multi_key&gt; &lt;apostrophe&gt; &lt;a&gt; : "á"  U00E1  # a with acute
+&lt;Multi_key&gt; &lt;apostrophe&gt; &lt;A&gt; : "Á"  U00C1  # A with acute
+&lt;Multi_key&gt; &lt;apostrophe&gt; &lt;c&gt; : "ć"  U0107  # c with acute
+&lt;Multi_key&gt; &lt;apostrophe&gt; &lt;C&gt; : "Ć"  U0106  # C with acute
+&lt;Multi_key&gt; &lt;apostrophe&gt; &lt;e&gt; : "é"  U00E9  # e with acute
+&lt;Multi_key&gt; &lt;apostrophe&gt; &lt;E&gt; : "É"  U00C9  # E with acute
+&lt;Multi_key&gt; &lt;apostrophe&gt; &lt;g&gt; : "ǵ"  U01F5  # g with acute
+&lt;Multi_key&gt; &lt;apostrophe&gt; &lt;G&gt; : "Ǵ"  U01F4  # G with acute
+&lt;Multi_key&gt; &lt;apostrophe&gt; &lt;i&gt; : "í"  U00ED  # i with acute
+&lt;Multi_key&gt; &lt;apostrophe&gt; &lt;I&gt; : "Í"  U00CD  # I with acute
+&lt;Multi_key&gt; &lt;apostrophe&gt; &lt;k&gt; : "ḱ"  U1E31  # k with acute
+&lt;Multi_key&gt; &lt;apostrophe&gt; &lt;K&gt; : "Ḱ"  U1E30  # K with acute
+&lt;Multi_key&gt; &lt;apostrophe&gt; &lt;l&gt; : "ĺ"  U013A  # l with acute
+&lt;Multi_key&gt; &lt;apostrophe&gt; &lt;L&gt; : "Ĺ"  U0139  # L with acute
+&lt;Multi_key&gt; &lt;apostrophe&gt; &lt;m&gt; : "ḿ"  U1E3F  # m with acute
+&lt;Multi_key&gt; &lt;apostrophe&gt; &lt;M&gt; : "Ḿ"  U1E3E  # M with acute
+&lt;Multi_key&gt; &lt;apostrophe&gt; &lt;n&gt; : "ń"  U0144  # n with acute
+&lt;Multi_key&gt; &lt;apostrophe&gt; &lt;N&gt; : "Ń"  U0143  # N with acute
+&lt;Multi_key&gt; &lt;apostrophe&gt; &lt;o&gt; : "ó"  U00F3  # o with acute
+&lt;Multi_key&gt; &lt;apostrophe&gt; &lt;O&gt; : "Ó"  U00D3  # O with acute
+&lt;Multi_key&gt; &lt;apostrophe&gt; &lt;p&gt; : "ṕ"  U1E55  # p with acute
+&lt;Multi_key&gt; &lt;apostrophe&gt; &lt;P&gt; : "Ṕ"  U1E54  # P with acute
+&lt;Multi_key&gt; &lt;apostrophe&gt; &lt;r&gt; : "ŕ"  U0155  # r with acute
+&lt;Multi_key&gt; &lt;apostrophe&gt; &lt;R&gt; : "Ŕ"  U0154  # R with acute
+&lt;Multi_key&gt; &lt;apostrophe&gt; &lt;s&gt; : "ś"  U015B  # s with acute
+&lt;Multi_key&gt; &lt;apostrophe&gt; &lt;S&gt; : "Ś"  U015A  # S with acute
+&lt;Multi_key&gt; &lt;apostrophe&gt; &lt;u&gt; : "ú"  U00FA  # u with acute
+&lt;Multi_key&gt; &lt;apostrophe&gt; &lt;U&gt; : "Ú"  U00DA  # U with acute
+&lt;Multi_key&gt; &lt;apostrophe&gt; &lt;w&gt; : "ẃ"  U1E83  # w with acute
+&lt;Multi_key&gt; &lt;apostrophe&gt; &lt;W&gt; : "Ẃ"  U1E82  # W with acute
+&lt;Multi_key&gt; &lt;apostrophe&gt; &lt;y&gt; : "ý"  U00FD  # y with acute
+&lt;Multi_key&gt; &lt;apostrophe&gt; &lt;Y&gt; : "Ý"  U00DD  # Y with acute
+&lt;Multi_key&gt; &lt;apostrophe&gt; &lt;z&gt; : "ź"  U017A  # z with acute
+&lt;Multi_key&gt; &lt;apostrophe&gt; &lt;Z&gt; : "Ź"  U0179  # Z with acute
+&lt;Multi_key&gt; &lt;apostrophe&gt; &lt;b&gt; : "ǻ"  U01FB  # a with ring above and acute
+&lt;Multi_key&gt; &lt;apostrophe&gt; &lt;B&gt; : "Ǻ"  U01FA  # A with ring above and acute
+&lt;Multi_key&gt; &lt;apostrophe&gt; &lt;d&gt; : "ḉ"  U1E09  # c with cedilla and acute
+&lt;Multi_key&gt; &lt;apostrophe&gt; &lt;D&gt; : "Ḉ"  U1E08  # C with cedilla and acute
+&lt;Multi_key&gt; &lt;apostrophe&gt; &lt;f&gt; : "ǽ"  U01FD  # ae with acute
+&lt;Multi_key&gt; &lt;apostrophe&gt; &lt;F&gt; : "Ǽ"  U01FC  # AE with acute
+&lt;Multi_key&gt; &lt;apostrophe&gt; &lt;q&gt; : "ǿ"  U01FF  # o with stroke and acute
+&lt;Multi_key&gt; &lt;apostrophe&gt; &lt;Q&gt; : "Ǿ"  U01FE  # O with stroke and acute
+&lt;Multi_key&gt; &lt;apostrophe&gt; &lt;space&gt; : "´"  U00B4  # acute accent
+
+
+# Diaeresis
+
+&lt;Multi_key&gt; &lt;quotedbl&gt; &lt;a&gt; : "ä"  U00E4  # a with diaeresis
+&lt;Multi_key&gt; &lt;quotedbl&gt; &lt;A&gt; : "Ä"  U00C4  # A with diaeresis
+&lt;Multi_key&gt; &lt;quotedbl&gt; &lt;e&gt; : "ë"  U00EB  # e with diaeresis
+&lt;Multi_key&gt; &lt;quotedbl&gt; &lt;E&gt; : "Ë"  U00CB  # E with diaeresis
+&lt;Multi_key&gt; &lt;quotedbl&gt; &lt;h&gt; : "ḧ"  U1E27  # h with diaeresis
+&lt;Multi_key&gt; &lt;quotedbl&gt; &lt;H&gt; : "Ḧ"  U1E26  # H with diaeresis
+&lt;Multi_key&gt; &lt;quotedbl&gt; &lt;i&gt; : "ï"  U00EF  # i with diaeresis
+&lt;Multi_key&gt; &lt;quotedbl&gt; &lt;I&gt; : "Ï"  U00CF  # I with diaeresis
+&lt;Multi_key&gt; &lt;quotedbl&gt; &lt;o&gt; : "ö"  U00F6  # o with diaeresis
+&lt;Multi_key&gt; &lt;quotedbl&gt; &lt;O&gt; : "Ö"  U00D6  # O with diaeresis
+&lt;Multi_key&gt; &lt;quotedbl&gt; &lt;t&gt; : "ẗ"  U1E97  # t with diaeresis
+&lt;Multi_key&gt; &lt;quotedbl&gt; &lt;u&gt; : "ü"  U00FC  # u with diaeresis
+&lt;Multi_key&gt; &lt;quotedbl&gt; &lt;U&gt; : "Ü"  U00DC  # U with diaeresis
+&lt;Multi_key&gt; &lt;quotedbl&gt; &lt;w&gt; : "ẅ"  U1E85  # w with diaeresis
+&lt;Multi_key&gt; &lt;quotedbl&gt; &lt;W&gt; : "Ẅ"  U1E84  # W with diaeresis
+&lt;Multi_key&gt; &lt;quotedbl&gt; &lt;x&gt; : "ẍ"  U1E8D  # x with diaeresis
+&lt;Multi_key&gt; &lt;quotedbl&gt; &lt;X&gt; : "Ẍ"  U1E8C  # X with diaeresis
+&lt;Multi_key&gt; &lt;quotedbl&gt; &lt;y&gt; : "ÿ"  U00FF  # y with diaeresis
+&lt;Multi_key&gt; &lt;quotedbl&gt; &lt;Y&gt; : "Ÿ"  U0178  # Y with diaeresis
+&lt;Multi_key&gt; &lt;quotedbl&gt; &lt;space&gt; : "¨"  U00A8  # diaeresis
+
+
+# Double Acute and Special Letters
+
+&lt;Multi_key&gt; &lt;equal&gt; &lt;o&gt; : "ő"  U0151  # o with double acute
+&lt;Multi_key&gt; &lt;equal&gt; &lt;O&gt; : "Ő"  U0150  # O with double acute
+&lt;Multi_key&gt; &lt;equal&gt; &lt;u&gt; : "ű"  U0171  # u with double acute
+&lt;Multi_key&gt; &lt;equal&gt; &lt;U&gt; : "Ű"  U0170  # U with double acute
+&lt;Multi_key&gt; &lt;equal&gt; &lt;h&gt; : "ꜧ"  UA727  # small letter heng
+&lt;Multi_key&gt; &lt;equal&gt; &lt;H&gt; : "Ꜧ"  UA726  # capital letter heng
+&lt;Multi_key&gt; &lt;equal&gt; &lt;space&gt; : "˝"  U02DD  # double acute accent
+
+
+# Grave Accent
+
+&lt;Multi_key&gt; &lt;grave&gt; &lt;a&gt; : "à"  U00E0  # a with grave
+&lt;Multi_key&gt; &lt;grave&gt; &lt;A&gt; : "À"  U00C0  # A with grave
+&lt;Multi_key&gt; &lt;grave&gt; &lt;e&gt; : "è"  U00E8  # e with grave
+&lt;Multi_key&gt; &lt;grave&gt; &lt;E&gt; : "È"  U00C8  # E with grave
+&lt;Multi_key&gt; &lt;grave&gt; &lt;i&gt; : "ì"  U00EC  # i with grave
+&lt;Multi_key&gt; &lt;grave&gt; &lt;I&gt; : "Ì"  U00CC  # I with grave
+&lt;Multi_key&gt; &lt;grave&gt; &lt;n&gt; : "ǹ"  U01F9  # n with grave
+&lt;Multi_key&gt; &lt;grave&gt; &lt;N&gt; : "Ǹ"  U01F8  # N with grave
+&lt;Multi_key&gt; &lt;grave&gt; &lt;o&gt; : "ò"  U00F2  # o with grave
+&lt;Multi_key&gt; &lt;grave&gt; &lt;O&gt; : "Ò"  U00D2  # O with grave
+&lt;Multi_key&gt; &lt;grave&gt; &lt;u&gt; : "ù"  U00F9  # u with grave
+&lt;Multi_key&gt; &lt;grave&gt; &lt;U&gt; : "Ù"  U00D9  # U with grave
+&lt;Multi_key&gt; &lt;grave&gt; &lt;w&gt; : "ẁ"  U1E81  # w with grave
+&lt;Multi_key&gt; &lt;grave&gt; &lt;W&gt; : "Ẁ"  U1E80  # W with grave
+&lt;Multi_key&gt; &lt;grave&gt; &lt;y&gt; : "ỳ"  U1EF3  # y with grave
+&lt;Multi_key&gt; &lt;grave&gt; &lt;Y&gt; : "Ỳ"  U1EF2  # Y with grave
+&lt;Multi_key&gt; &lt;grave&gt; &lt;space&gt; : "ˋ"  U02CB  # grave accent (modifier)
+
+
+# Double Grave
+
+&lt;Multi_key&gt; &lt;G&gt; &lt;a&gt; : "ȁ"  U0201  # a with double grave
+&lt;Multi_key&gt; &lt;G&gt; &lt;A&gt; : "Ȁ"  U0200  # A with double grave
+&lt;Multi_key&gt; &lt;G&gt; &lt;e&gt; : "ȅ"  U0205  # e with double grave
+&lt;Multi_key&gt; &lt;G&gt; &lt;E&gt; : "Ȅ"  U0204  # E with double grave
+&lt;Multi_key&gt; &lt;G&gt; &lt;i&gt; : "ȉ"  U0209  # i with double grave
+&lt;Multi_key&gt; &lt;G&gt; &lt;I&gt; : "Ȉ"  U0208  # I with double grave
+&lt;Multi_key&gt; &lt;G&gt; &lt;o&gt; : "ȍ"  U020D  # o with double grave
+&lt;Multi_key&gt; &lt;G&gt; &lt;O&gt; : "Ȍ"  U020C  # O with double grave
+&lt;Multi_key&gt; &lt;G&gt; &lt;r&gt; : "ȑ"  U0211  # r with double grave
+&lt;Multi_key&gt; &lt;G&gt; &lt;R&gt; : "Ȑ"  U0210  # R with double grave
+&lt;Multi_key&gt; &lt;G&gt; &lt;u&gt; : "ȕ"  U0215  # u with double grave
+&lt;Multi_key&gt; &lt;G&gt; &lt;U&gt; : "Ȕ"  U0214  # U with double grave
+
+
+# Tilde
+
+&lt;Multi_key&gt; &lt;asciitilde&gt; &lt;a&gt; : "ã"  U00E3  # a with tilde
+&lt;Multi_key&gt; &lt;asciitilde&gt; &lt;A&gt; : "Ã"  U00C3  # A with tilde
+&lt;Multi_key&gt; &lt;asciitilde&gt; &lt;e&gt; : "ẽ"  U1EBD  # e with tilde
+&lt;Multi_key&gt; &lt;asciitilde&gt; &lt;E&gt; : "Ẽ"  U1EBC  # E with tilde
+&lt;Multi_key&gt; &lt;asciitilde&gt; &lt;i&gt; : "ĩ"  U0129  # i with tilde
+&lt;Multi_key&gt; &lt;asciitilde&gt; &lt;I&gt; : "Ĩ"  U0128  # I with tilde
+&lt;Multi_key&gt; &lt;asciitilde&gt; &lt;l&gt; : "ɫ"  U026B  # l with middle tilde
+&lt;Multi_key&gt; &lt;asciitilde&gt; &lt;L&gt; : "Ɫ"  U2C62  # L with middle tilde
+&lt;Multi_key&gt; &lt;asciitilde&gt; &lt;n&gt; : "ñ"  U00F1  # n with tilde
+&lt;Multi_key&gt; &lt;asciitilde&gt; &lt;N&gt; : "Ñ"  U00D1  # N with tilde
+&lt;Multi_key&gt; &lt;asciitilde&gt; &lt;o&gt; : "õ"  U00F5  # o with tilde
+&lt;Multi_key&gt; &lt;asciitilde&gt; &lt;O&gt; : "Õ"  U00D5  # O with tilde
+&lt;Multi_key&gt; &lt;asciitilde&gt; &lt;u&gt; : "ũ"  U0169  # u with tilde
+&lt;Multi_key&gt; &lt;asciitilde&gt; &lt;U&gt; : "Ũ"  U0168  # U with tilde
+&lt;Multi_key&gt; &lt;asciitilde&gt; &lt;v&gt; : "ṽ"  U1E7D  # v with tilde
+&lt;Multi_key&gt; &lt;asciitilde&gt; &lt;V&gt; : "Ṽ"  U1E7C  # V with tilde
+&lt;Multi_key&gt; &lt;asciitilde&gt; &lt;y&gt; : "ỹ"  U1EF9  # y with tilde
+&lt;Multi_key&gt; &lt;asciitilde&gt; &lt;Y&gt; : "Ỹ"  U1EF8  # Y with tilde
+&lt;Multi_key&gt; &lt;asciitilde&gt; &lt;space&gt;  : "˜"  U02DC  # small tilde
+
+
+# Hook and Latin Greek Letters
+
+&lt;Multi_key&gt; &lt;h&gt; &lt;b&gt; : "ɓ"  U0253  # b with hook
+&lt;Multi_key&gt; &lt;h&gt; &lt;B&gt; : "Ɓ"  U0181  # B with hook
+&lt;Multi_key&gt; &lt;h&gt; &lt;c&gt; : "ƈ"  U0188  # c with hook
+&lt;Multi_key&gt; &lt;h&gt; &lt;C&gt; : "Ƈ"  U0187  # C with hook
+&lt;Multi_key&gt; &lt;h&gt; &lt;d&gt; : "ɗ"  U0257  # d with hook
+&lt;Multi_key&gt; &lt;h&gt; &lt;D&gt; : "Ɗ"  U018A  # D with hook
+&lt;Multi_key&gt; &lt;h&gt; &lt;f&gt; : "ƒ"  U0192  # f with hook
+&lt;Multi_key&gt; &lt;h&gt; &lt;F&gt; : "Ƒ"  U0191  # F with hook
+&lt;Multi_key&gt; &lt;h&gt; &lt;g&gt; : "ɠ"  U0260  # g with hook
+&lt;Multi_key&gt; &lt;h&gt; &lt;G&gt; : "Ɠ"  U0193  # G with hook
+&lt;Multi_key&gt; &lt;h&gt; &lt;h&gt; : "ɦ"  U0266  # h with hook
+&lt;Multi_key&gt; &lt;h&gt; &lt;H&gt; : "Ɦ"  UA7AA  # H with hook
+&lt;Multi_key&gt; &lt;h&gt; &lt;k&gt; : "ƙ"  U0199  # k with hook
+&lt;Multi_key&gt; &lt;h&gt; &lt;K&gt; : "Ƙ"  U0198  # K with hook
+&lt;Multi_key&gt; &lt;h&gt; &lt;m&gt; : "ɱ"  U0271  # m with hook
+&lt;Multi_key&gt; &lt;h&gt; &lt;M&gt; : "Ɱ"  U2C6E  # M with hook
+&lt;Multi_key&gt; &lt;h&gt; &lt;n&gt; : "ɲ"  U0272  # n with left hook
+&lt;Multi_key&gt; &lt;h&gt; &lt;N&gt; : "Ɲ"  U019D  # N with left hook
+&lt;Multi_key&gt; &lt;h&gt; &lt;p&gt; : "ƥ"  U01A5  # p with hook
+&lt;Multi_key&gt; &lt;h&gt; &lt;P&gt; : "Ƥ"  U01A4  # P with hook
+&lt;Multi_key&gt; &lt;h&gt; &lt;q&gt; : "ɋ"  U024B  # q with hook tail
+&lt;Multi_key&gt; &lt;h&gt; &lt;Q&gt; : "Ɋ"  U024A  # Q with hook tail
+&lt;Multi_key&gt; &lt;h&gt; &lt;r&gt; : "ɽ"  U027D  # r with tail
+&lt;Multi_key&gt; &lt;h&gt; &lt;R&gt; : "Ɽ"  U2C64  # R with tail
+&lt;Multi_key&gt; &lt;h&gt; &lt;t&gt; : "ƭ"  U01AD  # t with hook
+&lt;Multi_key&gt; &lt;h&gt; &lt;T&gt; : "Ƭ"  U01AC  # T with hook
+&lt;Multi_key&gt; &lt;h&gt; &lt;v&gt; : "ʋ"  U028B  # v with hook
+&lt;Multi_key&gt; &lt;h&gt; &lt;V&gt; : "Ʋ"  U01B2  # V with hook
+&lt;Multi_key&gt; &lt;h&gt; &lt;w&gt; : "ⱳ"  U2C73  # w with hook
+&lt;Multi_key&gt; &lt;h&gt; &lt;W&gt; : "Ⱳ"  U2C72  # W with hook
+&lt;Multi_key&gt; &lt;h&gt; &lt;y&gt; : "ƴ"  U01B4  # y with hook
+&lt;Multi_key&gt; &lt;h&gt; &lt;Y&gt; : "Ƴ"  U01B3  # Y with hook
+&lt;Multi_key&gt; &lt;h&gt; &lt;z&gt; : "ȥ"  U0225  # z with hook
+&lt;Multi_key&gt; &lt;h&gt; &lt;Z&gt; : "Ȥ"  U0224  # Z with hook
+&lt;Multi_key&gt; &lt;h&gt; &lt;a&gt; : "ɑ"  U0251  # latin small letter alpha
+&lt;Multi_key&gt; &lt;h&gt; &lt;A&gt; : "Ɑ"  U2C6D  # latin capital letter alpha
+&lt;Multi_key&gt; &lt;h&gt; &lt;e&gt; : "ɛ"  U025B  # small letter open e (latin small epsilon)
+&lt;Multi_key&gt; &lt;h&gt; &lt;E&gt; : "Ɛ"  U0190  # capital letter open E (latin capital epsilon)
+&lt;Multi_key&gt; &lt;h&gt; &lt;i&gt; : "ɩ"  U0269  # latin small letter iota
+&lt;Multi_key&gt; &lt;h&gt; &lt;I&gt; : "Ɩ"  U0196  # latin capital letter iota
+&lt;Multi_key&gt; &lt;h&gt; &lt;j&gt; : "ɣ"  U0263  # latin small gamma
+&lt;Multi_key&gt; &lt;h&gt; &lt;J&gt; : "Ɣ"  U0194  # latin capital gamma
+&lt;Multi_key&gt; &lt;h&gt; &lt;o&gt; : "ɔ"  U0254  # small open o
+&lt;Multi_key&gt; &lt;h&gt; &lt;O&gt; : "Ɔ"  U0186  # capital open O
+&lt;Multi_key&gt; &lt;h&gt; &lt;s&gt; : "ʃ"  U0283  # small letter esh
+&lt;Multi_key&gt; &lt;h&gt; &lt;S&gt; : "Ʃ"  U01A9  # capital letter esh
+&lt;Multi_key&gt; &lt;h&gt; &lt;u&gt; : "ʊ"  U028A  # latin small letter upsilon
+&lt;Multi_key&gt; &lt;h&gt; &lt;U&gt; : "Ʊ"  U01B1  # latin capital letter upsilon
+
+
+# Horn and Special Letters
+
+&lt;Multi_key&gt; &lt;H&gt; &lt;o&gt; : "ơ"  U01A1  # o with horn
+&lt;Multi_key&gt; &lt;H&gt; &lt;O&gt; : "Ơ"  U01A0  # O with horn
+&lt;Multi_key&gt; &lt;H&gt; &lt;u&gt; : "ư"  U01B0  # u with horn
+&lt;Multi_key&gt; &lt;H&gt; &lt;U&gt; : "Ư"  U01AF  # U with horn
+&lt;Multi_key&gt; &lt;H&gt; &lt;g&gt; : "ꬶ"  UAB36  # cross-tailed g
+&lt;Multi_key&gt; &lt;H&gt; &lt;h&gt; : "ɧ"  U0267  # small letter heng with hook
+&lt;Multi_key&gt; &lt;H&gt; &lt;k&gt; : "ĸ"  U0138  # small letter kra
+&lt;Multi_key&gt; &lt;H&gt; &lt;s&gt; : "ſ"  U017F  # small long s
+&lt;Multi_key&gt; &lt;H&gt; &lt;S&gt; : "ẛ"  U1E9B  # small long s with dot above
+
+
+# Turned Letters
+
+&lt;Multi_key&gt; &lt;t&gt; &lt;a&gt; : "ɐ"  U0250  # small turned a
+&lt;Multi_key&gt; &lt;t&gt; &lt;A&gt; : "Ɐ"  U2C6F  # capital turned A
+&lt;Multi_key&gt; &lt;t&gt; &lt;e&gt; : "ǝ"  U01DD  # small turned e
+&lt;Multi_key&gt; &lt;t&gt; &lt;E&gt; : "Ǝ"  U018E  # capital reversed E
+&lt;Multi_key&gt; &lt;t&gt; &lt;q&gt; : "ɒ"  U0252  # latin small letter turned alpha
+&lt;Multi_key&gt; &lt;t&gt; &lt;Q&gt; : "Ɒ"  U2C70  # latin capital letter turned alpha
+&lt;Multi_key&gt; &lt;t&gt; &lt;v&gt; : "ʌ"  U028C  # latin small letter turned v
+&lt;Multi_key&gt; &lt;t&gt; &lt;V&gt; : "Ʌ"  U0245  # latin capital letter turned V
+
+
+# Letters with Two Accents
+
+&lt;Multi_key&gt; &lt;a&gt; &lt;diaeresis&gt;  : "ǟ"  U01DF  # a with diaeresis and macron
+&lt;Multi_key&gt; &lt;A&gt; &lt;diaeresis&gt;  : "Ǟ"  U01DE  # A with diaeresis and macron
+&lt;Multi_key&gt; &lt;a&gt; &lt;period&gt;     : "ǡ"  U01E1  # a with dot above and macron
+&lt;Multi_key&gt; &lt;A&gt; &lt;period&gt;     : "Ǡ"  U01E0  # A with dot above and macron
+&lt;Multi_key&gt; &lt;o&gt; &lt;diaeresis&gt;  : "ȫ"  U022B  # o with diaeresis and macron
+&lt;Multi_key&gt; &lt;O&gt; &lt;diaeresis&gt;  : "Ȫ"  U022A  # O with diaeresis and macron
+&lt;Multi_key&gt; &lt;o&gt; &lt;asciitilde&gt; : "ȭ"  U022D  # o with tilde and macron
+&lt;Multi_key&gt; &lt;O&gt; &lt;asciitilde&gt; : "Ȭ"  U022C  # O with tilde and macron
+&lt;Multi_key&gt; &lt;o&gt; &lt;period&gt;     : "ȱ"  U0231  # o with dot above and macron
+&lt;Multi_key&gt; &lt;O&gt; &lt;period&gt;     : "Ȱ"  U0230  # O with dot above and macron
+&lt;Multi_key&gt; &lt;u&gt; &lt;minus&gt;      : "ǖ"  U01D6  # u with diaeresis and macron
+&lt;Multi_key&gt; &lt;U&gt; &lt;minus&gt;      : "Ǖ"  U01D5  # U with diaeresis and macron
+&lt;Multi_key&gt; &lt;u&gt; &lt;apostrophe&gt; : "ǘ"  U01D8  # u with diaeresis and acute
+&lt;Multi_key&gt; &lt;U&gt; &lt;apostrophe&gt; : "Ǘ"  U01D7  # U with diaeresis and acute
+&lt;Multi_key&gt; &lt;u&gt; &lt;v&gt;          : "ǚ"  U01DA  # u with diaeresis and caron
+&lt;Multi_key&gt; &lt;U&gt; &lt;v&gt;          : "Ǚ"  U01D9  # U with diaeresis and caron
+&lt;Multi_key&gt; &lt;u&gt; &lt;grave&gt;      : "ǜ"  U01DC  # u with diaeresis and grave
+&lt;Multi_key&gt; &lt;U&gt; &lt;grave&gt;      : "Ǜ"  U01DB  # U with diaeresis and grave
+
+
+# Currency Symbols
+
+&lt;Multi_key&gt; &lt;dollar&gt; &lt;a&gt; : "֏"  U058F  # Armenian dram
+&lt;Multi_key&gt; &lt;dollar&gt; &lt;A&gt; : "₳"  U20B3  # Argentine austral
+&lt;Multi_key&gt; &lt;dollar&gt; &lt;b&gt; : "₿"  U20BF  # bitcoin
+&lt;Multi_key&gt; &lt;dollar&gt; &lt;B&gt; : "฿"  U0E3F  # Thai baht
+&lt;Multi_key&gt; &lt;dollar&gt; &lt;c&gt; : "₡"  U20A1  # Costa Rican colón
+&lt;Multi_key&gt; &lt;dollar&gt; &lt;C&gt; : "₵"  U20B5  # Ghanaian cedi
+&lt;Multi_key&gt; &lt;dollar&gt; &lt;d&gt; : "₫"  U20AB  # Vietnamese dong
+&lt;Multi_key&gt; &lt;dollar&gt; &lt;D&gt; : "₯"  U20AF  # Greek drachma
+&lt;Multi_key&gt; &lt;dollar&gt; &lt;e&gt; : "€"  U20AC  # euro sign
+&lt;Multi_key&gt; &lt;dollar&gt; &lt;E&gt; : "₠"  U20A0  # euro-currency sign
+&lt;Multi_key&gt; &lt;dollar&gt; &lt;f&gt; : "₣"  U20A3  # French franc
+&lt;Multi_key&gt; &lt;dollar&gt; &lt;F&gt; : "₣"  U20A3  # French franc
+&lt;Multi_key&gt; &lt;dollar&gt; &lt;g&gt; : "₲"  U20B2  # Paraguayan guaraní
+&lt;Multi_key&gt; &lt;dollar&gt; &lt;G&gt; : "₾"  U20BE  # Georgian lari
+&lt;Multi_key&gt; &lt;dollar&gt; &lt;h&gt; : "₴"  U20B4  # Ukrainian hryvnia
+&lt;Multi_key&gt; &lt;dollar&gt; &lt;H&gt; : "₴"  U20B4  # Ukrainian hryvnia
+&lt;Multi_key&gt; &lt;dollar&gt; &lt;i&gt; : "₤"  U20A4  # lira
+&lt;Multi_key&gt; &lt;dollar&gt; &lt;I&gt; : "₶"  U20B6  # livre tournois
+&lt;Multi_key&gt; &lt;dollar&gt; &lt;k&gt; : "₭"  U20AD  # Laotian kip
+&lt;Multi_key&gt; &lt;dollar&gt; &lt;K&gt; : "₭"  U20AD  # Laotian kip
+&lt;Multi_key&gt; &lt;dollar&gt; &lt;l&gt; : "₺"  U20BA  # Turkish lira
+&lt;Multi_key&gt; &lt;dollar&gt; &lt;L&gt; : "£"  U00A3  # pound sign
+&lt;Multi_key&gt; &lt;dollar&gt; &lt;m&gt; : "₼"  U20BC  # Azerbaijani manat
+&lt;Multi_key&gt; &lt;dollar&gt; &lt;M&gt; : "₥"  U20A5  # mill sign
+&lt;Multi_key&gt; &lt;dollar&gt; &lt;n&gt; : "₦"  U20A6  # Nigerian naira
+&lt;Multi_key&gt; &lt;dollar&gt; &lt;N&gt; : "₻"  U20BB  # Nordic mark
+&lt;Multi_key&gt; &lt;dollar&gt; &lt;o&gt; : "¢"  U00A2  # cent sign (dollar)
+&lt;Multi_key&gt; &lt;dollar&gt; &lt;p&gt; : "₱"  U20B1  # Philippine peso
+&lt;Multi_key&gt; &lt;dollar&gt; &lt;P&gt; : "₧"  U20A7  # Spanish pesetas
+&lt;Multi_key&gt; &lt;dollar&gt; &lt;r&gt; : "₹"  U20B9  # Indian rupee
+&lt;Multi_key&gt; &lt;dollar&gt; &lt;R&gt; : "₽"  U20BD  # Russian ruble
+&lt;Multi_key&gt; &lt;dollar&gt; &lt;s&gt; : "₪"  U20AA  # Israeli new shekel
+&lt;Multi_key&gt; &lt;dollar&gt; &lt;S&gt; : "₷"  U20B7  # spesmilo
+&lt;Multi_key&gt; &lt;dollar&gt; &lt;t&gt; : "₮"  U20AE  # Mongolian tögrög (tugrik)
+&lt;Multi_key&gt; &lt;dollar&gt; &lt;T&gt; : "₸"  U20B8  # Kazakh tenge
+&lt;Multi_key&gt; &lt;dollar&gt; &lt;u&gt; : "₨"  U20A8  # rupee sign
+&lt;Multi_key&gt; &lt;dollar&gt; &lt;U&gt; : "₢"  U20A2  # Brazilian cruzeiro
+&lt;Multi_key&gt; &lt;dollar&gt; &lt;w&gt; : "₩"  U20A9  # South Korean won
+&lt;Multi_key&gt; &lt;dollar&gt; &lt;W&gt; : "₩"  U20A9  # South Korean won
+&lt;Multi_key&gt; &lt;dollar&gt; &lt;x&gt; : "¤"  U00A4  # currency sign
+&lt;Multi_key&gt; &lt;dollar&gt; &lt;y&gt; : "¥"  U00A5  # yen sign
+&lt;Multi_key&gt; &lt;dollar&gt; &lt;Y&gt; : "¥"  U00A5  # yen sign
+&lt;Multi_key&gt; &lt;dollar&gt; &lt;space&gt; : "¤"  U00A4  # currency sign
+
+
+# Greek Alphabet
+
+&lt;Multi_key&gt; &lt;g&gt; &lt;a&gt; : "α"  U03B1  # small alpha
+&lt;Multi_key&gt; &lt;g&gt; &lt;A&gt; : "Α"  U0391  # capital alpha
+&lt;Multi_key&gt; &lt;g&gt; &lt;b&gt; : "β"  U03B2  # small beta
+&lt;Multi_key&gt; &lt;g&gt; &lt;B&gt; : "Β"  U0392  # capital beta
+&lt;Multi_key&gt; &lt;g&gt; &lt;v&gt; : "β"  U03B2  # small beta
+&lt;Multi_key&gt; &lt;g&gt; &lt;V&gt; : "Β"  U0392  # capital beta
+&lt;Multi_key&gt; &lt;g&gt; &lt;g&gt; : "γ"  U03B3  # small gamma
+&lt;Multi_key&gt; &lt;g&gt; &lt;G&gt; : "Γ"  U0393  # capital gamma
+&lt;Multi_key&gt; &lt;g&gt; &lt;d&gt; : "δ"  U03B4  # small delta
+&lt;Multi_key&gt; &lt;g&gt; &lt;D&gt; : "Δ"  U0394  # capital delta
+&lt;Multi_key&gt; &lt;g&gt; &lt;e&gt; : "ε"  U03B5  # small epsilon
+&lt;Multi_key&gt; &lt;g&gt; &lt;E&gt; : "Ε"  U0395  # capital epsilon
+&lt;Multi_key&gt; &lt;g&gt; &lt;z&gt; : "ζ"  U03B6  # small zeta
+&lt;Multi_key&gt; &lt;g&gt; &lt;Z&gt; : "Ζ"  U0396  # capital zeta
+&lt;Multi_key&gt; &lt;g&gt; &lt;h&gt; : "η"  U03B7  # small eta
+&lt;Multi_key&gt; &lt;g&gt; &lt;H&gt; : "Η"  U0397  # capital eta
+&lt;Multi_key&gt; &lt;g&gt; &lt;j&gt; : "θ"  U03B8  # small theta
+&lt;Multi_key&gt; &lt;g&gt; &lt;J&gt; : "Θ"  U0398  # capital theta
+&lt;Multi_key&gt; &lt;g&gt; &lt;i&gt; : "ι"  U03B9  # small iota
+&lt;Multi_key&gt; &lt;g&gt; &lt;I&gt; : "Ι"  U0399  # capital iota
+&lt;Multi_key&gt; &lt;g&gt; &lt;k&gt; : "κ"  U03BA  # small kappa
+&lt;Multi_key&gt; &lt;g&gt; &lt;K&gt; : "Κ"  U039A  # capital kappa
+&lt;Multi_key&gt; &lt;g&gt; &lt;l&gt; : "λ"  U03BB  # small lambda
+&lt;Multi_key&gt; &lt;g&gt; &lt;L&gt; : "Λ"  U039B  # capital lambda
+&lt;Multi_key&gt; &lt;g&gt; &lt;m&gt; : "μ"  U03BC  # small mu
+&lt;Multi_key&gt; &lt;g&gt; &lt;M&gt; : "Μ"  U039C  # capital mu
+&lt;Multi_key&gt; &lt;g&gt; &lt;n&gt; : "ν"  U03BD  # small nu
+&lt;Multi_key&gt; &lt;g&gt; &lt;N&gt; : "Ν"  U039D  # capital nu
+&lt;Multi_key&gt; &lt;g&gt; &lt;x&gt; : "ξ"  U03BE  # small xi
+&lt;Multi_key&gt; &lt;g&gt; &lt;X&gt; : "Ξ"  U039E  # capital xi
+&lt;Multi_key&gt; &lt;g&gt; &lt;o&gt; : "ο"  U03BF  # small omicron
+&lt;Multi_key&gt; &lt;g&gt; &lt;O&gt; : "Ο"  U039F  # capital omicron
+&lt;Multi_key&gt; &lt;g&gt; &lt;p&gt; : "π"  U03C0  # small pi
+&lt;Multi_key&gt; &lt;g&gt; &lt;P&gt; : "Π"  U03A0  # capital pi
+&lt;Multi_key&gt; &lt;g&gt; &lt;r&gt; : "ρ"  U03C1  # small rho
+&lt;Multi_key&gt; &lt;g&gt; &lt;R&gt; : "Ρ"  U03A1  # capital rho
+&lt;Multi_key&gt; &lt;g&gt; &lt;s&gt; : "σ"  U03C3  # small sigma
+&lt;Multi_key&gt; &lt;g&gt; &lt;comma&gt; : "ς"  U03C2  # small final sigma
+&lt;Multi_key&gt; &lt;g&gt; &lt;S&gt; : "Σ"  U03A3  # capital sigma
+&lt;Multi_key&gt; &lt;g&gt; &lt;t&gt; : "τ"  U03C4  # small tau
+&lt;Multi_key&gt; &lt;g&gt; &lt;T&gt; : "Τ"  U03A4  # capital tau
+&lt;Multi_key&gt; &lt;g&gt; &lt;u&gt; : "υ"  U03C5  # small upsilon
+&lt;Multi_key&gt; &lt;g&gt; &lt;U&gt; : "Υ"  U03A5  # capital upsilon
+&lt;Multi_key&gt; &lt;g&gt; &lt;y&gt; : "υ"  U03C5  # small upsilon
+&lt;Multi_key&gt; &lt;g&gt; &lt;Y&gt; : "Υ"  U03A5  # capital upsilon
+&lt;Multi_key&gt; &lt;g&gt; &lt;f&gt; : "φ"  U03C6  # small phi
+&lt;Multi_key&gt; &lt;g&gt; &lt;F&gt; : "Φ"  U03A6  # capital phi
+&lt;Multi_key&gt; &lt;g&gt; &lt;c&gt; : "χ"  U03C7  # small chi
+&lt;Multi_key&gt; &lt;g&gt; &lt;C&gt; : "Χ"  U03A7  # capital chi
+&lt;Multi_key&gt; &lt;g&gt; &lt;w&gt; : "ψ"  U03C8  # small psi
+&lt;Multi_key&gt; &lt;g&gt; &lt;W&gt; : "Ψ"  U03A8  # capital psi
+&lt;Multi_key&gt; &lt;g&gt; &lt;q&gt; : "ω"  U03C9  # small omega
+&lt;Multi_key&gt; &lt;g&gt; &lt;Q&gt; : "Ω"  U03A9  # capital omega
+
+
+# Superscript Characters
+
+&lt;Multi_key&gt; &lt;p&gt; &lt;1&gt; : "¹"  U00B9  # superscript 1
+&lt;Multi_key&gt; &lt;p&gt; &lt;2&gt; : "²"  U00B2  # superscript 2
+&lt;Multi_key&gt; &lt;p&gt; &lt;3&gt; : "³"  U00B3  # superscript 3
+&lt;Multi_key&gt; &lt;p&gt; &lt;4&gt; : "⁴"  U2074  # superscript 4
+&lt;Multi_key&gt; &lt;p&gt; &lt;5&gt; : "⁵"  U2075  # superscript 5
+&lt;Multi_key&gt; &lt;p&gt; &lt;6&gt; : "⁶"  U2076  # superscript 6
+&lt;Multi_key&gt; &lt;p&gt; &lt;7&gt; : "⁷"  U2077  # superscript 7
+&lt;Multi_key&gt; &lt;p&gt; &lt;8&gt; : "⁸"  U2078  # superscript 8
+&lt;Multi_key&gt; &lt;p&gt; &lt;9&gt; : "⁹"  U2079  # superscript 9
+&lt;Multi_key&gt; &lt;p&gt; &lt;0&gt; : "⁰"  U2070  # superscript 0
+&lt;Multi_key&gt; &lt;p&gt; &lt;n&gt; : "ⁿ"  U207F  # superscript n
+&lt;Multi_key&gt; &lt;p&gt; &lt;plus&gt;       : "⁺"  U207A  # superscript +
+&lt;Multi_key&gt; &lt;p&gt; &lt;minus&gt;      : "⁻"  U207B  # superscript -
+&lt;Multi_key&gt; &lt;p&gt; &lt;equal&gt;      : "⁼"  U207C  # superscript =
+&lt;Multi_key&gt; &lt;p&gt; &lt;parenleft&gt;  : "⁽"  U207D  # superscript (
+&lt;Multi_key&gt; &lt;p&gt; &lt;parenright&gt; : "⁾"  U207E  # superscript )
+
+
+# Subscript Characters
+
+&lt;Multi_key&gt; &lt;u&gt; &lt;1&gt; : "₁"  U2081  # subscript 1
+&lt;Multi_key&gt; &lt;u&gt; &lt;2&gt; : "₂"  U2082  # subscript 2
+&lt;Multi_key&gt; &lt;u&gt; &lt;3&gt; : "₃"  U2083  # subscript 3
+&lt;Multi_key&gt; &lt;u&gt; &lt;4&gt; : "₄"  U2084  # subscript 4
+&lt;Multi_key&gt; &lt;u&gt; &lt;5&gt; : "₅"  U2085  # subscript 5
+&lt;Multi_key&gt; &lt;u&gt; &lt;6&gt; : "₆"  U2086  # subscript 6
+&lt;Multi_key&gt; &lt;u&gt; &lt;7&gt; : "₇"  U2087  # subscript 7
+&lt;Multi_key&gt; &lt;u&gt; &lt;8&gt; : "₈"  U2088  # subscript 8
+&lt;Multi_key&gt; &lt;u&gt; &lt;9&gt; : "₉"  U2089  # subscript 9
+&lt;Multi_key&gt; &lt;u&gt; &lt;0&gt; : "₀"  U2080  # subscript 0
+&lt;Multi_key&gt; &lt;u&gt; &lt;n&gt; : "ₙ"  U2099  # subscript n
+&lt;Multi_key&gt; &lt;u&gt; &lt;plus&gt;       : "₊"  U208A  # subscript +
+&lt;Multi_key&gt; &lt;u&gt; &lt;minus&gt;      : "₋"  U208B  # subscript -
+&lt;Multi_key&gt; &lt;u&gt; &lt;equal&gt;      : "₌"  U208C  # subscript =
+&lt;Multi_key&gt; &lt;u&gt; &lt;parenleft&gt;  : "₍"  U208D  # subscript (
+&lt;Multi_key&gt; &lt;u&gt; &lt;parenright&gt; : "₎"  U208E  # subscript )
+
+
+# Spacing Characters and Dashes
+
+&lt;Multi_key&gt; &lt;space&gt; &lt;2&gt; : " "  U2002  # en space
+&lt;Multi_key&gt; &lt;space&gt; &lt;3&gt; : " "  U2003  # em space
+&lt;Multi_key&gt; &lt;space&gt; &lt;1&gt; : " "  U2004  # three-per-em space
+&lt;Multi_key&gt; &lt;space&gt; &lt;4&gt; : " "  U2005  # four-per-em space
+&lt;Multi_key&gt; &lt;space&gt; &lt;5&gt; : " "  U2008  # punctuation space
+&lt;Multi_key&gt; &lt;space&gt; &lt;6&gt; : " "  U2006  # six-per-em space
+&lt;Multi_key&gt; &lt;space&gt; &lt;7&gt; : " "  U2009  # thin space
+&lt;Multi_key&gt; &lt;space&gt; &lt;8&gt; : " "  U200A  # hair space
+&lt;Multi_key&gt; &lt;space&gt; &lt;9&gt; : " "  U2007  # figure space
+&lt;Multi_key&gt; &lt;space&gt; &lt;0&gt; : "​"  U200B  # zero-width space
+&lt;Multi_key&gt; &lt;space&gt; &lt;space&gt;  : " "  U00A0  # non-breaking space
+&lt;Multi_key&gt; &lt;space&gt; &lt;period&gt; : " "  U202F  # narrow no-break space
+&lt;Multi_key&gt; &lt;minus&gt; &lt;2&gt; : "–"  U2013  # en dash
+&lt;Multi_key&gt; &lt;minus&gt; &lt;3&gt; : "—"  U2014  # em dash
+&lt;Multi_key&gt; &lt;minus&gt; &lt;4&gt; : "―"  U2015  # horizontal bar
+&lt;Multi_key&gt; &lt;minus&gt; &lt;5&gt; : "‐"  U2010  # hyphen
+&lt;Multi_key&gt; &lt;minus&gt; &lt;9&gt; : "‒"  U2012  # figure dash
+&lt;Multi_key&gt; &lt;minus&gt; &lt;0&gt; : "­"  U00AD  # soft hyphen
+&lt;Multi_key&gt; &lt;minus&gt; &lt;minus&gt; : "‑"  U2011  # non-breaking hyphen
+&lt;Multi_key&gt; &lt;q&gt; &lt;2&gt; : " "  U2000  # en quad
+&lt;Multi_key&gt; &lt;q&gt; &lt;3&gt; : " "  U2001  # em quad
+
+
+# Arrows and Pointers
+
+&lt;Multi_key&gt; &lt;a&gt; &lt;1&gt; : "↙"  U2199  # south west arrow
+&lt;Multi_key&gt; &lt;a&gt; &lt;2&gt; : "↓"  U2193  # downwards arrow
+&lt;Multi_key&gt; &lt;a&gt; &lt;3&gt; : "↘"  U2198  # south east arrow
+&lt;Multi_key&gt; &lt;a&gt; &lt;4&gt; : "←"  U2190  # leftwards arrow
+&lt;Multi_key&gt; &lt;a&gt; &lt;5&gt; : "↕"  U2195  # up down arrow
+&lt;Multi_key&gt; &lt;a&gt; &lt;6&gt; : "→"  U2192  # rightwards arrow
+&lt;Multi_key&gt; &lt;a&gt; &lt;7&gt; : "↖"  U2196  # north west arrow
+&lt;Multi_key&gt; &lt;a&gt; &lt;8&gt; : "↑"  U2191  # upwards arrow
+&lt;Multi_key&gt; &lt;a&gt; &lt;9&gt; : "↗"  U2197  # north east arrow
+&lt;Multi_key&gt; &lt;a&gt; &lt;0&gt; : "↔"  U2194  # left right arrow
+&lt;Multi_key&gt; &lt;equal&gt; &lt;1&gt; : "⇙"  U21D9  # south west double arrow
+&lt;Multi_key&gt; &lt;equal&gt; &lt;2&gt; : "⇓"  U21D3  # downwards double arrow
+&lt;Multi_key&gt; &lt;equal&gt; &lt;3&gt; : "⇘"  U21D8  # south east double arrow
+&lt;Multi_key&gt; &lt;equal&gt; &lt;4&gt; : "⇐"  U21D0  # leftwards double arrow
+&lt;Multi_key&gt; &lt;equal&gt; &lt;5&gt; : "⇕"  U21D5  # up down double arrow
+&lt;Multi_key&gt; &lt;equal&gt; &lt;6&gt; : "⇒"  U21D2  # rightwards double arrow
+&lt;Multi_key&gt; &lt;equal&gt; &lt;7&gt; : "⇖"  U21D6  # north west double arrow
+&lt;Multi_key&gt; &lt;equal&gt; &lt;8&gt; : "⇑"  U21D1  # upwards double arrow
+&lt;Multi_key&gt; &lt;equal&gt; &lt;9&gt; : "⇗"  U21D7  # north east double arrow
+&lt;Multi_key&gt; &lt;equal&gt; &lt;0&gt; : "⇔"  U21D4  # left right double arrow
+&lt;Multi_key&gt; &lt;plus&gt; &lt;2&gt;           : "▼"  U25BC  # black down-pointing triangle
+&lt;Multi_key&gt; &lt;plus&gt; &lt;at&gt;          : "▽"  U25BD  # white down-pointing triangle
+&lt;Multi_key&gt; &lt;plus&gt; &lt;4&gt;           : "◀"  U25C0  # black left-pointing triangle
+&lt;Multi_key&gt; &lt;plus&gt; &lt;dollar&gt;      : "◁"  U25C1  # white left-pointing triangle
+&lt;Multi_key&gt; &lt;plus&gt; &lt;6&gt;           : "▶"  U25B6  # black right-pointing triangle
+&lt;Multi_key&gt; &lt;plus&gt; &lt;asciicircum&gt; : "▷"  U25B7  # white right-pointing triangle
+&lt;Multi_key&gt; &lt;plus&gt; &lt;8&gt;           : "▲"  U25B2  # black up-pointing triangle
+&lt;Multi_key&gt; &lt;plus&gt; &lt;asterisk&gt;    : "△"  U25B3  # white up-pointing triangle
+
+
+# Special Letters/Characters
+
+&lt;Multi_key&gt; &lt;a&gt; &lt;e&gt; : "æ"  U00E6  # letter ae
+&lt;Multi_key&gt; &lt;A&gt; &lt;E&gt; : "Æ"  U00C6  # letter AE
+&lt;Multi_key&gt; &lt;d&gt; &lt;h&gt; : "ð"  U00F0  # small letter eth
+&lt;Multi_key&gt; &lt;D&gt; &lt;H&gt; : "Ð"  U00D0  # capital letter eth
+&lt;Multi_key&gt; &lt;i&gt; &lt;j&gt; : "ĳ"  U0133  # ligature ij
+&lt;Multi_key&gt; &lt;I&gt; &lt;J&gt; : "Ĳ"  U0132  # ligature IJ
+&lt;Multi_key&gt; &lt;o&gt; &lt;e&gt; : "œ"  U0153  # ligature oe
+&lt;Multi_key&gt; &lt;O&gt; &lt;E&gt; : "Œ"  U0152  # ligature OE
+&lt;Multi_key&gt; &lt;s&gt; &lt;s&gt; : "ß"  U00DF  # small sharp s (Eszett)
+&lt;Multi_key&gt; &lt;S&gt; &lt;S&gt; : "ẞ"  U1E9E  # capital sharp S (capital Eszett)
+&lt;Multi_key&gt; &lt;t&gt; &lt;h&gt; : "þ"  U00FE  # small letter thorn
+&lt;Multi_key&gt; &lt;T&gt; &lt;H&gt; : "Þ"  U00DE  # capital letter thorn
+
+
+# General/Math Symbols
+
+&lt;Multi_key&gt; &lt;B&gt; &lt;b&gt; : "•"  U2022  # bullet
+&lt;Multi_key&gt; &lt;B&gt; &lt;h&gt; : "⁃"  U2043  # hyphen bullet
+&lt;Multi_key&gt; &lt;B&gt; &lt;t&gt; : "‣"  U2023  # triangular bullet
+&lt;Multi_key&gt; &lt;B&gt; &lt;w&gt; : "◦"  U25E6  # white bullet
+&lt;Multi_key&gt; &lt;d&gt; &lt;d&gt; : "†"  U2020  # dagger
+&lt;Multi_key&gt; &lt;D&gt; &lt;D&gt; : "‡"  U2021  # double dagger
+&lt;Multi_key&gt; &lt;m&gt; &lt;i&gt; : "µ"  U00B5  # micro sign
+&lt;Multi_key&gt; &lt;n&gt; &lt;o&gt; : "№"  U2116  # numero sign
+&lt;Multi_key&gt; &lt;N&gt; &lt;o&gt; : "№"  U2116  # numero sign
+&lt;Multi_key&gt; &lt;o&gt; &lt;x&gt; : "¤"  U00A4  # currency sign
+&lt;Multi_key&gt; &lt;p&gt; &lt;p&gt; : "¶"  U00B6  # pilcrow sign
+&lt;Multi_key&gt; &lt;P&gt; &lt;P&gt; : "¶"  U00B6  # pilcrow sign
+&lt;Multi_key&gt; &lt;r&gt; &lt;2&gt; : "√"  U221A  # square root
+&lt;Multi_key&gt; &lt;r&gt; &lt;3&gt; : "∛"  U221B  # cube root
+&lt;Multi_key&gt; &lt;r&gt; &lt;4&gt; : "∜"  U221C  # fourth root
+&lt;Multi_key&gt; &lt;s&gt; &lt;o&gt; : "§"  U00A7  # section sign
+&lt;Multi_key&gt; &lt;S&gt; &lt;o&gt; : "§"  U00A7  # section sign
+&lt;Multi_key&gt; &lt;t&gt; &lt;m&gt; : "™"  U2122  # trademark symbol
+&lt;Multi_key&gt; &lt;apostrophe&gt; &lt;1&gt; : "′"  U2032  # prime
+&lt;Multi_key&gt; &lt;apostrophe&gt; &lt;2&gt; : "″"  U2033  # double prime
+&lt;Multi_key&gt; &lt;apostrophe&gt; &lt;3&gt; : "‴"  U2034  # triple prime
+&lt;Multi_key&gt; &lt;apostrophe&gt; &lt;4&gt; : "⁗"  U2057  # quadruple prime
+&lt;Multi_key&gt; &lt;asterisk&gt; &lt;asterisk&gt; : "×"  U00D7  # multiplication sign
+&lt;Multi_key&gt; &lt;slash&gt; &lt;slash&gt;       : "÷"  U00F7  # division sign
+&lt;Multi_key&gt; &lt;asterisk&gt; &lt;o&gt;        : "°"  U00B0  # degree sign
+&lt;Multi_key&gt; &lt;o&gt; &lt;asterisk&gt;        : "°"  U00B0  # degree sign
+&lt;Multi_key&gt; &lt;period&gt; &lt;period&gt;     : "·"  U00B7  # middle dot
+&lt;Multi_key&gt; &lt;period&gt; &lt;space&gt;      : "·"  U00B7  # middle dot
+&lt;Multi_key&gt; &lt;period&gt; &lt;3&gt;          : "…"  U2026  # horizontal ellipsis
+&lt;Multi_key&gt; &lt;a&gt; &lt;minus&gt;           : "ª"  U00AA  # feminine ordinal indicator (Spanish, Portuguese, Italian, Galician)
+&lt;Multi_key&gt; &lt;o&gt; &lt;minus&gt;           : "º"  U00BA  # masculine ordinal indicator (Spanish, Portuguese, Italian, Galician)
+&lt;Multi_key&gt; &lt;exclam&gt; &lt;exclam&gt;     : "¡"  U00A1  # inverted exclamation mark
+&lt;Multi_key&gt; &lt;question&gt; &lt;question&gt; : "¿"  U00BF  # inverted question mark
+&lt;Multi_key&gt; &lt;o&gt; &lt;c&gt;               : "©"  U00A9  # copyright sign
+&lt;Multi_key&gt; &lt;parenleft&gt; &lt;c&gt;       : "©"  U00A9  # copyright sign
+&lt;Multi_key&gt; &lt;o&gt; &lt;p&gt;               : "℗"  U2117  # sound recording copyright
+&lt;Multi_key&gt; &lt;parenleft&gt; &lt;p&gt;       : "℗"  U2117  # sound recording copyright
+&lt;Multi_key&gt; &lt;o&gt; &lt;r&gt;               : "®"  U00AE  # registered sign
+&lt;Multi_key&gt; &lt;parenleft&gt; &lt;r&gt;       : "®"  U00AE  # registered sign
+&lt;Multi_key&gt; &lt;plus&gt; &lt;minus&gt;        : "±"  U00B1  # plus-minus sign
+&lt;Multi_key&gt; &lt;percent&gt; &lt;percent&gt;   : "‰"  U2030  # per mille sign
+&lt;Multi_key&gt; &lt;percent&gt; &lt;3&gt;         : "‰"  U2030  # per mille sign
+&lt;Multi_key&gt; &lt;percent&gt; &lt;4&gt;         : "‱"  U2031  # per ten thousand sign
+&lt;Multi_key&gt; &lt;8&gt; &lt;8&gt;               : "∞"  U221E  # infinity symbol
+&lt;Multi_key&gt; &lt;exclam&gt; &lt;equal&gt;      : "≠"  U2260  # not equal to
+&lt;Multi_key&gt; &lt;equal&gt; &lt;slash&gt;       : "≠"  U2260  # not equal to
+&lt;Multi_key&gt; &lt;slash&gt; &lt;equal&gt;       : "≠"  U2260  # not equal to
+&lt;Multi_key&gt; &lt;less&gt; &lt;equal&gt;        : "≤"  U2264  # less-than or equal to
+&lt;Multi_key&gt; &lt;greater&gt; &lt;equal&gt;     : "≥"  U2265  # greater-than or equal to
+&lt;Multi_key&gt; &lt;less&gt; &lt;plus&gt;         : "⩽"  U2A7D  # less-than or slanted equal to
+&lt;Multi_key&gt; &lt;greater&gt; &lt;plus&gt;      : "⩾"  U2A7E  # greater-than or slanted equal to
+&lt;Multi_key&gt; &lt;asciitilde&gt; &lt;asciitilde&gt; : "≈"  U2248  # almost equal to
+&lt;Multi_key&gt; &lt;bracketleft&gt; &lt;bracketright&gt; : "☐"  U2610  # ballot box
+&lt;Multi_key&gt; &lt;bracketleft&gt; &lt;v&gt;            : "☑"  U2611  # ballot box with check
+&lt;Multi_key&gt; &lt;bracketleft&gt; &lt;x&gt;            : "☒"  U2612  # ballot box with x
+
+
+# Quotation Marks
+
+&lt;Multi_key&gt; &lt;comma&gt; &lt;quotedbl&gt;          : "„"  U201E  # double low-9 quotation mark
+&lt;Multi_key&gt; &lt;quotedbl&gt; &lt;comma&gt;          : "„"  U201E  # double low-9 quotation mark
+&lt;Multi_key&gt; &lt;comma&gt; &lt;apostrophe&gt;        : "‚"  U201A  # single low-9 quotation mark
+&lt;Multi_key&gt; &lt;apostrophe&gt; &lt;comma&gt;        : "‚"  U201A  # single low-9 quotation mark
+&lt;Multi_key&gt; &lt;quotedbl&gt; &lt;bracketleft&gt;    : "“"  U201C  # left double quotation mark
+&lt;Multi_key&gt; &lt;bracketleft&gt; &lt;quotedbl&gt;    : "“"  U201C  # left double quotation mark
+&lt;Multi_key&gt; &lt;quotedbl&gt; &lt;bracketright&gt;   : "”"  U201D  # right double quotation mark
+&lt;Multi_key&gt; &lt;bracketright&gt; &lt;quotedbl&gt;   : "”"  U201D  # right double quotation mark
+&lt;Multi_key&gt; &lt;apostrophe&gt; &lt;bracketleft&gt;  : "‘"  U2018  # left single quotation mark
+&lt;Multi_key&gt; &lt;bracketleft&gt; &lt;apostrophe&gt;  : "‘"  U2018  # left single quotation mark
+&lt;Multi_key&gt; &lt;apostrophe&gt; &lt;bracketright&gt; : "’"  U2019  # right single quotation mark
+&lt;Multi_key&gt; &lt;bracketright&gt; &lt;apostrophe&gt; : "’"  U2019  # right single quotation mark
+&lt;Multi_key&gt; &lt;less&gt; &lt;less&gt;               : "«"  U00AB  # left-pointing double angle quotation mark
+&lt;Multi_key&gt; &lt;less&gt; &lt;quotedbl&gt;           : "«"  U00AB  # left-pointing double angle quotation mark
+&lt;Multi_key&gt; &lt;quotedbl&gt; &lt;less&gt;           : "«"  U00AB  # left-pointing double angle quotation mark
+&lt;Multi_key&gt; &lt;greater&gt; &lt;greater&gt;         : "»"  U00BB  # right-pointing double angle quotation mark
+&lt;Multi_key&gt; &lt;greater&gt; &lt;quotedbl&gt;        : "»"  U00BB  # right-pointing double angle quotation mark
+&lt;Multi_key&gt; &lt;quotedbl&gt; &lt;greater&gt;        : "»"  U00BB  # right-pointing double angle quotation mark
+&lt;Multi_key&gt; &lt;less&gt; &lt;apostrophe&gt;         : "‹"  U2039  # left-pointing single angle quotation mark
+&lt;Multi_key&gt; &lt;apostrophe&gt; &lt;less&gt;         : "‹"  U2039  # left-pointing single angle quotation mark
+&lt;Multi_key&gt; &lt;greater&gt; &lt;apostrophe&gt;      : "›"  U203A  # right-pointing single angle quotation mark
+&lt;Multi_key&gt; &lt;apostrophe&gt; &lt;greater&gt;      : "›"  U203A  # right-pointing single angle quotation mark
+
+
+# Miscellaneous Symbols
+
+&lt;Multi_key&gt; &lt;s&gt; &lt;a&gt; : "⅍"  U214D  # aktieselskab
+&lt;Multi_key&gt; &lt;s&gt; &lt;c&gt; : "℅"  U2105  # care of
+&lt;Multi_key&gt; &lt;s&gt; &lt;d&gt; : "⋄"  U22C4  # diamond operator
+&lt;Multi_key&gt; &lt;s&gt; &lt;e&gt; : "℮"  U212E  # estimated symbol
+&lt;Multi_key&gt; &lt;s&gt; &lt;E&gt; : "✉"  U2709  # envelope
+&lt;Multi_key&gt; &lt;s&gt; &lt;f&gt; : "♀"  U2640  # Venus symbol (female)
+&lt;Multi_key&gt; &lt;s&gt; &lt;g&gt; : "❀"  U2740  # white florette
+&lt;Multi_key&gt; &lt;s&gt; &lt;G&gt; : "✿"  U273F  # black florette
+&lt;Multi_key&gt; &lt;s&gt; &lt;h&gt; : "❦"  U2766  # floral heart
+&lt;Multi_key&gt; &lt;s&gt; &lt;H&gt; : "❧"  U2767  # rotated floral heart bullet
+&lt;Multi_key&gt; &lt;s&gt; &lt;i&gt; : "⌀"  U2300  # diameter sign
+&lt;Multi_key&gt; &lt;s&gt; &lt;l&gt; : "ℓ"  U2113  # script small l
+&lt;Multi_key&gt; &lt;s&gt; &lt;L&gt; : "ℒ"  U2112  # Laplace transform
+&lt;Multi_key&gt; &lt;s&gt; &lt;m&gt; : "♂"  U2642  # Mars symbol (male)
+&lt;Multi_key&gt; &lt;s&gt; &lt;M&gt; : "℠"  U2120  # service mark
+&lt;Multi_key&gt; &lt;s&gt; &lt;q&gt; : "Ω"  U2126  # ohm sign (backwards compatibility)
+&lt;Multi_key&gt; &lt;s&gt; &lt;r&gt; : "☙"  U2619  # reversed rotated floral heart bullet
+&lt;Multi_key&gt; &lt;s&gt; &lt;R&gt; : "℞"  U211E  # prescription take (Recipere)
+&lt;Multi_key&gt; &lt;s&gt; &lt;t&gt; : "✆"  U2706  # telephone location sign
+&lt;Multi_key&gt; &lt;s&gt; &lt;v&gt; : "✓"  U2713  # check mark
+&lt;Multi_key&gt; &lt;s&gt; &lt;V&gt; : "✔"  U2714  # heavy check mark
+&lt;Multi_key&gt; &lt;s&gt; &lt;w&gt; : "⚠"  U26A0  # warning sign
+&lt;Multi_key&gt; &lt;s&gt; &lt;x&gt; : "✗"  U2717  # ballot x
+&lt;Multi_key&gt; &lt;s&gt; &lt;X&gt; : "✘"  U2718  # heavy ballot x
+&lt;Multi_key&gt; &lt;s&gt; &lt;2&gt;           : "♫"  U266B  # beamed eighth notes
+&lt;Multi_key&gt; &lt;s&gt; &lt;3&gt;           : "⁂"  U2042  # asterism
+&lt;Multi_key&gt; &lt;s&gt; &lt;5&gt;           : "★"  U2605  # black star
+&lt;Multi_key&gt; &lt;s&gt; &lt;percent&gt;     : "☆"  U2606  # white star
+&lt;Multi_key&gt; &lt;s&gt; &lt;6&gt;           : "✽"  U273D  # heavy teardrop-spoked asterisk
+&lt;Multi_key&gt; &lt;s&gt; &lt;asciicircum&gt; : "✻"  U273B  # teardrop-spoked asterisk
+&lt;Multi_key&gt; &lt;s&gt; &lt;8&gt;           : "♪"  U266A  # eighth note
+&lt;Multi_key&gt; &lt;s&gt; &lt;semicolon&gt;   : "☺"  U263A  # white smiling face
+&lt;Multi_key&gt; &lt;s&gt; &lt;colon&gt;       : "☻"  U263B  # black smiling face
+&lt;Multi_key&gt; &lt;s&gt; &lt;exclam&gt;      : "‼"  U203C  # double exclamation mark
+&lt;Multi_key&gt; &lt;s&gt; &lt;question&gt;    : "‽"  U203D  # interrobang
+&lt;Multi_key&gt; &lt;s&gt; &lt;backslash&gt;   : "⁞"  U205E  # vertical four dots
+&lt;Multi_key&gt; &lt;s&gt; &lt;bar&gt;         : "¦"  U00A6  # broken bar
+&lt;Multi_key&gt; &lt;s&gt; &lt;period&gt;      : "⸘"  U2E18  # inverted interrobang
+&lt;Multi_key&gt; &lt;s&gt; &lt;slash&gt;       : "⸮"  U2E2E  # reversed question mark
+
+
+# Playing Card Suit Symbols
+
+&lt;Multi_key&gt; &lt;S&gt; &lt;c&gt; : "♣"  U2663  # black club suit
+&lt;Multi_key&gt; &lt;S&gt; &lt;C&gt; : "♧"  U2667  # white club suit
+&lt;Multi_key&gt; &lt;S&gt; &lt;d&gt; : "♦"  U2666  # black diamond suit
+&lt;Multi_key&gt; &lt;S&gt; &lt;D&gt; : "♢"  U2662  # white diamond suit
+&lt;Multi_key&gt; &lt;S&gt; &lt;h&gt; : "♥"  U2665  # black heart suit
+&lt;Multi_key&gt; &lt;S&gt; &lt;H&gt; : "♡"  U2661  # white heart suit
+&lt;Multi_key&gt; &lt;S&gt; &lt;p&gt; : "♠"  U2660  # black spade suit
+&lt;Multi_key&gt; &lt;S&gt; &lt;P&gt; : "♤"  U2664  # white spade suit
+
+
+# Vulgar Fractions
+
+&lt;Multi_key&gt; &lt;1&gt; &lt;2&gt; : "½"  U00BD  # vulgar fraction 1/2
+&lt;Multi_key&gt; &lt;1&gt; &lt;3&gt; : "⅓"  U2153  # vulgar fraction 1/3
+&lt;Multi_key&gt; &lt;2&gt; &lt;3&gt; : "⅔"  U2154  # vulgar fraction 2/3
+&lt;Multi_key&gt; &lt;1&gt; &lt;4&gt; : "¼"  U00BC  # vulgar fraction 1/4
+&lt;Multi_key&gt; &lt;3&gt; &lt;4&gt; : "¾"  U00BE  # vulgar fraction 3/4
+&lt;Multi_key&gt; &lt;1&gt; &lt;5&gt; : "⅕"  U2155  # vulgar fraction 1/5
+&lt;Multi_key&gt; &lt;2&gt; &lt;5&gt; : "⅖"  U2156  # vulgar fraction 2/5
+&lt;Multi_key&gt; &lt;3&gt; &lt;5&gt; : "⅗"  U2157  # vulgar fraction 3/5
+&lt;Multi_key&gt; &lt;4&gt; &lt;5&gt; : "⅘"  U2158  # vulgar fraction 4/5
+&lt;Multi_key&gt; &lt;1&gt; &lt;6&gt; : "⅙"  U2159  # vulgar fraction 1/6
+&lt;Multi_key&gt; &lt;5&gt; &lt;6&gt; : "⅚"  U215A  # vulgar fraction 5/6
+&lt;Multi_key&gt; &lt;1&gt; &lt;7&gt; : "⅐"  U2150  # vulgar fraction 1/7
+&lt;Multi_key&gt; &lt;1&gt; &lt;8&gt; : "⅛"  U215B  # vulgar fraction 1/8
+&lt;Multi_key&gt; &lt;3&gt; &lt;8&gt; : "⅜"  U215C  # vulgar fraction 3/8
+&lt;Multi_key&gt; &lt;5&gt; &lt;8&gt; : "⅝"  U215D  # vulgar fraction 5/8
+&lt;Multi_key&gt; &lt;7&gt; &lt;8&gt; : "⅞"  U215E  # vulgar fraction 7/8
+&lt;Multi_key&gt; &lt;1&gt; &lt;9&gt; : "⅑"  U2151  # vulgar fraction 1/9
+&lt;Multi_key&gt; &lt;1&gt; &lt;0&gt; : "⅒"  U2152  # vulgar fraction 1/10
+&lt;Multi_key&gt; &lt;0&gt; &lt;3&gt; : "↉"  U2189  # vulgar fraction 0/3
+
+
+# Math Symbols
+
+&lt;Multi_key&gt; &lt;m&gt; &lt;a&gt; : "∀"  U2200  # for all
+&lt;Multi_key&gt; &lt;m&gt; &lt;A&gt; : "∀"  U2200  # for all
+&lt;Multi_key&gt; &lt;m&gt; &lt;b&gt; : "⊆"  U2286  # subset of or equal to
+&lt;Multi_key&gt; &lt;m&gt; &lt;B&gt; : "⊇"  U2287  # superset of or equal to
+&lt;Multi_key&gt; &lt;m&gt; &lt;c&gt; : "∝"  U221D  # proportional to
+&lt;Multi_key&gt; &lt;m&gt; &lt;C&gt; : "ℂ"  U2102  # complex numbers
+&lt;Multi_key&gt; &lt;m&gt; &lt;d&gt; : "∆"  U2206  # increment operator
+&lt;Multi_key&gt; &lt;m&gt; &lt;D&gt; : "∇"  U2207  # nabla/del operator
+&lt;Multi_key&gt; &lt;m&gt; &lt;e&gt; : "∃"  U2203  # there exists
+&lt;Multi_key&gt; &lt;m&gt; &lt;E&gt; : "∄"  U2204  # there does not exist
+&lt;Multi_key&gt; &lt;m&gt; &lt;f&gt; : "ƒ"  U0192  # f with hook
+&lt;Multi_key&gt; &lt;m&gt; &lt;F&gt; : "∎"  U220E  # end of proof
+&lt;Multi_key&gt; &lt;m&gt; &lt;g&gt; : "⊂"  U2282  # subset of
+&lt;Multi_key&gt; &lt;m&gt; &lt;G&gt; : "⊄"  U2284  # not a subset of
+&lt;Multi_key&gt; &lt;m&gt; &lt;h&gt; : "⊃"  U2283  # superset of
+&lt;Multi_key&gt; &lt;m&gt; &lt;H&gt; : "⊅"  U2285  # not a superset of
+&lt;Multi_key&gt; &lt;m&gt; &lt;I&gt; : "ℑ"  U2111  # imaginary numbers
+&lt;Multi_key&gt; &lt;m&gt; &lt;j&gt; : "≅"  U2245  # congruent to
+&lt;Multi_key&gt; &lt;m&gt; &lt;J&gt; : "≇"  U2247  # not congruent to
+&lt;Multi_key&gt; &lt;m&gt; &lt;k&gt; : "∋"  U220B  # contains as member
+&lt;Multi_key&gt; &lt;m&gt; &lt;K&gt; : "∌"  U220C  # does not contain as member
+&lt;Multi_key&gt; &lt;m&gt; &lt;l&gt; : "∥"  U2225  # parallel to
+&lt;Multi_key&gt; &lt;m&gt; &lt;L&gt; : "∦"  U2226  # not parallel to
+&lt;Multi_key&gt; &lt;m&gt; &lt;m&gt; : "∈"  U2208  # element of
+&lt;Multi_key&gt; &lt;m&gt; &lt;M&gt; : "∉"  U2209  # not an element of
+&lt;Multi_key&gt; &lt;m&gt; &lt;n&gt; : "¬"  U00AC  # not sign
+&lt;Multi_key&gt; &lt;m&gt; &lt;N&gt; : "ℕ"  U2115  # natural numbers
+&lt;Multi_key&gt; &lt;m&gt; &lt;o&gt; : "∘"  U2218  # ring operator
+&lt;Multi_key&gt; &lt;m&gt; &lt;O&gt; : "∅"  U2205  # empty set
+&lt;Multi_key&gt; &lt;m&gt; &lt;p&gt; : "∂"  U2202  # partial differential
+&lt;Multi_key&gt; &lt;m&gt; &lt;P&gt; : "ℙ"  U2119  # prime numbers
+&lt;Multi_key&gt; &lt;m&gt; &lt;Q&gt; : "ℚ"  U211A  # rational numbers
+&lt;Multi_key&gt; &lt;m&gt; &lt;R&gt; : "ℝ"  U211D  # real numbers
+&lt;Multi_key&gt; &lt;m&gt; &lt;s&gt; : "∩"  U2229  # set intersection
+&lt;Multi_key&gt; &lt;m&gt; &lt;S&gt; : "∫"  U222B  # integral symbol
+&lt;Multi_key&gt; &lt;m&gt; &lt;t&gt; : "≡"  U2261  # identical to
+&lt;Multi_key&gt; &lt;m&gt; &lt;T&gt; : "≢"  U2262  # not identical to
+&lt;Multi_key&gt; &lt;m&gt; &lt;u&gt; : "∪"  U222A  # set union
+&lt;Multi_key&gt; &lt;m&gt; &lt;U&gt; : "∖"  U2216  # set minus
+&lt;Multi_key&gt; &lt;m&gt; &lt;w&gt; : "℘"  U2118  # Weierstrass elliptic function
+&lt;Multi_key&gt; &lt;m&gt; &lt;z&gt; : "↯"  U21AF  # downwards zigzag arrow
+&lt;Multi_key&gt; &lt;m&gt; &lt;Z&gt; : "ℤ"  U2124  # whole numbers
+&lt;Multi_key&gt; &lt;m&gt; &lt;6&gt;         : "∠"  U2220  # angle symbol
+&lt;Multi_key&gt; &lt;m&gt; &lt;ampersand&gt; : "∧"  U2227  # logical and
+&lt;Multi_key&gt; &lt;m&gt; &lt;8&gt;         : "⊗"  U2297  # circled times
+&lt;Multi_key&gt; &lt;m&gt; &lt;asterisk&gt;  : "⊙"  U2299  # circled dot operator
+&lt;Multi_key&gt; &lt;m&gt; &lt;9&gt;         : "∟"  U221F  # right angle
+&lt;Multi_key&gt; &lt;m&gt; &lt;0&gt;         : "∡"  U2221  # measured angle
+&lt;Multi_key&gt; &lt;m&gt; &lt;plus&gt;      : "⊕"  U2295  # circled plus
+&lt;Multi_key&gt; &lt;m&gt; &lt;minus&gt;     : "⊖"  U2296  # circled minus
+&lt;Multi_key&gt; &lt;m&gt; &lt;slash&gt;     : "⊘"  U2298  # circled division slash
+&lt;Multi_key&gt; &lt;m&gt; &lt;equal&gt;     : "≝"  U225D  # equal to by definition
+&lt;Multi_key&gt; &lt;m&gt; &lt;semicolon&gt; : "∵"  U2235  # because sign
+&lt;Multi_key&gt; &lt;m&gt; &lt;colon&gt;     : "∴"  U2234  # therefore sign
+&lt;Multi_key&gt; &lt;m&gt; &lt;bar&gt;       : "∨"  U2228  # logical or
 </pre>
 
 <p>&nbsp;</p>

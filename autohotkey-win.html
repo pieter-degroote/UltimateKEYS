@@ -41,24 +41,24 @@
 <p>The AutoHotkey scripts are highly customizable editions of UltimateKEYS. To work properly, the Windows keyboard has to be set to standard US QWERTY and at least AutoHotkey v1.1 is required.</p>
 
 <ul>
-<li>AutoHotkey website&nbsp;: &nbsp;<a href="https://www.autohotkey.com/" target="_blank"><strong>https://www.autohotkey.com/</strong></a> / <a href="https://github.com/Lexikos/AutoHotkey_L" target="_blank"><strong>https://github.com/Lexikos/AutoHotkey_L</strong></a>[<a href="https://github.com/Lexikos/AutoHotkey_L/releases" target="_blank"><strong>/releases</strong></a>]</li>
+<li>AutoHotkey website&nbsp;: &nbsp;<a href="https://www.autohotkey.com/" target="_blank"><strong>https://www.autohotkey.com/</strong></a> / <a href="https://github.com/Lexikos/AutoHotkey_L/releases" target="_blank"><strong>https://github.com/Lexikos/AutoHotkey_L/releases</strong></a></li>
 <li>Install the latest release of the current v1.1 branch (<strong>preferably as ‘Unicode 64-bit’</strong>, on 32-bit Windows as ‘Unicode 32-bit’).</li>
-<li>Download (and run) the "UltimateKEYS [SW (Scroll Lock)].ahk" file from this repository.</li>
-<li>Optionally, you can put one of the AHK files in the ‘Startup’ folder to launch at startup.</li>
+<li>Download (and run) "UltimateKEYS.ahk" file from this repository.</li>
+<li>Optionally, you can put the AHK script in the ‘Startup’ folder to launch at startup.</li>
 <li>Please note&nbsp;: &nbsp;these are overlay scripts, specifically designed for the keyboard layout ‘US QWERTY’.</li>
-<li>Please note&nbsp;: &nbsp;for reliability, only a single instance of one of these scripts should run at the same time&nbsp;!</li>
+<li>Please note&nbsp;: &nbsp;for reliability, only a single instance of one of these scripts should run at the same time.</li>
 </ul>
 
-<p>When two or more languages/keyboards are installed on the system, the default ‘Alt+Shift’ sequence can interfere with the AHK scripts.<br />
+<p>When two or more languages/keyboards are installed on the system, the default ‘Alt + Shift’ sequence will interfere with the AHK scripts.<br />
 To avoid this, you can disable the interfering key sequences at&nbsp;:<br />
-<em>Settings -&gt; Language -&gt; Spelling, typing &amp; keyboard settings (on the right) -&gt; Advanced keyboard settings -&gt; Input language hot keys</em><br />
-Another option is to run the scripts with ‘{blind}{vkE8}’ in the filenames, as these will also suppress the switch.</p>
+<em>Settings -&gt; Time &amp; Language -&gt; Language -&gt; Spelling, typing &amp; keyboard settings (on the right) -&gt; Advanced keyboard settings -&gt; Input language hot keys</em><br />
+Please note that on the standard US QWERTY, the sequence ‘Left Alt + Shift’ also gets mistakenly triggered by ‘Right Alt + Shift’, resulting in an unexpected keyboard layout change...</p>
 
 <p>&nbsp;</p>
 
 <h2>Important - Known limitations of AutoHotkey, Windows and Linux</h2>
 
-<p>Win/Linux&nbsp;: &nbsp;When changing the Windows/Microsoft Live/Linux password, using another keyboard layout (like SW) can INTERFERE in some cases where your keystrokes are either registered via the other layout or as standard US QWERTY.</p>
+<p>Win/Linux&nbsp;: &nbsp;When changing the Windows/Microsoft Live/Linux password, using another keyboard layout can INTERFERE in some cases where your keystrokes are either registered via the other layout or as standard US QWERTY.</p>
 
 <p>Win (AHK)&nbsp;: &nbsp;On the login screen, the layout script will NOT be loaded, which can result in the WRONG input&nbsp;!<br />
 Linux&nbsp;: &nbsp;On the login screen, the layout might NOT be available, which can result in the WRONG input&nbsp;!</p>

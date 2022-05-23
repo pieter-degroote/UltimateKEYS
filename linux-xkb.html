@@ -43,14 +43,13 @@
 <h3>-&gt; without root</h3>
 
 <ul>
-<li>Download/Unpack the files "ultkeys", "ultkeys-sw", "map" and "map-sw" from the "linux-xkb" folder.</li>
-<li>Copy "ultkeys[-sw]" to "~/.config/xkb/symbols/".</li>
-<li>Copy "map[-sw]" to "~/.config/xkb/".</li>
-<li>Also put the file ".XCompose" in the user’s home directory (~) to apply all custom dead key definitions for UltimateKEYS [SW] (see folder "linux-xcompose").</li>
+<li>Download/Unpack the files "ultkeys" and "map" from the "linux-xkb" folder.</li>
+<li>Copy "ultkeys" to "~/.config/xkb/symbols/".</li>
+<li>Copy "map" to "~/.config/xkb/".</li>
+<li>Additionally, put the file ".XCompose" in the user’s home directory (~) to apply all custom dead key definitions for UltimateKEYS (see folder "linux-xcompose").</li>
 <li>Activation&nbsp;:
 <ul>
-<li>Classic&nbsp;: &nbsp;xkbcomp -w 0 -I$HOME/.config/xkb $HOME/.config/xkb/map $DISPLAY</li>
-<li>SW edition&nbsp;: &nbsp;xkbcomp -w 0 -I$HOME/.config/xkb $HOME/.config/xkb/map-sw $DISPLAY</li>
+<li>xkbcomp -w 0 -I$HOME/.config/xkb $HOME/.config/xkb/map $DISPLAY</li>
 </ul></li>
 </ul>
 
@@ -61,19 +60,18 @@
 <p>Follow these steps for experimental integration (at your own risk!)&nbsp;:</p>
 
 <ul>
-<li>Download/Unpack the files "ultkeys", "ultkeys-sw", "rule_xml" and "rule-sw_xml" from the "linux-xkb" folder.</li>
-<li>Copy "ultkeys[-sw]" to "/usr/share/X11/xkb/symbols/" (root required).</li>
-<li>Paste the contents of "rule[-sw]_xml" to either "/usr/share/X11/xkb/rules/evdev.xml" or "/usr/share/X11/xkb/rules/evdev.extras.xml", this between the tags &lt;layoutList&gt; and &lt;/layoutList&gt; (root required).<br />
+<li>Download/Unpack the files "ultkeys" and "rule_xml" from the "linux-xkb" folder.</li>
+<li>Copy "ultkeys" to "/usr/share/X11/xkb/symbols/" (root required).</li>
+<li>Paste the contents of "rule_xml" to either "/usr/share/X11/xkb/rules/evdev.xml" or "/usr/share/X11/xkb/rules/evdev.extras.xml", this between the tags &lt;layoutList&gt; and &lt;/layoutList&gt; (root required).<br />
 <span style="text-decoration: underline;">Make sure to keep a backup copy of the original files.</span></li>
-<li>Also put the file ".XCompose" in the user’s home directory (~) to apply all custom dead key definitions for UltimateKEYS [SW] (see folder "linux-xcompose").</li>
-<li>Note&nbsp;: &nbsp;Both the Classic (files without ‘-sw’) and SW layouts (files with ‘-sw’) can be installed alongside each other. The user interface will display them as "UltimateKEYS" and "UltimateKEYS SW".</li>
+<li>Additionally, put the file ".XCompose" in the user’s home directory (~) to apply all custom dead key definitions for UltimateKEYS (see folder "linux-xcompose").</li>
 </ul>
 
 <p>&nbsp;</p>
 
 <h2>Important - Known limitations of AutoHotkey, Windows and Linux</h2>
 
-<p>Win/Linux&nbsp;: &nbsp;When changing the Windows/Microsoft Live/Linux password, using another keyboard layout (like SW) can INTERFERE in some cases where your keystrokes are either registered via the other layout or as standard US QWERTY.</p>
+<p>Win/Linux&nbsp;: &nbsp;When changing the Windows/Microsoft Live/Linux password, using another keyboard layout can INTERFERE in some cases where your keystrokes are either registered via the other layout or as standard US QWERTY.</p>
 
 <p>Win (AHK)&nbsp;: &nbsp;On the login screen, the layout script will NOT be loaded, which can result in the WRONG input&nbsp;!<br />
 Linux&nbsp;: &nbsp;On the login screen, the layout might NOT be available, which can result in the WRONG input&nbsp;!</p>
