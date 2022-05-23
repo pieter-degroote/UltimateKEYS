@@ -740,6 +740,7 @@ dkQuad["3"] := "{u+2001}"  ; em quad
 ; Dead Key :  Arrows and Pointers
 
 global dkArrow := Map()
+global dkPlus := Map()
 dkArrow["1"] := "{u+2199}"  ; (↙) south west arrow
 dkArrow["2"] := "{u+2193}"  ; (↓) downwards arrow
 dkArrow["3"] := "{u+2198}"  ; (↘) south east arrow
@@ -760,14 +761,14 @@ dkDoubleAcute["7"] := "{u+21d6}"  ; (⇖) north west double arrow
 dkDoubleAcute["8"] := "{u+21d1}"  ; (⇑) upwards double arrow
 dkDoubleAcute["9"] := "{u+21d7}"  ; (⇗) north east double arrow
 dkDoubleAcute["0"] := "{u+21d4}"  ; (⇔) left right double arrow
-dkHorn["2"] := "{u+25bc}"  ; (▼) black down-pointing triangle
-dkHorn["@"] := "{u+25bd}"  ; (▽) white down-pointing triangle
-dkHorn["4"] := "{u+25c0}"  ; (◀) black left-pointing triangle
-dkHorn["$"] := "{u+25c1}"  ; (◁) white left-pointing triangle
-dkHorn["6"] := "{u+25b6}"  ; (▶) black right-pointing triangle
-dkHorn["^"] := "{u+25b7}"  ; (▷) white right-pointing triangle
-dkHorn["8"] := "{u+25b2}"  ; (▲) black up-pointing triangle
-dkHorn["*"] := "{u+25b3}"  ; (△) white up-pointing triangle
+dkPlus["2"] := "{u+25bc}"  ; (▼) black down-pointing triangle
+dkPlus["@"] := "{u+25bd}"  ; (▽) white down-pointing triangle
+dkPlus["4"] := "{u+25c0}"  ; (◀) black left-pointing triangle
+dkPlus["$"] := "{u+25c1}"  ; (◁) white left-pointing triangle
+dkPlus["6"] := "{u+25b6}"  ; (▶) black right-pointing triangle
+dkPlus["^"] := "{u+25b7}"  ; (▷) white right-pointing triangle
+dkPlus["8"] := "{u+25b2}"  ; (▲) black up-pointing triangle
+dkPlus["*"] := "{u+25b3}"  ; (△) white up-pointing triangle
 
 
 ; Dead Key :  Miscellaneous Symbols (s)
@@ -951,7 +952,6 @@ global dkAsterisk := Map()
 global dkExclam := Map()
 global dkQuestion := Map()
 global dkParenLeft := Map()
-global dkPlus := Map()
 global dkPercent := Map()
 global dkEight := Map()
 global dkLessThan := Map()
@@ -1612,6 +1612,10 @@ dkCapitalU["``"] := "{u+01db}"      ; (Ǜ) U with diaeresis and grave
     if dkArrow.Has(ihB.Input)
       Send dkArrow[ihB.Input]
   }
+  else if (ihA.Input == "+") {
+    if dkPlus.Has(ihB.Input)
+      Send dkPlus[ihB.Input]
+  }
   else if (ihA.Input == "s") {
     if dkSymbols.Has(ihB.Input)
       Send dkSymbols[ihB.Input]
@@ -1715,10 +1719,6 @@ dkCapitalU["``"] := "{u+01db}"      ; (Ǜ) U with diaeresis and grave
   else if (ihA.Input == "(") {
     if dkParenLeft.Has(ihB.Input)
       Send dkParenLeft[ihB.Input]
-  }
-  else if (ihA.Input == "+") {
-    if dkPlus.Has(ihB.Input)
-      Send dkPlus[ihB.Input]
   }
   else if (ihA.Input == "%") {
     if dkPercent.Has(ihB.Input)
