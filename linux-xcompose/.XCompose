@@ -193,7 +193,6 @@
 <Multi_key> <underscore> <U> : "Ʉ"  U0244  # U with bar
 <Multi_key> <underscore> <y> : "ɏ"  U024F  # y with stroke
 <Multi_key> <underscore> <Y> : "Ɏ"  U024E  # Y with stroke
-<Multi_key> <underscore> <space> : "¯"  U00AF  # macron
 
 
 # Stroke
