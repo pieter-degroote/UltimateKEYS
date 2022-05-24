@@ -382,6 +382,7 @@ cmpAcuteAccent["f"] := "{u+01fd}"  ; (ǽ) ae with acute
 cmpAcuteAccent["F"] := "{u+01fc}"  ; (Ǽ) AE with acute
 cmpAcuteAccent["q"] := "{u+01ff}"  ; (ǿ) o with stroke and acute
 cmpAcuteAccent["Q"] := "{u+01fe}"  ; (Ǿ) O with stroke and acute
+cmpAcuteAccent[" "] := "{u+00b4}"  ; (´) acute accent
 
 
 ; Compose :  Diaeresis (")
@@ -483,7 +484,7 @@ cmpTilde["v"] := "{u+1e7d}"  ; (ṽ) v with tilde
 cmpTilde["V"] := "{u+1e7c}"  ; (Ṽ) V with tilde
 cmpTilde["y"] := "{u+1ef9}"  ; (ỹ) y with tilde
 cmpTilde["Y"] := "{u+1ef8}"  ; (Ỹ) Y with tilde
-cmpTilde[" "] := "{u+02dc}"  ; (˜) tilde
+cmpTilde[" "] := "{u+02dc}"  ; (˜) small tilde
 
 
 ; Compose :  Hook and Latin Greek Letters (h)
