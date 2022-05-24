@@ -216,7 +216,6 @@ cmpMacronStrokeAdd["u"] := "{u+0289}"  ; (ʉ) u with bar
 cmpMacronStrokeAdd["U"] := "{u+0244}"  ; (Ʉ) U with bar
 cmpMacronStrokeAdd["y"] := "{u+024f}"  ; (ɏ) y with stroke
 cmpMacronStrokeAdd["Y"] := "{u+024e}"  ; (Ɏ) Y with stroke
-cmpMacronStrokeAdd[" "] := "{u+00af}"  ; (¯) macron
 
 
 ; Compose :  Stroke (/)
