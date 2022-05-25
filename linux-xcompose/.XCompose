@@ -526,7 +526,7 @@
 <Multi_key> <t> <V> : "Ʌ"  U0245  # latin capital letter turned V
 
 
-# Letters with Two Accents
+# Letters with Two Diacritical Marks
 
 <Multi_key> <a> <diaeresis>  : "ǟ"  U01DF  # a with diaeresis and macron
 <Multi_key> <A> <diaeresis>  : "Ǟ"  U01DE  # A with diaeresis and macron
