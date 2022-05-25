@@ -941,7 +941,6 @@ cmpCapitalT["H"] := "{u+00de}"         ; (Þ) capital letter thorn
 
 global cmpSmallN := Map()
 global cmpCapitalN := Map()
-global cmpSmallP := Map()
 global cmpCapitalP := Map()
 global cmpSmallR := Map()
 global cmpAsterisk := Map()
@@ -963,7 +962,7 @@ cmpMathSymbols["i"] := "{u+00b5}"      ; (µ) micro sign
 cmpSmallN["o"] := "{u+2116}"           ; (№) numero sign
 cmpCapitalN["o"] := "{u+2116}"         ; (№) numero sign
 cmpRingAbove["x"] := "{u+00a4}"        ; (¤) currency sign
-cmpSmallP["p"] := "{u+00b6}"           ; (¶) pilcrow sign
+cmpSuperscript["p"] := "{u+00b6}"      ; (¶) pilcrow sign
 cmpCapitalP["P"] := "{u+00b6}"         ; (¶) pilcrow sign
 cmpSmallR["2"] := "{u+221a}"           ; (√) square root
 cmpSmallR["3"] := "{u+221b}"           ; (∛) cube root
@@ -1037,7 +1036,7 @@ cmpGreaterThan["'"] := "{u+203a}"        ; (›) right-pointing single angle quo
 cmpAcuteAccent[">"] := "{u+203a}"        ; (›) right-pointing single angle quotation mark
 
 
-; Compose :  Letters with Two Accents
+; Compose :  Letters with Two Diacritical Marks
 
 global cmpCapitalU := Map()
 cmpArrow[chr(34)] := "{u+01df}"      ; (ǟ) a with diaeresis and macron
@@ -1689,10 +1688,6 @@ cmpCapitalU["``"] := "{u+01db}"      ; (Ǜ) U with diaeresis and grave
   else if (ihA.Input == "N") {
     if cmpCapitalN.Has(ihB.Input)
       Send cmpCapitalN[ihB.Input]
-  }
-  else if (ihA.Input == "p") {
-    if cmpSmallP.Has(ihB.Input)
-      Send cmpSmallP[ihB.Input]
   }
   else if (ihA.Input == "P") {
     if cmpCapitalP.Has(ihB.Input)
