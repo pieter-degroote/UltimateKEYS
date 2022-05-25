@@ -939,7 +939,6 @@ cmpCapitalT.item["H"] := "{u+00de}"         ; (Þ) capital letter thorn
 
 cmpSmallN := ComObjCreate("Scripting.Dictionary")
 cmpCapitalN := ComObjCreate("Scripting.Dictionary")
-cmpSmallP := ComObjCreate("Scripting.Dictionary")
 cmpCapitalP := ComObjCreate("Scripting.Dictionary")
 cmpSmallR := ComObjCreate("Scripting.Dictionary")
 cmpAsterisk := ComObjCreate("Scripting.Dictionary")
@@ -961,7 +960,7 @@ cmpMathSymbols.item["i"] := "{u+00b5}"      ; (µ) micro sign
 cmpSmallN.item["o"] := "{u+2116}"           ; (№) numero sign
 cmpCapitalN.item["o"] := "{u+2116}"         ; (№) numero sign
 cmpRingAbove.item["x"] := "{u+00a4}"        ; (¤) currency sign
-cmpSmallP.item["p"] := "{u+00b6}"           ; (¶) pilcrow sign
+cmpSuperscript.item["p"] := "{u+00b6}"      ; (¶) pilcrow sign
 cmpCapitalP.item["P"] := "{u+00b6}"         ; (¶) pilcrow sign
 cmpSmallR.item["2"] := "{u+221a}"           ; (√) square root
 cmpSmallR.item["3"] := "{u+221b}"           ; (∛) cube root
@@ -1035,7 +1034,7 @@ cmpGreaterThan.item["'"] := "{u+203a}"        ; (›) right-pointing single angl
 cmpAcuteAccent.item[">"] := "{u+203a}"        ; (›) right-pointing single angle quotation mark
 
 
-; Compose :  Letters with Two Accents
+; Compose :  Letters with Two Diacritical Marks
 
 cmpCapitalU := ComObjCreate("Scripting.Dictionary")
 cmpArrow.item[chr(34)] := "{u+01df}"      ; (ǟ) a with diaeresis and macron
@@ -1591,8 +1590,6 @@ cmpCapitalU.item["``"] := "{u+01db}"      ; (Ǜ) U with diaeresis and grave
     Send % cmpSmallN.item[keyB]
   else if (keyA == "N")
     Send % cmpCapitalN.item[keyB]
-  else if (keyA == "p")
-    Send % cmpSmallP.item[keyB]
   else if (keyA == "P")
     Send % cmpCapitalP.item[keyB]
   else if (keyA == "r")
