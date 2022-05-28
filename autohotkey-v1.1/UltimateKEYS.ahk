@@ -1,4 +1,4 @@
-; UltimateKEYS.ahk - 2022-05-23
+; UltimateKEYS.ahk - 2022-05-28
 
 ; Website :  www.ultimatekeys.info (pieter-degroote.github.io/UltimateKEYS/)
 
@@ -180,6 +180,8 @@ cmpMacronStroke.item["o"] := "{u+014d}"  ; (ō) o with macron
 cmpMacronStroke.item["O"] := "{u+014c}"  ; (Ō) O with macron
 cmpMacronStroke.item["p"] := "{u+1d7d}"  ; (ᵽ) p with stroke
 cmpMacronStroke.item["P"] := "{u+2c63}"  ; (Ᵽ) P with stroke
+cmpMacronStroke.item["q"] := "{u+01ed}"  ; (ǭ) o with ogonek and macron
+cmpMacronStroke.item["Q"] := "{u+01ec}"  ; (Ǭ) O with ogonek and macron
 cmpMacronStroke.item["r"] := "{u+024d}"  ; (ɍ) r with stroke
 cmpMacronStroke.item["R"] := "{u+024c}"  ; (Ɍ) R with stroke
 cmpMacronStroke.item["t"] := "{u+0167}"  ; (ŧ) t with stroke
@@ -196,16 +198,12 @@ cmpMacronStroke.item[" "] := "{u+00af}"  ; (¯) macron
 ; Compose :  Macron/Stroke (Additional) (_)
 
 cmpMacronStrokeAdd := ComObjCreate("Scripting.Dictionary")
-cmpMacronStrokeAdd.item["a"] := "{u+01e3}"  ; (ǣ) ae with macron
-cmpMacronStrokeAdd.item["A"] := "{u+01e2}"  ; (Ǣ) AE with macron
 cmpMacronStrokeAdd.item["g"] := "{u+1e21}"  ; (ḡ) g with macron
 cmpMacronStrokeAdd.item["G"] := "{u+1e20}"  ; (Ḡ) G with macron
 cmpMacronStrokeAdd.item["i"] := "{u+0268}"  ; (ɨ) i with stroke
 cmpMacronStrokeAdd.item["I"] := "{u+0197}"  ; (Ɨ) I with stroke
 cmpMacronStrokeAdd.item["l"] := "{u+019a}"  ; (ƚ) l with bar
 cmpMacronStrokeAdd.item["L"] := "{u+023d}"  ; (Ƚ) L with bar
-cmpMacronStrokeAdd.item["o"] := "{u+01ed}"  ; (ǭ) o with ogonek and macron
-cmpMacronStrokeAdd.item["O"] := "{u+01ec}"  ; (Ǭ) O with ogonek and macron
 cmpMacronStrokeAdd.item["u"] := "{u+0289}"  ; (ʉ) u with bar
 cmpMacronStrokeAdd.item["U"] := "{u+0244}"  ; (Ʉ) U with bar
 cmpMacronStrokeAdd.item["y"] := "{u+024f}"  ; (ɏ) y with stroke
@@ -226,6 +224,8 @@ cmpStroke.item["g"] := "{u+a7a1}"  ; (ꞡ) g with oblique stroke
 cmpStroke.item["G"] := "{u+a7a0}"  ; (Ꞡ) G with oblique stroke
 cmpStroke.item["k"] := "{u+a7a3}"  ; (ꞣ) k with oblique stroke
 cmpStroke.item["K"] := "{u+a7a2}"  ; (Ꞣ) K with oblique stroke
+cmpStroke.item["l"] := "{u+0142}"  ; (ł) l with stroke
+cmpStroke.item["L"] := "{u+0141}"  ; (Ł) L with stroke
 cmpStroke.item["n"] := "{u+a7a5}"  ; (ꞥ) n with oblique stroke
 cmpStroke.item["N"] := "{u+a7a4}"  ; (Ꞥ) N with oblique stroke
 cmpStroke.item["o"] := "{u+00f8}"  ; (ø) o with stroke
@@ -365,14 +365,6 @@ cmpAcuteAccent.item["y"] := "{u+00fd}"  ; (ý) y with acute
 cmpAcuteAccent.item["Y"] := "{u+00dd}"  ; (Ý) Y with acute
 cmpAcuteAccent.item["z"] := "{u+017a}"  ; (ź) z with acute
 cmpAcuteAccent.item["Z"] := "{u+0179}"  ; (Ź) Z with acute
-cmpAcuteAccent.item["b"] := "{u+01fb}"  ; (ǻ) a with ring above and acute
-cmpAcuteAccent.item["B"] := "{u+01fa}"  ; (Ǻ) A with ring above and acute
-cmpAcuteAccent.item["d"] := "{u+1e09}"  ; (ḉ) c with cedilla and acute
-cmpAcuteAccent.item["D"] := "{u+1e08}"  ; (Ḉ) C with cedilla and acute
-cmpAcuteAccent.item["f"] := "{u+01fd}"  ; (ǽ) ae with acute
-cmpAcuteAccent.item["F"] := "{u+01fc}"  ; (Ǽ) AE with acute
-cmpAcuteAccent.item["q"] := "{u+01ff}"  ; (ǿ) o with stroke and acute
-cmpAcuteAccent.item["Q"] := "{u+01fe}"  ; (Ǿ) O with stroke and acute
 cmpAcuteAccent.item[" "] := "{u+00b4}"  ; (´) acute accent
 
 
@@ -401,15 +393,13 @@ cmpDiaeresis.item["Y"] := "{u+0178}"  ; (Ÿ) Y with diaeresis
 cmpDiaeresis.item[" "] := "{u+00a8}"  ; (¨) diaeresis
 
 
-; Compose :  Double Acute Accent and Special Letters (=)
+; Compose :  Double Acute Accent (=)
 
 cmpDoubleAcute := ComObjCreate("Scripting.Dictionary")
 cmpDoubleAcute.item["o"] := "{u+0151}"  ; (ő) o with double acute
 cmpDoubleAcute.item["O"] := "{u+0150}"  ; (Ő) O with double acute
 cmpDoubleAcute.item["u"] := "{u+0171}"  ; (ű) u with double acute
 cmpDoubleAcute.item["U"] := "{u+0170}"  ; (Ű) U with double acute
-cmpDoubleAcute.item["h"] := "{u+a727}"  ; (ꜧ) small letter heng
-cmpDoubleAcute.item["H"] := "{u+a726}"  ; (Ꜧ) capital letter heng
 cmpDoubleAcute.item[" "] := "{u+02dd}"  ; (˝) double acute accent
 
 
@@ -435,7 +425,7 @@ cmpGraveAccent.item["Y"] := "{u+1ef2}"  ; (Ỳ) Y with grave
 cmpGraveAccent.item[" "] := "{u+02cb}"  ; (ˋ) grave accent (modifier)
 
 
-; Compose :  Double Grave (G)
+; Compose :  Double Grave Accent (G)
 
 cmpDoubleGrave := ComObjCreate("Scripting.Dictionary")
 cmpDoubleGrave.item["a"] := "{u+0201}"  ; (ȁ) a with double grave
@@ -538,6 +528,8 @@ cmpHorn.item["u"] := "{u+01b0}"  ; (ư) u with horn
 cmpHorn.item["U"] := "{u+01af}"  ; (Ư) U with horn
 cmpHorn.item["g"] := "{u+ab36}"  ; (ꬶ) cross-tailed g
 cmpHorn.item["h"] := "{u+0267}"  ; (ɧ) small letter heng with hook
+cmpHorn.item["j"] := "{u+a727}"  ; (ꜧ) small letter heng
+cmpHorn.item["J"] := "{u+a726}"  ; (Ꜧ) capital letter heng
 cmpHorn.item["k"] := "{u+0138}"  ; (ĸ) small letter kra
 cmpHorn.item["s"] := "{u+017f}"  ; (ſ) small long s
 cmpHorn.item["S"] := "{u+1e9b}"  ; (ẛ) small long s with dot above
@@ -556,7 +548,7 @@ cmpTurned.item["v"] := "{u+028c}"  ; (ʌ) latin small letter turned v
 cmpTurned.item["V"] := "{u+0245}"  ; (Ʌ) latin capital letter turned V
 
 
-; Compose :  Currency ($)
+; Compose :  Currency Symbols ($)
 
 cmpCurrency := ComObjCreate("Scripting.Dictionary")
 cmpCurrency.item["a"] := "{u+058f}"  ; (֏) Armenian dram
@@ -1004,6 +996,7 @@ cmpGreaterThan.item["+"] := "{u+2a7e}"      ; (⩾) greater-than or slanted equa
 cmpTilde.item["~"] := "{u+2248}"            ; (≈) almost equal to
 cmpBracketLeft.item["]"] := "{u+2610}"      ; (☐) ballot box
 cmpBracketLeft.item["v"] := "{u+2611}"      ; (☑) ballot box with check
+cmpBracketLeft.item["y"] := "{u+2611}"      ; (☑) ballot box with check
 cmpBracketLeft.item["x"] := "{u+2612}"      ; (☒) ballot box with x
 
 
@@ -1036,11 +1029,26 @@ cmpAcuteAccent.item[">"] := "{u+203a}"        ; (›) right-pointing single angl
 
 ; Compose :  Letters with Two Diacritical Marks
 
+cmpCapitalC := ComObjCreate("Scripting.Dictionary")
+cmpSmallE := ComObjCreate("Scripting.Dictionary")
+cmpCapitalE := ComObjCreate("Scripting.Dictionary")
 cmpCapitalU := ComObjCreate("Scripting.Dictionary")
 cmpArrow.item[chr(34)] := "{u+01df}"      ; (ǟ) a with diaeresis and macron
 cmpCapitalA.item[chr(34)] := "{u+01de}"   ; (Ǟ) A with diaeresis and macron
 cmpArrow.item["."] := "{u+01e1}"          ; (ǡ) a with dot above and macron
 cmpCapitalA.item["."] := "{u+01e0}"       ; (Ǡ) A with dot above and macron
+cmpArrow.item["'"] := "{u+01fb}"          ; (ǻ) a with ring above and acute
+cmpCapitalA.item["'"] := "{u+01fa}"       ; (Ǻ) A with ring above and acute
+cmpCircumflex.item["'"] := "{u+1e09}"     ; (ḉ) c with cedilla and acute
+cmpCapitalC.item["'"] := "{u+1e08}"       ; (Ḉ) C with cedilla and acute
+cmpSmallE.item["-"] := "{u+01e3}"         ; (ǣ) ae with macron
+cmpCapitalE.item["-"] := "{u+01e2}"       ; (Ǣ) AE with macron
+cmpSmallE.item["'"] := "{u+01fd}"         ; (ǽ) ae with acute
+cmpCapitalE.item["'"] := "{u+01fc}"       ; (Ǽ) AE with acute
+cmpRingAbove.item[","] := "{u+01ed}"      ; (ǭ) o with ogonek and macron
+cmpCapitalO.item[","] := "{u+01ec}"       ; (Ǭ) O with ogonek and macron
+cmpRingAbove.item["'"] := "{u+01ff}"      ; (ǿ) o with stroke and acute
+cmpCapitalO.item["'"] := "{u+01fe}"       ; (Ǿ) O with stroke and acute
 cmpRingAbove.item[chr(34)] := "{u+022b}"  ; (ȫ) o with diaeresis and macron
 cmpCapitalO.item[chr(34)] := "{u+022a}"   ; (Ȫ) O with diaeresis and macron
 cmpRingAbove.item["~"] := "{u+022d}"      ; (ȭ) o with tilde and macron
@@ -1614,6 +1622,12 @@ cmpCapitalU.item["``"] := "{u+01db}"      ; (Ǜ) U with diaeresis and grave
     Send % cmpBracketLeft.item[keyB]
   else if (keyA == "]")
     Send % cmpBracketRight.item[keyB]
+  else if (keyA == "C")
+    Send % cmpCapitalC.item[keyB]
+  else if (keyA == "e")
+    Send % cmpSmallE.item[keyB]
+  else if (keyA == "E")
+    Send % cmpCapitalE.item[keyB]
   else if (keyA == "U")
     Send % cmpCapitalU.item[keyB]
 
