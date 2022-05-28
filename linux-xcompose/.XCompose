@@ -1,4 +1,4 @@
-# UltimateKEYS  (~/.XCompose) - 2022-05-23
+# UltimateKEYS - 2022-05-28  (~/.XCompose)
 
 # Website :  www.ultimatekeys.info (pieter-degroote.github.io/UltimateKEYS/)
 
@@ -140,7 +140,7 @@
 <Multi_key> <o> <y> : "ẙ"  U1E99  # y with ring above
 
 
-# Macron/Stroke (General)
+# Macron/Stroke
 
 <Multi_key> <minus> <a> : "ā"  U0101  # a with macron
 <Multi_key> <minus> <A> : "Ā"  U0100  # A with macron
@@ -164,6 +164,8 @@
 <Multi_key> <minus> <O> : "Ō"  U014C  # O with macron
 <Multi_key> <minus> <p> : "ᵽ"  U1D7D  # p with stroke
 <Multi_key> <minus> <P> : "Ᵽ"  U2C63  # P with stroke
+<Multi_key> <minus> <q> : "ǭ"  U01ED  # o with ogonek and macron
+<Multi_key> <minus> <Q> : "Ǭ"  U01EC  # O with ogonek and macron
 <Multi_key> <minus> <r> : "ɍ"  U024D  # r with stroke
 <Multi_key> <minus> <R> : "Ɍ"  U024C  # R with stroke
 <Multi_key> <minus> <t> : "ŧ"  U0167  # t with stroke
@@ -179,16 +181,12 @@
 
 # Macron/Stroke (Additional)
 
-<Multi_key> <underscore> <a> : "ǣ"  U01E3  # ae with macron
-<Multi_key> <underscore> <A> : "Ǣ"  U01E2  # AE with macron
 <Multi_key> <underscore> <g> : "ḡ"  U1E21  # g with macron
 <Multi_key> <underscore> <G> : "Ḡ"  U1E20  # G with macron
 <Multi_key> <underscore> <i> : "ɨ"  U0268  # i with stroke
 <Multi_key> <underscore> <I> : "Ɨ"  U0197  # I with stroke
 <Multi_key> <underscore> <l> : "ƚ"  U019A  # l with bar
 <Multi_key> <underscore> <L> : "Ƚ"  U023D  # L with bar
-<Multi_key> <underscore> <o> : "ǭ"  U01ED  # o with ogonek and macron
-<Multi_key> <underscore> <O> : "Ǭ"  U01EC  # O with ogonek and macron
 <Multi_key> <underscore> <u> : "ʉ"  U0289  # u with bar
 <Multi_key> <underscore> <U> : "Ʉ"  U0244  # U with bar
 <Multi_key> <underscore> <y> : "ɏ"  U024F  # y with stroke
@@ -208,6 +206,8 @@
 <Multi_key> <slash> <G> : "Ꞡ"  UA7A0  # G with oblique stroke
 <Multi_key> <slash> <k> : "ꞣ"  UA7A3  # k with oblique stroke
 <Multi_key> <slash> <K> : "Ꞣ"  UA7A2  # K with oblique stroke
+<Multi_key> <slash> <l> : "ł"  U0142  # l with stroke
+<Multi_key> <slash> <L> : "Ł"  U0141  # L with stroke
 <Multi_key> <slash> <n> : "ꞥ"  UA7A5  # n with oblique stroke
 <Multi_key> <slash> <N> : "Ꞥ"  UA7A4  # N with oblique stroke
 <Multi_key> <slash> <o> : "ø"  U00F8  # o with stroke
@@ -343,14 +343,6 @@
 <Multi_key> <apostrophe> <Y> : "Ý"  U00DD  # Y with acute
 <Multi_key> <apostrophe> <z> : "ź"  U017A  # z with acute
 <Multi_key> <apostrophe> <Z> : "Ź"  U0179  # Z with acute
-<Multi_key> <apostrophe> <b> : "ǻ"  U01FB  # a with ring above and acute
-<Multi_key> <apostrophe> <B> : "Ǻ"  U01FA  # A with ring above and acute
-<Multi_key> <apostrophe> <d> : "ḉ"  U1E09  # c with cedilla and acute
-<Multi_key> <apostrophe> <D> : "Ḉ"  U1E08  # C with cedilla and acute
-<Multi_key> <apostrophe> <f> : "ǽ"  U01FD  # ae with acute
-<Multi_key> <apostrophe> <F> : "Ǽ"  U01FC  # AE with acute
-<Multi_key> <apostrophe> <q> : "ǿ"  U01FF  # o with stroke and acute
-<Multi_key> <apostrophe> <Q> : "Ǿ"  U01FE  # O with stroke and acute
 <Multi_key> <apostrophe> <space> : "´"  U00B4  # acute accent
 
 
@@ -378,14 +370,12 @@
 <Multi_key> <quotedbl> <space> : "¨"  U00A8  # diaeresis
 
 
-# Double Acute and Special Letters
+# Double Acute Accent
 
 <Multi_key> <equal> <o> : "ő"  U0151  # o with double acute
 <Multi_key> <equal> <O> : "Ő"  U0150  # O with double acute
 <Multi_key> <equal> <u> : "ű"  U0171  # u with double acute
 <Multi_key> <equal> <U> : "Ű"  U0170  # U with double acute
-<Multi_key> <equal> <h> : "ꜧ"  UA727  # small letter heng
-<Multi_key> <equal> <H> : "Ꜧ"  UA726  # capital letter heng
 <Multi_key> <equal> <space> : "˝"  U02DD  # double acute accent
 
 
@@ -410,7 +400,7 @@
 <Multi_key> <grave> <space> : "ˋ"  U02CB  # grave accent (modifier)
 
 
-# Double Grave
+# Double Grave Accent
 
 <Multi_key> <G> <a> : "ȁ"  U0201  # a with double grave
 <Multi_key> <G> <A> : "Ȁ"  U0200  # A with double grave
@@ -509,6 +499,8 @@
 <Multi_key> <H> <U> : "Ư"  U01AF  # U with horn
 <Multi_key> <H> <g> : "ꬶ"  UAB36  # cross-tailed g
 <Multi_key> <H> <h> : "ɧ"  U0267  # small letter heng with hook
+<Multi_key> <H> <j> : "ꜧ"  UA727  # small letter heng
+<Multi_key> <H> <J> : "Ꜧ"  UA726  # capital letter heng
 <Multi_key> <H> <k> : "ĸ"  U0138  # small letter kra
 <Multi_key> <H> <s> : "ſ"  U017F  # small long s
 <Multi_key> <H> <S> : "ẛ"  U1E9B  # small long s with dot above
@@ -528,12 +520,24 @@
 
 # Letters with Two Diacritical Marks
 
-<Multi_key> <a> <diaeresis>  : "ǟ"  U01DF  # a with diaeresis and macron
-<Multi_key> <A> <diaeresis>  : "Ǟ"  U01DE  # A with diaeresis and macron
+<Multi_key> <a> <quotedbl>   : "ǟ"  U01DF  # a with diaeresis and macron
+<Multi_key> <A> <quotedbl>   : "Ǟ"  U01DE  # A with diaeresis and macron
 <Multi_key> <a> <period>     : "ǡ"  U01E1  # a with dot above and macron
 <Multi_key> <A> <period>     : "Ǡ"  U01E0  # A with dot above and macron
-<Multi_key> <o> <diaeresis>  : "ȫ"  U022B  # o with diaeresis and macron
-<Multi_key> <O> <diaeresis>  : "Ȫ"  U022A  # O with diaeresis and macron
+<Multi_key> <a> <apostrophe> : "ǻ"  U01FB  # a with ring above and acute
+<Multi_key> <A> <apostrophe> : "Ǻ"  U01FA  # A with ring above and acute
+<Multi_key> <c> <apostrophe> : "ḉ"  U1E09  # c with cedilla and acute
+<Multi_key> <C> <apostrophe> : "Ḉ"  U1E08  # C with cedilla and acute
+<Multi_key> <e> <minus>      : "ǣ"  U01E3  # ae with macron
+<Multi_key> <E> <minus>      : "Ǣ"  U01E2  # AE with macron
+<Multi_key> <e> <apostrophe> : "ǽ"  U01FD  # ae with acute
+<Multi_key> <E> <apostrophe> : "Ǽ"  U01FC  # AE with acute
+<Multi_key> <o> <comma>      : "ǭ"  U01ED  # o with ogonek and macron
+<Multi_key> <O> <comma>      : "Ǭ"  U01EC  # O with ogonek and macron
+<Multi_key> <o> <apostrophe> : "ǿ"  U01FF  # o with stroke and acute
+<Multi_key> <O> <apostrophe> : "Ǿ"  U01FE  # O with stroke and acute
+<Multi_key> <o> <quotedbl>   : "ȫ"  U022B  # o with diaeresis and macron
+<Multi_key> <O> <quotedbl>   : "Ȫ"  U022A  # O with diaeresis and macron
 <Multi_key> <o> <asciitilde> : "ȭ"  U022D  # o with tilde and macron
 <Multi_key> <O> <asciitilde> : "Ȭ"  U022C  # O with tilde and macron
 <Multi_key> <o> <period>     : "ȱ"  U0231  # o with dot above and macron
@@ -821,6 +825,7 @@
 <Multi_key> <asciitilde> <asciitilde> : "≈"  U2248  # almost equal to
 <Multi_key> <bracketleft> <bracketright> : "☐"  U2610  # ballot box
 <Multi_key> <bracketleft> <v>            : "☑"  U2611  # ballot box with check
+<Multi_key> <bracketleft> <y>            : "☑"  U2611  # ballot box with check
 <Multi_key> <bracketleft> <x>            : "☒"  U2612  # ballot box with x
 
 
