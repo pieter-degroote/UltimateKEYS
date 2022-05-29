@@ -1,4 +1,4 @@
-; UltimateKEYS.ahk - 2022-05-28
+; UltimateKEYS.ahk - 2022-05-29
 
 ; Website :  www.ultimatekeys.info (pieter-degroote.github.io/UltimateKEYS/)
 
@@ -929,6 +929,7 @@ cmpCapitalT.item["H"] := "{u+00de}"         ; (Þ) capital letter thorn
 
 ; Compose :  General/Math Symbols
 
+cmpEight := ComObjCreate("Scripting.Dictionary")
 cmpSmallN := ComObjCreate("Scripting.Dictionary")
 cmpCapitalN := ComObjCreate("Scripting.Dictionary")
 cmpCapitalP := ComObjCreate("Scripting.Dictionary")
@@ -938,7 +939,6 @@ cmpExclam := ComObjCreate("Scripting.Dictionary")
 cmpQuestion := ComObjCreate("Scripting.Dictionary")
 cmpParenLeft := ComObjCreate("Scripting.Dictionary")
 cmpPercent := ComObjCreate("Scripting.Dictionary")
-cmpEight := ComObjCreate("Scripting.Dictionary")
 cmpLessThan := ComObjCreate("Scripting.Dictionary")
 cmpGreaterThan := ComObjCreate("Scripting.Dictionary")
 cmpBracketLeft := ComObjCreate("Scripting.Dictionary")
@@ -948,6 +948,8 @@ cmpInvertedBreve.item["h"] := "{u+2043}"    ; (⁃) hyphen bullet
 cmpInvertedBreve.item["w"] := "{u+25e6}"    ; (◦) white bullet
 cmpSmallD.item["d"] := "{u+2020}"           ; (†) dagger
 cmpCapitalD.item["D"] := "{u+2021}"         ; (‡) double dagger
+cmpSmallI.item["i"] := "{u+221e}"           ; (∞) infinity symbol
+cmpEight.item["8"] := "{u+221e}"            ; (∞) infinity symbol
 cmpMathSymbols.item["i"] := "{u+00b5}"      ; (µ) micro sign
 cmpSmallN.item["o"] := "{u+2116}"           ; (№) numero sign
 cmpCapitalN.item["o"] := "{u+2116}"         ; (№) numero sign
@@ -985,7 +987,6 @@ cmpPlus.item["-"] := "{u+00b1}"             ; (±) plus-minus sign
 cmpPercent.item["%"] := "{u+2030}"          ; (‰) per mille sign
 cmpPercent.item["3"] := "{u+2030}"          ; (‰) per mille sign
 cmpPercent.item["4"] := "{u+2031}"          ; (‱) per ten thousand sign
-cmpEight.item["8"] := "{u+221e}"            ; (∞) infinity symbol
 cmpExclam.item["="] := "{u+2260}"           ; (≠) not equal to
 cmpDoubleAcute.item["/"] := "{u+2260}"      ; (≠) not equal to
 cmpStroke.item["="] := "{u+2260}"           ; (≠) not equal to
