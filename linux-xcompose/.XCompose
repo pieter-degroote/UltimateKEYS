@@ -771,10 +771,6 @@
 
 # General/Math Symbols
 
-<Multi_key> <B> <b> : "•"  U2022  # bullet
-<Multi_key> <B> <h> : "⁃"  U2043  # hyphen bullet
-<Multi_key> <B> <t> : "‣"  U2023  # triangular bullet
-<Multi_key> <B> <w> : "◦"  U25E6  # white bullet
 <Multi_key> <d> <d> : "†"  U2020  # dagger
 <Multi_key> <D> <D> : "‡"  U2021  # double dagger
 <Multi_key> <i> <i> : "∞"  U221E  # infinity symbol
@@ -791,6 +787,11 @@
 <Multi_key> <s> <o> : "§"  U00A7  # section sign
 <Multi_key> <S> <o> : "§"  U00A7  # section sign
 <Multi_key> <t> <m> : "™"  U2122  # trademark symbol
+<Multi_key> <semicolon> <b>  : "•"  U2022  # bullet
+<Multi_key> <semicolon> <semicolon> : "•"  U2022  # bullet
+<Multi_key> <semicolon> <h>  : "⁃"  U2043  # hyphen bullet
+<Multi_key> <semicolon> <t>  : "‣"  U2023  # triangular bullet
+<Multi_key> <semicolon> <w>  : "◦"  U25E6  # white bullet
 <Multi_key> <apostrophe> <1> : "′"  U2032  # prime
 <Multi_key> <apostrophe> <2> : "″"  U2033  # double prime
 <Multi_key> <apostrophe> <3> : "‴"  U2034  # triple prime
@@ -882,6 +883,8 @@
 <Multi_key> <s> <w> : "⚠"  U26A0  # warning sign
 <Multi_key> <s> <x> : "✗"  U2717  # ballot x
 <Multi_key> <s> <X> : "✘"  U2718  # heavy ballot x
+<Multi_key> <s> <y> : "✓"  U2713  # check mark
+<Multi_key> <s> <Y> : "✔"  U2714  # heavy check mark
 <Multi_key> <s> <2>           : "♫"  U266B  # beamed eighth notes
 <Multi_key> <s> <3>           : "⁂"  U2042  # asterism
 <Multi_key> <s> <5>           : "★"  U2605  # black star
