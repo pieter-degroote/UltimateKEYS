@@ -2,7 +2,7 @@
 
 UltimateKEYS CE (Compact Edition) for Microsoft Keyboard Layout Creator (MSKLC) Version 1.4.
 
-This is a slimmed-down version, since MSKLC does not support multiple keystrokes as a combination for a dead key.
+This is a slimmed-down version (without Compose key), since MSKLC does not support multiple keystrokes as a combination for a dead key.
 
 **Keyboard Layout Image&nbsp;:**
 
