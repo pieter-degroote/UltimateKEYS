@@ -784,6 +784,8 @@ cmpSymbols.item["V"] := "{u+2714}"  ; (✔) heavy check mark
 cmpSymbols.item["w"] := "{u+26a0}"  ; (⚠) warning sign
 cmpSymbols.item["x"] := "{u+2717}"  ; (✗) ballot x
 cmpSymbols.item["X"] := "{u+2718}"  ; (✘) heavy ballot x
+cmpSymbols.item["y"] := "{u+2713}"  ; (✓) check mark
+cmpSymbols.item["Y"] := "{u+2714}"  ; (✔) heavy check mark
 cmpSymbols.item["2"] := "{u+266b}"  ; (♫) beamed eighth notes
 cmpSymbols.item["3"] := "{u+2042}"  ; (⁂) asterism
 cmpSymbols.item["5"] := "{u+2605}"  ; (★) black star
@@ -934,6 +936,7 @@ cmpSmallN := ComObjCreate("Scripting.Dictionary")
 cmpCapitalN := ComObjCreate("Scripting.Dictionary")
 cmpCapitalP := ComObjCreate("Scripting.Dictionary")
 cmpSmallR := ComObjCreate("Scripting.Dictionary")
+cmpSemicolon := ComObjCreate("Scripting.Dictionary")
 cmpAsterisk := ComObjCreate("Scripting.Dictionary")
 cmpExclam := ComObjCreate("Scripting.Dictionary")
 cmpQuestion := ComObjCreate("Scripting.Dictionary")
@@ -942,10 +945,6 @@ cmpPercent := ComObjCreate("Scripting.Dictionary")
 cmpLessThan := ComObjCreate("Scripting.Dictionary")
 cmpGreaterThan := ComObjCreate("Scripting.Dictionary")
 cmpBracketLeft := ComObjCreate("Scripting.Dictionary")
-cmpInvertedBreve.item["b"] := "{u+2022}"    ; (•) bullet
-cmpInvertedBreve.item["t"] := "{u+2023}"    ; (‣) triangular bullet
-cmpInvertedBreve.item["h"] := "{u+2043}"    ; (⁃) hyphen bullet
-cmpInvertedBreve.item["w"] := "{u+25e6}"    ; (◦) white bullet
 cmpSmallD.item["d"] := "{u+2020}"           ; (†) dagger
 cmpCapitalD.item["D"] := "{u+2021}"         ; (‡) double dagger
 cmpSmallI.item["i"] := "{u+221e}"           ; (∞) infinity symbol
@@ -962,6 +961,11 @@ cmpSmallR.item["4"] := "{u+221c}"           ; (∜) fourth root
 cmpSymbols.item["o"] := "{u+00a7}"          ; (§) section sign
 cmpPlayingCardSuit.item["o"] := "{u+00a7}"  ; (§) section sign
 cmpTurned.item["m"] := "{u+2122}"           ; (™) trademark symbol
+cmpSemicolon.item["b"] := "{u+2022}"        ; (•) bullet
+cmpSemicolon.item[";"] := "{u+2022}"        ; (•) bullet
+cmpSemicolon.item["t"] := "{u+2023}"        ; (‣) triangular bullet
+cmpSemicolon.item["h"] := "{u+2043}"        ; (⁃) hyphen bullet
+cmpSemicolon.item["w"] := "{u+25e6}"        ; (◦) white bullet
 cmpAcuteAccent.item["1"] := "{u+2032}"      ; (′) prime
 cmpAcuteAccent.item["2"] := "{u+2033}"      ; (″) double prime
 cmpAcuteAccent.item["3"] := "{u+2034}"      ; (‴) triple prime
@@ -1603,6 +1607,8 @@ cmpCapitalU.item["``"] := "{u+01db}"      ; (Ǜ) U with diaeresis and grave
     Send % cmpCapitalP.item[keyB]
   else if (keyA == "r")
     Send % cmpSmallR.item[keyB]
+  else if (keyA == ";")
+    Send % cmpSemicolon.item[keyB]
   else if (keyA == "*")
     Send % cmpAsterisk.item[keyB]
   else if (keyA == "!")
