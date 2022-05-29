@@ -786,6 +786,8 @@ cmpSymbols["V"] := "{u+2714}"  ; (✔) heavy check mark
 cmpSymbols["w"] := "{u+26a0}"  ; (⚠) warning sign
 cmpSymbols["x"] := "{u+2717}"  ; (✗) ballot x
 cmpSymbols["X"] := "{u+2718}"  ; (✘) heavy ballot x
+cmpSymbols["y"] := "{u+2713}"  ; (✓) check mark
+cmpSymbols["Y"] := "{u+2714}"  ; (✔) heavy check mark
 cmpSymbols["2"] := "{u+266b}"  ; (♫) beamed eighth notes
 cmpSymbols["3"] := "{u+2042}"  ; (⁂) asterism
 cmpSymbols["5"] := "{u+2605}"  ; (★) black star
@@ -936,6 +938,7 @@ global cmpSmallN := Map()
 global cmpCapitalN := Map()
 global cmpCapitalP := Map()
 global cmpSmallR := Map()
+global cmpSemicolon := Map()
 global cmpAsterisk := Map()
 global cmpExclam := Map()
 global cmpQuestion := Map()
@@ -944,10 +947,6 @@ global cmpPercent := Map()
 global cmpLessThan := Map()
 global cmpGreaterThan := Map()
 global cmpBracketLeft := Map()
-cmpInvertedBreve["b"] := "{u+2022}"    ; (•) bullet
-cmpInvertedBreve["t"] := "{u+2023}"    ; (‣) triangular bullet
-cmpInvertedBreve["h"] := "{u+2043}"    ; (⁃) hyphen bullet
-cmpInvertedBreve["w"] := "{u+25e6}"    ; (◦) white bullet
 cmpSmallD["d"] := "{u+2020}"           ; (†) dagger
 cmpCapitalD["D"] := "{u+2021}"         ; (‡) double dagger
 cmpSmallI["i"] := "{u+221e}"           ; (∞) infinity symbol
@@ -964,6 +963,11 @@ cmpSmallR["4"] := "{u+221c}"           ; (∜) fourth root
 cmpSymbols["o"] := "{u+00a7}"          ; (§) section sign
 cmpPlayingCardSuit["o"] := "{u+00a7}"  ; (§) section sign
 cmpTurned["m"] := "{u+2122}"           ; (™) trademark symbol
+cmpSemicolon["b"] := "{u+2022}"        ; (•) bullet
+cmpSemicolon[";"] := "{u+2022}"        ; (•) bullet
+cmpSemicolon["t"] := "{u+2023}"        ; (‣) triangular bullet
+cmpSemicolon["h"] := "{u+2043}"        ; (⁃) hyphen bullet
+cmpSemicolon["w"] := "{u+25e6}"        ; (◦) white bullet
 cmpAcuteAccent["1"] := "{u+2032}"      ; (′) prime
 cmpAcuteAccent["2"] := "{u+2033}"      ; (″) double prime
 cmpAcuteAccent["3"] := "{u+2034}"      ; (‴) triple prime
@@ -1705,6 +1709,10 @@ cmpCapitalU["``"] := "{u+01db}"      ; (Ǜ) U with diaeresis and grave
   else if (ihA.Input == "r") {
     if cmpSmallR.Has(ihB.Input)
       Send cmpSmallR[ihB.Input]
+  }
+  else if (ihA.Input == ";") {
+    if cmpSemicolon.Has(ihB.Input)
+      Send cmpSemicolon[ihB.Input]
   }
   else if (ihA.Input == "*") {
     if cmpAsterisk.Has(ihB.Input)
