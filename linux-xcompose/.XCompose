@@ -1,4 +1,4 @@
-# UltimateKEYS - 2022-05-28  (~/.XCompose)
+# UltimateKEYS - 2022-05-29  (~/.XCompose)
 
 # Website :  www.ultimatekeys.info (pieter-degroote.github.io/UltimateKEYS/)
 
@@ -777,6 +777,8 @@
 <Multi_key> <B> <w> : "◦"  U25E6  # white bullet
 <Multi_key> <d> <d> : "†"  U2020  # dagger
 <Multi_key> <D> <D> : "‡"  U2021  # double dagger
+<Multi_key> <i> <i> : "∞"  U221E  # infinity symbol
+<Multi_key> <8> <8> : "∞"  U221E  # infinity symbol
 <Multi_key> <m> <i> : "µ"  U00B5  # micro sign
 <Multi_key> <n> <o> : "№"  U2116  # numero sign
 <Multi_key> <N> <o> : "№"  U2116  # numero sign
@@ -814,7 +816,6 @@
 <Multi_key> <percent> <percent>   : "‰"  U2030  # per mille sign
 <Multi_key> <percent> <3>         : "‰"  U2030  # per mille sign
 <Multi_key> <percent> <4>         : "‱"  U2031  # per ten thousand sign
-<Multi_key> <8> <8>               : "∞"  U221E  # infinity symbol
 <Multi_key> <exclam> <equal>      : "≠"  U2260  # not equal to
 <Multi_key> <equal> <slash>       : "≠"  U2260  # not equal to
 <Multi_key> <slash> <equal>       : "≠"  U2260  # not equal to
