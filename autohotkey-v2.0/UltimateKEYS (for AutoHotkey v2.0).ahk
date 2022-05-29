@@ -1,4 +1,4 @@
-; UltimateKEYS (for AutoHotkey v2.0).ahk - 2022-05-28
+; UltimateKEYS (for AutoHotkey v2.0).ahk - 2022-05-29
 
 ; Website :  www.ultimatekeys.info (pieter-degroote.github.io/UltimateKEYS/)
 
@@ -931,6 +931,7 @@ cmpCapitalT["H"] := "{u+00de}"         ; (Þ) capital letter thorn
 
 ; Compose :  General/Math Symbols
 
+global cmpEight := Map()
 global cmpSmallN := Map()
 global cmpCapitalN := Map()
 global cmpCapitalP := Map()
@@ -940,7 +941,6 @@ global cmpExclam := Map()
 global cmpQuestion := Map()
 global cmpParenLeft := Map()
 global cmpPercent := Map()
-global cmpEight := Map()
 global cmpLessThan := Map()
 global cmpGreaterThan := Map()
 global cmpBracketLeft := Map()
@@ -950,6 +950,8 @@ cmpInvertedBreve["h"] := "{u+2043}"    ; (⁃) hyphen bullet
 cmpInvertedBreve["w"] := "{u+25e6}"    ; (◦) white bullet
 cmpSmallD["d"] := "{u+2020}"           ; (†) dagger
 cmpCapitalD["D"] := "{u+2021}"         ; (‡) double dagger
+cmpSmallI["i"] := "{u+221e}"           ; (∞) infinity symbol
+cmpEight["8"] := "{u+221e}"            ; (∞) infinity symbol
 cmpMathSymbols["i"] := "{u+00b5}"      ; (µ) micro sign
 cmpSmallN["o"] := "{u+2116}"           ; (№) numero sign
 cmpCapitalN["o"] := "{u+2116}"         ; (№) numero sign
@@ -987,7 +989,6 @@ cmpPlus["-"] := "{u+00b1}"             ; (±) plus-minus sign
 cmpPercent["%"] := "{u+2030}"          ; (‰) per mille sign
 cmpPercent["3"] := "{u+2030}"          ; (‰) per mille sign
 cmpPercent["4"] := "{u+2031}"          ; (‱) per ten thousand sign
-cmpEight["8"] := "{u+221e}"            ; (∞) infinity symbol
 cmpExclam["="] := "{u+2260}"           ; (≠) not equal to
 cmpDoubleAcute["/"] := "{u+2260}"      ; (≠) not equal to
 cmpStroke["="] := "{u+2260}"           ; (≠) not equal to
