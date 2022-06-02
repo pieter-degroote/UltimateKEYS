@@ -1,4 +1,4 @@
-; UltimateKEYS.ahk - 2022-05-29
+; UltimateKEYS.ahk - 2022-06-02
 
 ; Website :  www.ultimatekeys.info (pieter-degroote.github.io/UltimateKEYS/)
 
@@ -277,7 +277,7 @@ cmpCedillaOgonek.item["."] := "{u+02db}"  ; (˛) ogonek
 cmpCedillaOgonek.item[" "] := "{u+00b8}"  ; (¸) cedilla
 
 
-; Compose :  Breve/Special (b)
+; Compose :  Breve and Special Letters (b)
 
 cmpBreveSpecial := ComObjCreate("Scripting.Dictionary")
 cmpBreveSpecial.item["a"] := "{u+0103}"  ; (ă) a with breve
@@ -519,7 +519,7 @@ cmpHook.item["u"] := "{u+028a}"  ; (ʊ) latin small letter upsilon
 cmpHook.item["U"] := "{u+01b1}"  ; (Ʊ) latin capital letter upsilon
 
 
-; Compose :  Horn and Special Letters (H)
+; Compose :  Horn and Other Letters (H)
 
 cmpHorn := ComObjCreate("Scripting.Dictionary")
 cmpHorn.item["o"] := "{u+01a1}"  ; (ơ) o with horn
@@ -992,8 +992,7 @@ cmpPercent.item["%"] := "{u+2030}"          ; (‰) per mille sign
 cmpPercent.item["3"] := "{u+2030}"          ; (‰) per mille sign
 cmpPercent.item["4"] := "{u+2031}"          ; (‱) per ten thousand sign
 cmpExclam.item["="] := "{u+2260}"           ; (≠) not equal to
-cmpDoubleAcute.item["/"] := "{u+2260}"      ; (≠) not equal to
-cmpStroke.item["="] := "{u+2260}"           ; (≠) not equal to
+cmpLessThan.item[">"] := "{u+2260}"         ; (≠) not equal to
 cmpLessThan.item["="] := "{u+2264}"         ; (≤) less-than or equal to
 cmpGreaterThan.item["="] := "{u+2265}"      ; (≥) greater-than or equal to
 cmpLessThan.item["+"] := "{u+2a7d}"         ; (⩽) less-than or slanted equal to
@@ -1423,42 +1422,42 @@ cmpCapitalU.item["``"] := "{u+01db}"      ; (Ǜ) U with diaeresis and grave
     Send {u+00db}  ; (Û) U with circumflex
   return
 
->!-::
+>!6::
   if GetKeyState("CapsLock", "T")
     Send {u+00c3}  ; (Ã) A with tilde
   else
     Send {u+00e3}  ; (ã) a with tilde
   return
->!_::
+>!+6::
   if GetKeyState("CapsLock", "T")
     Send {u+00e3}  ; (ã) a with tilde
   else
     Send {u+00c3}  ; (Ã) A with tilde
   return
 
->!=::
+>!7::
   if GetKeyState("CapsLock", "T")
     Send {u+00d5}  ; (Õ) O with tilde
   else
     Send {u+00f5}  ; (õ) o with tilde
   return
->!+=::
+>!+7::
   if GetKeyState("CapsLock", "T")
     Send {u+00f5}  ; (õ) o with tilde
   else
     Send {u+00d5}  ; (Õ) O with tilde
   return
 
->!m::Send {u+00b5}   ; (µ) micro sign
+>!m::Send {u+2030}   ; (‰) per mille sign
 >!+m::Send {u+00b1}  ; (±) plus-minus sign
 
 >!1::Send {u+00a1}   ; (¡) inverted exclamation mark
 >!+1::Send {u+00b9}  ; (¹) superscript 1
 
->!2::Send {u+2013}   ; (–) en dash
+>!2::Send {u+2264}   ; (≤) less-than or equal to
 >!+2::Send {u+00b2}  ; (²) superscript 2
 
->!3::Send {u+2014}   ; (—) em dash
+>!3::Send {u+2265}   ; (≥) greater-than or equal to
 >!+3::Send {u+00b3}  ; (³) superscript 3
 
 >!4::Send {u+00a3}   ; (£) pound sign
@@ -1467,20 +1466,20 @@ cmpCapitalU.item["``"] := "{u+01db}"      ; (Ǜ) U with diaeresis and grave
 >!5::Send {u+20ac}   ; (€) euro sign
 >!+5::Send {u+00a2}  ; (¢) cent sign (dollar)
 
->!6::Send {u+2264}   ; (≤) less-than or equal to
->!+6::Send {u+2260}  ; (≠) not equal to
-
->!7::Send {u+2265}   ; (≥) greater-than or equal to
->!+7::Send {u+2248}  ; (≈) almost equal to
-
 >!8::Send {u+201e}   ; („) double low-9 quotation mark
->!+8::Send {u+201a}  ; (‚) single low-9 quotation mark
+>!+8::Send {u+00a7}  ; (§) section sign
 
 >!9::Send {u+201c}   ; (“) left double quotation mark
 >!+9::Send {u+2018}  ; (‘) left single quotation mark
 
 >!0::Send {u+201d}   ; (”) right double quotation mark
 >!+0::Send {u+2019}  ; (’) right single quotation mark
+
+>!-::Send {u+2013}   ; (–) en dash
+>!_::Send {u+2014}   ; (—) em dash
+
+>!=::Send {u+00d7}   ; (×) multiplication sign
+>!+=::Send {u+00f7}  ; (÷) division sign
 
 >![::Send {u+00ab}   ; («) left-pointing double angle quotation mark
 >!{::Send {u+2039}   ; (‹) left-pointing single angle quotation mark
@@ -1491,11 +1490,11 @@ cmpCapitalU.item["``"] := "{u+01db}"      ; (Ǜ) U with diaeresis and grave
 >!;::Send {u+00b0}   ; (°) degree sign
 >!+;::Send {u+00b7}  ; (·) middle dot
 
->!'::Send {u+00d7}   ; (×) multiplication sign
->!"::Send {u+00f7}   ; (÷) division sign
+>!'::Send {u+2020}   ; (†) dagger
+>!"::Send {u+2021}   ; (‡) double dagger
 
->!\::Send {u+00a7}   ; (§) section sign
->!|::Send {u+2030}   ; (‰) per mille sign
+>!\::Send {u+2002}   ;     en space
+>!|::Send {u+2003}   ;     em space
 
 >!/::Send {u+00bf}   ; (¿) inverted question mark
 >!?::Send {u+2026}   ; (…) horizontal ellipsis
