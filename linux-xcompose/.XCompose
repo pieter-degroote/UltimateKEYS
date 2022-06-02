@@ -1,4 +1,4 @@
-# UltimateKEYS - 2022-05-29  (~/.XCompose)
+# UltimateKEYS - 2022-06-02  (~/.XCompose)
 
 # Website :  www.ultimatekeys.info (pieter-degroote.github.io/UltimateKEYS/)
 
@@ -258,7 +258,7 @@
 <Multi_key> <comma> <space>  : "¸"  U00B8  # cedilla
 
 
-# Breve/Special
+# Breve and Special Letters
 
 <Multi_key> <b> <a> : "ă"  U0103  # a with breve
 <Multi_key> <b> <A> : "Ă"  U0102  # A with breve
@@ -491,7 +491,7 @@
 <Multi_key> <h> <U> : "Ʊ"  U01B1  # latin capital letter upsilon
 
 
-# Horn and Special Letters
+# Horn and Other Letters
 
 <Multi_key> <H> <o> : "ơ"  U01A1  # o with horn
 <Multi_key> <H> <O> : "Ơ"  U01A0  # O with horn
@@ -818,8 +818,7 @@
 <Multi_key> <percent> <3>         : "‰"  U2030  # per mille sign
 <Multi_key> <percent> <4>         : "‱"  U2031  # per ten thousand sign
 <Multi_key> <exclam> <equal>      : "≠"  U2260  # not equal to
-<Multi_key> <equal> <slash>       : "≠"  U2260  # not equal to
-<Multi_key> <slash> <equal>       : "≠"  U2260  # not equal to
+<Multi_key> <less> <greater>      : "≠"  U2260  # not equal to
 <Multi_key> <less> <equal>        : "≤"  U2264  # less-than or equal to
 <Multi_key> <greater> <equal>     : "≥"  U2265  # greater-than or equal to
 <Multi_key> <less> <plus>         : "⩽"  U2A7D  # less-than or slanted equal to
