@@ -1,4 +1,4 @@
-; UltimateKEYS (for AutoHotkey v2.0).ahk - 2022-06-02
+; UltimateKEYS (for AutoHotkey v2.0).ahk - 2022-06-04
 
 ; Website :  www.ultimatekeys.info (pieter-degroote.github.io/UltimateKEYS/)
 
@@ -468,7 +468,7 @@ cmpTilde["Y"] := "{u+1ef8}"  ; (Ỹ) Y with tilde
 cmpTilde[" "] := "{u+02dc}"  ; (˜) small tilde
 
 
-; Compose :  Hook and Latin Greek Letters (h)
+; Compose :  Hook and Horn (h)
 
 global cmpHook := Map()
 cmpHook["b"] := "{u+0253}"  ; (ɓ) b with hook
@@ -483,12 +483,15 @@ cmpHook["g"] := "{u+0260}"  ; (ɠ) g with hook
 cmpHook["G"] := "{u+0193}"  ; (Ɠ) G with hook
 cmpHook["h"] := "{u+0266}"  ; (ɦ) h with hook
 cmpHook["H"] := "{u+a7aa}"  ; (Ɦ) H with hook
+cmpHook["j"] := "{u+0267}"  ; (ɧ) small letter heng with hook
 cmpHook["k"] := "{u+0199}"  ; (ƙ) k with hook
 cmpHook["K"] := "{u+0198}"  ; (Ƙ) K with hook
 cmpHook["m"] := "{u+0271}"  ; (ɱ) m with hook
 cmpHook["M"] := "{u+2c6e}"  ; (Ɱ) M with hook
 cmpHook["n"] := "{u+0272}"  ; (ɲ) n with left hook
 cmpHook["N"] := "{u+019d}"  ; (Ɲ) N with left hook
+cmpHook["o"] := "{u+01a1}"  ; (ơ) o with horn
+cmpHook["O"] := "{u+01a0}"  ; (Ơ) O with horn
 cmpHook["p"] := "{u+01a5}"  ; (ƥ) p with hook
 cmpHook["P"] := "{u+01a4}"  ; (Ƥ) P with hook
 cmpHook["q"] := "{u+024b}"  ; (ɋ) q with hook tail
@@ -497,6 +500,8 @@ cmpHook["r"] := "{u+027d}"  ; (ɽ) r with tail
 cmpHook["R"] := "{u+2c64}"  ; (Ɽ) R with tail
 cmpHook["t"] := "{u+01ad}"  ; (ƭ) t with hook
 cmpHook["T"] := "{u+01ac}"  ; (Ƭ) T with hook
+cmpHook["u"] := "{u+01b0}"  ; (ư) u with horn
+cmpHook["U"] := "{u+01af}"  ; (Ư) U with horn
 cmpHook["v"] := "{u+028b}"  ; (ʋ) v with hook
 cmpHook["V"] := "{u+01b2}"  ; (Ʋ) V with hook
 cmpHook["w"] := "{u+2c73}"  ; (ⱳ) w with hook
@@ -505,36 +510,31 @@ cmpHook["y"] := "{u+01b4}"  ; (ƴ) y with hook
 cmpHook["Y"] := "{u+01b3}"  ; (Ƴ) Y with hook
 cmpHook["z"] := "{u+0225}"  ; (ȥ) z with hook
 cmpHook["Z"] := "{u+0224}"  ; (Ȥ) Z with hook
-cmpHook["a"] := "{u+0251}"  ; (ɑ) latin small letter alpha
-cmpHook["A"] := "{u+2c6d}"  ; (Ɑ) latin capital letter alpha
-cmpHook["e"] := "{u+025b}"  ; (ɛ) small open e (latin small epsilon)
-cmpHook["E"] := "{u+0190}"  ; (Ɛ) capital open E (latin capital epsilon)
-cmpHook["i"] := "{u+0269}"  ; (ɩ) latin small letter iota
-cmpHook["I"] := "{u+0196}"  ; (Ɩ) latin capital letter iota
-cmpHook["j"] := "{u+0263}"  ; (ɣ) latin small gamma
-cmpHook["J"] := "{u+0194}"  ; (Ɣ) latin capital gamma
-cmpHook["o"] := "{u+0254}"  ; (ɔ) small open o
-cmpHook["O"] := "{u+0186}"  ; (Ɔ) capital open O
-cmpHook["s"] := "{u+0283}"  ; (ʃ) small letter esh
-cmpHook["S"] := "{u+01a9}"  ; (Ʃ) capital letter esh
-cmpHook["u"] := "{u+028a}"  ; (ʊ) latin small letter upsilon
-cmpHook["U"] := "{u+01b1}"  ; (Ʊ) latin capital letter upsilon
 
 
-; Compose :  Horn and Other Letters (H)
+; Compose :  Latin Greek Letters and Variations (l)
 
-global cmpHorn := Map()
-cmpHorn["o"] := "{u+01a1}"  ; (ơ) o with horn
-cmpHorn["O"] := "{u+01a0}"  ; (Ơ) O with horn
-cmpHorn["u"] := "{u+01b0}"  ; (ư) u with horn
-cmpHorn["U"] := "{u+01af}"  ; (Ư) U with horn
-cmpHorn["g"] := "{u+ab36}"  ; (ꬶ) cross-tailed g
-cmpHorn["h"] := "{u+0267}"  ; (ɧ) small letter heng with hook
-cmpHorn["j"] := "{u+a727}"  ; (ꜧ) small letter heng
-cmpHorn["J"] := "{u+a726}"  ; (Ꜧ) capital letter heng
-cmpHorn["k"] := "{u+0138}"  ; (ĸ) small letter kra
-cmpHorn["s"] := "{u+017f}"  ; (ſ) small long s
-cmpHorn["S"] := "{u+1e9b}"  ; (ẛ) small long s with dot above
+global cmpLatinGreek := Map()
+cmpLatinGreek["a"] := "{u+0251}"  ; (ɑ) latin small letter alpha
+cmpLatinGreek["A"] := "{u+2c6d}"  ; (Ɑ) latin capital letter alpha
+cmpLatinGreek["c"] := "{u+ab36}"  ; (ꬶ) cross-tailed g
+cmpLatinGreek["e"] := "{u+025b}"  ; (ɛ) small open e (latin small epsilon)
+cmpLatinGreek["E"] := "{u+0190}"  ; (Ɛ) capital open E (latin capital epsilon)
+cmpLatinGreek["f"] := "{u+017f}"  ; (ſ) small long s
+cmpLatinGreek["F"] := "{u+1e9b}"  ; (ẛ) small long s with dot above
+cmpLatinGreek["g"] := "{u+0263}"  ; (ɣ) latin small gamma
+cmpLatinGreek["G"] := "{u+0194}"  ; (Ɣ) latin capital gamma
+cmpLatinGreek["h"] := "{u+a727}"  ; (ꜧ) small letter heng
+cmpLatinGreek["H"] := "{u+a726}"  ; (Ꜧ) capital letter heng
+cmpLatinGreek["i"] := "{u+0269}"  ; (ɩ) latin small letter iota
+cmpLatinGreek["I"] := "{u+0196}"  ; (Ɩ) latin capital letter iota
+cmpLatinGreek["k"] := "{u+0138}"  ; (ĸ) small letter kra
+cmpLatinGreek["o"] := "{u+0254}"  ; (ɔ) small open o
+cmpLatinGreek["O"] := "{u+0186}"  ; (Ɔ) capital open O
+cmpLatinGreek["s"] := "{u+0283}"  ; (ʃ) small letter esh
+cmpLatinGreek["S"] := "{u+01a9}"  ; (Ʃ) capital letter esh
+cmpLatinGreek["u"] := "{u+028a}"  ; (ʊ) latin small letter upsilon
+cmpLatinGreek["U"] := "{u+01b1}"  ; (Ʊ) latin capital letter upsilon
 
 
 ; Compose :  Turned Letters (t)
@@ -1450,7 +1450,7 @@ cmpCapitalU["``"] := "{u+01db}"      ; (Ǜ) U with diaeresis and grave
     Send "{u+00d5}"  ; (Õ) O with tilde
 }
 
->!m::Send "{u+2030}"   ; (‰) per mille sign
+>!m::Send "{u+00b5}"   ; (µ) micro sign
 >!+m::Send "{u+00b1}"  ; (±) plus-minus sign
 
 >!1::Send "{u+00a1}"   ; (¡) inverted exclamation mark
@@ -1585,9 +1585,9 @@ cmpCapitalU["``"] := "{u+01db}"      ; (Ǜ) U with diaeresis and grave
     if cmpHook.Has(ihB.Input)
       Send cmpHook[ihB.Input]
   }
-  else if (ihA.Input == "H") {
-    if cmpHorn.Has(ihB.Input)
-      Send cmpHorn[ihB.Input]
+  else if (ihA.Input == "l") {
+    if cmpLatinGreek.Has(ihB.Input)
+      Send cmpLatinGreek[ihB.Input]
   }
   else if (ihA.Input == "t") {
     if cmpTurned.Has(ihB.Input)
