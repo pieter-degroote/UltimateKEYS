@@ -68,7 +68,7 @@ LAYOUT
 2f	V		5	v	V	-1	00ec	00cc		// v, V, ì, Ì    letter v, letter V, i with grave, I with grave
 30	B		5	b	B	-1	00ed	00cd		// b, B, í, Í    letter b, letter B, i with acute, I with acute
 31	N		5	n	N	-1	00f1	00d1		// n, N, ñ, Ñ    letter n, letter N, n with tilde, N with tilde
-32	M		1	m	M	-1	2030	00b1		// m, M, ‰, ±    letter m, letter M, per mille sign, plus-minus sign
+32	M		1	m	M	-1	00b5	00b1		// m, M, µ, ±    letter m, letter M, micro sign, plus-minus sign
 33	OEM_COMMA	4	002c	003c	-1	00f2	00d2		// ,, <, ò, Ò    comma, less-than sign, o with grave, O with grave
 34	OEM_PERIOD	4	002e	003e	-1	00f3	00d3		// ., >, ó, Ó    full stop (period), greater-than sign, o with acute, O with acute
 35	OEM_2		0	002f	003f	-1	00bf	2026		// /, ?, ¿, …    solidus (slash), question mark, inverted question mark, horizontal ellipsis
