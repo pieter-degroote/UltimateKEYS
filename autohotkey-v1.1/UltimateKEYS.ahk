@@ -1,4 +1,4 @@
-; UltimateKEYS.ahk - 2022-06-04
+; UltimateKEYS.ahk - 2022-08-04
 
 ; Website :  www.ultimatekeys.info (pieter-degroote.github.io/UltimateKEYS/)
 
@@ -210,7 +210,7 @@ cmpMacronStrokeAdd.item["y"] := "{u+024f}"  ; (ɏ) y with stroke
 cmpMacronStrokeAdd.item["Y"] := "{u+024e}"  ; (Ɏ) Y with stroke
 
 
-; Compose :  Stroke (/)
+; Compose :  Oblique/Diagonal Stroke (/)
 
 cmpStroke := ComObjCreate("Scripting.Dictionary")
 cmpStroke.item["a"] := "{u+2c65}"  ; (ⱥ) a with stroke
@@ -515,20 +515,20 @@ cmpHook.item["Z"] := "{u+0224}"  ; (Ȥ) Z with hook
 cmpLatinGreek := ComObjCreate("Scripting.Dictionary")
 cmpLatinGreek.item["a"] := "{u+0251}"  ; (ɑ) latin small letter alpha
 cmpLatinGreek.item["A"] := "{u+2c6d}"  ; (Ɑ) latin capital letter alpha
-cmpLatinGreek.item["c"] := "{u+ab36}"  ; (ꬶ) cross-tailed g
-cmpLatinGreek.item["e"] := "{u+025b}"  ; (ɛ) small open e (latin small epsilon)
-cmpLatinGreek.item["E"] := "{u+0190}"  ; (Ɛ) capital open E (latin capital epsilon)
-cmpLatinGreek.item["f"] := "{u+017f}"  ; (ſ) small long s
-cmpLatinGreek.item["F"] := "{u+1e9b}"  ; (ẛ) small long s with dot above
-cmpLatinGreek.item["g"] := "{u+0263}"  ; (ɣ) latin small gamma
-cmpLatinGreek.item["G"] := "{u+0194}"  ; (Ɣ) latin capital gamma
+cmpLatinGreek.item["c"] := "{u+ab36}"  ; (ꬶ) small letter script g with crossed-tail
+cmpLatinGreek.item["e"] := "{u+025b}"  ; (ɛ) small letter open e (latin small epsilon)
+cmpLatinGreek.item["E"] := "{u+0190}"  ; (Ɛ) capital letter open E (latin capital epsilon)
+cmpLatinGreek.item["f"] := "{u+017f}"  ; (ſ) small letter long s
+cmpLatinGreek.item["F"] := "{u+1e9b}"  ; (ẛ) long s with dot above
+cmpLatinGreek.item["g"] := "{u+0263}"  ; (ɣ) latin small letter gamma
+cmpLatinGreek.item["G"] := "{u+0194}"  ; (Ɣ) latin capital letter gamma
 cmpLatinGreek.item["h"] := "{u+a727}"  ; (ꜧ) small letter heng
 cmpLatinGreek.item["H"] := "{u+a726}"  ; (Ꜧ) capital letter heng
 cmpLatinGreek.item["i"] := "{u+0269}"  ; (ɩ) latin small letter iota
 cmpLatinGreek.item["I"] := "{u+0196}"  ; (Ɩ) latin capital letter iota
 cmpLatinGreek.item["k"] := "{u+0138}"  ; (ĸ) small letter kra
-cmpLatinGreek.item["o"] := "{u+0254}"  ; (ɔ) small open o
-cmpLatinGreek.item["O"] := "{u+0186}"  ; (Ɔ) capital open O
+cmpLatinGreek.item["o"] := "{u+0254}"  ; (ɔ) small letter open o
+cmpLatinGreek.item["O"] := "{u+0186}"  ; (Ɔ) capital letter open O
 cmpLatinGreek.item["s"] := "{u+0283}"  ; (ʃ) small letter esh
 cmpLatinGreek.item["S"] := "{u+01a9}"  ; (Ʃ) capital letter esh
 cmpLatinGreek.item["u"] := "{u+028a}"  ; (ʊ) latin small letter upsilon
@@ -538,14 +538,15 @@ cmpLatinGreek.item["U"] := "{u+01b1}"  ; (Ʊ) latin capital letter upsilon
 ; Compose :  Turned Letters (t)
 
 cmpTurned := ComObjCreate("Scripting.Dictionary")
-cmpTurned.item["a"] := "{u+0250}"  ; (ɐ) small turned a
-cmpTurned.item["A"] := "{u+2c6f}"  ; (Ɐ) capital turned A
-cmpTurned.item["e"] := "{u+01dd}"  ; (ǝ) small turned e
-cmpTurned.item["E"] := "{u+018e}"  ; (Ǝ) capital reversed E
+cmpTurned.item["a"] := "{u+0250}"  ; (ɐ) latin small letter turned a
+cmpTurned.item["A"] := "{u+2c6f}"  ; (Ɐ) latin capital letter turned A
+cmpTurned.item["e"] := "{u+01dd}"  ; (ǝ) latin small letter turned e
+cmpTurned.item["E"] := "{u+018e}"  ; (Ǝ) latin capital letter reversed E
 cmpTurned.item["q"] := "{u+0252}"  ; (ɒ) latin small letter turned alpha
 cmpTurned.item["Q"] := "{u+2c70}"  ; (Ɒ) latin capital letter turned alpha
 cmpTurned.item["v"] := "{u+028c}"  ; (ʌ) latin small letter turned v
 cmpTurned.item["V"] := "{u+0245}"  ; (Ʌ) latin capital letter turned V
+cmpTurned.item["y"] := "{u+028e}"  ; (ʎ) latin small letter turned y
 
 
 ; Compose :  Currency Symbols ($)
@@ -764,19 +765,15 @@ cmpSymbols.item["a"] := "{u+214d}"  ; (⅍) aktieselskab
 cmpSymbols.item["c"] := "{u+2105}"  ; (℅) care of
 cmpSymbols.item["d"] := "{u+22c4}"  ; (⋄) diamond operator
 cmpSymbols.item["e"] := "{u+212e}"  ; (℮) estimated symbol
-cmpSymbols.item["E"] := "{u+2709}"  ; (✉) envelope
 cmpSymbols.item["f"] := "{u+2640}"  ; (♀) Venus symbol (female)
-cmpSymbols.item["g"] := "{u+2740}"  ; (❀) white florette
-cmpSymbols.item["G"] := "{u+273f}"  ; (✿) black florette
-cmpSymbols.item["h"] := "{u+2766}"  ; (❦) floral heart
-cmpSymbols.item["H"] := "{u+2767}"  ; (❧) rotated floral heart bullet
 cmpSymbols.item["i"] := "{u+2300}"  ; (⌀) diameter sign
 cmpSymbols.item["l"] := "{u+2113}"  ; (ℓ) script small l
 cmpSymbols.item["L"] := "{u+2112}"  ; (ℒ) Laplace transform
 cmpSymbols.item["m"] := "{u+2642}"  ; (♂) Mars symbol (male)
 cmpSymbols.item["M"] := "{u+2120}"  ; (℠) service mark
+cmpSymbols.item["n"] := "{u+2709}"  ; (✉) envelope
 cmpSymbols.item["q"] := "{u+2126}"  ; (Ω) ohm sign (backwards compatibility)
-cmpSymbols.item["r"] := "{u+2619}"  ; (☙) reversed rotated floral heart bullet
+cmpSymbols.item["r"] := "{u+211e}"  ; (℞) prescription take (Recipere)
 cmpSymbols.item["R"] := "{u+211e}"  ; (℞) prescription take (Recipere)
 cmpSymbols.item["t"] := "{u+2706}"  ; (✆) telephone location sign
 cmpSymbols.item["v"] := "{u+2713}"  ; (✓) check mark
@@ -801,6 +798,18 @@ cmpSymbols.item["\"] := "{u+205e}"  ; (⁞) vertical four dots
 cmpSymbols.item["|"] := "{u+00a6}"  ; (¦) broken bar
 cmpSymbols.item["."] := "{u+2e18}"  ; (⸘) inverted interrobang
 cmpSymbols.item["/"] := "{u+2e2e}"  ; (⸮) reversed question mark
+
+
+; Compose :  Florette and Floral Heart Symbols (f)
+
+cmpFlorette := ComObjCreate("Scripting.Dictionary")
+cmpFlorette.item["r"] := "{u+2619}"  ; (☙) reversed rotated floral heart bullet
+cmpFlorette.item["6"] := "{u+273e}"  ; (✾) six petalled black and white florette
+cmpFlorette.item["b"] := "{u+273f}"  ; (✿) black florette
+cmpFlorette.item["w"] := "{u+2740}"  ; (❀) white florette
+cmpFlorette.item["8"] := "{u+2741}"  ; (❁) eight petalled outlined black florette
+cmpFlorette.item["f"] := "{u+2766}"  ; (❦) floral heart
+cmpFlorette.item["h"] := "{u+2767}"  ; (❧) rotated floral heart bullet
 
 
 ; Compose :  Playing Card Suit Symbols (S)
@@ -1566,6 +1575,8 @@ cmpCapitalU.item["``"] := "{u+01db}"      ; (Ǜ) U with diaeresis and grave
     Send % cmpPlus.item[keyB]
   else if (keyA == "s")
     Send % cmpSymbols.item[keyB]
+  else if (keyA == "f")
+    Send % cmpFlorette.item[keyB]
   else if (keyA == "S")
     Send % cmpPlayingCardSuit.item[keyB]
   else if (keyA == "1")
