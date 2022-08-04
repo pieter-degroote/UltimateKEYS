@@ -17,7 +17,7 @@ Otherwise, it might be impossible to type any Unicode character higher than "Bas
 
 **=&gt; Win/Linux&nbsp;: &nbsp;ALWAYS make your system passwords VISIBLE during modification&nbsp;!**
 
-## Website&nbsp;: &nbsp;[ultimatekeys.info](https://pieter-degroote.github.io/UltimateKEYS/)
+## Website&nbsp;: &nbsp;[www.ultimatekeys.info](https://pieter-degroote.github.io/UltimateKEYS/)
 
 **See also&nbsp;: &nbsp;[https://pieter-degroote.github.io/UltimateKEYS/](https://pieter-degroote.github.io/UltimateKEYS/)**
 
