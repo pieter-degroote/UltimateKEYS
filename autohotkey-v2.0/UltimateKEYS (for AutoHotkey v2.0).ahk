@@ -1,4 +1,4 @@
-; UltimateKEYS (for AutoHotkey v2.0).ahk - 2022-06-04
+; UltimateKEYS (for AutoHotkey v2.0).ahk - 2022-08-04
 
 ; Website :  www.ultimatekeys.info (pieter-degroote.github.io/UltimateKEYS/)
 
@@ -20,7 +20,7 @@ KeyHistory 0      ; disables the key history (for privacy and security)
 
 SendMode "Input"  ; optimizes for faster and more reliable input
 
-global dkEndKeys := "{bs}{del}{esc}{home}{end}"  ; ends dead key input on specific keys
+global gEndKeys := "{bs}{del}{esc}{home}{end}"  ; ends dead key input on specific keys
 
 
 ; Compose :  Circumflex Accent (c)
@@ -212,7 +212,7 @@ cmpMacronStrokeAdd["y"] := "{u+024f}"  ; (ɏ) y with stroke
 cmpMacronStrokeAdd["Y"] := "{u+024e}"  ; (Ɏ) Y with stroke
 
 
-; Compose :  Stroke (/)
+; Compose :  Oblique/Diagonal Stroke (/)
 
 global cmpStroke := Map()
 cmpStroke["a"] := "{u+2c65}"  ; (ⱥ) a with stroke
@@ -517,20 +517,20 @@ cmpHook["Z"] := "{u+0224}"  ; (Ȥ) Z with hook
 global cmpLatinGreek := Map()
 cmpLatinGreek["a"] := "{u+0251}"  ; (ɑ) latin small letter alpha
 cmpLatinGreek["A"] := "{u+2c6d}"  ; (Ɑ) latin capital letter alpha
-cmpLatinGreek["c"] := "{u+ab36}"  ; (ꬶ) cross-tailed g
-cmpLatinGreek["e"] := "{u+025b}"  ; (ɛ) small open e (latin small epsilon)
-cmpLatinGreek["E"] := "{u+0190}"  ; (Ɛ) capital open E (latin capital epsilon)
-cmpLatinGreek["f"] := "{u+017f}"  ; (ſ) small long s
-cmpLatinGreek["F"] := "{u+1e9b}"  ; (ẛ) small long s with dot above
-cmpLatinGreek["g"] := "{u+0263}"  ; (ɣ) latin small gamma
-cmpLatinGreek["G"] := "{u+0194}"  ; (Ɣ) latin capital gamma
+cmpLatinGreek["c"] := "{u+ab36}"  ; (ꬶ) small letter script g with crossed-tail
+cmpLatinGreek["e"] := "{u+025b}"  ; (ɛ) small letter open e (latin small epsilon)
+cmpLatinGreek["E"] := "{u+0190}"  ; (Ɛ) capital letter open E (latin capital epsilon)
+cmpLatinGreek["f"] := "{u+017f}"  ; (ſ) small letter long s
+cmpLatinGreek["F"] := "{u+1e9b}"  ; (ẛ) long s with dot above
+cmpLatinGreek["g"] := "{u+0263}"  ; (ɣ) latin small letter gamma
+cmpLatinGreek["G"] := "{u+0194}"  ; (Ɣ) latin capital letter gamma
 cmpLatinGreek["h"] := "{u+a727}"  ; (ꜧ) small letter heng
 cmpLatinGreek["H"] := "{u+a726}"  ; (Ꜧ) capital letter heng
 cmpLatinGreek["i"] := "{u+0269}"  ; (ɩ) latin small letter iota
 cmpLatinGreek["I"] := "{u+0196}"  ; (Ɩ) latin capital letter iota
 cmpLatinGreek["k"] := "{u+0138}"  ; (ĸ) small letter kra
-cmpLatinGreek["o"] := "{u+0254}"  ; (ɔ) small open o
-cmpLatinGreek["O"] := "{u+0186}"  ; (Ɔ) capital open O
+cmpLatinGreek["o"] := "{u+0254}"  ; (ɔ) small letter open o
+cmpLatinGreek["O"] := "{u+0186}"  ; (Ɔ) capital letter open O
 cmpLatinGreek["s"] := "{u+0283}"  ; (ʃ) small letter esh
 cmpLatinGreek["S"] := "{u+01a9}"  ; (Ʃ) capital letter esh
 cmpLatinGreek["u"] := "{u+028a}"  ; (ʊ) latin small letter upsilon
@@ -540,14 +540,15 @@ cmpLatinGreek["U"] := "{u+01b1}"  ; (Ʊ) latin capital letter upsilon
 ; Compose :  Turned Letters (t)
 
 global cmpTurned := Map()
-cmpTurned["a"] := "{u+0250}"  ; (ɐ) small turned a
-cmpTurned["A"] := "{u+2c6f}"  ; (Ɐ) capital turned A
-cmpTurned["e"] := "{u+01dd}"  ; (ǝ) small turned e
-cmpTurned["E"] := "{u+018e}"  ; (Ǝ) capital reversed E
+cmpTurned["a"] := "{u+0250}"  ; (ɐ) latin small letter turned a
+cmpTurned["A"] := "{u+2c6f}"  ; (Ɐ) latin capital letter turned A
+cmpTurned["e"] := "{u+01dd}"  ; (ǝ) latin small letter turned e
+cmpTurned["E"] := "{u+018e}"  ; (Ǝ) latin capital letter reversed E
 cmpTurned["q"] := "{u+0252}"  ; (ɒ) latin small letter turned alpha
 cmpTurned["Q"] := "{u+2c70}"  ; (Ɒ) latin capital letter turned alpha
 cmpTurned["v"] := "{u+028c}"  ; (ʌ) latin small letter turned v
 cmpTurned["V"] := "{u+0245}"  ; (Ʌ) latin capital letter turned V
+cmpTurned["y"] := "{u+028e}"  ; (ʎ) latin small letter turned y
 
 
 ; Compose :  Currency Symbols ($)
@@ -766,19 +767,15 @@ cmpSymbols["a"] := "{u+214d}"  ; (⅍) aktieselskab
 cmpSymbols["c"] := "{u+2105}"  ; (℅) care of
 cmpSymbols["d"] := "{u+22c4}"  ; (⋄) diamond operator
 cmpSymbols["e"] := "{u+212e}"  ; (℮) estimated symbol
-cmpSymbols["E"] := "{u+2709}"  ; (✉) envelope
 cmpSymbols["f"] := "{u+2640}"  ; (♀) Venus symbol (female)
-cmpSymbols["g"] := "{u+2740}"  ; (❀) white florette
-cmpSymbols["G"] := "{u+273f}"  ; (✿) black florette
-cmpSymbols["h"] := "{u+2766}"  ; (❦) floral heart
-cmpSymbols["H"] := "{u+2767}"  ; (❧) rotated floral heart bullet
 cmpSymbols["i"] := "{u+2300}"  ; (⌀) diameter sign
 cmpSymbols["l"] := "{u+2113}"  ; (ℓ) script small l
 cmpSymbols["L"] := "{u+2112}"  ; (ℒ) Laplace transform
 cmpSymbols["m"] := "{u+2642}"  ; (♂) Mars symbol (male)
 cmpSymbols["M"] := "{u+2120}"  ; (℠) service mark
+cmpSymbols["n"] := "{u+2709}"  ; (✉) envelope
 cmpSymbols["q"] := "{u+2126}"  ; (Ω) ohm sign (backwards compatibility)
-cmpSymbols["r"] := "{u+2619}"  ; (☙) reversed rotated floral heart bullet
+cmpSymbols["r"] := "{u+211e}"  ; (℞) prescription take (Recipere)
 cmpSymbols["R"] := "{u+211e}"  ; (℞) prescription take (Recipere)
 cmpSymbols["t"] := "{u+2706}"  ; (✆) telephone location sign
 cmpSymbols["v"] := "{u+2713}"  ; (✓) check mark
@@ -803,6 +800,18 @@ cmpSymbols["\"] := "{u+205e}"  ; (⁞) vertical four dots
 cmpSymbols["|"] := "{u+00a6}"  ; (¦) broken bar
 cmpSymbols["."] := "{u+2e18}"  ; (⸘) inverted interrobang
 cmpSymbols["/"] := "{u+2e2e}"  ; (⸮) reversed question mark
+
+
+; Compose :  Florette and Floral Heart Symbols (f)
+
+global cmpFlorette := Map()
+cmpFlorette["r"] := "{u+2619}"  ; (☙) reversed rotated floral heart bullet
+cmpFlorette["6"] := "{u+273e}"  ; (✾) six petalled black and white florette
+cmpFlorette["b"] := "{u+273f}"  ; (✿) black florette
+cmpFlorette["w"] := "{u+2740}"  ; (❀) white florette
+cmpFlorette["8"] := "{u+2741}"  ; (❁) eight petalled outlined black florette
+cmpFlorette["f"] := "{u+2766}"  ; (❦) floral heart
+cmpFlorette["h"] := "{u+2767}"  ; (❧) rotated floral heart bullet
 
 
 ; Compose :  Playing Card Suit Symbols (S)
@@ -1509,11 +1518,11 @@ cmpCapitalU["``"] := "{u+01db}"      ; (Ǜ) U with diaeresis and grave
 
 >!`::
 >!~:: {
-  ihA := InputHook("L1", dkEndKeys)
+  ihA := InputHook("L1", gEndKeys)
   ihA.Start()
   ihA.Wait()
 
-  ihB := InputHook("L1", dkEndKeys)
+  ihB := InputHook("L1", gEndKeys)
   ihB.Start()
   ihB.Wait()
 
@@ -1628,6 +1637,10 @@ cmpCapitalU["``"] := "{u+01db}"      ; (Ǜ) U with diaeresis and grave
   else if (ihA.Input == "s") {
     if cmpSymbols.Has(ihB.Input)
       Send cmpSymbols[ihB.Input]
+  }
+  else if (ihA.Input == "f") {
+    if cmpFlorette.Has(ihB.Input)
+      Send cmpFlorette[ihB.Input]
   }
   else if (ihA.Input == "S") {
     if cmpPlayingCardSuit.Has(ihB.Input)
