@@ -1,4 +1,4 @@
-# UltimateKEYS - 2022-08-04  (~/.XCompose)
+# UltimateKEYS - 2022-08-25  (~/.XCompose)
 
 # Website :  www.ultimatekeys.info (pieter-degroote.github.io/UltimateKEYS/)
 
@@ -788,11 +788,6 @@
 <Multi_key> <s> <o> : "§"  U00A7  # section sign
 <Multi_key> <S> <o> : "§"  U00A7  # section sign
 <Multi_key> <t> <m> : "™"  U2122  # trademark symbol
-<Multi_key> <semicolon> <b>  : "•"  U2022  # bullet
-<Multi_key> <semicolon> <semicolon> : "•"  U2022  # bullet
-<Multi_key> <semicolon> <h>  : "⁃"  U2043  # hyphen bullet
-<Multi_key> <semicolon> <t>  : "‣"  U2023  # triangular bullet
-<Multi_key> <semicolon> <w>  : "◦"  U25E6  # white bullet
 <Multi_key> <apostrophe> <1> : "′"  U2032  # prime
 <Multi_key> <apostrophe> <2> : "″"  U2033  # double prime
 <Multi_key> <apostrophe> <3> : "‴"  U2034  # triple prime
@@ -829,6 +824,24 @@
 <Multi_key> <bracketleft> <v>            : "☑"  U2611  # ballot box with check
 <Multi_key> <bracketleft> <y>            : "☑"  U2611  # ballot box with check
 <Multi_key> <bracketleft> <x>            : "☒"  U2612  # ballot box with x
+
+
+# Bullets and Arrowheads
+
+<Multi_key> <semicolon> <a>          : "➤"  U27A4  # black rightwards arrowhead
+<Multi_key> <semicolon> <b>          : "•"  U2022  # bullet
+<Multi_key> <semicolon> <semicolon>  : "•"  U2022  # bullet
+<Multi_key> <semicolon> <d>          : "➥"  U27A5  # heavy black curved downwards and rightwards arrow
+<Multi_key> <semicolon> <h>          : "⁃"  U2043  # hyphen bullet
+<Multi_key> <semicolon> <minus>      : "⁃"  U2043  # hyphen bullet
+<Multi_key> <semicolon> <p>          : "➨"  U27A8  # heavy concave-pointed black rightwards arrow
+<Multi_key> <semicolon> <q>          : "➧"  U27A7  # squat black rightwards arrow
+<Multi_key> <semicolon> <r>          : "➡"  U27A1  # black rightwards arrow
+<Multi_key> <semicolon> <t>          : "‣"  U2023  # triangular bullet
+<Multi_key> <semicolon> <u>          : "➦"  U27A6  # heavy black curved upwards and rightwards arrow
+<Multi_key> <semicolon> <w>          : "◦"  U25E6  # white bullet
+<Multi_key> <semicolon> <3>          : "➢"  U27A2  # 3d top-lighted rightwards arrowhead
+<Multi_key> <semicolon> <numbersign> : "➣"  U27A3  # 3d bottom-lighted rightwards arrowhead
 
 
 # Quotation Marks
