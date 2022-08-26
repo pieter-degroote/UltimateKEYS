@@ -1,4 +1,4 @@
-; UltimateKEYS.ahk - 2022-08-04
+; UltimateKEYS.ahk - 2022-08-25
 
 ; Website :  www.ultimatekeys.info (pieter-degroote.github.io/UltimateKEYS/)
 
@@ -945,7 +945,6 @@ cmpSmallN := ComObjCreate("Scripting.Dictionary")
 cmpCapitalN := ComObjCreate("Scripting.Dictionary")
 cmpCapitalP := ComObjCreate("Scripting.Dictionary")
 cmpSmallR := ComObjCreate("Scripting.Dictionary")
-cmpSemicolon := ComObjCreate("Scripting.Dictionary")
 cmpAsterisk := ComObjCreate("Scripting.Dictionary")
 cmpExclam := ComObjCreate("Scripting.Dictionary")
 cmpQuestion := ComObjCreate("Scripting.Dictionary")
@@ -970,11 +969,6 @@ cmpSmallR.item["4"] := "{u+221c}"           ; (∜) fourth root
 cmpSymbols.item["o"] := "{u+00a7}"          ; (§) section sign
 cmpPlayingCardSuit.item["o"] := "{u+00a7}"  ; (§) section sign
 cmpTurned.item["m"] := "{u+2122}"           ; (™) trademark symbol
-cmpSemicolon.item["b"] := "{u+2022}"        ; (•) bullet
-cmpSemicolon.item[";"] := "{u+2022}"        ; (•) bullet
-cmpSemicolon.item["t"] := "{u+2023}"        ; (‣) triangular bullet
-cmpSemicolon.item["h"] := "{u+2043}"        ; (⁃) hyphen bullet
-cmpSemicolon.item["w"] := "{u+25e6}"        ; (◦) white bullet
 cmpAcuteAccent.item["1"] := "{u+2032}"      ; (′) prime
 cmpAcuteAccent.item["2"] := "{u+2033}"      ; (″) double prime
 cmpAcuteAccent.item["3"] := "{u+2034}"      ; (‴) triple prime
@@ -1011,6 +1005,25 @@ cmpBracketLeft.item["]"] := "{u+2610}"      ; (☐) ballot box
 cmpBracketLeft.item["v"] := "{u+2611}"      ; (☑) ballot box with check
 cmpBracketLeft.item["y"] := "{u+2611}"      ; (☑) ballot box with check
 cmpBracketLeft.item["x"] := "{u+2612}"      ; (☒) ballot box with x
+
+
+; Compose :  Bullets and Arrowheads (;)
+
+cmpSemicolon := ComObjCreate("Scripting.Dictionary")
+cmpSemicolon.item["a"] := "{u+27a4}" ; (➤) black rightwards arrowhead
+cmpSemicolon.item["b"] := "{u+2022}" ; (•) bullet
+cmpSemicolon.item[";"] := "{u+2022}" ; (•) bullet
+cmpSemicolon.item["d"] := "{u+27a5}" ; (➥) heavy black curved downwards and rightwards arrow
+cmpSemicolon.item["h"] := "{u+2043}" ; (⁃) hyphen bullet
+cmpSemicolon.item["-"] := "{u+2043}" ; (⁃) hyphen bullet
+cmpSemicolon.item["p"] := "{u+27a8}" ; (➨) heavy concave-pointed black rightwards arrow
+cmpSemicolon.item["q"] := "{u+27a7}" ; (➧) squat black rightwards arrow
+cmpSemicolon.item["r"] := "{u+27a1}" ; (➡) black rightwards arrow
+cmpSemicolon.item["t"] := "{u+2023}" ; (‣) triangular bullet
+cmpSemicolon.item["u"] := "{u+27a6}" ; (➦) heavy black curved upwards and rightwards arrow
+cmpSemicolon.item["w"] := "{u+25e6}" ; (◦) white bullet
+cmpSemicolon.item["3"] := "{u+27a2}" ; (➢) 3d top-lighted rightwards arrowhead
+cmpSemicolon.item["#"] := "{u+27a3}" ; (➣) 3d bottom-lighted rightwards arrowhead
 
 
 ; Compose :  Quotation Marks
@@ -1617,8 +1630,6 @@ cmpCapitalU.item["``"] := "{u+01db}"      ; (Ǜ) U with diaeresis and grave
     Send % cmpCapitalP.item[keyB]
   else if (keyA == "r")
     Send % cmpSmallR.item[keyB]
-  else if (keyA == ";")
-    Send % cmpSemicolon.item[keyB]
   else if (keyA == "*")
     Send % cmpAsterisk.item[keyB]
   else if (keyA == "!")
@@ -1637,6 +1648,8 @@ cmpCapitalU.item["``"] := "{u+01db}"      ; (Ǜ) U with diaeresis and grave
     Send % cmpGreaterThan.item[keyB]
   else if (keyA == "[")
     Send % cmpBracketLeft.item[keyB]
+  else if (keyA == ";")
+    Send % cmpSemicolon.item[keyB]
   else if (keyA == "]")
     Send % cmpBracketRight.item[keyB]
   else if (keyA == "C")
