@@ -14,7 +14,7 @@ VERSION	1.0
 
 SHIFTSTATE
 
-0	// State 0 :  base
+0	// State 0 :  Base
 1	// State 1 :  Shift
 2	// State 2 :  Ctrl         (required for technical reasons)
 6	// State 6 :  AltGr        (technically: Ctrl+Alt)
