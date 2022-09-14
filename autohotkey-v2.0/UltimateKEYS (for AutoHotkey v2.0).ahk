@@ -1,4 +1,4 @@
-; UltimateKEYS (for AutoHotkey v2.0).ahk - 2022-08-25
+; UltimateKEYS (for AutoHotkey v2.0).ahk - 2022-09-14
 
 ; Website :  www.ultimatekeys.info (pieter-degroote.github.io/UltimateKEYS/)
 
@@ -729,7 +729,14 @@ cmpQuad["3"] := "{u+2001}"  ; em quad
 ; Compose :  Arrows and Pointers
 
 global cmpArrow := Map()
-global cmpPlus := Map()
+cmpArrow["w"] := "{u+25b2}"  ; (▲) black up-pointing triangle
+cmpArrow["a"] := "{u+25c0}"  ; (◀) black left-pointing triangle
+cmpArrow["s"] := "{u+25bc}"  ; (▼) black down-pointing triangle
+cmpArrow["d"] := "{u+25b6}"  ; (▶) black right-pointing triangle
+cmpArrow["i"] := "{u+25b3}"  ; (△) white up-pointing triangle
+cmpArrow["j"] := "{u+25c1}"  ; (◁) white left-pointing triangle
+cmpArrow["k"] := "{u+25bd}"  ; (▽) white down-pointing triangle
+cmpArrow["l"] := "{u+25b7}"  ; (▷) white right-pointing triangle
 cmpArrow["1"] := "{u+2199}"  ; (↙) south west arrow
 cmpArrow["2"] := "{u+2193}"  ; (↓) downwards arrow
 cmpArrow["3"] := "{u+2198}"  ; (↘) south east arrow
@@ -750,14 +757,6 @@ cmpDoubleAcute["7"] := "{u+21d6}"  ; (⇖) north west double arrow
 cmpDoubleAcute["8"] := "{u+21d1}"  ; (⇑) upwards double arrow
 cmpDoubleAcute["9"] := "{u+21d7}"  ; (⇗) north east double arrow
 cmpDoubleAcute["0"] := "{u+21d4}"  ; (⇔) left right double arrow
-cmpPlus["2"] := "{u+25bc}"  ; (▼) black down-pointing triangle
-cmpPlus["@"] := "{u+25bd}"  ; (▽) white down-pointing triangle
-cmpPlus["4"] := "{u+25c0}"  ; (◀) black left-pointing triangle
-cmpPlus["$"] := "{u+25c1}"  ; (◁) white left-pointing triangle
-cmpPlus["6"] := "{u+25b6}"  ; (▶) black right-pointing triangle
-cmpPlus["^"] := "{u+25b7}"  ; (▷) white right-pointing triangle
-cmpPlus["8"] := "{u+25b2}"  ; (▲) black up-pointing triangle
-cmpPlus["*"] := "{u+25b3}"  ; (△) white up-pointing triangle
 
 
 ; Compose :  Miscellaneous Symbols (s)
@@ -951,6 +950,7 @@ global cmpAsterisk := Map()
 global cmpExclam := Map()
 global cmpQuestion := Map()
 global cmpParenLeft := Map()
+global cmpPlus := Map()
 global cmpPercent := Map()
 global cmpLessThan := Map()
 global cmpGreaterThan := Map()
@@ -1643,10 +1643,6 @@ cmpCapitalU["``"] := "{u+01db}"      ; (Ǜ) U with diaeresis and grave
     if cmpArrow.Has(ihB.Input)
       Send cmpArrow[ihB.Input]
   }
-  else if (ihA.Input == "+") {
-    if cmpPlus.Has(ihB.Input)
-      Send cmpPlus[ihB.Input]
-  }
   else if (ihA.Input == "s") {
     if cmpSymbols.Has(ihB.Input)
       Send cmpSymbols[ihB.Input]
@@ -1750,6 +1746,10 @@ cmpCapitalU["``"] := "{u+01db}"      ; (Ǜ) U with diaeresis and grave
   else if (ihA.Input == "(") {
     if cmpParenLeft.Has(ihB.Input)
       Send cmpParenLeft[ihB.Input]
+  }
+  else if (ihA.Input == "+") {
+    if cmpPlus.Has(ihB.Input)
+      Send cmpPlus[ihB.Input]
   }
   else if (ihA.Input == "%") {
     if cmpPercent.Has(ihB.Input)
