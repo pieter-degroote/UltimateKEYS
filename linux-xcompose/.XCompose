@@ -1,4 +1,4 @@
-# UltimateKEYS - 2022-08-25  (~/.XCompose)
+# UltimateKEYS - 2022-09-14  (~/.XCompose)
 
 # Website :  www.ultimatekeys.info (pieter-degroote.github.io/UltimateKEYS/)
 
@@ -724,6 +724,14 @@
 
 # Arrows and Pointers
 
+<Multi_key> <a> <w> : "▲"  U25B2  # black up-pointing triangle
+<Multi_key> <a> <a> : "◀"  U25C0  # black left-pointing triangle
+<Multi_key> <a> <s> : "▼"  U25BC  # black down-pointing triangle
+<Multi_key> <a> <d> : "▶"  U25B6  # black right-pointing triangle
+<Multi_key> <a> <i> : "△"  U25B3  # white up-pointing triangle
+<Multi_key> <a> <j> : "◁"  U25C1  # white left-pointing triangle
+<Multi_key> <a> <k> : "▽"  U25BD  # white down-pointing triangle
+<Multi_key> <a> <l> : "▷"  U25B7  # white right-pointing triangle
 <Multi_key> <a> <1> : "↙"  U2199  # south west arrow
 <Multi_key> <a> <2> : "↓"  U2193  # downwards arrow
 <Multi_key> <a> <3> : "↘"  U2198  # south east arrow
@@ -744,14 +752,6 @@
 <Multi_key> <equal> <8> : "⇑"  U21D1  # upwards double arrow
 <Multi_key> <equal> <9> : "⇗"  U21D7  # north east double arrow
 <Multi_key> <equal> <0> : "⇔"  U21D4  # left right double arrow
-<Multi_key> <plus> <2>           : "▼"  U25BC  # black down-pointing triangle
-<Multi_key> <plus> <at>          : "▽"  U25BD  # white down-pointing triangle
-<Multi_key> <plus> <4>           : "◀"  U25C0  # black left-pointing triangle
-<Multi_key> <plus> <dollar>      : "◁"  U25C1  # white left-pointing triangle
-<Multi_key> <plus> <6>           : "▶"  U25B6  # black right-pointing triangle
-<Multi_key> <plus> <asciicircum> : "▷"  U25B7  # white right-pointing triangle
-<Multi_key> <plus> <8>           : "▲"  U25B2  # black up-pointing triangle
-<Multi_key> <plus> <asterisk>    : "△"  U25B3  # white up-pointing triangle
 
 
 # Special Letters/Characters
