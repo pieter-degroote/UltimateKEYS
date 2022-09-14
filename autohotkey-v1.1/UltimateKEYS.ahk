@@ -1,4 +1,4 @@
-; UltimateKEYS.ahk - 2022-08-25
+; UltimateKEYS.ahk - 2022-09-14
 
 ; Website :  www.ultimatekeys.info (pieter-degroote.github.io/UltimateKEYS/)
 
@@ -727,7 +727,14 @@ cmpQuad.item["3"] := "{u+2001}"  ; em quad
 ; Compose :  Arrows and Pointers
 
 cmpArrow := ComObjCreate("Scripting.Dictionary")
-cmpPlus := ComObjCreate("Scripting.Dictionary")
+cmpArrow.item["w"] := "{u+25b2}"  ; (▲) black up-pointing triangle
+cmpArrow.item["a"] := "{u+25c0}"  ; (◀) black left-pointing triangle
+cmpArrow.item["s"] := "{u+25bc}"  ; (▼) black down-pointing triangle
+cmpArrow.item["d"] := "{u+25b6}"  ; (▶) black right-pointing triangle
+cmpArrow.item["i"] := "{u+25b3}"  ; (△) white up-pointing triangle
+cmpArrow.item["j"] := "{u+25c1}"  ; (◁) white left-pointing triangle
+cmpArrow.item["k"] := "{u+25bd}"  ; (▽) white down-pointing triangle
+cmpArrow.item["l"] := "{u+25b7}"  ; (▷) white right-pointing triangle
 cmpArrow.item["1"] := "{u+2199}"  ; (↙) south west arrow
 cmpArrow.item["2"] := "{u+2193}"  ; (↓) downwards arrow
 cmpArrow.item["3"] := "{u+2198}"  ; (↘) south east arrow
@@ -748,14 +755,6 @@ cmpDoubleAcute.item["7"] := "{u+21d6}"  ; (⇖) north west double arrow
 cmpDoubleAcute.item["8"] := "{u+21d1}"  ; (⇑) upwards double arrow
 cmpDoubleAcute.item["9"] := "{u+21d7}"  ; (⇗) north east double arrow
 cmpDoubleAcute.item["0"] := "{u+21d4}"  ; (⇔) left right double arrow
-cmpPlus.item["2"] := "{u+25bc}"  ; (▼) black down-pointing triangle
-cmpPlus.item["@"] := "{u+25bd}"  ; (▽) white down-pointing triangle
-cmpPlus.item["4"] := "{u+25c0}"  ; (◀) black left-pointing triangle
-cmpPlus.item["$"] := "{u+25c1}"  ; (◁) white left-pointing triangle
-cmpPlus.item["6"] := "{u+25b6}"  ; (▶) black right-pointing triangle
-cmpPlus.item["^"] := "{u+25b7}"  ; (▷) white right-pointing triangle
-cmpPlus.item["8"] := "{u+25b2}"  ; (▲) black up-pointing triangle
-cmpPlus.item["*"] := "{u+25b3}"  ; (△) white up-pointing triangle
 
 
 ; Compose :  Miscellaneous Symbols (s)
@@ -949,6 +948,7 @@ cmpAsterisk := ComObjCreate("Scripting.Dictionary")
 cmpExclam := ComObjCreate("Scripting.Dictionary")
 cmpQuestion := ComObjCreate("Scripting.Dictionary")
 cmpParenLeft := ComObjCreate("Scripting.Dictionary")
+cmpPlus := ComObjCreate("Scripting.Dictionary")
 cmpPercent := ComObjCreate("Scripting.Dictionary")
 cmpLessThan := ComObjCreate("Scripting.Dictionary")
 cmpGreaterThan := ComObjCreate("Scripting.Dictionary")
@@ -1584,8 +1584,6 @@ cmpCapitalU.item["``"] := "{u+01db}"      ; (Ǜ) U with diaeresis and grave
     Send % cmpQuad.item[keyB]
   else if (keyA == "a")
     Send % cmpArrow.item[keyB]
-  else if (keyA == "+")
-    Send % cmpPlus.item[keyB]
   else if (keyA == "s")
     Send % cmpSymbols.item[keyB]
   else if (keyA == "f")
@@ -1638,6 +1636,8 @@ cmpCapitalU.item["``"] := "{u+01db}"      ; (Ǜ) U with diaeresis and grave
     Send % cmpQuestion.item[keyB]
   else if (keyA == "(")
     Send % cmpParenLeft.item[keyB]
+  else if (keyA == "+")
+    Send % cmpPlus.item[keyB]
   else if (keyA == "%")
     Send % cmpPercent.item[keyB]
   else if (keyA == "8")
