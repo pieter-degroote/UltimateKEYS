@@ -76,9 +76,9 @@
 <Multi_key> <v> <U> : "Ǔ"  U01D3  # U with caron
 <Multi_key> <v> <z> : "ž"  U017E  # z with caron
 <Multi_key> <v> <Z> : "Ž"  U017D  # Z with caron
-<Multi_key> <v> <3>           : "ǯ"  U01EF  # small letter ezh with caron
-<Multi_key> <v> <numbersign>  : "Ǯ"  U01EE  # capital letter ezh with caron
-<Multi_key> <v> <space>       : "ˇ"  U02C7  # caron
+<Multi_key> <v> <3>          : "ǯ"  U01EF  # small letter ezh with caron
+<Multi_key> <v> <numbersign> : "Ǯ"  U01EE  # capital letter ezh with caron
+<Multi_key> <v> <space>      : "ˇ"  U02C7  # caron
 
 
 # Dot Above
@@ -484,39 +484,39 @@
 
 # Latin Greek Letters and Variations
 
-<Multi_key> <l> <a> : "ɑ"  U0251  # latin small letter alpha
-<Multi_key> <l> <A> : "Ɑ"  U2C6D  # latin capital letter alpha
+<Multi_key> <l> <a> : "ɑ"  U0251  # Latin small letter alpha
+<Multi_key> <l> <A> : "Ɑ"  U2C6D  # Latin capital letter alpha
 <Multi_key> <l> <c> : "ꬶ"  UAB36  # small letter script g with crossed-tail
-<Multi_key> <l> <e> : "ɛ"  U025B  # small letter open e (latin small epsilon)
-<Multi_key> <l> <E> : "Ɛ"  U0190  # capital letter open E (latin capital epsilon)
+<Multi_key> <l> <e> : "ɛ"  U025B  # small letter open e (Latin small epsilon)
+<Multi_key> <l> <E> : "Ɛ"  U0190  # capital letter open E (Latin capital epsilon)
 <Multi_key> <l> <f> : "ſ"  U017F  # small letter long s
 <Multi_key> <l> <F> : "ẛ"  U1E9B  # long s with dot above
-<Multi_key> <l> <g> : "ɣ"  U0263  # latin small letter gamma
-<Multi_key> <l> <G> : "Ɣ"  U0194  # latin capital letter gamma
+<Multi_key> <l> <g> : "ɣ"  U0263  # Latin small letter gamma
+<Multi_key> <l> <G> : "Ɣ"  U0194  # Latin capital letter gamma
 <Multi_key> <l> <h> : "ꜧ"  UA727  # small letter heng
 <Multi_key> <l> <H> : "Ꜧ"  UA726  # capital letter heng
-<Multi_key> <l> <i> : "ɩ"  U0269  # latin small letter iota
-<Multi_key> <l> <I> : "Ɩ"  U0196  # latin capital letter iota
+<Multi_key> <l> <i> : "ɩ"  U0269  # Latin small letter iota
+<Multi_key> <l> <I> : "Ɩ"  U0196  # Latin capital letter iota
 <Multi_key> <l> <k> : "ĸ"  U0138  # small letter kra
 <Multi_key> <l> <o> : "ɔ"  U0254  # small letter open o
 <Multi_key> <l> <O> : "Ɔ"  U0186  # capital letter open O
 <Multi_key> <l> <s> : "ʃ"  U0283  # small letter esh
 <Multi_key> <l> <S> : "Ʃ"  U01A9  # capital letter esh
-<Multi_key> <l> <u> : "ʊ"  U028A  # latin small letter upsilon
-<Multi_key> <l> <U> : "Ʊ"  U01B1  # latin capital letter upsilon
+<Multi_key> <l> <u> : "ʊ"  U028A  # Latin small letter upsilon
+<Multi_key> <l> <U> : "Ʊ"  U01B1  # Latin capital letter upsilon
 
 
 # Turned Letters
 
-<Multi_key> <t> <a> : "ɐ"  U0250  # latin small letter turned a
-<Multi_key> <t> <A> : "Ɐ"  U2C6F  # latin capital letter turned A
-<Multi_key> <t> <e> : "ǝ"  U01DD  # latin small letter turned e
-<Multi_key> <t> <E> : "Ǝ"  U018E  # latin capital letter reversed E
-<Multi_key> <t> <q> : "ɒ"  U0252  # latin small letter turned alpha
-<Multi_key> <t> <Q> : "Ɒ"  U2C70  # latin capital letter turned alpha
-<Multi_key> <t> <v> : "ʌ"  U028C  # latin small letter turned v
-<Multi_key> <t> <V> : "Ʌ"  U0245  # latin capital letter turned V
-<Multi_key> <t> <y> : "ʎ"  U028E  # latin small letter turned y
+<Multi_key> <t> <a> : "ɐ"  U0250  # Latin small letter turned a
+<Multi_key> <t> <A> : "Ɐ"  U2C6F  # Latin capital letter turned A
+<Multi_key> <t> <e> : "ǝ"  U01DD  # Latin small letter turned e
+<Multi_key> <t> <E> : "Ǝ"  U018E  # Latin capital letter reversed E
+<Multi_key> <t> <q> : "ɒ"  U0252  # Latin small letter turned alpha
+<Multi_key> <t> <Q> : "Ɒ"  U2C70  # Latin capital letter turned alpha
+<Multi_key> <t> <v> : "ʌ"  U028C  # Latin small letter turned v
+<Multi_key> <t> <V> : "Ʌ"  U0245  # Latin capital letter turned V
+<Multi_key> <t> <y> : "ʎ"  U028E  # Latin small letter turned y
 
 
 # Letters with Two Diacritical Marks
@@ -602,59 +602,59 @@
 
 # Greek Alphabet
 
-<Multi_key> <g> <a> : "α"  U03B1  # small alpha
-<Multi_key> <g> <A> : "Α"  U0391  # capital alpha
-<Multi_key> <g> <b> : "β"  U03B2  # small beta
-<Multi_key> <g> <B> : "Β"  U0392  # capital beta
-<Multi_key> <g> <v> : "β"  U03B2  # small beta
-<Multi_key> <g> <V> : "Β"  U0392  # capital beta
-<Multi_key> <g> <g> : "γ"  U03B3  # small gamma
-<Multi_key> <g> <G> : "Γ"  U0393  # capital gamma
-<Multi_key> <g> <d> : "δ"  U03B4  # small delta
-<Multi_key> <g> <D> : "Δ"  U0394  # capital delta
-<Multi_key> <g> <e> : "ε"  U03B5  # small epsilon
-<Multi_key> <g> <E> : "Ε"  U0395  # capital epsilon
-<Multi_key> <g> <z> : "ζ"  U03B6  # small zeta
-<Multi_key> <g> <Z> : "Ζ"  U0396  # capital zeta
-<Multi_key> <g> <h> : "η"  U03B7  # small eta
-<Multi_key> <g> <H> : "Η"  U0397  # capital eta
-<Multi_key> <g> <j> : "θ"  U03B8  # small theta
-<Multi_key> <g> <J> : "Θ"  U0398  # capital theta
-<Multi_key> <g> <i> : "ι"  U03B9  # small iota
-<Multi_key> <g> <I> : "Ι"  U0399  # capital iota
-<Multi_key> <g> <k> : "κ"  U03BA  # small kappa
-<Multi_key> <g> <K> : "Κ"  U039A  # capital kappa
-<Multi_key> <g> <l> : "λ"  U03BB  # small lambda
-<Multi_key> <g> <L> : "Λ"  U039B  # capital lambda
-<Multi_key> <g> <m> : "μ"  U03BC  # small mu
-<Multi_key> <g> <M> : "Μ"  U039C  # capital mu
-<Multi_key> <g> <n> : "ν"  U03BD  # small nu
-<Multi_key> <g> <N> : "Ν"  U039D  # capital nu
-<Multi_key> <g> <x> : "ξ"  U03BE  # small xi
-<Multi_key> <g> <X> : "Ξ"  U039E  # capital xi
-<Multi_key> <g> <o> : "ο"  U03BF  # small omicron
-<Multi_key> <g> <O> : "Ο"  U039F  # capital omicron
-<Multi_key> <g> <p> : "π"  U03C0  # small pi
-<Multi_key> <g> <P> : "Π"  U03A0  # capital pi
-<Multi_key> <g> <r> : "ρ"  U03C1  # small rho
-<Multi_key> <g> <R> : "Ρ"  U03A1  # capital rho
-<Multi_key> <g> <s> : "σ"  U03C3  # small sigma
-<Multi_key> <g> <comma> : "ς"  U03C2  # small final sigma
-<Multi_key> <g> <S> : "Σ"  U03A3  # capital sigma
-<Multi_key> <g> <t> : "τ"  U03C4  # small tau
-<Multi_key> <g> <T> : "Τ"  U03A4  # capital tau
-<Multi_key> <g> <u> : "υ"  U03C5  # small upsilon
-<Multi_key> <g> <U> : "Υ"  U03A5  # capital upsilon
-<Multi_key> <g> <y> : "υ"  U03C5  # small upsilon
-<Multi_key> <g> <Y> : "Υ"  U03A5  # capital upsilon
-<Multi_key> <g> <f> : "φ"  U03C6  # small phi
-<Multi_key> <g> <F> : "Φ"  U03A6  # capital phi
-<Multi_key> <g> <c> : "χ"  U03C7  # small chi
-<Multi_key> <g> <C> : "Χ"  U03A7  # capital chi
-<Multi_key> <g> <w> : "ψ"  U03C8  # small psi
-<Multi_key> <g> <W> : "Ψ"  U03A8  # capital psi
-<Multi_key> <g> <q> : "ω"  U03C9  # small omega
-<Multi_key> <g> <Q> : "Ω"  U03A9  # capital omega
+<Multi_key> <g> <a> : "α"  U03B1  # Greek small alpha
+<Multi_key> <g> <A> : "Α"  U0391  # Greek capital alpha
+<Multi_key> <g> <b> : "β"  U03B2  # Greek small beta
+<Multi_key> <g> <B> : "Β"  U0392  # Greek capital beta
+<Multi_key> <g> <v> : "β"  U03B2  # Greek small beta
+<Multi_key> <g> <V> : "Β"  U0392  # Greek capital beta
+<Multi_key> <g> <g> : "γ"  U03B3  # Greek small gamma
+<Multi_key> <g> <G> : "Γ"  U0393  # Greek capital gamma
+<Multi_key> <g> <d> : "δ"  U03B4  # Greek small delta
+<Multi_key> <g> <D> : "Δ"  U0394  # Greek capital delta
+<Multi_key> <g> <e> : "ε"  U03B5  # Greek small epsilon
+<Multi_key> <g> <E> : "Ε"  U0395  # Greek capital epsilon
+<Multi_key> <g> <z> : "ζ"  U03B6  # Greek small zeta
+<Multi_key> <g> <Z> : "Ζ"  U0396  # Greek capital zeta
+<Multi_key> <g> <h> : "η"  U03B7  # Greek small eta
+<Multi_key> <g> <H> : "Η"  U0397  # Greek capital eta
+<Multi_key> <g> <j> : "θ"  U03B8  # Greek small theta
+<Multi_key> <g> <J> : "Θ"  U0398  # Greek capital theta
+<Multi_key> <g> <i> : "ι"  U03B9  # Greek small iota
+<Multi_key> <g> <I> : "Ι"  U0399  # Greek capital iota
+<Multi_key> <g> <k> : "κ"  U03BA  # Greek small kappa
+<Multi_key> <g> <K> : "Κ"  U039A  # Greek capital kappa
+<Multi_key> <g> <l> : "λ"  U03BB  # Greek small lambda
+<Multi_key> <g> <L> : "Λ"  U039B  # Greek capital lambda
+<Multi_key> <g> <m> : "μ"  U03BC  # Greek small mu
+<Multi_key> <g> <M> : "Μ"  U039C  # Greek capital mu
+<Multi_key> <g> <n> : "ν"  U03BD  # Greek small nu
+<Multi_key> <g> <N> : "Ν"  U039D  # Greek capital nu
+<Multi_key> <g> <x> : "ξ"  U03BE  # Greek small xi
+<Multi_key> <g> <X> : "Ξ"  U039E  # Greek capital xi
+<Multi_key> <g> <o> : "ο"  U03BF  # Greek small omicron
+<Multi_key> <g> <O> : "Ο"  U039F  # Greek capital omicron
+<Multi_key> <g> <p> : "π"  U03C0  # Greek small pi
+<Multi_key> <g> <P> : "Π"  U03A0  # Greek capital pi
+<Multi_key> <g> <r> : "ρ"  U03C1  # Greek small rho
+<Multi_key> <g> <R> : "Ρ"  U03A1  # Greek capital rho
+<Multi_key> <g> <s> : "σ"  U03C3  # Greek small sigma
+<Multi_key> <g> <comma> : "ς"  U03C2  # Greek small final sigma
+<Multi_key> <g> <S> : "Σ"  U03A3  # Greek capital sigma
+<Multi_key> <g> <t> : "τ"  U03C4  # Greek small tau
+<Multi_key> <g> <T> : "Τ"  U03A4  # Greek capital tau
+<Multi_key> <g> <u> : "υ"  U03C5  # Greek small upsilon
+<Multi_key> <g> <U> : "Υ"  U03A5  # Greek capital upsilon
+<Multi_key> <g> <y> : "υ"  U03C5  # Greek small upsilon
+<Multi_key> <g> <Y> : "Υ"  U03A5  # Greek capital upsilon
+<Multi_key> <g> <f> : "φ"  U03C6  # Greek small phi
+<Multi_key> <g> <F> : "Φ"  U03A6  # Greek capital phi
+<Multi_key> <g> <c> : "χ"  U03C7  # Greek small chi
+<Multi_key> <g> <C> : "Χ"  U03A7  # Greek capital chi
+<Multi_key> <g> <w> : "ψ"  U03C8  # Greek small psi
+<Multi_key> <g> <W> : "Ψ"  U03A8  # Greek capital psi
+<Multi_key> <g> <q> : "ω"  U03C9  # Greek small omega
+<Multi_key> <g> <Q> : "Ω"  U03A9  # Greek capital omega
 
 
 # Superscript Characters
