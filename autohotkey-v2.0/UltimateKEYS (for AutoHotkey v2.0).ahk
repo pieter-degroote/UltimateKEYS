@@ -1,4 +1,4 @@
-; UltimateKEYS (for AutoHotkey v2.0).ahk - 2022-09-14
+; UltimateKEYS (for AutoHotkey v2.0).ahk - 2022-10-19
 
 ; Website :  www.ultimatekeys.info (pieter-degroote.github.io/UltimateKEYS/)
 
@@ -670,6 +670,7 @@ cmpSuperscript["7"] := "{u+2077}"  ; (⁷) superscript 7
 cmpSuperscript["8"] := "{u+2078}"  ; (⁸) superscript 8
 cmpSuperscript["9"] := "{u+2079}"  ; (⁹) superscript 9
 cmpSuperscript["0"] := "{u+2070}"  ; (⁰) superscript 0
+cmpSuperscript["i"] := "{u+2071}"  ; (ⁱ) superscript i
 cmpSuperscript["n"] := "{u+207f}"  ; (ⁿ) superscript n
 cmpSuperscript["+"] := "{u+207a}"  ; (⁺) superscript +
 cmpSuperscript["-"] := "{u+207b}"  ; (⁻) superscript -
@@ -691,7 +692,29 @@ cmpSubscript["7"] := "{u+2087}"  ; (₇) subscript 7
 cmpSubscript["8"] := "{u+2088}"  ; (₈) subscript 8
 cmpSubscript["9"] := "{u+2089}"  ; (₉) subscript 9
 cmpSubscript["0"] := "{u+2080}"  ; (₀) subscript 0
+cmpSubscript["a"] := "{u+2090}"  ; (ₐ) subscript a
+cmpSubscript["b"] := "{u+1d66}"  ; (ᵦ) subscript beta
+cmpSubscript["c"] := "{u+1d6a}"  ; (ᵪ) subscript chi
+cmpSubscript["e"] := "{u+2091}"  ; (ₑ) subscript e
+cmpSubscript["E"] := "{u+2094}"  ; (ₔ) subscript schwa
+cmpSubscript["f"] := "{u+1d69}"  ; (ᵩ) subscript phi
+cmpSubscript["g"] := "{u+1d67}"  ; (ᵧ) subscript gamma
+cmpSubscript["h"] := "{u+2095}"  ; (ₕ) subscript h
+cmpSubscript["i"] := "{u+1d62}"  ; (ᵢ) subscript i
+cmpSubscript["j"] := "{u+2c7c}"  ; (ⱼ) subscript j
+cmpSubscript["k"] := "{u+2096}"  ; (ₖ) subscript k
+cmpSubscript["l"] := "{u+2097}"  ; (ₗ) subscript l
+cmpSubscript["m"] := "{u+2098}"  ; (ₘ) subscript m
 cmpSubscript["n"] := "{u+2099}"  ; (ₙ) subscript n
+cmpSubscript["o"] := "{u+2092}"  ; (ₒ) subscript o
+cmpSubscript["p"] := "{u+209a}"  ; (ₚ) subscript p
+cmpSubscript["r"] := "{u+1d63}"  ; (ᵣ) subscript r
+cmpSubscript["R"] := "{u+1d68}"  ; (ᵨ) subscript rho
+cmpSubscript["s"] := "{u+209b}"  ; (ₛ) subscript s
+cmpSubscript["t"] := "{u+209c}"  ; (ₜ) subscript t
+cmpSubscript["u"] := "{u+1d64}"  ; (ᵤ) subscript u
+cmpSubscript["v"] := "{u+1d65}"  ; (ᵥ) subscript v
+cmpSubscript["x"] := "{u+2093}"  ; (ₓ) subscript x
 cmpSubscript["+"] := "{u+208a}"  ; (₊) subscript +
 cmpSubscript["-"] := "{u+208b}"  ; (₋) subscript -
 cmpSubscript["="] := "{u+208c}"  ; (₌) subscript =
@@ -1060,7 +1083,7 @@ cmpAcuteAccent[">"] := "{u+203a}"        ; (›) right-pointing single angle quo
 global cmpCapitalC := Map()
 global cmpSmallE := Map()
 global cmpCapitalE := Map()
-global cmpCapitalU := Map()
+global cmpCapitalV := Map()
 cmpArrow[chr(34)] := "{u+01df}"      ; (ǟ) a with diaeresis and macron
 cmpCapitalA[chr(34)] := "{u+01de}"   ; (Ǟ) A with diaeresis and macron
 cmpArrow["."] := "{u+01e1}"          ; (ǡ) a with dot above and macron
@@ -1083,14 +1106,14 @@ cmpRingAbove["~"] := "{u+022d}"      ; (ȭ) o with tilde and macron
 cmpCapitalO["~"] := "{u+022c}"       ; (Ȭ) O with tilde and macron
 cmpRingAbove["."] := "{u+0231}"      ; (ȱ) o with dot above and macron
 cmpCapitalO["."] := "{u+0230}"       ; (Ȱ) O with dot above and macron
-cmpSubscript["-"] := "{u+01d6}"      ; (ǖ) u with diaeresis and macron
-cmpCapitalU["-"] := "{u+01d5}"       ; (Ǖ) U with diaeresis and macron
-cmpSubscript["'"] := "{u+01d8}"      ; (ǘ) u with diaeresis and acute
-cmpCapitalU["'"] := "{u+01d7}"       ; (Ǘ) U with diaeresis and acute
-cmpSubscript["v"] := "{u+01da}"      ; (ǚ) u with diaeresis and caron
-cmpCapitalU["v"] := "{u+01d9}"       ; (Ǚ) U with diaeresis and caron
-cmpSubscript["``"] := "{u+01dc}"     ; (ǜ) u with diaeresis and grave
-cmpCapitalU["``"] := "{u+01db}"      ; (Ǜ) U with diaeresis and grave
+cmpCaron["-"] := "{u+01d6}"          ; (ǖ) u with diaeresis and macron
+cmpCapitalV["-"] := "{u+01d5}"       ; (Ǖ) U with diaeresis and macron
+cmpCaron["'"] := "{u+01d8}"          ; (ǘ) u with diaeresis and acute
+cmpCapitalV["'"] := "{u+01d7}"       ; (Ǘ) U with diaeresis and acute
+cmpCaron["v"] := "{u+01da}"          ; (ǚ) u with diaeresis and caron
+cmpCapitalV["v"] := "{u+01d9}"       ; (Ǚ) U with diaeresis and caron
+cmpCaron["``"] := "{u+01dc}"         ; (ǜ) u with diaeresis and grave
+cmpCapitalV["``"] := "{u+01db}"      ; (Ǜ) U with diaeresis and grave
 
 
 ; Configuration :  'Right Alt' and 'Right Alt + Shift' on US QWERTY
@@ -1791,8 +1814,8 @@ cmpCapitalU["``"] := "{u+01db}"      ; (Ǜ) U with diaeresis and grave
     if cmpCapitalE.Has(ihB.Input)
       Send cmpCapitalE[ihB.Input]
   }
-  else if (ihA.Input == "U") {
-    if cmpCapitalU.Has(ihB.Input)
-      Send cmpCapitalU[ihB.Input]
+  else if (ihA.Input == "V") {
+    if cmpCapitalV.Has(ihB.Input)
+      Send cmpCapitalV[ihB.Input]
   }
 }
