@@ -1,4 +1,4 @@
-; UltimateKEYS.ahk - 2022-09-14
+; UltimateKEYS.ahk - 2022-10-19
 
 ; Website :  www.ultimatekeys.info (pieter-degroote.github.io/UltimateKEYS/)
 
@@ -668,6 +668,7 @@ cmpSuperscript.item["7"] := "{u+2077}"  ; (⁷) superscript 7
 cmpSuperscript.item["8"] := "{u+2078}"  ; (⁸) superscript 8
 cmpSuperscript.item["9"] := "{u+2079}"  ; (⁹) superscript 9
 cmpSuperscript.item["0"] := "{u+2070}"  ; (⁰) superscript 0
+cmpSuperscript.item["i"] := "{u+2071}"  ; (ⁱ) superscript i
 cmpSuperscript.item["n"] := "{u+207f}"  ; (ⁿ) superscript n
 cmpSuperscript.item["+"] := "{u+207a}"  ; (⁺) superscript +
 cmpSuperscript.item["-"] := "{u+207b}"  ; (⁻) superscript -
@@ -689,7 +690,29 @@ cmpSubscript.item["7"] := "{u+2087}"  ; (₇) subscript 7
 cmpSubscript.item["8"] := "{u+2088}"  ; (₈) subscript 8
 cmpSubscript.item["9"] := "{u+2089}"  ; (₉) subscript 9
 cmpSubscript.item["0"] := "{u+2080}"  ; (₀) subscript 0
+cmpSubscript.item["a"] := "{u+2090}"  ; (ₐ) subscript a
+cmpSubscript.item["b"] := "{u+1d66}"  ; (ᵦ) subscript beta
+cmpSubscript.item["c"] := "{u+1d6a}"  ; (ᵪ) subscript chi
+cmpSubscript.item["e"] := "{u+2091}"  ; (ₑ) subscript e
+cmpSubscript.item["E"] := "{u+2094}"  ; (ₔ) subscript schwa
+cmpSubscript.item["f"] := "{u+1d69}"  ; (ᵩ) subscript phi
+cmpSubscript.item["g"] := "{u+1d67}"  ; (ᵧ) subscript gamma
+cmpSubscript.item["h"] := "{u+2095}"  ; (ₕ) subscript h
+cmpSubscript.item["i"] := "{u+1d62}"  ; (ᵢ) subscript i
+cmpSubscript.item["j"] := "{u+2c7c}"  ; (ⱼ) subscript j
+cmpSubscript.item["k"] := "{u+2096}"  ; (ₖ) subscript k
+cmpSubscript.item["l"] := "{u+2097}"  ; (ₗ) subscript l
+cmpSubscript.item["m"] := "{u+2098}"  ; (ₘ) subscript m
 cmpSubscript.item["n"] := "{u+2099}"  ; (ₙ) subscript n
+cmpSubscript.item["o"] := "{u+2092}"  ; (ₒ) subscript o
+cmpSubscript.item["p"] := "{u+209a}"  ; (ₚ) subscript p
+cmpSubscript.item["r"] := "{u+1d63}"  ; (ᵣ) subscript r
+cmpSubscript.item["R"] := "{u+1d68}"  ; (ᵨ) subscript rho
+cmpSubscript.item["s"] := "{u+209b}"  ; (ₛ) subscript s
+cmpSubscript.item["t"] := "{u+209c}"  ; (ₜ) subscript t
+cmpSubscript.item["u"] := "{u+1d64}"  ; (ᵤ) subscript u
+cmpSubscript.item["v"] := "{u+1d65}"  ; (ᵥ) subscript v
+cmpSubscript.item["x"] := "{u+2093}"  ; (ₓ) subscript x
 cmpSubscript.item["+"] := "{u+208a}"  ; (₊) subscript +
 cmpSubscript.item["-"] := "{u+208b}"  ; (₋) subscript -
 cmpSubscript.item["="] := "{u+208c}"  ; (₌) subscript =
@@ -1058,7 +1081,7 @@ cmpAcuteAccent.item[">"] := "{u+203a}"        ; (›) right-pointing single angl
 cmpCapitalC := ComObjCreate("Scripting.Dictionary")
 cmpSmallE := ComObjCreate("Scripting.Dictionary")
 cmpCapitalE := ComObjCreate("Scripting.Dictionary")
-cmpCapitalU := ComObjCreate("Scripting.Dictionary")
+cmpCapitalV := ComObjCreate("Scripting.Dictionary")
 cmpArrow.item[chr(34)] := "{u+01df}"      ; (ǟ) a with diaeresis and macron
 cmpCapitalA.item[chr(34)] := "{u+01de}"   ; (Ǟ) A with diaeresis and macron
 cmpArrow.item["."] := "{u+01e1}"          ; (ǡ) a with dot above and macron
@@ -1081,14 +1104,14 @@ cmpRingAbove.item["~"] := "{u+022d}"      ; (ȭ) o with tilde and macron
 cmpCapitalO.item["~"] := "{u+022c}"       ; (Ȭ) O with tilde and macron
 cmpRingAbove.item["."] := "{u+0231}"      ; (ȱ) o with dot above and macron
 cmpCapitalO.item["."] := "{u+0230}"       ; (Ȱ) O with dot above and macron
-cmpSubscript.item["-"] := "{u+01d6}"      ; (ǖ) u with diaeresis and macron
-cmpCapitalU.item["-"] := "{u+01d5}"       ; (Ǖ) U with diaeresis and macron
-cmpSubscript.item["'"] := "{u+01d8}"      ; (ǘ) u with diaeresis and acute
-cmpCapitalU.item["'"] := "{u+01d7}"       ; (Ǘ) U with diaeresis and acute
-cmpSubscript.item["v"] := "{u+01da}"      ; (ǚ) u with diaeresis and caron
-cmpCapitalU.item["v"] := "{u+01d9}"       ; (Ǚ) U with diaeresis and caron
-cmpSubscript.item["``"] := "{u+01dc}"     ; (ǜ) u with diaeresis and grave
-cmpCapitalU.item["``"] := "{u+01db}"      ; (Ǜ) U with diaeresis and grave
+cmpCaron.item["-"] := "{u+01d6}"          ; (ǖ) u with diaeresis and macron
+cmpCapitalV.item["-"] := "{u+01d5}"       ; (Ǖ) U with diaeresis and macron
+cmpCaron.item["'"] := "{u+01d8}"          ; (ǘ) u with diaeresis and acute
+cmpCapitalV.item["'"] := "{u+01d7}"       ; (Ǘ) U with diaeresis and acute
+cmpCaron.item["v"] := "{u+01da}"          ; (ǚ) u with diaeresis and caron
+cmpCapitalV.item["v"] := "{u+01d9}"       ; (Ǚ) U with diaeresis and caron
+cmpCaron.item["``"] := "{u+01dc}"         ; (ǜ) u with diaeresis and grave
+cmpCapitalV.item["``"] := "{u+01db}"      ; (Ǜ) U with diaeresis and grave
 
 
 ; Configuration :  'Right Alt' and 'Right Alt + Shift' on US QWERTY
@@ -1658,8 +1681,8 @@ cmpCapitalU.item["``"] := "{u+01db}"      ; (Ǜ) U with diaeresis and grave
     Send % cmpSmallE.item[keyB]
   else if (keyA == "E")
     Send % cmpCapitalE.item[keyB]
-  else if (keyA == "U")
-    Send % cmpCapitalU.item[keyB]
+  else if (keyA == "V")
+    Send % cmpCapitalV.item[keyB]
 
   keyA := ""  ; avoids leaking content via debug properties
   keyB := ""  ; avoids leaking content via debug properties
