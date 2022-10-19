@@ -1,4 +1,4 @@
-# UltimateKEYS - 2022-09-14  (~/.XCompose)
+# UltimateKEYS - 2022-10-19  (~/.XCompose)
 
 # Website :  www.ultimatekeys.info (pieter-degroote.github.io/UltimateKEYS/)
 
@@ -543,14 +543,14 @@
 <Multi_key> <O> <asciitilde> : "Ȭ"  U022C  # O with tilde and macron
 <Multi_key> <o> <period>     : "ȱ"  U0231  # o with dot above and macron
 <Multi_key> <O> <period>     : "Ȱ"  U0230  # O with dot above and macron
-<Multi_key> <u> <minus>      : "ǖ"  U01D6  # u with diaeresis and macron
-<Multi_key> <U> <minus>      : "Ǖ"  U01D5  # U with diaeresis and macron
-<Multi_key> <u> <apostrophe> : "ǘ"  U01D8  # u with diaeresis and acute
-<Multi_key> <U> <apostrophe> : "Ǘ"  U01D7  # U with diaeresis and acute
-<Multi_key> <u> <v>          : "ǚ"  U01DA  # u with diaeresis and caron
-<Multi_key> <U> <v>          : "Ǚ"  U01D9  # U with diaeresis and caron
-<Multi_key> <u> <grave>      : "ǜ"  U01DC  # u with diaeresis and grave
-<Multi_key> <U> <grave>      : "Ǜ"  U01DB  # U with diaeresis and grave
+<Multi_key> <v> <minus>      : "ǖ"  U01D6  # u with diaeresis and macron
+<Multi_key> <V> <minus>      : "Ǖ"  U01D5  # U with diaeresis and macron
+<Multi_key> <v> <apostrophe> : "ǘ"  U01D8  # u with diaeresis and acute
+<Multi_key> <V> <apostrophe> : "Ǘ"  U01D7  # U with diaeresis and acute
+<Multi_key> <v> <v>          : "ǚ"  U01DA  # u with diaeresis and caron
+<Multi_key> <V> <v>          : "Ǚ"  U01D9  # U with diaeresis and caron
+<Multi_key> <v> <grave>      : "ǜ"  U01DC  # u with diaeresis and grave
+<Multi_key> <V> <grave>      : "Ǜ"  U01DB  # U with diaeresis and grave
 
 
 # Currency Symbols
@@ -669,6 +669,7 @@
 <Multi_key> <p> <8> : "⁸"  U2078  # superscript 8
 <Multi_key> <p> <9> : "⁹"  U2079  # superscript 9
 <Multi_key> <p> <0> : "⁰"  U2070  # superscript 0
+<Multi_key> <p> <i> : "ⁱ"  U2071  # superscript i
 <Multi_key> <p> <n> : "ⁿ"  U207F  # superscript n
 <Multi_key> <p> <plus>       : "⁺"  U207A  # superscript +
 <Multi_key> <p> <minus>      : "⁻"  U207B  # superscript -
@@ -689,7 +690,29 @@
 <Multi_key> <u> <8> : "₈"  U2088  # subscript 8
 <Multi_key> <u> <9> : "₉"  U2089  # subscript 9
 <Multi_key> <u> <0> : "₀"  U2080  # subscript 0
+<Multi_key> <u> <a> : "ₐ"  U2090  # subscript a
+<Multi_key> <u> <b> : "ᵦ"  U1D66  # subscript beta
+<Multi_key> <u> <c> : "ᵪ"  U1D6A  # subscript chi
+<Multi_key> <u> <e> : "ₑ"  U2091  # subscript e
+<Multi_key> <u> <E> : "ₔ"  U2094  # subscript schwa
+<Multi_key> <u> <f> : "ᵩ"  U1D69  # subscript phi
+<Multi_key> <u> <g> : "ᵧ"  U1D67  # subscript gamma
+<Multi_key> <u> <h> : "ₕ"  U2095  # subscript h
+<Multi_key> <u> <i> : "ᵢ"  U1D62  # subscript i
+<Multi_key> <u> <j> : "ⱼ"  U2C7C  # subscript j
+<Multi_key> <u> <k> : "ₖ"  U2096  # subscript k
+<Multi_key> <u> <l> : "ₗ"  U2097  # subscript l
+<Multi_key> <u> <m> : "ₘ"  U2098  # subscript m
 <Multi_key> <u> <n> : "ₙ"  U2099  # subscript n
+<Multi_key> <u> <o> : "ₒ"  U2092  # subscript o
+<Multi_key> <u> <p> : "ₚ"  U209A  # subscript p
+<Multi_key> <u> <r> : "ᵣ"  U1D63  # subscript r
+<Multi_key> <u> <R> : "ᵨ"  U1D68  # subscript rho
+<Multi_key> <u> <s> : "ₛ"  U209B  # subscript s
+<Multi_key> <u> <t> : "ₜ"  U209C  # subscript t
+<Multi_key> <u> <u> : "ᵤ"  U1D64  # subscript u
+<Multi_key> <u> <v> : "ᵥ"  U1D65  # subscript v
+<Multi_key> <u> <x> : "ₓ"  U2093  # subscript x
 <Multi_key> <u> <plus>       : "₊"  U208A  # subscript +
 <Multi_key> <u> <minus>      : "₋"  U208B  # subscript -
 <Multi_key> <u> <equal>      : "₌"  U208C  # subscript =
