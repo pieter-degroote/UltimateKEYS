@@ -436,7 +436,7 @@
 <Multi_key> <asciitilde> <V> : "Ṽ"  U1E7C  # V with tilde
 <Multi_key> <asciitilde> <y> : "ỹ"  U1EF9  # y with tilde
 <Multi_key> <asciitilde> <Y> : "Ỹ"  U1EF8  # Y with tilde
-<Multi_key> <asciitilde> <space>  : "˜"  U02DC  # small tilde
+<Multi_key> <asciitilde> <space> : "˜"  U02DC  # small tilde
 
 
 # Hook and Horn
