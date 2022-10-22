@@ -1,4 +1,4 @@
-# UltimateKEYS - 2022-10-19  (~/.XCompose)
+# UltimateKEYS - 2022-10-22  (~/.XCompose)
 
 # Website :  www.ultimatekeys.info (pieter-degroote.github.io/UltimateKEYS/)
 
@@ -833,6 +833,7 @@
 <Multi_key> <o> <r>               : "®"  U00AE  # registered sign
 <Multi_key> <parenleft> <r>       : "®"  U00AE  # registered sign
 <Multi_key> <plus> <minus>        : "±"  U00B1  # plus-minus sign
+<Multi_key> <minus> <plus>        : "∓"  U2213  # minus-or-plus sign
 <Multi_key> <percent> <percent>   : "‰"  U2030  # per mille sign
 <Multi_key> <percent> <3>         : "‰"  U2030  # per mille sign
 <Multi_key> <percent> <4>         : "‱"  U2031  # per ten thousand sign
@@ -943,6 +944,22 @@
 <Multi_key> <f> <8> : "❁"  U2741  # eight petalled outlined black florette
 <Multi_key> <f> <f> : "❦"  U2766  # floral heart
 <Multi_key> <f> <h> : "❧"  U2767  # rotated floral heart bullet
+
+
+# Chess Symbols
+
+<Multi_key> <C> <k> : "♔"  U2654  # white chess king
+<Multi_key> <C> <q> : "♕"  U2655  # white chess queen
+<Multi_key> <C> <r> : "♖"  U2656  # white chess rook
+<Multi_key> <C> <b> : "♗"  U2657  # white chess bishop
+<Multi_key> <C> <n> : "♘"  U2658  # white chess knight
+<Multi_key> <C> <p> : "♙"  U2659  # white chess pawn
+<Multi_key> <C> <K> : "♚"  U265A  # black chess king
+<Multi_key> <C> <Q> : "♛"  U265B  # black chess queen
+<Multi_key> <C> <R> : "♜"  U265C  # black chess rook
+<Multi_key> <C> <B> : "♝"  U265D  # black chess bishop
+<Multi_key> <C> <N> : "♞"  U265E  # black chess knight
+<Multi_key> <C> <P> : "♟"  U265F  # black chess pawn
 
 
 # Playing Card Suit Symbols
