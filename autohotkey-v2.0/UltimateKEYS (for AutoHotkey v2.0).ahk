@@ -1,4 +1,4 @@
-; UltimateKEYS (for AutoHotkey v2.0).ahk - 2022-10-19
+; UltimateKEYS (for AutoHotkey v2.0).ahk - 2022-10-22
 
 ; Website :  www.ultimatekeys.info (pieter-degroote.github.io/UltimateKEYS/)
 
@@ -601,60 +601,60 @@ cmpCurrency[" "] := "{u+00a4}"  ; (¤) currency sign
 
 ; Compose :  Greek Alphabet (g)
 
-global cmpGreekAlphabet := Map()
-cmpGreekAlphabet["a"] := "{u+03b1}"  ; (α) Greek small alpha
-cmpGreekAlphabet["A"] := "{u+0391}"  ; (Α) Greek capital alpha
-cmpGreekAlphabet["b"] := "{u+03b2}"  ; (β) Greek small beta
-cmpGreekAlphabet["B"] := "{u+0392}"  ; (Β) Greek capital beta
-cmpGreekAlphabet["v"] := "{u+03b2}"  ; (β) Greek small beta
-cmpGreekAlphabet["V"] := "{u+0392}"  ; (Β) Greek capital beta
-cmpGreekAlphabet["g"] := "{u+03b3}"  ; (γ) Greek small gamma
-cmpGreekAlphabet["G"] := "{u+0393}"  ; (Γ) Greek capital gamma
-cmpGreekAlphabet["d"] := "{u+03b4}"  ; (δ) Greek small delta
-cmpGreekAlphabet["D"] := "{u+0394}"  ; (Δ) Greek capital delta
-cmpGreekAlphabet["e"] := "{u+03b5}"  ; (ε) Greek small epsilon
-cmpGreekAlphabet["E"] := "{u+0395}"  ; (Ε) Greek capital epsilon
-cmpGreekAlphabet["z"] := "{u+03b6}"  ; (ζ) Greek small zeta
-cmpGreekAlphabet["Z"] := "{u+0396}"  ; (Ζ) Greek capital zeta
-cmpGreekAlphabet["h"] := "{u+03b7}"  ; (η) Greek small eta
-cmpGreekAlphabet["H"] := "{u+0397}"  ; (Η) Greek capital eta
-cmpGreekAlphabet["j"] := "{u+03b8}"  ; (θ) Greek small theta
-cmpGreekAlphabet["J"] := "{u+0398}"  ; (Θ) Greek capital theta
-cmpGreekAlphabet["i"] := "{u+03b9}"  ; (ι) Greek small iota
-cmpGreekAlphabet["I"] := "{u+0399}"  ; (Ι) Greek capital iota
-cmpGreekAlphabet["k"] := "{u+03ba}"  ; (κ) Greek small kappa
-cmpGreekAlphabet["K"] := "{u+039a}"  ; (Κ) Greek capital kappa
-cmpGreekAlphabet["l"] := "{u+03bb}"  ; (λ) Greek small lambda
-cmpGreekAlphabet["L"] := "{u+039b}"  ; (Λ) Greek capital lambda
-cmpGreekAlphabet["m"] := "{u+03bc}"  ; (μ) Greek small mu
-cmpGreekAlphabet["M"] := "{u+039c}"  ; (Μ) Greek capital mu
-cmpGreekAlphabet["n"] := "{u+03bd}"  ; (ν) Greek small nu
-cmpGreekAlphabet["N"] := "{u+039d}"  ; (Ν) Greek capital nu
-cmpGreekAlphabet["x"] := "{u+03be}"  ; (ξ) Greek small xi
-cmpGreekAlphabet["X"] := "{u+039e}"  ; (Ξ) Greek capital xi
-cmpGreekAlphabet["o"] := "{u+03bf}"  ; (ο) Greek small omicron
-cmpGreekAlphabet["O"] := "{u+039f}"  ; (Ο) Greek capital omicron
-cmpGreekAlphabet["p"] := "{u+03c0}"  ; (π) Greek small pi
-cmpGreekAlphabet["P"] := "{u+03a0}"  ; (Π) Greek capital pi
-cmpGreekAlphabet["r"] := "{u+03c1}"  ; (ρ) Greek small rho
-cmpGreekAlphabet["R"] := "{u+03a1}"  ; (Ρ) Greek capital rho
-cmpGreekAlphabet["s"] := "{u+03c3}"  ; (σ) Greek small sigma
-cmpGreekAlphabet["S"] := "{u+03a3}"  ; (Σ) Greek capital sigma
-cmpGreekAlphabet[","] := "{u+03c2}"  ; (ς) Greek small final sigma
-cmpGreekAlphabet["t"] := "{u+03c4}"  ; (τ) Greek small tau
-cmpGreekAlphabet["T"] := "{u+03a4}"  ; (Τ) Greek capital tau
-cmpGreekAlphabet["u"] := "{u+03c5}"  ; (υ) Greek small upsilon
-cmpGreekAlphabet["U"] := "{u+03a5}"  ; (Υ) Greek capital upsilon
-cmpGreekAlphabet["y"] := "{u+03c5}"  ; (υ) Greek small upsilon
-cmpGreekAlphabet["Y"] := "{u+03a5}"  ; (Υ) Greek capital upsilon
-cmpGreekAlphabet["f"] := "{u+03c6}"  ; (φ) Greek small phi
-cmpGreekAlphabet["F"] := "{u+03a6}"  ; (Φ) Greek capital phi
-cmpGreekAlphabet["c"] := "{u+03c7}"  ; (χ) Greek small chi
-cmpGreekAlphabet["C"] := "{u+03a7}"  ; (Χ) Greek capital chi
-cmpGreekAlphabet["w"] := "{u+03c8}"  ; (ψ) Greek small psi
-cmpGreekAlphabet["W"] := "{u+03a8}"  ; (Ψ) Greek capital psi
-cmpGreekAlphabet["q"] := "{u+03c9}"  ; (ω) Greek small omega
-cmpGreekAlphabet["Q"] := "{u+03a9}"  ; (Ω) Greek capital omega
+global cmpGreek := Map()
+cmpGreek["a"] := "{u+03b1}"  ; (α) Greek small alpha
+cmpGreek["A"] := "{u+0391}"  ; (Α) Greek capital alpha
+cmpGreek["b"] := "{u+03b2}"  ; (β) Greek small beta
+cmpGreek["B"] := "{u+0392}"  ; (Β) Greek capital beta
+cmpGreek["v"] := "{u+03b2}"  ; (β) Greek small beta
+cmpGreek["V"] := "{u+0392}"  ; (Β) Greek capital beta
+cmpGreek["g"] := "{u+03b3}"  ; (γ) Greek small gamma
+cmpGreek["G"] := "{u+0393}"  ; (Γ) Greek capital gamma
+cmpGreek["d"] := "{u+03b4}"  ; (δ) Greek small delta
+cmpGreek["D"] := "{u+0394}"  ; (Δ) Greek capital delta
+cmpGreek["e"] := "{u+03b5}"  ; (ε) Greek small epsilon
+cmpGreek["E"] := "{u+0395}"  ; (Ε) Greek capital epsilon
+cmpGreek["z"] := "{u+03b6}"  ; (ζ) Greek small zeta
+cmpGreek["Z"] := "{u+0396}"  ; (Ζ) Greek capital zeta
+cmpGreek["h"] := "{u+03b7}"  ; (η) Greek small eta
+cmpGreek["H"] := "{u+0397}"  ; (Η) Greek capital eta
+cmpGreek["j"] := "{u+03b8}"  ; (θ) Greek small theta
+cmpGreek["J"] := "{u+0398}"  ; (Θ) Greek capital theta
+cmpGreek["i"] := "{u+03b9}"  ; (ι) Greek small iota
+cmpGreek["I"] := "{u+0399}"  ; (Ι) Greek capital iota
+cmpGreek["k"] := "{u+03ba}"  ; (κ) Greek small kappa
+cmpGreek["K"] := "{u+039a}"  ; (Κ) Greek capital kappa
+cmpGreek["l"] := "{u+03bb}"  ; (λ) Greek small lambda
+cmpGreek["L"] := "{u+039b}"  ; (Λ) Greek capital lambda
+cmpGreek["m"] := "{u+03bc}"  ; (μ) Greek small mu
+cmpGreek["M"] := "{u+039c}"  ; (Μ) Greek capital mu
+cmpGreek["n"] := "{u+03bd}"  ; (ν) Greek small nu
+cmpGreek["N"] := "{u+039d}"  ; (Ν) Greek capital nu
+cmpGreek["x"] := "{u+03be}"  ; (ξ) Greek small xi
+cmpGreek["X"] := "{u+039e}"  ; (Ξ) Greek capital xi
+cmpGreek["o"] := "{u+03bf}"  ; (ο) Greek small omicron
+cmpGreek["O"] := "{u+039f}"  ; (Ο) Greek capital omicron
+cmpGreek["p"] := "{u+03c0}"  ; (π) Greek small pi
+cmpGreek["P"] := "{u+03a0}"  ; (Π) Greek capital pi
+cmpGreek["r"] := "{u+03c1}"  ; (ρ) Greek small rho
+cmpGreek["R"] := "{u+03a1}"  ; (Ρ) Greek capital rho
+cmpGreek["s"] := "{u+03c3}"  ; (σ) Greek small sigma
+cmpGreek["S"] := "{u+03a3}"  ; (Σ) Greek capital sigma
+cmpGreek[","] := "{u+03c2}"  ; (ς) Greek small final sigma
+cmpGreek["t"] := "{u+03c4}"  ; (τ) Greek small tau
+cmpGreek["T"] := "{u+03a4}"  ; (Τ) Greek capital tau
+cmpGreek["u"] := "{u+03c5}"  ; (υ) Greek small upsilon
+cmpGreek["U"] := "{u+03a5}"  ; (Υ) Greek capital upsilon
+cmpGreek["y"] := "{u+03c5}"  ; (υ) Greek small upsilon
+cmpGreek["Y"] := "{u+03a5}"  ; (Υ) Greek capital upsilon
+cmpGreek["f"] := "{u+03c6}"  ; (φ) Greek small phi
+cmpGreek["F"] := "{u+03a6}"  ; (Φ) Greek capital phi
+cmpGreek["c"] := "{u+03c7}"  ; (χ) Greek small chi
+cmpGreek["C"] := "{u+03a7}"  ; (Χ) Greek capital chi
+cmpGreek["w"] := "{u+03c8}"  ; (ψ) Greek small psi
+cmpGreek["W"] := "{u+03a8}"  ; (Ψ) Greek capital psi
+cmpGreek["q"] := "{u+03c9}"  ; (ω) Greek small omega
+cmpGreek["Q"] := "{u+03a9}"  ; (Ω) Greek capital omega
 
 
 ; Compose :  Superscript Characters (p)
@@ -836,17 +836,34 @@ cmpFlorette["f"] := "{u+2766}"  ; (❦) floral heart
 cmpFlorette["h"] := "{u+2767}"  ; (❧) rotated floral heart bullet
 
 
+; Compose :  Chess Symbols (C)
+
+global cmpCapitalC := Map()
+cmpCapitalC["k"] := "{u+2654}"  ; (♔) white chess king
+cmpCapitalC["q"] := "{u+2655}"  ; (♕) white chess queen
+cmpCapitalC["r"] := "{u+2656}"  ; (♖) white chess rook
+cmpCapitalC["b"] := "{u+2657}"  ; (♗) white chess bishop
+cmpCapitalC["n"] := "{u+2658}"  ; (♘) white chess knight
+cmpCapitalC["p"] := "{u+2659}"  ; (♙) white chess pawn
+cmpCapitalC["K"] := "{u+265a}"  ; (♚) black chess king
+cmpCapitalC["Q"] := "{u+265b}"  ; (♛) black chess queen
+cmpCapitalC["R"] := "{u+265c}"  ; (♜) black chess rook
+cmpCapitalC["B"] := "{u+265d}"  ; (♝) black chess bishop
+cmpCapitalC["N"] := "{u+265e}"  ; (♞) black chess knight
+cmpCapitalC["P"] := "{u+265f}"  ; (♟) black chess pawn
+
+
 ; Compose :  Playing Card Suit Symbols (S)
 
-global cmpPlayingCardSuit := Map()
-cmpPlayingCardSuit["c"] := "{u+2663}"  ; (♣) black club suit
-cmpPlayingCardSuit["C"] := "{u+2667}"  ; (♧) white club suit
-cmpPlayingCardSuit["d"] := "{u+2666}"  ; (♦) black diamond suit
-cmpPlayingCardSuit["D"] := "{u+2662}"  ; (♢) white diamond suit
-cmpPlayingCardSuit["h"] := "{u+2665}"  ; (♥) black heart suit
-cmpPlayingCardSuit["H"] := "{u+2661}"  ; (♡) white heart suit
-cmpPlayingCardSuit["p"] := "{u+2660}"  ; (♠) black spade suit
-cmpPlayingCardSuit["P"] := "{u+2664}"  ; (♤) white spade suit
+global cmpCapitalS := Map()
+cmpCapitalS["c"] := "{u+2663}"  ; (♣) black club suit
+cmpCapitalS["C"] := "{u+2667}"  ; (♧) white club suit
+cmpCapitalS["d"] := "{u+2666}"  ; (♦) black diamond suit
+cmpCapitalS["D"] := "{u+2662}"  ; (♢) white diamond suit
+cmpCapitalS["h"] := "{u+2665}"  ; (♥) black heart suit
+cmpCapitalS["H"] := "{u+2661}"  ; (♡) white heart suit
+cmpCapitalS["p"] := "{u+2660}"  ; (♠) black spade suit
+cmpCapitalS["P"] := "{u+2664}"  ; (♤) white spade suit
 
 
 ; Compose :  Vulgar Fractions
@@ -948,18 +965,18 @@ global cmpSmallI := Map()
 global cmpCapitalI := Map()
 global cmpCapitalO := Map()
 global cmpCapitalT := Map()
-cmpArrow["e"] := "{u+00e6}"            ; (æ) letter ae
-cmpCapitalA["E"] := "{u+00c6}"         ; (Æ) letter AE
-cmpSmallD["h"] := "{u+00f0}"           ; (ð) small letter eth
-cmpCapitalD["H"] := "{u+00d0}"         ; (Ð) capital letter eth
-cmpSmallI["j"] := "{u+0133}"           ; (ĳ) ligature ij
-cmpCapitalI["J"] := "{u+0132}"         ; (Ĳ) ligature IJ
-cmpRingAbove["e"] := "{u+0153}"        ; (œ) ligature oe
-cmpCapitalO["E"] := "{u+0152}"         ; (Œ) ligature OE
-cmpSymbols["s"] := "{u+00df}"          ; (ß) small sharp s (Eszett)
-cmpPlayingCardSuit["S"] := "{u+1e9e}"  ; (ẞ) capital sharp S (capital Eszett)
-cmpTurned["h"] := "{u+00fe}"           ; (þ) small letter thorn
-cmpCapitalT["H"] := "{u+00de}"         ; (Þ) capital letter thorn
+cmpArrow["e"] := "{u+00e6}"      ; (æ) letter ae
+cmpCapitalA["E"] := "{u+00c6}"   ; (Æ) letter AE
+cmpSmallD["h"] := "{u+00f0}"     ; (ð) small letter eth
+cmpCapitalD["H"] := "{u+00d0}"   ; (Ð) capital letter eth
+cmpSmallI["j"] := "{u+0133}"     ; (ĳ) ligature ij
+cmpCapitalI["J"] := "{u+0132}"   ; (Ĳ) ligature IJ
+cmpRingAbove["e"] := "{u+0153}"  ; (œ) ligature oe
+cmpCapitalO["E"] := "{u+0152}"   ; (Œ) ligature OE
+cmpSymbols["s"] := "{u+00df}"    ; (ß) small sharp s (Eszett)
+cmpCapitalS["S"] := "{u+1e9e}"   ; (ẞ) capital sharp S (capital Eszett)
+cmpTurned["h"] := "{u+00fe}"     ; (þ) small letter thorn
+cmpCapitalT["H"] := "{u+00de}"   ; (Þ) capital letter thorn
 
 
 ; Compose :  General/Math Symbols
@@ -978,77 +995,78 @@ global cmpPercent := Map()
 global cmpLessThan := Map()
 global cmpGreaterThan := Map()
 global cmpBracketLeft := Map()
-cmpSmallD["d"] := "{u+2020}"           ; (†) dagger
-cmpCapitalD["D"] := "{u+2021}"         ; (‡) double dagger
-cmpSmallI["i"] := "{u+221e}"           ; (∞) infinity symbol
-cmpEight["8"] := "{u+221e}"            ; (∞) infinity symbol
-cmpMathSymbols["i"] := "{u+00b5}"      ; (µ) micro sign
-cmpSmallN["o"] := "{u+2116}"           ; (№) numero sign
-cmpCapitalN["o"] := "{u+2116}"         ; (№) numero sign
-cmpRingAbove["x"] := "{u+00a4}"        ; (¤) currency sign
-cmpSuperscript["p"] := "{u+00b6}"      ; (¶) pilcrow sign
-cmpCapitalP["P"] := "{u+00b6}"         ; (¶) pilcrow sign
-cmpSmallR["2"] := "{u+221a}"           ; (√) square root
-cmpSmallR["3"] := "{u+221b}"           ; (∛) cube root
-cmpSmallR["4"] := "{u+221c}"           ; (∜) fourth root
-cmpSymbols["o"] := "{u+00a7}"          ; (§) section sign
-cmpPlayingCardSuit["o"] := "{u+00a7}"  ; (§) section sign
-cmpTurned["m"] := "{u+2122}"           ; (™) trademark symbol
-cmpAcuteAccent["1"] := "{u+2032}"      ; (′) prime
-cmpAcuteAccent["2"] := "{u+2033}"      ; (″) double prime
-cmpAcuteAccent["3"] := "{u+2034}"      ; (‴) triple prime
-cmpAcuteAccent["4"] := "{u+2057}"      ; (⁗) quadruple prime
-cmpAsterisk["*"] := "{u+00d7}"         ; (×) multiplication sign
-cmpStroke["/"] := "{u+00f7}"           ; (÷) division sign
-cmpAsterisk["o"] := "{u+00b0}"         ; (°) degree sign
-cmpRingAbove["*"] := "{u+00b0}"        ; (°) degree sign
-cmpDotAbove["."] := "{u+00b7}"         ; (·) middle dot
-cmpDotAbove[" "] := "{u+00b7}"         ; (·) middle dot
-cmpDotAbove["3"] := "{u+2026}"         ; (…) horizontal ellipsis
-cmpArrow["-"] := "{u+00aa}"            ; (ª) feminine ordinal indicator (Spanish, Portuguese, Italian, Galician)
-cmpRingAbove["-"] := "{u+00ba}"        ; (º) masculine ordinal indicator (Spanish, Portuguese, Italian, Galician)
-cmpExclam["!"] := "{u+00a1}"           ; (¡) inverted exclamation mark
-cmpQuestion["?"] := "{u+00bf}"         ; (¿) inverted question mark
-cmpRingAbove["c"] := "{u+00a9}"        ; (©) copyright sign
-cmpParenLeft["c"] := "{u+00a9}"        ; (©) copyright sign
-cmpRingAbove["p"] := "{u+2117}"        ; (℗) sound recording copyright
-cmpParenLeft["p"] := "{u+2117}"        ; (℗) sound recording copyright
-cmpRingAbove["r"] := "{u+00ae}"        ; (®) registered sign
-cmpParenLeft["r"] := "{u+00ae}"        ; (®) registered sign
-cmpPlus["-"] := "{u+00b1}"             ; (±) plus-minus sign
-cmpPercent["%"] := "{u+2030}"          ; (‰) per mille sign
-cmpPercent["3"] := "{u+2030}"          ; (‰) per mille sign
-cmpPercent["4"] := "{u+2031}"          ; (‱) per ten thousand sign
-cmpExclam["="] := "{u+2260}"           ; (≠) not equal to
-cmpLessThan[">"] := "{u+2260}"         ; (≠) not equal to
-cmpLessThan["="] := "{u+2264}"         ; (≤) less-than or equal to
-cmpGreaterThan["="] := "{u+2265}"      ; (≥) greater-than or equal to
-cmpLessThan["+"] := "{u+2a7d}"         ; (⩽) less-than or slanted equal to
-cmpGreaterThan["+"] := "{u+2a7e}"      ; (⩾) greater-than or slanted equal to
-cmpTilde["~"] := "{u+2248}"            ; (≈) almost equal to
-cmpBracketLeft["]"] := "{u+2610}"      ; (☐) ballot box
-cmpBracketLeft["v"] := "{u+2611}"      ; (☑) ballot box with check
-cmpBracketLeft["y"] := "{u+2611}"      ; (☑) ballot box with check
-cmpBracketLeft["x"] := "{u+2612}"      ; (☒) ballot box with x
+cmpSmallD["d"] := "{u+2020}"        ; (†) dagger
+cmpCapitalD["D"] := "{u+2021}"      ; (‡) double dagger
+cmpSmallI["i"] := "{u+221e}"        ; (∞) infinity symbol
+cmpEight["8"] := "{u+221e}"         ; (∞) infinity symbol
+cmpMathSymbols["i"] := "{u+00b5}"   ; (µ) micro sign
+cmpSmallN["o"] := "{u+2116}"        ; (№) numero sign
+cmpCapitalN["o"] := "{u+2116}"      ; (№) numero sign
+cmpRingAbove["x"] := "{u+00a4}"     ; (¤) currency sign
+cmpSuperscript["p"] := "{u+00b6}"   ; (¶) pilcrow sign
+cmpCapitalP["P"] := "{u+00b6}"      ; (¶) pilcrow sign
+cmpSmallR["2"] := "{u+221a}"        ; (√) square root
+cmpSmallR["3"] := "{u+221b}"        ; (∛) cube root
+cmpSmallR["4"] := "{u+221c}"        ; (∜) fourth root
+cmpSymbols["o"] := "{u+00a7}"       ; (§) section sign
+cmpCapitalS["o"] := "{u+00a7}"      ; (§) section sign
+cmpTurned["m"] := "{u+2122}"        ; (™) trademark symbol
+cmpAcuteAccent["1"] := "{u+2032}"   ; (′) prime
+cmpAcuteAccent["2"] := "{u+2033}"   ; (″) double prime
+cmpAcuteAccent["3"] := "{u+2034}"   ; (‴) triple prime
+cmpAcuteAccent["4"] := "{u+2057}"   ; (⁗) quadruple prime
+cmpAsterisk["*"] := "{u+00d7}"      ; (×) multiplication sign
+cmpStroke["/"] := "{u+00f7}"        ; (÷) division sign
+cmpAsterisk["o"] := "{u+00b0}"      ; (°) degree sign
+cmpRingAbove["*"] := "{u+00b0}"     ; (°) degree sign
+cmpDotAbove["."] := "{u+00b7}"      ; (·) middle dot
+cmpDotAbove[" "] := "{u+00b7}"      ; (·) middle dot
+cmpDotAbove["3"] := "{u+2026}"      ; (…) horizontal ellipsis
+cmpArrow["-"] := "{u+00aa}"         ; (ª) feminine ordinal indicator (Spanish, Portuguese, Italian, Galician)
+cmpRingAbove["-"] := "{u+00ba}"     ; (º) masculine ordinal indicator (Spanish, Portuguese, Italian, Galician)
+cmpExclam["!"] := "{u+00a1}"        ; (¡) inverted exclamation mark
+cmpQuestion["?"] := "{u+00bf}"      ; (¿) inverted question mark
+cmpRingAbove["c"] := "{u+00a9}"     ; (©) copyright sign
+cmpParenLeft["c"] := "{u+00a9}"     ; (©) copyright sign
+cmpRingAbove["p"] := "{u+2117}"     ; (℗) sound recording copyright
+cmpParenLeft["p"] := "{u+2117}"     ; (℗) sound recording copyright
+cmpRingAbove["r"] := "{u+00ae}"     ; (®) registered sign
+cmpParenLeft["r"] := "{u+00ae}"     ; (®) registered sign
+cmpPlus["-"] := "{u+00b1}"          ; (±) plus-minus sign
+cmpMacronStroke["+"] := "{u+2213}"  ; (∓) minus-or-plus sign
+cmpPercent["%"] := "{u+2030}"       ; (‰) per mille sign
+cmpPercent["3"] := "{u+2030}"       ; (‰) per mille sign
+cmpPercent["4"] := "{u+2031}"       ; (‱) per ten thousand sign
+cmpExclam["="] := "{u+2260}"        ; (≠) not equal to
+cmpLessThan[">"] := "{u+2260}"      ; (≠) not equal to
+cmpLessThan["="] := "{u+2264}"      ; (≤) less-than or equal to
+cmpGreaterThan["="] := "{u+2265}"   ; (≥) greater-than or equal to
+cmpLessThan["+"] := "{u+2a7d}"      ; (⩽) less-than or slanted equal to
+cmpGreaterThan["+"] := "{u+2a7e}"   ; (⩾) greater-than or slanted equal to
+cmpTilde["~"] := "{u+2248}"         ; (≈) almost equal to
+cmpBracketLeft["]"] := "{u+2610}"   ; (☐) ballot box
+cmpBracketLeft["v"] := "{u+2611}"   ; (☑) ballot box with check
+cmpBracketLeft["y"] := "{u+2611}"   ; (☑) ballot box with check
+cmpBracketLeft["x"] := "{u+2612}"   ; (☒) ballot box with x
 
 
 ; Compose :  Bullets and Arrowheads (;)
 
 global cmpSemicolon := Map()
-cmpSemicolon["a"] := "{u+27a4}" ; (➤) black rightwards arrowhead
-cmpSemicolon["b"] := "{u+2022}" ; (•) bullet
-cmpSemicolon[";"] := "{u+2022}" ; (•) bullet
-cmpSemicolon["d"] := "{u+27a5}" ; (➥) heavy black curved downwards and rightwards arrow
-cmpSemicolon["h"] := "{u+2043}" ; (⁃) hyphen bullet
-cmpSemicolon["-"] := "{u+2043}" ; (⁃) hyphen bullet
-cmpSemicolon["p"] := "{u+27a8}" ; (➨) heavy concave-pointed black rightwards arrow
-cmpSemicolon["q"] := "{u+27a7}" ; (➧) squat black rightwards arrow
-cmpSemicolon["r"] := "{u+27a1}" ; (➡) black rightwards arrow
-cmpSemicolon["t"] := "{u+2023}" ; (‣) triangular bullet
-cmpSemicolon["u"] := "{u+27a6}" ; (➦) heavy black curved upwards and rightwards arrow
-cmpSemicolon["w"] := "{u+25e6}" ; (◦) white bullet
-cmpSemicolon["3"] := "{u+27a2}" ; (➢) 3d top-lighted rightwards arrowhead
-cmpSemicolon["#"] := "{u+27a3}" ; (➣) 3d bottom-lighted rightwards arrowhead
+cmpSemicolon["a"] := "{u+27a4}"  ; (➤) black rightwards arrowhead
+cmpSemicolon["b"] := "{u+2022}"  ; (•) bullet
+cmpSemicolon[";"] := "{u+2022}"  ; (•) bullet
+cmpSemicolon["d"] := "{u+27a5}"  ; (➥) heavy black curved downwards and rightwards arrow
+cmpSemicolon["h"] := "{u+2043}"  ; (⁃) hyphen bullet
+cmpSemicolon["-"] := "{u+2043}"  ; (⁃) hyphen bullet
+cmpSemicolon["p"] := "{u+27a8}"  ; (➨) heavy concave-pointed black rightwards arrow
+cmpSemicolon["q"] := "{u+27a7}"  ; (➧) squat black rightwards arrow
+cmpSemicolon["r"] := "{u+27a1}"  ; (➡) black rightwards arrow
+cmpSemicolon["t"] := "{u+2023}"  ; (‣) triangular bullet
+cmpSemicolon["u"] := "{u+27a6}"  ; (➦) heavy black curved upwards and rightwards arrow
+cmpSemicolon["w"] := "{u+25e6}"  ; (◦) white bullet
+cmpSemicolon["3"] := "{u+27a2}"  ; (➢) 3d top-lighted rightwards arrowhead
+cmpSemicolon["#"] := "{u+27a3}"  ; (➣) 3d bottom-lighted rightwards arrowhead
 
 
 ; Compose :  Quotation Marks
@@ -1080,7 +1098,6 @@ cmpAcuteAccent[">"] := "{u+203a}"        ; (›) right-pointing single angle quo
 
 ; Compose :  Letters with Two Diacritical Marks
 
-global cmpCapitalC := Map()
 global cmpSmallE := Map()
 global cmpCapitalE := Map()
 global cmpCapitalV := Map()
@@ -1643,8 +1660,8 @@ cmpCapitalV["``"] := "{u+01db}"      ; (Ǜ) U with diaeresis and grave
       Send cmpCurrency[ihB.Input]
   }
   else if (ihA.Input == "g") {
-    if cmpGreekAlphabet.Has(ihB.Input)
-      Send cmpGreekAlphabet[ihB.Input]
+    if cmpGreek.Has(ihB.Input)
+      Send cmpGreek[ihB.Input]
   }
   else if (ihA.Input == "p") {
     if cmpSuperscript.Has(ihB.Input)
@@ -1674,9 +1691,13 @@ cmpCapitalV["``"] := "{u+01db}"      ; (Ǜ) U with diaeresis and grave
     if cmpFlorette.Has(ihB.Input)
       Send cmpFlorette[ihB.Input]
   }
+  else if (ihA.Input == "C") {
+    if cmpCapitalC.Has(ihB.Input)
+      Send cmpCapitalC[ihB.Input]
+  }
   else if (ihA.Input == "S") {
-    if cmpPlayingCardSuit.Has(ihB.Input)
-      Send cmpPlayingCardSuit[ihB.Input]
+    if cmpCapitalS.Has(ihB.Input)
+      Send cmpCapitalS[ihB.Input]
   }
   else if (ihA.Input == "1") {
     if cmpOne.Has(ihB.Input)
@@ -1801,10 +1822,6 @@ cmpCapitalV["``"] := "{u+01db}"      ; (Ǜ) U with diaeresis and grave
   else if (ihA.Input == "]") {
     if cmpBracketRight.Has(ihB.Input)
       Send cmpBracketRight[ihB.Input]
-  }
-  else if (ihA.Input == "C") {
-    if cmpCapitalC.Has(ihB.Input)
-      Send cmpCapitalC[ihB.Input]
   }
   else if (ihA.Input == "e") {
     if cmpSmallE.Has(ihB.Input)
