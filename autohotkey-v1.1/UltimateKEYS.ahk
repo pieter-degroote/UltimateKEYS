@@ -1,4 +1,4 @@
-; UltimateKEYS.ahk - 2022-10-22
+; UltimateKEYS.ahk - 2022-11-04
 
 ; Website :  www.ultimatekeys.info (pieter-degroote.github.io/UltimateKEYS/)
 
@@ -292,8 +292,6 @@ cmpBreveSpecial.item["g"] := "{u+011f}"  ; (ğ) g with breve
 cmpBreveSpecial.item["G"] := "{u+011e}"  ; (Ğ) G with breve
 cmpBreveSpecial.item["i"] := "{u+012d}"  ; (ĭ) i with breve
 cmpBreveSpecial.item["I"] := "{u+012c}"  ; (Ĭ) I with breve
-cmpBreveSpecial.item["n"] := "{u+014b}"  ; (ŋ) small letter eng(ma)
-cmpBreveSpecial.item["N"] := "{u+014a}"  ; (Ŋ) capital letter eng(ma)
 cmpBreveSpecial.item["o"] := "{u+014f}"  ; (ŏ) o with breve
 cmpBreveSpecial.item["O"] := "{u+014e}"  ; (Ŏ) O with breve
 cmpBreveSpecial.item["s"] := "{u+0219}"  ; (ș) s with comma below (Romanian)
@@ -780,118 +778,31 @@ cmpDoubleAcute.item["9"] := "{u+21d7}"  ; (⇗) north east double arrow
 cmpDoubleAcute.item["0"] := "{u+21d4}"  ; (⇔) left right double arrow
 
 
-; Compose :  Miscellaneous Symbols (s)
+; Compose :  Various Symbols (s)
 
 cmpSymbols := ComObjCreate("Scripting.Dictionary")
 cmpSymbols.item["a"] := "{u+214d}"  ; (⅍) aktieselskab
+cmpSymbols.item["b"] := "{u+2e18}"  ; (⸘) inverted interrobang
 cmpSymbols.item["c"] := "{u+2105}"  ; (℅) care of
 cmpSymbols.item["d"] := "{u+22c4}"  ; (⋄) diamond operator
 cmpSymbols.item["e"] := "{u+212e}"  ; (℮) estimated symbol
-cmpSymbols.item["f"] := "{u+2640}"  ; (♀) Venus symbol (female)
+cmpSymbols.item["f"] := "{u+2640}"  ; (♀) female sign (Venus)
+cmpSymbols.item["h"] := "{u+2126}"  ; (Ω) ohm sign (backwards compatibility)
 cmpSymbols.item["i"] := "{u+2300}"  ; (⌀) diameter sign
 cmpSymbols.item["l"] := "{u+2113}"  ; (ℓ) script small l
 cmpSymbols.item["L"] := "{u+2112}"  ; (ℒ) Laplace transform
-cmpSymbols.item["m"] := "{u+2642}"  ; (♂) Mars symbol (male)
+cmpSymbols.item["m"] := "{u+2642}"  ; (♂) male sign (Mars)
 cmpSymbols.item["M"] := "{u+2120}"  ; (℠) service mark
-cmpSymbols.item["n"] := "{u+2709}"  ; (✉) envelope
-cmpSymbols.item["q"] := "{u+2126}"  ; (Ω) ohm sign (backwards compatibility)
+cmpSymbols.item["q"] := "{u+2e2e}"  ; (⸮) reversed question mark
 cmpSymbols.item["r"] := "{u+211e}"  ; (℞) prescription take (Recipere)
 cmpSymbols.item["R"] := "{u+211e}"  ; (℞) prescription take (Recipere)
-cmpSymbols.item["t"] := "{u+2706}"  ; (✆) telephone location sign
-cmpSymbols.item["v"] := "{u+2713}"  ; (✓) check mark
-cmpSymbols.item["V"] := "{u+2714}"  ; (✔) heavy check mark
-cmpSymbols.item["w"] := "{u+26a0}"  ; (⚠) warning sign
-cmpSymbols.item["x"] := "{u+2717}"  ; (✗) ballot x
-cmpSymbols.item["X"] := "{u+2718}"  ; (✘) heavy ballot x
-cmpSymbols.item["y"] := "{u+2713}"  ; (✓) check mark
-cmpSymbols.item["Y"] := "{u+2714}"  ; (✔) heavy check mark
 cmpSymbols.item["2"] := "{u+266b}"  ; (♫) beamed eighth notes
 cmpSymbols.item["3"] := "{u+2042}"  ; (⁂) asterism
-cmpSymbols.item["5"] := "{u+2605}"  ; (★) black star
-cmpSymbols.item["%"] := "{u+2606}"  ; (☆) white star
-cmpSymbols.item["6"] := "{u+273d}"  ; (✽) heavy teardrop-spoked asterisk
-cmpSymbols.item["^"] := "{u+273b}"  ; (✻) teardrop-spoked asterisk
 cmpSymbols.item["8"] := "{u+266a}"  ; (♪) eighth note
-cmpSymbols.item[";"] := "{u+263a}"  ; (☺) white smiling face
-cmpSymbols.item[":"] := "{u+263b}"  ; (☻) black smiling face
 cmpSymbols.item["!"] := "{u+203c}"  ; (‼) double exclamation mark
 cmpSymbols.item["?"] := "{u+203d}"  ; (‽) interrobang
 cmpSymbols.item["\"] := "{u+205e}"  ; (⁞) vertical four dots
 cmpSymbols.item["|"] := "{u+00a6}"  ; (¦) broken bar
-cmpSymbols.item["."] := "{u+2e18}"  ; (⸘) inverted interrobang
-cmpSymbols.item["/"] := "{u+2e2e}"  ; (⸮) reversed question mark
-
-
-; Compose :  Florette and Floral Heart Symbols (f)
-
-cmpFlorette := ComObjCreate("Scripting.Dictionary")
-cmpFlorette.item["r"] := "{u+2619}"  ; (☙) reversed rotated floral heart bullet
-cmpFlorette.item["6"] := "{u+273e}"  ; (✾) six petalled black and white florette
-cmpFlorette.item["b"] := "{u+273f}"  ; (✿) black florette
-cmpFlorette.item["w"] := "{u+2740}"  ; (❀) white florette
-cmpFlorette.item["8"] := "{u+2741}"  ; (❁) eight petalled outlined black florette
-cmpFlorette.item["f"] := "{u+2766}"  ; (❦) floral heart
-cmpFlorette.item["h"] := "{u+2767}"  ; (❧) rotated floral heart bullet
-
-
-; Compose :  Chess Symbols (C)
-
-cmpCapitalC := ComObjCreate("Scripting.Dictionary")
-cmpCapitalC.item["k"] := "{u+2654}"  ; (♔) white chess king
-cmpCapitalC.item["q"] := "{u+2655}"  ; (♕) white chess queen
-cmpCapitalC.item["r"] := "{u+2656}"  ; (♖) white chess rook
-cmpCapitalC.item["b"] := "{u+2657}"  ; (♗) white chess bishop
-cmpCapitalC.item["n"] := "{u+2658}"  ; (♘) white chess knight
-cmpCapitalC.item["p"] := "{u+2659}"  ; (♙) white chess pawn
-cmpCapitalC.item["K"] := "{u+265a}"  ; (♚) black chess king
-cmpCapitalC.item["Q"] := "{u+265b}"  ; (♛) black chess queen
-cmpCapitalC.item["R"] := "{u+265c}"  ; (♜) black chess rook
-cmpCapitalC.item["B"] := "{u+265d}"  ; (♝) black chess bishop
-cmpCapitalC.item["N"] := "{u+265e}"  ; (♞) black chess knight
-cmpCapitalC.item["P"] := "{u+265f}"  ; (♟) black chess pawn
-
-
-; Compose :  Playing Card Suit Symbols (S)
-
-cmpCapitalS := ComObjCreate("Scripting.Dictionary")
-cmpCapitalS.item["c"] := "{u+2663}"  ; (♣) black club suit
-cmpCapitalS.item["C"] := "{u+2667}"  ; (♧) white club suit
-cmpCapitalS.item["d"] := "{u+2666}"  ; (♦) black diamond suit
-cmpCapitalS.item["D"] := "{u+2662}"  ; (♢) white diamond suit
-cmpCapitalS.item["h"] := "{u+2665}"  ; (♥) black heart suit
-cmpCapitalS.item["H"] := "{u+2661}"  ; (♡) white heart suit
-cmpCapitalS.item["p"] := "{u+2660}"  ; (♠) black spade suit
-cmpCapitalS.item["P"] := "{u+2664}"  ; (♤) white spade suit
-
-
-; Compose :  Vulgar Fractions
-
-cmpOne := ComObjCreate("Scripting.Dictionary")
-cmpTwo := ComObjCreate("Scripting.Dictionary")
-cmpThree := ComObjCreate("Scripting.Dictionary")
-cmpFour := ComObjCreate("Scripting.Dictionary")
-cmpFive := ComObjCreate("Scripting.Dictionary")
-cmpSeven := ComObjCreate("Scripting.Dictionary")
-cmpZero := ComObjCreate("Scripting.Dictionary")
-cmpOne.item["2"] := "{u+00bd}"    ; (½) vulgar fraction 1/2
-cmpOne.item["3"] := "{u+2153}"    ; (⅓) vulgar fraction 1/3
-cmpTwo.item["3"] := "{u+2154}"    ; (⅔) vulgar fraction 2/3
-cmpOne.item["4"] := "{u+00bc}"    ; (¼) vulgar fraction 1/4
-cmpThree.item["4"] := "{u+00be}"  ; (¾) vulgar fraction 3/4
-cmpOne.item["5"] := "{u+2155}"    ; (⅕) vulgar fraction 1/5
-cmpTwo.item["5"] := "{u+2156}"    ; (⅖) vulgar fraction 2/5
-cmpThree.item["5"] := "{u+2157}"  ; (⅗) vulgar fraction 3/5
-cmpFour.item["5"] := "{u+2158}"   ; (⅘) vulgar fraction 4/5
-cmpOne.item["6"] := "{u+2159}"    ; (⅙) vulgar fraction 1/6
-cmpFive.item["6"] := "{u+215a}"   ; (⅚) vulgar fraction 5/6
-cmpOne.item["7"] := "{u+2150}"    ; (⅐) vulgar fraction 1/7
-cmpOne.item["8"] := "{u+215b}"    ; (⅛) vulgar fraction 1/8
-cmpThree.item["8"] := "{u+215c}"  ; (⅜) vulgar fraction 3/8
-cmpFive.item["8"] := "{u+215d}"   ; (⅝) vulgar fraction 5/8
-cmpSeven.item["8"] := "{u+215e}"  ; (⅞) vulgar fraction 7/8
-cmpOne.item["9"] := "{u+2151}"    ; (⅑) vulgar fraction 1/9
-cmpOne.item["0"] := "{u+2152}"    ; (⅒) vulgar fraction 1/10
-cmpZero.item["3"] := "{u+2189}"   ; (↉) vulgar fraction 0/3
 
 
 ; Compose :  Math Symbols (m)
@@ -961,7 +872,10 @@ cmpSmallD := ComObjCreate("Scripting.Dictionary")
 cmpCapitalD := ComObjCreate("Scripting.Dictionary")
 cmpSmallI := ComObjCreate("Scripting.Dictionary")
 cmpCapitalI := ComObjCreate("Scripting.Dictionary")
+cmpSmallN := ComObjCreate("Scripting.Dictionary")
+cmpCapitalN := ComObjCreate("Scripting.Dictionary")
 cmpCapitalO := ComObjCreate("Scripting.Dictionary")
+cmpCapitalS := ComObjCreate("Scripting.Dictionary")
 cmpCapitalT := ComObjCreate("Scripting.Dictionary")
 cmpArrow.item["e"] := "{u+00e6}"      ; (æ) letter ae
 cmpCapitalA.item["E"] := "{u+00c6}"   ; (Æ) letter AE
@@ -969,6 +883,8 @@ cmpSmallD.item["h"] := "{u+00f0}"     ; (ð) small letter eth
 cmpCapitalD.item["H"] := "{u+00d0}"   ; (Ð) capital letter eth
 cmpSmallI.item["j"] := "{u+0133}"     ; (ĳ) ligature ij
 cmpCapitalI.item["J"] := "{u+0132}"   ; (Ĳ) ligature IJ
+cmpSmallN.item["g"] := "{u+014b}"     ; (ŋ) small letter eng(ma)
+cmpCapitalN.item["G"] := "{u+014a}"   ; (Ŋ) capital letter eng(ma)
 cmpRingAbove.item["e"] := "{u+0153}"  ; (œ) ligature oe
 cmpCapitalO.item["E"] := "{u+0152}"   ; (Œ) ligature OE
 cmpSymbols.item["s"] := "{u+00df}"    ; (ß) small sharp s (Eszett)
@@ -979,11 +895,10 @@ cmpCapitalT.item["H"] := "{u+00de}"   ; (Þ) capital letter thorn
 
 ; Compose :  General/Math Symbols
 
-cmpEight := ComObjCreate("Scripting.Dictionary")
-cmpSmallN := ComObjCreate("Scripting.Dictionary")
-cmpCapitalN := ComObjCreate("Scripting.Dictionary")
+cmpDigitEight := ComObjCreate("Scripting.Dictionary")
 cmpCapitalP := ComObjCreate("Scripting.Dictionary")
 cmpSmallR := ComObjCreate("Scripting.Dictionary")
+cmpSemicolon := ComObjCreate("Scripting.Dictionary")
 cmpAsterisk := ComObjCreate("Scripting.Dictionary")
 cmpExclam := ComObjCreate("Scripting.Dictionary")
 cmpQuestion := ComObjCreate("Scripting.Dictionary")
@@ -992,11 +907,10 @@ cmpPlus := ComObjCreate("Scripting.Dictionary")
 cmpPercent := ComObjCreate("Scripting.Dictionary")
 cmpLessThan := ComObjCreate("Scripting.Dictionary")
 cmpGreaterThan := ComObjCreate("Scripting.Dictionary")
-cmpBracketLeft := ComObjCreate("Scripting.Dictionary")
 cmpSmallD.item["d"] := "{u+2020}"        ; (†) dagger
 cmpCapitalD.item["D"] := "{u+2021}"      ; (‡) double dagger
 cmpSmallI.item["i"] := "{u+221e}"        ; (∞) infinity symbol
-cmpEight.item["8"] := "{u+221e}"         ; (∞) infinity symbol
+cmpDigitEight.item["8"] := "{u+221e}"    ; (∞) infinity symbol
 cmpMathSymbols.item["i"] := "{u+00b5}"   ; (µ) micro sign
 cmpSmallN.item["o"] := "{u+2116}"        ; (№) numero sign
 cmpCapitalN.item["o"] := "{u+2116}"      ; (№) numero sign
@@ -1009,6 +923,11 @@ cmpSmallR.item["4"] := "{u+221c}"        ; (∜) fourth root
 cmpSymbols.item["o"] := "{u+00a7}"       ; (§) section sign
 cmpCapitalS.item["o"] := "{u+00a7}"      ; (§) section sign
 cmpTurned.item["m"] := "{u+2122}"        ; (™) trademark symbol
+cmpSemicolon.item["b"] := "{u+2022}"     ; (•) bullet
+cmpSemicolon.item[";"] := "{u+2022}"     ; (•) bullet
+cmpSemicolon.item["t"] := "{u+2023}"     ; (‣) triangular bullet
+cmpSemicolon.item["h"] := "{u+2043}"     ; (⁃) hyphen bullet
+cmpSemicolon.item["w"] := "{u+25e6}"     ; (◦) white bullet
 cmpAcuteAccent.item["1"] := "{u+2032}"   ; (′) prime
 cmpAcuteAccent.item["2"] := "{u+2033}"   ; (″) double prime
 cmpAcuteAccent.item["3"] := "{u+2034}"   ; (‴) triple prime
@@ -1042,33 +961,41 @@ cmpGreaterThan.item["="] := "{u+2265}"   ; (≥) greater-than or equal to
 cmpLessThan.item["+"] := "{u+2a7d}"      ; (⩽) less-than or slanted equal to
 cmpGreaterThan.item["+"] := "{u+2a7e}"   ; (⩾) greater-than or slanted equal to
 cmpTilde.item["~"] := "{u+2248}"         ; (≈) almost equal to
-cmpBracketLeft.item["]"] := "{u+2610}"   ; (☐) ballot box
-cmpBracketLeft.item["v"] := "{u+2611}"   ; (☑) ballot box with check
-cmpBracketLeft.item["y"] := "{u+2611}"   ; (☑) ballot box with check
-cmpBracketLeft.item["x"] := "{u+2612}"   ; (☒) ballot box with x
 
 
-; Compose :  Bullets and Arrowheads (;)
+; Compose :  Vulgar Fractions
 
-cmpSemicolon := ComObjCreate("Scripting.Dictionary")
-cmpSemicolon.item["a"] := "{u+27a4}"  ; (➤) black rightwards arrowhead
-cmpSemicolon.item["b"] := "{u+2022}"  ; (•) bullet
-cmpSemicolon.item[";"] := "{u+2022}"  ; (•) bullet
-cmpSemicolon.item["d"] := "{u+27a5}"  ; (➥) heavy black curved downwards and rightwards arrow
-cmpSemicolon.item["h"] := "{u+2043}"  ; (⁃) hyphen bullet
-cmpSemicolon.item["-"] := "{u+2043}"  ; (⁃) hyphen bullet
-cmpSemicolon.item["p"] := "{u+27a8}"  ; (➨) heavy concave-pointed black rightwards arrow
-cmpSemicolon.item["q"] := "{u+27a7}"  ; (➧) squat black rightwards arrow
-cmpSemicolon.item["r"] := "{u+27a1}"  ; (➡) black rightwards arrow
-cmpSemicolon.item["t"] := "{u+2023}"  ; (‣) triangular bullet
-cmpSemicolon.item["u"] := "{u+27a6}"  ; (➦) heavy black curved upwards and rightwards arrow
-cmpSemicolon.item["w"] := "{u+25e6}"  ; (◦) white bullet
-cmpSemicolon.item["3"] := "{u+27a2}"  ; (➢) 3d top-lighted rightwards arrowhead
-cmpSemicolon.item["#"] := "{u+27a3}"  ; (➣) 3d bottom-lighted rightwards arrowhead
+cmpDigitOne := ComObjCreate("Scripting.Dictionary")
+cmpDigitTwo := ComObjCreate("Scripting.Dictionary")
+cmpDigitThree := ComObjCreate("Scripting.Dictionary")
+cmpDigitFour := ComObjCreate("Scripting.Dictionary")
+cmpDigitFive := ComObjCreate("Scripting.Dictionary")
+cmpDigitSeven := ComObjCreate("Scripting.Dictionary")
+cmpDigitZero := ComObjCreate("Scripting.Dictionary")
+cmpDigitOne.item["2"] := "{u+00bd}"    ; (½) vulgar fraction 1/2
+cmpDigitOne.item["3"] := "{u+2153}"    ; (⅓) vulgar fraction 1/3
+cmpDigitTwo.item["3"] := "{u+2154}"    ; (⅔) vulgar fraction 2/3
+cmpDigitOne.item["4"] := "{u+00bc}"    ; (¼) vulgar fraction 1/4
+cmpDigitThree.item["4"] := "{u+00be}"  ; (¾) vulgar fraction 3/4
+cmpDigitOne.item["5"] := "{u+2155}"    ; (⅕) vulgar fraction 1/5
+cmpDigitTwo.item["5"] := "{u+2156}"    ; (⅖) vulgar fraction 2/5
+cmpDigitThree.item["5"] := "{u+2157}"  ; (⅗) vulgar fraction 3/5
+cmpDigitFour.item["5"] := "{u+2158}"   ; (⅘) vulgar fraction 4/5
+cmpDigitOne.item["6"] := "{u+2159}"    ; (⅙) vulgar fraction 1/6
+cmpDigitFive.item["6"] := "{u+215a}"   ; (⅚) vulgar fraction 5/6
+cmpDigitOne.item["7"] := "{u+2150}"    ; (⅐) vulgar fraction 1/7
+cmpDigitOne.item["8"] := "{u+215b}"    ; (⅛) vulgar fraction 1/8
+cmpDigitThree.item["8"] := "{u+215c}"  ; (⅜) vulgar fraction 3/8
+cmpDigitFive.item["8"] := "{u+215d}"   ; (⅝) vulgar fraction 5/8
+cmpDigitSeven.item["8"] := "{u+215e}"  ; (⅞) vulgar fraction 7/8
+cmpDigitOne.item["9"] := "{u+2151}"    ; (⅑) vulgar fraction 1/9
+cmpDigitOne.item["0"] := "{u+2152}"    ; (⅒) vulgar fraction 1/10
+cmpDigitZero.item["3"] := "{u+2189}"   ; (↉) vulgar fraction 0/3
 
 
 ; Compose :  Quotation Marks
 
+cmpBracketLeft := ComObjCreate("Scripting.Dictionary")
 cmpBracketRight := ComObjCreate("Scripting.Dictionary")
 cmpCedillaOgonek.item[chr(34)] := "{u+201e}"  ; („) double low-9 quotation mark
 cmpDiaeresis.item[","] := "{u+201e}"          ; („) double low-9 quotation mark
@@ -1096,6 +1023,7 @@ cmpAcuteAccent.item[">"] := "{u+203a}"        ; (›) right-pointing single angl
 
 ; Compose :  Letters with Two Diacritical Marks
 
+cmpCapitalC := ComObjCreate("Scripting.Dictionary")
 cmpSmallE := ComObjCreate("Scripting.Dictionary")
 cmpCapitalE := ComObjCreate("Scripting.Dictionary")
 cmpCapitalV := ComObjCreate("Scripting.Dictionary")
@@ -1129,6 +1057,244 @@ cmpCaron.item["v"] := "{u+01da}"          ; (ǚ) u with diaeresis and caron
 cmpCapitalV.item["v"] := "{u+01d9}"       ; (Ǚ) U with diaeresis and caron
 cmpCaron.item["``"] := "{u+01dc}"         ; (ǜ) u with diaeresis and grave
 cmpCapitalV.item["``"] := "{u+01db}"      ; (Ǜ) U with diaeresis and grave
+
+
+; Compose :  Miscellaneous Symbols and Dingbats
+
+cmpDigitSix := ComObjCreate("Scripting.Dictionary")
+
+cmpDigitOne.item["a"] := "{u+2600}"  ; (☀) black sun with rays
+cmpDigitOne.item["b"] := "{u+2601}"  ; (☁) cloud
+cmpDigitOne.item["c"] := "{u+2602}"  ; (☂) umbrella
+cmpDigitOne.item["d"] := "{u+2603}"  ; (☃) snowman
+cmpDigitOne.item["e"] := "{u+2604}"  ; (☄) comet
+cmpDigitOne.item["f"] := "{u+2605}"  ; (★) black star
+cmpDigitOne.item["g"] := "{u+2606}"  ; (☆) white star
+cmpDigitOne.item["h"] := "{u+260e}"  ; (☎) black telephone
+cmpDigitOne.item["i"] := "{u+260f}"  ; (☏) white telephone
+cmpDigitOne.item["j"] := "{u+2610}"  ; (☐) ballot box
+cmpDigitOne.item["k"] := "{u+2611}"  ; (☑) ballot box with check
+cmpDigitOne.item["l"] := "{u+2612}"  ; (☒) ballot box with x
+cmpDigitOne.item["m"] := "{u+2619}"  ; (☙) reversed rotated floral heart bullet
+cmpDigitOne.item["n"] := "{u+261a}"  ; (☚) black left-pointing index
+cmpDigitOne.item["o"] := "{u+261b}"  ; (☛) black right-pointing index
+cmpDigitOne.item["p"] := "{u+261c}"  ; (☜) white left-pointing index
+cmpDigitOne.item["q"] := "{u+261d}"  ; (☝) white up-pointing index
+cmpDigitOne.item["r"] := "{u+261e}"  ; (☞) white right-pointing index
+cmpDigitOne.item["s"] := "{u+261f}"  ; (☟) white down-pointing index
+cmpDigitOne.item["t"] := "{u+2620}"  ; (☠) skull and crossbones
+cmpDigitOne.item["u"] := "{u+2621}"  ; (☡) caution sign
+cmpDigitOne.item["v"] := "{u+2622}"  ; (☢) radioactive sign
+cmpDigitOne.item["w"] := "{u+2623}"  ; (☣) biohazard sign
+cmpDigitOne.item["x"] := "{u+2639}"  ; (☹) white frowning face
+cmpDigitOne.item["y"] := "{u+263a}"  ; (☺) white smiling face
+cmpDigitOne.item["z"] := "{u+263b}"  ; (☻) black smiling face
+
+cmpDigitTwo.item["a"] := "{u+263c}"  ; (☼) white sun with rays
+cmpDigitTwo.item["b"] := "{u+263d}"  ; (☽) first quarter moon
+cmpDigitTwo.item["c"] := "{u+263e}"  ; (☾) last quarter moon
+cmpDigitTwo.item["d"] := "{u+2640}"  ; (♀) female sign (Venus)
+cmpDigitTwo.item["e"] := "{u+2642}"  ; (♂) male sign (Mars)
+cmpDigitTwo.item["f"] := "{u+2668}"  ; (♨) hot springs
+cmpDigitTwo.item["g"] := "{u+2669}"  ; (♩) quarter note
+cmpDigitTwo.item["h"] := "{u+266a}"  ; (♪) eighth note
+cmpDigitTwo.item["i"] := "{u+266b}"  ; (♫) beamed eighth notes
+cmpDigitTwo.item["j"] := "{u+266c}"  ; (♬) beamed sixteenth notes
+cmpDigitTwo.item["k"] := "{u+266d}"  ; (♭) music flat sign
+cmpDigitTwo.item["l"] := "{u+266e}"  ; (♮) music natural sign
+cmpDigitTwo.item["m"] := "{u+266f}"  ; (♯) music sharp sign
+cmpDigitTwo.item["n"] := "{u+2672}"  ; (♲) universal recycling symbol
+cmpDigitTwo.item["o"] := "{u+267a}"  ; (♺) recycling symbol for generic materials
+cmpDigitTwo.item["p"] := "{u+267b}"  ; (♻) black universal recycling symbol
+cmpDigitTwo.item["q"] := "{u+267f}"  ; (♿) wheelchair symbol
+cmpDigitTwo.item["r"] := "{u+2690}"  ; (⚐) white flag
+cmpDigitTwo.item["s"] := "{u+2691}"  ; (⚑) black flag
+cmpDigitTwo.item["t"] := "{u+26a0}"  ; (⚠) warning sign
+cmpDigitTwo.item["u"] := "{u+26a1}"  ; (⚡) high voltage sign
+cmpDigitTwo.item["v"] := "{u+26d4}"  ; (⛔) no entry
+
+cmpDigitThree.item["a"] := "{u+2701}"  ; (✁) upper blade scissors
+cmpDigitThree.item["b"] := "{u+2702}"  ; (✂) black scissors
+cmpDigitThree.item["c"] := "{u+2703}"  ; (✃) lower blade scissors
+cmpDigitThree.item["d"] := "{u+2704}"  ; (✄) white scissors
+cmpDigitThree.item["e"] := "{u+2706}"  ; (✆) telephone location sign
+cmpDigitThree.item["f"] := "{u+2707}"  ; (✇) tape drive
+cmpDigitThree.item["g"] := "{u+2708}"  ; (✈) airplane
+cmpDigitThree.item["h"] := "{u+2709}"  ; (✉) envelope
+cmpDigitThree.item["i"] := "{u+270a}"  ; (✊) raised fist
+cmpDigitThree.item["j"] := "{u+270b}"  ; (✋) raised hand
+cmpDigitThree.item["k"] := "{u+270c}"  ; (✌) victory hand
+cmpDigitThree.item["l"] := "{u+270d}"  ; (✍) writing hand
+cmpDigitThree.item["m"] := "{u+270e}"  ; (✎) lower right pencil
+cmpDigitThree.item["n"] := "{u+270f}"  ; (✏) pencil
+cmpDigitThree.item["o"] := "{u+2710}"  ; (✐) upper right pencil
+cmpDigitThree.item["p"] := "{u+2711}"  ; (✑) white nib
+cmpDigitThree.item["q"] := "{u+2712}"  ; (✒) black nib
+cmpDigitThree.item["r"] := "{u+2713}"  ; (✓) check mark
+cmpDigitThree.item["s"] := "{u+2714}"  ; (✔) heavy check mark
+cmpDigitThree.item["t"] := "{u+2715}"  ; (✕) multiplication x
+cmpDigitThree.item["u"] := "{u+2716}"  ; (✖) heavy multiplication x
+cmpDigitThree.item["v"] := "{u+2717}"  ; (✗) ballot x
+cmpDigitThree.item["w"] := "{u+2718}"  ; (✘) heavy ballot x
+cmpDigitThree.item["x"] := "{u+2719}"  ; (✙) outlined Greek cross
+cmpDigitThree.item["y"] := "{u+271a}"  ; (✚) heavy Greek cross
+cmpDigitThree.item["z"] := "{u+271b}"  ; (✛) open centre cross
+
+cmpDigitFour.item["a"] := "{u+271c}"  ; (✜) heavy open centre cross
+cmpDigitFour.item["b"] := "{u+271d}"  ; (✝) Latin cross
+cmpDigitFour.item["c"] := "{u+271e}"  ; (✞) shadowed white Latin cross
+cmpDigitFour.item["d"] := "{u+271f}"  ; (✟) outlined Latin cross
+cmpDigitFour.item["e"] := "{u+2720}"  ; (✠) Maltese cross
+cmpDigitFour.item["f"] := "{u+2721}"  ; (✡) star of David
+cmpDigitFour.item["g"] := "{u+2722}"  ; (✢) four teardrop-spoked asterisk
+cmpDigitFour.item["h"] := "{u+2723}"  ; (✣) four balloon-spoked asterisk
+cmpDigitFour.item["i"] := "{u+2724}"  ; (✤) heavy four balloon-spoked asterisk
+cmpDigitFour.item["j"] := "{u+2725}"  ; (✥) four club-spoked asterisk
+cmpDigitFour.item["k"] := "{u+2726}"  ; (✦) black four-pointed star
+cmpDigitFour.item["l"] := "{u+2727}"  ; (✧) white four-pointed star
+cmpDigitFour.item["m"] := "{u+2729}"  ; (✩) stress outlined white star
+cmpDigitFour.item["n"] := "{u+272a}"  ; (✪) circled white star
+cmpDigitFour.item["o"] := "{u+272b}"  ; (✫) open centre black star
+cmpDigitFour.item["p"] := "{u+272c}"  ; (✬) black centre white star
+cmpDigitFour.item["q"] := "{u+272d}"  ; (✭) outlined black star
+cmpDigitFour.item["r"] := "{u+272e}"  ; (✮) heavy outlined black star
+cmpDigitFour.item["s"] := "{u+272f}"  ; (✯) pinwheel star
+cmpDigitFour.item["t"] := "{u+2730}"  ; (✰) shadowed white star
+cmpDigitFour.item["u"] := "{u+2731}"  ; (✱) heavy asterisk
+cmpDigitFour.item["v"] := "{u+2732}"  ; (✲) open centre asterisk
+cmpDigitFour.item["w"] := "{u+2733}"  ; (✳) eight-spoked asterisk
+cmpDigitFour.item["x"] := "{u+2734}"  ; (✴) eight-pointed black star
+cmpDigitFour.item["y"] := "{u+2735}"  ; (✵) eight-pointed pinwheel star
+cmpDigitFour.item["z"] := "{u+2736}"  ; (✶) six-pointed black star
+
+cmpDigitFive.item["a"] := "{u+2737}"  ; (✷) eight-pointed rectilinear black star
+cmpDigitFive.item["b"] := "{u+2738}"  ; (✸) heavy eight-pointed rectilinear black star
+cmpDigitFive.item["c"] := "{u+2739}"  ; (✹) twelve pointed black star
+cmpDigitFive.item["d"] := "{u+273a}"  ; (✺) sixteen-pointed asterisk
+cmpDigitFive.item["e"] := "{u+273b}"  ; (✻) teardrop-spoked asterisk
+cmpDigitFive.item["f"] := "{u+273c}"  ; (✼) open centre teardrop-spoked asterisk
+cmpDigitFive.item["g"] := "{u+273d}"  ; (✽) heavy teardrop-spoked asterisk
+cmpDigitFive.item["h"] := "{u+273e}"  ; (✾) six-petalled black and white florette
+cmpDigitFive.item["i"] := "{u+273f}"  ; (✿) black florette
+cmpDigitFive.item["j"] := "{u+2740}"  ; (❀) white florette
+cmpDigitFive.item["k"] := "{u+2741}"  ; (❁) eight-petalled outlined black florette
+cmpDigitFive.item["l"] := "{u+2742}"  ; (❂) circled open centre eight-pointed star
+cmpDigitFive.item["m"] := "{u+2743}"  ; (❃) heavy teardrop-spoked pinwheel asterisk
+cmpDigitFive.item["n"] := "{u+2744}"  ; (❄) snowflake
+cmpDigitFive.item["o"] := "{u+2745}"  ; (❅) tight trifoliate snowflake
+cmpDigitFive.item["p"] := "{u+2746}"  ; (❆) heavy chevron snowflake
+cmpDigitFive.item["q"] := "{u+2747}"  ; (❇) sparkle
+cmpDigitFive.item["r"] := "{u+2748}"  ; (❈) heavy sparkle
+cmpDigitFive.item["s"] := "{u+2749}"  ; (❉) balloon-spoked asterisk
+cmpDigitFive.item["t"] := "{u+274a}"  ; (❊) eight teardrop-spoked propeller asterisk
+cmpDigitFive.item["u"] := "{u+274b}"  ; (❋) heavy eight teardrop-spoked propeller asterisk
+cmpDigitFive.item["v"] := "{u+274d}"  ; (❍) shadowed white circle
+cmpDigitFive.item["w"] := "{u+274f}"  ; (❏) lower right drop-shadowed white square
+cmpDigitFive.item["x"] := "{u+2750}"  ; (❐) upper right drop-shadowed white square
+cmpDigitFive.item["y"] := "{u+2751}"  ; (❑) lower right shadowed white square
+cmpDigitFive.item["z"] := "{u+2752}"  ; (❒) upper right shadowed white square
+
+cmpDigitSix.item["a"] := "{u+2756}"  ; (❖) black diamond minus white x
+cmpDigitSix.item["b"] := "{u+2758}"  ; (❘) light vertical bar
+cmpDigitSix.item["c"] := "{u+2759}"  ; (❙) medium vertical bar
+cmpDigitSix.item["d"] := "{u+275a}"  ; (❚) heavy vertical bar
+cmpDigitSix.item["e"] := "{u+275b}"  ; (❛) heavy single turned comma quotation mark ornament
+cmpDigitSix.item["f"] := "{u+275c}"  ; (❜) heavy single comma quotation mark ornament
+cmpDigitSix.item["g"] := "{u+275d}"  ; (❝) heavy double turned comma quotation mark ornament
+cmpDigitSix.item["h"] := "{u+275e}"  ; (❞) heavy double comma quotation mark ornament
+cmpDigitSix.item["i"] := "{u+275f}"  ; (❟) heavy low single comma quotation mark ornament
+cmpDigitSix.item["j"] := "{u+2760}"  ; (❠) heavy low double comma quotation mark ornament
+cmpDigitSix.item["k"] := "{u+2761}"  ; (❡) curved stem paragraph sign ornament
+cmpDigitSix.item["l"] := "{u+2762}"  ; (❢) heavy exclamation mark ornament
+cmpDigitSix.item["m"] := "{u+2763}"  ; (❣) heavy heart exclamation mark ornament
+cmpDigitSix.item["n"] := "{u+2764}"  ; (❤) heavy black heart
+cmpDigitSix.item["o"] := "{u+2765}"  ; (❥) rotated heavy black heart bullet
+cmpDigitSix.item["p"] := "{u+2766}"  ; (❦) floral heart
+cmpDigitSix.item["q"] := "{u+2767}"  ; (❧) rotated floral heart bullet
+
+cmpDigitSeven.item["a"] := "{u+2794}"  ; (➔) heavy wide-headed rightwards arrow
+cmpDigitSeven.item["b"] := "{u+2798}"  ; (➘) heavy south east arrow
+cmpDigitSeven.item["c"] := "{u+2799}"  ; (➙) heavy rightwards arrow
+cmpDigitSeven.item["d"] := "{u+279a}"  ; (➚) heavy north east arrow
+cmpDigitSeven.item["e"] := "{u+279b}"  ; (➛) drafting point rightwards arrow
+cmpDigitSeven.item["f"] := "{u+279c}"  ; (➜) heavy round-tipped rightwards arrow
+cmpDigitSeven.item["g"] := "{u+279d}"  ; (➝) triangle-headed rightwards arrow
+cmpDigitSeven.item["h"] := "{u+279e}"  ; (➞) heavy triangle-headed rightwards arrow
+cmpDigitSeven.item["i"] := "{u+279f}"  ; (➟) dashed triangle-headed rightwards arrow
+cmpDigitSeven.item["j"] := "{u+27a0}"  ; (➠) heavy dashed triangle-headed rightwards arrow
+cmpDigitSeven.item["k"] := "{u+27a1}"  ; (➡) black rightwards arrow
+cmpDigitSeven.item["l"] := "{u+27a2}"  ; (➢) 3d top-lighted rightwards arrowhead
+cmpDigitSeven.item["m"] := "{u+27a3}"  ; (➣) 3d bottom-lighted rightwards arrowhead
+cmpDigitSeven.item["n"] := "{u+27a4}"  ; (➤) black rightwards arrowhead
+cmpDigitSeven.item["o"] := "{u+27a5}"  ; (➥) heavy black curved downwards and rightwards arrow
+cmpDigitSeven.item["p"] := "{u+27a6}"  ; (➦) heavy black curved upwards and rightwards arrow
+cmpDigitSeven.item["q"] := "{u+27a7}"  ; (➧) squat black rightwards arrow
+cmpDigitSeven.item["r"] := "{u+27a8}"  ; (➨) heavy concave-pointed black rightwards arrow
+cmpDigitSeven.item["s"] := "{u+27a9}"  ; (➩) right-shaded white rightwards arrow
+cmpDigitSeven.item["t"] := "{u+27aa}"  ; (➪) left-shaded white rightwards arrow
+cmpDigitSeven.item["u"] := "{u+27ab}"  ; (➫) back-tilted shadowed white rightwards arrow
+cmpDigitSeven.item["v"] := "{u+27ac}"  ; (➬) front-tilted shadowed white rightwards arrow
+cmpDigitSeven.item["w"] := "{u+27ad}"  ; (➭) heavy lower right-shadowed white rightwards arrow
+cmpDigitSeven.item["x"] := "{u+27ae}"  ; (➮) heavy upper right-shadowed white rightwards arrow
+cmpDigitSeven.item["y"] := "{u+27af}"  ; (➯) notched lower right-shadowed white rightwards arrow
+cmpDigitSeven.item["z"] := "{u+27b1}"  ; (➱) notched upper right-shadowed white rightwards arrow
+
+cmpDigitEight.item["a"] := "{u+27b2}"  ; (➲) circled heavy white rightwards arrow
+cmpDigitEight.item["b"] := "{u+27b3}"  ; (➳) white-feathered rightwards arrow
+cmpDigitEight.item["c"] := "{u+27b4}"  ; (➴) black-feathered south east arrow
+cmpDigitEight.item["d"] := "{u+27b5}"  ; (➵) black-feathered rightwards arrow
+cmpDigitEight.item["e"] := "{u+27b6}"  ; (➶) black-feathered north east arrow
+cmpDigitEight.item["f"] := "{u+27b7}"  ; (➷) heavy black-feathered south east arrow
+cmpDigitEight.item["g"] := "{u+27b8}"  ; (➸) heavy black-feathered rightwards arrow
+cmpDigitEight.item["h"] := "{u+27b9}"  ; (➹) heavy black-feathered north east arrow
+cmpDigitEight.item["i"] := "{u+27ba}"  ; (➺) teardrop-barbed rightwards arrow
+cmpDigitEight.item["j"] := "{u+27bb}"  ; (➻) heavy teardrop-shanked rightwards arrow
+cmpDigitEight.item["k"] := "{u+27bc}"  ; (➼) wedge-tailed rightwards arrow
+cmpDigitEight.item["l"] := "{u+27bd}"  ; (➽) heavy wedge-tailed rightwards arrow
+cmpDigitEight.item["m"] := "{u+27be}"  ; (➾) open-outlined rightwards arrow
+cmpDigitEight.item["n"] := "{u+27c1}"  ; (⟁) white triangle containing small white triangle
+
+
+; Compose :  Chess Symbols (C)
+
+cmpCapitalC.item["k"] := "{u+2654}"  ; (♔) white chess king
+cmpCapitalC.item["q"] := "{u+2655}"  ; (♕) white chess queen
+cmpCapitalC.item["r"] := "{u+2656}"  ; (♖) white chess rook
+cmpCapitalC.item["b"] := "{u+2657}"  ; (♗) white chess bishop
+cmpCapitalC.item["n"] := "{u+2658}"  ; (♘) white chess knight
+cmpCapitalC.item["p"] := "{u+2659}"  ; (♙) white chess pawn
+cmpCapitalC.item["K"] := "{u+265a}"  ; (♚) black chess king
+cmpCapitalC.item["Q"] := "{u+265b}"  ; (♛) black chess queen
+cmpCapitalC.item["R"] := "{u+265c}"  ; (♜) black chess rook
+cmpCapitalC.item["B"] := "{u+265d}"  ; (♝) black chess bishop
+cmpCapitalC.item["N"] := "{u+265e}"  ; (♞) black chess knight
+cmpCapitalC.item["P"] := "{u+265f}"  ; (♟) black chess pawn
+
+
+; Compose :  Playing Card Suit Symbols (S)
+
+cmpCapitalS.item["c"] := "{u+2663}"  ; (♣) black club suit
+cmpCapitalS.item["C"] := "{u+2667}"  ; (♧) white club suit
+cmpCapitalS.item["d"] := "{u+2666}"  ; (♦) black diamond suit
+cmpCapitalS.item["D"] := "{u+2662}"  ; (♢) white diamond suit
+cmpCapitalS.item["h"] := "{u+2665}"  ; (♥) black heart suit
+cmpCapitalS.item["H"] := "{u+2661}"  ; (♡) white heart suit
+cmpCapitalS.item["p"] := "{u+2660}"  ; (♠) black spade suit
+cmpCapitalS.item["P"] := "{u+2664}"  ; (♤) white spade suit
+
+
+; Compose :  Dingbat Negative Circled Digits (n)
+
+cmpSmallN.item["1"] := "{u+2776}"  ; (❶) dingbat negative circled digit 1
+cmpSmallN.item["2"] := "{u+2777}"  ; (❷) dingbat negative circled digit 2
+cmpSmallN.item["3"] := "{u+2778}"  ; (❸) dingbat negative circled digit 3
+cmpSmallN.item["4"] := "{u+2779}"  ; (❹) dingbat negative circled digit 4
+cmpSmallN.item["5"] := "{u+277a}"  ; (❺) dingbat negative circled digit 5
+cmpSmallN.item["6"] := "{u+277b}"  ; (❻) dingbat negative circled digit 6
+cmpSmallN.item["7"] := "{u+277c}"  ; (❼) dingbat negative circled digit 7
+cmpSmallN.item["8"] := "{u+277d}"  ; (❽) dingbat negative circled digit 8
+cmpSmallN.item["9"] := "{u+277e}"  ; (❾) dingbat negative circled digit 9
+cmpSmallN.item["0"] := "{u+277f}"  ; (❿) dingbat negative circled digit 10
 
 
 ; Configuration :  'Right Alt' and 'Right Alt + Shift' on US QWERTY
@@ -1626,26 +1792,6 @@ cmpCapitalV.item["``"] := "{u+01db}"      ; (Ǜ) U with diaeresis and grave
     Send % cmpArrow.item[keyB]
   else if (keyA == "s")
     Send % cmpSymbols.item[keyB]
-  else if (keyA == "f")
-    Send % cmpFlorette.item[keyB]
-  else if (keyA == "C")
-    Send % cmpCapitalC.item[keyB]
-  else if (keyA == "S")
-    Send % cmpCapitalS.item[keyB]
-  else if (keyA == "1")
-    Send % cmpOne.item[keyB]
-  else if (keyA == "2")
-    Send % cmpTwo.item[keyB]
-  else if (keyA == "3")
-    Send % cmpThree.item[keyB]
-  else if (keyA == "4")
-    Send % cmpFour.item[keyB]
-  else if (keyA == "5")
-    Send % cmpFive.item[keyB]
-  else if (keyA == "7")
-    Send % cmpSeven.item[keyB]
-  else if (keyA == "0")
-    Send % cmpZero.item[keyB]
   else if (keyA == "m")
     Send % cmpMathSymbols.item[keyB]
   else if (keyA == "A")
@@ -1658,18 +1804,22 @@ cmpCapitalV.item["``"] := "{u+01db}"      ; (Ǜ) U with diaeresis and grave
     Send % cmpSmallI.item[keyB]
   else if (keyA == "I")
     Send % cmpCapitalI.item[keyB]
-  else if (keyA == "O")
-    Send % cmpCapitalO.item[keyB]
-  else if (keyA == "T")
-    Send % cmpCapitalT.item[keyB]
   else if (keyA == "n")
     Send % cmpSmallN.item[keyB]
   else if (keyA == "N")
     Send % cmpCapitalN.item[keyB]
+  else if (keyA == "O")
+    Send % cmpCapitalO.item[keyB]
+  else if (keyA == "S")
+    Send % cmpCapitalS.item[keyB]
+  else if (keyA == "T")
+    Send % cmpCapitalT.item[keyB]
   else if (keyA == "P")
     Send % cmpCapitalP.item[keyB]
   else if (keyA == "r")
     Send % cmpSmallR.item[keyB]
+  else if (keyA == ";")
+    Send % cmpSemicolon.item[keyB]
   else if (keyA == "*")
     Send % cmpAsterisk.item[keyB]
   else if (keyA == "!")
@@ -1683,23 +1833,39 @@ cmpCapitalV.item["``"] := "{u+01db}"      ; (Ǜ) U with diaeresis and grave
   else if (keyA == "%")
     Send % cmpPercent.item[keyB]
   else if (keyA == "8")
-    Send % cmpEight.item[keyB]
+    Send % cmpDigitEight.item[keyB]
   else if (keyA == "<")
     Send % cmpLessThan.item[keyB]
   else if (keyA == ">")
     Send % cmpGreaterThan.item[keyB]
+  else if (keyA == "1")
+    Send % cmpDigitOne.item[keyB]
+  else if (keyA == "2")
+    Send % cmpDigitTwo.item[keyB]
+  else if (keyA == "3")
+    Send % cmpDigitThree.item[keyB]
+  else if (keyA == "4")
+    Send % cmpDigitFour.item[keyB]
+  else if (keyA == "5")
+    Send % cmpDigitFive.item[keyB]
+  else if (keyA == "7")
+    Send % cmpDigitSeven.item[keyB]
+  else if (keyA == "0")
+    Send % cmpDigitZero.item[keyB]
   else if (keyA == "[")
     Send % cmpBracketLeft.item[keyB]
-  else if (keyA == ";")
-    Send % cmpSemicolon.item[keyB]
   else if (keyA == "]")
     Send % cmpBracketRight.item[keyB]
+  else if (keyA == "C")
+    Send % cmpCapitalC.item[keyB]
   else if (keyA == "e")
     Send % cmpSmallE.item[keyB]
   else if (keyA == "E")
     Send % cmpCapitalE.item[keyB]
   else if (keyA == "V")
     Send % cmpCapitalV.item[keyB]
+  else if (keyA == "6")
+    Send % cmpDigitSix.item[keyB]
 
   keyA := ""  ; avoids leaking content via debug properties
   keyB := ""  ; avoids leaking content via debug properties
