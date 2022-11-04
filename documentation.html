@@ -333,8 +333,6 @@ Otherwise, it might be impossible to type any Unicode character higher than “B
 &lt;Multi_key&gt; &lt;b&gt; &lt;G&gt; : "Ğ"  U011E  # G with breve
 &lt;Multi_key&gt; &lt;b&gt; &lt;i&gt; : "ĭ"  U012D  # i with breve
 &lt;Multi_key&gt; &lt;b&gt; &lt;I&gt; : "Ĭ"  U012C  # I with breve
-&lt;Multi_key&gt; &lt;b&gt; &lt;n&gt; : "ŋ"  U014B  # small letter eng(ma)
-&lt;Multi_key&gt; &lt;b&gt; &lt;N&gt; : "Ŋ"  U014A  # capital letter eng(ma)
 &lt;Multi_key&gt; &lt;b&gt; &lt;o&gt; : "ŏ"  U014F  # o with breve
 &lt;Multi_key&gt; &lt;b&gt; &lt;O&gt; : "Ŏ"  U014E  # O with breve
 &lt;Multi_key&gt; &lt;b&gt; &lt;s&gt; : "ș"  U0219  # s with comma below (Romanian)
@@ -846,6 +844,8 @@ Otherwise, it might be impossible to type any Unicode character higher than “B
 &lt;Multi_key&gt; &lt;D&gt; &lt;H&gt; : "Ð"  U00D0  # capital letter eth
 &lt;Multi_key&gt; &lt;i&gt; &lt;j&gt; : "ĳ"  U0133  # ligature ij
 &lt;Multi_key&gt; &lt;I&gt; &lt;J&gt; : "Ĳ"  U0132  # ligature IJ
+&lt;Multi_key&gt; &lt;n&gt; &lt;g&gt; : "ŋ"  U014B  # small letter eng(ma)
+&lt;Multi_key&gt; &lt;N&gt; &lt;G&gt; : "Ŋ"  U014A  # capital letter eng(ma)
 &lt;Multi_key&gt; &lt;o&gt; &lt;e&gt; : "œ"  U0153  # ligature oe
 &lt;Multi_key&gt; &lt;O&gt; &lt;E&gt; : "Œ"  U0152  # ligature OE
 &lt;Multi_key&gt; &lt;s&gt; &lt;s&gt; : "ß"  U00DF  # small sharp s (Eszett)
@@ -872,6 +872,11 @@ Otherwise, it might be impossible to type any Unicode character higher than “B
 &lt;Multi_key&gt; &lt;s&gt; &lt;o&gt; : "§"  U00A7  # section sign
 &lt;Multi_key&gt; &lt;S&gt; &lt;o&gt; : "§"  U00A7  # section sign
 &lt;Multi_key&gt; &lt;t&gt; &lt;m&gt; : "™"  U2122  # trademark symbol
+&lt;Multi_key&gt; &lt;semicolon&gt; &lt;b&gt;  : "•"  U2022  # bullet
+&lt;Multi_key&gt; &lt;semicolon&gt; &lt;semicolon&gt; : "•"  U2022  # bullet
+&lt;Multi_key&gt; &lt;semicolon&gt; &lt;h&gt;  : "⁃"  U2043  # hyphen bullet
+&lt;Multi_key&gt; &lt;semicolon&gt; &lt;t&gt;  : "‣"  U2023  # triangular bullet
+&lt;Multi_key&gt; &lt;semicolon&gt; &lt;w&gt;  : "◦"  U25E6  # white bullet
 &lt;Multi_key&gt; &lt;apostrophe&gt; &lt;1&gt; : "′"  U2032  # prime
 &lt;Multi_key&gt; &lt;apostrophe&gt; &lt;2&gt; : "″"  U2033  # double prime
 &lt;Multi_key&gt; &lt;apostrophe&gt; &lt;3&gt; : "‴"  U2034  # triple prime
@@ -905,157 +910,32 @@ Otherwise, it might be impossible to type any Unicode character higher than “B
 &lt;Multi_key&gt; &lt;less&gt; &lt;plus&gt;         : "⩽"  U2A7D  # less-than or slanted equal to
 &lt;Multi_key&gt; &lt;greater&gt; &lt;plus&gt;      : "⩾"  U2A7E  # greater-than or slanted equal to
 &lt;Multi_key&gt; &lt;asciitilde&gt; &lt;asciitilde&gt; : "≈"  U2248  # almost equal to
-&lt;Multi_key&gt; &lt;bracketleft&gt; &lt;bracketright&gt; : "☐"  U2610  # ballot box
-&lt;Multi_key&gt; &lt;bracketleft&gt; &lt;v&gt;            : "☑"  U2611  # ballot box with check
-&lt;Multi_key&gt; &lt;bracketleft&gt; &lt;y&gt;            : "☑"  U2611  # ballot box with check
-&lt;Multi_key&gt; &lt;bracketleft&gt; &lt;x&gt;            : "☒"  U2612  # ballot box with x
 
 
-# Bullets and Arrowheads
-
-&lt;Multi_key&gt; &lt;semicolon&gt; &lt;a&gt;          : "➤"  U27A4  # black rightwards arrowhead
-&lt;Multi_key&gt; &lt;semicolon&gt; &lt;b&gt;          : "•"  U2022  # bullet
-&lt;Multi_key&gt; &lt;semicolon&gt; &lt;semicolon&gt;  : "•"  U2022  # bullet
-&lt;Multi_key&gt; &lt;semicolon&gt; &lt;d&gt;          : "➥"  U27A5  # heavy black curved downwards and rightwards arrow
-&lt;Multi_key&gt; &lt;semicolon&gt; &lt;h&gt;          : "⁃"  U2043  # hyphen bullet
-&lt;Multi_key&gt; &lt;semicolon&gt; &lt;minus&gt;      : "⁃"  U2043  # hyphen bullet
-&lt;Multi_key&gt; &lt;semicolon&gt; &lt;p&gt;          : "➨"  U27A8  # heavy concave-pointed black rightwards arrow
-&lt;Multi_key&gt; &lt;semicolon&gt; &lt;q&gt;          : "➧"  U27A7  # squat black rightwards arrow
-&lt;Multi_key&gt; &lt;semicolon&gt; &lt;r&gt;          : "➡"  U27A1  # black rightwards arrow
-&lt;Multi_key&gt; &lt;semicolon&gt; &lt;t&gt;          : "‣"  U2023  # triangular bullet
-&lt;Multi_key&gt; &lt;semicolon&gt; &lt;u&gt;          : "➦"  U27A6  # heavy black curved upwards and rightwards arrow
-&lt;Multi_key&gt; &lt;semicolon&gt; &lt;w&gt;          : "◦"  U25E6  # white bullet
-&lt;Multi_key&gt; &lt;semicolon&gt; &lt;3&gt;          : "➢"  U27A2  # 3d top-lighted rightwards arrowhead
-&lt;Multi_key&gt; &lt;semicolon&gt; &lt;numbersign&gt; : "➣"  U27A3  # 3d bottom-lighted rightwards arrowhead
-
-
-# Quotation Marks
-
-&lt;Multi_key&gt; &lt;comma&gt; &lt;quotedbl&gt;          : "„"  U201E  # double low-9 quotation mark
-&lt;Multi_key&gt; &lt;quotedbl&gt; &lt;comma&gt;          : "„"  U201E  # double low-9 quotation mark
-&lt;Multi_key&gt; &lt;comma&gt; &lt;apostrophe&gt;        : "‚"  U201A  # single low-9 quotation mark
-&lt;Multi_key&gt; &lt;apostrophe&gt; &lt;comma&gt;        : "‚"  U201A  # single low-9 quotation mark
-&lt;Multi_key&gt; &lt;quotedbl&gt; &lt;bracketleft&gt;    : "“"  U201C  # left double quotation mark
-&lt;Multi_key&gt; &lt;bracketleft&gt; &lt;quotedbl&gt;    : "“"  U201C  # left double quotation mark
-&lt;Multi_key&gt; &lt;quotedbl&gt; &lt;bracketright&gt;   : "”"  U201D  # right double quotation mark
-&lt;Multi_key&gt; &lt;bracketright&gt; &lt;quotedbl&gt;   : "”"  U201D  # right double quotation mark
-&lt;Multi_key&gt; &lt;apostrophe&gt; &lt;bracketleft&gt;  : "‘"  U2018  # left single quotation mark
-&lt;Multi_key&gt; &lt;bracketleft&gt; &lt;apostrophe&gt;  : "‘"  U2018  # left single quotation mark
-&lt;Multi_key&gt; &lt;apostrophe&gt; &lt;bracketright&gt; : "’"  U2019  # right single quotation mark
-&lt;Multi_key&gt; &lt;bracketright&gt; &lt;apostrophe&gt; : "’"  U2019  # right single quotation mark
-&lt;Multi_key&gt; &lt;less&gt; &lt;less&gt;               : "«"  U00AB  # left-pointing double angle quotation mark
-&lt;Multi_key&gt; &lt;less&gt; &lt;quotedbl&gt;           : "«"  U00AB  # left-pointing double angle quotation mark
-&lt;Multi_key&gt; &lt;quotedbl&gt; &lt;less&gt;           : "«"  U00AB  # left-pointing double angle quotation mark
-&lt;Multi_key&gt; &lt;greater&gt; &lt;greater&gt;         : "»"  U00BB  # right-pointing double angle quotation mark
-&lt;Multi_key&gt; &lt;greater&gt; &lt;quotedbl&gt;        : "»"  U00BB  # right-pointing double angle quotation mark
-&lt;Multi_key&gt; &lt;quotedbl&gt; &lt;greater&gt;        : "»"  U00BB  # right-pointing double angle quotation mark
-&lt;Multi_key&gt; &lt;less&gt; &lt;apostrophe&gt;         : "‹"  U2039  # left-pointing single angle quotation mark
-&lt;Multi_key&gt; &lt;apostrophe&gt; &lt;less&gt;         : "‹"  U2039  # left-pointing single angle quotation mark
-&lt;Multi_key&gt; &lt;greater&gt; &lt;apostrophe&gt;      : "›"  U203A  # right-pointing single angle quotation mark
-&lt;Multi_key&gt; &lt;apostrophe&gt; &lt;greater&gt;      : "›"  U203A  # right-pointing single angle quotation mark
-
-
-# Miscellaneous Symbols
+# Various Symbols
 
 &lt;Multi_key&gt; &lt;s&gt; &lt;a&gt; : "⅍"  U214D  # aktieselskab
+&lt;Multi_key&gt; &lt;s&gt; &lt;b&gt; : "⸘"  U2E18  # inverted interrobang
 &lt;Multi_key&gt; &lt;s&gt; &lt;c&gt; : "℅"  U2105  # care of
 &lt;Multi_key&gt; &lt;s&gt; &lt;d&gt; : "⋄"  U22C4  # diamond operator
 &lt;Multi_key&gt; &lt;s&gt; &lt;e&gt; : "℮"  U212E  # estimated symbol
-&lt;Multi_key&gt; &lt;s&gt; &lt;f&gt; : "♀"  U2640  # Venus symbol (female)
+&lt;Multi_key&gt; &lt;s&gt; &lt;f&gt; : "♀"  U2640  # female sign (Venus)
+&lt;Multi_key&gt; &lt;s&gt; &lt;h&gt; : "Ω"  U2126  # ohm sign (backwards compatibility)
 &lt;Multi_key&gt; &lt;s&gt; &lt;i&gt; : "⌀"  U2300  # diameter sign
 &lt;Multi_key&gt; &lt;s&gt; &lt;l&gt; : "ℓ"  U2113  # script small l
 &lt;Multi_key&gt; &lt;s&gt; &lt;L&gt; : "ℒ"  U2112  # Laplace transform
-&lt;Multi_key&gt; &lt;s&gt; &lt;m&gt; : "♂"  U2642  # Mars symbol (male)
+&lt;Multi_key&gt; &lt;s&gt; &lt;m&gt; : "♂"  U2642  # male sign (Mars)
 &lt;Multi_key&gt; &lt;s&gt; &lt;M&gt; : "℠"  U2120  # service mark
-&lt;Multi_key&gt; &lt;s&gt; &lt;n&gt; : "✉"  U2709  # envelope
-&lt;Multi_key&gt; &lt;s&gt; &lt;q&gt; : "Ω"  U2126  # ohm sign (backwards compatibility)
+&lt;Multi_key&gt; &lt;s&gt; &lt;q&gt; : "⸮"  U2E2E  # reversed question mark
 &lt;Multi_key&gt; &lt;s&gt; &lt;r&gt; : "℞"  U211E  # prescription take (Recipere)
 &lt;Multi_key&gt; &lt;s&gt; &lt;R&gt; : "℞"  U211E  # prescription take (Recipere)
-&lt;Multi_key&gt; &lt;s&gt; &lt;t&gt; : "✆"  U2706  # telephone location sign
-&lt;Multi_key&gt; &lt;s&gt; &lt;v&gt; : "✓"  U2713  # check mark
-&lt;Multi_key&gt; &lt;s&gt; &lt;V&gt; : "✔"  U2714  # heavy check mark
-&lt;Multi_key&gt; &lt;s&gt; &lt;w&gt; : "⚠"  U26A0  # warning sign
-&lt;Multi_key&gt; &lt;s&gt; &lt;x&gt; : "✗"  U2717  # ballot x
-&lt;Multi_key&gt; &lt;s&gt; &lt;X&gt; : "✘"  U2718  # heavy ballot x
-&lt;Multi_key&gt; &lt;s&gt; &lt;y&gt; : "✓"  U2713  # check mark
-&lt;Multi_key&gt; &lt;s&gt; &lt;Y&gt; : "✔"  U2714  # heavy check mark
-&lt;Multi_key&gt; &lt;s&gt; &lt;2&gt;           : "♫"  U266B  # beamed eighth notes
-&lt;Multi_key&gt; &lt;s&gt; &lt;3&gt;           : "⁂"  U2042  # asterism
-&lt;Multi_key&gt; &lt;s&gt; &lt;5&gt;           : "★"  U2605  # black star
-&lt;Multi_key&gt; &lt;s&gt; &lt;percent&gt;     : "☆"  U2606  # white star
-&lt;Multi_key&gt; &lt;s&gt; &lt;6&gt;           : "✽"  U273D  # heavy teardrop-spoked asterisk
-&lt;Multi_key&gt; &lt;s&gt; &lt;asciicircum&gt; : "✻"  U273B  # teardrop-spoked asterisk
-&lt;Multi_key&gt; &lt;s&gt; &lt;8&gt;           : "♪"  U266A  # eighth note
-&lt;Multi_key&gt; &lt;s&gt; &lt;semicolon&gt;   : "☺"  U263A  # white smiling face
-&lt;Multi_key&gt; &lt;s&gt; &lt;colon&gt;       : "☻"  U263B  # black smiling face
-&lt;Multi_key&gt; &lt;s&gt; &lt;exclam&gt;      : "‼"  U203C  # double exclamation mark
-&lt;Multi_key&gt; &lt;s&gt; &lt;question&gt;    : "‽"  U203D  # interrobang
-&lt;Multi_key&gt; &lt;s&gt; &lt;backslash&gt;   : "⁞"  U205E  # vertical four dots
-&lt;Multi_key&gt; &lt;s&gt; &lt;bar&gt;         : "¦"  U00A6  # broken bar
-&lt;Multi_key&gt; &lt;s&gt; &lt;period&gt;      : "⸘"  U2E18  # inverted interrobang
-&lt;Multi_key&gt; &lt;s&gt; &lt;slash&gt;       : "⸮"  U2E2E  # reversed question mark
-
-
-# Florette and Floral Heart Symbols
-
-&lt;Multi_key&gt; &lt;f&gt; &lt;r&gt; : "☙"  U2619  # reversed rotated floral heart bullet
-&lt;Multi_key&gt; &lt;f&gt; &lt;6&gt; : "✾"  U273E  # six petalled black and white florette
-&lt;Multi_key&gt; &lt;f&gt; &lt;b&gt; : "✿"  U273F  # black florette
-&lt;Multi_key&gt; &lt;f&gt; &lt;w&gt; : "❀"  U2740  # white florette
-&lt;Multi_key&gt; &lt;f&gt; &lt;8&gt; : "❁"  U2741  # eight petalled outlined black florette
-&lt;Multi_key&gt; &lt;f&gt; &lt;f&gt; : "❦"  U2766  # floral heart
-&lt;Multi_key&gt; &lt;f&gt; &lt;h&gt; : "❧"  U2767  # rotated floral heart bullet
-
-
-# Chess Symbols
-
-&lt;Multi_key&gt; &lt;C&gt; &lt;k&gt; : "♔"  U2654  # white chess king
-&lt;Multi_key&gt; &lt;C&gt; &lt;q&gt; : "♕"  U2655  # white chess queen
-&lt;Multi_key&gt; &lt;C&gt; &lt;r&gt; : "♖"  U2656  # white chess rook
-&lt;Multi_key&gt; &lt;C&gt; &lt;b&gt; : "♗"  U2657  # white chess bishop
-&lt;Multi_key&gt; &lt;C&gt; &lt;n&gt; : "♘"  U2658  # white chess knight
-&lt;Multi_key&gt; &lt;C&gt; &lt;p&gt; : "♙"  U2659  # white chess pawn
-&lt;Multi_key&gt; &lt;C&gt; &lt;K&gt; : "♚"  U265A  # black chess king
-&lt;Multi_key&gt; &lt;C&gt; &lt;Q&gt; : "♛"  U265B  # black chess queen
-&lt;Multi_key&gt; &lt;C&gt; &lt;R&gt; : "♜"  U265C  # black chess rook
-&lt;Multi_key&gt; &lt;C&gt; &lt;B&gt; : "♝"  U265D  # black chess bishop
-&lt;Multi_key&gt; &lt;C&gt; &lt;N&gt; : "♞"  U265E  # black chess knight
-&lt;Multi_key&gt; &lt;C&gt; &lt;P&gt; : "♟"  U265F  # black chess pawn
-
-
-# Playing Card Suit Symbols
-
-&lt;Multi_key&gt; &lt;S&gt; &lt;c&gt; : "♣"  U2663  # black club suit
-&lt;Multi_key&gt; &lt;S&gt; &lt;C&gt; : "♧"  U2667  # white club suit
-&lt;Multi_key&gt; &lt;S&gt; &lt;d&gt; : "♦"  U2666  # black diamond suit
-&lt;Multi_key&gt; &lt;S&gt; &lt;D&gt; : "♢"  U2662  # white diamond suit
-&lt;Multi_key&gt; &lt;S&gt; &lt;h&gt; : "♥"  U2665  # black heart suit
-&lt;Multi_key&gt; &lt;S&gt; &lt;H&gt; : "♡"  U2661  # white heart suit
-&lt;Multi_key&gt; &lt;S&gt; &lt;p&gt; : "♠"  U2660  # black spade suit
-&lt;Multi_key&gt; &lt;S&gt; &lt;P&gt; : "♤"  U2664  # white spade suit
-
-
-# Vulgar Fractions
-
-&lt;Multi_key&gt; &lt;1&gt; &lt;2&gt; : "½"  U00BD  # vulgar fraction 1/2
-&lt;Multi_key&gt; &lt;1&gt; &lt;3&gt; : "⅓"  U2153  # vulgar fraction 1/3
-&lt;Multi_key&gt; &lt;2&gt; &lt;3&gt; : "⅔"  U2154  # vulgar fraction 2/3
-&lt;Multi_key&gt; &lt;1&gt; &lt;4&gt; : "¼"  U00BC  # vulgar fraction 1/4
-&lt;Multi_key&gt; &lt;3&gt; &lt;4&gt; : "¾"  U00BE  # vulgar fraction 3/4
-&lt;Multi_key&gt; &lt;1&gt; &lt;5&gt; : "⅕"  U2155  # vulgar fraction 1/5
-&lt;Multi_key&gt; &lt;2&gt; &lt;5&gt; : "⅖"  U2156  # vulgar fraction 2/5
-&lt;Multi_key&gt; &lt;3&gt; &lt;5&gt; : "⅗"  U2157  # vulgar fraction 3/5
-&lt;Multi_key&gt; &lt;4&gt; &lt;5&gt; : "⅘"  U2158  # vulgar fraction 4/5
-&lt;Multi_key&gt; &lt;1&gt; &lt;6&gt; : "⅙"  U2159  # vulgar fraction 1/6
-&lt;Multi_key&gt; &lt;5&gt; &lt;6&gt; : "⅚"  U215A  # vulgar fraction 5/6
-&lt;Multi_key&gt; &lt;1&gt; &lt;7&gt; : "⅐"  U2150  # vulgar fraction 1/7
-&lt;Multi_key&gt; &lt;1&gt; &lt;8&gt; : "⅛"  U215B  # vulgar fraction 1/8
-&lt;Multi_key&gt; &lt;3&gt; &lt;8&gt; : "⅜"  U215C  # vulgar fraction 3/8
-&lt;Multi_key&gt; &lt;5&gt; &lt;8&gt; : "⅝"  U215D  # vulgar fraction 5/8
-&lt;Multi_key&gt; &lt;7&gt; &lt;8&gt; : "⅞"  U215E  # vulgar fraction 7/8
-&lt;Multi_key&gt; &lt;1&gt; &lt;9&gt; : "⅑"  U2151  # vulgar fraction 1/9
-&lt;Multi_key&gt; &lt;1&gt; &lt;0&gt; : "⅒"  U2152  # vulgar fraction 1/10
-&lt;Multi_key&gt; &lt;0&gt; &lt;3&gt; : "↉"  U2189  # vulgar fraction 0/3
+&lt;Multi_key&gt; &lt;s&gt; &lt;2&gt; : "♫"  U266B  # beamed eighth notes
+&lt;Multi_key&gt; &lt;s&gt; &lt;3&gt; : "⁂"  U2042  # asterism
+&lt;Multi_key&gt; &lt;s&gt; &lt;8&gt; : "♪"  U266A  # eighth note
+&lt;Multi_key&gt; &lt;s&gt; &lt;exclam&gt;    : "‼"  U203C  # double exclamation mark
+&lt;Multi_key&gt; &lt;s&gt; &lt;question&gt;  : "‽"  U203D  # interrobang
+&lt;Multi_key&gt; &lt;s&gt; &lt;backslash&gt; : "⁞"  U205E  # vertical four dots
+&lt;Multi_key&gt; &lt;s&gt; &lt;bar&gt;       : "¦"  U00A6  # broken bar
 
 
 # Math Symbols
@@ -1115,6 +995,291 @@ Otherwise, it might be impossible to type any Unicode character higher than “B
 &lt;Multi_key&gt; &lt;m&gt; &lt;semicolon&gt; : "∵"  U2235  # because sign
 &lt;Multi_key&gt; &lt;m&gt; &lt;colon&gt;     : "∴"  U2234  # therefore sign
 &lt;Multi_key&gt; &lt;m&gt; &lt;bar&gt;       : "∨"  U2228  # logical or
+
+
+# Vulgar Fractions
+
+&lt;Multi_key&gt; &lt;1&gt; &lt;2&gt; : "½"  U00BD  # vulgar fraction 1/2
+&lt;Multi_key&gt; &lt;1&gt; &lt;3&gt; : "⅓"  U2153  # vulgar fraction 1/3
+&lt;Multi_key&gt; &lt;2&gt; &lt;3&gt; : "⅔"  U2154  # vulgar fraction 2/3
+&lt;Multi_key&gt; &lt;1&gt; &lt;4&gt; : "¼"  U00BC  # vulgar fraction 1/4
+&lt;Multi_key&gt; &lt;3&gt; &lt;4&gt; : "¾"  U00BE  # vulgar fraction 3/4
+&lt;Multi_key&gt; &lt;1&gt; &lt;5&gt; : "⅕"  U2155  # vulgar fraction 1/5
+&lt;Multi_key&gt; &lt;2&gt; &lt;5&gt; : "⅖"  U2156  # vulgar fraction 2/5
+&lt;Multi_key&gt; &lt;3&gt; &lt;5&gt; : "⅗"  U2157  # vulgar fraction 3/5
+&lt;Multi_key&gt; &lt;4&gt; &lt;5&gt; : "⅘"  U2158  # vulgar fraction 4/5
+&lt;Multi_key&gt; &lt;1&gt; &lt;6&gt; : "⅙"  U2159  # vulgar fraction 1/6
+&lt;Multi_key&gt; &lt;5&gt; &lt;6&gt; : "⅚"  U215A  # vulgar fraction 5/6
+&lt;Multi_key&gt; &lt;1&gt; &lt;7&gt; : "⅐"  U2150  # vulgar fraction 1/7
+&lt;Multi_key&gt; &lt;1&gt; &lt;8&gt; : "⅛"  U215B  # vulgar fraction 1/8
+&lt;Multi_key&gt; &lt;3&gt; &lt;8&gt; : "⅜"  U215C  # vulgar fraction 3/8
+&lt;Multi_key&gt; &lt;5&gt; &lt;8&gt; : "⅝"  U215D  # vulgar fraction 5/8
+&lt;Multi_key&gt; &lt;7&gt; &lt;8&gt; : "⅞"  U215E  # vulgar fraction 7/8
+&lt;Multi_key&gt; &lt;1&gt; &lt;9&gt; : "⅑"  U2151  # vulgar fraction 1/9
+&lt;Multi_key&gt; &lt;1&gt; &lt;0&gt; : "⅒"  U2152  # vulgar fraction 1/10
+&lt;Multi_key&gt; &lt;0&gt; &lt;3&gt; : "↉"  U2189  # vulgar fraction 0/3
+
+
+# Quotation Marks
+
+&lt;Multi_key&gt; &lt;comma&gt; &lt;quotedbl&gt;          : "„"  U201E  # double low-9 quotation mark
+&lt;Multi_key&gt; &lt;quotedbl&gt; &lt;comma&gt;          : "„"  U201E  # double low-9 quotation mark
+&lt;Multi_key&gt; &lt;comma&gt; &lt;apostrophe&gt;        : "‚"  U201A  # single low-9 quotation mark
+&lt;Multi_key&gt; &lt;apostrophe&gt; &lt;comma&gt;        : "‚"  U201A  # single low-9 quotation mark
+&lt;Multi_key&gt; &lt;quotedbl&gt; &lt;bracketleft&gt;    : "“"  U201C  # left double quotation mark
+&lt;Multi_key&gt; &lt;bracketleft&gt; &lt;quotedbl&gt;    : "“"  U201C  # left double quotation mark
+&lt;Multi_key&gt; &lt;quotedbl&gt; &lt;bracketright&gt;   : "”"  U201D  # right double quotation mark
+&lt;Multi_key&gt; &lt;bracketright&gt; &lt;quotedbl&gt;   : "”"  U201D  # right double quotation mark
+&lt;Multi_key&gt; &lt;apostrophe&gt; &lt;bracketleft&gt;  : "‘"  U2018  # left single quotation mark
+&lt;Multi_key&gt; &lt;bracketleft&gt; &lt;apostrophe&gt;  : "‘"  U2018  # left single quotation mark
+&lt;Multi_key&gt; &lt;apostrophe&gt; &lt;bracketright&gt; : "’"  U2019  # right single quotation mark
+&lt;Multi_key&gt; &lt;bracketright&gt; &lt;apostrophe&gt; : "’"  U2019  # right single quotation mark
+&lt;Multi_key&gt; &lt;less&gt; &lt;less&gt;               : "«"  U00AB  # left-pointing double angle quotation mark
+&lt;Multi_key&gt; &lt;less&gt; &lt;quotedbl&gt;           : "«"  U00AB  # left-pointing double angle quotation mark
+&lt;Multi_key&gt; &lt;quotedbl&gt; &lt;less&gt;           : "«"  U00AB  # left-pointing double angle quotation mark
+&lt;Multi_key&gt; &lt;greater&gt; &lt;greater&gt;         : "»"  U00BB  # right-pointing double angle quotation mark
+&lt;Multi_key&gt; &lt;greater&gt; &lt;quotedbl&gt;        : "»"  U00BB  # right-pointing double angle quotation mark
+&lt;Multi_key&gt; &lt;quotedbl&gt; &lt;greater&gt;        : "»"  U00BB  # right-pointing double angle quotation mark
+&lt;Multi_key&gt; &lt;less&gt; &lt;apostrophe&gt;         : "‹"  U2039  # left-pointing single angle quotation mark
+&lt;Multi_key&gt; &lt;apostrophe&gt; &lt;less&gt;         : "‹"  U2039  # left-pointing single angle quotation mark
+&lt;Multi_key&gt; &lt;greater&gt; &lt;apostrophe&gt;      : "›"  U203A  # right-pointing single angle quotation mark
+&lt;Multi_key&gt; &lt;apostrophe&gt; &lt;greater&gt;      : "›"  U203A  # right-pointing single angle quotation mark
+
+
+# Miscellaneous Symbols and Dingbats
+
+&lt;Multi_key&gt; &lt;1&gt; &lt;a&gt; : "☀"  U2600  # black sun with rays
+&lt;Multi_key&gt; &lt;1&gt; &lt;b&gt; : "☁"  U2601  # cloud
+&lt;Multi_key&gt; &lt;1&gt; &lt;c&gt; : "☂"  U2602  # umbrella
+&lt;Multi_key&gt; &lt;1&gt; &lt;d&gt; : "☃"  U2603  # snowman
+&lt;Multi_key&gt; &lt;1&gt; &lt;e&gt; : "☄"  U2604  # comet
+&lt;Multi_key&gt; &lt;1&gt; &lt;f&gt; : "★"  U2605  # black star
+&lt;Multi_key&gt; &lt;1&gt; &lt;g&gt; : "☆"  U2606  # white star
+&lt;Multi_key&gt; &lt;1&gt; &lt;h&gt; : "☎"  U260E  # black telephone
+&lt;Multi_key&gt; &lt;1&gt; &lt;i&gt; : "☏"  U260F  # white telephone
+&lt;Multi_key&gt; &lt;1&gt; &lt;j&gt; : "☐"  U2610  # ballot box
+&lt;Multi_key&gt; &lt;1&gt; &lt;k&gt; : "☑"  U2611  # ballot box with check
+&lt;Multi_key&gt; &lt;1&gt; &lt;l&gt; : "☒"  U2612  # ballot box with x
+&lt;Multi_key&gt; &lt;1&gt; &lt;m&gt; : "☙"  U2619  # reversed rotated floral heart bullet
+&lt;Multi_key&gt; &lt;1&gt; &lt;n&gt; : "☚"  U261A  # black left-pointing index
+&lt;Multi_key&gt; &lt;1&gt; &lt;o&gt; : "☛"  U261B  # black right-pointing index
+&lt;Multi_key&gt; &lt;1&gt; &lt;p&gt; : "☜"  U261C  # white left-pointing index
+&lt;Multi_key&gt; &lt;1&gt; &lt;q&gt; : "☝"  U261D  # white up-pointing index
+&lt;Multi_key&gt; &lt;1&gt; &lt;r&gt; : "☞"  U261E  # white right-pointing index
+&lt;Multi_key&gt; &lt;1&gt; &lt;s&gt; : "☟"  U261F  # white down-pointing index
+&lt;Multi_key&gt; &lt;1&gt; &lt;t&gt; : "☠"  U2620  # skull and crossbones
+&lt;Multi_key&gt; &lt;1&gt; &lt;u&gt; : "☡"  U2621  # caution sign
+&lt;Multi_key&gt; &lt;1&gt; &lt;v&gt; : "☢"  U2622  # radioactive sign
+&lt;Multi_key&gt; &lt;1&gt; &lt;w&gt; : "☣"  U2623  # biohazard sign
+&lt;Multi_key&gt; &lt;1&gt; &lt;x&gt; : "☹"  U2639  # white frowning face
+&lt;Multi_key&gt; &lt;1&gt; &lt;y&gt; : "☺"  U263A  # white smiling face
+&lt;Multi_key&gt; &lt;1&gt; &lt;z&gt; : "☻"  U263B  # black smiling face
+
+&lt;Multi_key&gt; &lt;2&gt; &lt;a&gt; : "☼"  U263C  # white sun with rays
+&lt;Multi_key&gt; &lt;2&gt; &lt;b&gt; : "☽"  U263D  # first quarter moon
+&lt;Multi_key&gt; &lt;2&gt; &lt;c&gt; : "☾"  U263E  # last quarter moon
+&lt;Multi_key&gt; &lt;2&gt; &lt;d&gt; : "♀"  U2640  # female sign (Venus)
+&lt;Multi_key&gt; &lt;2&gt; &lt;e&gt; : "♂"  U2642  # male sign (Mars)
+&lt;Multi_key&gt; &lt;2&gt; &lt;f&gt; : "♨"  U2668  # hot springs
+&lt;Multi_key&gt; &lt;2&gt; &lt;g&gt; : "♩"  U2669  # quarter note
+&lt;Multi_key&gt; &lt;2&gt; &lt;h&gt; : "♪"  U266A  # eighth note
+&lt;Multi_key&gt; &lt;2&gt; &lt;i&gt; : "♫"  U266B  # beamed eighth notes
+&lt;Multi_key&gt; &lt;2&gt; &lt;j&gt; : "♬"  U266C  # beamed sixteenth notes
+&lt;Multi_key&gt; &lt;2&gt; &lt;k&gt; : "♭"  U266D  # music flat sign
+&lt;Multi_key&gt; &lt;2&gt; &lt;l&gt; : "♮"  U266E  # music natural sign
+&lt;Multi_key&gt; &lt;2&gt; &lt;m&gt; : "♯"  U266F  # music sharp sign
+&lt;Multi_key&gt; &lt;2&gt; &lt;n&gt; : "♲"  U2672  # universal recycling symbol
+&lt;Multi_key&gt; &lt;2&gt; &lt;o&gt; : "♺"  U267A  # recycling symbol for generic materials
+&lt;Multi_key&gt; &lt;2&gt; &lt;p&gt; : "♻"  U267B  # black universal recycling symbol
+&lt;Multi_key&gt; &lt;2&gt; &lt;q&gt; : "♿"  U267F  # wheelchair symbol
+&lt;Multi_key&gt; &lt;2&gt; &lt;r&gt; : "⚐"  U2690  # white flag
+&lt;Multi_key&gt; &lt;2&gt; &lt;s&gt; : "⚑"  U2691  # black flag
+&lt;Multi_key&gt; &lt;2&gt; &lt;t&gt; : "⚠"  U26A0  # warning sign
+&lt;Multi_key&gt; &lt;2&gt; &lt;u&gt; : "⚡"  U26A1  # high voltage sign
+&lt;Multi_key&gt; &lt;2&gt; &lt;v&gt; : "⛔"  U26D4  # no entry
+
+&lt;Multi_key&gt; &lt;3&gt; &lt;a&gt; : "✁"  U2701  # upper blade scissors
+&lt;Multi_key&gt; &lt;3&gt; &lt;b&gt; : "✂"  U2702  # black scissors
+&lt;Multi_key&gt; &lt;3&gt; &lt;c&gt; : "✃"  U2703  # lower blade scissors
+&lt;Multi_key&gt; &lt;3&gt; &lt;d&gt; : "✄"  U2704  # white scissors
+&lt;Multi_key&gt; &lt;3&gt; &lt;e&gt; : "✆"  U2706  # telephone location sign
+&lt;Multi_key&gt; &lt;3&gt; &lt;f&gt; : "✇"  U2707  # tape drive
+&lt;Multi_key&gt; &lt;3&gt; &lt;g&gt; : "✈"  U2708  # airplane
+&lt;Multi_key&gt; &lt;3&gt; &lt;h&gt; : "✉"  U2709  # envelope
+&lt;Multi_key&gt; &lt;3&gt; &lt;i&gt; : "✊"  U270A  # raised fist
+&lt;Multi_key&gt; &lt;3&gt; &lt;j&gt; : "✋"  U270B  # raised hand
+&lt;Multi_key&gt; &lt;3&gt; &lt;k&gt; : "✌"  U270C  # victory hand
+&lt;Multi_key&gt; &lt;3&gt; &lt;l&gt; : "✍"  U270D  # writing hand
+&lt;Multi_key&gt; &lt;3&gt; &lt;m&gt; : "✎"  U270E  # lower right pencil
+&lt;Multi_key&gt; &lt;3&gt; &lt;n&gt; : "✏"  U270F  # pencil
+&lt;Multi_key&gt; &lt;3&gt; &lt;o&gt; : "✐"  U2710  # upper right pencil
+&lt;Multi_key&gt; &lt;3&gt; &lt;p&gt; : "✑"  U2711  # white nib
+&lt;Multi_key&gt; &lt;3&gt; &lt;q&gt; : "✒"  U2712  # black nib
+&lt;Multi_key&gt; &lt;3&gt; &lt;r&gt; : "✓"  U2713  # check mark
+&lt;Multi_key&gt; &lt;3&gt; &lt;s&gt; : "✔"  U2714  # heavy check mark
+&lt;Multi_key&gt; &lt;3&gt; &lt;t&gt; : "✕"  U2715  # multiplication x
+&lt;Multi_key&gt; &lt;3&gt; &lt;u&gt; : "✖"  U2716  # heavy multiplication x
+&lt;Multi_key&gt; &lt;3&gt; &lt;v&gt; : "✗"  U2717  # ballot x
+&lt;Multi_key&gt; &lt;3&gt; &lt;w&gt; : "✘"  U2718  # heavy ballot x
+&lt;Multi_key&gt; &lt;3&gt; &lt;x&gt; : "✙"  U2719  # outlined Greek cross
+&lt;Multi_key&gt; &lt;3&gt; &lt;y&gt; : "✚"  U271A  # heavy Greek cross
+&lt;Multi_key&gt; &lt;3&gt; &lt;z&gt; : "✛"  U271B  # open centre cross
+
+&lt;Multi_key&gt; &lt;4&gt; &lt;a&gt; : "✜"  U271C  # heavy open centre cross
+&lt;Multi_key&gt; &lt;4&gt; &lt;b&gt; : "✝"  U271D  # Latin cross
+&lt;Multi_key&gt; &lt;4&gt; &lt;c&gt; : "✞"  U271E  # shadowed white Latin cross
+&lt;Multi_key&gt; &lt;4&gt; &lt;d&gt; : "✟"  U271F  # outlined Latin cross
+&lt;Multi_key&gt; &lt;4&gt; &lt;e&gt; : "✠"  U2720  # Maltese cross
+&lt;Multi_key&gt; &lt;4&gt; &lt;f&gt; : "✡"  U2721  # star of David
+&lt;Multi_key&gt; &lt;4&gt; &lt;g&gt; : "✢"  U2722  # four teardrop-spoked asterisk
+&lt;Multi_key&gt; &lt;4&gt; &lt;h&gt; : "✣"  U2723  # four balloon-spoked asterisk
+&lt;Multi_key&gt; &lt;4&gt; &lt;i&gt; : "✤"  U2724  # heavy four balloon-spoked asterisk
+&lt;Multi_key&gt; &lt;4&gt; &lt;j&gt; : "✥"  U2725  # four club-spoked asterisk
+&lt;Multi_key&gt; &lt;4&gt; &lt;k&gt; : "✦"  U2726  # black four-pointed star
+&lt;Multi_key&gt; &lt;4&gt; &lt;l&gt; : "✧"  U2727  # white four-pointed star
+&lt;Multi_key&gt; &lt;4&gt; &lt;m&gt; : "✩"  U2729  # stress outlined white star
+&lt;Multi_key&gt; &lt;4&gt; &lt;n&gt; : "✪"  U272A  # circled white star
+&lt;Multi_key&gt; &lt;4&gt; &lt;o&gt; : "✫"  U272B  # open centre black star
+&lt;Multi_key&gt; &lt;4&gt; &lt;p&gt; : "✬"  U272C  # black centre white star
+&lt;Multi_key&gt; &lt;4&gt; &lt;q&gt; : "✭"  U272D  # outlined black star
+&lt;Multi_key&gt; &lt;4&gt; &lt;r&gt; : "✮"  U272E  # heavy outlined black star
+&lt;Multi_key&gt; &lt;4&gt; &lt;s&gt; : "✯"  U272F  # pinwheel star
+&lt;Multi_key&gt; &lt;4&gt; &lt;t&gt; : "✰"  U2730  # shadowed white star
+&lt;Multi_key&gt; &lt;4&gt; &lt;u&gt; : "✱"  U2731  # heavy asterisk
+&lt;Multi_key&gt; &lt;4&gt; &lt;v&gt; : "✲"  U2732  # open centre asterisk
+&lt;Multi_key&gt; &lt;4&gt; &lt;w&gt; : "✳"  U2733  # eight-spoked asterisk
+&lt;Multi_key&gt; &lt;4&gt; &lt;x&gt; : "✴"  U2734  # eight-pointed black star
+&lt;Multi_key&gt; &lt;4&gt; &lt;y&gt; : "✵"  U2735  # eight-pointed pinwheel star
+&lt;Multi_key&gt; &lt;4&gt; &lt;z&gt; : "✶"  U2736  # six-pointed black star
+
+&lt;Multi_key&gt; &lt;5&gt; &lt;a&gt; : "✷"  U2737  # eight-pointed rectilinear black star
+&lt;Multi_key&gt; &lt;5&gt; &lt;b&gt; : "✸"  U2738  # heavy eight-pointed rectilinear black star
+&lt;Multi_key&gt; &lt;5&gt; &lt;c&gt; : "✹"  U2739  # twelve pointed black star
+&lt;Multi_key&gt; &lt;5&gt; &lt;d&gt; : "✺"  U273A  # sixteen-pointed asterisk
+&lt;Multi_key&gt; &lt;5&gt; &lt;e&gt; : "✻"  U273B  # teardrop-spoked asterisk
+&lt;Multi_key&gt; &lt;5&gt; &lt;f&gt; : "✼"  U273C  # open centre teardrop-spoked asterisk
+&lt;Multi_key&gt; &lt;5&gt; &lt;g&gt; : "✽"  U273D  # heavy teardrop-spoked asterisk
+&lt;Multi_key&gt; &lt;5&gt; &lt;h&gt; : "✾"  U273E  # six-petalled black and white florette
+&lt;Multi_key&gt; &lt;5&gt; &lt;i&gt; : "✿"  U273F  # black florette
+&lt;Multi_key&gt; &lt;5&gt; &lt;j&gt; : "❀"  U2740  # white florette
+&lt;Multi_key&gt; &lt;5&gt; &lt;k&gt; : "❁"  U2741  # eight-petalled outlined black florette
+&lt;Multi_key&gt; &lt;5&gt; &lt;l&gt; : "❂"  U2742  # circled open centre eight-pointed star
+&lt;Multi_key&gt; &lt;5&gt; &lt;m&gt; : "❃"  U2743  # heavy teardrop-spoked pinwheel asterisk
+&lt;Multi_key&gt; &lt;5&gt; &lt;n&gt; : "❄"  U2744  # snowflake
+&lt;Multi_key&gt; &lt;5&gt; &lt;o&gt; : "❅"  U2745  # tight trifoliate snowflake
+&lt;Multi_key&gt; &lt;5&gt; &lt;p&gt; : "❆"  U2746  # heavy chevron snowflake
+&lt;Multi_key&gt; &lt;5&gt; &lt;q&gt; : "❇"  U2747  # sparkle
+&lt;Multi_key&gt; &lt;5&gt; &lt;r&gt; : "❈"  U2748  # heavy sparkle
+&lt;Multi_key&gt; &lt;5&gt; &lt;s&gt; : "❉"  U2749  # balloon-spoked asterisk
+&lt;Multi_key&gt; &lt;5&gt; &lt;t&gt; : "❊"  U274A  # eight teardrop-spoked propeller asterisk
+&lt;Multi_key&gt; &lt;5&gt; &lt;u&gt; : "❋"  U274B  # heavy eight teardrop-spoked propeller asterisk
+&lt;Multi_key&gt; &lt;5&gt; &lt;v&gt; : "❍"  U274D  # shadowed white circle
+&lt;Multi_key&gt; &lt;5&gt; &lt;w&gt; : "❏"  U274F  # lower right drop-shadowed white square
+&lt;Multi_key&gt; &lt;5&gt; &lt;x&gt; : "❐"  U2750  # upper right drop-shadowed white square
+&lt;Multi_key&gt; &lt;5&gt; &lt;y&gt; : "❑"  U2751  # lower right shadowed white square
+&lt;Multi_key&gt; &lt;5&gt; &lt;z&gt; : "❒"  U2752  # upper right shadowed white square
+
+&lt;Multi_key&gt; &lt;6&gt; &lt;a&gt; : "❖"  U2756  # black diamond minus white x
+&lt;Multi_key&gt; &lt;6&gt; &lt;b&gt; : "❘"  U2758  # light vertical bar
+&lt;Multi_key&gt; &lt;6&gt; &lt;c&gt; : "❙"  U2759  # medium vertical bar
+&lt;Multi_key&gt; &lt;6&gt; &lt;d&gt; : "❚"  U275A  # heavy vertical bar
+&lt;Multi_key&gt; &lt;6&gt; &lt;e&gt; : "❛"  U275B  # heavy single turned comma quotation mark ornament
+&lt;Multi_key&gt; &lt;6&gt; &lt;f&gt; : "❜"  U275C  # heavy single comma quotation mark ornament
+&lt;Multi_key&gt; &lt;6&gt; &lt;g&gt; : "❝"  U275D  # heavy double turned comma quotation mark ornament
+&lt;Multi_key&gt; &lt;6&gt; &lt;h&gt; : "❞"  U275E  # heavy double comma quotation mark ornament
+&lt;Multi_key&gt; &lt;6&gt; &lt;i&gt; : "❟"  U275F  # heavy low single comma quotation mark ornament
+&lt;Multi_key&gt; &lt;6&gt; &lt;j&gt; : "❠"  U2760  # heavy low double comma quotation mark ornament
+&lt;Multi_key&gt; &lt;6&gt; &lt;k&gt; : "❡"  U2761  # curved stem paragraph sign ornament
+&lt;Multi_key&gt; &lt;6&gt; &lt;l&gt; : "❢"  U2762  # heavy exclamation mark ornament
+&lt;Multi_key&gt; &lt;6&gt; &lt;m&gt; : "❣"  U2763  # heavy heart exclamation mark ornament
+&lt;Multi_key&gt; &lt;6&gt; &lt;n&gt; : "❤"  U2764  # heavy black heart
+&lt;Multi_key&gt; &lt;6&gt; &lt;o&gt; : "❥"  U2765  # rotated heavy black heart bullet
+&lt;Multi_key&gt; &lt;6&gt; &lt;p&gt; : "❦"  U2766  # floral heart
+&lt;Multi_key&gt; &lt;6&gt; &lt;q&gt; : "❧"  U2767  # rotated floral heart bullet
+
+&lt;Multi_key&gt; &lt;7&gt; &lt;a&gt; : "➔"  U2794  # heavy wide-headed rightwards arrow
+&lt;Multi_key&gt; &lt;7&gt; &lt;b&gt; : "➘"  U2798  # heavy south east arrow
+&lt;Multi_key&gt; &lt;7&gt; &lt;c&gt; : "➙"  U2799  # heavy rightwards arrow
+&lt;Multi_key&gt; &lt;7&gt; &lt;d&gt; : "➚"  U279A  # heavy north east arrow
+&lt;Multi_key&gt; &lt;7&gt; &lt;e&gt; : "➛"  U279B  # drafting point rightwards arrow
+&lt;Multi_key&gt; &lt;7&gt; &lt;f&gt; : "➜"  U279C  # heavy round-tipped rightwards arrow
+&lt;Multi_key&gt; &lt;7&gt; &lt;g&gt; : "➝"  U279D  # triangle-headed rightwards arrow
+&lt;Multi_key&gt; &lt;7&gt; &lt;h&gt; : "➞"  U279E  # heavy triangle-headed rightwards arrow
+&lt;Multi_key&gt; &lt;7&gt; &lt;i&gt; : "➟"  U279F  # dashed triangle-headed rightwards arrow
+&lt;Multi_key&gt; &lt;7&gt; &lt;j&gt; : "➠"  U27A0  # heavy dashed triangle-headed rightwards arrow
+&lt;Multi_key&gt; &lt;7&gt; &lt;k&gt; : "➡"  U27A1  # black rightwards arrow
+&lt;Multi_key&gt; &lt;7&gt; &lt;l&gt; : "➢"  U27A2  # 3d top-lighted rightwards arrowhead
+&lt;Multi_key&gt; &lt;7&gt; &lt;m&gt; : "➣"  U27A3  # 3d bottom-lighted rightwards arrowhead
+&lt;Multi_key&gt; &lt;7&gt; &lt;n&gt; : "➤"  U27A4  # black rightwards arrowhead
+&lt;Multi_key&gt; &lt;7&gt; &lt;o&gt; : "➥"  U27A5  # heavy black curved downwards and rightwards arrow
+&lt;Multi_key&gt; &lt;7&gt; &lt;p&gt; : "➦"  U27A6  # heavy black curved upwards and rightwards arrow
+&lt;Multi_key&gt; &lt;7&gt; &lt;q&gt; : "➧"  U27A7  # squat black rightwards arrow
+&lt;Multi_key&gt; &lt;7&gt; &lt;r&gt; : "➨"  U27A8  # heavy concave-pointed black rightwards arrow
+&lt;Multi_key&gt; &lt;7&gt; &lt;s&gt; : "➩"  U27A9  # right-shaded white rightwards arrow
+&lt;Multi_key&gt; &lt;7&gt; &lt;t&gt; : "➪"  U27AA  # left-shaded white rightwards arrow
+&lt;Multi_key&gt; &lt;7&gt; &lt;u&gt; : "➫"  U27AB  # back-tilted shadowed white rightwards arrow
+&lt;Multi_key&gt; &lt;7&gt; &lt;v&gt; : "➬"  U27AC  # front-tilted shadowed white rightwards arrow
+&lt;Multi_key&gt; &lt;7&gt; &lt;w&gt; : "➭"  U27AD  # heavy lower right-shadowed white rightwards arrow
+&lt;Multi_key&gt; &lt;7&gt; &lt;x&gt; : "➮"  U27AE  # heavy upper right-shadowed white rightwards arrow
+&lt;Multi_key&gt; &lt;7&gt; &lt;y&gt; : "➯"  U27AF  # notched lower right-shadowed white rightwards arrow
+&lt;Multi_key&gt; &lt;7&gt; &lt;z&gt; : "➱"  U27B1  # notched upper right-shadowed white rightwards arrow
+
+&lt;Multi_key&gt; &lt;8&gt; &lt;a&gt; : "➲"  U27B2  # circled heavy white rightwards arrow
+&lt;Multi_key&gt; &lt;8&gt; &lt;b&gt; : "➳"  U27B3  # white-feathered rightwards arrow
+&lt;Multi_key&gt; &lt;8&gt; &lt;c&gt; : "➴"  U27B4  # black-feathered south east arrow
+&lt;Multi_key&gt; &lt;8&gt; &lt;d&gt; : "➵"  U27B5  # black-feathered rightwards arrow
+&lt;Multi_key&gt; &lt;8&gt; &lt;e&gt; : "➶"  U27B6  # black-feathered north east arrow
+&lt;Multi_key&gt; &lt;8&gt; &lt;f&gt; : "➷"  U27B7  # heavy black-feathered south east arrow
+&lt;Multi_key&gt; &lt;8&gt; &lt;g&gt; : "➸"  U27B8  # heavy black-feathered rightwards arrow
+&lt;Multi_key&gt; &lt;8&gt; &lt;h&gt; : "➹"  U27B9  # heavy black-feathered north east arrow
+&lt;Multi_key&gt; &lt;8&gt; &lt;i&gt; : "➺"  U27BA  # teardrop-barbed rightwards arrow
+&lt;Multi_key&gt; &lt;8&gt; &lt;j&gt; : "➻"  U27BB  # heavy teardrop-shanked rightwards arrow
+&lt;Multi_key&gt; &lt;8&gt; &lt;k&gt; : "➼"  U27BC  # wedge-tailed rightwards arrow
+&lt;Multi_key&gt; &lt;8&gt; &lt;l&gt; : "➽"  U27BD  # heavy wedge-tailed rightwards arrow
+&lt;Multi_key&gt; &lt;8&gt; &lt;m&gt; : "➾"  U27BE  # open-outlined rightwards arrow
+&lt;Multi_key&gt; &lt;8&gt; &lt;n&gt; : "⟁"  U27C1  # white triangle containing small white triangle
+
+
+# Chess Symbols
+
+&lt;Multi_key&gt; &lt;C&gt; &lt;k&gt; : "♔"  U2654  # white chess king
+&lt;Multi_key&gt; &lt;C&gt; &lt;q&gt; : "♕"  U2655  # white chess queen
+&lt;Multi_key&gt; &lt;C&gt; &lt;r&gt; : "♖"  U2656  # white chess rook
+&lt;Multi_key&gt; &lt;C&gt; &lt;b&gt; : "♗"  U2657  # white chess bishop
+&lt;Multi_key&gt; &lt;C&gt; &lt;n&gt; : "♘"  U2658  # white chess knight
+&lt;Multi_key&gt; &lt;C&gt; &lt;p&gt; : "♙"  U2659  # white chess pawn
+&lt;Multi_key&gt; &lt;C&gt; &lt;K&gt; : "♚"  U265A  # black chess king
+&lt;Multi_key&gt; &lt;C&gt; &lt;Q&gt; : "♛"  U265B  # black chess queen
+&lt;Multi_key&gt; &lt;C&gt; &lt;R&gt; : "♜"  U265C  # black chess rook
+&lt;Multi_key&gt; &lt;C&gt; &lt;B&gt; : "♝"  U265D  # black chess bishop
+&lt;Multi_key&gt; &lt;C&gt; &lt;N&gt; : "♞"  U265E  # black chess knight
+&lt;Multi_key&gt; &lt;C&gt; &lt;P&gt; : "♟"  U265F  # black chess pawn
+
+
+# Playing Card Suit Symbols
+
+&lt;Multi_key&gt; &lt;S&gt; &lt;c&gt; : "♣"  U2663  # black club suit
+&lt;Multi_key&gt; &lt;S&gt; &lt;C&gt; : "♧"  U2667  # white club suit
+&lt;Multi_key&gt; &lt;S&gt; &lt;d&gt; : "♦"  U2666  # black diamond suit
+&lt;Multi_key&gt; &lt;S&gt; &lt;D&gt; : "♢"  U2662  # white diamond suit
+&lt;Multi_key&gt; &lt;S&gt; &lt;h&gt; : "♥"  U2665  # black heart suit
+&lt;Multi_key&gt; &lt;S&gt; &lt;H&gt; : "♡"  U2661  # white heart suit
+&lt;Multi_key&gt; &lt;S&gt; &lt;p&gt; : "♠"  U2660  # black spade suit
+&lt;Multi_key&gt; &lt;S&gt; &lt;P&gt; : "♤"  U2664  # white spade suit
+
+
+# Dingbat Negative Circled Digits
+
+&lt;Multi_key&gt; &lt;n&gt; &lt;1&gt; : "❶"  U2776  # dingbat negative circled digit 1
+&lt;Multi_key&gt; &lt;n&gt; &lt;2&gt; : "❷"  U2777  # dingbat negative circled digit 2
+&lt;Multi_key&gt; &lt;n&gt; &lt;3&gt; : "❸"  U2778  # dingbat negative circled digit 3
+&lt;Multi_key&gt; &lt;n&gt; &lt;4&gt; : "❹"  U2779  # dingbat negative circled digit 4
+&lt;Multi_key&gt; &lt;n&gt; &lt;5&gt; : "❺"  U277A  # dingbat negative circled digit 5
+&lt;Multi_key&gt; &lt;n&gt; &lt;6&gt; : "❻"  U277B  # dingbat negative circled digit 6
+&lt;Multi_key&gt; &lt;n&gt; &lt;7&gt; : "❼"  U277C  # dingbat negative circled digit 7
+&lt;Multi_key&gt; &lt;n&gt; &lt;8&gt; : "❽"  U277D  # dingbat negative circled digit 8
+&lt;Multi_key&gt; &lt;n&gt; &lt;9&gt; : "❾"  U277E  # dingbat negative circled digit 9
+&lt;Multi_key&gt; &lt;n&gt; &lt;0&gt; : "❿"  U277F  # dingbat negative circled digit 10
 </pre>
 
 <p>&nbsp;</p>
