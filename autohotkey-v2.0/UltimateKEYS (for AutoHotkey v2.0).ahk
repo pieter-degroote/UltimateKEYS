@@ -1,4 +1,4 @@
-; UltimateKEYS (for AutoHotkey v2.0).ahk - 2022-11-04
+; UltimateKEYS (for AutoHotkey v2.0).ahk - 2022-11-08
 
 ; Website :  www.ultimatekeys.info (pieter-degroote.github.io/UltimateKEYS/)
 
@@ -21,6 +21,93 @@ KeyHistory 0      ; disables the key history (for privacy and security)
 SendMode "Input"  ; optimizes for faster and more reliable input
 
 global gEndKeys := "{bs}{del}{esc}{home}{end}"  ; ends dead key input on specific keys
+
+
+; Compose :  Acute Accent (')
+
+global cmpAcuteAccent := Map()
+cmpAcuteAccent["a"] := "{u+00e1}"  ; (á) a with acute
+cmpAcuteAccent["A"] := "{u+00c1}"  ; (Á) A with acute
+cmpAcuteAccent["c"] := "{u+0107}"  ; (ć) c with acute
+cmpAcuteAccent["C"] := "{u+0106}"  ; (Ć) C with acute
+cmpAcuteAccent["e"] := "{u+00e9}"  ; (é) e with acute
+cmpAcuteAccent["E"] := "{u+00c9}"  ; (É) E with acute
+cmpAcuteAccent["g"] := "{u+01f5}"  ; (ǵ) g with acute
+cmpAcuteAccent["G"] := "{u+01f4}"  ; (Ǵ) G with acute
+cmpAcuteAccent["i"] := "{u+00ed}"  ; (í) i with acute
+cmpAcuteAccent["I"] := "{u+00cd}"  ; (Í) I with acute
+cmpAcuteAccent["k"] := "{u+1e31}"  ; (ḱ) k with acute
+cmpAcuteAccent["K"] := "{u+1e30}"  ; (Ḱ) K with acute
+cmpAcuteAccent["l"] := "{u+013a}"  ; (ĺ) l with acute
+cmpAcuteAccent["L"] := "{u+0139}"  ; (Ĺ) L with acute
+cmpAcuteAccent["m"] := "{u+1e3f}"  ; (ḿ) m with acute
+cmpAcuteAccent["M"] := "{u+1e3e}"  ; (Ḿ) M with acute
+cmpAcuteAccent["n"] := "{u+0144}"  ; (ń) n with acute
+cmpAcuteAccent["N"] := "{u+0143}"  ; (Ń) N with acute
+cmpAcuteAccent["o"] := "{u+00f3}"  ; (ó) o with acute
+cmpAcuteAccent["O"] := "{u+00d3}"  ; (Ó) O with acute
+cmpAcuteAccent["p"] := "{u+1e55}"  ; (ṕ) p with acute
+cmpAcuteAccent["P"] := "{u+1e54}"  ; (Ṕ) P with acute
+cmpAcuteAccent["r"] := "{u+0155}"  ; (ŕ) r with acute
+cmpAcuteAccent["R"] := "{u+0154}"  ; (Ŕ) R with acute
+cmpAcuteAccent["s"] := "{u+015b}"  ; (ś) s with acute
+cmpAcuteAccent["S"] := "{u+015a}"  ; (Ś) S with acute
+cmpAcuteAccent["u"] := "{u+00fa}"  ; (ú) u with acute
+cmpAcuteAccent["U"] := "{u+00da}"  ; (Ú) U with acute
+cmpAcuteAccent["w"] := "{u+1e83}"  ; (ẃ) w with acute
+cmpAcuteAccent["W"] := "{u+1e82}"  ; (Ẃ) W with acute
+cmpAcuteAccent["y"] := "{u+00fd}"  ; (ý) y with acute
+cmpAcuteAccent["Y"] := "{u+00dd}"  ; (Ý) Y with acute
+cmpAcuteAccent["z"] := "{u+017a}"  ; (ź) z with acute
+cmpAcuteAccent["Z"] := "{u+0179}"  ; (Ź) Z with acute
+cmpAcuteAccent[" "] := "{u+00b4}"  ; (´) acute accent
+
+
+; Compose :  Grave Accent (`)
+
+global cmpGraveAccent := Map()
+cmpGraveAccent["a"] := "{u+00e0}"  ; (à) a with grave
+cmpGraveAccent["A"] := "{u+00c0}"  ; (À) A with grave
+cmpGraveAccent["e"] := "{u+00e8}"  ; (è) e with grave
+cmpGraveAccent["E"] := "{u+00c8}"  ; (È) E with grave
+cmpGraveAccent["i"] := "{u+00ec}"  ; (ì) i with grave
+cmpGraveAccent["I"] := "{u+00cc}"  ; (Ì) I with grave
+cmpGraveAccent["n"] := "{u+01f9}"  ; (ǹ) n with grave
+cmpGraveAccent["N"] := "{u+01f8}"  ; (Ǹ) N with grave
+cmpGraveAccent["o"] := "{u+00f2}"  ; (ò) o with grave
+cmpGraveAccent["O"] := "{u+00d2}"  ; (Ò) O with grave
+cmpGraveAccent["u"] := "{u+00f9}"  ; (ù) u with grave
+cmpGraveAccent["U"] := "{u+00d9}"  ; (Ù) U with grave
+cmpGraveAccent["w"] := "{u+1e81}"  ; (ẁ) w with grave
+cmpGraveAccent["W"] := "{u+1e80}"  ; (Ẁ) W with grave
+cmpGraveAccent["y"] := "{u+1ef3}"  ; (ỳ) y with grave
+cmpGraveAccent["Y"] := "{u+1ef2}"  ; (Ỳ) Y with grave
+cmpGraveAccent[" "] := "{u+02cb}"  ; (ˋ) grave accent (modifier)
+
+
+; Compose :  Diaeresis (")
+
+global cmpDiaeresis := Map()
+cmpDiaeresis["a"] := "{u+00e4}"  ; (ä) a with diaeresis
+cmpDiaeresis["A"] := "{u+00c4}"  ; (Ä) A with diaeresis
+cmpDiaeresis["e"] := "{u+00eb}"  ; (ë) e with diaeresis
+cmpDiaeresis["E"] := "{u+00cb}"  ; (Ë) E with diaeresis
+cmpDiaeresis["h"] := "{u+1e27}"  ; (ḧ) h with diaeresis
+cmpDiaeresis["H"] := "{u+1e26}"  ; (Ḧ) H with diaeresis
+cmpDiaeresis["i"] := "{u+00ef}"  ; (ï) i with diaeresis
+cmpDiaeresis["I"] := "{u+00cf}"  ; (Ï) I with diaeresis
+cmpDiaeresis["o"] := "{u+00f6}"  ; (ö) o with diaeresis
+cmpDiaeresis["O"] := "{u+00d6}"  ; (Ö) O with diaeresis
+cmpDiaeresis["t"] := "{u+1e97}"  ; (ẗ) t with diaeresis
+cmpDiaeresis["u"] := "{u+00fc}"  ; (ü) u with diaeresis
+cmpDiaeresis["U"] := "{u+00dc}"  ; (Ü) U with diaeresis
+cmpDiaeresis["w"] := "{u+1e85}"  ; (ẅ) w with diaeresis
+cmpDiaeresis["W"] := "{u+1e84}"  ; (Ẅ) W with diaeresis
+cmpDiaeresis["x"] := "{u+1e8d}"  ; (ẍ) x with diaeresis
+cmpDiaeresis["X"] := "{u+1e8c}"  ; (Ẍ) X with diaeresis
+cmpDiaeresis["y"] := "{u+00ff}"  ; (ÿ) y with diaeresis
+cmpDiaeresis["Y"] := "{u+0178}"  ; (Ÿ) Y with diaeresis
+cmpDiaeresis[" "] := "{u+00a8}"  ; (¨) diaeresis
 
 
 ; Compose :  Circumflex Accent (c)
@@ -53,6 +140,69 @@ cmpCircumflex["Y"] := "{u+0176}"  ; (Ŷ) Y with circumflex
 cmpCircumflex["z"] := "{u+1e91}"  ; (ẑ) z with circumflex
 cmpCircumflex["Z"] := "{u+1e90}"  ; (Ẑ) Z with circumflex
 cmpCircumflex[" "] := "{u+02c6}"  ; (ˆ) circumflex accent (modifier)
+
+
+; Compose :  Tilde (~)
+
+global cmpTilde := Map()
+cmpTilde["a"] := "{u+00e3}"  ; (ã) a with tilde
+cmpTilde["A"] := "{u+00c3}"  ; (Ã) A with tilde
+cmpTilde["e"] := "{u+1ebd}"  ; (ẽ) e with tilde
+cmpTilde["E"] := "{u+1ebc}"  ; (Ẽ) E with tilde
+cmpTilde["i"] := "{u+0129}"  ; (ĩ) i with tilde
+cmpTilde["I"] := "{u+0128}"  ; (Ĩ) I with tilde
+cmpTilde["l"] := "{u+026b}"  ; (ɫ) l with middle tilde
+cmpTilde["L"] := "{u+2c62}"  ; (Ɫ) L with middle tilde
+cmpTilde["n"] := "{u+00f1}"  ; (ñ) n with tilde
+cmpTilde["N"] := "{u+00d1}"  ; (Ñ) N with tilde
+cmpTilde["o"] := "{u+00f5}"  ; (õ) o with tilde
+cmpTilde["O"] := "{u+00d5}"  ; (Õ) O with tilde
+cmpTilde["u"] := "{u+0169}"  ; (ũ) u with tilde
+cmpTilde["U"] := "{u+0168}"  ; (Ũ) U with tilde
+cmpTilde["v"] := "{u+1e7d}"  ; (ṽ) v with tilde
+cmpTilde["V"] := "{u+1e7c}"  ; (Ṽ) V with tilde
+cmpTilde["y"] := "{u+1ef9}"  ; (ỹ) y with tilde
+cmpTilde["Y"] := "{u+1ef8}"  ; (Ỹ) Y with tilde
+cmpTilde[" "] := "{u+02dc}"  ; (˜) small tilde
+
+
+; Compose :  Cedilla and Ogonek (,)
+
+global cmpCedillaOgonek := Map()
+cmpCedillaOgonek["a"] := "{u+0105}"  ; (ą) a with ogonek
+cmpCedillaOgonek["A"] := "{u+0104}"  ; (Ą) A with ogonek
+cmpCedillaOgonek["c"] := "{u+00e7}"  ; (ç) c with cedilla
+cmpCedillaOgonek["C"] := "{u+00c7}"  ; (Ç) C with cedilla
+cmpCedillaOgonek["d"] := "{u+1e11}"  ; (ḑ) d with cedilla
+cmpCedillaOgonek["D"] := "{u+1e10}"  ; (Ḑ) D with cedilla
+cmpCedillaOgonek["e"] := "{u+0119}"  ; (ę) e with ogonek
+cmpCedillaOgonek["E"] := "{u+0118}"  ; (Ę) E with ogonek
+cmpCedillaOgonek["f"] := "{u+0229}"  ; (ȩ) e with cedilla
+cmpCedillaOgonek["F"] := "{u+0228}"  ; (Ȩ) E with cedilla
+cmpCedillaOgonek["g"] := "{u+0123}"  ; (ģ) g with cedilla
+cmpCedillaOgonek["G"] := "{u+0122}"  ; (Ģ) G with cedilla
+cmpCedillaOgonek["h"] := "{u+1e29}"  ; (ḩ) h with cedilla
+cmpCedillaOgonek["H"] := "{u+1e28}"  ; (Ḩ) H with cedilla
+cmpCedillaOgonek["i"] := "{u+012f}"  ; (į) i with ogonek
+cmpCedillaOgonek["I"] := "{u+012e}"  ; (Į) I with ogonek
+cmpCedillaOgonek["k"] := "{u+0137}"  ; (ķ) k with cedilla
+cmpCedillaOgonek["K"] := "{u+0136}"  ; (Ķ) K with cedilla
+cmpCedillaOgonek["l"] := "{u+013c}"  ; (ļ) l with cedilla
+cmpCedillaOgonek["L"] := "{u+013b}"  ; (Ļ) L with cedilla
+cmpCedillaOgonek["n"] := "{u+0146}"  ; (ņ) n with cedilla
+cmpCedillaOgonek["N"] := "{u+0145}"  ; (Ņ) N with cedilla
+cmpCedillaOgonek["o"] := "{u+01eb}"  ; (ǫ) o with ogonek
+cmpCedillaOgonek["O"] := "{u+01ea}"  ; (Ǫ) O with ogonek
+cmpCedillaOgonek["r"] := "{u+0157}"  ; (ŗ) r with cedilla
+cmpCedillaOgonek["R"] := "{u+0156}"  ; (Ŗ) R with cedilla
+cmpCedillaOgonek["s"] := "{u+015f}"  ; (ş) s with cedilla
+cmpCedillaOgonek["S"] := "{u+015e}"  ; (Ş) S with cedilla
+cmpCedillaOgonek["t"] := "{u+0163}"  ; (ţ) t with cedilla
+cmpCedillaOgonek["T"] := "{u+0162}"  ; (Ţ) T with cedilla
+cmpCedillaOgonek["u"] := "{u+0173}"  ; (ų) u with ogonek
+cmpCedillaOgonek["U"] := "{u+0172}"  ; (Ų) U with ogonek
+cmpCedillaOgonek["."] := "{u+02db}"  ; (˛) ogonek
+cmpCedillaOgonek[" "] := "{u+00b8}"  ; (¸) cedilla
 
 
 ; Compose :  Caron (v)
@@ -128,6 +278,7 @@ cmpDotAbove["o"] := "{u+022f}"  ; (ȯ) o with dot above
 cmpDotAbove["O"] := "{u+022e}"  ; (Ȯ) O with dot above
 cmpDotAbove["p"] := "{u+1e57}"  ; (ṗ) p with dot above
 cmpDotAbove["P"] := "{u+1e56}"  ; (Ṗ) P with dot above
+cmpDotAbove["q"] := "{u+1e9b}"  ; (ẛ) long s with dot above
 cmpDotAbove["r"] := "{u+1e59}"  ; (ṙ) r with dot above
 cmpDotAbove["R"] := "{u+1e58}"  ; (Ṙ) R with dot above
 cmpDotAbove["s"] := "{u+1e61}"  ; (ṡ) s with dot above
@@ -206,6 +357,8 @@ cmpMacronStrokeAdd["i"] := "{u+0268}"  ; (ɨ) i with stroke
 cmpMacronStrokeAdd["I"] := "{u+0197}"  ; (Ɨ) I with stroke
 cmpMacronStrokeAdd["l"] := "{u+019a}"  ; (ƚ) l with bar
 cmpMacronStrokeAdd["L"] := "{u+023d}"  ; (Ƚ) L with bar
+cmpMacronStrokeAdd["o"] := "{u+0275}"  ; (ɵ) barred o
+cmpMacronStrokeAdd["O"] := "{u+019f}"  ; (Ɵ) O with middle tilde
 cmpMacronStrokeAdd["u"] := "{u+0289}"  ; (ʉ) u with bar
 cmpMacronStrokeAdd["U"] := "{u+0244}"  ; (Ʉ) U with bar
 cmpMacronStrokeAdd["y"] := "{u+024f}"  ; (ɏ) y with stroke
@@ -221,7 +374,6 @@ cmpStroke["c"] := "{u+023c}"  ; (ȼ) c with stroke
 cmpStroke["C"] := "{u+023b}"  ; (Ȼ) C with stroke
 cmpStroke["e"] := "{u+0247}"  ; (ɇ) e with stroke
 cmpStroke["E"] := "{u+0246}"  ; (Ɇ) E with stroke
-cmpStroke["f"] := "{u+1e9c}"  ; (ẜ) long s with diagonal stroke
 cmpStroke["g"] := "{u+a7a1}"  ; (ꞡ) g with oblique stroke
 cmpStroke["G"] := "{u+a7a0}"  ; (Ꞡ) G with oblique stroke
 cmpStroke["k"] := "{u+a7a3}"  ; (ꞣ) k with oblique stroke
@@ -232,51 +384,13 @@ cmpStroke["n"] := "{u+a7a5}"  ; (ꞥ) n with oblique stroke
 cmpStroke["N"] := "{u+a7a4}"  ; (Ꞥ) N with oblique stroke
 cmpStroke["o"] := "{u+00f8}"  ; (ø) o with stroke
 cmpStroke["O"] := "{u+00d8}"  ; (Ø) O with stroke
+cmpStroke["q"] := "{u+1e9c}"  ; (ẜ) long s with diagonal stroke
 cmpStroke["r"] := "{u+a7a7}"  ; (ꞧ) r with oblique stroke
 cmpStroke["R"] := "{u+a7a6}"  ; (Ꞧ) R with oblique stroke
 cmpStroke["s"] := "{u+a7a9}"  ; (ꞩ) s with oblique stroke
 cmpStroke["S"] := "{u+a7a8}"  ; (Ꞩ) S with oblique stroke
 cmpStroke["t"] := "{u+2c66}"  ; (ⱦ) t with stroke
 cmpStroke["T"] := "{u+023e}"  ; (Ⱦ) T with stroke
-
-
-; Compose :  Cedilla/Ogonek (,)
-
-global cmpCedillaOgonek := Map()
-cmpCedillaOgonek["a"] := "{u+0105}"  ; (ą) a with ogonek
-cmpCedillaOgonek["A"] := "{u+0104}"  ; (Ą) A with ogonek
-cmpCedillaOgonek["c"] := "{u+00e7}"  ; (ç) c with cedilla
-cmpCedillaOgonek["C"] := "{u+00c7}"  ; (Ç) C with cedilla
-cmpCedillaOgonek["d"] := "{u+1e11}"  ; (ḑ) d with cedilla
-cmpCedillaOgonek["D"] := "{u+1e10}"  ; (Ḑ) D with cedilla
-cmpCedillaOgonek["e"] := "{u+0119}"  ; (ę) e with ogonek
-cmpCedillaOgonek["E"] := "{u+0118}"  ; (Ę) E with ogonek
-cmpCedillaOgonek["f"] := "{u+0229}"  ; (ȩ) e with cedilla
-cmpCedillaOgonek["F"] := "{u+0228}"  ; (Ȩ) E with cedilla
-cmpCedillaOgonek["g"] := "{u+0123}"  ; (ģ) g with cedilla
-cmpCedillaOgonek["G"] := "{u+0122}"  ; (Ģ) G with cedilla
-cmpCedillaOgonek["h"] := "{u+1e29}"  ; (ḩ) h with cedilla
-cmpCedillaOgonek["H"] := "{u+1e28}"  ; (Ḩ) H with cedilla
-cmpCedillaOgonek["i"] := "{u+012f}"  ; (į) i with ogonek
-cmpCedillaOgonek["I"] := "{u+012e}"  ; (Į) I with ogonek
-cmpCedillaOgonek["k"] := "{u+0137}"  ; (ķ) k with cedilla
-cmpCedillaOgonek["K"] := "{u+0136}"  ; (Ķ) K with cedilla
-cmpCedillaOgonek["l"] := "{u+013c}"  ; (ļ) l with cedilla
-cmpCedillaOgonek["L"] := "{u+013b}"  ; (Ļ) L with cedilla
-cmpCedillaOgonek["n"] := "{u+0146}"  ; (ņ) n with cedilla
-cmpCedillaOgonek["N"] := "{u+0145}"  ; (Ņ) N with cedilla
-cmpCedillaOgonek["o"] := "{u+01eb}"  ; (ǫ) o with ogonek
-cmpCedillaOgonek["O"] := "{u+01ea}"  ; (Ǫ) O with ogonek
-cmpCedillaOgonek["r"] := "{u+0157}"  ; (ŗ) r with cedilla
-cmpCedillaOgonek["R"] := "{u+0156}"  ; (Ŗ) R with cedilla
-cmpCedillaOgonek["s"] := "{u+015f}"  ; (ş) s with cedilla
-cmpCedillaOgonek["S"] := "{u+015e}"  ; (Ş) S with cedilla
-cmpCedillaOgonek["t"] := "{u+0163}"  ; (ţ) t with cedilla
-cmpCedillaOgonek["T"] := "{u+0162}"  ; (Ţ) T with cedilla
-cmpCedillaOgonek["u"] := "{u+0173}"  ; (ų) u with ogonek
-cmpCedillaOgonek["U"] := "{u+0172}"  ; (Ų) U with ogonek
-cmpCedillaOgonek["."] := "{u+02db}"  ; (˛) ogonek
-cmpCedillaOgonek[" "] := "{u+00b8}"  ; (¸) cedilla
 
 
 ; Compose :  Breve and Special Letters (b)
@@ -311,88 +425,6 @@ cmpBreveSpecial["#"] := "{u+01b7}"  ; (Ʒ) capital letter ezh
 cmpBreveSpecial[" "] := "{u+02d8}"  ; (˘) breve
 
 
-; Compose :  Inverted Breve (B)
-
-global cmpInvertedBreve := Map()
-cmpInvertedBreve["a"] := "{u+0203}"  ; (ȃ) a with inverted breve
-cmpInvertedBreve["A"] := "{u+0202}"  ; (Ȃ) A with inverted breve
-cmpInvertedBreve["e"] := "{u+0207}"  ; (ȇ) e with inverted breve
-cmpInvertedBreve["E"] := "{u+0206}"  ; (Ȇ) E with inverted breve
-cmpInvertedBreve["i"] := "{u+020b}"  ; (ȋ) i with inverted breve
-cmpInvertedBreve["I"] := "{u+020a}"  ; (Ȋ) I with inverted breve
-cmpInvertedBreve["o"] := "{u+020f}"  ; (ȏ) o with inverted breve
-cmpInvertedBreve["O"] := "{u+020e}"  ; (Ȏ) O with inverted breve
-cmpInvertedBreve["r"] := "{u+0213}"  ; (ȓ) r with inverted breve
-cmpInvertedBreve["R"] := "{u+0212}"  ; (Ȓ) R with inverted breve
-cmpInvertedBreve["u"] := "{u+0217}"  ; (ȗ) u with inverted breve
-cmpInvertedBreve["U"] := "{u+0216}"  ; (Ȗ) U with inverted breve
-
-
-; Compose :  Acute Accent (')
-
-global cmpAcuteAccent := Map()
-cmpAcuteAccent["a"] := "{u+00e1}"  ; (á) a with acute
-cmpAcuteAccent["A"] := "{u+00c1}"  ; (Á) A with acute
-cmpAcuteAccent["c"] := "{u+0107}"  ; (ć) c with acute
-cmpAcuteAccent["C"] := "{u+0106}"  ; (Ć) C with acute
-cmpAcuteAccent["e"] := "{u+00e9}"  ; (é) e with acute
-cmpAcuteAccent["E"] := "{u+00c9}"  ; (É) E with acute
-cmpAcuteAccent["g"] := "{u+01f5}"  ; (ǵ) g with acute
-cmpAcuteAccent["G"] := "{u+01f4}"  ; (Ǵ) G with acute
-cmpAcuteAccent["i"] := "{u+00ed}"  ; (í) i with acute
-cmpAcuteAccent["I"] := "{u+00cd}"  ; (Í) I with acute
-cmpAcuteAccent["k"] := "{u+1e31}"  ; (ḱ) k with acute
-cmpAcuteAccent["K"] := "{u+1e30}"  ; (Ḱ) K with acute
-cmpAcuteAccent["l"] := "{u+013a}"  ; (ĺ) l with acute
-cmpAcuteAccent["L"] := "{u+0139}"  ; (Ĺ) L with acute
-cmpAcuteAccent["m"] := "{u+1e3f}"  ; (ḿ) m with acute
-cmpAcuteAccent["M"] := "{u+1e3e}"  ; (Ḿ) M with acute
-cmpAcuteAccent["n"] := "{u+0144}"  ; (ń) n with acute
-cmpAcuteAccent["N"] := "{u+0143}"  ; (Ń) N with acute
-cmpAcuteAccent["o"] := "{u+00f3}"  ; (ó) o with acute
-cmpAcuteAccent["O"] := "{u+00d3}"  ; (Ó) O with acute
-cmpAcuteAccent["p"] := "{u+1e55}"  ; (ṕ) p with acute
-cmpAcuteAccent["P"] := "{u+1e54}"  ; (Ṕ) P with acute
-cmpAcuteAccent["r"] := "{u+0155}"  ; (ŕ) r with acute
-cmpAcuteAccent["R"] := "{u+0154}"  ; (Ŕ) R with acute
-cmpAcuteAccent["s"] := "{u+015b}"  ; (ś) s with acute
-cmpAcuteAccent["S"] := "{u+015a}"  ; (Ś) S with acute
-cmpAcuteAccent["u"] := "{u+00fa}"  ; (ú) u with acute
-cmpAcuteAccent["U"] := "{u+00da}"  ; (Ú) U with acute
-cmpAcuteAccent["w"] := "{u+1e83}"  ; (ẃ) w with acute
-cmpAcuteAccent["W"] := "{u+1e82}"  ; (Ẃ) W with acute
-cmpAcuteAccent["y"] := "{u+00fd}"  ; (ý) y with acute
-cmpAcuteAccent["Y"] := "{u+00dd}"  ; (Ý) Y with acute
-cmpAcuteAccent["z"] := "{u+017a}"  ; (ź) z with acute
-cmpAcuteAccent["Z"] := "{u+0179}"  ; (Ź) Z with acute
-cmpAcuteAccent[" "] := "{u+00b4}"  ; (´) acute accent
-
-
-; Compose :  Diaeresis (")
-
-global cmpDiaeresis := Map()
-cmpDiaeresis["a"] := "{u+00e4}"  ; (ä) a with diaeresis
-cmpDiaeresis["A"] := "{u+00c4}"  ; (Ä) A with diaeresis
-cmpDiaeresis["e"] := "{u+00eb}"  ; (ë) e with diaeresis
-cmpDiaeresis["E"] := "{u+00cb}"  ; (Ë) E with diaeresis
-cmpDiaeresis["h"] := "{u+1e27}"  ; (ḧ) h with diaeresis
-cmpDiaeresis["H"] := "{u+1e26}"  ; (Ḧ) H with diaeresis
-cmpDiaeresis["i"] := "{u+00ef}"  ; (ï) i with diaeresis
-cmpDiaeresis["I"] := "{u+00cf}"  ; (Ï) I with diaeresis
-cmpDiaeresis["o"] := "{u+00f6}"  ; (ö) o with diaeresis
-cmpDiaeresis["O"] := "{u+00d6}"  ; (Ö) O with diaeresis
-cmpDiaeresis["t"] := "{u+1e97}"  ; (ẗ) t with diaeresis
-cmpDiaeresis["u"] := "{u+00fc}"  ; (ü) u with diaeresis
-cmpDiaeresis["U"] := "{u+00dc}"  ; (Ü) U with diaeresis
-cmpDiaeresis["w"] := "{u+1e85}"  ; (ẅ) w with diaeresis
-cmpDiaeresis["W"] := "{u+1e84}"  ; (Ẅ) W with diaeresis
-cmpDiaeresis["x"] := "{u+1e8d}"  ; (ẍ) x with diaeresis
-cmpDiaeresis["X"] := "{u+1e8c}"  ; (Ẍ) X with diaeresis
-cmpDiaeresis["y"] := "{u+00ff}"  ; (ÿ) y with diaeresis
-cmpDiaeresis["Y"] := "{u+0178}"  ; (Ÿ) Y with diaeresis
-cmpDiaeresis[" "] := "{u+00a8}"  ; (¨) diaeresis
-
-
 ; Compose :  Double Acute Accent (=)
 
 global cmpDoubleAcute := Map()
@@ -401,28 +433,6 @@ cmpDoubleAcute["O"] := "{u+0150}"  ; (Ő) O with double acute
 cmpDoubleAcute["u"] := "{u+0171}"  ; (ű) u with double acute
 cmpDoubleAcute["U"] := "{u+0170}"  ; (Ű) U with double acute
 cmpDoubleAcute[" "] := "{u+02dd}"  ; (˝) double acute accent
-
-
-; Compose :  Grave Accent (`)
-
-global cmpGraveAccent := Map()
-cmpGraveAccent["a"] := "{u+00e0}"  ; (à) a with grave
-cmpGraveAccent["A"] := "{u+00c0}"  ; (À) A with grave
-cmpGraveAccent["e"] := "{u+00e8}"  ; (è) e with grave
-cmpGraveAccent["E"] := "{u+00c8}"  ; (È) E with grave
-cmpGraveAccent["i"] := "{u+00ec}"  ; (ì) i with grave
-cmpGraveAccent["I"] := "{u+00cc}"  ; (Ì) I with grave
-cmpGraveAccent["n"] := "{u+01f9}"  ; (ǹ) n with grave
-cmpGraveAccent["N"] := "{u+01f8}"  ; (Ǹ) N with grave
-cmpGraveAccent["o"] := "{u+00f2}"  ; (ò) o with grave
-cmpGraveAccent["O"] := "{u+00d2}"  ; (Ò) O with grave
-cmpGraveAccent["u"] := "{u+00f9}"  ; (ù) u with grave
-cmpGraveAccent["U"] := "{u+00d9}"  ; (Ù) U with grave
-cmpGraveAccent["w"] := "{u+1e81}"  ; (ẁ) w with grave
-cmpGraveAccent["W"] := "{u+1e80}"  ; (Ẁ) W with grave
-cmpGraveAccent["y"] := "{u+1ef3}"  ; (ỳ) y with grave
-cmpGraveAccent["Y"] := "{u+1ef2}"  ; (Ỳ) Y with grave
-cmpGraveAccent[" "] := "{u+02cb}"  ; (ˋ) grave accent (modifier)
 
 
 ; Compose :  Double Grave Accent (G)
@@ -442,111 +452,152 @@ cmpDoubleGrave["u"] := "{u+0215}"  ; (ȕ) u with double grave
 cmpDoubleGrave["U"] := "{u+0214}"  ; (Ȕ) U with double grave
 
 
-; Compose :  Tilde (~)
+; Compose :  Inverted Breve (B)
 
-global cmpTilde := Map()
-cmpTilde["a"] := "{u+00e3}"  ; (ã) a with tilde
-cmpTilde["A"] := "{u+00c3}"  ; (Ã) A with tilde
-cmpTilde["e"] := "{u+1ebd}"  ; (ẽ) e with tilde
-cmpTilde["E"] := "{u+1ebc}"  ; (Ẽ) E with tilde
-cmpTilde["i"] := "{u+0129}"  ; (ĩ) i with tilde
-cmpTilde["I"] := "{u+0128}"  ; (Ĩ) I with tilde
-cmpTilde["l"] := "{u+026b}"  ; (ɫ) l with middle tilde
-cmpTilde["L"] := "{u+2c62}"  ; (Ɫ) L with middle tilde
-cmpTilde["n"] := "{u+00f1}"  ; (ñ) n with tilde
-cmpTilde["N"] := "{u+00d1}"  ; (Ñ) N with tilde
-cmpTilde["o"] := "{u+00f5}"  ; (õ) o with tilde
-cmpTilde["O"] := "{u+00d5}"  ; (Õ) O with tilde
-cmpTilde["u"] := "{u+0169}"  ; (ũ) u with tilde
-cmpTilde["U"] := "{u+0168}"  ; (Ũ) U with tilde
-cmpTilde["v"] := "{u+1e7d}"  ; (ṽ) v with tilde
-cmpTilde["V"] := "{u+1e7c}"  ; (Ṽ) V with tilde
-cmpTilde["y"] := "{u+1ef9}"  ; (ỹ) y with tilde
-cmpTilde["Y"] := "{u+1ef8}"  ; (Ỹ) Y with tilde
-cmpTilde[" "] := "{u+02dc}"  ; (˜) small tilde
+global cmpInvertedBreve := Map()
+cmpInvertedBreve["a"] := "{u+0203}"  ; (ȃ) a with inverted breve
+cmpInvertedBreve["A"] := "{u+0202}"  ; (Ȃ) A with inverted breve
+cmpInvertedBreve["e"] := "{u+0207}"  ; (ȇ) e with inverted breve
+cmpInvertedBreve["E"] := "{u+0206}"  ; (Ȇ) E with inverted breve
+cmpInvertedBreve["i"] := "{u+020b}"  ; (ȋ) i with inverted breve
+cmpInvertedBreve["I"] := "{u+020a}"  ; (Ȋ) I with inverted breve
+cmpInvertedBreve["o"] := "{u+020f}"  ; (ȏ) o with inverted breve
+cmpInvertedBreve["O"] := "{u+020e}"  ; (Ȏ) O with inverted breve
+cmpInvertedBreve["r"] := "{u+0213}"  ; (ȓ) r with inverted breve
+cmpInvertedBreve["R"] := "{u+0212}"  ; (Ȓ) R with inverted breve
+cmpInvertedBreve["u"] := "{u+0217}"  ; (ȗ) u with inverted breve
+cmpInvertedBreve["U"] := "{u+0216}"  ; (Ȗ) U with inverted breve
 
 
 ; Compose :  Hook and Horn (h)
 
-global cmpHook := Map()
-cmpHook["b"] := "{u+0253}"  ; (ɓ) b with hook
-cmpHook["B"] := "{u+0181}"  ; (Ɓ) B with hook
-cmpHook["c"] := "{u+0188}"  ; (ƈ) c with hook
-cmpHook["C"] := "{u+0187}"  ; (Ƈ) C with hook
-cmpHook["d"] := "{u+0257}"  ; (ɗ) d with hook
-cmpHook["D"] := "{u+018a}"  ; (Ɗ) D with hook
-cmpHook["f"] := "{u+0192}"  ; (ƒ) f with hook
-cmpHook["F"] := "{u+0191}"  ; (Ƒ) F with hook
-cmpHook["g"] := "{u+0260}"  ; (ɠ) g with hook
-cmpHook["G"] := "{u+0193}"  ; (Ɠ) G with hook
-cmpHook["h"] := "{u+0266}"  ; (ɦ) h with hook
-cmpHook["H"] := "{u+a7aa}"  ; (Ɦ) H with hook
-cmpHook["j"] := "{u+0267}"  ; (ɧ) small letter heng with hook
-cmpHook["k"] := "{u+0199}"  ; (ƙ) k with hook
-cmpHook["K"] := "{u+0198}"  ; (Ƙ) K with hook
-cmpHook["m"] := "{u+0271}"  ; (ɱ) m with hook
-cmpHook["M"] := "{u+2c6e}"  ; (Ɱ) M with hook
-cmpHook["n"] := "{u+0272}"  ; (ɲ) n with left hook
-cmpHook["N"] := "{u+019d}"  ; (Ɲ) N with left hook
-cmpHook["o"] := "{u+01a1}"  ; (ơ) o with horn
-cmpHook["O"] := "{u+01a0}"  ; (Ơ) O with horn
-cmpHook["p"] := "{u+01a5}"  ; (ƥ) p with hook
-cmpHook["P"] := "{u+01a4}"  ; (Ƥ) P with hook
-cmpHook["q"] := "{u+024b}"  ; (ɋ) q with hook tail
-cmpHook["Q"] := "{u+024a}"  ; (Ɋ) Q with hook tail
-cmpHook["r"] := "{u+027d}"  ; (ɽ) r with tail
-cmpHook["R"] := "{u+2c64}"  ; (Ɽ) R with tail
-cmpHook["t"] := "{u+01ad}"  ; (ƭ) t with hook
-cmpHook["T"] := "{u+01ac}"  ; (Ƭ) T with hook
-cmpHook["u"] := "{u+01b0}"  ; (ư) u with horn
-cmpHook["U"] := "{u+01af}"  ; (Ư) U with horn
-cmpHook["v"] := "{u+028b}"  ; (ʋ) v with hook
-cmpHook["V"] := "{u+01b2}"  ; (Ʋ) V with hook
-cmpHook["w"] := "{u+2c73}"  ; (ⱳ) w with hook
-cmpHook["W"] := "{u+2c72}"  ; (Ⱳ) W with hook
-cmpHook["y"] := "{u+01b4}"  ; (ƴ) y with hook
-cmpHook["Y"] := "{u+01b3}"  ; (Ƴ) Y with hook
-cmpHook["z"] := "{u+0225}"  ; (ȥ) z with hook
-cmpHook["Z"] := "{u+0224}"  ; (Ȥ) Z with hook
+global cmpSmallH := Map()
+cmpSmallH["b"] := "{u+0253}"  ; (ɓ) b with hook
+cmpSmallH["B"] := "{u+0181}"  ; (Ɓ) B with hook
+cmpSmallH["c"] := "{u+0188}"  ; (ƈ) c with hook
+cmpSmallH["C"] := "{u+0187}"  ; (Ƈ) C with hook
+cmpSmallH["d"] := "{u+0257}"  ; (ɗ) d with hook
+cmpSmallH["D"] := "{u+018a}"  ; (Ɗ) D with hook
+cmpSmallH["e"] := "{u+025a}"  ; (ɚ) small letter schwa with hook
+cmpSmallH["f"] := "{u+0192}"  ; (ƒ) f with hook
+cmpSmallH["F"] := "{u+0191}"  ; (Ƒ) F with hook
+cmpSmallH["g"] := "{u+0260}"  ; (ɠ) g with hook
+cmpSmallH["G"] := "{u+0193}"  ; (Ɠ) G with hook
+cmpSmallH["h"] := "{u+0266}"  ; (ɦ) h with hook
+cmpSmallH["H"] := "{u+a7aa}"  ; (Ɦ) H with hook
+cmpSmallH["k"] := "{u+0199}"  ; (ƙ) k with hook
+cmpSmallH["K"] := "{u+0198}"  ; (Ƙ) K with hook
+cmpSmallH["m"] := "{u+0271}"  ; (ɱ) m with hook
+cmpSmallH["M"] := "{u+2c6e}"  ; (Ɱ) M with hook
+cmpSmallH["n"] := "{u+0272}"  ; (ɲ) n with left hook
+cmpSmallH["N"] := "{u+019d}"  ; (Ɲ) N with left hook
+cmpSmallH["o"] := "{u+01a1}"  ; (ơ) o with horn
+cmpSmallH["O"] := "{u+01a0}"  ; (Ơ) O with horn
+cmpSmallH["p"] := "{u+01a5}"  ; (ƥ) p with hook
+cmpSmallH["P"] := "{u+01a4}"  ; (Ƥ) P with hook
+cmpSmallH["q"] := "{u+024b}"  ; (ɋ) q with hook tail
+cmpSmallH["Q"] := "{u+024a}"  ; (Ɋ) Q with hook tail
+cmpSmallH["r"] := "{u+027d}"  ; (ɽ) r with tail
+cmpSmallH["R"] := "{u+2c64}"  ; (Ɽ) R with tail
+cmpSmallH["s"] := "{u+0282}"  ; (ʂ) s with hook
+cmpSmallH["t"] := "{u+01ad}"  ; (ƭ) t with hook
+cmpSmallH["T"] := "{u+01ac}"  ; (Ƭ) T with hook
+cmpSmallH["u"] := "{u+01b0}"  ; (ư) u with horn
+cmpSmallH["U"] := "{u+01af}"  ; (Ư) U with horn
+cmpSmallH["v"] := "{u+028b}"  ; (ʋ) v with hook
+cmpSmallH["V"] := "{u+01b2}"  ; (Ʋ) V with hook
+cmpSmallH["w"] := "{u+2c73}"  ; (ⱳ) w with hook
+cmpSmallH["W"] := "{u+2c72}"  ; (Ⱳ) W with hook
+cmpSmallH["y"] := "{u+01b4}"  ; (ƴ) y with hook
+cmpSmallH["Y"] := "{u+01b3}"  ; (Ƴ) Y with hook
+cmpSmallH["z"] := "{u+0225}"  ; (ȥ) z with hook
+cmpSmallH["Z"] := "{u+0224}"  ; (Ȥ) Z with hook
+
+
+; Compose :  Retroflex Hook, Crossed-Tail and Variations (f)
+
+global cmpSmallF := Map()
+cmpSmallF["a"] := "{u+1d8f}"  ; (ᶏ) a with retroflex hook
+cmpSmallF["d"] := "{u+1d91}"  ; (ᶑ) d with hook and tail
+cmpSmallF["e"] := "{u+1d92}"  ; (ᶒ) e with retroflex hook
+cmpSmallF["f"] := "{u+1d93}"  ; (ᶓ) small letter open e with retroflex hook
+cmpSmallF["g"] := "{u+ab36}"  ; (ꬶ) small letter script g with crossed-tail
+cmpSmallF["h"] := "{u+0267}"  ; (ɧ) small letter heng with hook
+cmpSmallF["i"] := "{u+1d96}"  ; (ᶖ) i with retroflex hook
+cmpSmallF["j"] := "{u+029d}"  ; (ʝ) j with crossed-tail
+cmpSmallF["l"] := "{u+026d}"  ; (ɭ) l with retroflex hook
+cmpSmallF["n"] := "{u+0273}"  ; (ɳ) n with retroflex hook
+cmpSmallF["o"] := "{u+1d97}"  ; (ᶗ) small letter open o with retroflex hook
+cmpSmallF["q"] := "{u+1d90}"  ; (ᶐ) Latin small letter alpha with retroflex hook
+cmpSmallF["r"] := "{u+027e}"  ; (ɾ) r with fishhook
+cmpSmallF["t"] := "{u+0288}"  ; (ʈ) t with retroflex hook
+cmpSmallF["T"] := "{u+01ae}"  ; (Ʈ) T with retroflex hook
+cmpSmallF["u"] := "{u+1d99}"  ; (ᶙ) u with retroflex hook
+cmpSmallF["v"] := "{u+2c71}"  ; (ⱱ) v with right hook
+cmpSmallF["w"] := "{u+2c73}"  ; (ⱳ) w with right hook
+cmpSmallF["W"] := "{u+2c72}"  ; (Ⱳ) W with right hook
+cmpSmallF["z"] := "{u+0290}"  ; (ʐ) z with retroflex hook
 
 
 ; Compose :  Latin Greek Letters and Variations (l)
 
-global cmpLatinGreek := Map()
-cmpLatinGreek["a"] := "{u+0251}"  ; (ɑ) Latin small letter alpha
-cmpLatinGreek["A"] := "{u+2c6d}"  ; (Ɑ) Latin capital letter alpha
-cmpLatinGreek["c"] := "{u+ab36}"  ; (ꬶ) small letter script g with crossed-tail
-cmpLatinGreek["e"] := "{u+025b}"  ; (ɛ) small letter open e (Latin small epsilon)
-cmpLatinGreek["E"] := "{u+0190}"  ; (Ɛ) capital letter open E (Latin capital epsilon)
-cmpLatinGreek["f"] := "{u+017f}"  ; (ſ) small letter long s
-cmpLatinGreek["F"] := "{u+1e9b}"  ; (ẛ) long s with dot above
-cmpLatinGreek["g"] := "{u+0263}"  ; (ɣ) Latin small letter gamma
-cmpLatinGreek["G"] := "{u+0194}"  ; (Ɣ) Latin capital letter gamma
-cmpLatinGreek["h"] := "{u+a727}"  ; (ꜧ) small letter heng
-cmpLatinGreek["H"] := "{u+a726}"  ; (Ꜧ) capital letter heng
-cmpLatinGreek["i"] := "{u+0269}"  ; (ɩ) Latin small letter iota
-cmpLatinGreek["I"] := "{u+0196}"  ; (Ɩ) Latin capital letter iota
-cmpLatinGreek["k"] := "{u+0138}"  ; (ĸ) small letter kra
-cmpLatinGreek["o"] := "{u+0254}"  ; (ɔ) small letter open o
-cmpLatinGreek["O"] := "{u+0186}"  ; (Ɔ) capital letter open O
-cmpLatinGreek["s"] := "{u+0283}"  ; (ʃ) small letter esh
-cmpLatinGreek["S"] := "{u+01a9}"  ; (Ʃ) capital letter esh
-cmpLatinGreek["u"] := "{u+028a}"  ; (ʊ) Latin small letter upsilon
-cmpLatinGreek["U"] := "{u+01b1}"  ; (Ʊ) Latin capital letter upsilon
+global cmpSmallL := Map()
+cmpSmallL["a"] := "{u+0251}"  ; (ɑ) Latin small letter alpha
+cmpSmallL["A"] := "{u+2c6d}"  ; (Ɑ) Latin capital letter alpha
+cmpSmallL["d"] := "{u+1e9f}"  ; (ẟ) Latin small letter delta
+cmpSmallL["e"] := "{u+025b}"  ; (ɛ) small letter open e (Latin small epsilon)
+cmpSmallL["E"] := "{u+0190}"  ; (Ɛ) capital letter open E (Latin capital epsilon)
+cmpSmallL["f"] := "{u+0278}"  ; (ɸ) Latin small letter phi
+cmpSmallL["g"] := "{u+0261}"  ; (ɡ) small letter script g
+cmpSmallL["G"] := "{u+a7ac}"  ; (Ɡ) capital letter script G
+cmpSmallL["h"] := "{u+a727}"  ; (ꜧ) small letter heng
+cmpSmallL["H"] := "{u+a726}"  ; (Ꜧ) capital letter heng
+cmpSmallL["i"] := "{u+0269}"  ; (ɩ) Latin small letter iota
+cmpSmallL["I"] := "{u+0196}"  ; (Ɩ) Latin capital letter iota
+cmpSmallL["j"] := "{u+0263}"  ; (ɣ) Latin small letter gamma
+cmpSmallL["J"] := "{u+0194}"  ; (Ɣ) Latin capital letter gamma
+cmpSmallL["k"] := "{u+0138}"  ; (ĸ) small letter kra
+cmpSmallL["m"] := "{u+0270}"  ; (ɰ) small letter turned m with long leg
+cmpSmallL["n"] := "{u+019e}"  ; (ƞ) small letter n with long right leg
+cmpSmallL["N"] := "{u+0220}"  ; (Ƞ) capital letter N with long right leg
+cmpSmallL["o"] := "{u+0254}"  ; (ɔ) small letter open o
+cmpSmallL["O"] := "{u+0186}"  ; (Ɔ) capital letter open O
+cmpSmallL["q"] := "{u+01a3}"  ; (ƣ) small letter gha
+cmpSmallL["Q"] := "{u+01a2}"  ; (Ƣ) capital letter gha
+cmpSmallL["s"] := "{u+0283}"  ; (ʃ) small letter esh
+cmpSmallL["S"] := "{u+01a9}"  ; (Ʃ) capital letter esh
+cmpSmallL["u"] := "{u+028a}"  ; (ʊ) Latin small letter upsilon
+cmpSmallL["U"] := "{u+01b1}"  ; (Ʊ) Latin capital letter upsilon
 
 
-; Compose :  Turned Letters (t)
+; Compose :  Turned Letters (r)
 
-global cmpTurned := Map()
-cmpTurned["a"] := "{u+0250}"  ; (ɐ) Latin small letter turned a
-cmpTurned["A"] := "{u+2c6f}"  ; (Ɐ) Latin capital letter turned A
-cmpTurned["e"] := "{u+01dd}"  ; (ǝ) Latin small letter turned e
-cmpTurned["E"] := "{u+018e}"  ; (Ǝ) Latin capital letter reversed E
-cmpTurned["q"] := "{u+0252}"  ; (ɒ) Latin small letter turned alpha
-cmpTurned["Q"] := "{u+2c70}"  ; (Ɒ) Latin capital letter turned alpha
-cmpTurned["v"] := "{u+028c}"  ; (ʌ) Latin small letter turned v
-cmpTurned["V"] := "{u+0245}"  ; (Ʌ) Latin capital letter turned V
-cmpTurned["y"] := "{u+028e}"  ; (ʎ) Latin small letter turned y
+global cmpSmallR := Map()
+cmpSmallR["a"] := "{u+0250}"  ; (ɐ) small letter turned a
+cmpSmallR["A"] := "{u+2c6f}"  ; (Ɐ) capital letter turned A
+cmpSmallR["c"] := "{u+025c}"  ; (ɜ) small letter reversed open e
+cmpSmallR["d"] := "{u+018d}"  ; (ƍ) Latin small letter turned delta
+cmpSmallR["e"] := "{u+01dd}"  ; (ǝ) small letter turned e
+cmpSmallR["E"] := "{u+018e}"  ; (Ǝ) capital letter reversed E
+cmpSmallR["f"] := "{u+0258}"  ; (ɘ) small letter reversed e
+cmpSmallR["g"] := "{u+1d77}"  ; (ᵷ) small letter turned g
+cmpSmallR["G"] := "{u+2141}"  ; (⅁) capital letter turned G
+cmpSmallR["h"] := "{u+0265}"  ; (ɥ) small letter turned h
+cmpSmallR["H"] := "{u+a78d}"  ; (Ɥ) capital letter turned H
+cmpSmallR["i"] := "{u+1d09}"  ; (ᴉ) small letter turned i
+cmpSmallR["k"] := "{u+029e}"  ; (ʞ) small letter turned k
+cmpSmallR["K"] := "{u+a7b0}"  ; (Ʞ) capital letter turned K
+cmpSmallR["m"] := "{u+026f}"  ; (ɯ) small letter turned m
+cmpSmallR["M"] := "{u+019c}"  ; (Ɯ) capital letter turned M
+cmpSmallR["o"] := "{u+0264}"  ; (ɤ) small letter rams horn
+cmpSmallR["q"] := "{u+0252}"  ; (ɒ) Latin small letter turned alpha
+cmpSmallR["Q"] := "{u+2c70}"  ; (Ɒ) Latin capital letter turned alpha
+cmpSmallR["r"] := "{u+0279}"  ; (ɹ) small letter turned r
+cmpSmallR["t"] := "{u+0287}"  ; (ʇ) small letter turned t
+cmpSmallR["v"] := "{u+028c}"  ; (ʌ) small letter turned v
+cmpSmallR["V"] := "{u+0245}"  ; (Ʌ) capital letter turned V
+cmpSmallR["w"] := "{u+028d}"  ; (ʍ) small letter turned w
+cmpSmallR["y"] := "{u+028e}"  ; (ʎ) small letter turned y
 
 
 ; Compose :  Currency Symbols ($)
@@ -878,11 +929,13 @@ global cmpSmallN := Map()
 global cmpCapitalN := Map()
 global cmpCapitalO := Map()
 global cmpCapitalS := Map()
+global cmpSmallT := Map()
 global cmpCapitalT := Map()
 cmpArrow["e"] := "{u+00e6}"      ; (æ) letter ae
 cmpCapitalA["E"] := "{u+00c6}"   ; (Æ) letter AE
 cmpSmallD["h"] := "{u+00f0}"     ; (ð) small letter eth
 cmpCapitalD["H"] := "{u+00d0}"   ; (Ð) capital letter eth
+cmpSmallF["s"] := "{u+017f}"     ; (ſ) small letter long s
 cmpSmallI["j"] := "{u+0133}"     ; (ĳ) ligature ij
 cmpCapitalI["J"] := "{u+0132}"   ; (Ĳ) ligature IJ
 cmpSmallN["g"] := "{u+014b}"     ; (ŋ) small letter eng(ma)
@@ -891,7 +944,7 @@ cmpRingAbove["e"] := "{u+0153}"  ; (œ) ligature oe
 cmpCapitalO["E"] := "{u+0152}"   ; (Œ) ligature OE
 cmpSymbols["s"] := "{u+00df}"    ; (ß) small sharp s (Eszett)
 cmpCapitalS["S"] := "{u+1e9e}"   ; (ẞ) capital sharp S (capital Eszett)
-cmpTurned["h"] := "{u+00fe}"     ; (þ) small letter thorn
+cmpSmallT["h"] := "{u+00fe}"     ; (þ) small letter thorn
 cmpCapitalT["H"] := "{u+00de}"   ; (Þ) capital letter thorn
 
 
@@ -899,7 +952,6 @@ cmpCapitalT["H"] := "{u+00de}"   ; (Þ) capital letter thorn
 
 global cmpDigitEight := Map()
 global cmpCapitalP := Map()
-global cmpSmallR := Map()
 global cmpSemicolon := Map()
 global cmpAsterisk := Map()
 global cmpExclam := Map()
@@ -924,7 +976,7 @@ cmpSmallR["3"] := "{u+221b}"        ; (∛) cube root
 cmpSmallR["4"] := "{u+221c}"        ; (∜) fourth root
 cmpSymbols["o"] := "{u+00a7}"       ; (§) section sign
 cmpCapitalS["o"] := "{u+00a7}"      ; (§) section sign
-cmpTurned["m"] := "{u+2122}"        ; (™) trademark symbol
+cmpSmallT["m"] := "{u+2122}"        ; (™) trademark symbol
 cmpSemicolon["b"] := "{u+2022}"     ; (•) bullet
 cmpSemicolon[";"] := "{u+2022}"     ; (•) bullet
 cmpSemicolon["t"] := "{u+2023}"     ; (‣) triangular bullet
@@ -1745,9 +1797,29 @@ cmpSmallN["0"] := "{u+277f}"  ; (❿) dingbat negative circled digit 10
   ihB.Start()
   ihB.Wait()
 
-  if (ihA.Input == "c") {
+  if (ihA.Input == "'") {
+    if cmpAcuteAccent.Has(ihB.Input)
+      Send cmpAcuteAccent[ihB.Input]
+  }
+  else if (ihA.Input == "``") {
+    if cmpGraveAccent.Has(ihB.Input)
+      Send cmpGraveAccent[ihB.Input]
+  }
+  else if (ihA.Input == chr(34)) {
+    if cmpDiaeresis.Has(ihB.Input)
+      Send cmpDiaeresis[ihB.Input]
+  }
+  else if (ihA.Input == "c") {
     if cmpCircumflex.Has(ihB.Input)
       Send cmpCircumflex[ihB.Input]
+  }
+  else if (ihA.Input == "~") {
+    if cmpTilde.Has(ihB.Input)
+      Send cmpTilde[ihB.Input]
+  }
+  else if (ihA.Input == ",") {
+    if cmpCedillaOgonek.Has(ihB.Input)
+      Send cmpCedillaOgonek[ihB.Input]
   }
   else if (ihA.Input == "v") {
     if cmpCaron.Has(ihB.Input)
@@ -1773,53 +1845,37 @@ cmpSmallN["0"] := "{u+277f}"  ; (❿) dingbat negative circled digit 10
     if cmpStroke.Has(ihB.Input)
       Send cmpStroke[ihB.Input]
   }
-  else if (ihA.Input == ",") {
-    if cmpCedillaOgonek.Has(ihB.Input)
-      Send cmpCedillaOgonek[ihB.Input]
-  }
   else if (ihA.Input == "b") {
     if cmpBreveSpecial.Has(ihB.Input)
       Send cmpBreveSpecial[ihB.Input]
-  }
-  else if (ihA.Input == "B") {
-    if cmpInvertedBreve.Has(ihB.Input)
-      Send cmpInvertedBreve[ihB.Input]
-  }
-  else if (ihA.Input == "'") {
-    if cmpAcuteAccent.Has(ihB.Input)
-      Send cmpAcuteAccent[ihB.Input]
-  }
-  else if (ihA.Input == chr(34)) {
-    if cmpDiaeresis.Has(ihB.Input)
-      Send cmpDiaeresis[ihB.Input]
   }
   else if (ihA.Input == "=") {
     if cmpDoubleAcute.Has(ihB.Input)
       Send cmpDoubleAcute[ihB.Input]
   }
-  else if (ihA.Input == "``") {
-    if cmpGraveAccent.Has(ihB.Input)
-      Send cmpGraveAccent[ihB.Input]
-  }
   else if (ihA.Input == "G") {
     if cmpDoubleGrave.Has(ihB.Input)
       Send cmpDoubleGrave[ihB.Input]
   }
-  else if (ihA.Input == "~") {
-    if cmpTilde.Has(ihB.Input)
-      Send cmpTilde[ihB.Input]
+  else if (ihA.Input == "B") {
+    if cmpInvertedBreve.Has(ihB.Input)
+      Send cmpInvertedBreve[ihB.Input]
   }
   else if (ihA.Input == "h") {
-    if cmpHook.Has(ihB.Input)
-      Send cmpHook[ihB.Input]
+    if cmpSmallH.Has(ihB.Input)
+      Send cmpSmallH[ihB.Input]
+  }
+  else if (ihA.Input == "f") {
+    if cmpSmallF.Has(ihB.Input)
+      Send cmpSmallF[ihB.Input]
   }
   else if (ihA.Input == "l") {
-    if cmpLatinGreek.Has(ihB.Input)
-      Send cmpLatinGreek[ihB.Input]
+    if cmpSmallL.Has(ihB.Input)
+      Send cmpSmallL[ihB.Input]
   }
-  else if (ihA.Input == "t") {
-    if cmpTurned.Has(ihB.Input)
-      Send cmpTurned[ihB.Input]
+  else if (ihA.Input == "r") {
+    if cmpSmallR.Has(ihB.Input)
+      Send cmpSmallR[ihB.Input]
   }
   else if (ihA.Input == "$") {
     if cmpCurrency.Has(ihB.Input)
@@ -1893,6 +1949,10 @@ cmpSmallN["0"] := "{u+277f}"  ; (❿) dingbat negative circled digit 10
     if cmpCapitalS.Has(ihB.Input)
       Send cmpCapitalS[ihB.Input]
   }
+  else if (ihA.Input == "t") {
+    if cmpSmallT.Has(ihB.Input)
+      Send cmpSmallT[ihB.Input]
+  }
   else if (ihA.Input == "T") {
     if cmpCapitalT.Has(ihB.Input)
       Send cmpCapitalT[ihB.Input]
@@ -1900,10 +1960,6 @@ cmpSmallN["0"] := "{u+277f}"  ; (❿) dingbat negative circled digit 10
   else if (ihA.Input == "P") {
     if cmpCapitalP.Has(ihB.Input)
       Send cmpCapitalP[ihB.Input]
-  }
-  else if (ihA.Input == "r") {
-    if cmpSmallR.Has(ihB.Input)
-      Send cmpSmallR[ihB.Input]
   }
   else if (ihA.Input == ";") {
     if cmpSemicolon.Has(ihB.Input)
