@@ -286,7 +286,7 @@
 <Multi_key> <o> <y> : "ẙ"  U1E99  # y with ring above
 
 
-# Macron/Stroke
+# Macron and Stroke
 
 <Multi_key> <minus> <a> : "ā"  U0101  # a with macron
 <Multi_key> <minus> <A> : "Ā"  U0100  # A with macron
@@ -325,7 +325,7 @@
 <Multi_key> <minus> <space> : "¯"  U00AF  # macron
 
 
-# Macron/Stroke (Additional)
+# Macron and Stroke (additional)
 
 <Multi_key> <underscore> <g> : "ḡ"  U1E21  # g with macron
 <Multi_key> <underscore> <G> : "Ḡ"  U1E20  # G with macron
