@@ -306,7 +306,7 @@ cmpRingAbove.item["w"] := "{u+1e98}"  ; (ẘ) w with ring above
 cmpRingAbove.item["y"] := "{u+1e99}"  ; (ẙ) y with ring above
 
 
-; Compose :  Macron/Stroke (-)
+; Compose :  Macron and Stroke (-)
 
 cmpMacronStroke := ComObjCreate("Scripting.Dictionary")
 cmpMacronStroke.item["a"] := "{u+0101}"  ; (ā) a with macron
@@ -346,7 +346,7 @@ cmpMacronStroke.item["Z"] := "{u+01b5}"  ; (Ƶ) Z with stroke
 cmpMacronStroke.item[" "] := "{u+00af}"  ; (¯) macron
 
 
-; Compose :  Macron/Stroke (Additional) (_)
+; Compose :  Macron and Stroke (additional) (_)
 
 cmpMacronStrokeAdd := ComObjCreate("Scripting.Dictionary")
 cmpMacronStrokeAdd.item["g"] := "{u+1e21}"  ; (ḡ) g with macron
