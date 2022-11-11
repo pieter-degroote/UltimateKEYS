@@ -1783,7 +1783,7 @@ cmpSmallN.item["0"] := "{u+277f}"  ; (❿) dingbat negative circled digit 10
 >!+space::Send {u+00a0}  ; non-breaking space
 
 
-; Compose Key Selector
+; Configuration :  Compose Key Selector
 
 >!`::
 >!~::
