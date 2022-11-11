@@ -308,7 +308,7 @@ cmpRingAbove["w"] := "{u+1e98}"  ; (ẘ) w with ring above
 cmpRingAbove["y"] := "{u+1e99}"  ; (ẙ) y with ring above
 
 
-; Compose :  Macron/Stroke (-)
+; Compose :  Macron and Stroke (-)
 
 global cmpMacronStroke := Map()
 cmpMacronStroke["a"] := "{u+0101}"  ; (ā) a with macron
@@ -348,7 +348,7 @@ cmpMacronStroke["Z"] := "{u+01b5}"  ; (Ƶ) Z with stroke
 cmpMacronStroke[" "] := "{u+00af}"  ; (¯) macron
 
 
-; Compose :  Macron/Stroke (Additional) (_)
+; Compose :  Macron and Stroke (additional) (_)
 
 global cmpMacronStrokeAdd := Map()
 cmpMacronStrokeAdd["g"] := "{u+1e21}"  ; (ḡ) g with macron
