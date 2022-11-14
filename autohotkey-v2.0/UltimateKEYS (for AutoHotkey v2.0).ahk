@@ -1,4 +1,4 @@
-; UltimateKEYS (for AutoHotkey v2.0).ahk - 2022-11-08
+; UltimateKEYS (for AutoHotkey v2.0).ahk - 2022-11-14
 
 ; Website :  www.ultimatekeys.info (pieter-degroote.github.io/UltimateKEYS/)
 
@@ -485,6 +485,7 @@ cmpSmallH["g"] := "{u+0260}"  ; (ɠ) g with hook
 cmpSmallH["G"] := "{u+0193}"  ; (Ɠ) G with hook
 cmpSmallH["h"] := "{u+0266}"  ; (ɦ) h with hook
 cmpSmallH["H"] := "{u+a7aa}"  ; (Ɦ) H with hook
+cmpSmallH["j"] := "{u+0267}"  ; (ɧ) small letter heng with hook
 cmpSmallH["k"] := "{u+0199}"  ; (ƙ) k with hook
 cmpSmallH["K"] := "{u+0198}"  ; (Ƙ) K with hook
 cmpSmallH["m"] := "{u+0271}"  ; (ɱ) m with hook
@@ -522,7 +523,8 @@ cmpSmallF["d"] := "{u+1d91}"  ; (ᶑ) d with hook and tail
 cmpSmallF["e"] := "{u+1d92}"  ; (ᶒ) e with retroflex hook
 cmpSmallF["f"] := "{u+1d93}"  ; (ᶓ) small letter open e with retroflex hook
 cmpSmallF["g"] := "{u+ab36}"  ; (ꬶ) small letter script g with crossed-tail
-cmpSmallF["h"] := "{u+0267}"  ; (ɧ) small letter heng with hook
+cmpSmallF["h"] := "{u+a727}"  ; (ꜧ) small letter heng
+cmpSmallF["H"] := "{u+a726}"  ; (Ꜧ) capital letter heng
 cmpSmallF["i"] := "{u+1d96}"  ; (ᶖ) i with retroflex hook
 cmpSmallF["j"] := "{u+029d}"  ; (ʝ) j with crossed-tail
 cmpSmallF["l"] := "{u+026d}"  ; (ɭ) l with retroflex hook
@@ -550,8 +552,6 @@ cmpSmallL["E"] := "{u+0190}"  ; (Ɛ) capital letter open E (Latin capital epsilo
 cmpSmallL["f"] := "{u+0278}"  ; (ɸ) Latin small letter phi
 cmpSmallL["g"] := "{u+0261}"  ; (ɡ) small letter script g
 cmpSmallL["G"] := "{u+a7ac}"  ; (Ɡ) capital letter script G
-cmpSmallL["h"] := "{u+a727}"  ; (ꜧ) small letter heng
-cmpSmallL["H"] := "{u+a726}"  ; (Ꜧ) capital letter heng
 cmpSmallL["i"] := "{u+0269}"  ; (ɩ) Latin small letter iota
 cmpSmallL["I"] := "{u+0196}"  ; (Ɩ) Latin capital letter iota
 cmpSmallL["j"] := "{u+0263}"  ; (ɣ) Latin small letter gamma
@@ -1788,7 +1788,7 @@ cmpSmallN["0"] := "{u+277f}"  ; (❿) dingbat negative circled digit 10
 ; Configuration :  Compose Key Selector
 
 >!`::
->!~:: {
+>!sc056:: {
   ihA := InputHook("L1", gEndKeys)
   ihA.Start()
   ihA.Wait()
