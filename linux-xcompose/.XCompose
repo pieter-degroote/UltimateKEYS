@@ -1,4 +1,4 @@
-# UltimateKEYS - 2022-11-08  (~/.XCompose)
+# UltimateKEYS - 2022-11-14  (~/.XCompose)
 
 # Website :  www.ultimatekeys.info (pieter-degroote.github.io/UltimateKEYS/)
 
@@ -455,6 +455,7 @@
 <Multi_key> <h> <G> : "Ɠ"  U0193  # G with hook
 <Multi_key> <h> <h> : "ɦ"  U0266  # h with hook
 <Multi_key> <h> <H> : "Ɦ"  UA7AA  # H with hook
+<Multi_key> <h> <j> : "ɧ"  U0267  # small letter heng with hook
 <Multi_key> <h> <k> : "ƙ"  U0199  # k with hook
 <Multi_key> <h> <K> : "Ƙ"  U0198  # K with hook
 <Multi_key> <h> <m> : "ɱ"  U0271  # m with hook
@@ -491,7 +492,8 @@
 <Multi_key> <f> <e> : "ᶒ"  U1D92  # e with retroflex hook
 <Multi_key> <f> <f> : "ᶓ"  U1D93  # small letter open e with retroflex hook
 <Multi_key> <f> <g> : "ꬶ"  UAB36  # small letter script g with crossed-tail
-<Multi_key> <f> <h> : "ɧ"  U0267  # small letter heng with hook
+<Multi_key> <f> <h> : "ꜧ"  UA727  # small letter heng
+<Multi_key> <f> <H> : "Ꜧ"  UA726  # capital letter heng
 <Multi_key> <f> <i> : "ᶖ"  U1D96  # i with retroflex hook
 <Multi_key> <f> <j> : "ʝ"  U029D  # j with crossed-tail
 <Multi_key> <f> <l> : "ɭ"  U026D  # l with retroflex hook
@@ -518,8 +520,6 @@
 <Multi_key> <l> <f> : "ɸ"  U0278  # Latin small letter phi
 <Multi_key> <l> <g> : "ɡ"  U0261  # small letter script g
 <Multi_key> <l> <G> : "Ɡ"  UA7AC  # capital letter script G
-<Multi_key> <l> <h> : "ꜧ"  UA727  # small letter heng
-<Multi_key> <l> <H> : "Ꜧ"  UA726  # capital letter heng
 <Multi_key> <l> <i> : "ɩ"  U0269  # Latin small letter iota
 <Multi_key> <l> <I> : "Ɩ"  U0196  # Latin capital letter iota
 <Multi_key> <l> <j> : "ɣ"  U0263  # Latin small letter gamma
