@@ -56,5 +56,5 @@ keycode  60 = period       greater      oacute               Oacute
 keycode  61 = slash        question     questiondown         ellipsis
 keycode  65 = space        space        nobreakspace         nobreakspace
 keycode  91 = KP_Delete    KP_Decimal
-keycode  94 = backslash    bar          backslash            bar
+keycode  94 = backslash    bar          Multi_key            Multi_key
 keycode 108 = Mode_switch  Mode_switch
