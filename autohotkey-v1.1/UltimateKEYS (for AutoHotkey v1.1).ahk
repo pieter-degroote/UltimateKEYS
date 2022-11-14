@@ -1,4 +1,4 @@
-; UltimateKEYS (for AutoHotkey v1.1).ahk - 2022-11-08
+; UltimateKEYS (for AutoHotkey v1.1).ahk - 2022-11-14
 
 ; Website :  www.ultimatekeys.info (pieter-degroote.github.io/UltimateKEYS/)
 
@@ -483,6 +483,7 @@ cmpSmallH.item["g"] := "{u+0260}"  ; (ɠ) g with hook
 cmpSmallH.item["G"] := "{u+0193}"  ; (Ɠ) G with hook
 cmpSmallH.item["h"] := "{u+0266}"  ; (ɦ) h with hook
 cmpSmallH.item["H"] := "{u+a7aa}"  ; (Ɦ) H with hook
+cmpSmallH.item["j"] := "{u+0267}"  ; (ɧ) small letter heng with hook
 cmpSmallH.item["k"] := "{u+0199}"  ; (ƙ) k with hook
 cmpSmallH.item["K"] := "{u+0198}"  ; (Ƙ) K with hook
 cmpSmallH.item["m"] := "{u+0271}"  ; (ɱ) m with hook
@@ -520,7 +521,8 @@ cmpSmallF.item["d"] := "{u+1d91}"  ; (ᶑ) d with hook and tail
 cmpSmallF.item["e"] := "{u+1d92}"  ; (ᶒ) e with retroflex hook
 cmpSmallF.item["f"] := "{u+1d93}"  ; (ᶓ) small letter open e with retroflex hook
 cmpSmallF.item["g"] := "{u+ab36}"  ; (ꬶ) small letter script g with crossed-tail
-cmpSmallF.item["h"] := "{u+0267}"  ; (ɧ) small letter heng with hook
+cmpSmallF.item["h"] := "{u+a727}"  ; (ꜧ) small letter heng
+cmpSmallF.item["H"] := "{u+a726}"  ; (Ꜧ) capital letter heng
 cmpSmallF.item["i"] := "{u+1d96}"  ; (ᶖ) i with retroflex hook
 cmpSmallF.item["j"] := "{u+029d}"  ; (ʝ) j with crossed-tail
 cmpSmallF.item["l"] := "{u+026d}"  ; (ɭ) l with retroflex hook
@@ -548,8 +550,6 @@ cmpSmallL.item["E"] := "{u+0190}"  ; (Ɛ) capital letter open E (Latin capital e
 cmpSmallL.item["f"] := "{u+0278}"  ; (ɸ) Latin small letter phi
 cmpSmallL.item["g"] := "{u+0261}"  ; (ɡ) small letter script g
 cmpSmallL.item["G"] := "{u+a7ac}"  ; (Ɡ) capital letter script G
-cmpSmallL.item["h"] := "{u+a727}"  ; (ꜧ) small letter heng
-cmpSmallL.item["H"] := "{u+a726}"  ; (Ꜧ) capital letter heng
 cmpSmallL.item["i"] := "{u+0269}"  ; (ɩ) Latin small letter iota
 cmpSmallL.item["I"] := "{u+0196}"  ; (Ɩ) Latin capital letter iota
 cmpSmallL.item["j"] := "{u+0263}"  ; (ɣ) Latin small letter gamma
@@ -1786,7 +1786,7 @@ cmpSmallN.item["0"] := "{u+277f}"  ; (❿) dingbat negative circled digit 10
 ; Configuration :  Compose Key Selector
 
 >!`::
->!~::
+>!sc056::
   Input, keyA, L1, {bs}{del}{esc}{home}{end}
   Input, keyB, L1, {bs}{del}{esc}{home}{end}
 
