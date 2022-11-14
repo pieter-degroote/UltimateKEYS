@@ -58,7 +58,7 @@ xkb_symbols "basic" {
     key <AE11> { [ minus,        underscore,   endash,               emdash               ] };
     key <AE12> { [ equal,        plus,         multiply,             division             ] };
     key <BKSL> { [ backslash,    bar,          enspace,              emspace              ] };
-    key <LSGT> { [ backslash,    bar,          backslash,            bar                  ] };
+    key <LSGT> { [ backslash,    bar,          Multi_key,            Multi_key            ] };
     key <SPCE> { [ space,        space,        nobreakspace,         nobreakspace         ] };
     key <TLDE> { [ grave,        asciitilde,   Multi_key,            Multi_key            ] };
     key <KPDL> { [ KP_Delete,    KP_Decimal                                               ] };
