@@ -1,4 +1,4 @@
-; UltimateKEYS (for AutoHotkey v2.0).ahk - 2022-11-14
+; UltimateKEYS (for AutoHotkey v2.0).ahk - 2022-11-24
 
 ; Website :  www.ultimatekeys.info (pieter-degroote.github.io/UltimateKEYS/)
 
@@ -980,8 +980,11 @@ cmpSmallT["m"] := "{u+2122}"        ; (™) trademark symbol
 cmpSemicolon["b"] := "{u+2022}"     ; (•) bullet
 cmpSemicolon[";"] := "{u+2022}"     ; (•) bullet
 cmpSemicolon["t"] := "{u+2023}"     ; (‣) triangular bullet
+cmpSemicolon[">"] := "{u+2023}"     ; (‣) triangular bullet
 cmpSemicolon["h"] := "{u+2043}"     ; (⁃) hyphen bullet
+cmpSemicolon["-"] := "{u+2043}"     ; (⁃) hyphen bullet
 cmpSemicolon["w"] := "{u+25e6}"     ; (◦) white bullet
+cmpSemicolon["o"] := "{u+25e6}"     ; (◦) white bullet
 cmpAcuteAccent["1"] := "{u+2032}"   ; (′) prime
 cmpAcuteAccent["2"] := "{u+2033}"   ; (″) double prime
 cmpAcuteAccent["3"] := "{u+2034}"   ; (‴) triple prime
