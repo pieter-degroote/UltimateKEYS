@@ -1,4 +1,4 @@
-# UltimateKEYS - 2022-11-14  (~/.XCompose)
+# UltimateKEYS - 2022-11-24  (~/.XCompose)
 
 # Website :  www.ultimatekeys.info (pieter-degroote.github.io/UltimateKEYS/)
 
@@ -862,43 +862,46 @@
 <Multi_key> <s> <o> : "§"  U00A7  # section sign
 <Multi_key> <S> <o> : "§"  U00A7  # section sign
 <Multi_key> <t> <m> : "™"  U2122  # trademark symbol
-<Multi_key> <semicolon> <b>  : "•"  U2022  # bullet
-<Multi_key> <semicolon> <semicolon> : "•"  U2022  # bullet
-<Multi_key> <semicolon> <h>  : "⁃"  U2043  # hyphen bullet
-<Multi_key> <semicolon> <t>  : "‣"  U2023  # triangular bullet
-<Multi_key> <semicolon> <w>  : "◦"  U25E6  # white bullet
-<Multi_key> <apostrophe> <1> : "′"  U2032  # prime
-<Multi_key> <apostrophe> <2> : "″"  U2033  # double prime
-<Multi_key> <apostrophe> <3> : "‴"  U2034  # triple prime
-<Multi_key> <apostrophe> <4> : "⁗"  U2057  # quadruple prime
-<Multi_key> <asterisk> <asterisk> : "×"  U00D7  # multiplication sign
-<Multi_key> <slash> <slash>       : "÷"  U00F7  # division sign
-<Multi_key> <asterisk> <o>        : "°"  U00B0  # degree sign
-<Multi_key> <o> <asterisk>        : "°"  U00B0  # degree sign
-<Multi_key> <period> <period>     : "·"  U00B7  # middle dot
-<Multi_key> <period> <space>      : "·"  U00B7  # middle dot
-<Multi_key> <period> <3>          : "…"  U2026  # horizontal ellipsis
-<Multi_key> <a> <minus>           : "ª"  U00AA  # feminine ordinal indicator (Spanish, Portuguese, Italian, Galician)
-<Multi_key> <o> <minus>           : "º"  U00BA  # masculine ordinal indicator (Spanish, Portuguese, Italian, Galician)
-<Multi_key> <exclam> <exclam>     : "¡"  U00A1  # inverted exclamation mark
-<Multi_key> <question> <question> : "¿"  U00BF  # inverted question mark
-<Multi_key> <o> <c>               : "©"  U00A9  # copyright sign
-<Multi_key> <parenleft> <c>       : "©"  U00A9  # copyright sign
-<Multi_key> <o> <p>               : "℗"  U2117  # sound recording copyright
-<Multi_key> <parenleft> <p>       : "℗"  U2117  # sound recording copyright
-<Multi_key> <o> <r>               : "®"  U00AE  # registered sign
-<Multi_key> <parenleft> <r>       : "®"  U00AE  # registered sign
-<Multi_key> <plus> <minus>        : "±"  U00B1  # plus-minus sign
-<Multi_key> <minus> <plus>        : "∓"  U2213  # minus-or-plus sign
-<Multi_key> <percent> <percent>   : "‰"  U2030  # per mille sign
-<Multi_key> <percent> <3>         : "‰"  U2030  # per mille sign
-<Multi_key> <percent> <4>         : "‱"  U2031  # per ten thousand sign
-<Multi_key> <exclam> <equal>      : "≠"  U2260  # not equal to
-<Multi_key> <less> <greater>      : "≠"  U2260  # not equal to
-<Multi_key> <less> <equal>        : "≤"  U2264  # less-than or equal to
-<Multi_key> <greater> <equal>     : "≥"  U2265  # greater-than or equal to
-<Multi_key> <less> <plus>         : "⩽"  U2A7D  # less-than or slanted equal to
-<Multi_key> <greater> <plus>      : "⩾"  U2A7E  # greater-than or slanted equal to
+<Multi_key> <semicolon> <b>           : "•"  U2022  # bullet
+<Multi_key> <semicolon> <semicolon>   : "•"  U2022  # bullet
+<Multi_key> <semicolon> <t>           : "‣"  U2023  # triangular bullet
+<Multi_key> <semicolon> <greater>     : "‣"  U2023  # triangular bullet
+<Multi_key> <semicolon> <h>           : "⁃"  U2043  # hyphen bullet
+<Multi_key> <semicolon> <minus>       : "⁃"  U2043  # hyphen bullet
+<Multi_key> <semicolon> <w>           : "◦"  U25E6  # white bullet
+<Multi_key> <semicolon> <o>           : "◦"  U25E6  # white bullet
+<Multi_key> <apostrophe> <1>          : "′"  U2032  # prime
+<Multi_key> <apostrophe> <2>          : "″"  U2033  # double prime
+<Multi_key> <apostrophe> <3>          : "‴"  U2034  # triple prime
+<Multi_key> <apostrophe> <4>          : "⁗"  U2057  # quadruple prime
+<Multi_key> <asterisk> <asterisk>     : "×"  U00D7  # multiplication sign
+<Multi_key> <slash> <slash>           : "÷"  U00F7  # division sign
+<Multi_key> <asterisk> <o>            : "°"  U00B0  # degree sign
+<Multi_key> <o> <asterisk>            : "°"  U00B0  # degree sign
+<Multi_key> <period> <period>         : "·"  U00B7  # middle dot
+<Multi_key> <period> <space>          : "·"  U00B7  # middle dot
+<Multi_key> <period> <3>              : "…"  U2026  # horizontal ellipsis
+<Multi_key> <a> <minus>               : "ª"  U00AA  # feminine ordinal indicator (Spanish, Portuguese, Italian, Galician)
+<Multi_key> <o> <minus>               : "º"  U00BA  # masculine ordinal indicator (Spanish, Portuguese, Italian, Galician)
+<Multi_key> <exclam> <exclam>         : "¡"  U00A1  # inverted exclamation mark
+<Multi_key> <question> <question>     : "¿"  U00BF  # inverted question mark
+<Multi_key> <o> <c>                   : "©"  U00A9  # copyright sign
+<Multi_key> <parenleft> <c>           : "©"  U00A9  # copyright sign
+<Multi_key> <o> <p>                   : "℗"  U2117  # sound recording copyright
+<Multi_key> <parenleft> <p>           : "℗"  U2117  # sound recording copyright
+<Multi_key> <o> <r>                   : "®"  U00AE  # registered sign
+<Multi_key> <parenleft> <r>           : "®"  U00AE  # registered sign
+<Multi_key> <plus> <minus>            : "±"  U00B1  # plus-minus sign
+<Multi_key> <minus> <plus>            : "∓"  U2213  # minus-or-plus sign
+<Multi_key> <percent> <percent>       : "‰"  U2030  # per mille sign
+<Multi_key> <percent> <3>             : "‰"  U2030  # per mille sign
+<Multi_key> <percent> <4>             : "‱"  U2031  # per ten thousand sign
+<Multi_key> <exclam> <equal>          : "≠"  U2260  # not equal to
+<Multi_key> <less> <greater>          : "≠"  U2260  # not equal to
+<Multi_key> <less> <equal>            : "≤"  U2264  # less-than or equal to
+<Multi_key> <greater> <equal>         : "≥"  U2265  # greater-than or equal to
+<Multi_key> <less> <plus>             : "⩽"  U2A7D  # less-than or slanted equal to
+<Multi_key> <greater> <plus>          : "⩾"  U2A7E  # greater-than or slanted equal to
 <Multi_key> <asciitilde> <asciitilde> : "≈"  U2248  # almost equal to
 
 
