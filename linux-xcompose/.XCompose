@@ -1,4 +1,4 @@
-# UltimateKEYS - 2022-11-24  (~/.XCompose)
+# UltimateKEYS - 2022-12-06  (~/.XCompose)
 
 # Website :  www.ultimatekeys.info (pieter-degroote.github.io/UltimateKEYS/)
 
@@ -1233,7 +1233,7 @@
 <Multi_key> <8> <n> : "⟁"  U27C1  # white triangle containing small white triangle
 
 
-# Chess Symbols
+# Chess Pieces and Playing Card Suit Symbols
 
 <Multi_key> <C> <k> : "♔"  U2654  # white chess king
 <Multi_key> <C> <q> : "♕"  U2655  # white chess queen
@@ -1247,18 +1247,14 @@
 <Multi_key> <C> <B> : "♝"  U265D  # black chess bishop
 <Multi_key> <C> <N> : "♞"  U265E  # black chess knight
 <Multi_key> <C> <P> : "♟"  U265F  # black chess pawn
-
-
-# Playing Card Suit Symbols
-
-<Multi_key> <S> <c> : "♣"  U2663  # black club suit
-<Multi_key> <S> <C> : "♧"  U2667  # white club suit
-<Multi_key> <S> <d> : "♦"  U2666  # black diamond suit
-<Multi_key> <S> <D> : "♢"  U2662  # white diamond suit
-<Multi_key> <S> <h> : "♥"  U2665  # black heart suit
-<Multi_key> <S> <H> : "♡"  U2661  # white heart suit
-<Multi_key> <S> <p> : "♠"  U2660  # black spade suit
-<Multi_key> <S> <P> : "♤"  U2664  # white spade suit
+<Multi_key> <C> <c> : "♧"  U2667  # white club suit
+<Multi_key> <C> <C> : "♣"  U2663  # black club suit
+<Multi_key> <C> <d> : "♢"  U2662  # white diamond suit
+<Multi_key> <C> <D> : "♦"  U2666  # black diamond suit
+<Multi_key> <C> <h> : "♡"  U2661  # white heart suit
+<Multi_key> <C> <H> : "♥"  U2665  # black heart suit
+<Multi_key> <C> <s> : "♤"  U2664  # white spade suit
+<Multi_key> <C> <S> : "♠"  U2660  # black spade suit
 
 
 # Dingbat Negative Circled Digits
