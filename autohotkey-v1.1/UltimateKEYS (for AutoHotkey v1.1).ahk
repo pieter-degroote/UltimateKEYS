@@ -1,4 +1,4 @@
-; UltimateKEYS (for AutoHotkey v1.1).ahk - 2022-11-24
+; UltimateKEYS (for AutoHotkey v1.1).ahk - 2022-12-06
 
 ; Website :  www.ultimatekeys.info (pieter-degroote.github.io/UltimateKEYS/)
 
@@ -1310,7 +1310,7 @@ cmpDigitEight.item["m"] := "{u+27be}"  ; (➾) open-outlined rightwards arrow
 cmpDigitEight.item["n"] := "{u+27c1}"  ; (⟁) white triangle containing small white triangle
 
 
-; Compose :  Chess Symbols (C)
+; Compose :  Chess Pieces and Playing Card Suit Symbols (C)
 
 cmpCapitalC.item["k"] := "{u+2654}"  ; (♔) white chess king
 cmpCapitalC.item["q"] := "{u+2655}"  ; (♕) white chess queen
@@ -1324,18 +1324,14 @@ cmpCapitalC.item["R"] := "{u+265c}"  ; (♜) black chess rook
 cmpCapitalC.item["B"] := "{u+265d}"  ; (♝) black chess bishop
 cmpCapitalC.item["N"] := "{u+265e}"  ; (♞) black chess knight
 cmpCapitalC.item["P"] := "{u+265f}"  ; (♟) black chess pawn
-
-
-; Compose :  Playing Card Suit Symbols (S)
-
-cmpCapitalS.item["c"] := "{u+2663}"  ; (♣) black club suit
-cmpCapitalS.item["C"] := "{u+2667}"  ; (♧) white club suit
-cmpCapitalS.item["d"] := "{u+2666}"  ; (♦) black diamond suit
-cmpCapitalS.item["D"] := "{u+2662}"  ; (♢) white diamond suit
-cmpCapitalS.item["h"] := "{u+2665}"  ; (♥) black heart suit
-cmpCapitalS.item["H"] := "{u+2661}"  ; (♡) white heart suit
-cmpCapitalS.item["p"] := "{u+2660}"  ; (♠) black spade suit
-cmpCapitalS.item["P"] := "{u+2664}"  ; (♤) white spade suit
+cmpCapitalC.item["c"] := "{u+2667}"  ; (♧) white club suit
+cmpCapitalC.item["C"] := "{u+2663}"  ; (♣) black club suit
+cmpCapitalC.item["d"] := "{u+2662}"  ; (♢) white diamond suit
+cmpCapitalC.item["D"] := "{u+2666}"  ; (♦) black diamond suit
+cmpCapitalC.item["h"] := "{u+2661}"  ; (♡) white heart suit
+cmpCapitalC.item["H"] := "{u+2665}"  ; (♥) black heart suit
+cmpCapitalC.item["s"] := "{u+2664}"  ; (♤) white spade suit
+cmpCapitalC.item["S"] := "{u+2660}"  ; (♠) black spade suit
 
 
 ; Compose :  Dingbat Negative Circled Digits (n)
