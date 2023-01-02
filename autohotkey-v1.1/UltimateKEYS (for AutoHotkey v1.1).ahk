@@ -1,4 +1,4 @@
-; UltimateKEYS (for AutoHotkey v1.1).ahk - 2022-12-06
+; UltimateKEYS (for AutoHotkey v1.1).ahk - 2023-01-02
 
 ; Website :  www.ultimatekeys.info (pieter-degroote.github.io/UltimateKEYS/)
 
@@ -513,26 +513,20 @@ cmpSmallH.item["z"] := "{u+0225}"  ; (ȥ) z with hook
 cmpSmallH.item["Z"] := "{u+0224}"  ; (Ȥ) Z with hook
 
 
-; Compose :  Retroflex Hook, Crossed-Tail and Variations (f)
+; Compose :  Retroflex Hook, Right Hook, Crossed-Tail and Variations (f)
 
 cmpSmallF := ComObjCreate("Scripting.Dictionary")
-cmpSmallF.item["a"] := "{u+1d8f}"  ; (ᶏ) a with retroflex hook
 cmpSmallF.item["d"] := "{u+1d91}"  ; (ᶑ) d with hook and tail
-cmpSmallF.item["e"] := "{u+1d92}"  ; (ᶒ) e with retroflex hook
-cmpSmallF.item["f"] := "{u+1d93}"  ; (ᶓ) small letter open e with retroflex hook
+cmpSmallF.item["e"] := "{u+025d}"  ; (ɝ) small letter reversed open e with hook
 cmpSmallF.item["g"] := "{u+ab36}"  ; (ꬶ) small letter script g with crossed-tail
 cmpSmallF.item["h"] := "{u+a727}"  ; (ꜧ) small letter heng
 cmpSmallF.item["H"] := "{u+a726}"  ; (Ꜧ) capital letter heng
-cmpSmallF.item["i"] := "{u+1d96}"  ; (ᶖ) i with retroflex hook
 cmpSmallF.item["j"] := "{u+029d}"  ; (ʝ) j with crossed-tail
 cmpSmallF.item["l"] := "{u+026d}"  ; (ɭ) l with retroflex hook
 cmpSmallF.item["n"] := "{u+0273}"  ; (ɳ) n with retroflex hook
-cmpSmallF.item["o"] := "{u+1d97}"  ; (ᶗ) small letter open o with retroflex hook
-cmpSmallF.item["q"] := "{u+1d90}"  ; (ᶐ) Latin small letter alpha with retroflex hook
 cmpSmallF.item["r"] := "{u+027e}"  ; (ɾ) r with fishhook
 cmpSmallF.item["t"] := "{u+0288}"  ; (ʈ) t with retroflex hook
 cmpSmallF.item["T"] := "{u+01ae}"  ; (Ʈ) T with retroflex hook
-cmpSmallF.item["u"] := "{u+1d99}"  ; (ᶙ) u with retroflex hook
 cmpSmallF.item["v"] := "{u+2c71}"  ; (ⱱ) v with right hook
 cmpSmallF.item["w"] := "{u+2c73}"  ; (ⱳ) w with right hook
 cmpSmallF.item["W"] := "{u+2c72}"  ; (Ⱳ) W with right hook
@@ -544,24 +538,27 @@ cmpSmallF.item["z"] := "{u+0290}"  ; (ʐ) z with retroflex hook
 cmpSmallL := ComObjCreate("Scripting.Dictionary")
 cmpSmallL.item["a"] := "{u+0251}"  ; (ɑ) Latin small letter alpha
 cmpSmallL.item["A"] := "{u+2c6d}"  ; (Ɑ) Latin capital letter alpha
+cmpSmallL.item["b"] := "{u+025e}"  ; (ɞ) small letter closed reversed open e
 cmpSmallL.item["d"] := "{u+1e9f}"  ; (ẟ) Latin small letter delta
 cmpSmallL.item["e"] := "{u+025b}"  ; (ɛ) small letter open e (Latin small epsilon)
 cmpSmallL.item["E"] := "{u+0190}"  ; (Ɛ) capital letter open E (Latin capital epsilon)
 cmpSmallL.item["f"] := "{u+0278}"  ; (ɸ) Latin small letter phi
 cmpSmallL.item["g"] := "{u+0261}"  ; (ɡ) small letter script g
 cmpSmallL.item["G"] := "{u+a7ac}"  ; (Ɡ) capital letter script G
+cmpSmallL.item["h"] := "{u+01a3}"  ; (ƣ) small letter gha
+cmpSmallL.item["H"] := "{u+01a2}"  ; (Ƣ) capital letter gha
 cmpSmallL.item["i"] := "{u+0269}"  ; (ɩ) Latin small letter iota
 cmpSmallL.item["I"] := "{u+0196}"  ; (Ɩ) Latin capital letter iota
 cmpSmallL.item["j"] := "{u+0263}"  ; (ɣ) Latin small letter gamma
 cmpSmallL.item["J"] := "{u+0194}"  ; (Ɣ) Latin capital letter gamma
 cmpSmallL.item["k"] := "{u+0138}"  ; (ĸ) small letter kra
+cmpSmallL.item["l"] := "{u+019b}"  ; (ƛ) Latin small letter lambda with stroke (barred lambda)
 cmpSmallL.item["m"] := "{u+0270}"  ; (ɰ) small letter turned m with long leg
 cmpSmallL.item["n"] := "{u+019e}"  ; (ƞ) small letter n with long right leg
 cmpSmallL.item["N"] := "{u+0220}"  ; (Ƞ) capital letter N with long right leg
 cmpSmallL.item["o"] := "{u+0254}"  ; (ɔ) small letter open o
 cmpSmallL.item["O"] := "{u+0186}"  ; (Ɔ) capital letter open O
-cmpSmallL.item["q"] := "{u+01a3}"  ; (ƣ) small letter gha
-cmpSmallL.item["Q"] := "{u+01a2}"  ; (Ƣ) capital letter gha
+cmpSmallL.item["q"] := "{u+0277}"  ; (ɷ) Latin small letter closed omega
 cmpSmallL.item["s"] := "{u+0283}"  ; (ʃ) small letter esh
 cmpSmallL.item["S"] := "{u+01a9}"  ; (Ʃ) capital letter esh
 cmpSmallL.item["u"] := "{u+028a}"  ; (ʊ) Latin small letter upsilon
@@ -573,7 +570,7 @@ cmpSmallL.item["U"] := "{u+01b1}"  ; (Ʊ) Latin capital letter upsilon
 cmpSmallR := ComObjCreate("Scripting.Dictionary")
 cmpSmallR.item["a"] := "{u+0250}"  ; (ɐ) small letter turned a
 cmpSmallR.item["A"] := "{u+2c6f}"  ; (Ɐ) capital letter turned A
-cmpSmallR.item["c"] := "{u+025c}"  ; (ɜ) small letter reversed open e
+cmpSmallR.item["b"] := "{u+025c}"  ; (ɜ) small letter reversed open e
 cmpSmallR.item["d"] := "{u+018d}"  ; (ƍ) Latin small letter turned delta
 cmpSmallR.item["e"] := "{u+01dd}"  ; (ǝ) small letter turned e
 cmpSmallR.item["E"] := "{u+018e}"  ; (Ǝ) capital letter reversed E
@@ -587,7 +584,7 @@ cmpSmallR.item["k"] := "{u+029e}"  ; (ʞ) small letter turned k
 cmpSmallR.item["K"] := "{u+a7b0}"  ; (Ʞ) capital letter turned K
 cmpSmallR.item["m"] := "{u+026f}"  ; (ɯ) small letter turned m
 cmpSmallR.item["M"] := "{u+019c}"  ; (Ɯ) capital letter turned M
-cmpSmallR.item["o"] := "{u+0264}"  ; (ɤ) small letter rams horn
+cmpSmallR.item["o"] := "{u+0264}"  ; (ɤ) small letter ram's horn (baby gamma)
 cmpSmallR.item["q"] := "{u+0252}"  ; (ɒ) Latin small letter turned alpha
 cmpSmallR.item["Q"] := "{u+2c70}"  ; (Ɒ) Latin capital letter turned alpha
 cmpSmallR.item["r"] := "{u+0279}"  ; (ɹ) small letter turned r
@@ -1052,6 +1049,7 @@ cmpDigitZero.item["3"] := "{u+2189}"   ; (↉) vulgar fraction 0/3
 
 cmpBracketLeft := ComObjCreate("Scripting.Dictionary")
 cmpBracketRight := ComObjCreate("Scripting.Dictionary")
+cmpBackslash := ComObjCreate("Scripting.Dictionary")
 cmpCedillaOgonek.item[chr(34)] := "{u+201e}"  ; („) double low-9 quotation mark
 cmpDiaeresis.item[","] := "{u+201e}"          ; („) double low-9 quotation mark
 cmpCedillaOgonek.item["'"] := "{u+201a}"      ; (‚) single low-9 quotation mark
@@ -1064,6 +1062,10 @@ cmpAcuteAccent.item["["] := "{u+2018}"        ; (‘) left single quotation mark
 cmpBracketLeft.item["'"] := "{u+2018}"        ; (‘) left single quotation mark
 cmpAcuteAccent.item["]"] := "{u+2019}"        ; (’) right single quotation mark
 cmpBracketRight.item["'"] := "{u+2019}"       ; (’) right single quotation mark
+cmpBackslash.item[chr(34)] := "{u+201f}"      ; (‟) double high-reversed-9 quotation mark
+cmpDiaeresis.item["\"] := "{u+201f}"          ; (‟) double high-reversed-9 quotation mark
+cmpBackslash.item["'"] := "{u+201b}"          ; (‛) single high-reversed-9 quotation mark
+cmpAcuteAccent.item["\"] := "{u+201b}"        ; (‛) single high-reversed-9 quotation mark
 cmpLessThan.item["<"] := "{u+00ab}"           ; («) left-pointing double angle quotation mark
 cmpLessThan.item[chr(34)] := "{u+00ab}"       ; («) left-pointing double angle quotation mark
 cmpDiaeresis.item["<"] := "{u+00ab}"          ; («) left-pointing double angle quotation mark
@@ -1909,6 +1911,8 @@ cmpSmallN.item["0"] := "{u+277f}"  ; (❿) dingbat negative circled digit 10
     Send % cmpBracketLeft.item[keyB]
   else if (keyA == "]")
     Send % cmpBracketRight.item[keyB]
+  else if (keyA == "\")
+    Send % cmpBackslash.item[keyB]
   else if (keyA == "C")
     Send % cmpCapitalC.item[keyB]
   else if (keyA == "e")
