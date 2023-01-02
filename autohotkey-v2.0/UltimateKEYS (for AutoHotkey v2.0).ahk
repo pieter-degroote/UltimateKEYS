@@ -1,4 +1,4 @@
-; UltimateKEYS (for AutoHotkey v2.0).ahk - 2022-12-06
+; UltimateKEYS (for AutoHotkey v2.0).ahk - 2023-01-02
 
 ; Website :  www.ultimatekeys.info (pieter-degroote.github.io/UltimateKEYS/)
 
@@ -515,26 +515,20 @@ cmpSmallH["z"] := "{u+0225}"  ; (ȥ) z with hook
 cmpSmallH["Z"] := "{u+0224}"  ; (Ȥ) Z with hook
 
 
-; Compose :  Retroflex Hook, Crossed-Tail and Variations (f)
+; Compose :  Retroflex Hook, Right Hook, Crossed-Tail and Variations (f)
 
 global cmpSmallF := Map()
-cmpSmallF["a"] := "{u+1d8f}"  ; (ᶏ) a with retroflex hook
 cmpSmallF["d"] := "{u+1d91}"  ; (ᶑ) d with hook and tail
-cmpSmallF["e"] := "{u+1d92}"  ; (ᶒ) e with retroflex hook
-cmpSmallF["f"] := "{u+1d93}"  ; (ᶓ) small letter open e with retroflex hook
+cmpSmallF["e"] := "{u+025d}"  ; (ɝ) small letter reversed open e with hook
 cmpSmallF["g"] := "{u+ab36}"  ; (ꬶ) small letter script g with crossed-tail
 cmpSmallF["h"] := "{u+a727}"  ; (ꜧ) small letter heng
 cmpSmallF["H"] := "{u+a726}"  ; (Ꜧ) capital letter heng
-cmpSmallF["i"] := "{u+1d96}"  ; (ᶖ) i with retroflex hook
 cmpSmallF["j"] := "{u+029d}"  ; (ʝ) j with crossed-tail
 cmpSmallF["l"] := "{u+026d}"  ; (ɭ) l with retroflex hook
 cmpSmallF["n"] := "{u+0273}"  ; (ɳ) n with retroflex hook
-cmpSmallF["o"] := "{u+1d97}"  ; (ᶗ) small letter open o with retroflex hook
-cmpSmallF["q"] := "{u+1d90}"  ; (ᶐ) Latin small letter alpha with retroflex hook
 cmpSmallF["r"] := "{u+027e}"  ; (ɾ) r with fishhook
 cmpSmallF["t"] := "{u+0288}"  ; (ʈ) t with retroflex hook
 cmpSmallF["T"] := "{u+01ae}"  ; (Ʈ) T with retroflex hook
-cmpSmallF["u"] := "{u+1d99}"  ; (ᶙ) u with retroflex hook
 cmpSmallF["v"] := "{u+2c71}"  ; (ⱱ) v with right hook
 cmpSmallF["w"] := "{u+2c73}"  ; (ⱳ) w with right hook
 cmpSmallF["W"] := "{u+2c72}"  ; (Ⱳ) W with right hook
@@ -546,24 +540,27 @@ cmpSmallF["z"] := "{u+0290}"  ; (ʐ) z with retroflex hook
 global cmpSmallL := Map()
 cmpSmallL["a"] := "{u+0251}"  ; (ɑ) Latin small letter alpha
 cmpSmallL["A"] := "{u+2c6d}"  ; (Ɑ) Latin capital letter alpha
+cmpSmallL["b"] := "{u+025e}"  ; (ɞ) small letter closed reversed open e
 cmpSmallL["d"] := "{u+1e9f}"  ; (ẟ) Latin small letter delta
 cmpSmallL["e"] := "{u+025b}"  ; (ɛ) small letter open e (Latin small epsilon)
 cmpSmallL["E"] := "{u+0190}"  ; (Ɛ) capital letter open E (Latin capital epsilon)
 cmpSmallL["f"] := "{u+0278}"  ; (ɸ) Latin small letter phi
 cmpSmallL["g"] := "{u+0261}"  ; (ɡ) small letter script g
 cmpSmallL["G"] := "{u+a7ac}"  ; (Ɡ) capital letter script G
+cmpSmallL["h"] := "{u+01a3}"  ; (ƣ) small letter gha
+cmpSmallL["H"] := "{u+01a2}"  ; (Ƣ) capital letter gha
 cmpSmallL["i"] := "{u+0269}"  ; (ɩ) Latin small letter iota
 cmpSmallL["I"] := "{u+0196}"  ; (Ɩ) Latin capital letter iota
 cmpSmallL["j"] := "{u+0263}"  ; (ɣ) Latin small letter gamma
 cmpSmallL["J"] := "{u+0194}"  ; (Ɣ) Latin capital letter gamma
 cmpSmallL["k"] := "{u+0138}"  ; (ĸ) small letter kra
+cmpSmallL["l"] := "{u+019b}"  ; (ƛ) Latin small letter lambda with stroke (barred lambda)
 cmpSmallL["m"] := "{u+0270}"  ; (ɰ) small letter turned m with long leg
 cmpSmallL["n"] := "{u+019e}"  ; (ƞ) small letter n with long right leg
 cmpSmallL["N"] := "{u+0220}"  ; (Ƞ) capital letter N with long right leg
 cmpSmallL["o"] := "{u+0254}"  ; (ɔ) small letter open o
 cmpSmallL["O"] := "{u+0186}"  ; (Ɔ) capital letter open O
-cmpSmallL["q"] := "{u+01a3}"  ; (ƣ) small letter gha
-cmpSmallL["Q"] := "{u+01a2}"  ; (Ƣ) capital letter gha
+cmpSmallL["q"] := "{u+0277}"  ; (ɷ) Latin small letter closed omega
 cmpSmallL["s"] := "{u+0283}"  ; (ʃ) small letter esh
 cmpSmallL["S"] := "{u+01a9}"  ; (Ʃ) capital letter esh
 cmpSmallL["u"] := "{u+028a}"  ; (ʊ) Latin small letter upsilon
@@ -575,7 +572,7 @@ cmpSmallL["U"] := "{u+01b1}"  ; (Ʊ) Latin capital letter upsilon
 global cmpSmallR := Map()
 cmpSmallR["a"] := "{u+0250}"  ; (ɐ) small letter turned a
 cmpSmallR["A"] := "{u+2c6f}"  ; (Ɐ) capital letter turned A
-cmpSmallR["c"] := "{u+025c}"  ; (ɜ) small letter reversed open e
+cmpSmallR["b"] := "{u+025c}"  ; (ɜ) small letter reversed open e
 cmpSmallR["d"] := "{u+018d}"  ; (ƍ) Latin small letter turned delta
 cmpSmallR["e"] := "{u+01dd}"  ; (ǝ) small letter turned e
 cmpSmallR["E"] := "{u+018e}"  ; (Ǝ) capital letter reversed E
@@ -589,7 +586,7 @@ cmpSmallR["k"] := "{u+029e}"  ; (ʞ) small letter turned k
 cmpSmallR["K"] := "{u+a7b0}"  ; (Ʞ) capital letter turned K
 cmpSmallR["m"] := "{u+026f}"  ; (ɯ) small letter turned m
 cmpSmallR["M"] := "{u+019c}"  ; (Ɯ) capital letter turned M
-cmpSmallR["o"] := "{u+0264}"  ; (ɤ) small letter rams horn
+cmpSmallR["o"] := "{u+0264}"  ; (ɤ) small letter ram's horn (baby gamma)
 cmpSmallR["q"] := "{u+0252}"  ; (ɒ) Latin small letter turned alpha
 cmpSmallR["Q"] := "{u+2c70}"  ; (Ɒ) Latin capital letter turned alpha
 cmpSmallR["r"] := "{u+0279}"  ; (ɹ) small letter turned r
@@ -1054,6 +1051,7 @@ cmpDigitZero["3"] := "{u+2189}"   ; (↉) vulgar fraction 0/3
 
 global cmpBracketLeft := Map()
 global cmpBracketRight := Map()
+global cmpBackslash := Map()
 cmpCedillaOgonek[chr(34)] := "{u+201e}"  ; („) double low-9 quotation mark
 cmpDiaeresis[","] := "{u+201e}"          ; („) double low-9 quotation mark
 cmpCedillaOgonek["'"] := "{u+201a}"      ; (‚) single low-9 quotation mark
@@ -1066,6 +1064,10 @@ cmpAcuteAccent["["] := "{u+2018}"        ; (‘) left single quotation mark
 cmpBracketLeft["'"] := "{u+2018}"        ; (‘) left single quotation mark
 cmpAcuteAccent["]"] := "{u+2019}"        ; (’) right single quotation mark
 cmpBracketRight["'"] := "{u+2019}"       ; (’) right single quotation mark
+cmpBackslash[chr(34)] := "{u+201f}"      ; (‟) double high-reversed-9 quotation mark
+cmpDiaeresis["\"] := "{u+201f}"          ; (‟) double high-reversed-9 quotation mark
+cmpBackslash["'"] := "{u+201b}"          ; (‛) single high-reversed-9 quotation mark
+cmpAcuteAccent["\"] := "{u+201b}"        ; (‛) single high-reversed-9 quotation mark
 cmpLessThan["<"] := "{u+00ab}"           ; («) left-pointing double angle quotation mark
 cmpLessThan[chr(34)] := "{u+00ab}"       ; («) left-pointing double angle quotation mark
 cmpDiaeresis["<"] := "{u+00ab}"          ; («) left-pointing double angle quotation mark
@@ -2035,6 +2037,10 @@ cmpSmallN["0"] := "{u+277f}"  ; (❿) dingbat negative circled digit 10
   else if (ihA.Input == "]") {
     if cmpBracketRight.Has(ihB.Input)
       Send cmpBracketRight[ihB.Input]
+  }
+  else if (ihA.Input == "\") {
+    if cmpBackslash.Has(ihB.Input)
+      Send cmpBackslash[ihB.Input]
   }
   else if (ihA.Input == "C") {
     if cmpCapitalC.Has(ihB.Input)
