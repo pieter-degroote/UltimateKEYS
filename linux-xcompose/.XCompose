@@ -1,4 +1,4 @@
-# UltimateKEYS - 2022-12-06  (~/.XCompose)
+# UltimateKEYS - 2023-01-02  (~/.XCompose)
 
 # Website :  www.ultimatekeys.info (pieter-degroote.github.io/UltimateKEYS/)
 
@@ -485,25 +485,19 @@
 <Multi_key> <h> <Z> : "Ȥ"  U0224  # Z with hook
 
 
-# Retroflex Hook, Crossed-Tail and Variations
+# Retroflex Hook, Right Hook, Crossed-Tail and Variations
 
-<Multi_key> <f> <a> : "ᶏ"  U1D8F  # a with retroflex hook
 <Multi_key> <f> <d> : "ᶑ"  U1D91  # d with hook and tail
-<Multi_key> <f> <e> : "ᶒ"  U1D92  # e with retroflex hook
-<Multi_key> <f> <f> : "ᶓ"  U1D93  # small letter open e with retroflex hook
+<Multi_key> <f> <e> : "ɝ"  U025D  # small letter reversed open e with hook
 <Multi_key> <f> <g> : "ꬶ"  UAB36  # small letter script g with crossed-tail
 <Multi_key> <f> <h> : "ꜧ"  UA727  # small letter heng
 <Multi_key> <f> <H> : "Ꜧ"  UA726  # capital letter heng
-<Multi_key> <f> <i> : "ᶖ"  U1D96  # i with retroflex hook
 <Multi_key> <f> <j> : "ʝ"  U029D  # j with crossed-tail
 <Multi_key> <f> <l> : "ɭ"  U026D  # l with retroflex hook
 <Multi_key> <f> <n> : "ɳ"  U0273  # n with retroflex hook
-<Multi_key> <f> <o> : "ᶗ"  U1D97  # small letter open o with retroflex hook
-<Multi_key> <f> <q> : "ᶐ"  U1D90  # Latin small letter alpha with retroflex hook
 <Multi_key> <f> <r> : "ɾ"  U027E  # r with fishhook
 <Multi_key> <f> <t> : "ʈ"  U0288  # t with retroflex hook
 <Multi_key> <f> <T> : "Ʈ"  U01AE  # T with retroflex hook
-<Multi_key> <f> <u> : "ᶙ"  U1D99  # u with retroflex hook
 <Multi_key> <f> <v> : "ⱱ"  U2C71  # v with right hook
 <Multi_key> <f> <w> : "ⱳ"  U2C73  # w with right hook
 <Multi_key> <f> <W> : "Ⱳ"  U2C72  # W with right hook
@@ -514,24 +508,27 @@
 
 <Multi_key> <l> <a> : "ɑ"  U0251  # Latin small letter alpha
 <Multi_key> <l> <A> : "Ɑ"  U2C6D  # Latin capital letter alpha
+<Multi_key> <l> <b> : "ɞ"  U025E  # small letter closed reversed open e
 <Multi_key> <l> <d> : "ẟ"  U1E9F  # Latin small letter delta
 <Multi_key> <l> <e> : "ɛ"  U025B  # small letter open e (Latin small epsilon)
 <Multi_key> <l> <E> : "Ɛ"  U0190  # capital letter open E (Latin capital epsilon)
 <Multi_key> <l> <f> : "ɸ"  U0278  # Latin small letter phi
 <Multi_key> <l> <g> : "ɡ"  U0261  # small letter script g
 <Multi_key> <l> <G> : "Ɡ"  UA7AC  # capital letter script G
+<Multi_key> <l> <h> : "ƣ"  U01A3  # small letter gha
+<Multi_key> <l> <H> : "Ƣ"  U01A2  # capital letter gha
 <Multi_key> <l> <i> : "ɩ"  U0269  # Latin small letter iota
 <Multi_key> <l> <I> : "Ɩ"  U0196  # Latin capital letter iota
 <Multi_key> <l> <j> : "ɣ"  U0263  # Latin small letter gamma
 <Multi_key> <l> <J> : "Ɣ"  U0194  # Latin capital letter gamma
 <Multi_key> <l> <k> : "ĸ"  U0138  # small letter kra
+<Multi_key> <l> <l> : "ƛ"  U019B  # Latin small letter lambda with stroke (barred lambda)
 <Multi_key> <l> <m> : "ɰ"  U0270  # small letter turned m with long leg
 <Multi_key> <l> <n> : "ƞ"  U019E  # small letter n with long right leg
 <Multi_key> <l> <N> : "Ƞ"  U0220  # capital letter N with long right leg
 <Multi_key> <l> <o> : "ɔ"  U0254  # small letter open o
 <Multi_key> <l> <O> : "Ɔ"  U0186  # capital letter open O
-<Multi_key> <l> <q> : "ƣ"  U01A3  # small letter gha
-<Multi_key> <l> <Q> : "Ƣ"  U01A2  # capital letter gha
+<Multi_key> <l> <q> : "ɷ"  U0277  # Latin small letter closed omega
 <Multi_key> <l> <s> : "ʃ"  U0283  # small letter esh
 <Multi_key> <l> <S> : "Ʃ"  U01A9  # capital letter esh
 <Multi_key> <l> <u> : "ʊ"  U028A  # Latin small letter upsilon
@@ -542,7 +539,7 @@
 
 <Multi_key> <r> <a> : "ɐ"  U0250  # small letter turned a
 <Multi_key> <r> <A> : "Ɐ"  U2C6F  # capital letter turned A
-<Multi_key> <r> <c> : "ɜ"  U025C  # small letter reversed open e
+<Multi_key> <r> <b> : "ɜ"  U025C  # small letter reversed open e
 <Multi_key> <r> <d> : "ƍ"  U018D  # Latin small letter turned delta
 <Multi_key> <r> <e> : "ǝ"  U01DD  # small letter turned e
 <Multi_key> <r> <E> : "Ǝ"  U018E  # capital letter reversed E
@@ -556,7 +553,7 @@
 <Multi_key> <r> <K> : "Ʞ"  UA7B0  # capital letter turned K
 <Multi_key> <r> <m> : "ɯ"  U026F  # small letter turned m
 <Multi_key> <r> <M> : "Ɯ"  U019C  # capital letter turned M
-<Multi_key> <r> <o> : "ɤ"  U0264  # small letter rams horn
+<Multi_key> <r> <o> : "ɤ"  U0264  # small letter ram's horn (baby gamma)
 <Multi_key> <r> <q> : "ɒ"  U0252  # Latin small letter turned alpha
 <Multi_key> <r> <Q> : "Ɒ"  U2C70  # Latin capital letter turned alpha
 <Multi_key> <r> <r> : "ɹ"  U0279  # small letter turned r
@@ -1027,6 +1024,10 @@
 <Multi_key> <bracketleft> <apostrophe>  : "‘"  U2018  # left single quotation mark
 <Multi_key> <apostrophe> <bracketright> : "’"  U2019  # right single quotation mark
 <Multi_key> <bracketright> <apostrophe> : "’"  U2019  # right single quotation mark
+<Multi_key> <backslash> <quotedbl>      : "‟"  U201F  # double high-reversed-9 quotation mark
+<Multi_key> <quotedbl> <backslash>      : "‟"  U201F  # double high-reversed-9 quotation mark
+<Multi_key> <backslash> <apostrophe>    : "‛"  U201B  # single high-reversed-9 quotation mark
+<Multi_key> <apostrophe> <backslash>    : "‛"  U201B  # single high-reversed-9 quotation mark
 <Multi_key> <less> <less>               : "«"  U00AB  # left-pointing double angle quotation mark
 <Multi_key> <less> <quotedbl>           : "«"  U00AB  # left-pointing double angle quotation mark
 <Multi_key> <quotedbl> <less>           : "«"  U00AB  # left-pointing double angle quotation mark
