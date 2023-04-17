@@ -1,4 +1,4 @@
-# UltimateKEYS - 2023-01-07  (~/.XCompose)
+# UltimateKEYS - 2023-04-18  (~/.XCompose)
 
 # Website :  www.ultimatekeys.info (pieter-degroote.github.io/UltimateKEYS/)
 
@@ -712,24 +712,25 @@
 
 # Spacing Characters and Dashes
 
+<Multi_key> <space> <1> : " "  U2004  # three-per-em space
 <Multi_key> <space> <2> : " "  U2002  # en space
 <Multi_key> <space> <3> : " "  U2003  # em space
-<Multi_key> <space> <1> : " "  U2004  # three-per-em space
 <Multi_key> <space> <4> : " "  U2005  # four-per-em space
 <Multi_key> <space> <5> : " "  U2008  # punctuation space
 <Multi_key> <space> <6> : " "  U2006  # six-per-em space
 <Multi_key> <space> <7> : " "  U2009  # thin space
 <Multi_key> <space> <8> : " "  U200A  # hair space
 <Multi_key> <space> <9> : " "  U2007  # figure space
-<Multi_key> <space> <0> : "​"  U200B  # zero-width space
-<Multi_key> <space> <space>  : " "  U00A0  # non-breaking space
-<Multi_key> <space> <period> : " "  U202F  # narrow no-break space
+<Multi_key> <space> <0> : "​"  U200B  # zero-width space (ZWSP)
+<Multi_key> <space> <m> : " "  U205F  # medium mathematical space (MMSP)
+<Multi_key> <space> <space>  : " "  U00A0  # non-breaking space (NBSP)
+<Multi_key> <space> <period> : " "  U202F  # narrow no-break space (NNBSP)
 <Multi_key> <minus> <2> : "–"  U2013  # en dash
 <Multi_key> <minus> <3> : "—"  U2014  # em dash
 <Multi_key> <minus> <4> : "―"  U2015  # horizontal bar
 <Multi_key> <minus> <5> : "‐"  U2010  # hyphen
 <Multi_key> <minus> <9> : "‒"  U2012  # figure dash
-<Multi_key> <minus> <0> : "­"  U00AD  # soft hyphen
+<Multi_key> <minus> <0> : "­"  U00AD  # soft hyphen (SHY)
 <Multi_key> <minus> <minus> : "‑"  U2011  # non-breaking hyphen
 <Multi_key> <q> <2> : " "  U2000  # en quad
 <Multi_key> <q> <3> : " "  U2001  # em quad
@@ -850,7 +851,8 @@
 # Various Symbols
 
 <Multi_key> <s> <a> : "⅍"  U214D  # aktieselskab
-<Multi_key> <s> <b> : "⸘"  U2E18  # inverted interrobang
+<Multi_key> <s> <b> : "‽"  U203D  # interrobang
+<Multi_key> <s> <B> : "⸘"  U2E18  # inverted interrobang
 <Multi_key> <s> <c> : "℅"  U2105  # care of
 <Multi_key> <s> <d> : "⋄"  U22C4  # diamond operator
 <Multi_key> <s> <e> : "℮"  U212E  # estimated symbol
@@ -861,14 +863,15 @@
 <Multi_key> <s> <L> : "ℒ"  U2112  # Laplace transform
 <Multi_key> <s> <m> : "♂"  U2642  # male sign (Mars)
 <Multi_key> <s> <M> : "℠"  U2120  # service mark
-<Multi_key> <s> <q> : "⸮"  U2E2E  # reversed question mark
 <Multi_key> <s> <r> : "℞"  U211E  # prescription take (Recipere)
 <Multi_key> <s> <R> : "℞"  U211E  # prescription take (Recipere)
+<Multi_key> <s> <x> : "※"  U203B  # reference mark
 <Multi_key> <s> <2> : "♫"  U266B  # beamed eighth notes
 <Multi_key> <s> <3> : "⁂"  U2042  # asterism
+<Multi_key> <s> <4> : "※"  U203B  # reference mark
 <Multi_key> <s> <8> : "♪"  U266A  # eighth note
 <Multi_key> <s> <exclam>    : "‼"  U203C  # double exclamation mark
-<Multi_key> <s> <question>  : "‽"  U203D  # interrobang
+<Multi_key> <s> <question>  : "⸮"  U2E2E  # reversed question mark
 <Multi_key> <s> <backslash> : "⁞"  U205E  # vertical four dots
 <Multi_key> <s> <bar>       : "¦"  U00A6  # broken bar
 
