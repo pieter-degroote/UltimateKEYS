@@ -870,10 +870,10 @@
 <Multi_key> <s> <3> : "⁂"  U2042  # asterism
 <Multi_key> <s> <4> : "※"  U203B  # reference mark
 <Multi_key> <s> <8> : "♪"  U266A  # eighth note
-<Multi_key> <s> <exclam>    : "‼"  U203C  # double exclamation mark
-<Multi_key> <s> <question>  : "⸮"  U2E2E  # reversed question mark
-<Multi_key> <s> <backslash> : "⁞"  U205E  # vertical four dots
-<Multi_key> <s> <bar>       : "¦"  U00A6  # broken bar
+<Multi_key> <s> <exclam>   : "‼"  U203C  # double exclamation mark
+<Multi_key> <s> <question> : "⸮"  U2E2E  # reversed question mark
+<Multi_key> <s> <slash>    : "⁞"  U205E  # vertical four dots
+<Multi_key> <s> <bar>      : "¦"  U00A6  # broken bar
 
 
 # Math Symbols
