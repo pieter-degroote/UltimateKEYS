@@ -829,7 +829,7 @@ cmpSymbols.item["4"] := "{u+203b}"  ; (※) reference mark
 cmpSymbols.item["8"] := "{u+266a}"  ; (♪) eighth note
 cmpSymbols.item["!"] := "{u+203c}"  ; (‼) double exclamation mark
 cmpSymbols.item["?"] := "{u+2e2e}"  ; (⸮) reversed question mark
-cmpSymbols.item["\"] := "{u+205e}"  ; (⁞) vertical four dots
+cmpSymbols.item["/"] := "{u+205e}"  ; (⁞) vertical four dots
 cmpSymbols.item["|"] := "{u+00a6}"  ; (¦) broken bar
 
 
