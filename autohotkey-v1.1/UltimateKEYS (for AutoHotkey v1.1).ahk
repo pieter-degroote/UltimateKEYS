@@ -1,4 +1,4 @@
-; UltimateKEYS (for AutoHotkey v1.1).ahk - 2023-01-07
+; UltimateKEYS (for AutoHotkey v1.1).ahk - 2023-04-18
 
 ; Website :  www.ultimatekeys.info (pieter-degroote.github.io/UltimateKEYS/)
 
@@ -747,24 +747,25 @@ cmpSubscript.item[")"] := "{u+208e}"  ; (₎) subscript )
 
 cmpSpace := ComObjCreate("Scripting.Dictionary")
 cmpQuad := ComObjCreate("Scripting.Dictionary")
+cmpSpace.item["1"] := "{u+2004}"  ; three-per-em space
 cmpSpace.item["2"] := "{u+2002}"  ; en space
 cmpSpace.item["3"] := "{u+2003}"  ; em space
-cmpSpace.item["1"] := "{u+2004}"  ; three-per-em space
 cmpSpace.item["4"] := "{u+2005}"  ; four-per-em space
 cmpSpace.item["5"] := "{u+2008}"  ; punctuation space
 cmpSpace.item["6"] := "{u+2006}"  ; six-per-em space
 cmpSpace.item["7"] := "{u+2009}"  ; thin space
 cmpSpace.item["8"] := "{u+200a}"  ; hair space
 cmpSpace.item["9"] := "{u+2007}"  ; figure space
-cmpSpace.item["0"] := "{u+200b}"  ; zero-width space
-cmpSpace.item[" "] := "{u+00a0}"  ; non-breaking space
-cmpSpace.item["."] := "{u+202f}"  ; narrow no-break space
+cmpSpace.item["0"] := "{u+200b}"  ; zero-width space (ZWSP)
+cmpSpace.item["m"] := "{u+205f}"  ; medium mathematical space (MMSP)
+cmpSpace.item[" "] := "{u+00a0}"  ; non-breaking space (NBSP)
+cmpSpace.item["."] := "{u+202f}"  ; narrow no-break space (NNBSP)
 cmpMacronStroke.item["2"] := "{u+2013}"  ; (–) en dash
 cmpMacronStroke.item["3"] := "{u+2014}"  ; (—) em dash
 cmpMacronStroke.item["4"] := "{u+2015}"  ; (―) horizontal bar
 cmpMacronStroke.item["5"] := "{u+2010}"  ; (‐) hyphen
 cmpMacronStroke.item["9"] := "{u+2012}"  ; (‒) figure dash
-cmpMacronStroke.item["0"] := "{u+00ad}"  ; (­) soft hyphen
+cmpMacronStroke.item["0"] := "{u+00ad}"  ; (­) soft hyphen (SHY)
 cmpMacronStroke.item["-"] := "{u+2011}"  ; (‑) non-breaking hyphen
 cmpQuad.item["2"] := "{u+2000}"  ; en quad
 cmpQuad.item["3"] := "{u+2001}"  ; em quad
@@ -807,7 +808,8 @@ cmpDoubleAcute.item["0"] := "{u+21d4}"  ; (⇔) left right double arrow
 
 cmpSymbols := ComObjCreate("Scripting.Dictionary")
 cmpSymbols.item["a"] := "{u+214d}"  ; (⅍) aktieselskab
-cmpSymbols.item["b"] := "{u+2e18}"  ; (⸘) inverted interrobang
+cmpSymbols.item["b"] := "{u+203d}"  ; (‽) interrobang
+cmpSymbols.item["B"] := "{u+2e18}"  ; (⸘) inverted interrobang
 cmpSymbols.item["c"] := "{u+2105}"  ; (℅) care of
 cmpSymbols.item["d"] := "{u+22c4}"  ; (⋄) diamond operator
 cmpSymbols.item["e"] := "{u+212e}"  ; (℮) estimated symbol
@@ -818,14 +820,15 @@ cmpSymbols.item["l"] := "{u+2113}"  ; (ℓ) script small l
 cmpSymbols.item["L"] := "{u+2112}"  ; (ℒ) Laplace transform
 cmpSymbols.item["m"] := "{u+2642}"  ; (♂) male sign (Mars)
 cmpSymbols.item["M"] := "{u+2120}"  ; (℠) service mark
-cmpSymbols.item["q"] := "{u+2e2e}"  ; (⸮) reversed question mark
 cmpSymbols.item["r"] := "{u+211e}"  ; (℞) prescription take (Recipere)
 cmpSymbols.item["R"] := "{u+211e}"  ; (℞) prescription take (Recipere)
+cmpSymbols.item["x"] := "{u+203b}"  ; (※) reference mark
 cmpSymbols.item["2"] := "{u+266b}"  ; (♫) beamed eighth notes
 cmpSymbols.item["3"] := "{u+2042}"  ; (⁂) asterism
+cmpSymbols.item["4"] := "{u+203b}"  ; (※) reference mark
 cmpSymbols.item["8"] := "{u+266a}"  ; (♪) eighth note
 cmpSymbols.item["!"] := "{u+203c}"  ; (‼) double exclamation mark
-cmpSymbols.item["?"] := "{u+203d}"  ; (‽) interrobang
+cmpSymbols.item["?"] := "{u+2e2e}"  ; (⸮) reversed question mark
 cmpSymbols.item["\"] := "{u+205e}"  ; (⁞) vertical four dots
 cmpSymbols.item["|"] := "{u+00a6}"  ; (¦) broken bar
 
@@ -1871,8 +1874,8 @@ cmpSmallN.item["0"] := "{u+277f}"  ; (❿) dingbat negative circled digit 10
 >!/::Send {u+00bf}   ; (¿) inverted question mark
 >!?::Send {u+2026}   ; (…) horizontal ellipsis
 
->!space::Send {u+00a0}   ; non-breaking space
->!+space::Send {u+00a0}  ; non-breaking space
+>!space::Send {u+00a0}   ; non-breaking space (NBSP)
+>!+space::Send {u+00a0}  ; non-breaking space (NBSP)
 
 
 ; Configuration :  Compose Key Selector
