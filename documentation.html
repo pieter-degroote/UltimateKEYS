@@ -771,24 +771,25 @@ Otherwise, it might be impossible to type any Unicode character higher than “B
 
 # Spacing Characters and Dashes
 
+&lt;Multi_key&gt; &lt;space&gt; &lt;1&gt; : " "  U2004  # three-per-em space
 &lt;Multi_key&gt; &lt;space&gt; &lt;2&gt; : " "  U2002  # en space
 &lt;Multi_key&gt; &lt;space&gt; &lt;3&gt; : " "  U2003  # em space
-&lt;Multi_key&gt; &lt;space&gt; &lt;1&gt; : " "  U2004  # three-per-em space
 &lt;Multi_key&gt; &lt;space&gt; &lt;4&gt; : " "  U2005  # four-per-em space
 &lt;Multi_key&gt; &lt;space&gt; &lt;5&gt; : " "  U2008  # punctuation space
 &lt;Multi_key&gt; &lt;space&gt; &lt;6&gt; : " "  U2006  # six-per-em space
 &lt;Multi_key&gt; &lt;space&gt; &lt;7&gt; : " "  U2009  # thin space
 &lt;Multi_key&gt; &lt;space&gt; &lt;8&gt; : " "  U200A  # hair space
 &lt;Multi_key&gt; &lt;space&gt; &lt;9&gt; : " "  U2007  # figure space
-&lt;Multi_key&gt; &lt;space&gt; &lt;0&gt; : "​"  U200B  # zero-width space
-&lt;Multi_key&gt; &lt;space&gt; &lt;space&gt;  : " "  U00A0  # non-breaking space
-&lt;Multi_key&gt; &lt;space&gt; &lt;period&gt; : " "  U202F  # narrow no-break space
+&lt;Multi_key&gt; &lt;space&gt; &lt;0&gt; : "​"  U200B  # zero-width space (ZWSP)
+&lt;Multi_key&gt; &lt;space&gt; &lt;m&gt; : " "  U205F  # medium mathematical space (MMSP)
+&lt;Multi_key&gt; &lt;space&gt; &lt;space&gt;  : " "  U00A0  # non-breaking space (NBSP)
+&lt;Multi_key&gt; &lt;space&gt; &lt;period&gt; : " "  U202F  # narrow no-break space (NNBSP)
 &lt;Multi_key&gt; &lt;minus&gt; &lt;2&gt; : "–"  U2013  # en dash
 &lt;Multi_key&gt; &lt;minus&gt; &lt;3&gt; : "—"  U2014  # em dash
 &lt;Multi_key&gt; &lt;minus&gt; &lt;4&gt; : "―"  U2015  # horizontal bar
 &lt;Multi_key&gt; &lt;minus&gt; &lt;5&gt; : "‐"  U2010  # hyphen
 &lt;Multi_key&gt; &lt;minus&gt; &lt;9&gt; : "‒"  U2012  # figure dash
-&lt;Multi_key&gt; &lt;minus&gt; &lt;0&gt; : "­"  U00AD  # soft hyphen
+&lt;Multi_key&gt; &lt;minus&gt; &lt;0&gt; : "­"  U00AD  # soft hyphen (SHY)
 &lt;Multi_key&gt; &lt;minus&gt; &lt;minus&gt; : "‑"  U2011  # non-breaking hyphen
 &lt;Multi_key&gt; &lt;q&gt; &lt;2&gt; : " "  U2000  # en quad
 &lt;Multi_key&gt; &lt;q&gt; &lt;3&gt; : " "  U2001  # em quad
@@ -909,7 +910,8 @@ Otherwise, it might be impossible to type any Unicode character higher than “B
 # Various Symbols
 
 &lt;Multi_key&gt; &lt;s&gt; &lt;a&gt; : "⅍"  U214D  # aktieselskab
-&lt;Multi_key&gt; &lt;s&gt; &lt;b&gt; : "⸘"  U2E18  # inverted interrobang
+&lt;Multi_key&gt; &lt;s&gt; &lt;b&gt; : "‽"  U203D  # interrobang
+&lt;Multi_key&gt; &lt;s&gt; &lt;B&gt; : "⸘"  U2E18  # inverted interrobang
 &lt;Multi_key&gt; &lt;s&gt; &lt;c&gt; : "℅"  U2105  # care of
 &lt;Multi_key&gt; &lt;s&gt; &lt;d&gt; : "⋄"  U22C4  # diamond operator
 &lt;Multi_key&gt; &lt;s&gt; &lt;e&gt; : "℮"  U212E  # estimated symbol
@@ -920,14 +922,15 @@ Otherwise, it might be impossible to type any Unicode character higher than “B
 &lt;Multi_key&gt; &lt;s&gt; &lt;L&gt; : "ℒ"  U2112  # Laplace transform
 &lt;Multi_key&gt; &lt;s&gt; &lt;m&gt; : "♂"  U2642  # male sign (Mars)
 &lt;Multi_key&gt; &lt;s&gt; &lt;M&gt; : "℠"  U2120  # service mark
-&lt;Multi_key&gt; &lt;s&gt; &lt;q&gt; : "⸮"  U2E2E  # reversed question mark
 &lt;Multi_key&gt; &lt;s&gt; &lt;r&gt; : "℞"  U211E  # prescription take (Recipere)
 &lt;Multi_key&gt; &lt;s&gt; &lt;R&gt; : "℞"  U211E  # prescription take (Recipere)
+&lt;Multi_key&gt; &lt;s&gt; &lt;x&gt; : "※"  U203B  # reference mark
 &lt;Multi_key&gt; &lt;s&gt; &lt;2&gt; : "♫"  U266B  # beamed eighth notes
 &lt;Multi_key&gt; &lt;s&gt; &lt;3&gt; : "⁂"  U2042  # asterism
+&lt;Multi_key&gt; &lt;s&gt; &lt;4&gt; : "※"  U203B  # reference mark
 &lt;Multi_key&gt; &lt;s&gt; &lt;8&gt; : "♪"  U266A  # eighth note
 &lt;Multi_key&gt; &lt;s&gt; &lt;exclam&gt;    : "‼"  U203C  # double exclamation mark
-&lt;Multi_key&gt; &lt;s&gt; &lt;question&gt;  : "‽"  U203D  # interrobang
+&lt;Multi_key&gt; &lt;s&gt; &lt;question&gt;  : "⸮"  U2E2E  # reversed question mark
 &lt;Multi_key&gt; &lt;s&gt; &lt;backslash&gt; : "⁞"  U205E  # vertical four dots
 &lt;Multi_key&gt; &lt;s&gt; &lt;bar&gt;       : "¦"  U00A6  # broken bar
 
