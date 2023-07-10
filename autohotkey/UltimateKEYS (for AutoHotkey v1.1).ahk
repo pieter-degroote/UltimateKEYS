@@ -1,6 +1,6 @@
-#Requires AutoHotkey v1.1
+#requires AutoHotkey v1.1
 
-; UltimateKEYS (for AutoHotkey v1.1).ahk - 2023-04-18
+; UltimateKEYS (for AutoHotkey v1.1).ahk - 2023-07-10
 
 ; Website :  www.ultimatekeys.info (pieter-degroote.github.io/UltimateKEYS/)
 
@@ -504,6 +504,7 @@ cmpSmallF.item["H"] := "{u+a726}"  ; (Ꜧ) capital letter heng
 cmpSmallF.item["j"] := "{u+029d}"  ; (ʝ) j with crossed-tail
 cmpSmallF.item["l"] := "{u+026d}"  ; (ɭ) l with retroflex hook
 cmpSmallF.item["n"] := "{u+0273}"  ; (ɳ) n with retroflex hook
+cmpSmallF.item["q"] := "{u+02a0}"  ; (ʠ) q with hook
 cmpSmallF.item["r"] := "{u+027e}"  ; (ɾ) r with fishhook
 cmpSmallF.item["t"] := "{u+0288}"  ; (ʈ) t with retroflex hook
 cmpSmallF.item["T"] := "{u+01ae}"  ; (Ʈ) T with retroflex hook
@@ -539,10 +540,15 @@ cmpSmallL.item["N"] := "{u+0220}"  ; (Ƞ) capital letter N with long right leg
 cmpSmallL.item["o"] := "{u+0254}"  ; (ɔ) small letter open o
 cmpSmallL.item["O"] := "{u+0186}"  ; (Ɔ) capital letter open O
 cmpSmallL.item["q"] := "{u+0277}"  ; (ɷ) Latin small letter closed omega
-cmpSmallL.item["s"] := "{u+0283}"  ; (ʃ) small letter esh
-cmpSmallL.item["S"] := "{u+01a9}"  ; (Ʃ) capital letter esh
+cmpSmallL.item["s"] := "{u+0283}"  ; (ʃ) Latin small letter esh
+cmpSmallL.item["S"] := "{u+01a9}"  ; (Ʃ) Latin capital letter esh
 cmpSmallL.item["u"] := "{u+028a}"  ; (ʊ) Latin small letter upsilon
 cmpSmallL.item["U"] := "{u+01b1}"  ; (Ʊ) Latin capital letter upsilon
+cmpSmallL.item["8"] := "{u+0223}"  ; (ȣ) small letter ou
+cmpSmallL.item["*"] := "{u+0222}"  ; (Ȣ) capital letter OU
+cmpSmallL.item["7"] := "{u+0242}"  ; (ɂ) small letter glottal stop
+cmpSmallL.item["&"] := "{u+0241}"  ; (Ɂ) capital letter glottal stop
+cmpSmallL.item["?"] := "{u+0294}"  ; (ʔ) unicase letter glottal stop
 
 
 ; Compose :  Turned Letters (r)
@@ -663,8 +669,8 @@ cmpGreek.item["P"] := "{u+03a0}"  ; (Π) Greek capital pi
 cmpGreek.item["r"] := "{u+03c1}"  ; (ρ) Greek small rho
 cmpGreek.item["R"] := "{u+03a1}"  ; (Ρ) Greek capital rho
 cmpGreek.item["s"] := "{u+03c3}"  ; (σ) Greek small sigma
-cmpGreek.item["S"] := "{u+03a3}"  ; (Σ) Greek capital sigma
 cmpGreek.item[","] := "{u+03c2}"  ; (ς) Greek small final sigma
+cmpGreek.item["S"] := "{u+03a3}"  ; (Σ) Greek capital sigma
 cmpGreek.item["t"] := "{u+03c4}"  ; (τ) Greek small tau
 cmpGreek.item["T"] := "{u+03a4}"  ; (Τ) Greek capital tau
 cmpGreek.item["u"] := "{u+03c5}"  ; (υ) Greek small upsilon
