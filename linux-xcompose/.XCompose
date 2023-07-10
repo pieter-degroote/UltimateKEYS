@@ -1,4 +1,6 @@
-# UltimateKEYS - 2023-04-18  (~/.XCompose)
+include "%L"
+
+# UltimateKEYS - 2023-07-10  (~/.XCompose)
 
 # Website :  www.ultimatekeys.info (pieter-degroote.github.io/UltimateKEYS/)
 
@@ -474,6 +476,7 @@
 <Multi_key> <f> <j> : "ʝ"  U029D  # j with crossed-tail
 <Multi_key> <f> <l> : "ɭ"  U026D  # l with retroflex hook
 <Multi_key> <f> <n> : "ɳ"  U0273  # n with retroflex hook
+<Multi_key> <f> <q> : "ʠ"  U02A0  # q with hook
 <Multi_key> <f> <r> : "ɾ"  U027E  # r with fishhook
 <Multi_key> <f> <t> : "ʈ"  U0288  # t with retroflex hook
 <Multi_key> <f> <T> : "Ʈ"  U01AE  # T with retroflex hook
@@ -508,10 +511,15 @@
 <Multi_key> <l> <o> : "ɔ"  U0254  # small letter open o
 <Multi_key> <l> <O> : "Ɔ"  U0186  # capital letter open O
 <Multi_key> <l> <q> : "ɷ"  U0277  # Latin small letter closed omega
-<Multi_key> <l> <s> : "ʃ"  U0283  # small letter esh
-<Multi_key> <l> <S> : "Ʃ"  U01A9  # capital letter esh
+<Multi_key> <l> <s> : "ʃ"  U0283  # Latin small letter esh
+<Multi_key> <l> <S> : "Ʃ"  U01A9  # Latin capital letter esh
 <Multi_key> <l> <u> : "ʊ"  U028A  # Latin small letter upsilon
 <Multi_key> <l> <U> : "Ʊ"  U01B1  # Latin capital letter upsilon
+<Multi_key> <l> <8>         : "ȣ"  U0223  # small letter ou
+<Multi_key> <l> <asterisk>  : "Ȣ"  U0222  # capital letter OU
+<Multi_key> <l> <7>         : "ɂ"  U0242  # small letter glottal stop
+<Multi_key> <l> <ampersand> : "Ɂ"  U0241  # capital letter glottal stop
+<Multi_key> <l> <question>  : "ʔ"  U0294  # unicase letter glottal stop
 
 
 # Turned Letters
