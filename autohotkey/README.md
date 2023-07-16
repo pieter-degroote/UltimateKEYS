@@ -1,4 +1,4 @@
-# UltimateKEYS for AutoHotkey v2.0/v1.1
+# UltimateKEYS for AutoHotkey v2/v1.1
 
 Prerequisites&nbsp;:
 
