@@ -1,6 +1,6 @@
 #requires AutoHotkey v1.1
 
-; UltimateKEYS (for AutoHotkey v1.1).ahk - 2023-07-10
+; UltimateKEYS (for AutoHotkey v1.1).ahk - 2023-07-15
 
 ; Website :  www.ultimatekeys.info (pieter-degroote.github.io/UltimateKEYS/)
 
@@ -887,18 +887,20 @@ cmpMathSymbols.item["U"] := "{u+2216}"  ; (∖) set minus
 cmpMathSymbols.item["w"] := "{u+2118}"  ; (℘) Weierstrass elliptic function
 cmpMathSymbols.item["z"] := "{u+21af}"  ; (↯) downwards zigzag arrow
 cmpMathSymbols.item["Z"] := "{u+2124}"  ; (ℤ) whole numbers
+cmpMathSymbols.item["2"] := "{u+2236}"  ; (∶) ratio symbol
+cmpMathSymbols.item["4"] := "{u+2237}"  ; (∷) proportion sign
 cmpMathSymbols.item["6"] := "{u+2220}"  ; (∠) angle symbol
-cmpMathSymbols.item["&"] := "{u+2227}"  ; (∧) logical and
-cmpMathSymbols.item["8"] := "{u+2297}"  ; (⊗) circled times
-cmpMathSymbols.item["*"] := "{u+2299}"  ; (⊙) circled dot operator
 cmpMathSymbols.item["9"] := "{u+221f}"  ; (∟) right angle
 cmpMathSymbols.item["0"] := "{u+2221}"  ; (∡) measured angle
 cmpMathSymbols.item["+"] := "{u+2295}"  ; (⊕) circled plus
 cmpMathSymbols.item["-"] := "{u+2296}"  ; (⊖) circled minus
+cmpMathSymbols.item["*"] := "{u+2297}"  ; (⊗) circled times
 cmpMathSymbols.item["/"] := "{u+2298}"  ; (⊘) circled division slash
+cmpMathSymbols.item["."] := "{u+2299}"  ; (⊙) circled dot operator
 cmpMathSymbols.item["="] := "{u+225d}"  ; (≝) equal to by definition
 cmpMathSymbols.item[";"] := "{u+2235}"  ; (∵) because sign
 cmpMathSymbols.item[":"] := "{u+2234}"  ; (∴) therefore sign
+cmpMathSymbols.item["&"] := "{u+2227}"  ; (∧) logical and
 cmpMathSymbols.item["|"] := "{u+2228}"  ; (∨) logical or
 
 
