@@ -1,8 +1,8 @@
 body {
   background: #000033;
   color: White;
-  font-family: 'Liberation Mono', 'Courier New';
-  font-size: 1em;
+  font-family: 'Liberation Mono', monospace;
+  font-size: 16px;
   line-height: 1.6;
   margin-left: 60px;
   margin-right: 60px;
