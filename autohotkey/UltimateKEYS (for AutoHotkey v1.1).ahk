@@ -1,6 +1,6 @@
 #requires AutoHotkey v1.1
 
-; UltimateKEYS (for AutoHotkey v1.1).ahk - 2023-07-15
+; UltimateKEYS (for AutoHotkey v1.1).ahk - 2023-09-05
 
 ; Website :  www.ultimatekeys.info (pieter-degroote.github.io/UltimateKEYS/)
 
@@ -69,7 +69,6 @@ cmpAcuteAccent.item["y"] := "{u+00fd}"  ; (ý) y with acute
 cmpAcuteAccent.item["Y"] := "{u+00dd}"  ; (Ý) Y with acute
 cmpAcuteAccent.item["z"] := "{u+017a}"  ; (ź) z with acute
 cmpAcuteAccent.item["Z"] := "{u+0179}"  ; (Ź) Z with acute
-cmpAcuteAccent.item[" "] := "{u+00b4}"  ; (´) acute accent
 
 
 ; Compose :  Grave Accent (`)
@@ -91,7 +90,6 @@ cmpGraveAccent.item["w"] := "{u+1e81}"  ; (ẁ) w with grave
 cmpGraveAccent.item["W"] := "{u+1e80}"  ; (Ẁ) W with grave
 cmpGraveAccent.item["y"] := "{u+1ef3}"  ; (ỳ) y with grave
 cmpGraveAccent.item["Y"] := "{u+1ef2}"  ; (Ỳ) Y with grave
-cmpGraveAccent.item[" "] := "{u+02cb}"  ; (ˋ) grave accent (modifier)
 
 
 ; Compose :  Diaeresis (")
@@ -116,7 +114,6 @@ cmpDiaeresis.item["x"] := "{u+1e8d}"  ; (ẍ) x with diaeresis
 cmpDiaeresis.item["X"] := "{u+1e8c}"  ; (Ẍ) X with diaeresis
 cmpDiaeresis.item["y"] := "{u+00ff}"  ; (ÿ) y with diaeresis
 cmpDiaeresis.item["Y"] := "{u+0178}"  ; (Ÿ) Y with diaeresis
-cmpDiaeresis.item[" "] := "{u+00a8}"  ; (¨) diaeresis
 
 
 ; Compose :  Circumflex Accent (c)
@@ -148,7 +145,6 @@ cmpCircumflex.item["y"] := "{u+0177}"  ; (ŷ) y with circumflex
 cmpCircumflex.item["Y"] := "{u+0176}"  ; (Ŷ) Y with circumflex
 cmpCircumflex.item["z"] := "{u+1e91}"  ; (ẑ) z with circumflex
 cmpCircumflex.item["Z"] := "{u+1e90}"  ; (Ẑ) Z with circumflex
-cmpCircumflex.item[" "] := "{u+02c6}"  ; (ˆ) circumflex accent (modifier)
 
 
 ; Compose :  Tilde (~)
@@ -172,7 +168,6 @@ cmpTilde.item["v"] := "{u+1e7d}"  ; (ṽ) v with tilde
 cmpTilde.item["V"] := "{u+1e7c}"  ; (Ṽ) V with tilde
 cmpTilde.item["y"] := "{u+1ef9}"  ; (ỹ) y with tilde
 cmpTilde.item["Y"] := "{u+1ef8}"  ; (Ỹ) Y with tilde
-cmpTilde.item[" "] := "{u+02dc}"  ; (˜) small tilde
 
 
 ; Compose :  Cedilla and Ogonek (,)
@@ -210,8 +205,6 @@ cmpCedillaOgonek.item["t"] := "{u+0163}"  ; (ţ) t with cedilla
 cmpCedillaOgonek.item["T"] := "{u+0162}"  ; (Ţ) T with cedilla
 cmpCedillaOgonek.item["u"] := "{u+0173}"  ; (ų) u with ogonek
 cmpCedillaOgonek.item["U"] := "{u+0172}"  ; (Ų) U with ogonek
-cmpCedillaOgonek.item["."] := "{u+02db}"  ; (˛) ogonek
-cmpCedillaOgonek.item[" "] := "{u+00b8}"  ; (¸) cedilla
 
 
 ; Compose :  Caron (v)
@@ -252,7 +245,6 @@ cmpCaron.item["z"] := "{u+017e}"  ; (ž) z with caron
 cmpCaron.item["Z"] := "{u+017d}"  ; (Ž) Z with caron
 cmpCaron.item["3"] := "{u+01ef}"  ; (ǯ) small letter ezh with caron
 cmpCaron.item["#"] := "{u+01ee}"  ; (Ǯ) capital letter ezh with caron
-cmpCaron.item[" "] := "{u+02c7}"  ; (ˇ) caron
 
 
 ; Compose :  Dot Above (.)
@@ -354,7 +346,6 @@ cmpMacronStroke.item["y"] := "{u+0233}"  ; (ȳ) y with macron
 cmpMacronStroke.item["Y"] := "{u+0232}"  ; (Ȳ) Y with macron
 cmpMacronStroke.item["z"] := "{u+01b6}"  ; (ƶ) z with stroke
 cmpMacronStroke.item["Z"] := "{u+01b5}"  ; (Ƶ) Z with stroke
-cmpMacronStroke.item[" "] := "{u+00af}"  ; (¯) macron
 
 
 ; Compose :  Macron and Stroke (additional) (_)
@@ -434,7 +425,6 @@ cmpBreveSpecial.item["y"] := "{u+021d}"  ; (ȝ) small letter yogh
 cmpBreveSpecial.item["Y"] := "{u+021c}"  ; (Ȝ) capital letter yogh
 cmpBreveSpecial.item["3"] := "{u+0292}"  ; (ʒ) small letter ezh
 cmpBreveSpecial.item["#"] := "{u+01b7}"  ; (Ʒ) capital letter ezh
-cmpBreveSpecial.item[" "] := "{u+02d8}"  ; (˘) breve
 
 
 ; Compose :  Double Acute Accent (=)
@@ -444,7 +434,6 @@ cmpDoubleAcute.item["o"] := "{u+0151}"  ; (ő) o with double acute
 cmpDoubleAcute.item["O"] := "{u+0150}"  ; (Ő) O with double acute
 cmpDoubleAcute.item["u"] := "{u+0171}"  ; (ű) u with double acute
 cmpDoubleAcute.item["U"] := "{u+0170}"  ; (Ű) U with double acute
-cmpDoubleAcute.item[" "] := "{u+02dd}"  ; (˝) double acute accent
 
 
 ; Compose :  Hook and Horn (h)
@@ -509,8 +498,6 @@ cmpSmallF.item["r"] := "{u+027e}"  ; (ɾ) r with fishhook
 cmpSmallF.item["t"] := "{u+0288}"  ; (ʈ) t with retroflex hook
 cmpSmallF.item["T"] := "{u+01ae}"  ; (Ʈ) T with retroflex hook
 cmpSmallF.item["v"] := "{u+2c71}"  ; (ⱱ) v with right hook
-cmpSmallF.item["w"] := "{u+2c73}"  ; (ⱳ) w with right hook
-cmpSmallF.item["W"] := "{u+2c72}"  ; (Ⱳ) W with right hook
 cmpSmallF.item["z"] := "{u+0290}"  ; (ʐ) z with retroflex hook
 
 
@@ -626,7 +613,6 @@ cmpCurrency.item["W"] := "{u+20a9}"  ; (₩) South Korean won
 cmpCurrency.item["x"] := "{u+00a4}"  ; (¤) currency sign
 cmpCurrency.item["y"] := "{u+00a5}"  ; (¥) yen sign
 cmpCurrency.item["Y"] := "{u+00a5}"  ; (¥) yen sign
-cmpCurrency.item[" "] := "{u+00a4}"  ; (¤) currency sign
 
 
 ; Compose :  Greek Alphabet (g)
@@ -767,8 +753,8 @@ cmpSpace.item["8"] := "{u+200a}"  ; hair space
 cmpSpace.item["9"] := "{u+2007}"  ; figure space
 cmpSpace.item["0"] := "{u+200b}"  ; zero-width space (ZWSP)
 cmpSpace.item["m"] := "{u+205f}"  ; medium mathematical space (MMSP)
+cmpSpace.item["n"] := "{u+202f}"  ; narrow no-break space (NNBSP)
 cmpSpace.item[" "] := "{u+00a0}"  ; non-breaking space (NBSP)
-cmpSpace.item["."] := "{u+202f}"  ; narrow no-break space (NNBSP)
 cmpMacronStroke.item["2"] := "{u+2013}"  ; (–) en dash
 cmpMacronStroke.item["3"] := "{u+2014}"  ; (—) em dash
 cmpMacronStroke.item["4"] := "{u+2015}"  ; (―) horizontal bar
@@ -980,7 +966,6 @@ cmpStroke.item["/"] := "{u+00f7}"        ; (÷) division sign
 cmpAsterisk.item["o"] := "{u+00b0}"      ; (°) degree sign
 cmpRingAbove.item["*"] := "{u+00b0}"     ; (°) degree sign
 cmpDotAbove.item["."] := "{u+00b7}"      ; (·) middle dot
-cmpDotAbove.item[" "] := "{u+00b7}"      ; (·) middle dot
 cmpDotAbove.item["3"] := "{u+2026}"      ; (…) horizontal ellipsis
 cmpArrow.item["-"] := "{u+00aa}"         ; (ª) feminine ordinal indicator (Spanish, Portuguese, Italian, Galician)
 cmpRingAbove.item["-"] := "{u+00ba}"     ; (º) masculine ordinal indicator (Spanish, Portuguese, Italian, Galician)

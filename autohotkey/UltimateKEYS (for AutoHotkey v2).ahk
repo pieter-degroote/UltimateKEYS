@@ -1,6 +1,6 @@
 #requires AutoHotkey v2
 
-; UltimateKEYS (for AutoHotkey v2).ahk - 2023-07-15
+; UltimateKEYS (for AutoHotkey v2).ahk - 2023-09-05
 
 ; Website :  www.ultimatekeys.info (pieter-degroote.github.io/UltimateKEYS/)
 
@@ -70,7 +70,6 @@ cmpAcuteAccent["y"] := "{u+00fd}"  ; (ý) y with acute
 cmpAcuteAccent["Y"] := "{u+00dd}"  ; (Ý) Y with acute
 cmpAcuteAccent["z"] := "{u+017a}"  ; (ź) z with acute
 cmpAcuteAccent["Z"] := "{u+0179}"  ; (Ź) Z with acute
-cmpAcuteAccent[" "] := "{u+00b4}"  ; (´) acute accent
 
 
 ; Compose :  Grave Accent (`)
@@ -92,7 +91,6 @@ cmpGraveAccent["w"] := "{u+1e81}"  ; (ẁ) w with grave
 cmpGraveAccent["W"] := "{u+1e80}"  ; (Ẁ) W with grave
 cmpGraveAccent["y"] := "{u+1ef3}"  ; (ỳ) y with grave
 cmpGraveAccent["Y"] := "{u+1ef2}"  ; (Ỳ) Y with grave
-cmpGraveAccent[" "] := "{u+02cb}"  ; (ˋ) grave accent (modifier)
 
 
 ; Compose :  Diaeresis (")
@@ -117,7 +115,6 @@ cmpDiaeresis["x"] := "{u+1e8d}"  ; (ẍ) x with diaeresis
 cmpDiaeresis["X"] := "{u+1e8c}"  ; (Ẍ) X with diaeresis
 cmpDiaeresis["y"] := "{u+00ff}"  ; (ÿ) y with diaeresis
 cmpDiaeresis["Y"] := "{u+0178}"  ; (Ÿ) Y with diaeresis
-cmpDiaeresis[" "] := "{u+00a8}"  ; (¨) diaeresis
 
 
 ; Compose :  Circumflex Accent (c)
@@ -149,7 +146,6 @@ cmpCircumflex["y"] := "{u+0177}"  ; (ŷ) y with circumflex
 cmpCircumflex["Y"] := "{u+0176}"  ; (Ŷ) Y with circumflex
 cmpCircumflex["z"] := "{u+1e91}"  ; (ẑ) z with circumflex
 cmpCircumflex["Z"] := "{u+1e90}"  ; (Ẑ) Z with circumflex
-cmpCircumflex[" "] := "{u+02c6}"  ; (ˆ) circumflex accent (modifier)
 
 
 ; Compose :  Tilde (~)
@@ -173,7 +169,6 @@ cmpTilde["v"] := "{u+1e7d}"  ; (ṽ) v with tilde
 cmpTilde["V"] := "{u+1e7c}"  ; (Ṽ) V with tilde
 cmpTilde["y"] := "{u+1ef9}"  ; (ỹ) y with tilde
 cmpTilde["Y"] := "{u+1ef8}"  ; (Ỹ) Y with tilde
-cmpTilde[" "] := "{u+02dc}"  ; (˜) small tilde
 
 
 ; Compose :  Cedilla and Ogonek (,)
@@ -211,8 +206,6 @@ cmpCedillaOgonek["t"] := "{u+0163}"  ; (ţ) t with cedilla
 cmpCedillaOgonek["T"] := "{u+0162}"  ; (Ţ) T with cedilla
 cmpCedillaOgonek["u"] := "{u+0173}"  ; (ų) u with ogonek
 cmpCedillaOgonek["U"] := "{u+0172}"  ; (Ų) U with ogonek
-cmpCedillaOgonek["."] := "{u+02db}"  ; (˛) ogonek
-cmpCedillaOgonek[" "] := "{u+00b8}"  ; (¸) cedilla
 
 
 ; Compose :  Caron (v)
@@ -253,7 +246,6 @@ cmpCaron["z"] := "{u+017e}"  ; (ž) z with caron
 cmpCaron["Z"] := "{u+017d}"  ; (Ž) Z with caron
 cmpCaron["3"] := "{u+01ef}"  ; (ǯ) small letter ezh with caron
 cmpCaron["#"] := "{u+01ee}"  ; (Ǯ) capital letter ezh with caron
-cmpCaron[" "] := "{u+02c7}"  ; (ˇ) caron
 
 
 ; Compose :  Dot Above (.)
@@ -355,7 +347,6 @@ cmpMacronStroke["y"] := "{u+0233}"  ; (ȳ) y with macron
 cmpMacronStroke["Y"] := "{u+0232}"  ; (Ȳ) Y with macron
 cmpMacronStroke["z"] := "{u+01b6}"  ; (ƶ) z with stroke
 cmpMacronStroke["Z"] := "{u+01b5}"  ; (Ƶ) Z with stroke
-cmpMacronStroke[" "] := "{u+00af}"  ; (¯) macron
 
 
 ; Compose :  Macron and Stroke (additional) (_)
@@ -435,7 +426,6 @@ cmpBreveSpecial["y"] := "{u+021d}"  ; (ȝ) small letter yogh
 cmpBreveSpecial["Y"] := "{u+021c}"  ; (Ȝ) capital letter yogh
 cmpBreveSpecial["3"] := "{u+0292}"  ; (ʒ) small letter ezh
 cmpBreveSpecial["#"] := "{u+01b7}"  ; (Ʒ) capital letter ezh
-cmpBreveSpecial[" "] := "{u+02d8}"  ; (˘) breve
 
 
 ; Compose :  Double Acute Accent (=)
@@ -445,7 +435,6 @@ cmpDoubleAcute["o"] := "{u+0151}"  ; (ő) o with double acute
 cmpDoubleAcute["O"] := "{u+0150}"  ; (Ő) O with double acute
 cmpDoubleAcute["u"] := "{u+0171}"  ; (ű) u with double acute
 cmpDoubleAcute["U"] := "{u+0170}"  ; (Ű) U with double acute
-cmpDoubleAcute[" "] := "{u+02dd}"  ; (˝) double acute accent
 
 
 ; Compose :  Hook and Horn (h)
@@ -510,8 +499,6 @@ cmpSmallF["r"] := "{u+027e}"  ; (ɾ) r with fishhook
 cmpSmallF["t"] := "{u+0288}"  ; (ʈ) t with retroflex hook
 cmpSmallF["T"] := "{u+01ae}"  ; (Ʈ) T with retroflex hook
 cmpSmallF["v"] := "{u+2c71}"  ; (ⱱ) v with right hook
-cmpSmallF["w"] := "{u+2c73}"  ; (ⱳ) w with right hook
-cmpSmallF["W"] := "{u+2c72}"  ; (Ⱳ) W with right hook
 cmpSmallF["z"] := "{u+0290}"  ; (ʐ) z with retroflex hook
 
 
@@ -627,7 +614,6 @@ cmpCurrency["W"] := "{u+20a9}"  ; (₩) South Korean won
 cmpCurrency["x"] := "{u+00a4}"  ; (¤) currency sign
 cmpCurrency["y"] := "{u+00a5}"  ; (¥) yen sign
 cmpCurrency["Y"] := "{u+00a5}"  ; (¥) yen sign
-cmpCurrency[" "] := "{u+00a4}"  ; (¤) currency sign
 
 
 ; Compose :  Greek Alphabet (g)
@@ -768,8 +754,8 @@ cmpSpace["8"] := "{u+200a}"  ; hair space
 cmpSpace["9"] := "{u+2007}"  ; figure space
 cmpSpace["0"] := "{u+200b}"  ; zero-width space (ZWSP)
 cmpSpace["m"] := "{u+205f}"  ; medium mathematical space (MMSP)
+cmpSpace["n"] := "{u+202f}"  ; narrow no-break space (NNBSP)
 cmpSpace[" "] := "{u+00a0}"  ; non-breaking space (NBSP)
-cmpSpace["."] := "{u+202f}"  ; narrow no-break space (NNBSP)
 cmpMacronStroke["2"] := "{u+2013}"  ; (–) en dash
 cmpMacronStroke["3"] := "{u+2014}"  ; (—) em dash
 cmpMacronStroke["4"] := "{u+2015}"  ; (―) horizontal bar
@@ -981,7 +967,6 @@ cmpStroke["/"] := "{u+00f7}"        ; (÷) division sign
 cmpAsterisk["o"] := "{u+00b0}"      ; (°) degree sign
 cmpRingAbove["*"] := "{u+00b0}"     ; (°) degree sign
 cmpDotAbove["."] := "{u+00b7}"      ; (·) middle dot
-cmpDotAbove[" "] := "{u+00b7}"      ; (·) middle dot
 cmpDotAbove["3"] := "{u+2026}"      ; (…) horizontal ellipsis
 cmpArrow["-"] := "{u+00aa}"         ; (ª) feminine ordinal indicator (Spanish, Portuguese, Italian, Galician)
 cmpRingAbove["-"] := "{u+00ba}"     ; (º) masculine ordinal indicator (Spanish, Portuguese, Italian, Galician)
