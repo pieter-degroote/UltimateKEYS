@@ -1,6 +1,6 @@
 include "%L"
 
-# UltimateKEYS - 2023-07-15  (~/.XCompose)
+# UltimateKEYS - 2023-09-05  (~/.XCompose)
 
 # Website :  www.ultimatekeys.info (pieter-degroote.github.io/UltimateKEYS/)
 
@@ -56,7 +56,6 @@ include "%L"
 <Multi_key> <apostrophe> <Y> : "Ý"  U00DD  # Y with acute
 <Multi_key> <apostrophe> <z> : "ź"  U017A  # z with acute
 <Multi_key> <apostrophe> <Z> : "Ź"  U0179  # Z with acute
-<Multi_key> <apostrophe> <space> : "´"  U00B4  # acute accent
 
 
 # Grave Accent
@@ -77,7 +76,6 @@ include "%L"
 <Multi_key> <grave> <W> : "Ẁ"  U1E80  # W with grave
 <Multi_key> <grave> <y> : "ỳ"  U1EF3  # y with grave
 <Multi_key> <grave> <Y> : "Ỳ"  U1EF2  # Y with grave
-<Multi_key> <grave> <space> : "ˋ"  U02CB  # grave accent (modifier)
 
 
 # Diaeresis
@@ -101,7 +99,6 @@ include "%L"
 <Multi_key> <quotedbl> <X> : "Ẍ"  U1E8C  # X with diaeresis
 <Multi_key> <quotedbl> <y> : "ÿ"  U00FF  # y with diaeresis
 <Multi_key> <quotedbl> <Y> : "Ÿ"  U0178  # Y with diaeresis
-<Multi_key> <quotedbl> <space> : "¨"  U00A8  # diaeresis
 
 
 # Circumflex Accent
@@ -132,7 +129,6 @@ include "%L"
 <Multi_key> <c> <Y> : "Ŷ"  U0176  # Y with circumflex
 <Multi_key> <c> <z> : "ẑ"  U1E91  # z with circumflex
 <Multi_key> <c> <Z> : "Ẑ"  U1E90  # Z with circumflex
-<Multi_key> <c> <space> : "ˆ"  U02C6  # circumflex accent (modifier)
 
 
 # Tilde
@@ -155,7 +151,6 @@ include "%L"
 <Multi_key> <asciitilde> <V> : "Ṽ"  U1E7C  # V with tilde
 <Multi_key> <asciitilde> <y> : "ỹ"  U1EF9  # y with tilde
 <Multi_key> <asciitilde> <Y> : "Ỹ"  U1EF8  # Y with tilde
-<Multi_key> <asciitilde> <space> : "˜"  U02DC  # small tilde
 
 
 # Cedilla and Ogonek
@@ -192,8 +187,6 @@ include "%L"
 <Multi_key> <comma> <T> : "Ţ"  U0162  # T with cedilla
 <Multi_key> <comma> <u> : "ų"  U0173  # u with ogonek
 <Multi_key> <comma> <U> : "Ų"  U0172  # U with ogonek
-<Multi_key> <comma> <period> : "˛"  U02DB  # ogonek
-<Multi_key> <comma> <space>  : "¸"  U00B8  # cedilla
 
 
 # Caron
@@ -233,7 +226,6 @@ include "%L"
 <Multi_key> <v> <Z> : "Ž"  U017D  # Z with caron
 <Multi_key> <v> <3>          : "ǯ"  U01EF  # small letter ezh with caron
 <Multi_key> <v> <numbersign> : "Ǯ"  U01EE  # capital letter ezh with caron
-<Multi_key> <v> <space>      : "ˇ"  U02C7  # caron
 
 
 # Dot Above
@@ -332,7 +324,6 @@ include "%L"
 <Multi_key> <minus> <Y> : "Ȳ"  U0232  # Y with macron
 <Multi_key> <minus> <z> : "ƶ"  U01B6  # z with stroke
 <Multi_key> <minus> <Z> : "Ƶ"  U01B5  # Z with stroke
-<Multi_key> <minus> <space> : "¯"  U00AF  # macron
 
 
 # Macron and Stroke (additional)
@@ -409,7 +400,6 @@ include "%L"
 <Multi_key> <b> <Y> : "Ȝ"  U021C  # capital letter yogh
 <Multi_key> <b> <3>          : "ʒ"  U0292  # small letter ezh
 <Multi_key> <b> <numbersign> : "Ʒ"  U01B7  # capital letter ezh
-<Multi_key> <b> <space>      : "˘"  U02D8  # breve
 
 
 # Double Acute Accent
@@ -418,7 +408,6 @@ include "%L"
 <Multi_key> <equal> <O> : "Ő"  U0150  # O with double acute
 <Multi_key> <equal> <u> : "ű"  U0171  # u with double acute
 <Multi_key> <equal> <U> : "Ű"  U0170  # U with double acute
-<Multi_key> <equal> <space> : "˝"  U02DD  # double acute accent
 
 
 # Hook and Horn
@@ -481,8 +470,6 @@ include "%L"
 <Multi_key> <f> <t> : "ʈ"  U0288  # t with retroflex hook
 <Multi_key> <f> <T> : "Ʈ"  U01AE  # T with retroflex hook
 <Multi_key> <f> <v> : "ⱱ"  U2C71  # v with right hook
-<Multi_key> <f> <w> : "ⱳ"  U2C73  # w with right hook
-<Multi_key> <f> <W> : "Ⱳ"  U2C72  # W with right hook
 <Multi_key> <f> <z> : "ʐ"  U0290  # z with retroflex hook
 
 
@@ -595,7 +582,6 @@ include "%L"
 <Multi_key> <dollar> <x> : "¤"  U00A4  # currency sign
 <Multi_key> <dollar> <y> : "¥"  U00A5  # yen sign
 <Multi_key> <dollar> <Y> : "¥"  U00A5  # yen sign
-<Multi_key> <dollar> <space> : "¤"  U00A4  # currency sign
 
 
 # Greek Alphabet
@@ -731,8 +717,8 @@ include "%L"
 <Multi_key> <space> <9> : " "  U2007  # figure space
 <Multi_key> <space> <0> : "​"  U200B  # zero-width space (ZWSP)
 <Multi_key> <space> <m> : " "  U205F  # medium mathematical space (MMSP)
+<Multi_key> <space> <n> : " "  U202F  # narrow no-break space (NNBSP)
 <Multi_key> <space> <space>  : " "  U00A0  # non-breaking space (NBSP)
-<Multi_key> <space> <period> : " "  U202F  # narrow no-break space (NNBSP)
 <Multi_key> <minus> <2> : "–"  U2013  # en dash
 <Multi_key> <minus> <3> : "—"  U2014  # em dash
 <Multi_key> <minus> <4> : "―"  U2015  # horizontal bar
@@ -830,7 +816,6 @@ include "%L"
 <Multi_key> <asterisk> <o>            : "°"  U00B0  # degree sign
 <Multi_key> <o> <asterisk>            : "°"  U00B0  # degree sign
 <Multi_key> <period> <period>         : "·"  U00B7  # middle dot
-<Multi_key> <period> <space>          : "·"  U00B7  # middle dot
 <Multi_key> <period> <3>              : "…"  U2026  # horizontal ellipsis
 <Multi_key> <a> <minus>               : "ª"  U00AA  # feminine ordinal indicator (Spanish, Portuguese, Italian, Galician)
 <Multi_key> <o> <minus>               : "º"  U00BA  # masculine ordinal indicator (Spanish, Portuguese, Italian, Galician)
