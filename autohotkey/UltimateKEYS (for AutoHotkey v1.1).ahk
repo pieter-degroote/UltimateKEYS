@@ -1,6 +1,6 @@
 #requires AutoHotkey v1.1
 
-; UltimateKEYS (for AutoHotkey v1.1).ahk - 2023-09-05
+; UltimateKEYS (for AutoHotkey v1.1).ahk - 2023-09-08
 
 ; Website :  www.ultimatekeys.info (pieter-degroote.github.io/UltimateKEYS/)
 
@@ -1030,6 +1030,7 @@ cmpCedillaOgonek.item[chr(34)] := "{u+201e}"  ; („) double low-9 quotation mar
 cmpDiaeresis.item[","] := "{u+201e}"          ; („) double low-9 quotation mark
 cmpCedillaOgonek.item["'"] := "{u+201a}"      ; (‚) single low-9 quotation mark
 cmpAcuteAccent.item[","] := "{u+201a}"        ; (‚) single low-9 quotation mark
+cmpCedillaOgonek.item[","] := "{u+201a}"      ; (‚) single low-9 quotation mark
 cmpDiaeresis.item["["] := "{u+201c}"          ; (“) left double quotation mark
 cmpBracketLeft.item[chr(34)] := "{u+201c}"    ; (“) left double quotation mark
 cmpDiaeresis.item["]"] := "{u+201d}"          ; (”) right double quotation mark
