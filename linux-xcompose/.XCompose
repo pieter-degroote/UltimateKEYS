@@ -1,6 +1,6 @@
 include "%L"
 
-# UltimateKEYS - 2023-09-05  (~/.XCompose)
+# UltimateKEYS - 2023-09-08  (~/.XCompose)
 
 # Website :  www.ultimatekeys.info (pieter-degroote.github.io/UltimateKEYS/)
 
@@ -718,7 +718,7 @@ include "%L"
 <Multi_key> <space> <0> : "​"  U200B  # zero-width space (ZWSP)
 <Multi_key> <space> <m> : " "  U205F  # medium mathematical space (MMSP)
 <Multi_key> <space> <n> : " "  U202F  # narrow no-break space (NNBSP)
-<Multi_key> <space> <space>  : " "  U00A0  # non-breaking space (NBSP)
+<Multi_key> <space> <space> : " "  U00A0  # non-breaking space (NBSP)
 <Multi_key> <minus> <2> : "–"  U2013  # en dash
 <Multi_key> <minus> <3> : "—"  U2014  # em dash
 <Multi_key> <minus> <4> : "―"  U2015  # horizontal bar
@@ -959,6 +959,7 @@ include "%L"
 <Multi_key> <quotedbl> <comma>          : "„"  U201E  # double low-9 quotation mark
 <Multi_key> <comma> <apostrophe>        : "‚"  U201A  # single low-9 quotation mark
 <Multi_key> <apostrophe> <comma>        : "‚"  U201A  # single low-9 quotation mark
+<Multi_key> <comma> <comma>             : "‚"  U201A  # single low-9 quotation mark
 <Multi_key> <quotedbl> <bracketleft>    : "“"  U201C  # left double quotation mark
 <Multi_key> <bracketleft> <quotedbl>    : "“"  U201C  # left double quotation mark
 <Multi_key> <quotedbl> <bracketright>   : "”"  U201D  # right double quotation mark
