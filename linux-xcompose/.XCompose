@@ -1,6 +1,6 @@
 include "%L"
 
-# UltimateKEYS - 2023-09-08  (~/.XCompose)
+# UltimateKEYS - 2023-12-12  (~/.XCompose)
 
 # Website :  www.ultimatekeys.info (pieter-degroote.github.io/UltimateKEYS/)
 
@@ -730,7 +730,7 @@ include "%L"
 <Multi_key> <q> <3> : " "  U2001  # em quad
 
 
-# Arrows and Pointers
+# Arrows and Pointing Triangles
 
 <Multi_key> <a> <w> : "▲"  U25B2  # black up-pointing triangle
 <Multi_key> <a> <a> : "◀"  U25C0  # black left-pointing triangle
@@ -799,14 +799,6 @@ include "%L"
 <Multi_key> <s> <o> : "§"  U00A7  # section sign
 <Multi_key> <S> <o> : "§"  U00A7  # section sign
 <Multi_key> <t> <m> : "™"  U2122  # trademark symbol
-<Multi_key> <semicolon> <b>           : "•"  U2022  # bullet
-<Multi_key> <semicolon> <semicolon>   : "•"  U2022  # bullet
-<Multi_key> <semicolon> <t>           : "‣"  U2023  # triangular bullet
-<Multi_key> <semicolon> <greater>     : "‣"  U2023  # triangular bullet
-<Multi_key> <semicolon> <h>           : "⁃"  U2043  # hyphen bullet
-<Multi_key> <semicolon> <minus>       : "⁃"  U2043  # hyphen bullet
-<Multi_key> <semicolon> <w>           : "◦"  U25E6  # white bullet
-<Multi_key> <semicolon> <o>           : "◦"  U25E6  # white bullet
 <Multi_key> <apostrophe> <1>          : "′"  U2032  # prime
 <Multi_key> <apostrophe> <2>          : "″"  U2033  # double prime
 <Multi_key> <apostrophe> <3>          : "‴"  U2034  # triple prime
@@ -839,6 +831,25 @@ include "%L"
 <Multi_key> <less> <plus>             : "⩽"  U2A7D  # less-than or slanted equal to
 <Multi_key> <greater> <plus>          : "⩾"  U2A7E  # greater-than or slanted equal to
 <Multi_key> <asciitilde> <asciitilde> : "≈"  U2248  # almost equal to
+
+
+# Bullets and Small Geometric Shapes
+
+<Multi_key> <semicolon> <b> : "•"  U2022  # bullet
+<Multi_key> <semicolon> <o> : "◦"  U25E6  # white bullet
+<Multi_key> <semicolon> <h> : "⁃"  U2043  # hyphen bullet
+<Multi_key> <semicolon> <t> : "‣"  U2023  # triangular bullet
+<Multi_key> <semicolon> <q> : "▪"  U25AA  # black small square
+<Multi_key> <semicolon> <r> : "▫"  U25AB  # white small square
+<Multi_key> <semicolon> <w> : "▴"  U25B4  # black up-pointing small triangle
+<Multi_key> <semicolon> <a> : "◂"  U25C2  # black left-pointing small triangle
+<Multi_key> <semicolon> <s> : "▾"  U25BE  # black down-pointing small triangle
+<Multi_key> <semicolon> <d> : "▸"  U25B8  # black right-pointing small triangle
+<Multi_key> <semicolon> <i> : "▵"  U25B5  # white up-pointing small triangle
+<Multi_key> <semicolon> <j> : "◃"  U25C3  # white left-pointing small triangle
+<Multi_key> <semicolon> <k> : "▿"  U25BF  # white down-pointing small triangle
+<Multi_key> <semicolon> <l> : "▹"  U25B9  # white right-pointing small triangle
+<Multi_key> <semicolon> <semicolon> : "•"  U2022  # bullet
 
 
 # Various Symbols
@@ -1182,6 +1193,8 @@ include "%L"
 <Multi_key> <2> <t> : "⚠"  U26A0  # warning sign
 <Multi_key> <2> <u> : "⚡"  U26A1  # high voltage sign
 <Multi_key> <2> <v> : "⛔"  U26D4  # no entry
+<Multi_key> <2> <w> : "⌚"  U231A  # watch
+<Multi_key> <2> <x> : "⌛"  U231B  # hourglass
 
 <Multi_key> <3> <a> : "✁"  U2701  # upper blade scissors
 <Multi_key> <3> <b> : "✂"  U2702  # black scissors
