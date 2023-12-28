@@ -1,6 +1,6 @@
 include "%L"
 
-# UltimateKEYS - 2023-12-12  (~/.XCompose)
+# UltimateKEYS - 2023-12-28  (~/.XCompose)
 
 # Website :  www.ultimatekeys.info (pieter-degroote.github.io/UltimateKEYS/)
 
@@ -840,7 +840,7 @@ include "%L"
 <Multi_key> <semicolon> <h> : "⁃"  U2043  # hyphen bullet
 <Multi_key> <semicolon> <t> : "‣"  U2023  # triangular bullet
 <Multi_key> <semicolon> <q> : "▪"  U25AA  # black small square
-<Multi_key> <semicolon> <r> : "▫"  U25AB  # white small square
+<Multi_key> <semicolon> <u> : "▫"  U25AB  # white small square
 <Multi_key> <semicolon> <w> : "▴"  U25B4  # black up-pointing small triangle
 <Multi_key> <semicolon> <a> : "◂"  U25C2  # black left-pointing small triangle
 <Multi_key> <semicolon> <s> : "▾"  U25BE  # black down-pointing small triangle
