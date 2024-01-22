@@ -1,6 +1,6 @@
 include "%L"
 
-# UltimateKEYS - 2023-12-28  (~/.XCompose)
+# UltimateKEYS - 2024-01-22  (~/.XCompose)
 
 # Website :  www.ultimatekeys.info (pieter-degroote.github.io/UltimateKEYS/)
 
@@ -799,6 +799,7 @@ include "%L"
 <Multi_key> <s> <o> : "§"  U00A7  # section sign
 <Multi_key> <S> <o> : "§"  U00A7  # section sign
 <Multi_key> <t> <m> : "™"  U2122  # trademark symbol
+<Multi_key> <bar> <bar>               : "‖"  U2016  # double vertical line
 <Multi_key> <apostrophe> <1>          : "′"  U2032  # prime
 <Multi_key> <apostrophe> <2>          : "″"  U2033  # double prime
 <Multi_key> <apostrophe> <3>          : "‴"  U2034  # triple prime
@@ -807,8 +808,9 @@ include "%L"
 <Multi_key> <slash> <slash>           : "÷"  U00F7  # division sign
 <Multi_key> <asterisk> <o>            : "°"  U00B0  # degree sign
 <Multi_key> <o> <asterisk>            : "°"  U00B0  # degree sign
-<Multi_key> <period> <period>         : "·"  U00B7  # middle dot
+<Multi_key> <period> <minus>          : "·"  U00B7  # middle dot
 <Multi_key> <period> <3>              : "…"  U2026  # horizontal ellipsis
+<Multi_key> <period> <period>         : "…"  U2026  # horizontal ellipsis
 <Multi_key> <a> <minus>               : "ª"  U00AA  # feminine ordinal indicator (Spanish, Portuguese, Italian, Galician)
 <Multi_key> <o> <minus>               : "º"  U00BA  # masculine ordinal indicator (Spanish, Portuguese, Italian, Galician)
 <Multi_key> <exclam> <exclam>         : "¡"  U00A1  # inverted exclamation mark
@@ -849,6 +851,10 @@ include "%L"
 <Multi_key> <semicolon> <j> : "◃"  U25C3  # white left-pointing small triangle
 <Multi_key> <semicolon> <k> : "▿"  U25BF  # white down-pointing small triangle
 <Multi_key> <semicolon> <l> : "▹"  U25B9  # white right-pointing small triangle
+<Multi_key> <semicolon> <z> : "■"  U25A0  # black square
+<Multi_key> <semicolon> <x> : "□"  U25A1  # white square
+<Multi_key> <semicolon> <c> : "◆"  U25C6  # black diamond
+<Multi_key> <semicolon> <v> : "◇"  U25C7  # white diamond
 <Multi_key> <semicolon> <semicolon> : "•"  U2022  # bullet
 
 
@@ -861,7 +867,8 @@ include "%L"
 <Multi_key> <s> <d> : "⋄"  U22C4  # diamond operator
 <Multi_key> <s> <e> : "℮"  U212E  # estimated symbol
 <Multi_key> <s> <f> : "♀"  U2640  # female sign (Venus)
-<Multi_key> <s> <h> : "Ω"  U2126  # ohm sign (backwards compatibility)
+<Multi_key> <s> <h> : "⌂"  U2302  # house
+<Multi_key> <s> <H> : "Ω"  U2126  # ohm sign (backwards compatibility)
 <Multi_key> <s> <i> : "⌀"  U2300  # diameter sign
 <Multi_key> <s> <l> : "ℓ"  U2113  # script small l
 <Multi_key> <s> <L> : "ℒ"  U2112  # Laplace transform
@@ -929,6 +936,7 @@ include "%L"
 <Multi_key> <m> <6> : "∠"  U2220  # angle symbol
 <Multi_key> <m> <9> : "∟"  U221F  # right angle
 <Multi_key> <m> <0> : "∡"  U2221  # measured angle
+<Multi_key> <m> <comma>     : "∙"  U2219  # bullet operator
 <Multi_key> <m> <plus>      : "⊕"  U2295  # circled plus
 <Multi_key> <m> <minus>     : "⊖"  U2296  # circled minus
 <Multi_key> <m> <asterisk>  : "⊗"  U2297  # circled times
