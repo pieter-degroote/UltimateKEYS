@@ -33,15 +33,20 @@ Stand with the People of Ukraine<br />
 
 <p>&nbsp;</p>
 
-<p><strong>Some of the changes concerning the sources include&nbsp;:</strong></p>
+<h2>Tailored for the following scripting languages and platforms</h2>
 
-<p>AutoHotkey&nbsp;: &nbsp;a new kind of script to achieve the same functions as with MSLKC, all keys and dead key combinations (etc.) have been 'well-documented' in the comments. :)</p>
+<p>AutoHotkey (Win)&nbsp;: &nbsp;a script for AutoHotkey v2/v1.1, all keys and Compose Key sequences (etc.) have been 'well-documented' in the comments. :)</p>
 
-<p>MSKLC&nbsp;: &nbsp;another implementation, now also with comments for all keys.</p>
+<p>MSKLC (Win)&nbsp;: &nbsp;another implementation, without Compose Key.<br />
+Note that this is a slimmed-down version, since MSKLC does not support multiple keystrokes as a sequence for a dead key. That way, a 'Compose Key' is not possible.</p>
 
-<p>Linux&nbsp;: &nbsp;as for now, these versions should have the same functionality as on Windows.<br />
+<p>Linux&nbsp;: &nbsp;this version should have the same functionality as on Windows.<br />
 Two implementations are supported&nbsp;: &nbsp;xkb (xkeyboard-config) and Xmodmap.<br />
 The dead key descriptions are applied via "~/.XCompose" (see also: <a href="https://wiki.debian.org/XCompose" target="_blank">https://wiki.debian.org/XCompose</a>).</p>
+
+<p>'.keylayout' format (macOS, Apple)&nbsp;: &nbsp;an implementation for macOS, without Compose Key.<br />
+Please note that this work is still in its testing stage (see 'Known Issues - Disclaimer' section).<br />
+See on GitHub &nbsp;: &nbsp;<a href="https://github.com/pieter-degroote/UltimateKEYS-testing/tree/master/keylayout" target="_blank">https://github.com/pieter-degroote/UltimateKEYS-testing/tree/master/keylayout</a></p>
 
 <p>Keyboard layout images&nbsp;: &nbsp;<a href="https://pieter-degroote.github.io/UltimateKEYS/layout-generator-urls.html" target="_blank">source images available via keyboard-layout-editor.com</a></p>
 
@@ -49,9 +54,9 @@ The dead key descriptions are applied via "~/.XCompose" (see also: <a href="http
 
 <h2>Latest Changes to the Layout</h2>
 
-<p><strong>For the most recent changes, please see&nbsp;: &nbsp<a href="https://github.com/pieter-degroote/UltimateKEYS/discussions" target="_blank">https://github.com/pieter-degroote/UltimateKEYS/discussions</a><br />
-Special thanks to the user <a href="https://github.com/liegepr" target="_blank">liegepr</a> (<a href="https://github.com/pieter-degroote/UltimateKEYS/discussions/16" target="_blank">#16</a>) for informing me to swap the acute and grave accents on the main layout.<br />
-The former version has moved to the <a href="https://pieter-degroote.github.io/UltimateKEYS-legacy" target="_blank">UltimateKEYS Legacy</a> repository.</strong></p>
+<p>For the most recent changes, please see&nbsp;: &nbsp<a href="https://github.com/pieter-degroote/UltimateKEYS/discussions" target="_blank">https://github.com/pieter-degroote/UltimateKEYS/discussions</a><br />
+The acute and grave accents have been swapped on the main layout (thanks to a proposal from another user).<br />
+The former version has moved to the <a href="https://pieter-degroote.github.io/UltimateKEYS-legacy" target="_blank">UltimateKEYS Legacy</a> repository.</p>
 
 <p>&nbsp;</p>
 
@@ -68,7 +73,7 @@ This move has put some accented letters and symbols on other, and hopefully, mor
 
 <p>&nbsp;</p>
 
-<h2>Previous Changes and Comparison with EurKEY</h2>
+<h2>Other Changes and Comparison with EurKEY</h2>
 
 <p>The ligature œ/Œ has been moved to AltGr+(Shift+)K (corresponds with existing Linux implementations).</p>
 
