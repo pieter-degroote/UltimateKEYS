@@ -2,9 +2,11 @@ KBD	ultkeys	"UltimateKEYS"
 
 COPYRIGHT	"GNU General Public License Version 3"
 
-COMPANY		"github.com/pieter-degroote/UltimateKEYS"
+COMPANY		"ultimatekeys.info"
 
-// Website :  www.ultimatekeys.info (pieter-degroote.github.io/UltimateKEYS/)
+// Website :  https://pieter-degroote.github.io/UltimateKEYS/
+
+// GitHub :   https://github.com/pieter-degroote/UltimateKEYS
 
 LOCALENAME	"en-US"
 
