@@ -1,10 +1,10 @@
 // UltimateKEYS  (/usr/share/X11/xkb/symbols/custom)
 
-// Website :  www.ultimatekeys.info (pieter-degroote.github.io/UltimateKEYS/)
+// Website :  https://pieter-degroote.github.io/UltimateKEYS/
+
+// GitHub :   https://github.com/pieter-degroote/UltimateKEYS
 
 // License :  GNU General Public License Version 3
-
-// GitHub :   github.com/pieter-degroote/UltimateKEYS
 
 
 default partial alphanumeric_keys modifier_keys
