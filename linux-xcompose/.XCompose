@@ -1,12 +1,12 @@
 include "%L"
 
-# UltimateKEYS - 2024-01-22  (~/.XCompose)
+# UltimateKEYS - 2024-06-04  (~/.XCompose)
 
-# Website :  www.ultimatekeys.info (pieter-degroote.github.io/UltimateKEYS/)
+# Website :  https://pieter-degroote.github.io/UltimateKEYS/
+
+# GitHub :   https://github.com/pieter-degroote/UltimateKEYS
 
 # License :  GNU General Public License Version 3
-
-# GitHub :   github.com/pieter-degroote/UltimateKEYS
 
 
 # Compose Key Sequences for UltimateKEYS
@@ -874,8 +874,12 @@ include "%L"
 <Multi_key> <s> <L> : "ℒ"  U2112  # Laplace transform
 <Multi_key> <s> <m> : "♂"  U2642  # male sign (Mars)
 <Multi_key> <s> <M> : "℠"  U2120  # service mark
-<Multi_key> <s> <r> : "℞"  U211E  # prescription take (Recipere)
-<Multi_key> <s> <R> : "℞"  U211E  # prescription take (Recipere)
+<Multi_key> <s> <p> : "℞"  U211E  # prescription take (Recipere)
+<Multi_key> <s> <P> : "℞"  U211E  # prescription take (Recipere)
+<Multi_key> <s> <r> : "℟"  U211F  # response (liturgy)
+<Multi_key> <s> <R> : "℟"  U211F  # response (liturgy)
+<Multi_key> <s> <v> : "℣"  U2123  # versicle (liturgy)
+<Multi_key> <s> <V> : "℣"  U2123  # versicle (liturgy)
 <Multi_key> <s> <x> : "※"  U203B  # reference mark
 <Multi_key> <s> <2> : "♫"  U266B  # beamed eighth notes
 <Multi_key> <s> <3> : "⁂"  U2042  # asterism
