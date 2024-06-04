@@ -1,19 +1,17 @@
 #requires AutoHotkey v2
 
-; UltimateKEYS (for AutoHotkey v2).ahk - 2024-01-22
+; UltimateKEYS (for AutoHotkey v2).ahk - 2024-06-04
 
-; Website :  www.ultimatekeys.info (pieter-degroote.github.io/UltimateKEYS/)
+; Website :  https://pieter-degroote.github.io/UltimateKEYS/
+
+; GitHub :   https://github.com/pieter-degroote/UltimateKEYS
 
 ; License :  GNU General Public License Version 3
 
-; GitHub :   github.com/pieter-degroote/UltimateKEYS
 
-
-; Requirements :
+; Configuration :
 
 ; Keyboard layout (on Windows) :  US QWERTY
-
-; AutoHotkey v2 (www.autohotkey.com)
 
 
 
@@ -817,8 +815,12 @@ cmpSymbols["l"] := "{u+2113}"  ; (ℓ) script small l
 cmpSymbols["L"] := "{u+2112}"  ; (ℒ) Laplace transform
 cmpSymbols["m"] := "{u+2642}"  ; (♂) male sign (Mars)
 cmpSymbols["M"] := "{u+2120}"  ; (℠) service mark
-cmpSymbols["r"] := "{u+211e}"  ; (℞) prescription take (Recipere)
-cmpSymbols["R"] := "{u+211e}"  ; (℞) prescription take (Recipere)
+cmpSymbols["p"] := "{u+211e}"  ; (℞) prescription take (Recipere)
+cmpSymbols["P"] := "{u+211e}"  ; (℞) prescription take (Recipere)
+cmpSymbols["r"] := "{u+211f}"  ; (℟) response (liturgy)
+cmpSymbols["R"] := "{u+211f}"  ; (℟) response (liturgy)
+cmpSymbols["v"] := "{u+2123}"  ; (℣) versicle (liturgy)
+cmpSymbols["V"] := "{u+2123}"  ; (℣) versicle (liturgy)
 cmpSymbols["x"] := "{u+203b}"  ; (※) reference mark
 cmpSymbols["2"] := "{u+266b}"  ; (♫) beamed eighth notes
 cmpSymbols["3"] := "{u+2042}"  ; (⁂) asterism
