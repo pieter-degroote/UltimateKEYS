@@ -1,6 +1,6 @@
 #requires AutoHotkey v2
 
-; UltimateKEYS (for AutoHotkey v2).ahk - 2024-06-04
+; UltimateKEYS (for AutoHotkey v2).ahk - 2024-08-05
 
 ; Website :  https://pieter-degroote.github.io/UltimateKEYS/
 
@@ -435,7 +435,7 @@ cmpDoubleAcute["u"] := "{u+0171}"  ; (ű) u with double acute
 cmpDoubleAcute["U"] := "{u+0170}"  ; (Ű) U with double acute
 
 
-; Compose :  Hook and Horn (h)
+; Compose :  Hook, Horn and Variations (h)
 
 global cmpSmallH := Map()
 cmpSmallH["b"] := "{u+0253}"  ; (ɓ) b with hook
@@ -454,6 +454,8 @@ cmpSmallH["H"] := "{u+a7aa}"  ; (Ɦ) H with hook
 cmpSmallH["j"] := "{u+0267}"  ; (ɧ) small letter heng with hook
 cmpSmallH["k"] := "{u+0199}"  ; (ƙ) k with hook
 cmpSmallH["K"] := "{u+0198}"  ; (Ƙ) K with hook
+cmpSmallH["l"] := "{u+026c}"  ; (ɬ) l with belt
+cmpSmallH["L"] := "{u+a7ad}"  ; (Ɬ) L with belt
 cmpSmallH["m"] := "{u+0271}"  ; (ɱ) m with hook
 cmpSmallH["M"] := "{u+2c6e}"  ; (Ɱ) M with hook
 cmpSmallH["n"] := "{u+0272}"  ; (ɲ) n with left hook
@@ -481,15 +483,17 @@ cmpSmallH["z"] := "{u+0225}"  ; (ȥ) z with hook
 cmpSmallH["Z"] := "{u+0224}"  ; (Ȥ) Z with hook
 
 
-; Compose :  Retroflex Hook, Right Hook, Crossed-Tail and Variations (f)
+; Compose :  Retroflex Hook and Variations (f)
 
 global cmpSmallF := Map()
 cmpSmallF["d"] := "{u+1d91}"  ; (ᶑ) d with hook and tail
 cmpSmallF["e"] := "{u+025d}"  ; (ɝ) small letter reversed open e with hook
+cmpSmallF["f"] := "{u+1d94}"  ; (ᶔ) small letter reversed open e with retroflex hook
 cmpSmallF["g"] := "{u+ab36}"  ; (ꬶ) small letter script g with crossed-tail
 cmpSmallF["h"] := "{u+a727}"  ; (ꜧ) small letter heng
 cmpSmallF["H"] := "{u+a726}"  ; (Ꜧ) capital letter heng
 cmpSmallF["j"] := "{u+029d}"  ; (ʝ) j with crossed-tail
+cmpSmallF["J"] := "{u+a7b2}"  ; (Ʝ) J with crossed-tail
 cmpSmallF["l"] := "{u+026d}"  ; (ɭ) l with retroflex hook
 cmpSmallF["n"] := "{u+0273}"  ; (ɳ) n with retroflex hook
 cmpSmallF["q"] := "{u+02a0}"  ; (ʠ) q with hook
@@ -498,6 +502,17 @@ cmpSmallF["t"] := "{u+0288}"  ; (ʈ) t with retroflex hook
 cmpSmallF["T"] := "{u+01ae}"  ; (Ʈ) T with retroflex hook
 cmpSmallF["v"] := "{u+2c71}"  ; (ⱱ) v with right hook
 cmpSmallF["z"] := "{u+0290}"  ; (ʐ) z with retroflex hook
+
+
+; Compose :  Swash Tail and Variations (t)
+
+global cmpSmallT := Map()
+cmpSmallT["l"] := "{u+2c61}"  ; (ⱡ) l with double bar
+cmpSmallT["L"] := "{u+2c60}"  ; (Ⱡ) L with double bar
+cmpSmallT["s"] := "{u+023f}"  ; (ȿ) s with swash tail
+cmpSmallT["S"] := "{u+2c7e}"  ; (Ȿ) S with swash tail
+cmpSmallT["z"] := "{u+0240}"  ; (ɀ) z with swash tail
+cmpSmallT["Z"] := "{u+2c7f}"  ; (Ɀ) Z with swash tail
 
 
 ; Compose :  Latin Greek Letters and Variations (l)
@@ -537,12 +552,13 @@ cmpSmallL["&"] := "{u+0241}"  ; (Ɂ) capital letter glottal stop
 cmpSmallL["?"] := "{u+0294}"  ; (ʔ) unicase letter glottal stop
 
 
-; Compose :  Turned Letters (r)
+; Compose :  Turned and Reversed Letters (r)
 
 global cmpSmallR := Map()
 cmpSmallR["a"] := "{u+0250}"  ; (ɐ) small letter turned a
 cmpSmallR["A"] := "{u+2c6f}"  ; (Ɐ) capital letter turned A
 cmpSmallR["b"] := "{u+025c}"  ; (ɜ) small letter reversed open e
+cmpSmallR["B"] := "{u+a7ab}"  ; (Ɜ) capital letter reversed open E
 cmpSmallR["d"] := "{u+018d}"  ; (ƍ) Latin small letter turned delta
 cmpSmallR["e"] := "{u+01dd}"  ; (ǝ) small letter turned e
 cmpSmallR["E"] := "{u+018e}"  ; (Ǝ) capital letter reversed E
@@ -561,10 +577,13 @@ cmpSmallR["q"] := "{u+0252}"  ; (ɒ) Latin small letter turned alpha
 cmpSmallR["Q"] := "{u+2c70}"  ; (Ɒ) Latin capital letter turned alpha
 cmpSmallR["r"] := "{u+0279}"  ; (ɹ) small letter turned r
 cmpSmallR["t"] := "{u+0287}"  ; (ʇ) small letter turned t
+cmpSmallR["T"] := "{u+a7b1}"  ; (Ʇ) small letter turned T
 cmpSmallR["v"] := "{u+028c}"  ; (ʌ) small letter turned v
 cmpSmallR["V"] := "{u+0245}"  ; (Ʌ) capital letter turned V
 cmpSmallR["w"] := "{u+028d}"  ; (ʍ) small letter turned w
 cmpSmallR["y"] := "{u+028e}"  ; (ʎ) small letter turned y
+cmpSmallR["z"] := "{u+01b9}"  ; (ƹ) Latin small letter ezh reversed
+cmpSmallR["Z"] := "{u+01b8}"  ; (Ƹ) Latin capital letter ezh reversed
 
 
 ; Compose :  Currency Symbols ($)
@@ -906,7 +925,6 @@ global cmpSmallN := Map()
 global cmpCapitalN := Map()
 global cmpCapitalO := Map()
 global cmpCapitalS := Map()
-global cmpSmallT := Map()
 global cmpCapitalT := Map()
 cmpArrow["e"] := "{u+00e6}"      ; (æ) letter ae
 cmpCapitalA["E"] := "{u+00c6}"   ; (Æ) letter AE
@@ -1978,6 +1996,10 @@ cmpSmallN["0"] := "{u+277f}"  ; (❿) dingbat negative circled digit 10
     if cmpSmallF.Has(ihB.Input)
       Send cmpSmallF[ihB.Input]
   }
+  else if (ihA.Input == "t") {
+    if cmpSmallT.Has(ihB.Input)
+      Send cmpSmallT[ihB.Input]
+  }
   else if (ihA.Input == "l") {
     if cmpSmallL.Has(ihB.Input)
       Send cmpSmallL[ihB.Input]
@@ -2057,10 +2079,6 @@ cmpSmallN["0"] := "{u+277f}"  ; (❿) dingbat negative circled digit 10
   else if (ihA.Input == "S") {
     if cmpCapitalS.Has(ihB.Input)
       Send cmpCapitalS[ihB.Input]
-  }
-  else if (ihA.Input == "t") {
-    if cmpSmallT.Has(ihB.Input)
-      Send cmpSmallT[ihB.Input]
   }
   else if (ihA.Input == "T") {
     if cmpCapitalT.Has(ihB.Input)

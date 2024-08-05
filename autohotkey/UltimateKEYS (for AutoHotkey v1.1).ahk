@@ -1,6 +1,6 @@
 #requires AutoHotkey v1.1
 
-; UltimateKEYS (for AutoHotkey v1.1).ahk - 2024-06-04
+; UltimateKEYS (for AutoHotkey v1.1).ahk - 2024-08-05
 
 ; Website :  https://pieter-degroote.github.io/UltimateKEYS/
 
@@ -434,7 +434,7 @@ cmpDoubleAcute.item["u"] := "{u+0171}"  ; (ű) u with double acute
 cmpDoubleAcute.item["U"] := "{u+0170}"  ; (Ű) U with double acute
 
 
-; Compose :  Hook and Horn (h)
+; Compose :  Hook, Horn and Variations (h)
 
 cmpSmallH := ComObjCreate("Scripting.Dictionary")
 cmpSmallH.item["b"] := "{u+0253}"  ; (ɓ) b with hook
@@ -453,6 +453,8 @@ cmpSmallH.item["H"] := "{u+a7aa}"  ; (Ɦ) H with hook
 cmpSmallH.item["j"] := "{u+0267}"  ; (ɧ) small letter heng with hook
 cmpSmallH.item["k"] := "{u+0199}"  ; (ƙ) k with hook
 cmpSmallH.item["K"] := "{u+0198}"  ; (Ƙ) K with hook
+cmpSmallH.item["l"] := "{u+026c}"  ; (ɬ) l with belt
+cmpSmallH.item["L"] := "{u+a7ad}"  ; (Ɬ) L with belt
 cmpSmallH.item["m"] := "{u+0271}"  ; (ɱ) m with hook
 cmpSmallH.item["M"] := "{u+2c6e}"  ; (Ɱ) M with hook
 cmpSmallH.item["n"] := "{u+0272}"  ; (ɲ) n with left hook
@@ -480,15 +482,17 @@ cmpSmallH.item["z"] := "{u+0225}"  ; (ȥ) z with hook
 cmpSmallH.item["Z"] := "{u+0224}"  ; (Ȥ) Z with hook
 
 
-; Compose :  Retroflex Hook, Right Hook, Crossed-Tail and Variations (f)
+; Compose :  Retroflex Hook and Variations (f)
 
 cmpSmallF := ComObjCreate("Scripting.Dictionary")
 cmpSmallF.item["d"] := "{u+1d91}"  ; (ᶑ) d with hook and tail
 cmpSmallF.item["e"] := "{u+025d}"  ; (ɝ) small letter reversed open e with hook
+cmpSmallF.item["f"] := "{u+1d94}"  ; (ᶔ) small letter reversed open e with retroflex hook
 cmpSmallF.item["g"] := "{u+ab36}"  ; (ꬶ) small letter script g with crossed-tail
 cmpSmallF.item["h"] := "{u+a727}"  ; (ꜧ) small letter heng
 cmpSmallF.item["H"] := "{u+a726}"  ; (Ꜧ) capital letter heng
 cmpSmallF.item["j"] := "{u+029d}"  ; (ʝ) j with crossed-tail
+cmpSmallF.item["J"] := "{u+a7b2}"  ; (Ʝ) J with crossed-tail
 cmpSmallF.item["l"] := "{u+026d}"  ; (ɭ) l with retroflex hook
 cmpSmallF.item["n"] := "{u+0273}"  ; (ɳ) n with retroflex hook
 cmpSmallF.item["q"] := "{u+02a0}"  ; (ʠ) q with hook
@@ -497,6 +501,17 @@ cmpSmallF.item["t"] := "{u+0288}"  ; (ʈ) t with retroflex hook
 cmpSmallF.item["T"] := "{u+01ae}"  ; (Ʈ) T with retroflex hook
 cmpSmallF.item["v"] := "{u+2c71}"  ; (ⱱ) v with right hook
 cmpSmallF.item["z"] := "{u+0290}"  ; (ʐ) z with retroflex hook
+
+
+; Compose :  Swash Tail and Variations (t)
+
+cmpSmallT := ComObjCreate("Scripting.Dictionary")
+cmpSmallT.item["l"] := "{u+2c61}"  ; (ⱡ) l with double bar
+cmpSmallT.item["L"] := "{u+2c60}"  ; (Ⱡ) L with double bar
+cmpSmallT.item["s"] := "{u+023f}"  ; (ȿ) s with swash tail
+cmpSmallT.item["S"] := "{u+2c7e}"  ; (Ȿ) S with swash tail
+cmpSmallT.item["z"] := "{u+0240}"  ; (ɀ) z with swash tail
+cmpSmallT.item["Z"] := "{u+2c7f}"  ; (Ɀ) Z with swash tail
 
 
 ; Compose :  Latin Greek Letters and Variations (l)
@@ -536,12 +551,13 @@ cmpSmallL.item["&"] := "{u+0241}"  ; (Ɂ) capital letter glottal stop
 cmpSmallL.item["?"] := "{u+0294}"  ; (ʔ) unicase letter glottal stop
 
 
-; Compose :  Turned Letters (r)
+; Compose :  Turned and Reversed Letters (r)
 
 cmpSmallR := ComObjCreate("Scripting.Dictionary")
 cmpSmallR.item["a"] := "{u+0250}"  ; (ɐ) small letter turned a
 cmpSmallR.item["A"] := "{u+2c6f}"  ; (Ɐ) capital letter turned A
 cmpSmallR.item["b"] := "{u+025c}"  ; (ɜ) small letter reversed open e
+cmpSmallR.item["B"] := "{u+a7ab}"  ; (Ɜ) capital letter reversed open E
 cmpSmallR.item["d"] := "{u+018d}"  ; (ƍ) Latin small letter turned delta
 cmpSmallR.item["e"] := "{u+01dd}"  ; (ǝ) small letter turned e
 cmpSmallR.item["E"] := "{u+018e}"  ; (Ǝ) capital letter reversed E
@@ -560,10 +576,13 @@ cmpSmallR.item["q"] := "{u+0252}"  ; (ɒ) Latin small letter turned alpha
 cmpSmallR.item["Q"] := "{u+2c70}"  ; (Ɒ) Latin capital letter turned alpha
 cmpSmallR.item["r"] := "{u+0279}"  ; (ɹ) small letter turned r
 cmpSmallR.item["t"] := "{u+0287}"  ; (ʇ) small letter turned t
+cmpSmallR.item["T"] := "{u+a7b1}"  ; (Ʇ) small letter turned T
 cmpSmallR.item["v"] := "{u+028c}"  ; (ʌ) small letter turned v
 cmpSmallR.item["V"] := "{u+0245}"  ; (Ʌ) capital letter turned V
 cmpSmallR.item["w"] := "{u+028d}"  ; (ʍ) small letter turned w
 cmpSmallR.item["y"] := "{u+028e}"  ; (ʎ) small letter turned y
+cmpSmallR.item["z"] := "{u+01b9}"  ; (ƹ) Latin small letter ezh reversed
+cmpSmallR.item["Z"] := "{u+01b8}"  ; (Ƹ) Latin capital letter ezh reversed
 
 
 ; Compose :  Currency Symbols ($)
@@ -905,7 +924,6 @@ cmpSmallN := ComObjCreate("Scripting.Dictionary")
 cmpCapitalN := ComObjCreate("Scripting.Dictionary")
 cmpCapitalO := ComObjCreate("Scripting.Dictionary")
 cmpCapitalS := ComObjCreate("Scripting.Dictionary")
-cmpSmallT := ComObjCreate("Scripting.Dictionary")
 cmpCapitalT := ComObjCreate("Scripting.Dictionary")
 cmpArrow.item["e"] := "{u+00e6}"      ; (æ) letter ae
 cmpCapitalA.item["E"] := "{u+00c6}"   ; (Æ) letter AE
@@ -1940,6 +1958,8 @@ cmpSmallN.item["0"] := "{u+277f}"  ; (❿) dingbat negative circled digit 10
     Send % cmpSmallH.item[keyB]
   else if (keyA == "f")
     Send % cmpSmallF.item[keyB]
+  else if (keyA == "t")
+    Send % cmpSmallT.item[keyB]
   else if (keyA == "l")
     Send % cmpSmallL.item[keyB]
   else if (keyA == "r")
@@ -1980,8 +2000,6 @@ cmpSmallN.item["0"] := "{u+277f}"  ; (❿) dingbat negative circled digit 10
     Send % cmpCapitalO.item[keyB]
   else if (keyA == "S")
     Send % cmpCapitalS.item[keyB]
-  else if (keyA == "t")
-    Send % cmpSmallT.item[keyB]
   else if (keyA == "T")
     Send % cmpCapitalT.item[keyB]
   else if (keyA == "P")
