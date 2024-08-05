@@ -1,6 +1,6 @@
 include "%L"
 
-# UltimateKEYS - 2024-06-04  (~/.XCompose)
+# UltimateKEYS - 2024-08-05  (~/.XCompose)
 
 # Website :  https://pieter-degroote.github.io/UltimateKEYS/
 
@@ -410,7 +410,7 @@ include "%L"
 <Multi_key> <equal> <U> : "Ű"  U0170  # U with double acute
 
 
-# Hook and Horn
+# Hook, Horn and Variations
 
 <Multi_key> <h> <b> : "ɓ"  U0253  # b with hook
 <Multi_key> <h> <B> : "Ɓ"  U0181  # B with hook
@@ -428,6 +428,8 @@ include "%L"
 <Multi_key> <h> <j> : "ɧ"  U0267  # small letter heng with hook
 <Multi_key> <h> <k> : "ƙ"  U0199  # k with hook
 <Multi_key> <h> <K> : "Ƙ"  U0198  # K with hook
+<Multi_key> <h> <l> : "ɬ"  U026C  # l with belt
+<Multi_key> <h> <L> : "Ɬ"  UA7AD  # L with belt
 <Multi_key> <h> <m> : "ɱ"  U0271  # m with hook
 <Multi_key> <h> <M> : "Ɱ"  U2C6E  # M with hook
 <Multi_key> <h> <n> : "ɲ"  U0272  # n with left hook
@@ -455,14 +457,16 @@ include "%L"
 <Multi_key> <h> <Z> : "Ȥ"  U0224  # Z with hook
 
 
-# Retroflex Hook, Right Hook, Crossed-Tail and Variations
+# Retroflex Hook and Variations
 
 <Multi_key> <f> <d> : "ᶑ"  U1D91  # d with hook and tail
 <Multi_key> <f> <e> : "ɝ"  U025D  # small letter reversed open e with hook
+<Multi_key> <f> <f> : "ᶔ"  U1D94  # small letter reversed open e with retroflex hook
 <Multi_key> <f> <g> : "ꬶ"  UAB36  # small letter script g with crossed-tail
 <Multi_key> <f> <h> : "ꜧ"  UA727  # small letter heng
 <Multi_key> <f> <H> : "Ꜧ"  UA726  # capital letter heng
 <Multi_key> <f> <j> : "ʝ"  U029D  # j with crossed-tail
+<Multi_key> <f> <J> : "Ʝ"  UA7B2  # J with crossed-tail
 <Multi_key> <f> <l> : "ɭ"  U026D  # l with retroflex hook
 <Multi_key> <f> <n> : "ɳ"  U0273  # n with retroflex hook
 <Multi_key> <f> <q> : "ʠ"  U02A0  # q with hook
@@ -471,6 +475,16 @@ include "%L"
 <Multi_key> <f> <T> : "Ʈ"  U01AE  # T with retroflex hook
 <Multi_key> <f> <v> : "ⱱ"  U2C71  # v with right hook
 <Multi_key> <f> <z> : "ʐ"  U0290  # z with retroflex hook
+
+
+# Swash Tail and Variations
+
+<Multi_key> <t> <l> : "ⱡ"  U2C61  # l with double bar
+<Multi_key> <t> <L> : "Ⱡ"  U2C60  # L with double bar
+<Multi_key> <t> <s> : "ȿ"  U023F  # s with swash tail
+<Multi_key> <t> <S> : "Ȿ"  U2C7E  # S with swash tail
+<Multi_key> <t> <z> : "ɀ"  U0240  # z with swash tail
+<Multi_key> <t> <Z> : "Ɀ"  U2C7F  # Z with swash tail
 
 
 # Latin Greek Letters and Variations
@@ -509,11 +523,12 @@ include "%L"
 <Multi_key> <l> <question>  : "ʔ"  U0294  # unicase letter glottal stop
 
 
-# Turned Letters
+# Turned and Reversed Letters
 
 <Multi_key> <r> <a> : "ɐ"  U0250  # small letter turned a
 <Multi_key> <r> <A> : "Ɐ"  U2C6F  # capital letter turned A
 <Multi_key> <r> <b> : "ɜ"  U025C  # small letter reversed open e
+<Multi_key> <r> <B> : "Ɜ"  UA7AB  # capital letter reversed open E
 <Multi_key> <r> <d> : "ƍ"  U018D  # Latin small letter turned delta
 <Multi_key> <r> <e> : "ǝ"  U01DD  # small letter turned e
 <Multi_key> <r> <E> : "Ǝ"  U018E  # capital letter reversed E
@@ -532,10 +547,13 @@ include "%L"
 <Multi_key> <r> <Q> : "Ɒ"  U2C70  # Latin capital letter turned alpha
 <Multi_key> <r> <r> : "ɹ"  U0279  # small letter turned r
 <Multi_key> <r> <t> : "ʇ"  U0287  # small letter turned t
+<Multi_key> <r> <T> : "Ʇ"  UA7B1  # capital letter turned T
 <Multi_key> <r> <v> : "ʌ"  U028C  # small letter turned v
 <Multi_key> <r> <V> : "Ʌ"  U0245  # capital letter turned V
 <Multi_key> <r> <w> : "ʍ"  U028D  # small letter turned w
 <Multi_key> <r> <y> : "ʎ"  U028E  # small letter turned y
+<Multi_key> <r> <z> : "ƹ"  U01B9  # Latin small letter ezh reversed
+<Multi_key> <r> <Z> : "Ƹ"  U01B8  # Latin capital letter ezh reversed
 
 
 # Currency Symbols
