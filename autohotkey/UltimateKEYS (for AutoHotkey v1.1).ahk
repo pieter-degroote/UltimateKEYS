@@ -1,6 +1,6 @@
 #requires AutoHotkey v1.1
 
-; UltimateKEYS (for AutoHotkey v1.1).ahk - 2024-08-05
+; UltimateKEYS (for AutoHotkey v1.1).ahk - 2024-11-20
 
 ; Website :  https://pieter-degroote.github.io/UltimateKEYS/
 
@@ -819,7 +819,7 @@ cmpDoubleAcute.item["0"] := "{u+21d4}"  ; (⇔) left right double arrow
 ; Compose :  Various Symbols (s)
 
 cmpSymbols := ComObjCreate("Scripting.Dictionary")
-cmpSymbols.item["a"] := "{u+214d}"  ; (⅍) aktieselskab
+cmpSymbols.item["a"] := "{u+2100}"  ; (℀) account of
 cmpSymbols.item["b"] := "{u+203d}"  ; (‽) interrobang
 cmpSymbols.item["B"] := "{u+2e18}"  ; (⸘) inverted interrobang
 cmpSymbols.item["c"] := "{u+2105}"  ; (℅) care of
@@ -829,6 +829,8 @@ cmpSymbols.item["f"] := "{u+2640}"  ; (♀) female sign (Venus)
 cmpSymbols.item["h"] := "{u+2302}"  ; (⌂) house
 cmpSymbols.item["H"] := "{u+2126}"  ; (Ω) ohm sign (backwards compatibility)
 cmpSymbols.item["i"] := "{u+2300}"  ; (⌀) diameter sign
+cmpSymbols.item["j"] := "{u+2101}"  ; (℁) addressed to the subject
+cmpSymbols.item["k"] := "{u+214d}"  ; (⅍) aktieselskab
 cmpSymbols.item["l"] := "{u+2113}"  ; (ℓ) script small l
 cmpSymbols.item["L"] := "{u+2112}"  ; (ℒ) Laplace transform
 cmpSymbols.item["m"] := "{u+2642}"  ; (♂) male sign (Mars)
@@ -837,6 +839,7 @@ cmpSymbols.item["p"] := "{u+211e}"  ; (℞) prescription take (Recipere)
 cmpSymbols.item["P"] := "{u+211e}"  ; (℞) prescription take (Recipere)
 cmpSymbols.item["r"] := "{u+211f}"  ; (℟) response (liturgy)
 cmpSymbols.item["R"] := "{u+211f}"  ; (℟) response (liturgy)
+cmpSymbols.item["u"] := "{u+2106}"  ; (℆) cada una (each one)
 cmpSymbols.item["v"] := "{u+2123}"  ; (℣) versicle (liturgy)
 cmpSymbols.item["V"] := "{u+2123}"  ; (℣) versicle (liturgy)
 cmpSymbols.item["x"] := "{u+203b}"  ; (※) reference mark
