@@ -1,4 +1,4 @@
-// UltimateKEYS  (/usr/share/X11/xkb/symbols/custom)
+// UltimateKEYS Keyboard Layout
 
 // Website :  https://pieter-degroote.github.io/UltimateKEYS/
 
@@ -10,7 +10,7 @@
 default partial alphanumeric_keys modifier_keys
 xkb_symbols "basic" {
 
-    name[Group1] = "UltimateKEYS";
+    name[Group1] = "English (US, UltimateKEYS)";
 
     key <AB01> { [ z,            Z,            aacute,               Aacute               ] };
     key <AB02> { [ x,            X,            agrave,               Agrave               ] };
@@ -23,7 +23,7 @@ xkb_symbols "basic" {
     key <AB09> { [ period,       greater,      ograve,               Ograve               ] };
     key <AB10> { [ slash,        question,     questiondown,         enfilledcircbullet   ] };
     key <AC01> { [ a,            A,            adiaeresis,           Adiaeresis           ] };
-    key <AC02> { [ s,            S,            ssharp,               U1E9E                ] };
+    key <AC02> { [ s,            S,            ssharp,               U1E9E                ] };  // ẞ
     key <AC03> { [ d,            D,            acircumflex,          Acircumflex          ] };
     key <AC04> { [ f,            F,            eacute,               Eacute               ] };
     key <AC05> { [ g,            G,            egrave,               Egrave               ] };
@@ -32,7 +32,7 @@ xkb_symbols "basic" {
     key <AC08> { [ k,            K,            oe,                   OE                   ] };
     key <AC09> { [ l,            L,            oslash,               Ooblique             ] };
     key <AC10> { [ semicolon,    colon,        degree,               periodcentered       ] };
-    key <AC11> { [ apostrophe,   quotedbl,     U266A,                U266B                ] };
+    key <AC11> { [ apostrophe,   quotedbl,     U266A,                U266B                ] };  // ♪ ♫
     key <AD01> { [ q,            Q,            ae,                   AE                   ] };
     key <AD02> { [ w,            W,            aring,                Aring                ] };
     key <AD03> { [ e,            E,            ediaeresis,           Ediaeresis           ] };
@@ -43,11 +43,11 @@ xkb_symbols "basic" {
     key <AD08> { [ i,            I,            idiaeresis,           Idiaeresis           ] };
     key <AD09> { [ o,            O,            odiaeresis,           Odiaeresis           ] };
     key <AD10> { [ p,            P,            ocircumflex,          Ocircumflex          ] };
-    key <AD11> { [ bracketleft,  braceleft,    guillemotleft,        U2039                ] };
-    key <AD12> { [ bracketright, braceright,   guillemotright,       U203A                ] };
+    key <AD11> { [ bracketleft,  braceleft,    guillemotleft,        U2039                ] };  // ‹
+    key <AD12> { [ bracketright, braceright,   guillemotright,       U203A                ] };  // ›
     key <AE01> { [ 1,            exclam,       exclamdown,           onesuperior          ] };
-    key <AE02> { [ 2,            at,           U2264,                twosuperior          ] };
-    key <AE03> { [ 3,            numbersign,   U2265,                threesuperior        ] };
+    key <AE02> { [ 2,            at,           U2264,                twosuperior          ] };  // ≤
+    key <AE03> { [ 3,            numbersign,   U2265,                threesuperior        ] };  // ≥
     key <AE04> { [ 4,            dollar,       sterling,             yen                  ] };
     key <AE05> { [ 5,            percent,      EuroSign,             cent                 ] };
     key <AE06> { [ 6,            asciicircum,  atilde,               Atilde               ] };
@@ -61,7 +61,7 @@ xkb_symbols "basic" {
     key <LSGT> { [ backslash,    bar,          Multi_key,            Multi_key            ] };
     key <SPCE> { [ space,        space,        nobreakspace,         nobreakspace         ] };
     key <TLDE> { [ grave,        asciitilde,   Multi_key,            Multi_key            ] };
-    key <KPDL> { [ KP_Delete,    KP_Decimal                                               ] };
 
+//  include "kpdl(dot)"  // (default: dot on keypad)
     include "level3(ralt_switch)"
 };
