@@ -1,15 +1,12 @@
 include "%L"
 
-# UltimateKEYS - 2024-11-20  (~/.XCompose)
+# UltimateKEYS Compose Key Sequences - 2024-11-30
 
 # Website :  https://pieter-degroote.github.io/UltimateKEYS/
 
 # GitHub :   https://github.com/pieter-degroote/UltimateKEYS
 
 # License :  GNU General Public License Version 3
-
-
-# Compose Key Sequences for UltimateKEYS
 
 
 # Acute Accent
@@ -961,13 +958,12 @@ include "%L"
 <Multi_key> <m> <6> : "∠"  U2220  # angle symbol
 <Multi_key> <m> <9> : "∟"  U221F  # right angle
 <Multi_key> <m> <0> : "∡"  U2221  # measured angle
-<Multi_key> <m> <comma>     : "∙"  U2219  # bullet operator
+<Multi_key> <m> <period>    : "⋅"  U22C5  # dot operator
+<Multi_key> <m> <equal>     : "≝"  U225D  # equal to by definition
 <Multi_key> <m> <plus>      : "⊕"  U2295  # circled plus
 <Multi_key> <m> <minus>     : "⊖"  U2296  # circled minus
 <Multi_key> <m> <asterisk>  : "⊗"  U2297  # circled times
 <Multi_key> <m> <slash>     : "⊘"  U2298  # circled division slash
-<Multi_key> <m> <period>    : "⊙"  U2299  # circled dot operator
-<Multi_key> <m> <equal>     : "≝"  U225D  # equal to by definition
 <Multi_key> <m> <semicolon> : "∵"  U2235  # because sign
 <Multi_key> <m> <colon>     : "∴"  U2234  # therefore sign
 <Multi_key> <m> <ampersand> : "∧"  U2227  # logical and
