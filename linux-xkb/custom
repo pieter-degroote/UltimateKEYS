@@ -1,11 +1,8 @@
-// UltimateKEYS Keyboard Layout
+// UltimateKEYS Keyboard Layout (Public Domain)
 
 // Website :  https://pieter-degroote.github.io/UltimateKEYS/
 
 // GitHub :   https://github.com/pieter-degroote/UltimateKEYS
-
-// License :  GNU General Public License Version 3
-
 
 default partial alphanumeric_keys modifier_keys
 xkb_symbols "basic" {
