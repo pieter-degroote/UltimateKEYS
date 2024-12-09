@@ -9,6 +9,9 @@ International US QWERTY layout with AltGr (Right Alt) dead keys via AutoHotkey (
 
 ![UltimateKEYS - Keyboard Layout Image](images/UltimateKEYS%20-%20Keyboard%20Layout%20Image.png)
 
+=&gt; CP key (blue) : &nbsp;[Compose Key](https://pieter-degroote.github.io/UltimateKEYS/documentation.html#Compose_Key_Sequences) (Multi_key), in combination with Right Alt or AltGr.  
+=&gt; Note that the ISO key (next to Left Shift) is not present on standard ANSI keyboards.
+
 ## Important - Security Warning
 
 **=&gt; Win/Linux&nbsp;: &nbsp;Only use "BASIC LATIN" characters (codes 32 to 126) for your Windows, Microsoft Live and Linux passwords&nbsp;!**  
