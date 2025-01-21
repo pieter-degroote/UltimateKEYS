@@ -1,6 +1,6 @@
 #requires AutoHotkey v1.1
 
-; UltimateKEYS (for AutoHotkey v1.1).ahk - 2024-11-30
+; UltimateKEYS (for AutoHotkey v1.1).ahk - 2025-01-21
 
 ; Website :  https://pieter-degroote.github.io/UltimateKEYS/
 
@@ -503,9 +503,13 @@ cmpSmallF.item["v"] := "{u+2c71}"  ; (ⱱ) v with right hook
 cmpSmallF.item["z"] := "{u+0290}"  ; (ʐ) z with retroflex hook
 
 
-; Compose :  Swash Tail and Variations (t)
+; Compose :  Swash Tail and Other Variations (t)
 
 cmpSmallT := ComObjCreate("Scripting.Dictionary")
+cmpSmallT.item["c"] := "{u+a793}"  ; (ꞓ) c with bar
+cmpSmallT.item["C"] := "{u+a792}"  ; (Ꞓ) C with bar
+cmpSmallT.item["f"] := "{u+a799}"  ; (ꞙ) f with stroke
+cmpSmallT.item["F"] := "{u+a798}"  ; (Ꞙ) F with stroke
 cmpSmallT.item["l"] := "{u+2c61}"  ; (ⱡ) l with double bar
 cmpSmallT.item["L"] := "{u+2c60}"  ; (Ⱡ) L with double bar
 cmpSmallT.item["s"] := "{u+023f}"  ; (ȿ) s with swash tail
@@ -758,29 +762,27 @@ cmpSubscript.item[")"] := "{u+208e}"  ; (₎) subscript )
 ; Compose :  Spacing Characters and Dashes
 
 cmpSpace := ComObjCreate("Scripting.Dictionary")
-cmpQuad := ComObjCreate("Scripting.Dictionary")
 cmpSpace.item["1"] := "{u+2004}"  ; three-per-em space
 cmpSpace.item["2"] := "{u+2002}"  ; en space
 cmpSpace.item["3"] := "{u+2003}"  ; em space
 cmpSpace.item["4"] := "{u+2005}"  ; four-per-em space
-cmpSpace.item["5"] := "{u+2008}"  ; punctuation space
 cmpSpace.item["6"] := "{u+2006}"  ; six-per-em space
-cmpSpace.item["7"] := "{u+2009}"  ; thin space
-cmpSpace.item["8"] := "{u+200a}"  ; hair space
 cmpSpace.item["9"] := "{u+2007}"  ; figure space
 cmpSpace.item["0"] := "{u+200b}"  ; zero-width space (ZWSP)
+cmpSpace.item["b"] := "{u+00a0}"  ; non-breaking space (NBSP)
 cmpSpace.item["m"] := "{u+205f}"  ; medium mathematical space (MMSP)
 cmpSpace.item["n"] := "{u+202f}"  ; narrow no-break space (NNBSP)
-cmpSpace.item[" "] := "{u+00a0}"  ; non-breaking space (NBSP)
+cmpSpace.item["p"] := "{u+2008}"  ; punctuation space
+cmpSpace.item["t"] := "{u+2009}"  ; thin space
+cmpSpace.item["h"] := "{u+200a}"  ; hair space
+cmpSpace.item["."] := "{u+2008}"  ; punctuation space
+cmpMacronStroke.item["1"] := "{u+2010}"  ; (‐) hyphen
 cmpMacronStroke.item["2"] := "{u+2013}"  ; (–) en dash
 cmpMacronStroke.item["3"] := "{u+2014}"  ; (—) em dash
 cmpMacronStroke.item["4"] := "{u+2015}"  ; (―) horizontal bar
-cmpMacronStroke.item["5"] := "{u+2010}"  ; (‐) hyphen
 cmpMacronStroke.item["9"] := "{u+2012}"  ; (‒) figure dash
 cmpMacronStroke.item["0"] := "{u+00ad}"  ; (­) soft hyphen (SHY)
 cmpMacronStroke.item["-"] := "{u+2011}"  ; (‑) non-breaking hyphen
-cmpQuad.item["2"] := "{u+2000}"  ; en quad
-cmpQuad.item["3"] := "{u+2001}"  ; em quad
 
 
 ; Compose :  Arrows and Pointing Triangles
@@ -794,6 +796,22 @@ cmpArrow.item["i"] := "{u+25b3}"  ; (△) white up-pointing triangle
 cmpArrow.item["j"] := "{u+25c1}"  ; (◁) white left-pointing triangle
 cmpArrow.item["k"] := "{u+25bd}"  ; (▽) white down-pointing triangle
 cmpArrow.item["l"] := "{u+25b7}"  ; (▷) white right-pointing triangle
+cmpArrow.item["W"] := "{u+25b4}"  ; (▴) black up-pointing small triangle
+cmpArrow.item["A"] := "{u+25c2}"  ; (◂) black left-pointing small triangle
+cmpArrow.item["S"] := "{u+25be}"  ; (▾) black down-pointing small triangle
+cmpArrow.item["D"] := "{u+25b8}"  ; (▸) black right-pointing small triangle
+cmpArrow.item["I"] := "{u+25b5}"  ; (▵) white up-pointing small triangle
+cmpArrow.item["J"] := "{u+25c3}"  ; (◃) white left-pointing small triangle
+cmpArrow.item["K"] := "{u+25bf}"  ; (▿) white down-pointing small triangle
+cmpArrow.item["L"] := "{u+25b9}"  ; (▹) white right-pointing small triangle
+cmpArrow.item["q"] := "{u+25a0}"  ; (■) black square
+cmpArrow.item["u"] := "{u+25a1}"  ; (□) white square
+cmpArrow.item["Q"] := "{u+25aa}"  ; (▪) black small square
+cmpArrow.item["U"] := "{u+25ab}"  ; (▫) white small square
+cmpArrow.item["z"] := "{u+25c6}"  ; (◆) black diamond
+cmpArrow.item["m"] := "{u+25c7}"  ; (◇) white diamond
+cmpArrow.item["Z"] := "{u+2b25}"  ; (⬥) black medium diamond
+cmpArrow.item["M"] := "{u+2b26}"  ; (⬦) white medium diamond
 cmpArrow.item["1"] := "{u+2199}"  ; (↙) south west arrow
 cmpArrow.item["2"] := "{u+2193}"  ; (↓) downwards arrow
 cmpArrow.item["3"] := "{u+2198}"  ; (↘) south east arrow
@@ -846,6 +864,8 @@ cmpSymbols.item["x"] := "{u+203b}"  ; (※) reference mark
 cmpSymbols.item["2"] := "{u+266b}"  ; (♫) beamed eighth notes
 cmpSymbols.item["3"] := "{u+2042}"  ; (⁂) asterism
 cmpSymbols.item["4"] := "{u+203b}"  ; (※) reference mark
+cmpSymbols.item["5"] := "{u+2605}"  ; (★) black star
+cmpSymbols.item["6"] := "{u+2606}"  ; (☆) white star
 cmpSymbols.item["8"] := "{u+266a}"  ; (♪) eighth note
 cmpSymbols.item["!"] := "{u+203c}"  ; (‼) double exclamation mark
 cmpSymbols.item["?"] := "{u+2e2e}"  ; (⸮) reversed question mark
@@ -948,6 +968,11 @@ cmpCapitalT.item["H"] := "{u+00de}"   ; (Þ) capital letter thorn
 
 cmpDigitEight := ComObjCreate("Scripting.Dictionary")
 cmpCapitalP := ComObjCreate("Scripting.Dictionary")
+cmpSmallY := ComObjCreate("Scripting.Dictionary")
+cmpCapitalV := ComObjCreate("Scripting.Dictionary")
+cmpCapitalY := ComObjCreate("Scripting.Dictionary")
+cmpSmallX := ComObjCreate("Scripting.Dictionary")
+cmpCapitalX := ComObjCreate("Scripting.Dictionary")
 cmpVerticalLine := ComObjCreate("Scripting.Dictionary")
 cmpAsterisk := ComObjCreate("Scripting.Dictionary")
 cmpExclam := ComObjCreate("Scripting.Dictionary")
@@ -957,6 +982,8 @@ cmpPlus := ComObjCreate("Scripting.Dictionary")
 cmpPercent := ComObjCreate("Scripting.Dictionary")
 cmpLessThan := ComObjCreate("Scripting.Dictionary")
 cmpGreaterThan := ComObjCreate("Scripting.Dictionary")
+cmpSemicolon := ComObjCreate("Scripting.Dictionary")
+cmpBracketLeft := ComObjCreate("Scripting.Dictionary")
 cmpSmallD.item["d"] := "{u+2020}"        ; (†) dagger
 cmpCapitalD.item["D"] := "{u+2021}"      ; (‡) double dagger
 cmpSmallI.item["i"] := "{u+221e}"        ; (∞) infinity symbol
@@ -973,6 +1000,12 @@ cmpSmallR.item["4"] := "{u+221c}"        ; (∜) fourth root
 cmpSymbols.item["o"] := "{u+00a7}"       ; (§) section sign
 cmpCapitalS.item["o"] := "{u+00a7}"      ; (§) section sign
 cmpSmallT.item["m"] := "{u+2122}"        ; (™) trademark symbol
+cmpCaron.item["v"] := "{u+2713}"         ; (✓) check mark
+cmpSmallY.item["y"] := "{u+2713}"        ; (✓) check mark
+cmpCapitalV.item["V"] := "{u+2714}"      ; (✔) heavy check mark
+cmpCapitalY.item["Y"] := "{u+2714}"      ; (✔) heavy check mark
+cmpSmallX.item["x"] := "{u+2717}"        ; (✗) ballot x
+cmpCapitalX.item["X"] := "{u+2718}"      ; (✘) heavy ballot x
 cmpVerticalLine.item["|"] := "{u+2016}"  ; (‖) double vertical line
 cmpAcuteAccent.item["1"] := "{u+2032}"   ; (′) prime
 cmpAcuteAccent.item["2"] := "{u+2033}"   ; (″) double prime
@@ -1007,30 +1040,16 @@ cmpGreaterThan.item["="] := "{u+2265}"   ; (≥) greater-than or equal to
 cmpLessThan.item["+"] := "{u+2a7d}"      ; (⩽) less-than or slanted equal to
 cmpGreaterThan.item["+"] := "{u+2a7e}"   ; (⩾) greater-than or slanted equal to
 cmpTilde.item["~"] := "{u+2248}"         ; (≈) almost equal to
-
-
-; Compose :  Bullets and Small Geometric Shapes (;)
-
-cmpSemicolon := ComObjCreate("Scripting.Dictionary")
-cmpSemicolon.item["b"] := "{u+2022}"  ; (•) bullet
-cmpSemicolon.item["o"] := "{u+25e6}"  ; (◦) white bullet
-cmpSemicolon.item["h"] := "{u+2043}"  ; (⁃) hyphen bullet
-cmpSemicolon.item["t"] := "{u+2023}"  ; (‣) triangular bullet
-cmpSemicolon.item["q"] := "{u+25aa}"  ; (▪) black small square
-cmpSemicolon.item["u"] := "{u+25ab}"  ; (▫) white small square
-cmpSemicolon.item["w"] := "{u+25b4}"  ; (▴) black up-pointing small triangle
-cmpSemicolon.item["a"] := "{u+25c2}"  ; (◂) black left-pointing small triangle
-cmpSemicolon.item["s"] := "{u+25be}"  ; (▾) black down-pointing small triangle
-cmpSemicolon.item["d"] := "{u+25b8}"  ; (▸) black right-pointing small triangle
-cmpSemicolon.item["i"] := "{u+25b5}"  ; (▵) white up-pointing small triangle
-cmpSemicolon.item["j"] := "{u+25c3}"  ; (◃) white left-pointing small triangle
-cmpSemicolon.item["k"] := "{u+25bf}"  ; (▿) white down-pointing small triangle
-cmpSemicolon.item["l"] := "{u+25b9}"  ; (▹) white right-pointing small triangle
-cmpSemicolon.item["z"] := "{u+25a0}"  ; (■) black square
-cmpSemicolon.item["x"] := "{u+25a1}"  ; (□) white square
-cmpSemicolon.item["c"] := "{u+25c6}"  ; (◆) black diamond
-cmpSemicolon.item["v"] := "{u+25c7}"  ; (◇) white diamond
-cmpSemicolon.item[";"] := "{u+2022}"  ; (•) bullet
+cmpSemicolon.item["b"] := "{u+2022}"     ; (•) bullet
+cmpSemicolon.item["o"] := "{u+25e6}"     ; (◦) white bullet
+cmpSemicolon.item["w"] := "{u+25e6}"     ; (◦) white bullet
+cmpSemicolon.item["h"] := "{u+2043}"     ; (⁃) hyphen bullet
+cmpSemicolon.item["t"] := "{u+2023}"     ; (‣) triangular bullet
+cmpSemicolon.item[";"] := "{u+2022}"     ; (•) bullet
+cmpBracketLeft.item["]"] := "{u+2610}"   ; (☐) ballot box
+cmpBracketLeft.item["v"] := "{u+2611}"   ; (☑) ballot box with check
+cmpBracketLeft.item["y"] := "{u+2611}"   ; (☑) ballot box with check
+cmpBracketLeft.item["x"] := "{u+2612}"   ; (☒) ballot box with x
 
 
 ; Compose :  Vulgar Fractions
@@ -1065,7 +1084,6 @@ cmpDigitZero.item["3"] := "{u+2189}"   ; (↉) vulgar fraction 0/3
 
 ; Compose :  Quotation Marks
 
-cmpBracketLeft := ComObjCreate("Scripting.Dictionary")
 cmpBracketRight := ComObjCreate("Scripting.Dictionary")
 cmpBackslash := ComObjCreate("Scripting.Dictionary")
 cmpCedillaOgonek.item[chr(34)] := "{u+201e}"  ; („) double low-9 quotation mark
@@ -1095,6 +1113,31 @@ cmpLessThan.item["'"] := "{u+2039}"           ; (‹) left-pointing single angle
 cmpAcuteAccent.item["<"] := "{u+2039}"        ; (‹) left-pointing single angle quotation mark
 cmpGreaterThan.item["'"] := "{u+203a}"        ; (›) right-pointing single angle quotation mark
 cmpAcuteAccent.item[">"] := "{u+203a}"        ; (›) right-pointing single angle quotation mark
+
+
+; Compose :  Chess Pieces and Playing Card Suit Symbols (C)
+
+cmpCapitalC := ComObjCreate("Scripting.Dictionary")
+cmpCapitalC.item["k"] := "{u+2654}"  ; (♔) white chess king
+cmpCapitalC.item["q"] := "{u+2655}"  ; (♕) white chess queen
+cmpCapitalC.item["r"] := "{u+2656}"  ; (♖) white chess rook
+cmpCapitalC.item["b"] := "{u+2657}"  ; (♗) white chess bishop
+cmpCapitalC.item["n"] := "{u+2658}"  ; (♘) white chess knight
+cmpCapitalC.item["p"] := "{u+2659}"  ; (♙) white chess pawn
+cmpCapitalC.item["K"] := "{u+265a}"  ; (♚) black chess king
+cmpCapitalC.item["Q"] := "{u+265b}"  ; (♛) black chess queen
+cmpCapitalC.item["R"] := "{u+265c}"  ; (♜) black chess rook
+cmpCapitalC.item["B"] := "{u+265d}"  ; (♝) black chess bishop
+cmpCapitalC.item["N"] := "{u+265e}"  ; (♞) black chess knight
+cmpCapitalC.item["P"] := "{u+265f}"  ; (♟) black chess pawn
+cmpCapitalC.item["c"] := "{u+2667}"  ; (♧) white club suit
+cmpCapitalC.item["C"] := "{u+2663}"  ; (♣) black club suit
+cmpCapitalC.item["d"] := "{u+2662}"  ; (♢) white diamond suit
+cmpCapitalC.item["D"] := "{u+2666}"  ; (♦) black diamond suit
+cmpCapitalC.item["h"] := "{u+2661}"  ; (♡) white heart suit
+cmpCapitalC.item["H"] := "{u+2665}"  ; (♥) black heart suit
+cmpCapitalC.item["s"] := "{u+2664}"  ; (♤) white spade suit
+cmpCapitalC.item["S"] := "{u+2660}"  ; (♠) black spade suit
 
 
 ; Compose :  Double Grave Accent (G)
@@ -1246,6 +1289,30 @@ cmpGreaterThan.item["y"] := "{u+1ef5}"  ; (ỵ) y with dot below
 cmpGreaterThan.item["Y"] := "{u+1ef4}"  ; (Ỵ) Y with dot below
 cmpGreaterThan.item["z"] := "{u+1e93}"  ; (ẓ) z with dot below
 cmpGreaterThan.item["Z"] := "{u+1e92}"  ; (Ẓ) Z with dot below
+
+
+; Accented Letters with Dot Below (?)
+
+cmpQuestion.item["a"] := "{u+1ead}"  ; (ậ) a with circumflex and dot below
+cmpQuestion.item["A"] := "{u+1eac}"  ; (Ậ) A with circumflex and dot below
+cmpQuestion.item["b"] := "{u+1eb7}"  ; (ặ) a with breve and dot below
+cmpQuestion.item["B"] := "{u+1eb6}"  ; (Ặ) A with breve and dot below
+cmpQuestion.item["e"] := "{u+1ec7}"  ; (ệ) e with circumflex and dot below
+cmpQuestion.item["E"] := "{u+1ec6}"  ; (Ệ) E with circumflex and dot below
+cmpQuestion.item["f"] := "{u+1e1d}"  ; (ḝ) e with cedilla and breve
+cmpQuestion.item["F"] := "{u+1e1c}"  ; (Ḝ) E with cedilla and breve
+cmpQuestion.item["l"] := "{u+1e39}"  ; (ḹ) l with dot below and macron
+cmpQuestion.item["L"] := "{u+1e38}"  ; (Ḹ) L with dot below and macron
+cmpQuestion.item["o"] := "{u+1ed9}"  ; (ộ) o with circumflex and dot below
+cmpQuestion.item["O"] := "{u+1ed8}"  ; (Ộ) O with circumflex and dot below
+cmpQuestion.item["r"] := "{u+1e5d}"  ; (ṝ) r with dot below and macron
+cmpQuestion.item["R"] := "{u+1e5c}"  ; (Ṝ) R with dot below and macron
+cmpQuestion.item["s"] := "{u+1e69}"  ; (ṩ) s with dot below and dot above
+cmpQuestion.item["S"] := "{u+1e68}"  ; (Ṩ) S with dot below and dot above
+cmpQuestion.item["t"] := "{u+1ee3}"  ; (ợ) o with horn and dot below
+cmpQuestion.item["T"] := "{u+1ee2}"  ; (Ợ) O with horn and dot below
+cmpQuestion.item["u"] := "{u+1ef1}"  ; (ự) u with horn and dot below
+cmpQuestion.item["U"] := "{u+1ef0}"  ; (Ự) U with horn and dot below
 
 
 ; Compose :  Miscellaneous Symbols and Dingbats
@@ -1444,31 +1511,6 @@ cmpDigitEight.item["k"] := "{u+27bc}"  ; (➼) wedge-tailed rightwards arrow
 cmpDigitEight.item["l"] := "{u+27bd}"  ; (➽) heavy wedge-tailed rightwards arrow
 cmpDigitEight.item["m"] := "{u+27be}"  ; (➾) open-outlined rightwards arrow
 cmpDigitEight.item["n"] := "{u+27c1}"  ; (⟁) white triangle containing small white triangle
-
-
-; Compose :  Chess Pieces and Playing Card Suit Symbols (C)
-
-cmpCapitalC := ComObjCreate("Scripting.Dictionary")
-cmpCapitalC.item["k"] := "{u+2654}"  ; (♔) white chess king
-cmpCapitalC.item["q"] := "{u+2655}"  ; (♕) white chess queen
-cmpCapitalC.item["r"] := "{u+2656}"  ; (♖) white chess rook
-cmpCapitalC.item["b"] := "{u+2657}"  ; (♗) white chess bishop
-cmpCapitalC.item["n"] := "{u+2658}"  ; (♘) white chess knight
-cmpCapitalC.item["p"] := "{u+2659}"  ; (♙) white chess pawn
-cmpCapitalC.item["K"] := "{u+265a}"  ; (♚) black chess king
-cmpCapitalC.item["Q"] := "{u+265b}"  ; (♛) black chess queen
-cmpCapitalC.item["R"] := "{u+265c}"  ; (♜) black chess rook
-cmpCapitalC.item["B"] := "{u+265d}"  ; (♝) black chess bishop
-cmpCapitalC.item["N"] := "{u+265e}"  ; (♞) black chess knight
-cmpCapitalC.item["P"] := "{u+265f}"  ; (♟) black chess pawn
-cmpCapitalC.item["c"] := "{u+2667}"  ; (♧) white club suit
-cmpCapitalC.item["C"] := "{u+2663}"  ; (♣) black club suit
-cmpCapitalC.item["d"] := "{u+2662}"  ; (♢) white diamond suit
-cmpCapitalC.item["D"] := "{u+2666}"  ; (♦) black diamond suit
-cmpCapitalC.item["h"] := "{u+2661}"  ; (♡) white heart suit
-cmpCapitalC.item["H"] := "{u+2665}"  ; (♥) black heart suit
-cmpCapitalC.item["s"] := "{u+2664}"  ; (♤) white spade suit
-cmpCapitalC.item["S"] := "{u+2660}"  ; (♠) black spade suit
 
 
 ; Compose :  Dingbat Negative Circled Digits (n)
@@ -2121,8 +2163,6 @@ cmpSmallN.item["0"] := "{u+277f}"  ; (❿) dingbat negative circled digit 10
     Send % cmpSubscript.item[keyB]
   else if (keyA == " ")
     Send % cmpSpace.item[keyB]
-  else if (keyA == "q")
-    Send % cmpQuad.item[keyB]
   else if (keyA == "a")
     Send % cmpArrow.item[keyB]
   else if (keyA == "s")
@@ -2151,6 +2191,16 @@ cmpSmallN.item["0"] := "{u+277f}"  ; (❿) dingbat negative circled digit 10
     Send % cmpCapitalT.item[keyB]
   else if (keyA == "P")
     Send % cmpCapitalP.item[keyB]
+  else if (keyA == "y")
+    Send % cmpSmallY.item[keyB]
+  else if (keyA == "V")
+    Send % cmpCapitalV.item[keyB]
+  else if (keyA == "Y")
+    Send % cmpCapitalY.item[keyB]
+  else if (keyA == "x")
+    Send % cmpSmallX.item[keyB]
+  else if (keyA == "X")
+    Send % cmpCapitalX.item[keyB]
   else if (keyA == "|")
     Send % cmpVerticalLine.item[keyB]
   else if (keyA == "*")
@@ -2171,6 +2221,8 @@ cmpSmallN.item["0"] := "{u+277f}"  ; (❿) dingbat negative circled digit 10
     Send % cmpLessThan.item[keyB]
   else if (keyA == ">")
     Send % cmpGreaterThan.item[keyB]
+  else if (keyA == "[")
+    Send % cmpBracketLeft.item[keyB]
   else if (keyA == ";")
     Send % cmpSemicolon.item[keyB]
   else if (keyA == "1")
@@ -2187,12 +2239,12 @@ cmpSmallN.item["0"] := "{u+277f}"  ; (❿) dingbat negative circled digit 10
     Send % cmpDigitSeven.item[keyB]
   else if (keyA == "0")
     Send % cmpDigitZero.item[keyB]
-  else if (keyA == "[")
-    Send % cmpBracketLeft.item[keyB]
   else if (keyA == "]")
     Send % cmpBracketRight.item[keyB]
   else if (keyA == "\")
     Send % cmpBackslash.item[keyB]
+  else if (keyA == "C")
+    Send % cmpCapitalC.item[keyB]
   else if (keyA == "G")
     Send % cmpCapitalG.item[keyB]
   else if (keyA == "B")
@@ -2203,8 +2255,6 @@ cmpSmallN.item["0"] := "{u+277f}"  ; (❿) dingbat negative circled digit 10
     Send % cmpCapitalR.item[keyB]
   else if (keyA == "6")
     Send % cmpDigitSix.item[keyB]
-  else if (keyA == "C")
-    Send % cmpCapitalC.item[keyB]
 
   keyA := ""  ; avoids leaking content via debug properties
   keyB := ""  ; avoids leaking content via debug properties
