@@ -1,6 +1,6 @@
 include "%L"
 
-# UltimateKEYS Compose Key Sequences - 2024-11-30
+# UltimateKEYS Compose Key Sequences - 2025-01-21
 
 # Website :  https://pieter-degroote.github.io/UltimateKEYS/
 
@@ -474,8 +474,12 @@ include "%L"
 <Multi_key> <f> <z> : "ʐ"  U0290  # z with retroflex hook
 
 
-# Swash Tail and Variations
+# Swash Tail and Other Variations
 
+<Multi_key> <t> <c> : "ꞓ"  UA793  # c with bar
+<Multi_key> <t> <C> : "Ꞓ"  UA792  # C with bar
+<Multi_key> <t> <f> : "ꞙ"  UA799  # f with stroke
+<Multi_key> <t> <F> : "Ꞙ"  UA798  # F with stroke
 <Multi_key> <t> <l> : "ⱡ"  U2C61  # l with double bar
 <Multi_key> <t> <L> : "Ⱡ"  U2C60  # L with double bar
 <Multi_key> <t> <s> : "ȿ"  U023F  # s with swash tail
@@ -725,24 +729,23 @@ include "%L"
 <Multi_key> <space> <2> : " "  U2002  # en space
 <Multi_key> <space> <3> : " "  U2003  # em space
 <Multi_key> <space> <4> : " "  U2005  # four-per-em space
-<Multi_key> <space> <5> : " "  U2008  # punctuation space
 <Multi_key> <space> <6> : " "  U2006  # six-per-em space
-<Multi_key> <space> <7> : " "  U2009  # thin space
-<Multi_key> <space> <8> : " "  U200A  # hair space
 <Multi_key> <space> <9> : " "  U2007  # figure space
 <Multi_key> <space> <0> : "​"  U200B  # zero-width space (ZWSP)
+<Multi_key> <space> <b> : " "  U00A0  # non-breaking space (NBSP)
 <Multi_key> <space> <m> : " "  U205F  # medium mathematical space (MMSP)
 <Multi_key> <space> <n> : " "  U202F  # narrow no-break space (NNBSP)
-<Multi_key> <space> <space> : " "  U00A0  # non-breaking space (NBSP)
+<Multi_key> <space> <p> : " "  U2008  # punctuation space
+<Multi_key> <space> <t> : " "  U2009  # thin space
+<Multi_key> <space> <h> : " "  U200A  # hair space
+<Multi_key> <space> <period> : " "  U2008  # punctuation space
+<Multi_key> <minus> <1> : "‐"  U2010  # hyphen
 <Multi_key> <minus> <2> : "–"  U2013  # en dash
 <Multi_key> <minus> <3> : "—"  U2014  # em dash
 <Multi_key> <minus> <4> : "―"  U2015  # horizontal bar
-<Multi_key> <minus> <5> : "‐"  U2010  # hyphen
 <Multi_key> <minus> <9> : "‒"  U2012  # figure dash
 <Multi_key> <minus> <0> : "­"  U00AD  # soft hyphen (SHY)
 <Multi_key> <minus> <minus> : "‑"  U2011  # non-breaking hyphen
-<Multi_key> <q> <2> : " "  U2000  # en quad
-<Multi_key> <q> <3> : " "  U2001  # em quad
 
 
 # Arrows and Pointing Triangles
@@ -755,6 +758,22 @@ include "%L"
 <Multi_key> <a> <j> : "◁"  U25C1  # white left-pointing triangle
 <Multi_key> <a> <k> : "▽"  U25BD  # white down-pointing triangle
 <Multi_key> <a> <l> : "▷"  U25B7  # white right-pointing triangle
+<Multi_key> <a> <W> : "▴"  U25B4  # black up-pointing small triangle
+<Multi_key> <a> <A> : "◂"  U25C2  # black left-pointing small triangle
+<Multi_key> <a> <S> : "▾"  U25BE  # black down-pointing small triangle
+<Multi_key> <a> <D> : "▸"  U25B8  # black right-pointing small triangle
+<Multi_key> <a> <I> : "▵"  U25B5  # white up-pointing small triangle
+<Multi_key> <a> <J> : "◃"  U25C3  # white left-pointing small triangle
+<Multi_key> <a> <K> : "▿"  U25BF  # white down-pointing small triangle
+<Multi_key> <a> <L> : "▹"  U25B9  # white right-pointing small triangle
+<Multi_key> <a> <q> : "■"  U25A0  # black square
+<Multi_key> <a> <u> : "□"  U25A1  # white square
+<Multi_key> <a> <Q> : "▪"  U25AA  # black small square
+<Multi_key> <a> <U> : "▫"  U25AB  # white small square
+<Multi_key> <a> <z> : "◆"  U25C6  # black diamond
+<Multi_key> <a> <m> : "◇"  U25C7  # white diamond
+<Multi_key> <a> <Z> : "⬥"  U2B25  # black medium diamond
+<Multi_key> <a> <M> : "⬦"  U2B26  # white medium diamond
 <Multi_key> <a> <1> : "↙"  U2199  # south west arrow
 <Multi_key> <a> <2> : "↓"  U2193  # downwards arrow
 <Multi_key> <a> <3> : "↘"  U2198  # south east arrow
@@ -814,6 +833,12 @@ include "%L"
 <Multi_key> <s> <o> : "§"  U00A7  # section sign
 <Multi_key> <S> <o> : "§"  U00A7  # section sign
 <Multi_key> <t> <m> : "™"  U2122  # trademark symbol
+<Multi_key> <v> <v> : "✓"  U2713  # check mark
+<Multi_key> <y> <y> : "✓"  U2713  # check mark
+<Multi_key> <V> <V> : "✔"  U2714  # heavy check mark
+<Multi_key> <Y> <Y> : "✔"  U2714  # heavy check mark
+<Multi_key> <x> <x> : "✗"  U2717  # ballot x
+<Multi_key> <X> <X> : "✘"  U2718  # heavy ballot x
 <Multi_key> <bar> <bar>               : "‖"  U2016  # double vertical line
 <Multi_key> <apostrophe> <1>          : "′"  U2032  # prime
 <Multi_key> <apostrophe> <2>          : "″"  U2033  # double prime
@@ -848,29 +873,16 @@ include "%L"
 <Multi_key> <less> <plus>             : "⩽"  U2A7D  # less-than or slanted equal to
 <Multi_key> <greater> <plus>          : "⩾"  U2A7E  # greater-than or slanted equal to
 <Multi_key> <asciitilde> <asciitilde> : "≈"  U2248  # almost equal to
-
-
-# Bullets and Small Geometric Shapes
-
-<Multi_key> <semicolon> <b> : "•"  U2022  # bullet
-<Multi_key> <semicolon> <o> : "◦"  U25E6  # white bullet
-<Multi_key> <semicolon> <h> : "⁃"  U2043  # hyphen bullet
-<Multi_key> <semicolon> <t> : "‣"  U2023  # triangular bullet
-<Multi_key> <semicolon> <q> : "▪"  U25AA  # black small square
-<Multi_key> <semicolon> <u> : "▫"  U25AB  # white small square
-<Multi_key> <semicolon> <w> : "▴"  U25B4  # black up-pointing small triangle
-<Multi_key> <semicolon> <a> : "◂"  U25C2  # black left-pointing small triangle
-<Multi_key> <semicolon> <s> : "▾"  U25BE  # black down-pointing small triangle
-<Multi_key> <semicolon> <d> : "▸"  U25B8  # black right-pointing small triangle
-<Multi_key> <semicolon> <i> : "▵"  U25B5  # white up-pointing small triangle
-<Multi_key> <semicolon> <j> : "◃"  U25C3  # white left-pointing small triangle
-<Multi_key> <semicolon> <k> : "▿"  U25BF  # white down-pointing small triangle
-<Multi_key> <semicolon> <l> : "▹"  U25B9  # white right-pointing small triangle
-<Multi_key> <semicolon> <z> : "■"  U25A0  # black square
-<Multi_key> <semicolon> <x> : "□"  U25A1  # white square
-<Multi_key> <semicolon> <c> : "◆"  U25C6  # black diamond
-<Multi_key> <semicolon> <v> : "◇"  U25C7  # white diamond
-<Multi_key> <semicolon> <semicolon> : "•"  U2022  # bullet
+<Multi_key> <semicolon> <b>           : "•"  U2022  # bullet
+<Multi_key> <semicolon> <o>           : "◦"  U25E6  # white bullet
+<Multi_key> <semicolon> <w>           : "◦"  U25E6  # white bullet
+<Multi_key> <semicolon> <h>           : "⁃"  U2043  # hyphen bullet
+<Multi_key> <semicolon> <t>           : "‣"  U2023  # triangular bullet
+<Multi_key> <semicolon> <semicolon>   : "•"  U2022  # bullet
+<Multi_key> <bracketleft> <bracketright> : "☐"  U2610  # ballot box
+<Multi_key> <bracketleft> <v>            : "☑"  U2611  # ballot box with check
+<Multi_key> <bracketleft> <y>            : "☑"  U2611  # ballot box with check
+<Multi_key> <bracketleft> <x>            : "☒"  U2612  # ballot box with x
 
 
 # Various Symbols
@@ -902,6 +914,8 @@ include "%L"
 <Multi_key> <s> <2> : "♫"  U266B  # beamed eighth notes
 <Multi_key> <s> <3> : "⁂"  U2042  # asterism
 <Multi_key> <s> <4> : "※"  U203B  # reference mark
+<Multi_key> <s> <5> : "★"  U2605  # black star
+<Multi_key> <s> <6> : "☆"  U2606  # white star
 <Multi_key> <s> <8> : "♪"  U266A  # eighth note
 <Multi_key> <s> <exclam>   : "‼"  U203C  # double exclamation mark
 <Multi_key> <s> <question> : "⸮"  U2E2E  # reversed question mark
@@ -1022,6 +1036,30 @@ include "%L"
 <Multi_key> <apostrophe> <less>         : "‹"  U2039  # left-pointing single angle quotation mark
 <Multi_key> <greater> <apostrophe>      : "›"  U203A  # right-pointing single angle quotation mark
 <Multi_key> <apostrophe> <greater>      : "›"  U203A  # right-pointing single angle quotation mark
+
+
+# Chess Pieces and Playing Card Suit Symbols
+
+<Multi_key> <C> <k> : "♔"  U2654  # white chess king
+<Multi_key> <C> <q> : "♕"  U2655  # white chess queen
+<Multi_key> <C> <r> : "♖"  U2656  # white chess rook
+<Multi_key> <C> <b> : "♗"  U2657  # white chess bishop
+<Multi_key> <C> <n> : "♘"  U2658  # white chess knight
+<Multi_key> <C> <p> : "♙"  U2659  # white chess pawn
+<Multi_key> <C> <K> : "♚"  U265A  # black chess king
+<Multi_key> <C> <Q> : "♛"  U265B  # black chess queen
+<Multi_key> <C> <R> : "♜"  U265C  # black chess rook
+<Multi_key> <C> <B> : "♝"  U265D  # black chess bishop
+<Multi_key> <C> <N> : "♞"  U265E  # black chess knight
+<Multi_key> <C> <P> : "♟"  U265F  # black chess pawn
+<Multi_key> <C> <c> : "♧"  U2667  # white club suit
+<Multi_key> <C> <C> : "♣"  U2663  # black club suit
+<Multi_key> <C> <d> : "♢"  U2662  # white diamond suit
+<Multi_key> <C> <D> : "♦"  U2666  # black diamond suit
+<Multi_key> <C> <h> : "♡"  U2661  # white heart suit
+<Multi_key> <C> <H> : "♥"  U2665  # black heart suit
+<Multi_key> <C> <s> : "♤"  U2664  # white spade suit
+<Multi_key> <C> <S> : "♠"  U2660  # black spade suit
 
 
 # Double Grave Accent
@@ -1169,6 +1207,30 @@ include "%L"
 <Multi_key> <greater> <Y> : "Ỵ"  U1EF4  # Y with dot below
 <Multi_key> <greater> <z> : "ẓ"  U1E93  # z with dot below
 <Multi_key> <greater> <Z> : "Ẓ"  U1E92  # Z with dot below
+
+
+# Accented Letters with Dot Below
+
+<Multi_key> <question> <a> : "ậ"  U1EAD  # a with circumflex and dot below
+<Multi_key> <question> <A> : "Ậ"  U1EAC  # A with circumflex and dot below
+<Multi_key> <question> <b> : "ặ"  U1EB7  # a with breve and dot below
+<Multi_key> <question> <B> : "Ặ"  U1EB6  # A with breve and dot below
+<Multi_key> <question> <e> : "ệ"  U1EC7  # e with circumflex and dot below
+<Multi_key> <question> <E> : "Ệ"  U1EC6  # E with circumflex and dot below
+<Multi_key> <question> <f> : "ḝ"  U1E1D  # e with cedilla and breve
+<Multi_key> <question> <F> : "Ḝ"  U1E1C  # E with cedilla and breve
+<Multi_key> <question> <l> : "ḹ"  U1E39  # l with dot below and macron
+<Multi_key> <question> <L> : "Ḹ"  U1E38  # L with dot below and macron
+<Multi_key> <question> <o> : "ộ"  U1ED9  # o with circumflex and dot below
+<Multi_key> <question> <O> : "Ộ"  U1ED8  # O with circumflex and dot below
+<Multi_key> <question> <r> : "ṝ"  U1E5D  # r with dot below and macron
+<Multi_key> <question> <R> : "Ṝ"  U1E5C  # R with dot below and macron
+<Multi_key> <question> <s> : "ṩ"  U1E69  # s with dot below and dot above
+<Multi_key> <question> <S> : "Ṩ"  U1E68  # S with dot below and dot above
+<Multi_key> <question> <t> : "ợ"  U1EE3  # o with horn and dot below
+<Multi_key> <question> <T> : "Ợ"  U1EE2  # O with horn and dot below
+<Multi_key> <question> <u> : "ự"  U1EF1  # u with horn and dot below
+<Multi_key> <question> <U> : "Ự"  U1EF0  # U with horn and dot below
 
 
 # Miscellaneous Symbols and Dingbats
@@ -1365,30 +1427,6 @@ include "%L"
 <Multi_key> <8> <l> : "➽"  U27BD  # heavy wedge-tailed rightwards arrow
 <Multi_key> <8> <m> : "➾"  U27BE  # open-outlined rightwards arrow
 <Multi_key> <8> <n> : "⟁"  U27C1  # white triangle containing small white triangle
-
-
-# Chess Pieces and Playing Card Suit Symbols
-
-<Multi_key> <C> <k> : "♔"  U2654  # white chess king
-<Multi_key> <C> <q> : "♕"  U2655  # white chess queen
-<Multi_key> <C> <r> : "♖"  U2656  # white chess rook
-<Multi_key> <C> <b> : "♗"  U2657  # white chess bishop
-<Multi_key> <C> <n> : "♘"  U2658  # white chess knight
-<Multi_key> <C> <p> : "♙"  U2659  # white chess pawn
-<Multi_key> <C> <K> : "♚"  U265A  # black chess king
-<Multi_key> <C> <Q> : "♛"  U265B  # black chess queen
-<Multi_key> <C> <R> : "♜"  U265C  # black chess rook
-<Multi_key> <C> <B> : "♝"  U265D  # black chess bishop
-<Multi_key> <C> <N> : "♞"  U265E  # black chess knight
-<Multi_key> <C> <P> : "♟"  U265F  # black chess pawn
-<Multi_key> <C> <c> : "♧"  U2667  # white club suit
-<Multi_key> <C> <C> : "♣"  U2663  # black club suit
-<Multi_key> <C> <d> : "♢"  U2662  # white diamond suit
-<Multi_key> <C> <D> : "♦"  U2666  # black diamond suit
-<Multi_key> <C> <h> : "♡"  U2661  # white heart suit
-<Multi_key> <C> <H> : "♥"  U2665  # black heart suit
-<Multi_key> <C> <s> : "♤"  U2664  # white spade suit
-<Multi_key> <C> <S> : "♠"  U2660  # black spade suit
 
 
 # Dingbat Negative Circled Digits
