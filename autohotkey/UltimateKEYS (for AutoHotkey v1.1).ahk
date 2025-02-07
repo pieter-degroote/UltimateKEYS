@@ -1,6 +1,6 @@
 #requires AutoHotkey v1.1
 
-; UltimateKEYS (for AutoHotkey v1.1).ahk - 2025-01-29
+; UltimateKEYS (for AutoHotkey v1.1).ahk - 2025-02-06
 
 ; Website :  https://pieter-degroote.github.io/UltimateKEYS/
 
@@ -21,10 +21,12 @@ ListLines Off   ; omits recently executed lines from history (for privacy and se
 
 SendMode Input  ; optimizes for faster and more reliable input
 
+global gEndKeys := "{bs}{esc}"  ; ends dead key input on Backspace or Escape
+
 
 ; Compose Key Sequences (declaration)
 
-compose := ComObjCreate("Scripting.Dictionary")
+global compose := ComObjCreate("Scripting.Dictionary")
 
 
 ; Compose :  Acute Accent
@@ -1832,7 +1834,7 @@ compose.item["?U"] := "{u+1ef0}"  ; (Ự) U with horn and dot below
 >!sc056::    ; Right Alt + ISO Key
 <^>!sc029::  ; AltGr + Grave Accent
 <^>!sc056::  ; AltGr + ISO Key
-  keys := InputHook("L2", "{esc}")
+  keys := InputHook("L2", gEndKeys)
   keys.Start()
   keys.Wait()
   Send % compose.item[keys.Input]
