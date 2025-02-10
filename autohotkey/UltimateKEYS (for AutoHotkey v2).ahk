@@ -1,6 +1,6 @@
 #requires AutoHotkey v2
 
-; UltimateKEYS (for AutoHotkey v2).ahk - 2025-02-06
+; UltimateKEYS (for AutoHotkey v2).ahk - 2025-02-10
 
 ; Website :  https://pieter-degroote.github.io/UltimateKEYS/
 
@@ -396,8 +396,6 @@ compose["bd"] := "{u+0256}"  ; (ɖ) small letter d with tail
 compose["bD"] := "{u+0189}"  ; (Ɖ) capital letter African D
 compose["be"] := "{u+0115}"  ; (ĕ) e with breve
 compose["bE"] := "{u+0114}"  ; (Ĕ) E with breve
-compose["bf"] := "{u+0259}"  ; (ə) small letter schwa (Azerbaijani)
-compose["bF"] := "{u+018f}"  ; (Ə) capital letter schwa (Azerbaijani)
 compose["bg"] := "{u+011f}"  ; (ğ) g with breve
 compose["bG"] := "{u+011e}"  ; (Ğ) G with breve
 compose["bi"] := "{u+012d}"  ; (ĭ) i with breve
@@ -818,8 +816,6 @@ compose["q0"] := "{u+21d4}"  ; (⇔) left right double arrow
 ; Compose :  Various Symbols
 
 compose["sa"] := "{u+2100}"  ; (℀) account of
-compose["sb"] := "{u+203d}"  ; (‽) interrobang
-compose["sB"] := "{u+2e18}"  ; (⸘) inverted interrobang
 compose["sc"] := "{u+2105}"  ; (℅) care of
 compose["sd"] := "{u+22c4}"  ; (⋄) diamond operator
 compose["se"] := "{u+212e}"  ; (℮) estimated symbol
@@ -920,6 +916,8 @@ compose["ae"] := "{u+00e6}"  ; (æ) letter ae
 compose["AE"] := "{u+00c6}"  ; (Æ) letter AE
 compose["dh"] := "{u+00f0}"  ; (ð) small letter eth
 compose["DH"] := "{u+00d0}"  ; (Ð) capital letter eth
+compose["ee"] := "{u+0259}"  ; (ə) small letter schwa
+compose["EE"] := "{u+018f}"  ; (Ə) capital letter schwa
 compose["fs"] := "{u+017f}"  ; (ſ) small letter long s
 compose["ij"] := "{u+0133}"  ; (ĳ) ligature ij
 compose["IJ"] := "{u+0132}"  ; (Ĳ) ligature IJ
@@ -973,6 +971,8 @@ compose["a-"] := "{u+00aa}"  ; (ª) feminine ordinal indicator (Spanish, Portugu
 compose["o-"] := "{u+00ba}"  ; (º) masculine ordinal indicator (Spanish, Portuguese, Italian, Galician)
 compose["!!"] := "{u+00a1}"  ; (¡) inverted exclamation mark
 compose["??"] := "{u+00bf}"  ; (¿) inverted question mark
+compose["!?"] := "{u+203d}"  ; (‽) interrobang
+compose["?!"] := "{u+2e18}"  ; (⸘) inverted interrobang
 compose["oc"] := "{u+00a9}"  ; (©) copyright sign
 compose["(c"] := "{u+00a9}"  ; (©) copyright sign
 compose["op"] := "{u+2117}"  ; (℗) sound recording copyright
@@ -997,6 +997,10 @@ compose[";w"] := "{u+25e6}"  ; (◦) white bullet
 compose[";h"] := "{u+2043}"  ; (⁃) hyphen bullet
 compose[";t"] := "{u+2023}"  ; (‣) triangular bullet
 compose[";;"] := "{u+2022}"  ; (•) bullet
+compose[":("] := "{u+2639}"  ; (☹) white frowning face
+compose[":)"] := "{u+263a}"  ; (☺) white smiling face
+compose[";)"] := "{u+263b}"  ; (☻) black smiling face
+compose["<3"] := "{u+2665}"  ; (♥) black heart suit
 compose["[]"] := "{u+2610}"  ; (☐) ballot box
 compose["[v"] := "{u+2611}"  ; (☑) ballot box with check
 compose["[y"] := "{u+2611}"  ; (☑) ballot box with check
@@ -1833,9 +1837,8 @@ compose["?U"] := "{u+1ef0}"  ; (Ự) U with horn and dot below
 >!sc056::      ; Right Alt + ISO Key
 <^>!sc029::    ; AltGr + Grave Accent
 <^>!sc056:: {  ; AltGr + ISO Key
-  keys := InputHook("L2", gEndKeys)
-  keys.Start()
-  keys.Wait()
-  if compose.Has(keys.Input)
-    Send compose[keys.Input]
+  ih := InputHook("L2", gEndKeys)
+  ih.Start(), ih.Wait()
+  if compose.Has(ih.Input)
+    Send compose[ih.Input]
 }

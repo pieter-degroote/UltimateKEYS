@@ -1,6 +1,6 @@
 #requires AutoHotkey v1.1
 
-; UltimateKEYS (for AutoHotkey v1.1).ahk - 2025-02-06
+; UltimateKEYS (for AutoHotkey v1.1).ahk - 2025-02-10
 
 ; Website :  https://pieter-degroote.github.io/UltimateKEYS/
 
@@ -397,8 +397,6 @@ compose.item["bd"] := "{u+0256}"  ; (ɖ) small letter d with tail
 compose.item["bD"] := "{u+0189}"  ; (Ɖ) capital letter African D
 compose.item["be"] := "{u+0115}"  ; (ĕ) e with breve
 compose.item["bE"] := "{u+0114}"  ; (Ĕ) E with breve
-compose.item["bf"] := "{u+0259}"  ; (ə) small letter schwa (Azerbaijani)
-compose.item["bF"] := "{u+018f}"  ; (Ə) capital letter schwa (Azerbaijani)
 compose.item["bg"] := "{u+011f}"  ; (ğ) g with breve
 compose.item["bG"] := "{u+011e}"  ; (Ğ) G with breve
 compose.item["bi"] := "{u+012d}"  ; (ĭ) i with breve
@@ -819,8 +817,6 @@ compose.item["q0"] := "{u+21d4}"  ; (⇔) left right double arrow
 ; Compose :  Various Symbols
 
 compose.item["sa"] := "{u+2100}"  ; (℀) account of
-compose.item["sb"] := "{u+203d}"  ; (‽) interrobang
-compose.item["sB"] := "{u+2e18}"  ; (⸘) inverted interrobang
 compose.item["sc"] := "{u+2105}"  ; (℅) care of
 compose.item["sd"] := "{u+22c4}"  ; (⋄) diamond operator
 compose.item["se"] := "{u+212e}"  ; (℮) estimated symbol
@@ -921,6 +917,8 @@ compose.item["ae"] := "{u+00e6}"  ; (æ) letter ae
 compose.item["AE"] := "{u+00c6}"  ; (Æ) letter AE
 compose.item["dh"] := "{u+00f0}"  ; (ð) small letter eth
 compose.item["DH"] := "{u+00d0}"  ; (Ð) capital letter eth
+compose.item["ee"] := "{u+0259}"  ; (ə) small letter schwa
+compose.item["EE"] := "{u+018f}"  ; (Ə) capital letter schwa
 compose.item["fs"] := "{u+017f}"  ; (ſ) small letter long s
 compose.item["ij"] := "{u+0133}"  ; (ĳ) ligature ij
 compose.item["IJ"] := "{u+0132}"  ; (Ĳ) ligature IJ
@@ -974,6 +972,8 @@ compose.item["a-"] := "{u+00aa}"  ; (ª) feminine ordinal indicator (Spanish, Po
 compose.item["o-"] := "{u+00ba}"  ; (º) masculine ordinal indicator (Spanish, Portuguese, Italian, Galician)
 compose.item["!!"] := "{u+00a1}"  ; (¡) inverted exclamation mark
 compose.item["??"] := "{u+00bf}"  ; (¿) inverted question mark
+compose.item["!?"] := "{u+203d}"  ; (‽) interrobang
+compose.item["?!"] := "{u+2e18}"  ; (⸘) inverted interrobang
 compose.item["oc"] := "{u+00a9}"  ; (©) copyright sign
 compose.item["(c"] := "{u+00a9}"  ; (©) copyright sign
 compose.item["op"] := "{u+2117}"  ; (℗) sound recording copyright
@@ -998,6 +998,10 @@ compose.item[";w"] := "{u+25e6}"  ; (◦) white bullet
 compose.item[";h"] := "{u+2043}"  ; (⁃) hyphen bullet
 compose.item[";t"] := "{u+2023}"  ; (‣) triangular bullet
 compose.item[";;"] := "{u+2022}"  ; (•) bullet
+compose.item[":("] := "{u+2639}"  ; (☹) white frowning face
+compose.item[":)"] := "{u+263a}"  ; (☺) white smiling face
+compose.item[";)"] := "{u+263b}"  ; (☻) black smiling face
+compose.item["<3"] := "{u+2665}"  ; (♥) black heart suit
 compose.item["[]"] := "{u+2610}"  ; (☐) ballot box
 compose.item["[v"] := "{u+2611}"  ; (☑) ballot box with check
 compose.item["[y"] := "{u+2611}"  ; (☑) ballot box with check
@@ -1834,8 +1838,7 @@ compose.item["?U"] := "{u+1ef0}"  ; (Ự) U with horn and dot below
 >!sc056::    ; Right Alt + ISO Key
 <^>!sc029::  ; AltGr + Grave Accent
 <^>!sc056::  ; AltGr + ISO Key
-  keys := InputHook("L2", gEndKeys)
-  keys.Start()
-  keys.Wait()
-  Send % compose.item[keys.Input]
+  ih := InputHook("L2", gEndKeys)
+  ih.Start(), ih.Wait()
+  Send % compose.item[ih.Input]
   return
