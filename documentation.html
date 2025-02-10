@@ -76,6 +76,8 @@ Otherwise, it might be impossible to type any Unicode character higher than "Bas
 <pre>
 # Acute Accent
 
+# Acute Accent
+
 &lt;Multi_key&gt; &lt;apostrophe&gt; &lt;a&gt; : "á"  U00E1  # a with acute
 &lt;Multi_key&gt; &lt;apostrophe&gt; &lt;A&gt; : "Á"  U00C1  # A with acute
 &lt;Multi_key&gt; &lt;apostrophe&gt; &lt;c&gt; : "ć"  U0107  # c with acute
@@ -442,8 +444,6 @@ Otherwise, it might be impossible to type any Unicode character higher than "Bas
 &lt;Multi_key&gt; &lt;b&gt; &lt;D&gt; : "Ɖ"  U0189  # capital letter African D
 &lt;Multi_key&gt; &lt;b&gt; &lt;e&gt; : "ĕ"  U0115  # e with breve
 &lt;Multi_key&gt; &lt;b&gt; &lt;E&gt; : "Ĕ"  U0114  # E with breve
-&lt;Multi_key&gt; &lt;b&gt; &lt;f&gt; : "ə"  U0259  # small letter schwa (Azerbaijani)
-&lt;Multi_key&gt; &lt;b&gt; &lt;F&gt; : "Ə"  U018F  # capital letter schwa (Azerbaijani)
 &lt;Multi_key&gt; &lt;b&gt; &lt;g&gt; : "ğ"  U011F  # g with breve
 &lt;Multi_key&gt; &lt;b&gt; &lt;G&gt; : "Ğ"  U011E  # G with breve
 &lt;Multi_key&gt; &lt;b&gt; &lt;i&gt; : "ĭ"  U012D  # i with breve
@@ -864,8 +864,6 @@ Otherwise, it might be impossible to type any Unicode character higher than "Bas
 # Various Symbols
 
 &lt;Multi_key&gt; &lt;s&gt; &lt;a&gt; : "℀"  U2100  # account of
-&lt;Multi_key&gt; &lt;s&gt; &lt;b&gt; : "‽"  U203D  # interrobang
-&lt;Multi_key&gt; &lt;s&gt; &lt;B&gt; : "⸘"  U2E18  # inverted interrobang
 &lt;Multi_key&gt; &lt;s&gt; &lt;c&gt; : "℅"  U2105  # care of
 &lt;Multi_key&gt; &lt;s&gt; &lt;d&gt; : "⋄"  U22C4  # diamond operator
 &lt;Multi_key&gt; &lt;s&gt; &lt;e&gt; : "℮"  U212E  # estimated symbol
@@ -966,6 +964,8 @@ Otherwise, it might be impossible to type any Unicode character higher than "Bas
 &lt;Multi_key&gt; &lt;A&gt; &lt;E&gt; : "Æ"  U00C6  # letter AE
 &lt;Multi_key&gt; &lt;d&gt; &lt;h&gt; : "ð"  U00F0  # small letter eth
 &lt;Multi_key&gt; &lt;D&gt; &lt;H&gt; : "Ð"  U00D0  # capital letter eth
+&lt;Multi_key&gt; &lt;e&gt; &lt;e&gt; : "ə"  U0259  # small letter schwa
+&lt;Multi_key&gt; &lt;E&gt; &lt;E&gt; : "Ə"  U018F  # capital letter schwa
 &lt;Multi_key&gt; &lt;f&gt; &lt;s&gt; : "ſ"  U017F  # small letter long s
 &lt;Multi_key&gt; &lt;i&gt; &lt;j&gt; : "ĳ"  U0133  # ligature ij
 &lt;Multi_key&gt; &lt;I&gt; &lt;J&gt; : "Ĳ"  U0132  # ligature IJ
@@ -1019,6 +1019,8 @@ Otherwise, it might be impossible to type any Unicode character higher than "Bas
 &lt;Multi_key&gt; &lt;o&gt; &lt;minus&gt;               : "º"  U00BA  # masculine ordinal indicator (Spanish, Portuguese, Italian, Galician)
 &lt;Multi_key&gt; &lt;exclam&gt; &lt;exclam&gt;         : "¡"  U00A1  # inverted exclamation mark
 &lt;Multi_key&gt; &lt;question&gt; &lt;question&gt;     : "¿"  U00BF  # inverted question mark
+&lt;Multi_key&gt; &lt;exclam&gt; &lt;question&gt;       : "‽"  U203D  # interrobang
+&lt;Multi_key&gt; &lt;question&gt; &lt;exclam&gt;       : "⸘"  U2E18  # inverted interrobang
 &lt;Multi_key&gt; &lt;o&gt; &lt;c&gt;                   : "©"  U00A9  # copyright sign
 &lt;Multi_key&gt; &lt;parenleft&gt; &lt;c&gt;           : "©"  U00A9  # copyright sign
 &lt;Multi_key&gt; &lt;o&gt; &lt;p&gt;                   : "℗"  U2117  # sound recording copyright
@@ -1043,6 +1045,10 @@ Otherwise, it might be impossible to type any Unicode character higher than "Bas
 &lt;Multi_key&gt; &lt;semicolon&gt; &lt;h&gt;           : "⁃"  U2043  # hyphen bullet
 &lt;Multi_key&gt; &lt;semicolon&gt; &lt;t&gt;           : "‣"  U2023  # triangular bullet
 &lt;Multi_key&gt; &lt;semicolon&gt; &lt;semicolon&gt;   : "•"  U2022  # bullet
+&lt;Multi_key&gt; &lt;colon&gt; &lt;parenleft&gt;       : "☹"  U2639  # white frowning face
+&lt;Multi_key&gt; &lt;colon&gt; &lt;parenright&gt;      : "☺"  U263A  # white smiling face
+&lt;Multi_key&gt; &lt;semicolon&gt; &lt;parenright&gt;  : "☻"  U263B  # black smiling face
+&lt;Multi_key&gt; &lt;less&gt; &lt;3&gt;                : "♥"  U2665  # black heart suit
 &lt;Multi_key&gt; &lt;bracketleft&gt; &lt;bracketright&gt; : "☐"  U2610  # ballot box
 &lt;Multi_key&gt; &lt;bracketleft&gt; &lt;v&gt;            : "☑"  U2611  # ballot box with check
 &lt;Multi_key&gt; &lt;bracketleft&gt; &lt;y&gt;            : "☑"  U2611  # ballot box with check
