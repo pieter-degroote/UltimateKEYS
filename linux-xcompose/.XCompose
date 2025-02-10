@@ -1,6 +1,6 @@
 include "%L"
 
-# UltimateKEYS Compose Key Sequences - 2025-01-29
+# UltimateKEYS Compose Key Sequences - 2025-02-10
 
 # Website :  https://pieter-degroote.github.io/UltimateKEYS/
 
@@ -377,8 +377,6 @@ include "%L"
 <Multi_key> <b> <D> : "Ɖ"  U0189  # capital letter African D
 <Multi_key> <b> <e> : "ĕ"  U0115  # e with breve
 <Multi_key> <b> <E> : "Ĕ"  U0114  # E with breve
-<Multi_key> <b> <f> : "ə"  U0259  # small letter schwa (Azerbaijani)
-<Multi_key> <b> <F> : "Ə"  U018F  # capital letter schwa (Azerbaijani)
 <Multi_key> <b> <g> : "ğ"  U011F  # g with breve
 <Multi_key> <b> <G> : "Ğ"  U011E  # G with breve
 <Multi_key> <b> <i> : "ĭ"  U012D  # i with breve
@@ -799,8 +797,6 @@ include "%L"
 # Various Symbols
 
 <Multi_key> <s> <a> : "℀"  U2100  # account of
-<Multi_key> <s> <b> : "‽"  U203D  # interrobang
-<Multi_key> <s> <B> : "⸘"  U2E18  # inverted interrobang
 <Multi_key> <s> <c> : "℅"  U2105  # care of
 <Multi_key> <s> <d> : "⋄"  U22C4  # diamond operator
 <Multi_key> <s> <e> : "℮"  U212E  # estimated symbol
@@ -901,6 +897,8 @@ include "%L"
 <Multi_key> <A> <E> : "Æ"  U00C6  # letter AE
 <Multi_key> <d> <h> : "ð"  U00F0  # small letter eth
 <Multi_key> <D> <H> : "Ð"  U00D0  # capital letter eth
+<Multi_key> <e> <e> : "ə"  U0259  # small letter schwa
+<Multi_key> <E> <E> : "Ə"  U018F  # capital letter schwa
 <Multi_key> <f> <s> : "ſ"  U017F  # small letter long s
 <Multi_key> <i> <j> : "ĳ"  U0133  # ligature ij
 <Multi_key> <I> <J> : "Ĳ"  U0132  # ligature IJ
@@ -954,6 +952,8 @@ include "%L"
 <Multi_key> <o> <minus>               : "º"  U00BA  # masculine ordinal indicator (Spanish, Portuguese, Italian, Galician)
 <Multi_key> <exclam> <exclam>         : "¡"  U00A1  # inverted exclamation mark
 <Multi_key> <question> <question>     : "¿"  U00BF  # inverted question mark
+<Multi_key> <exclam> <question>       : "‽"  U203D  # interrobang
+<Multi_key> <question> <exclam>       : "⸘"  U2E18  # inverted interrobang
 <Multi_key> <o> <c>                   : "©"  U00A9  # copyright sign
 <Multi_key> <parenleft> <c>           : "©"  U00A9  # copyright sign
 <Multi_key> <o> <p>                   : "℗"  U2117  # sound recording copyright
@@ -978,6 +978,10 @@ include "%L"
 <Multi_key> <semicolon> <h>           : "⁃"  U2043  # hyphen bullet
 <Multi_key> <semicolon> <t>           : "‣"  U2023  # triangular bullet
 <Multi_key> <semicolon> <semicolon>   : "•"  U2022  # bullet
+<Multi_key> <colon> <parenleft>       : "☹"  U2639  # white frowning face
+<Multi_key> <colon> <parenright>      : "☺"  U263A  # white smiling face
+<Multi_key> <semicolon> <parenright>  : "☻"  U263B  # black smiling face
+<Multi_key> <less> <3>                : "♥"  U2665  # black heart suit
 <Multi_key> <bracketleft> <bracketright> : "☐"  U2610  # ballot box
 <Multi_key> <bracketleft> <v>            : "☑"  U2611  # ballot box with check
 <Multi_key> <bracketleft> <y>            : "☑"  U2611  # ballot box with check
