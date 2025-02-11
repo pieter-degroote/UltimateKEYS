@@ -1,6 +1,6 @@
 include "%L"
 
-# UltimateKEYS Compose Key Sequences - 2025-02-10
+# UltimateKEYS Compose Key Sequences - 2025-02-11
 
 # Website :  https://pieter-degroote.github.io/UltimateKEYS/
 
@@ -389,10 +389,6 @@ include "%L"
 <Multi_key> <b> <T> : "Ț"  U021A  # T with comma below (Romanian)
 <Multi_key> <b> <u> : "ŭ"  U016D  # u with breve
 <Multi_key> <b> <U> : "Ŭ"  U016C  # U with breve
-<Multi_key> <b> <w> : "ƿ"  U01BF  # small letter wynn
-<Multi_key> <b> <W> : "Ƿ"  U01F7  # capital letter wynn
-<Multi_key> <b> <y> : "ȝ"  U021D  # small letter yogh
-<Multi_key> <b> <Y> : "Ȝ"  U021C  # capital letter yogh
 <Multi_key> <b> <3>          : "ʒ"  U0292  # small letter ezh
 <Multi_key> <b> <numbersign> : "Ʒ"  U01B7  # capital letter ezh
 
@@ -515,6 +511,10 @@ include "%L"
 <Multi_key> <l> <S> : "Ʃ"  U01A9  # Latin capital letter esh
 <Multi_key> <l> <u> : "ʊ"  U028A  # Latin small letter upsilon
 <Multi_key> <l> <U> : "Ʊ"  U01B1  # Latin capital letter upsilon
+<Multi_key> <l> <w> : "ƿ"  U01BF  # small letter wynn
+<Multi_key> <l> <W> : "Ƿ"  U01F7  # capital letter wynn
+<Multi_key> <l> <y> : "ȝ"  U021D  # small letter yogh
+<Multi_key> <l> <Y> : "Ȝ"  U021C  # capital letter yogh
 <Multi_key> <l> <8>         : "ȣ"  U0223  # small letter ou
 <Multi_key> <l> <asterisk>  : "Ȣ"  U0222  # capital letter OU
 <Multi_key> <l> <7>         : "ɂ"  U0242  # small letter glottal stop
