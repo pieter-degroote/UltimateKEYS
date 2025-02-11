@@ -1,6 +1,6 @@
 #requires AutoHotkey v2
 
-; UltimateKEYS (for AutoHotkey v2).ahk - 2025-02-10
+; UltimateKEYS (for AutoHotkey v2).ahk - 2025-02-11
 
 ; Website :  https://pieter-degroote.github.io/UltimateKEYS/
 
@@ -408,10 +408,6 @@ compose["bt"] := "{u+021b}"  ; (ț) t with comma below (Romanian)
 compose["bT"] := "{u+021a}"  ; (Ț) T with comma below (Romanian)
 compose["bu"] := "{u+016d}"  ; (ŭ) u with breve
 compose["bU"] := "{u+016c}"  ; (Ŭ) U with breve
-compose["bw"] := "{u+01bf}"  ; (ƿ) small letter wynn
-compose["bW"] := "{u+01f7}"  ; (Ƿ) capital letter wynn
-compose["by"] := "{u+021d}"  ; (ȝ) small letter yogh
-compose["bY"] := "{u+021c}"  ; (Ȝ) capital letter yogh
 compose["b3"] := "{u+0292}"  ; (ʒ) small letter ezh
 compose["b#"] := "{u+01b7}"  ; (Ʒ) capital letter ezh
 
@@ -534,6 +530,10 @@ compose["ls"] := "{u+0283}"  ; (ʃ) Latin small letter esh
 compose["lS"] := "{u+01a9}"  ; (Ʃ) Latin capital letter esh
 compose["lu"] := "{u+028a}"  ; (ʊ) Latin small letter upsilon
 compose["lU"] := "{u+01b1}"  ; (Ʊ) Latin capital letter upsilon
+compose["lw"] := "{u+01bf}"  ; (ƿ) small letter wynn
+compose["lW"] := "{u+01f7}"  ; (Ƿ) capital letter wynn
+compose["ly"] := "{u+021d}"  ; (ȝ) small letter yogh
+compose["lY"] := "{u+021c}"  ; (Ȝ) capital letter yogh
 compose["l8"] := "{u+0223}"  ; (ȣ) small letter ou
 compose["l*"] := "{u+0222}"  ; (Ȣ) capital letter OU
 compose["l7"] := "{u+0242}"  ; (ɂ) small letter glottal stop
