@@ -1,6 +1,6 @@
 #requires AutoHotkey v1.1
 
-; UltimateKEYS (for AutoHotkey v1.1).ahk - 2025-02-11
+; UltimateKEYS (for AutoHotkey v1.1).ahk - 2025-02-19
 
 ; Website :  https://pieter-degroote.github.io/UltimateKEYS/
 
@@ -276,7 +276,6 @@ compose.item[".o"] := "{u+022f}"  ; (ȯ) o with dot above
 compose.item[".O"] := "{u+022e}"  ; (Ȯ) O with dot above
 compose.item[".p"] := "{u+1e57}"  ; (ṗ) p with dot above
 compose.item[".P"] := "{u+1e56}"  ; (Ṗ) P with dot above
-compose.item[".q"] := "{u+1e9b}"  ; (ẛ) long s with dot above
 compose.item[".r"] := "{u+1e59}"  ; (ṙ) r with dot above
 compose.item[".R"] := "{u+1e58}"  ; (Ṙ) R with dot above
 compose.item[".s"] := "{u+1e61}"  ; (ṡ) s with dot above
@@ -345,7 +344,6 @@ compose.item["-Z"] := "{u+01b5}"  ; (Ƶ) Z with stroke
 
 ; Compose :  Macron and Stroke (additional)
 
-compose.item["_f"] := "{u+1e9d}"  ; (ẝ) long s with high stroke
 compose.item["_g"] := "{u+1e21}"  ; (ḡ) g with macron
 compose.item["_G"] := "{u+1e20}"  ; (Ḡ) G with macron
 compose.item["_i"] := "{u+0268}"  ; (ɨ) i with stroke
