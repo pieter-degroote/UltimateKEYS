@@ -243,8 +243,8 @@ include "%L"
 <Multi_key> <period> <G> : "Ġ"  U0120  # G with dot above
 <Multi_key> <period> <h> : "ḣ"  U1E23  # h with dot above
 <Multi_key> <period> <H> : "Ḣ"  U1E22  # H with dot above
-<Multi_key> <period> <i> : "ı"  U0131  # dotless i (Turkish, Azerbaijani)
-<Multi_key> <period> <I> : "İ"  U0130  # I with dot above (Turkish, Azerbaijani)
+<Multi_key> <period> <i> : "ı"  U0131  # dotless i
+<Multi_key> <period> <I> : "İ"  U0130  # I with dot above
 <Multi_key> <period> <j> : "ȷ"  U0237  # dotless j
 <Multi_key> <period> <l> : "ŀ"  U0140  # l with middle dot
 <Multi_key> <period> <L> : "Ŀ"  U013F  # L with middle dot
@@ -294,10 +294,10 @@ include "%L"
 <Multi_key> <minus> <D> : "Đ"  U0110  # D with stroke
 <Multi_key> <minus> <e> : "ē"  U0113  # e with macron
 <Multi_key> <minus> <E> : "Ē"  U0112  # E with macron
-<Multi_key> <minus> <g> : "ǥ"  U01E5  # g with stroke (Skolt Sami)
-<Multi_key> <minus> <G> : "Ǥ"  U01E4  # G with stroke (Skolt Sami)
-<Multi_key> <minus> <h> : "ħ"  U0127  # h with stroke (Maltese)
-<Multi_key> <minus> <H> : "Ħ"  U0126  # H with stroke (Maltese)
+<Multi_key> <minus> <g> : "ǥ"  U01E5  # g with stroke
+<Multi_key> <minus> <G> : "Ǥ"  U01E4  # G with stroke
+<Multi_key> <minus> <h> : "ħ"  U0127  # h with stroke
+<Multi_key> <minus> <H> : "Ħ"  U0126  # H with stroke
 <Multi_key> <minus> <i> : "ī"  U012B  # i with macron
 <Multi_key> <minus> <I> : "Ī"  U012A  # I with macron
 <Multi_key> <minus> <j> : "ɉ"  U0249  # j with stroke
@@ -381,10 +381,10 @@ include "%L"
 <Multi_key> <b> <I> : "Ĭ"  U012C  # I with breve
 <Multi_key> <b> <o> : "ŏ"  U014F  # o with breve
 <Multi_key> <b> <O> : "Ŏ"  U014E  # O with breve
-<Multi_key> <b> <s> : "ș"  U0219  # s with comma below (Romanian)
-<Multi_key> <b> <S> : "Ș"  U0218  # S with comma below (Romanian)
-<Multi_key> <b> <t> : "ț"  U021B  # t with comma below (Romanian)
-<Multi_key> <b> <T> : "Ț"  U021A  # T with comma below (Romanian)
+<Multi_key> <b> <s> : "ș"  U0219  # s with comma below
+<Multi_key> <b> <S> : "Ș"  U0218  # S with comma below
+<Multi_key> <b> <t> : "ț"  U021B  # t with comma below
+<Multi_key> <b> <T> : "Ț"  U021A  # T with comma below
 <Multi_key> <b> <u> : "ŭ"  U016D  # u with breve
 <Multi_key> <b> <U> : "Ŭ"  U016C  # U with breve
 <Multi_key> <b> <3>          : "ʒ"  U0292  # small letter ezh
@@ -946,8 +946,8 @@ include "%L"
 <Multi_key> <period> <minus>          : "·"  U00B7  # middle dot
 <Multi_key> <period> <3>              : "…"  U2026  # horizontal ellipsis
 <Multi_key> <period> <period>         : "…"  U2026  # horizontal ellipsis
-<Multi_key> <a> <minus>               : "ª"  U00AA  # feminine ordinal indicator (Spanish, Portuguese, Italian, Galician)
-<Multi_key> <o> <minus>               : "º"  U00BA  # masculine ordinal indicator (Spanish, Portuguese, Italian, Galician)
+<Multi_key> <a> <minus>               : "ª"  U00AA  # feminine ordinal indicator
+<Multi_key> <o> <minus>               : "º"  U00BA  # masculine ordinal indicator
 <Multi_key> <exclam> <exclam>         : "¡"  U00A1  # inverted exclamation mark
 <Multi_key> <question> <question>     : "¿"  U00BF  # inverted question mark
 <Multi_key> <exclam> <question>       : "‽"  U203D  # interrobang
