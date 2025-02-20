@@ -1,6 +1,6 @@
 include "%L"
 
-# UltimateKEYS Compose Key Sequences - 2025-02-11
+# UltimateKEYS Compose Key Sequences - 2025-02-19
 
 # Website :  https://pieter-degroote.github.io/UltimateKEYS/
 
@@ -256,7 +256,6 @@ include "%L"
 <Multi_key> <period> <O> : "Ȯ"  U022E  # O with dot above
 <Multi_key> <period> <p> : "ṗ"  U1E57  # p with dot above
 <Multi_key> <period> <P> : "Ṗ"  U1E56  # P with dot above
-<Multi_key> <period> <q> : "ẛ"  U1E9B  # long s with dot above
 <Multi_key> <period> <r> : "ṙ"  U1E59  # r with dot above
 <Multi_key> <period> <R> : "Ṙ"  U1E58  # R with dot above
 <Multi_key> <period> <s> : "ṡ"  U1E61  # s with dot above
@@ -325,7 +324,6 @@ include "%L"
 
 # Macron and Stroke (additional)
 
-<Multi_key> <underscore> <f> : "ẝ"  U1E9D  # long s with high stroke
 <Multi_key> <underscore> <g> : "ḡ"  U1E21  # g with macron
 <Multi_key> <underscore> <G> : "Ḡ"  U1E20  # G with macron
 <Multi_key> <underscore> <i> : "ɨ"  U0268  # i with stroke
