@@ -1,6 +1,6 @@
 #requires AutoHotkey v1.1
 
-; UltimateKEYS (for AutoHotkey v1.1).ahk - 2025-02-19
+; UltimateKEYS (for AutoHotkey v1.1).ahk - 2025-02-25
 
 ; Website :  https://pieter-degroote.github.io/UltimateKEYS/
 
@@ -483,6 +483,8 @@ compose.item["fr"] := "{u+027e}"  ; (ɾ) r with fishhook
 compose.item["ft"] := "{u+0288}"  ; (ʈ) t with retroflex hook
 compose.item["fT"] := "{u+01ae}"  ; (Ʈ) T with retroflex hook
 compose.item["fv"] := "{u+2c71}"  ; (ⱱ) v with right hook
+compose.item["fy"] := "{u+1eff}"  ; (ỿ) y with loop
+compose.item["fY"] := "{u+1efe}"  ; (Ỿ) Y with loop
 compose.item["fz"] := "{u+0290}"  ; (ʐ) z with retroflex hook
 
 
