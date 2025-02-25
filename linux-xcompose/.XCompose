@@ -1,6 +1,6 @@
 include "%L"
 
-# UltimateKEYS Compose Key Sequences - 2025-02-19
+# UltimateKEYS Compose Key Sequences - 2025-02-25
 
 # Website :  https://pieter-degroote.github.io/UltimateKEYS/
 
@@ -463,6 +463,8 @@ include "%L"
 <Multi_key> <f> <t> : "ʈ"  U0288  # t with retroflex hook
 <Multi_key> <f> <T> : "Ʈ"  U01AE  # T with retroflex hook
 <Multi_key> <f> <v> : "ⱱ"  U2C71  # v with right hook
+<Multi_key> <f> <y> : "ỿ"  U1EFF  # y with loop
+<Multi_key> <f> <Y> : "Ỿ"  U1EFE  # Y with loop
 <Multi_key> <f> <z> : "ʐ"  U0290  # z with retroflex hook
 
 
