@@ -466,20 +466,6 @@ include "%L"
 <Multi_key> <f> <z> : "ʐ"  U0290  # z with retroflex hook
 
 
-# Swash Tail and Other Variations
-
-<Multi_key> <t> <c> : "ꞓ"  UA793  # c with bar
-<Multi_key> <t> <C> : "Ꞓ"  UA792  # C with bar
-<Multi_key> <t> <f> : "ꞙ"  UA799  # f with stroke
-<Multi_key> <t> <F> : "Ꞙ"  UA798  # F with stroke
-<Multi_key> <t> <l> : "ⱡ"  U2C61  # l with double bar
-<Multi_key> <t> <L> : "Ⱡ"  U2C60  # L with double bar
-<Multi_key> <t> <s> : "ȿ"  U023F  # s with swash tail
-<Multi_key> <t> <S> : "Ȿ"  U2C7E  # S with swash tail
-<Multi_key> <t> <z> : "ɀ"  U0240  # z with swash tail
-<Multi_key> <t> <Z> : "Ɀ"  U2C7F  # Z with swash tail
-
-
 # Latin Greek Letters and Variations
 
 <Multi_key> <l> <a> : "ɑ"  U0251  # Latin small letter alpha
@@ -551,6 +537,20 @@ include "%L"
 <Multi_key> <r> <y> : "ʎ"  U028E  # small letter turned y
 <Multi_key> <r> <z> : "ƹ"  U01B9  # Latin small letter ezh reversed
 <Multi_key> <r> <Z> : "Ƹ"  U01B8  # Latin capital letter ezh reversed
+
+
+# Swash Tail and Other Variations
+
+<Multi_key> <t> <c> : "ꞓ"  UA793  # c with bar
+<Multi_key> <t> <C> : "Ꞓ"  UA792  # C with bar
+<Multi_key> <t> <f> : "ꞙ"  UA799  # f with stroke
+<Multi_key> <t> <F> : "Ꞙ"  UA798  # F with stroke
+<Multi_key> <t> <l> : "ⱡ"  U2C61  # l with double bar
+<Multi_key> <t> <L> : "Ⱡ"  U2C60  # L with double bar
+<Multi_key> <t> <s> : "ȿ"  U023F  # s with swash tail
+<Multi_key> <t> <S> : "Ȿ"  U2C7E  # S with swash tail
+<Multi_key> <t> <z> : "ɀ"  U0240  # z with swash tail
+<Multi_key> <t> <Z> : "Ɀ"  U2C7F  # Z with swash tail
 
 
 # Currency Symbols
