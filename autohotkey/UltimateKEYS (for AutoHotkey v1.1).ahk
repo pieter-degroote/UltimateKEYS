@@ -486,20 +486,6 @@ compose.item["fv"] := "{u+2c71}"  ; (ⱱ) v with right hook
 compose.item["fz"] := "{u+0290}"  ; (ʐ) z with retroflex hook
 
 
-; Compose :  Swash Tail and Other Variations
-
-compose.item["tc"] := "{u+a793}"  ; (ꞓ) c with bar
-compose.item["tC"] := "{u+a792}"  ; (Ꞓ) C with bar
-compose.item["tf"] := "{u+a799}"  ; (ꞙ) f with stroke
-compose.item["tF"] := "{u+a798}"  ; (Ꞙ) F with stroke
-compose.item["tl"] := "{u+2c61}"  ; (ⱡ) l with double bar
-compose.item["tL"] := "{u+2c60}"  ; (Ⱡ) L with double bar
-compose.item["ts"] := "{u+023f}"  ; (ȿ) s with swash tail
-compose.item["tS"] := "{u+2c7e}"  ; (Ȿ) S with swash tail
-compose.item["tz"] := "{u+0240}"  ; (ɀ) z with swash tail
-compose.item["tZ"] := "{u+2c7f}"  ; (Ɀ) Z with swash tail
-
-
 ; Compose :  Latin Greek Letters and Variations
 
 compose.item["la"] := "{u+0251}"  ; (ɑ) Latin small letter alpha
@@ -571,6 +557,20 @@ compose.item["rw"] := "{u+028d}"  ; (ʍ) small letter turned w
 compose.item["ry"] := "{u+028e}"  ; (ʎ) small letter turned y
 compose.item["rz"] := "{u+01b9}"  ; (ƹ) Latin small letter ezh reversed
 compose.item["rZ"] := "{u+01b8}"  ; (Ƹ) Latin capital letter ezh reversed
+
+
+; Compose :  Swash Tail and Other Variations
+
+compose.item["tc"] := "{u+a793}"  ; (ꞓ) c with bar
+compose.item["tC"] := "{u+a792}"  ; (Ꞓ) C with bar
+compose.item["tf"] := "{u+a799}"  ; (ꞙ) f with stroke
+compose.item["tF"] := "{u+a798}"  ; (Ꞙ) F with stroke
+compose.item["tl"] := "{u+2c61}"  ; (ⱡ) l with double bar
+compose.item["tL"] := "{u+2c60}"  ; (Ⱡ) L with double bar
+compose.item["ts"] := "{u+023f}"  ; (ȿ) s with swash tail
+compose.item["tS"] := "{u+2c7e}"  ; (Ȿ) S with swash tail
+compose.item["tz"] := "{u+0240}"  ; (ɀ) z with swash tail
+compose.item["tZ"] := "{u+2c7f}"  ; (Ɀ) Z with swash tail
 
 
 ; Compose :  Currency Symbols
