@@ -16,11 +16,11 @@ VERSION	1.0
 
 SHIFTSTATE
 
-0	// State 0 :  Base
-1	// State 1 :  Shift
-2	// State 2 :  Ctrl         (required for technical reasons)
-6	// State 6 :  AltGr        (technically: Ctrl+Alt)
-7	// State 7 :  Shift+AltGr  (technically: Shift+Ctrl+Alt)
+0	//Column 4
+1	//Column 5 : Shft
+2	//Column 6 :       Ctrl
+6	//Column 7 :       Ctrl Alt
+7	//Column 8 : Shft  Ctrl Alt
 
 LAYOUT
 
