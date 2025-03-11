@@ -1,6 +1,6 @@
 #requires AutoHotkey v1.1
 
-; UltimateKEYS (for AutoHotkey v1.1).ahk - 2025-02-25
+; UltimateKEYS (for AutoHotkey v1.1).ahk - 2025-03-10
 
 ; Website :  https://pieter-degroote.github.io/UltimateKEYS/
 
@@ -490,9 +490,10 @@ compose.item["fz"] := "{u+0290}"  ; (ʐ) z with retroflex hook
 
 ; Compose :  Latin Greek Letters and Variations
 
-compose.item["la"] := "{u+0251}"  ; (ɑ) Latin small letter alpha
-compose.item["lA"] := "{u+2c6d}"  ; (Ɑ) Latin capital letter alpha
-compose.item["lb"] := "{u+025e}"  ; (ɞ) small letter closed reversed open e
+compose.item["la"] := "{u+0251}"  ; (ɑ) Latin small letter alpha (script a)
+compose.item["lA"] := "{u+2c6d}"  ; (Ɑ) Latin capital letter alpha (script A)
+compose.item["lb"] := "{u+a7b5}"  ; (ꞵ) Latin small letter beta
+compose.item["lB"] := "{u+a7b4}"  ; (Ꞵ) Latin capital letter beta
 compose.item["ld"] := "{u+1e9f}"  ; (ẟ) Latin small letter delta
 compose.item["le"] := "{u+025b}"  ; (ɛ) small letter open e (Latin small epsilon)
 compose.item["lE"] := "{u+0190}"  ; (Ɛ) capital letter open E (Latin capital epsilon)
@@ -526,6 +527,8 @@ compose.item["l*"] := "{u+0222}"  ; (Ȣ) capital letter OU
 compose.item["l7"] := "{u+0242}"  ; (ɂ) small letter glottal stop
 compose.item["l&"] := "{u+0241}"  ; (Ɂ) capital letter glottal stop
 compose.item["l?"] := "{u+0294}"  ; (ʔ) unicase letter glottal stop
+compose.item["l;"] := "{u+02bb}"  ; (ʻ) modifier letter turned comma
+compose.item["l'"] := "{u+02bc}"  ; (ʼ) modifier letter apostrophe
 
 
 ; Compose :  Turned and Reversed Letters
@@ -534,6 +537,7 @@ compose.item["ra"] := "{u+0250}"  ; (ɐ) small letter turned a
 compose.item["rA"] := "{u+2c6f}"  ; (Ɐ) capital letter turned A
 compose.item["rb"] := "{u+025c}"  ; (ɜ) small letter reversed open e
 compose.item["rB"] := "{u+a7ab}"  ; (Ɜ) capital letter reversed open E
+compose.item["rc"] := "{u+025e}"  ; (ɞ) small letter closed reversed open e
 compose.item["rd"] := "{u+018d}"  ; (ƍ) Latin small letter turned delta
 compose.item["re"] := "{u+01dd}"  ; (ǝ) small letter turned e
 compose.item["rE"] := "{u+018e}"  ; (Ǝ) capital letter reversed E
@@ -548,8 +552,8 @@ compose.item["rK"] := "{u+a7b0}"  ; (Ʞ) capital letter turned K
 compose.item["rm"] := "{u+026f}"  ; (ɯ) small letter turned m
 compose.item["rM"] := "{u+019c}"  ; (Ɯ) capital letter turned M
 compose.item["ro"] := "{u+0264}"  ; (ɤ) small letter ram's horn (baby gamma)
-compose.item["rq"] := "{u+0252}"  ; (ɒ) Latin small letter turned alpha
-compose.item["rQ"] := "{u+2c70}"  ; (Ɒ) Latin capital letter turned alpha
+compose.item["rq"] := "{u+0252}"  ; (ɒ) Latin small letter turned alpha (turned script a)
+compose.item["rQ"] := "{u+2c70}"  ; (Ɒ) Latin capital letter turned alpha (turned script A)
 compose.item["rr"] := "{u+0279}"  ; (ɹ) small letter turned r
 compose.item["rt"] := "{u+0287}"  ; (ʇ) small letter turned t
 compose.item["rT"] := "{u+a7b1}"  ; (Ʇ) small letter turned T
@@ -1118,6 +1122,28 @@ compose.item["Bu"] := "{u+0217}"  ; (ȗ) u with inverted breve
 compose.item["BU"] := "{u+0216}"  ; (Ȗ) U with inverted breve
 
 
+; Compose :  Letters with Two Diacritical Marks
+
+compose.item["Ma"] := "{u+01df}"  ; (ǟ) a with diaeresis and macron
+compose.item["MA"] := "{u+01de}"  ; (Ǟ) A with diaeresis and macron
+compose.item["Mq"] := "{u+01e1}"  ; (ǡ) a with dot above and macron
+compose.item["MQ"] := "{u+01e0}"  ; (Ǡ) A with dot above and macron
+compose.item["Mo"] := "{u+022b}"  ; (ȫ) o with diaeresis and macron
+compose.item["MO"] := "{u+022a}"  ; (Ȫ) O with diaeresis and macron
+compose.item["Mk"] := "{u+022d}"  ; (ȭ) o with tilde and macron
+compose.item["MK"] := "{u+022c}"  ; (Ȭ) O with tilde and macron
+compose.item["Ml"] := "{u+0231}"  ; (ȱ) o with dot above and macron
+compose.item["ML"] := "{u+0230}"  ; (Ȱ) O with dot above and macron
+compose.item["Mu"] := "{u+01d6}"  ; (ǖ) u with diaeresis and macron
+compose.item["MU"] := "{u+01d5}"  ; (Ǖ) U with diaeresis and macron
+compose.item["Mh"] := "{u+01d8}"  ; (ǘ) u with diaeresis and acute
+compose.item["MH"] := "{u+01d7}"  ; (Ǘ) U with diaeresis and acute
+compose.item["My"] := "{u+01da}"  ; (ǚ) u with diaeresis and caron
+compose.item["MY"] := "{u+01d9}"  ; (Ǚ) U with diaeresis and caron
+compose.item["Mj"] := "{u+01dc}"  ; (ǜ) u with diaeresis and grave
+compose.item["MJ"] := "{u+01db}"  ; (Ǜ) U with diaeresis and grave
+
+
 ; Compose :  Circumflex Below
 
 compose.item["Id"] := "{u+1e13}"  ; (ḓ) d with circumflex below
@@ -1134,23 +1160,17 @@ compose.item["Iu"] := "{u+1e77}"  ; (ṷ) u with circumflex below
 compose.item["IU"] := "{u+1e76}"  ; (Ṷ) U with circumflex below
 
 
-; Compose :  Tilde Below
-
-compose.item["Te"] := "{u+1e1b}"  ; (ḛ) e with tilde below
-compose.item["TE"] := "{u+1e1a}"  ; (Ḛ) E with tilde below
-compose.item["Ti"] := "{u+1e2d}"  ; (ḭ) i with tilde below
-compose.item["TI"] := "{u+1e2c}"  ; (Ḭ) I with tilde below
-compose.item["Tu"] := "{u+1e75}"  ; (ṵ) u with tilde below
-compose.item["TU"] := "{u+1e74}"  ; (Ṵ) U with tilde below
-
-
-; Compose :  Line Below
+; Compose :  Line Below and Tilde Below
 
 compose.item["Lb"] := "{u+1e07}"  ; (ḇ) b with line below
 compose.item["LB"] := "{u+1e06}"  ; (Ḇ) B with line below
 compose.item["Ld"] := "{u+1e0f}"  ; (ḏ) d with line below
 compose.item["LD"] := "{u+1e0e}"  ; (Ḏ) D with line below
+compose.item["Le"] := "{u+1e1b}"  ; (ḛ) e with tilde below
+compose.item["LE"] := "{u+1e1a}"  ; (Ḛ) E with tilde below
 compose.item["Lh"] := "{u+1e96}"  ; (ẖ) h with line below
+compose.item["Li"] := "{u+1e2d}"  ; (ḭ) i with tilde below
+compose.item["LI"] := "{u+1e2c}"  ; (Ḭ) I with tilde below
 compose.item["Lk"] := "{u+1e35}"  ; (ḵ) k with line below
 compose.item["LK"] := "{u+1e34}"  ; (Ḵ) K with line below
 compose.item["Ll"] := "{u+1e3b}"  ; (ḻ) l with line below
@@ -1161,6 +1181,8 @@ compose.item["Lr"] := "{u+1e5f}"  ; (ṟ) r with line below
 compose.item["LR"] := "{u+1e5e}"  ; (Ṟ) R with line below
 compose.item["Lt"] := "{u+1e6f}"  ; (ṯ) t with line below
 compose.item["LT"] := "{u+1e6e}"  ; (Ṯ) T with line below
+compose.item["Lu"] := "{u+1e75}"  ; (ṵ) u with tilde below
+compose.item["LU"] := "{u+1e74}"  ; (Ṵ) U with tilde below
 compose.item["Lz"] := "{u+1e95}"  ; (ẕ) z with line below
 compose.item["LZ"] := "{u+1e94}"  ; (Ẕ) Z with line below
 
