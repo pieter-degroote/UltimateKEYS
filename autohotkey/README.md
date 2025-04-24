@@ -2,14 +2,23 @@
 
 ## Prerequisites
 
-These AutoHotkey scripts are highly customizable editions of UltimateKEYS. To work properly, the Windows main/base keyboard layout has to be set to either&nbsp;:
+These AutoHotkey scripts are highly customizable editions of UltimateKEYS. To work properly, the Windows main/base keyboard layout has to be set to&nbsp;:
 
-- **Hausa (Latin, Nigeria)** =&gt; AltGr assigned to UltimateKEYS (based on US QWERTY).
-- **Romanian (Programmers)** =&gt; AltGr assigned to UltimateKEYS (based on US QWERTY).
-- **English (India)** =&gt; AltGr assigned to UltimateKEYS (based on US QWERTY).
-- **United States (US)** =&gt; Right Alt assigned to UltimateKEYS (secondary choice).
+**=&gt; AltGr assigned to UltimateKEYS**
 
-  (Notes: "Romanian (Programmers)" does not contain some special control codes (Ctrl+\[: u+001b, Ctrl+\\: u+001c, Ctrl+\]: u+001d), but I could not find any specific use cases requiring these mappings. "English (India)" also emits an Indian rupee sign (₹) via Ctrl+Shift+4.)
+- [US QWERTY (Euro)](https://github.com/pieter-degroote/us-qwerty-euro)
+- [US Intl AltGr dead keys](https://github.com/pieter-degroote/us-intl-altgr-dk)
+- UltimateKEYS (MSKLC implementation)
+- Hausa (Latin, Nigeria) (based on US QWERTY)
+- Romanian (Programmers) (based on US QWERTY)
+- English (India) (based on US QWERTY)
+- or any other layout that is fully based on US QWERTY
+
+**=&gt; Right Alt assigned to UltimateKEYS (secondary choice)**
+
+- United States (US)
+
+Notes&nbsp;: &nbsp;"Romanian (Programmers)" does not contain some special control codes (Ctrl+\[: u+001b, Ctrl+\\: u+001c, Ctrl+\]: u+001d), but I could not find any specific use cases requiring these mappings. "English (India)" also emits an Indian rupee sign (₹) via Ctrl+Shift+4.
 
 **_Note about the standard base US layout&nbsp;:_**
 
