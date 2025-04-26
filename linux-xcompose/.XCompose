@@ -1,6 +1,6 @@
 include "%L"
 
-# UltimateKEYS Compose Key Sequences - 2025-03-10
+# UltimateKEYS Compose Key Sequences - 2025-04-25
 
 # Website :  https://pieter-degroote.github.io/UltimateKEYS/
 
@@ -832,6 +832,8 @@ include "%L"
 <Multi_key> <s> <question> : "⸮"  U2E2E  # reversed question mark
 <Multi_key> <s> <slash>    : "⁞"  U205E  # vertical four dots
 <Multi_key> <s> <bar>      : "¦"  U00A6  # broken bar
+<Multi_key> <s> <bracketleft>  : "⁅"  U2045  # left square bracket with quill
+<Multi_key> <s> <bracketright> : "⁆"  U2046  # right square bracket with quill
 
 
 # Math Symbols
