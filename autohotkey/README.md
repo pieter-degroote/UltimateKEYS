@@ -6,9 +6,9 @@ These AutoHotkey scripts are highly customizable editions of UltimateKEYS. To wo
 
 **=&gt; AltGr assigned to UltimateKEYS**
 
-- [US QWERTY (Euro)](https://github.com/pieter-degroote/us-qwerty-euro)
-- [US Intl AltGr dead keys](https://github.com/pieter-degroote/us-intl-altgr-dk)
-- [UltimateKEYS (MSKLC implementation)](https://pieter-degroote.github.io/UltimateKEYS/integration-msklc.html)
+- [US QWERTY (Euro)](https://github.com/pieter-degroote/us-qwerty-euro)&emsp;[![Core Release](https://img.shields.io/github/release/pieter-degroote/us-qwerty-euro.svg)](https://github.com/pieter-degroote/us-qwerty-euro/releases)
+- [US Intl AltGr dead keys](https://github.com/pieter-degroote/us-intl-altgr-dk)&emsp;[![Core Release](https://img.shields.io/github/release/pieter-degroote/us-intl-altgr-dk.svg)](https://github.com/pieter-degroote/us-intl-altgr-dk/releases)
+- [UltimateKEYS (MSKLC implementation)](https://pieter-degroote.github.io/UltimateKEYS/integration-msklc.html)&emsp;[![Core Release](https://img.shields.io/github/release/pieter-degroote/UltimateKEYS-core.svg?label=core)](https://github.com/pieter-degroote/UltimateKEYS-core/releases)
 - Hausa (Latin, Nigeria) (based on US QWERTY, see settings)
 - Romanian (Programmers) (based on US QWERTY, see settings)
 - English (India) (based on US QWERTY, see settings)
