@@ -1,6 +1,6 @@
 #requires AutoHotkey v1.1
 
-; UltimateKEYS (for AutoHotkey v1.1).ahk - 2025-03-10
+; UltimateKEYS (for AutoHotkey v1.1).ahk - 2025-04-25
 
 ; Website :  https://pieter-degroote.github.io/UltimateKEYS/
 
@@ -852,6 +852,8 @@ compose.item["s!"] := "{u+203c}"  ; (‼) double exclamation mark
 compose.item["s?"] := "{u+2e2e}"  ; (⸮) reversed question mark
 compose.item["s/"] := "{u+205e}"  ; (⁞) vertical four dots
 compose.item["s|"] := "{u+00a6}"  ; (¦) broken bar
+compose.item["s["] := "{u+2045}"  ; (⁅) left square bracket with quill
+compose.item["s]"] := "{u+2046}"  ; (⁆) right square bracket with quill
 
 
 ; Compose :  Math Symbols
