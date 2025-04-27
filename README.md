@@ -2,8 +2,9 @@
 
 International US QWERTY layout with AltGr (Right Alt) dead keys via AutoHotkey (Win), MSKLC (Win) and XKB/Xmodmap (Linux). This layout has borrowed some aspects from EurKEY and US-International.
 
-**Official release&nbsp;:**&emsp;[![GitHub Release](https://img.shields.io/github/release/pieter-degroote/UltimateKEYS.svg)](https://github.com/pieter-degroote/UltimateKEYS/releases)  
-**Testing release&nbsp;:**&emsp;[![GitHub Testing](https://img.shields.io/github/release/pieter-degroote/UltimateKEYS-testing.svg?label=testing)](https://github.com/pieter-degroote/UltimateKEYS-testing/releases)
+**Official release&nbsp;:**&emsp;[![UltimateKEYS Release](https://img.shields.io/github/release/pieter-degroote/UltimateKEYS.svg)](https://github.com/pieter-degroote/UltimateKEYS/releases)  
+**Testing release&nbsp;:**&emsp;[![Testing Release](https://img.shields.io/github/release/pieter-degroote/UltimateKEYS-testing.svg?label=testing)](https://github.com/pieter-degroote/UltimateKEYS-testing/releases)  
+**Core release&nbsp;:**&emsp;[![Core Release](https://img.shields.io/github/release/pieter-degroote/UltimateKEYS-core.svg?label=core)](https://github.com/pieter-degroote/UltimateKEYS-core/releases)
 
 ## Keyboard Layout Image
 
@@ -19,8 +20,10 @@ Otherwise, it might be impossible to type any Unicode character higher than "Bas
 
 **=&gt; Win/Linux&nbsp;: &nbsp;ALWAYS make your system passwords VISIBLE during modification&nbsp;!**
 
-## Websites, Documentation and Testing
+## Website, Documentation and Testing
 
-**Websites&nbsp;: &nbsp;[www.ultimatekeys.info](https://pieter-degroote.github.io/UltimateKEYS/) ~ [www.pieter-degroote.info](https://pieter-degroote.github.io/)**
+**Website&nbsp;: &nbsp;https://pieter-degroote.github.io/**
 
 **Testing repository&nbsp;: &nbsp;https://github.com/pieter-degroote/UltimateKEYS-testing**
+
+**Core repository&nbsp;: &nbsp;https://github.com/pieter-degroote/UltimateKEYS-core**
