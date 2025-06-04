@@ -1,63 +1,61 @@
 // UltimateKEYS Keyboard Layout (Public Domain)
 
-// Website :  https://pieter-degroote.github.io/UltimateKEYS/
-
-// GitHub :   https://github.com/pieter-degroote/UltimateKEYS
+// GitHub :  https://github.com/pieter-degroote/UltimateKEYS-core
 
 default partial alphanumeric_keys modifier_keys
 xkb_symbols "basic" {
 
     name[Group1] = "English (US, UltimateKEYS)";
 
-    key <AB01> { [ z,            Z,            aacute,               Aacute               ] };
-    key <AB02> { [ x,            X,            agrave,               Agrave               ] };
-    key <AB03> { [ c,            C,            ccedilla,             Ccedilla             ] };
-    key <AB04> { [ v,            V,            iacute,               Iacute               ] };
-    key <AB05> { [ b,            B,            igrave,               Igrave               ] };
-    key <AB06> { [ n,            N,            ntilde,               Ntilde               ] };
-    key <AB07> { [ m,            M,            mu,                   plusminus            ] };
-    key <AB08> { [ comma,        less,         oacute,               Oacute               ] };
-    key <AB09> { [ period,       greater,      ograve,               Ograve               ] };
-    key <AB10> { [ slash,        question,     questiondown,         enfilledcircbullet   ] };
-    key <AC01> { [ a,            A,            adiaeresis,           Adiaeresis           ] };
-    key <AC02> { [ s,            S,            ssharp,               U1E9E                ] };  // ẞ
-    key <AC03> { [ d,            D,            acircumflex,          Acircumflex          ] };
-    key <AC04> { [ f,            F,            eacute,               Eacute               ] };
-    key <AC05> { [ g,            G,            egrave,               Egrave               ] };
-    key <AC06> { [ h,            H,            uacute,               Uacute               ] };
-    key <AC07> { [ j,            J,            ugrave,               Ugrave               ] };
-    key <AC08> { [ k,            K,            oe,                   OE                   ] };
-    key <AC09> { [ l,            L,            oslash,               Ooblique             ] };
-    key <AC10> { [ semicolon,    colon,        degree,               periodcentered       ] };
-    key <AC11> { [ apostrophe,   quotedbl,     U266A,                U266B                ] };  // ♪ ♫
-    key <AD01> { [ q,            Q,            ae,                   AE                   ] };
-    key <AD02> { [ w,            W,            aring,                Aring                ] };
-    key <AD03> { [ e,            E,            ediaeresis,           Ediaeresis           ] };
-    key <AD04> { [ r,            R,            ecircumflex,          Ecircumflex          ] };
-    key <AD05> { [ t,            T,            icircumflex,          Icircumflex          ] };
-    key <AD06> { [ y,            Y,            ucircumflex,          Ucircumflex          ] };
-    key <AD07> { [ u,            U,            udiaeresis,           Udiaeresis           ] };
-    key <AD08> { [ i,            I,            idiaeresis,           Idiaeresis           ] };
-    key <AD09> { [ o,            O,            odiaeresis,           Odiaeresis           ] };
-    key <AD10> { [ p,            P,            ocircumflex,          Ocircumflex          ] };
-    key <AD11> { [ bracketleft,  braceleft,    guillemotleft,        U2039                ] };  // ‹
-    key <AD12> { [ bracketright, braceright,   guillemotright,       U203A                ] };  // ›
-    key <AE01> { [ 1,            exclam,       exclamdown,           onesuperior          ] };
-    key <AE02> { [ 2,            at,           U2264,                twosuperior          ] };  // ≤
-    key <AE03> { [ 3,            numbersign,   U2265,                threesuperior        ] };  // ≥
-    key <AE04> { [ 4,            dollar,       sterling,             yen                  ] };
-    key <AE05> { [ 5,            percent,      EuroSign,             cent                 ] };
-    key <AE06> { [ 6,            asciicircum,  atilde,               Atilde               ] };
-    key <AE07> { [ 7,            ampersand,    otilde,               Otilde               ] };
-    key <AE08> { [ 8,            asterisk,     doublelowquotemark,   section              ] };
-    key <AE09> { [ 9,            parenleft,    leftdoublequotemark,  leftsinglequotemark  ] };
-    key <AE10> { [ 0,            parenright,   rightdoublequotemark, rightsinglequotemark ] };
-    key <AE11> { [ minus,        underscore,   endash,               emdash               ] };
-    key <AE12> { [ equal,        plus,         multiply,             division             ] };
-    key <BKSL> { [ backslash,    bar,          enspace,              emspace              ] };
-    key <LSGT> { [ backslash,    bar,          Multi_key,            Multi_key            ] };
+    key <AB01> { [ z,            Z,            aacute,               Aacute               ] };  // z Z á Á
+    key <AB02> { [ x,            X,            agrave,               Agrave               ] };  // x X à À
+    key <AB03> { [ c,            C,            ccedilla,             Ccedilla             ] };  // c C ç Ç
+    key <AB04> { [ v,            V,            iacute,               Iacute               ] };  // v V í Í
+    key <AB05> { [ b,            B,            igrave,               Igrave               ] };  // b B ì Ì
+    key <AB06> { [ n,            N,            ntilde,               Ntilde               ] };  // n N ñ Ñ
+    key <AB07> { [ m,            M,            mu,                   plusminus            ] };  // m M µ ±
+    key <AB08> { [ comma,        less,         oacute,               Oacute               ] };  // , < ó Ó
+    key <AB09> { [ period,       greater,      ograve,               Ograve               ] };  // . > ò Ò
+    key <AB10> { [ slash,        question,     questiondown,         enfilledcircbullet   ] };  // / ? ¿ •
+    key <AC01> { [ a,            A,            adiaeresis,           Adiaeresis           ] };  // a A ä Ä
+    key <AC02> { [ s,            S,            ssharp,               U1E9E                ] };  // s S ß ẞ
+    key <AC03> { [ d,            D,            acircumflex,          Acircumflex          ] };  // d D â Â
+    key <AC04> { [ f,            F,            eacute,               Eacute               ] };  // f F é É
+    key <AC05> { [ g,            G,            egrave,               Egrave               ] };  // g G è È
+    key <AC06> { [ h,            H,            uacute,               Uacute               ] };  // h H ú Ú
+    key <AC07> { [ j,            J,            ugrave,               Ugrave               ] };  // j J ù Ù
+    key <AC08> { [ k,            K,            oe,                   OE                   ] };  // k K œ Œ
+    key <AC09> { [ l,            L,            oslash,               Ooblique             ] };  // l L ø Ø
+    key <AC10> { [ semicolon,    colon,        degree,               periodcentered       ] };  // ; : ° ·
+    key <AC11> { [ apostrophe,   quotedbl,     U266A,                U266B                ] };  // ' " ♪ ♫
+    key <AD01> { [ q,            Q,            ae,                   AE                   ] };  // q Q æ Æ
+    key <AD02> { [ w,            W,            aring,                Aring                ] };  // w W å Å
+    key <AD03> { [ e,            E,            ediaeresis,           Ediaeresis           ] };  // e E ë Ë
+    key <AD04> { [ r,            R,            ecircumflex,          Ecircumflex          ] };  // r R ê Ê
+    key <AD05> { [ t,            T,            icircumflex,          Icircumflex          ] };  // t T î Î
+    key <AD06> { [ y,            Y,            ucircumflex,          Ucircumflex          ] };  // y Y û Û
+    key <AD07> { [ u,            U,            udiaeresis,           Udiaeresis           ] };  // u U ü Ü
+    key <AD08> { [ i,            I,            idiaeresis,           Idiaeresis           ] };  // i I ï Ï
+    key <AD09> { [ o,            O,            odiaeresis,           Odiaeresis           ] };  // o O ö Ö
+    key <AD10> { [ p,            P,            ocircumflex,          Ocircumflex          ] };  // p P ô Ô
+    key <AD11> { [ bracketleft,  braceleft,    guillemotleft,        U2039                ] };  // [ { « ‹
+    key <AD12> { [ bracketright, braceright,   guillemotright,       U203A                ] };  // ] } » ›
+    key <AE01> { [ 1,            exclam,       exclamdown,           onesuperior          ] };  // 1 ! ¡ ¹
+    key <AE02> { [ 2,            at,           U2264,                twosuperior          ] };  // 2 @ ≤ ²
+    key <AE03> { [ 3,            numbersign,   U2265,                threesuperior        ] };  // 3 # ≥ ³
+    key <AE04> { [ 4,            dollar,       sterling,             yen                  ] };  // 4 $ £ ¥
+    key <AE05> { [ 5,            percent,      EuroSign,             cent                 ] };  // 5 % € ¢
+    key <AE06> { [ 6,            asciicircum,  atilde,               Atilde               ] };  // 6 ^ ã Ã
+    key <AE07> { [ 7,            ampersand,    otilde,               Otilde               ] };  // 7 & õ Õ
+    key <AE08> { [ 8,            asterisk,     doublelowquotemark,   section              ] };  // 8 * „ §
+    key <AE09> { [ 9,            parenleft,    leftdoublequotemark,  leftsinglequotemark  ] };  // 9 ( “ ‘
+    key <AE10> { [ 0,            parenright,   rightdoublequotemark, rightsinglequotemark ] };  // 0 ) ” ’
+    key <AE11> { [ minus,        underscore,   endash,               emdash               ] };  // - _ – —
+    key <AE12> { [ equal,        plus,         multiply,             division             ] };  // = + × ÷
+    key <BKSL> { [ backslash,    bar,          enspace,              emspace              ] };  // \ |
+    key <LSGT> { [ backslash,    bar,          Multi_key,            Multi_key            ] };  // \ |
     key <SPCE> { [ space,        space,        nobreakspace,         nobreakspace         ] };
-    key <TLDE> { [ grave,        asciitilde,   Multi_key,            Multi_key            ] };
+    key <TLDE> { [ grave,        asciitilde,   Multi_key,            Multi_key            ] };  // ` ~
 
 //  include "kpdl(dot)"  // (default: dot on keypad)
     include "level3(ralt_switch)"
