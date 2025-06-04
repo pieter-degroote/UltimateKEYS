@@ -1,8 +1,6 @@
 ! UltimateKEYS Keyboard Layout (Public Domain)
 
-! Website :  https://pieter-degroote.github.io/UltimateKEYS/
-
-! GitHub :   https://github.com/pieter-degroote/UltimateKEYS
+! GitHub :  https://github.com/pieter-degroote/UltimateKEYS-core
 
 keycode  10 = 1            exclam       exclamdown           onesuperior
 keycode  11 = 2            at           U2264                twosuperior
