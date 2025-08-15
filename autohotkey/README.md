@@ -25,7 +25,7 @@ Notes&nbsp;: &nbsp;"Romanian (Programmers)" does not contain some special contro
 When two or more languages/keyboards are installed on the system, the default 'Alt + Shift' sequence will interfere with the AHK scripts.  
 To avoid this, you can disable the interfering key sequences at&nbsp;:  
 Win 10&nbsp;: &nbsp;*Settings -&gt; Time &amp; Language -&gt; Language -&gt; Spelling, typing &amp; keyboard settings (on the right) -&gt; Advanced keyboard settings -&gt; Input language hot keys*  
-Win 11&nbsp;: &nbsp;*Settings -&gt; Time & Language -&gt; Typing -&gt; Advanced keyboard settings -&gt; Input language hot keys*  
+Win 11&nbsp;: &nbsp;*Settings -&gt; Time &amp; Language -&gt; Typing -&gt; Advanced keyboard settings -&gt; Input language hot keys*  
 Please note that on the standard US QWERTY, the sequence 'Left Alt + Shift' also gets mistakenly triggered by 'Right Alt + Shift', resulting in an unexpected keyboard layout change.
 
 ## Keyboard Layout Image
