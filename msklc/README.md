@@ -8,4 +8,4 @@ The installer can be found in the **[Core repository](https://github.com/pieter-
 
 ## Keyboard Layout Image
 
-![UltimateKEYS (MSKLC) - Keyboard Layout Image](UltimateKEYS%20(MSKLC)%20-%20Keyboard%20Layout%20Image.png)
+![UltimateKEYS (MSKLC) - Keyboard Layout Image](/images/UltimateKEYS%20(MSKLC)%20-%20Keyboard%20Layout%20Image.png)
