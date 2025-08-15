@@ -26,13 +26,13 @@ LAYOUT
 //--	----		----	----	----	----	----	----
 
 02	1		0	1	0021	-1	00a1	00b9		// 1 ! ¡ ¹    digit 1, exclamation mark, inverted exclamation mark, superscript 1
-03	2		0	2	0040	-1	2264	00b2		// 2 @ ≤ ²    digit 2, commercial at (at sign), less-than or equal to, superscript 2
-04	3		0	3	0023	-1	2265	00b3		// 3 # ≥ ³    digit 3, number sign, greater-than or equal to, superscript 3
+03	2		0	2	0040	-1	00b2	266b		// 2 @ ² ♫    digit 2, commercial at (at sign), superscript 2, beamed eighth notes
+04	3		0	3	0023	-1	00b3	00a7		// 3 # ³ §    digit 3, number sign, superscript 3, section sign
 05	4		0	4	0024	-1	00a3	00a5		// 4 $ £ ¥    digit 4, dollar sign, pound sign, yen sign
 06	5		0	5	0025	-1	20ac	00a2		// 5 % € ¢    digit 5, percent sign, euro sign, cent sign (dollar)
 07	6		4	6	005e	-1	00e3	00c3		// 6 ^ ã Ã    digit 6, circumflex accent, a with tilde, A with tilde
 08	7		4	7	0026	-1	00f5	00d5		// 7 & õ Õ    digit 7, ampersand, o with tilde, O with tilde
-09	8		0	8	002a	-1	201e	00a7		// 8 * „ §    digit 8, asterisk, double low-9 quotation mark, section sign
+09	8		0	8	002a	-1	201e	266a		// 8 * „ ♪    digit 8, asterisk, double low-9 quotation mark, eighth note
 0a	9		0	9	0028	-1	201c	2018		// 9 ( “ ‘    digit 9, left parenthesis, left double quotation mark, left single quotation mark
 0b	0		0	0	0029	-1	201d	2019		// 0 ) ” ’    digit 0, right parenthesis, right double quotation mark, right single quotation mark
 0c	OEM_MINUS	0	002d	005f	-1	2013	2014		// - _ – —    hyphen-minus, low line (underscore), en dash, em dash
@@ -58,8 +58,8 @@ LAYOUT
 24	J		5	j	J	-1	00f9	00d9		// j J ù Ù    letter j, letter J, u with grave, U with grave
 25	K		5	k	K	-1	0153	0152		// k K œ Œ    letter k, letter K, ligature oe, ligature OE
 26	L		5	l	L	-1	00f8	00d8		// l L ø Ø    letter l, letter L, o with stroke, O with stroke
-27	OEM_1		0	003b	003a	-1	00b0	00b7		// ; : ° ·    semicolon, colon, degree sign, middle dot
-28	OEM_7		0	0027	0022	-1	266a	266b		// ' " ♪ ♫    apostrophe, quotation mark, eighth note, beamed eighth notes
+27	OEM_1		0	003b	003a	-1	00b0	2264		// ; : ° ≤    semicolon, colon, degree sign, less-than or equal to
+28	OEM_7		0	0027	0022	-1	00b7	2265		// ' " · ≥    apostrophe, quotation mark, middle dot, greater-than or equal to
 29	OEM_3		0	0060	007e	-1	2260	2248		// ` ~ ≠ ≈    grave accent, tilde, not equal to, almost equal to
 2b	OEM_5		0	005c	007c	001c	2002	2003		// \ |        reverse solidus (backslash), vertical line (bar), en space, em space
 2c	Z		5	z	Z	-1	00e1	00c1		// z Z á Á    letter z, letter Z, a with acute, A with acute
