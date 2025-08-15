@@ -3,13 +3,13 @@
 ! GitHub :  https://github.com/pieter-degroote/UltimateKEYS-core
 
 keycode  10 = 1            exclam       exclamdown           onesuperior
-keycode  11 = 2            at           U2264                twosuperior
-keycode  12 = 3            numbersign   U2265                threesuperior
+keycode  11 = 2            at           twosuperior          U266B
+keycode  12 = 3            numbersign   threesuperior        section
 keycode  13 = 4            dollar       sterling             yen
 keycode  14 = 5            percent      EuroSign             cent
 keycode  15 = 6            asciicircum  atilde               Atilde
 keycode  16 = 7            ampersand    otilde               Otilde
-keycode  17 = 8            asterisk     doublelowquotemark   section
+keycode  17 = 8            asterisk     doublelowquotemark   U266A
 keycode  18 = 9            parenleft    leftdoublequotemark  leftsinglequotemark
 keycode  19 = 0            parenright   rightdoublequotemark rightsinglequotemark
 keycode  20 = minus        underscore   endash               emdash
@@ -35,8 +35,8 @@ keycode  43 = h            H            uacute               Uacute
 keycode  44 = j            J            ugrave               Ugrave
 keycode  45 = k            K            oe                   OE
 keycode  46 = l            L            oslash               Ooblique
-keycode  47 = semicolon    colon        degree               periodcentered
-keycode  48 = apostrophe   quotedbl     U266A                U266B
+keycode  47 = semicolon    colon        degree               U2264
+keycode  48 = apostrophe   quotedbl     periodcentered       U2265
 keycode  49 = grave        asciitilde   Multi_key            Multi_key
 keycode  51 = backslash    bar          enspace              emspace
 keycode  52 = z            Z            aacute               Aacute
