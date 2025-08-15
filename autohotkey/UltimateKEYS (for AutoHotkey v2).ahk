@@ -1,6 +1,6 @@
 #requires AutoHotkey v2
 
-; UltimateKEYS (for AutoHotkey v2).ahk - 2025-04-25
+; UltimateKEYS (for AutoHotkey v2).ahk - 2025-08-14
 
 ; Website :  https://pieter-degroote.github.io/UltimateKEYS/
 
@@ -1290,15 +1290,15 @@ compose["?U"] := "{u+1ef0}"  ; (Ự) U with horn and dot below
 
 ; Key :  2
 >!sc003::
-<^>!sc003::Send "{u+2264}"   ; (≤) less-than or equal to
+<^>!sc003::Send "{u+00b2}"   ; (²) superscript 2
 >!+sc003::
-<^>!+sc003::Send "{u+00b2}"  ; (²) superscript 2
+<^>!+sc003::Send "{u+266b}"  ; (♫) beamed eighth notes
 
 ; Key :  3
 >!sc004::
-<^>!sc004::Send "{u+2265}"   ; (≥) greater-than or equal to
+<^>!sc004::Send "{u+00b3}"   ; (³) superscript 3
 >!+sc004::
-<^>!+sc004::Send "{u+00b3}"  ; (³) superscript 3
+<^>!+sc004::Send "{u+00a7}"  ; (§) section sign
 
 ; Key :  4
 >!sc005::
@@ -1348,7 +1348,7 @@ compose["?U"] := "{u+1ef0}"  ; (Ự) U with horn and dot below
 >!sc009::
 <^>!sc009::Send "{u+201e}"   ; („) double low-9 quotation mark
 >!+sc009::
-<^>!+sc009::Send "{u+00a7}"  ; (§) section sign
+<^>!+sc009::Send "{u+266a}"  ; (♪) eighth note
 
 ; Key :  9
 >!sc00A::
@@ -1694,13 +1694,13 @@ compose["?U"] := "{u+1ef0}"  ; (Ự) U with horn and dot below
 >!sc027::
 <^>!sc027::Send "{u+00b0}"   ; (°) degree sign
 >!+sc027::
-<^>!+sc027::Send "{u+00b7}"  ; (·) middle dot
+<^>!+sc027::Send "{u+2264}"  ; (≤) less-than or equal to
 
 ; Key :  ' / " (apostrophe / quotation mark)
 >!sc028::
-<^>!sc028::Send "{u+266a}"   ; (♪) eighth note
+<^>!sc028::Send "{u+00b7}"   ; (·) middle dot
 >!+sc028::
-<^>!+sc028::Send "{u+266b}"  ; (♫) beamed eighth notes
+<^>!+sc028::Send "{u+2265}"  ; (≥) greater-than or equal to
 
 ; Key :  \ / | (backslash / vertical line)
 >!sc02B::
