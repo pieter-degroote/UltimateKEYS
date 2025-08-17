@@ -2,7 +2,7 @@
 
 ![UltimateKEYS - Keyboard Layout Image](UltimateKEYS%20-%20Keyboard%20Layout%20Image.png)
 
-=&gt; CP key (blue) : &nbsp;Compose Key (Multi_key), in combination with AltGr (Right Alt) (only with AutoHotkey and Linux).  
+=&gt; CP key (blue)&nbsp;: &nbsp;Compose Key (Multi_key), in combination with AltGr (Right Alt) (only with AutoHotkey and Linux).  
 =&gt; Note that the ISO key (next to Left Shift) is not present on standard ANSI keyboards.
 
 ## MSKLC - Keyboard Layout Image
