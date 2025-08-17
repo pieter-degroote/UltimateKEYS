@@ -4,7 +4,7 @@ International US QWERTY layout with AltGr (Right Alt) dead keys via AutoHotkey (
 
 **Official release&nbsp;:**&emsp;[![UltimateKEYS Release](https://img.shields.io/github/release/pieter-degroote/UltimateKEYS.svg)](https://github.com/pieter-degroote/UltimateKEYS/releases)  
 **Testing release&nbsp;:**&emsp;[![Testing Release](https://img.shields.io/github/release/pieter-degroote/UltimateKEYS-testing.svg?label=testing)](https://github.com/pieter-degroote/UltimateKEYS-testing/releases)  
-**Core release&nbsp;:**&emsp;[![Core Release](https://img.shields.io/github/release/pieter-degroote/UltimateKEYS-core.svg?label=core)](https://github.com/pieter-degroote/UltimateKEYS-core/releases)
+**Core release&nbsp;:**&emsp;&emsp;[![Core Release](https://img.shields.io/github/release/pieter-degroote/UltimateKEYS-core.svg?label=core)](https://github.com/pieter-degroote/UltimateKEYS-core/releases)
 
 ## Keyboard Layout Image
 
