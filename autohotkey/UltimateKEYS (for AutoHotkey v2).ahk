@@ -1,6 +1,6 @@
 #requires AutoHotkey v2
 
-; UltimateKEYS (for AutoHotkey v2).ahk - 2025-08-14
+; UltimateKEYS (for AutoHotkey v2).ahk
 
 ; Website :  https://pieter-degroote.github.io/UltimateKEYS/
 
@@ -1316,32 +1316,32 @@ compose["?U"] := "{u+1ef0}"  ; (Ự) U with horn and dot below
 >!sc007::
 <^>!sc007:: {
   if GetKeyState("CapsLock", "T")
-    Send "{u+00c3}"  ; (Ã) A with tilde
+    Send "{u+00cd}"  ; (Í) I with acute
   else
-    Send "{u+00e3}"  ; (ã) a with tilde
+    Send "{u+00ed}"  ; (í) i with acute
 }
 >!+sc007::
 <^>!+sc007:: {
   if GetKeyState("CapsLock", "T")
-    Send "{u+00e3}"  ; (ã) a with tilde
+    Send "{u+00ed}"  ; (í) i with acute
   else
-    Send "{u+00c3}"  ; (Ã) A with tilde
+    Send "{u+00cd}"  ; (Í) I with acute
 }
 
 ; Key :  7
 >!sc008::
 <^>!sc008:: {
   if GetKeyState("CapsLock", "T")
-    Send "{u+00d5}"  ; (Õ) O with tilde
+    Send "{u+00cc}"  ; (Ì) I with grave
   else
-    Send "{u+00f5}"  ; (õ) o with tilde
+    Send "{u+00ec}"  ; (ì) i with grave
 }
 >!+sc008::
 <^>!+sc008:: {
   if GetKeyState("CapsLock", "T")
-    Send "{u+00f5}"  ; (õ) o with tilde
+    Send "{u+00ec}"  ; (ì) i with grave
   else
-    Send "{u+00d5}"  ; (Õ) O with tilde
+    Send "{u+00cc}"  ; (Ì) I with grave
 }
 
 ; Key :  8
@@ -1692,15 +1692,35 @@ compose["?U"] := "{u+1ef0}"  ; (Ự) U with horn and dot below
 
 ; Key :  ; / : (semicolon / colon)
 >!sc027::
-<^>!sc027::Send "{u+00b0}"   ; (°) degree sign
+<^>!sc027:: {
+  if GetKeyState("CapsLock", "T")
+    Send "{u+00d3}"  ; (Ó) O with acute
+  else
+    Send "{u+00f3}"  ; (ó) o with acute
+}
 >!+sc027::
-<^>!+sc027::Send "{u+2264}"  ; (≤) less-than or equal to
+<^>!+sc027:: {
+  if GetKeyState("CapsLock", "T")
+    Send "{u+00f3}"  ; (ó) o with acute
+  else
+    Send "{u+00d3}"  ; (Ó) O with acute
+}
 
 ; Key :  ' / " (apostrophe / quotation mark)
 >!sc028::
-<^>!sc028::Send "{u+00b7}"   ; (·) middle dot
+<^>!sc028:: {
+  if GetKeyState("CapsLock", "T")
+    Send "{u+00d2}"  ; (Ò) O with grave
+  else
+    Send "{u+00f2}"  ; (ò) o with grave
+}
 >!+sc028::
-<^>!+sc028::Send "{u+2265}"  ; (≥) greater-than or equal to
+<^>!+sc028:: {
+  if GetKeyState("CapsLock", "T")
+    Send "{u+00f2}"  ; (ò) o with grave
+  else
+    Send "{u+00d2}"  ; (Ò) O with grave
+}
 
 ; Key :  \ / | (backslash / vertical line)
 >!sc02B::
@@ -1760,32 +1780,32 @@ compose["?U"] := "{u+1ef0}"  ; (Ự) U with horn and dot below
 >!sc02F::
 <^>!sc02F:: {
   if GetKeyState("CapsLock", "T")
-    Send "{u+00cd}"  ; (Í) I with acute
+    Send "{u+00c3}"  ; (Ã) A with tilde
   else
-    Send "{u+00ed}"  ; (í) i with acute
+    Send "{u+00e3}"  ; (ã) a with tilde
 }
 >!+sc02F::
 <^>!+sc02F:: {
   if GetKeyState("CapsLock", "T")
-    Send "{u+00ed}"  ; (í) i with acute
+    Send "{u+00e3}"  ; (ã) a with tilde
   else
-    Send "{u+00cd}"  ; (Í) I with acute
+    Send "{u+00c3}"  ; (Ã) A with tilde
 }
 
 ; Key :  B
 >!sc030::
 <^>!sc030:: {
   if GetKeyState("CapsLock", "T")
-    Send "{u+00cc}"  ; (Ì) I with grave
+    Send "{u+00d5}"  ; (Õ) O with tilde
   else
-    Send "{u+00ec}"  ; (ì) i with grave
+    Send "{u+00f5}"  ; (õ) o with tilde
 }
 >!+sc030::
 <^>!+sc030:: {
   if GetKeyState("CapsLock", "T")
-    Send "{u+00ec}"  ; (ì) i with grave
+    Send "{u+00f5}"  ; (õ) o with tilde
   else
-    Send "{u+00cc}"  ; (Ì) I with grave
+    Send "{u+00d5}"  ; (Õ) O with tilde
 }
 
 ; Key :  N
@@ -1812,35 +1832,15 @@ compose["?U"] := "{u+1ef0}"  ; (Ự) U with horn and dot below
 
 ; Key :  , / < (comma / less-than sign)
 >!sc033::
-<^>!sc033:: {
-  if GetKeyState("CapsLock", "T")
-    Send "{u+00d3}"  ; (Ó) O with acute
-  else
-    Send "{u+00f3}"  ; (ó) o with acute
-}
+<^>!sc033::Send "{u+00b0}"   ; (°) degree sign
 >!+sc033::
-<^>!+sc033:: {
-  if GetKeyState("CapsLock", "T")
-    Send "{u+00f3}"  ; (ó) o with acute
-  else
-    Send "{u+00d3}"  ; (Ó) O with acute
-}
+<^>!+sc033::Send "{u+2264}"  ; (≤) less-than or equal to
 
 ; Key :  . / > (period / greater-than sign)
 >!sc034::
-<^>!sc034:: {
-  if GetKeyState("CapsLock", "T")
-    Send "{u+00d2}"  ; (Ò) O with grave
-  else
-    Send "{u+00f2}"  ; (ò) o with grave
-}
+<^>!sc034::Send "{u+00b7}"   ; (·) middle dot
 >!+sc034::
-<^>!+sc034:: {
-  if GetKeyState("CapsLock", "T")
-    Send "{u+00f2}"  ; (ò) o with grave
-  else
-    Send "{u+00d2}"  ; (Ò) O with grave
-}
+<^>!+sc034::Send "{u+2265}"  ; (≥) greater-than or equal to
 
 ; Key :  / / ? (slash / question mark)
 >!sc035::
