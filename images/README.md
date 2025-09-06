@@ -13,4 +13,4 @@
 
 ## Image Source Links (.txt)
 
-The '.txt' files each contain a link to 'keyboard-layout-editor.com', generating the corresponding images.
+The '.txt' file contains the corresponding links to 'keyboard-layout-editor.com', generating the given images.
