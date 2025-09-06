@@ -5,7 +5,7 @@
 - Put the file ".Xmodmap" into the user's home directory (~).
 - On some Linux distributions (or installations), "~/.Xmodmap" should automatically load when logging in, in some other cases, it can be activated via&nbsp;:  
 xmodmap ~/.Xmodmap&nbsp;&nbsp;&nbsp;&nbsp;- or -&nbsp;&nbsp;&nbsp;&nbsp;xmodmap $HOME/.Xmodmap
-- *Unfortunately, it turns out that Xmodmap is no longer supported on GNOME.*
+- *Note that Xmodmap is deprecated, and is no longer supported on GNOME.*
 
 ## Keyboard Layout Image
 
