@@ -10,12 +10,12 @@ xkb_symbols "basic" {
     key <AB01> { [ z,            Z,            aacute,               Aacute               ] };  // z Z á Á
     key <AB02> { [ x,            X,            agrave,               Agrave               ] };  // x X à À
     key <AB03> { [ c,            C,            ccedilla,             Ccedilla             ] };  // c C ç Ç
-    key <AB04> { [ v,            V,            iacute,               Iacute               ] };  // v V í Í
-    key <AB05> { [ b,            B,            igrave,               Igrave               ] };  // b B ì Ì
+    key <AB04> { [ v,            V,            atilde,               Atilde               ] };  // v V ã Ã
+    key <AB05> { [ b,            B,            otilde,               Otilde               ] };  // b B õ Õ
     key <AB06> { [ n,            N,            ntilde,               Ntilde               ] };  // n N ñ Ñ
     key <AB07> { [ m,            M,            mu,                   plusminus            ] };  // m M µ ±
-    key <AB08> { [ comma,        less,         oacute,               Oacute               ] };  // , < ó Ó
-    key <AB09> { [ period,       greater,      ograve,               Ograve               ] };  // . > ò Ò
+    key <AB08> { [ comma,        less,         degree,               U2264                ] };  // , < ° ≤
+    key <AB09> { [ period,       greater,      periodcentered,       U2265                ] };  // . > · ≥
     key <AB10> { [ slash,        question,     questiondown,         enfilledcircbullet   ] };  // / ? ¿ •
     key <AC01> { [ a,            A,            adiaeresis,           Adiaeresis           ] };  // a A ä Ä
     key <AC02> { [ s,            S,            ssharp,               U1E9E                ] };  // s S ß ẞ
@@ -26,8 +26,8 @@ xkb_symbols "basic" {
     key <AC07> { [ j,            J,            ugrave,               Ugrave               ] };  // j J ù Ù
     key <AC08> { [ k,            K,            oe,                   OE                   ] };  // k K œ Œ
     key <AC09> { [ l,            L,            oslash,               Ooblique             ] };  // l L ø Ø
-    key <AC10> { [ semicolon,    colon,        degree,               U2264                ] };  // ; : ° ≤
-    key <AC11> { [ apostrophe,   quotedbl,     periodcentered,       U2265                ] };  // ' " · ≥
+    key <AC10> { [ semicolon,    colon,        oacute,               Oacute               ] };  // ; : ó Ó
+    key <AC11> { [ apostrophe,   quotedbl,     ograve,               Ograve               ] };  // ' " ò Ò
     key <AD01> { [ q,            Q,            ae,                   AE                   ] };  // q Q æ Æ
     key <AD02> { [ w,            W,            aring,                Aring                ] };  // w W å Å
     key <AD03> { [ e,            E,            ediaeresis,           Ediaeresis           ] };  // e E ë Ë
@@ -45,8 +45,8 @@ xkb_symbols "basic" {
     key <AE03> { [ 3,            numbersign,   threesuperior,        section              ] };  // 3 # ³ §
     key <AE04> { [ 4,            dollar,       sterling,             yen                  ] };  // 4 $ £ ¥
     key <AE05> { [ 5,            percent,      EuroSign,             cent                 ] };  // 5 % € ¢
-    key <AE06> { [ 6,            asciicircum,  atilde,               Atilde               ] };  // 6 ^ ã Ã
-    key <AE07> { [ 7,            ampersand,    otilde,               Otilde               ] };  // 7 & õ Õ
+    key <AE06> { [ 6,            asciicircum,  iacute,               Iacute               ] };  // 6 ^ í Í
+    key <AE07> { [ 7,            ampersand,    igrave,               Igrave               ] };  // 7 & ì Ì
     key <AE08> { [ 8,            asterisk,     doublelowquotemark,   U266A                ] };  // 8 * „ ♪
     key <AE09> { [ 9,            parenleft,    leftdoublequotemark,  leftsinglequotemark  ] };  // 9 ( “ ‘
     key <AE10> { [ 0,            parenright,   rightdoublequotemark, rightsinglequotemark ] };  // 0 ) ” ’
