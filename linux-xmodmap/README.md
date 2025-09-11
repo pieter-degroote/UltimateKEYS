@@ -1,6 +1,6 @@
 # UltimateKEYS - Xmodmap (Linux)
 
-## Xmodmap deployment on GNU/Linux
+## Xmodmap deployment on GNU/Linux (deprecated)
 
 - Put the file ".Xmodmap" into the user's home directory (~).
 - On some Linux distributions (or installations), "~/.Xmodmap" should automatically load when logging in, in some other cases, it can be activated via&nbsp;:  
