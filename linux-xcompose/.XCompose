@@ -557,6 +557,8 @@ include "%L"
 <Multi_key> <t> <S> : "Ȿ"  U2C7E  # S with swash tail
 <Multi_key> <t> <z> : "ɀ"  U0240  # z with swash tail
 <Multi_key> <t> <Z> : "Ɀ"  U2C7F  # Z with swash tail
+<Multi_key> <t> <7>         : "⁊"  U204A  # Tironian sign et
+<Multi_key> <t> <ampersand> : "⹒"  U2E52  # Tironian sign capital et
 
 
 # Currency Symbols
@@ -878,6 +880,8 @@ include "%L"
 <Multi_key> <m> <u> : "∪"  U222A  # set union
 <Multi_key> <m> <U> : "∖"  U2216  # set minus
 <Multi_key> <m> <w> : "℘"  U2118  # Weierstrass elliptic function
+<Multi_key> <m> <x> : "⋅"  U22C5  # dot operator
+<Multi_key> <m> <X> : "∙"  U2219  # bullet operator
 <Multi_key> <m> <z> : "↯"  U21AF  # downwards zigzag arrow
 <Multi_key> <m> <Z> : "ℤ"  U2124  # whole numbers
 <Multi_key> <m> <2> : "∶"  U2236  # ratio symbol
@@ -885,12 +889,12 @@ include "%L"
 <Multi_key> <m> <6> : "∠"  U2220  # angle symbol
 <Multi_key> <m> <9> : "∟"  U221F  # right angle
 <Multi_key> <m> <0> : "∡"  U2221  # measured angle
-<Multi_key> <m> <period>    : "⋅"  U22C5  # dot operator
 <Multi_key> <m> <equal>     : "≝"  U225D  # equal to by definition
 <Multi_key> <m> <plus>      : "⊕"  U2295  # circled plus
 <Multi_key> <m> <minus>     : "⊖"  U2296  # circled minus
 <Multi_key> <m> <asterisk>  : "⊗"  U2297  # circled times
 <Multi_key> <m> <slash>     : "⊘"  U2298  # circled division slash
+<Multi_key> <m> <period>    : "⊙"  U2299  # circled dot operator
 <Multi_key> <m> <semicolon> : "∵"  U2235  # because sign
 <Multi_key> <m> <colon>     : "∴"  U2234  # therefore sign
 <Multi_key> <m> <ampersand> : "∧"  U2227  # logical and
