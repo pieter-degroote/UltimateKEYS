@@ -576,6 +576,8 @@ compose["ts"] := "{u+023f}"  ; (ȿ) s with swash tail
 compose["tS"] := "{u+2c7e}"  ; (Ȿ) S with swash tail
 compose["tz"] := "{u+0240}"  ; (ɀ) z with swash tail
 compose["tZ"] := "{u+2c7f}"  ; (Ɀ) Z with swash tail
+compose["t7"] := "{u+204a}"  ; (⁊) Tironian sign et
+compose["t&"] := "{u+2e52}"  ; (⹒) Tironian sign capital et
 
 
 ; Compose :  Currency Symbols
@@ -897,6 +899,8 @@ compose["mT"] := "{u+2262}"  ; (≢) not identical to
 compose["mu"] := "{u+222a}"  ; (∪) set union
 compose["mU"] := "{u+2216}"  ; (∖) set minus
 compose["mw"] := "{u+2118}"  ; (℘) Weierstrass elliptic function
+compose["mx"] := "{u+22c5}"  ; (⋅) dot operator
+compose["mX"] := "{u+2219}"  ; (∙) bullet operator
 compose["mz"] := "{u+21af}"  ; (↯) downwards zigzag arrow
 compose["mZ"] := "{u+2124}"  ; (ℤ) whole numbers
 compose["m2"] := "{u+2236}"  ; (∶) ratio symbol
@@ -904,12 +908,12 @@ compose["m4"] := "{u+2237}"  ; (∷) proportion sign
 compose["m6"] := "{u+2220}"  ; (∠) angle symbol
 compose["m9"] := "{u+221f}"  ; (∟) right angle
 compose["m0"] := "{u+2221}"  ; (∡) measured angle
-compose["m."] := "{u+22c5}"  ; (⋅) dot operator
 compose["m="] := "{u+225d}"  ; (≝) equal to by definition
 compose["m+"] := "{u+2295}"  ; (⊕) circled plus
 compose["m-"] := "{u+2296}"  ; (⊖) circled minus
 compose["m*"] := "{u+2297}"  ; (⊗) circled times
 compose["m/"] := "{u+2298}"  ; (⊘) circled division slash
+compose["m."] := "{u+2299}"  ; (⊙) circled dot operator
 compose["m;"] := "{u+2235}"  ; (∵) because sign
 compose["m:"] := "{u+2234}"  ; (∴) therefore sign
 compose["m&"] := "{u+2227}"  ; (∧) logical and
