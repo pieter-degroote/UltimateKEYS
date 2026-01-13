@@ -849,9 +849,7 @@ compose["s4"] := "{u+203b}"  ; (※) reference mark
 compose["s5"] := "{u+2605}"  ; (★) black star
 compose["s6"] := "{u+2606}"  ; (☆) white star
 compose["s8"] := "{u+266a}"  ; (♪) eighth note
-compose["s!"] := "{u+203c}"  ; (‼) double exclamation mark
-compose["s?"] := "{u+2e2e}"  ; (⸮) reversed question mark
-compose["s/"] := "{u+205e}"  ; (⁞) vertical four dots
+compose["s!"] := "{u+205e}"  ; (⁞) vertical four dots
 compose["s|"] := "{u+00a6}"  ; (¦) broken bar
 compose["s["] := "{u+2045}"  ; (⁅) left square bracket with quill
 compose["s]"] := "{u+2046}"  ; (⁆) right square bracket with quill
@@ -959,12 +957,6 @@ compose["r4"] := "{u+221c}"  ; (∜) fourth root
 compose["so"] := "{u+00a7}"  ; (§) section sign
 compose["So"] := "{u+00a7}"  ; (§) section sign
 compose["tm"] := "{u+2122}"  ; (™) trademark symbol
-compose["vv"] := "{u+2713}"  ; (✓) check mark
-compose["yy"] := "{u+2713}"  ; (✓) check mark
-compose["VV"] := "{u+2714}"  ; (✔) heavy check mark
-compose["YY"] := "{u+2714}"  ; (✔) heavy check mark
-compose["xx"] := "{u+2717}"  ; (✗) ballot x
-compose["XX"] := "{u+2718}"  ; (✘) heavy ballot x
 compose["||"] := "{u+2016}"  ; (‖) double vertical line
 compose["'1"] := "{u+2032}"  ; (′) prime
 compose["'2"] := "{u+2033}"  ; (″) double prime
@@ -975,6 +967,7 @@ compose["//"] := "{u+00f7}"  ; (÷) division sign
 compose["*o"] := "{u+00b0}"  ; (°) degree sign
 compose["o*"] := "{u+00b0}"  ; (°) degree sign
 compose[".-"] := "{u+00b7}"  ; (·) middle dot
+compose[".^"] := "{u+00b7}"  ; (·) middle dot
 compose[".3"] := "{u+2026}"  ; (…) horizontal ellipsis
 compose[".."] := "{u+2026}"  ; (…) horizontal ellipsis
 compose["a-"] := "{u+00aa}"  ; (ª) feminine ordinal indicator
@@ -1007,14 +1000,7 @@ compose[";w"] := "{u+25e6}"  ; (◦) white bullet
 compose[";h"] := "{u+2043}"  ; (⁃) hyphen bullet
 compose[";t"] := "{u+2023}"  ; (‣) triangular bullet
 compose[";;"] := "{u+2022}"  ; (•) bullet
-compose[":("] := "{u+2639}"  ; (☹) white frowning face
-compose[":)"] := "{u+263a}"  ; (☺) white smiling face
-compose[";)"] := "{u+263b}"  ; (☻) black smiling face
 compose["<3"] := "{u+2665}"  ; (♥) black heart suit
-compose["[]"] := "{u+2610}"  ; (☐) ballot box
-compose["[v"] := "{u+2611}"  ; (☑) ballot box with check
-compose["[y"] := "{u+2611}"  ; (☑) ballot box with check
-compose["[x"] := "{u+2612}"  ; (☒) ballot box with x
 
 
 ; Compose :  Vulgar Fractions
@@ -1258,30 +1244,6 @@ compose[">y"] := "{u+1ef5}"  ; (ỵ) y with dot below
 compose[">Y"] := "{u+1ef4}"  ; (Ỵ) Y with dot below
 compose[">z"] := "{u+1e93}"  ; (ẓ) z with dot below
 compose[">Z"] := "{u+1e92}"  ; (Ẓ) Z with dot below
-
-
-; Accented Letters with Dot Below
-
-compose["?a"] := "{u+1ead}"  ; (ậ) a with circumflex and dot below
-compose["?A"] := "{u+1eac}"  ; (Ậ) A with circumflex and dot below
-compose["?e"] := "{u+1ec7}"  ; (ệ) e with circumflex and dot below
-compose["?E"] := "{u+1ec6}"  ; (Ệ) E with circumflex and dot below
-compose["?f"] := "{u+1e1d}"  ; (ḝ) e with cedilla and breve
-compose["?F"] := "{u+1e1c}"  ; (Ḝ) E with cedilla and breve
-compose["?l"] := "{u+1e39}"  ; (ḹ) l with dot below and macron
-compose["?L"] := "{u+1e38}"  ; (Ḹ) L with dot below and macron
-compose["?o"] := "{u+1ed9}"  ; (ộ) o with circumflex and dot below
-compose["?O"] := "{u+1ed8}"  ; (Ộ) O with circumflex and dot below
-compose["?p"] := "{u+1ee3}"  ; (ợ) o with horn and dot below
-compose["?P"] := "{u+1ee2}"  ; (Ợ) O with horn and dot below
-compose["?q"] := "{u+1eb7}"  ; (ặ) a with breve and dot below
-compose["?Q"] := "{u+1eb6}"  ; (Ặ) A with breve and dot below
-compose["?r"] := "{u+1e5d}"  ; (ṝ) r with dot below and macron
-compose["?R"] := "{u+1e5c}"  ; (Ṝ) R with dot below and macron
-compose["?s"] := "{u+1e69}"  ; (ṩ) s with dot below and dot above
-compose["?S"] := "{u+1e68}"  ; (Ṩ) S with dot below and dot above
-compose["?u"] := "{u+1ef1}"  ; (ự) u with horn and dot below
-compose["?U"] := "{u+1ef0}"  ; (Ự) U with horn and dot below
 
 
 ; Configuration :  'AltGr (RAlt)' and 'AltGr (RAlt) + Shift' modifiers
