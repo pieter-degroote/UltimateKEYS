@@ -830,10 +830,8 @@ include "%L"
 <Multi_key> <s> <5> : "★"  U2605  # black star
 <Multi_key> <s> <6> : "☆"  U2606  # white star
 <Multi_key> <s> <8> : "♪"  U266A  # eighth note
-<Multi_key> <s> <exclam>   : "‼"  U203C  # double exclamation mark
-<Multi_key> <s> <question> : "⸮"  U2E2E  # reversed question mark
-<Multi_key> <s> <slash>    : "⁞"  U205E  # vertical four dots
-<Multi_key> <s> <bar>      : "¦"  U00A6  # broken bar
+<Multi_key> <s> <exclam>       : "⁞"  U205E  # vertical four dots
+<Multi_key> <s> <bar>          : "¦"  U00A6  # broken bar
 <Multi_key> <s> <bracketleft>  : "⁅"  U2045  # left square bracket with quill
 <Multi_key> <s> <bracketright> : "⁆"  U2046  # right square bracket with quill
 
@@ -940,12 +938,6 @@ include "%L"
 <Multi_key> <s> <o> : "§"  U00A7  # section sign
 <Multi_key> <S> <o> : "§"  U00A7  # section sign
 <Multi_key> <t> <m> : "™"  U2122  # trademark symbol
-<Multi_key> <v> <v> : "✓"  U2713  # check mark
-<Multi_key> <y> <y> : "✓"  U2713  # check mark
-<Multi_key> <V> <V> : "✔"  U2714  # heavy check mark
-<Multi_key> <Y> <Y> : "✔"  U2714  # heavy check mark
-<Multi_key> <x> <x> : "✗"  U2717  # ballot x
-<Multi_key> <X> <X> : "✘"  U2718  # heavy ballot x
 <Multi_key> <bar> <bar>               : "‖"  U2016  # double vertical line
 <Multi_key> <apostrophe> <1>          : "′"  U2032  # prime
 <Multi_key> <apostrophe> <2>          : "″"  U2033  # double prime
@@ -956,6 +948,7 @@ include "%L"
 <Multi_key> <asterisk> <o>            : "°"  U00B0  # degree sign
 <Multi_key> <o> <asterisk>            : "°"  U00B0  # degree sign
 <Multi_key> <period> <minus>          : "·"  U00B7  # middle dot
+<Multi_key> <period> <asciicircum>    : "·"  U00B7  # middle dot
 <Multi_key> <period> <3>              : "…"  U2026  # horizontal ellipsis
 <Multi_key> <period> <period>         : "…"  U2026  # horizontal ellipsis
 <Multi_key> <a> <minus>               : "ª"  U00AA  # feminine ordinal indicator
@@ -988,14 +981,7 @@ include "%L"
 <Multi_key> <semicolon> <h>           : "⁃"  U2043  # hyphen bullet
 <Multi_key> <semicolon> <t>           : "‣"  U2023  # triangular bullet
 <Multi_key> <semicolon> <semicolon>   : "•"  U2022  # bullet
-<Multi_key> <colon> <parenleft>       : "☹"  U2639  # white frowning face
-<Multi_key> <colon> <parenright>      : "☺"  U263A  # white smiling face
-<Multi_key> <semicolon> <parenright>  : "☻"  U263B  # black smiling face
 <Multi_key> <less> <3>                : "♥"  U2665  # black heart suit
-<Multi_key> <bracketleft> <bracketright> : "☐"  U2610  # ballot box
-<Multi_key> <bracketleft> <v>            : "☑"  U2611  # ballot box with check
-<Multi_key> <bracketleft> <y>            : "☑"  U2611  # ballot box with check
-<Multi_key> <bracketleft> <x>            : "☒"  U2612  # ballot box with x
 
 
 # Vulgar Fractions
@@ -1239,27 +1225,3 @@ include "%L"
 <Multi_key> <greater> <Y> : "Ỵ"  U1EF4  # Y with dot below
 <Multi_key> <greater> <z> : "ẓ"  U1E93  # z with dot below
 <Multi_key> <greater> <Z> : "Ẓ"  U1E92  # Z with dot below
-
-
-# Accented Letters with Dot Below
-
-<Multi_key> <question> <a> : "ậ"  U1EAD  # a with circumflex and dot below
-<Multi_key> <question> <A> : "Ậ"  U1EAC  # A with circumflex and dot below
-<Multi_key> <question> <e> : "ệ"  U1EC7  # e with circumflex and dot below
-<Multi_key> <question> <E> : "Ệ"  U1EC6  # E with circumflex and dot below
-<Multi_key> <question> <f> : "ḝ"  U1E1D  # e with cedilla and breve
-<Multi_key> <question> <F> : "Ḝ"  U1E1C  # E with cedilla and breve
-<Multi_key> <question> <l> : "ḹ"  U1E39  # l with dot below and macron
-<Multi_key> <question> <L> : "Ḹ"  U1E38  # L with dot below and macron
-<Multi_key> <question> <o> : "ộ"  U1ED9  # o with circumflex and dot below
-<Multi_key> <question> <O> : "Ộ"  U1ED8  # O with circumflex and dot below
-<Multi_key> <question> <p> : "ợ"  U1EE3  # o with horn and dot below
-<Multi_key> <question> <P> : "Ợ"  U1EE2  # O with horn and dot below
-<Multi_key> <question> <q> : "ặ"  U1EB7  # a with breve and dot below
-<Multi_key> <question> <Q> : "Ặ"  U1EB6  # A with breve and dot below
-<Multi_key> <question> <r> : "ṝ"  U1E5D  # r with dot below and macron
-<Multi_key> <question> <R> : "Ṝ"  U1E5C  # R with dot below and macron
-<Multi_key> <question> <s> : "ṩ"  U1E69  # s with dot below and dot above
-<Multi_key> <question> <S> : "Ṩ"  U1E68  # S with dot below and dot above
-<Multi_key> <question> <u> : "ự"  U1EF1  # u with horn and dot below
-<Multi_key> <question> <U> : "Ự"  U1EF0  # U with horn and dot below
