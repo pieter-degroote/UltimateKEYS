@@ -2,16 +2,17 @@
 
 ## Prerequisites
 
-These AutoHotkey scripts are highly customizable editions of UltimateKEYS. To work properly, the Windows main/base keyboard layout has to be set to&nbsp;:
+These AutoHotkey scripts are highly customizable editions of UltimateKEYS. To work properly, the Windows main/base keyboard layout has to be set to US QWERTY or a variant&nbsp;:
 
 **=&gt; AltGr assigned to UltimateKEYS**
 
 - [UltimateKEYS (MSKLC implementation)](https://pieter-degroote.github.io/UltimateKEYS/integration-msklc.html)&emsp;[![Core Release](https://img.shields.io/github/release/pieter-degroote/UltimateKEYS-core.svg?label=core)](https://github.com/pieter-degroote/UltimateKEYS-core/releases)
 - [US QWERTY (Euro)](https://github.com/pieter-degroote/us-qwerty-euro)&emsp;[![GitHub Release](https://img.shields.io/github/release/pieter-degroote/us-qwerty-euro.svg)](https://github.com/pieter-degroote/us-qwerty-euro/releases)
 - [US Intl AltGr dead keys](https://github.com/pieter-degroote/us-intl-altgr-dk)&emsp;[![GitHub Release](https://img.shields.io/github/release/pieter-degroote/us-intl-altgr-dk.svg)](https://github.com/pieter-degroote/us-intl-altgr-dk/releases)
-- Hausa (Latin, Nigeria) (based on US QWERTY, see settings)
-- Romanian (Programmers) (based on US QWERTY, see settings)
-- English (India) (based on US QWERTY, see settings)
+- Hausa (Latin, Nigeria) (based on US QWERTY)
+- Romanian (Programmers) (based on US QWERTY)
+- English (India) (based on US QWERTY)
+- Latvian QWERTY (on Windows 11) (based on US QWERTY)
 - or any other layout that is fully based on US QWERTY
 
 **=&gt; Right Alt assigned to UltimateKEYS (secondary choice)**
