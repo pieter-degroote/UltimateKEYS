@@ -830,15 +830,15 @@ include "%L"
 <Multi_key> <s> <5> : "★"  U2605  # black star
 <Multi_key> <s> <6> : "☆"  U2606  # white star
 <Multi_key> <s> <8> : "♪"  U266A  # eighth note
-<Multi_key> <s> <exclam>       : "⁞"  U205E  # vertical four dots
 <Multi_key> <s> <bar>          : "¦"  U00A6  # broken bar
+<Multi_key> <s> <exclam>       : "⁞"  U205E  # vertical four dots
 <Multi_key> <s> <bracketleft>  : "⁅"  U2045  # left square bracket with quill
 <Multi_key> <s> <bracketright> : "⁆"  U2046  # right square bracket with quill
 
 
 # Math Symbols
 
-<Multi_key> <m> <a> : "∀"  U2200  # for all
+<Multi_key> <m> <a> : "∠"  U2220  # angle symbol
 <Multi_key> <m> <A> : "∀"  U2200  # for all
 <Multi_key> <m> <b> : "⊆"  U2286  # subset of or equal to
 <Multi_key> <m> <B> : "⊇"  U2287  # superset of or equal to
@@ -870,6 +870,7 @@ include "%L"
 <Multi_key> <m> <p> : "∂"  U2202  # partial differential
 <Multi_key> <m> <P> : "ℙ"  U2119  # prime numbers
 <Multi_key> <m> <Q> : "ℚ"  U211A  # rational numbers
+<Multi_key> <m> <r> : "∟"  U221F  # right angle
 <Multi_key> <m> <R> : "ℝ"  U211D  # real numbers
 <Multi_key> <m> <s> : "∩"  U2229  # set intersection
 <Multi_key> <m> <S> : "∫"  U222B  # integral symbol
@@ -884,19 +885,19 @@ include "%L"
 <Multi_key> <m> <Z> : "ℤ"  U2124  # whole numbers
 <Multi_key> <m> <2> : "∶"  U2236  # ratio symbol
 <Multi_key> <m> <4> : "∷"  U2237  # proportion sign
-<Multi_key> <m> <6> : "∠"  U2220  # angle symbol
 <Multi_key> <m> <9> : "∟"  U221F  # right angle
 <Multi_key> <m> <0> : "∡"  U2221  # measured angle
-<Multi_key> <m> <equal>     : "≝"  U225D  # equal to by definition
-<Multi_key> <m> <plus>      : "⊕"  U2295  # circled plus
-<Multi_key> <m> <minus>     : "⊖"  U2296  # circled minus
-<Multi_key> <m> <asterisk>  : "⊗"  U2297  # circled times
-<Multi_key> <m> <slash>     : "⊘"  U2298  # circled division slash
-<Multi_key> <m> <period>    : "⊙"  U2299  # circled dot operator
-<Multi_key> <m> <semicolon> : "∵"  U2235  # because sign
-<Multi_key> <m> <colon>     : "∴"  U2234  # therefore sign
-<Multi_key> <m> <ampersand> : "∧"  U2227  # logical and
-<Multi_key> <m> <bar>       : "∨"  U2228  # logical or
+<Multi_key> <m> <exclam>      : "¬"  U00AC  # not sign
+<Multi_key> <m> <6>           : "∧"  U2227  # logical and
+<Multi_key> <m> <asciicircum> : "∨"  U2228  # logical or
+<Multi_key> <m> <colon>       : "∴"  U2234  # therefore sign
+<Multi_key> <m> <semicolon>   : "∵"  U2235  # because sign
+<Multi_key> <m> <equal>       : "≝"  U225D  # equal to by definition
+<Multi_key> <m> <plus>        : "⊕"  U2295  # circled plus
+<Multi_key> <m> <minus>       : "⊖"  U2296  # circled minus
+<Multi_key> <m> <asterisk>    : "⊗"  U2297  # circled times
+<Multi_key> <m> <slash>       : "⊘"  U2298  # circled division slash
+<Multi_key> <m> <period>      : "⊙"  U2299  # circled dot operator
 
 
 # Special Letters/Characters
