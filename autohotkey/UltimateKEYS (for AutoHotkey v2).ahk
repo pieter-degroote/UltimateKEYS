@@ -849,15 +849,15 @@ compose["s4"] := "{u+203b}"  ; (※) reference mark
 compose["s5"] := "{u+2605}"  ; (★) black star
 compose["s6"] := "{u+2606}"  ; (☆) white star
 compose["s8"] := "{u+266a}"  ; (♪) eighth note
-compose["s!"] := "{u+205e}"  ; (⁞) vertical four dots
 compose["s|"] := "{u+00a6}"  ; (¦) broken bar
+compose["s!"] := "{u+205e}"  ; (⁞) vertical four dots
 compose["s["] := "{u+2045}"  ; (⁅) left square bracket with quill
 compose["s]"] := "{u+2046}"  ; (⁆) right square bracket with quill
 
 
 ; Compose :  Math Symbols
 
-compose["ma"] := "{u+2200}"  ; (∀) for all
+compose["ma"] := "{u+2220}"  ; (∠) angle symbol
 compose["mA"] := "{u+2200}"  ; (∀) for all
 compose["mb"] := "{u+2286}"  ; (⊆) subset of or equal to
 compose["mB"] := "{u+2287}"  ; (⊇) superset of or equal to
@@ -889,6 +889,7 @@ compose["mO"] := "{u+2205}"  ; (∅) empty set
 compose["mp"] := "{u+2202}"  ; (∂) partial differential
 compose["mP"] := "{u+2119}"  ; (ℙ) prime numbers
 compose["mQ"] := "{u+211a}"  ; (ℚ) rational numbers
+compose["mr"] := "{u+221f}"  ; (∟) right angle
 compose["mR"] := "{u+211d}"  ; (ℝ) real numbers
 compose["ms"] := "{u+2229}"  ; (∩) set intersection
 compose["mS"] := "{u+222b}"  ; (∫) integral symbol
@@ -903,19 +904,19 @@ compose["mz"] := "{u+21af}"  ; (↯) downwards zigzag arrow
 compose["mZ"] := "{u+2124}"  ; (ℤ) whole numbers
 compose["m2"] := "{u+2236}"  ; (∶) ratio symbol
 compose["m4"] := "{u+2237}"  ; (∷) proportion sign
-compose["m6"] := "{u+2220}"  ; (∠) angle symbol
 compose["m9"] := "{u+221f}"  ; (∟) right angle
 compose["m0"] := "{u+2221}"  ; (∡) measured angle
+compose["m!"] := "{u+00ac}"  ; (¬) not sign
+compose["m6"] := "{u+2227}"  ; (∧) logical and
+compose["m^"] := "{u+2228}"  ; (∨) logical or
+compose["m:"] := "{u+2234}"  ; (∴) therefore sign
+compose["m;"] := "{u+2235}"  ; (∵) because sign
 compose["m="] := "{u+225d}"  ; (≝) equal to by definition
 compose["m+"] := "{u+2295}"  ; (⊕) circled plus
 compose["m-"] := "{u+2296}"  ; (⊖) circled minus
 compose["m*"] := "{u+2297}"  ; (⊗) circled times
 compose["m/"] := "{u+2298}"  ; (⊘) circled division slash
 compose["m."] := "{u+2299}"  ; (⊙) circled dot operator
-compose["m;"] := "{u+2235}"  ; (∵) because sign
-compose["m:"] := "{u+2234}"  ; (∴) therefore sign
-compose["m&"] := "{u+2227}"  ; (∧) logical and
-compose["m|"] := "{u+2228}"  ; (∨) logical or
 
 
 ; Compose :  Special Letters/Characters

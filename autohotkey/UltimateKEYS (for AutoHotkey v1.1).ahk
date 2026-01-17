@@ -850,15 +850,15 @@ compose.item["s4"] := "{u+203b}"  ; (※) reference mark
 compose.item["s5"] := "{u+2605}"  ; (★) black star
 compose.item["s6"] := "{u+2606}"  ; (☆) white star
 compose.item["s8"] := "{u+266a}"  ; (♪) eighth note
-compose.item["s!"] := "{u+205e}"  ; (⁞) vertical four dots
 compose.item["s|"] := "{u+00a6}"  ; (¦) broken bar
+compose.item["s!"] := "{u+205e}"  ; (⁞) vertical four dots
 compose.item["s["] := "{u+2045}"  ; (⁅) left square bracket with quill
 compose.item["s]"] := "{u+2046}"  ; (⁆) right square bracket with quill
 
 
 ; Compose :  Math Symbols
 
-compose.item["ma"] := "{u+2200}"  ; (∀) for all
+compose.item["ma"] := "{u+2220}"  ; (∠) angle symbol
 compose.item["mA"] := "{u+2200}"  ; (∀) for all
 compose.item["mb"] := "{u+2286}"  ; (⊆) subset of or equal to
 compose.item["mB"] := "{u+2287}"  ; (⊇) superset of or equal to
@@ -890,6 +890,7 @@ compose.item["mO"] := "{u+2205}"  ; (∅) empty set
 compose.item["mp"] := "{u+2202}"  ; (∂) partial differential
 compose.item["mP"] := "{u+2119}"  ; (ℙ) prime numbers
 compose.item["mQ"] := "{u+211a}"  ; (ℚ) rational numbers
+compose.item["mr"] := "{u+221f}"  ; (∟) right angle
 compose.item["mR"] := "{u+211d}"  ; (ℝ) real numbers
 compose.item["ms"] := "{u+2229}"  ; (∩) set intersection
 compose.item["mS"] := "{u+222b}"  ; (∫) integral symbol
@@ -904,19 +905,19 @@ compose.item["mz"] := "{u+21af}"  ; (↯) downwards zigzag arrow
 compose.item["mZ"] := "{u+2124}"  ; (ℤ) whole numbers
 compose.item["m2"] := "{u+2236}"  ; (∶) ratio symbol
 compose.item["m4"] := "{u+2237}"  ; (∷) proportion sign
-compose.item["m6"] := "{u+2220}"  ; (∠) angle symbol
 compose.item["m9"] := "{u+221f}"  ; (∟) right angle
 compose.item["m0"] := "{u+2221}"  ; (∡) measured angle
+compose.item["m!"] := "{u+00ac}"  ; (¬) not sign
+compose.item["m6"] := "{u+2227}"  ; (∧) logical and
+compose.item["m^"] := "{u+2228}"  ; (∨) logical or
+compose.item["m:"] := "{u+2234}"  ; (∴) therefore sign
+compose.item["m;"] := "{u+2235}"  ; (∵) because sign
 compose.item["m="] := "{u+225d}"  ; (≝) equal to by definition
 compose.item["m+"] := "{u+2295}"  ; (⊕) circled plus
 compose.item["m-"] := "{u+2296}"  ; (⊖) circled minus
 compose.item["m*"] := "{u+2297}"  ; (⊗) circled times
 compose.item["m/"] := "{u+2298}"  ; (⊘) circled division slash
 compose.item["m."] := "{u+2299}"  ; (⊙) circled dot operator
-compose.item["m;"] := "{u+2235}"  ; (∵) because sign
-compose.item["m:"] := "{u+2234}"  ; (∴) therefore sign
-compose.item["m&"] := "{u+2227}"  ; (∧) logical and
-compose.item["m|"] := "{u+2228}"  ; (∨) logical or
 
 
 ; Compose :  Special Letters/Characters
