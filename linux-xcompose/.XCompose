@@ -942,7 +942,10 @@ include "%L"
 <Multi_key> <t> <m> : "™"  U2122  # trademark symbol
 <Multi_key> <v> <v> : "✓"  U2713  # check mark
 <Multi_key> <y> <y> : "✓"  U2713  # check mark
+<Multi_key> <V> <V> : "✔"  U2714  # heavy check mark
+<Multi_key> <Y> <Y> : "✔"  U2714  # heavy check mark
 <Multi_key> <x> <x> : "✗"  U2717  # ballot x
+<Multi_key> <X> <X> : "✘"  U2718  # heavy ballot x
 <Multi_key> <bar> <bar>               : "‖"  U2016  # double vertical line
 <Multi_key> <apostrophe> <1>          : "′"  U2032  # prime
 <Multi_key> <apostrophe> <2>          : "″"  U2033  # double prime
@@ -960,6 +963,7 @@ include "%L"
 <Multi_key> <question> <question>     : "¿"  U00BF  # inverted question mark
 <Multi_key> <exclam> <question>       : "‽"  U203D  # interrobang
 <Multi_key> <question> <exclam>       : "⸘"  U2E18  # inverted interrobang
+<Multi_key> <r> <question>            : "⸮"  U2E2E  # reversed question mark
 <Multi_key> <o> <c>                   : "©"  U00A9  # copyright sign
 <Multi_key> <parenleft> <c>           : "©"  U00A9  # copyright sign
 <Multi_key> <o> <p>                   : "℗"  U2117  # sound recording copyright
