@@ -52,20 +52,26 @@ Support Peace in the Middle East<br />
 <li><a href="integration-msklc.html" target="_blank">UltimateKEYS (MSKLC implementation)</a>&nbsp;&nbsp;<a href="https://github.com/pieter-degroote/UltimateKEYS-core/releases" target="_blank"><img src="https://img.shields.io/github/release/pieter-degroote/UltimateKEYS-core.svg?label=core" alt="Core Release" /></a></li>
 <li><a href="https://github.com/pieter-degroote/us-qwerty-euro" target="_blank">US QWERTY (Euro)</a>&nbsp;&nbsp;<a href="https://github.com/pieter-degroote/us-qwerty-euro/releases" target="_blank"><img src="https://img.shields.io/github/release/pieter-degroote/us-qwerty-euro.svg" alt="US QWERTY (Euro) Release" /></a></li>
 <li><a href="https://github.com/pieter-degroote/us-intl-altgr-dk" target="_blank">US Intl AltGr dead keys</a>&nbsp;&nbsp;<a href="https://github.com/pieter-degroote/us-intl-altgr-dk/releases" target="_blank"><img src="https://img.shields.io/github/release/pieter-degroote/us-intl-altgr-dk.svg" alt="US Intl AltGr dead keys Release" /></a></li>
-<li>Hausa (Latin, Nigeria) (based on US QWERTY)</li>
-<li>Romanian (Programmers) (based on US QWERTY)</li>
-<li>English (India) (based on US QWERTY)</li>
-<li>Latvian QWERTY (on Windows 11) (based on US QWERTY)</li>
-<li>or any other layout that is fully based on US QWERTY</li>
+<li>US-International (KBDUSX)</li>
+<li>Hausa (Latin, Nigeria)</li>
+<li>Romanian (Programmers)</li>
+<li>English (India)</li>
+<li>Czech Programmers</li>
+<li>Polish (Programmers)</li>
+<li>Hawaiian</li>
+<li>Greek Latin</li>
+<li>Igbo</li>
+<li>Sesotho sa Leboa / Setswana</li>
+<li>Latvian QWERTY (on Windows 11)</li>
+<li>or any other variant that is fully based on US QWERTY</li>
 </ul>
 
 <p><strong>=&gt; Right Alt assigned to UltimateKEYS (secondary choice)</strong></p>
 
 <ul>
 <li>United States (US)</li>
+<li>Maori (NZ Aotearoa)</li>
 </ul>
-
-<p>Notes&nbsp;: &nbsp;"Romanian (Programmers)" does not contain some special control codes (Ctrl+[: u+001b, Ctrl+\: u+001c, Ctrl+]: u+001d), but I could not find any specific use cases requiring these mappings. "English (India)" also emits an Indian rupee sign (₹) via Ctrl+Shift+4.</p>
 
 <p><strong>Download and install AutoHotkey v2 (or v1.1)&nbsp;:</strong></p>
 
@@ -81,27 +87,9 @@ Support Peace in the Middle East<br />
 
 <p>When two or more languages/keyboards are installed on the system, the default 'Alt + Shift' sequence will interfere with the AHK scripts.<br />
 To avoid this, you can disable the interfering key sequences at&nbsp;:<br />
-Win 10&nbsp;: &nbsp;<em>Settings -&gt; Time &amp; Language -&gt; Language -&gt; Spelling, typing &amp; keyboard settings (on the right) -&gt; Advanced keyboard settings -&gt; Input language hot keys</em><br />
 Win 11&nbsp;: &nbsp;<em>Settings -&gt; Time &amp; Language -&gt; Typing -&gt; Advanced keyboard settings -&gt; Input language hot keys</em><br />
+Win 10&nbsp;: &nbsp;<em>Settings -&gt; Time &amp; Language -&gt; Language -&gt; Spelling, typing &amp; keyboard settings (on the right) -&gt; Advanced keyboard settings -&gt; Input language hot keys</em><br />
 Please note that on the standard US QWERTY, the sequence 'Left Alt + Shift' also gets mistakenly triggered by 'Right Alt + Shift', resulting in an unexpected keyboard layout change.</p>
-
-<p>&nbsp;</p>
-
-<h2>Additional Information</h2>
-
-<p>Note that it also works on the following layouts, based on US QWERTY (with AltGr assigned to UltimateKEYS), but with some issues&nbsp;:</p>
-
-<ul>
-<li>Czech Programmers - Decimal mark (on numpad) is a comma (,) instead of a period (.).</li>
-<li>Polish (Programmers) - Decimal mark (on numpad) is a comma (,) instead of a period (.), and introduces a dead key on the tilde (~).</li>
-<li>Maori (NZ Aotearoa) - Introduces a dead key on the grave accent key (`).
-<li>Win 10 : &nbsp;Latvian QWERTY - Introduces both a dead key on the tilde (~) and a dead 'ring/dot above' key on the backslash (\).</li>
-<li>Hawaiian - Introduces a modifier letter 'turned comma' (ʻ) on the apostrophe (').</li>
-<li>Greek Latin - Decimal mark (on numpad) is a comma (,) instead of a period (.), and some additional dead keys on the main/base layout.</li>
-<li>Igbo - Some additional dead keys on the main/base layout.</li>
-</ul>
-
-<p>Also note that the AHK scripts do not work correctly either on the US-International (KBDUSX) layout, since the apostrophe/quotes key is also 'broken/bricked' there...</p>
 
 <p>&nbsp;</p>
 
