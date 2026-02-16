@@ -2,8 +2,6 @@
 
 ; UltimateKEYS (for AutoHotkey v1.1).ahk
 
-; Website :  https://pieter-degroote.github.io/UltimateKEYS/
-
 ; GitHub :   https://github.com/pieter-degroote/UltimateKEYS
 
 ; License :  GNU General Public License Version 3
@@ -11,7 +9,7 @@
 
 ; Configuration :
 
-; Keyboard layout :  US QWERTY
+; Keyboard layout :  US QWERTY / KBDUSX
 
 
 
@@ -19,9 +17,9 @@
 #KeyHistory 0   ; disables the key history (for privacy and security)
 ListLines Off   ; omits recently executed lines from history (for privacy and security)
 
-SendMode Input  ; optimizes for faster and more reliable input
+SendMode Event  ; allows chaining of customized key combinations
 
-global gEndKeys := "{bs}{esc}"  ; ends dead key input on Backspace or Escape
+global gEndKeys := "{bs}{del}{esc}"  ; ends dead key input on Backspace, Delete or Escape
 
 
 ; Compose Key Sequences (declaration)
@@ -1254,6 +1252,19 @@ compose.item["!z"] := "{u+1e93}"  ; (ẓ) z with dot below
 compose.item["!Z"] := "{u+1e92}"  ; (Ẓ) Z with dot below
 
 
+; Configuration :  US QWERTY re-assignments (KBDUSX)
+
++sc007::Send {u+005e}     ; (^) circumflex accent
+
+sc028::Send {u+0027}      ; (') apostrophe
++sc028::Send {u+0022}     ; (") quotation mark
+
+sc029::Send {u+0060}      ; (`) grave accent
++sc029::Send {u+007e}     ; (~) tilde
+
+NumpadDot::Send {u+002e}  ; (.) period
+
+
 ; Configuration :  'AltGr (RAlt)' and 'AltGr (RAlt) + Shift' modifiers
 
 ; Key :  1
@@ -1831,10 +1842,14 @@ compose.item["!Z"] := "{u+1e92}"  ; (Ẓ) Z with dot below
 
 ; Configuration :  Compose Key Selector
 
->!sc029::    ; Right Alt + Grave Accent
->!sc056::    ; Right Alt + ISO Key
-<^>!sc029::  ; AltGr + Grave Accent
-<^>!sc056::  ; AltGr + ISO Key
+>!sc029::     ; Right Alt + Grave Accent
+>!sc056::     ; Right Alt + ISO Key
+<^>!sc029::   ; AltGr + Grave Accent
+<^>!sc056::   ; AltGr + ISO Key
+>!+sc029::    ; Right Alt + Shift + Grave Accent
+>!+sc056::    ; Right Alt + Shift + ISO Key
+<^>!+sc029::  ; AltGr + Shift + Grave Accent
+<^>!+sc056::  ; AltGr + Shift + ISO Key
   ih := InputHook("L2", gEndKeys)
   ih.Start(), ih.Wait()
   Send % compose.item[ih.Input]
