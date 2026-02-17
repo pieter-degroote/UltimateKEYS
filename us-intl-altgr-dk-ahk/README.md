@@ -17,7 +17,7 @@ These AutoHotkey scripts are highly customizable. To work properly, the Windows 
 **=&gt; AltGr assigned to the AutoHotkey script**
 
 - US-International (KBDUSX)
-- Hausa (Latin, Nigeria)
+- Hausa (Latin)
 - Romanian (Programmers)
 - English (India)
 - Czech Programmers
