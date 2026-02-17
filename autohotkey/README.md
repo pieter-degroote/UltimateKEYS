@@ -10,7 +10,7 @@ These AutoHotkey scripts are highly customizable editions of UltimateKEYS. To wo
 - [US QWERTY (Euro)](https://github.com/pieter-degroote/us-qwerty-euro)&emsp;[![GitHub Release](https://img.shields.io/github/release/pieter-degroote/us-qwerty-euro.svg)](https://github.com/pieter-degroote/us-qwerty-euro/releases)
 - [US Intl AltGr dead keys](https://github.com/pieter-degroote/us-intl-altgr-dk)&emsp;[![GitHub Release](https://img.shields.io/github/release/pieter-degroote/us-intl-altgr-dk.svg)](https://github.com/pieter-degroote/us-intl-altgr-dk/releases)
 - US-International (KBDUSX)
-- Hausa (Latin, Nigeria)
+- Hausa (Latin)
 - Romanian (Programmers)
 - English (India)
 - Czech Programmers
