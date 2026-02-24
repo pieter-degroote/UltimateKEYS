@@ -806,16 +806,15 @@ include "%L"
 <Multi_key> <s> <e> : "℮"  U212E  # estimated symbol
 <Multi_key> <s> <f> : "♀"  U2640  # female sign (Venus)
 <Multi_key> <s> <h> : "⌂"  U2302  # house
-<Multi_key> <s> <H> : "Ω"  U2126  # ohm sign (backwards compatibility)
-<Multi_key> <s> <i> : "⌀"  U2300  # diameter sign
 <Multi_key> <s> <j> : "℁"  U2101  # addressed to the subject
 <Multi_key> <s> <k> : "⅍"  U214D  # aktieselskab
 <Multi_key> <s> <l> : "ℓ"  U2113  # script small l
 <Multi_key> <s> <L> : "ℒ"  U2112  # Laplace transform
 <Multi_key> <s> <m> : "♂"  U2642  # male sign (Mars)
-<Multi_key> <s> <M> : "℠"  U2120  # service mark
+<Multi_key> <s> <O> : "⌀"  U2300  # diameter sign
 <Multi_key> <s> <p> : "℞"  U211E  # prescription take (Recipere)
 <Multi_key> <s> <P> : "℞"  U211E  # prescription take (Recipere)
+<Multi_key> <s> <Q> : "Ω"  U2126  # ohm sign (backward compatibility)
 <Multi_key> <s> <r> : "℟"  U211F  # response (liturgy)
 <Multi_key> <s> <R> : "℟"  U211F  # response (liturgy)
 <Multi_key> <s> <u> : "℆"  U2106  # cada una (each one)
@@ -935,9 +934,11 @@ include "%L"
 <Multi_key> <r> <2> : "√"  U221A  # square root
 <Multi_key> <r> <3> : "∛"  U221B  # cube root
 <Multi_key> <r> <4> : "∜"  U221C  # fourth root
+<Multi_key> <S> <M> : "℠"  U2120  # service mark
 <Multi_key> <s> <o> : "§"  U00A7  # section sign
 <Multi_key> <S> <o> : "§"  U00A7  # section sign
 <Multi_key> <t> <m> : "™"  U2122  # trademark symbol
+<Multi_key> <T> <M> : "™"  U2122  # trademark symbol
 <Multi_key> <v> <v> : "✓"  U2713  # check mark
 <Multi_key> <y> <y> : "✓"  U2713  # check mark
 <Multi_key> <V> <V> : "✔"  U2714  # heavy check mark
