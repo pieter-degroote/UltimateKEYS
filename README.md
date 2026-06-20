@@ -4,32 +4,35 @@ International US QWERTY layout with enhanced multilingual support for AutoHotkey
 
 **Official release&nbsp;:**&emsp;[![UltimateKEYS Release](https://img.shields.io/github/release/pieter-degroote/UltimateKEYS.svg)](https://github.com/pieter-degroote/UltimateKEYS/releases)  
 **Testing release&nbsp;:**&emsp;[![Testing Release](https://img.shields.io/github/release/pieter-degroote/UltimateKEYS-testing.svg?label=testing)](https://github.com/pieter-degroote/UltimateKEYS-testing/releases)  
-**Core release&nbsp;:**&emsp;&emsp;[![Core Release](https://img.shields.io/github/release/pieter-degroote/UltimateKEYS-core.svg?label=core)](https://github.com/pieter-degroote/UltimateKEYS-core/releases)
+**Core release&nbsp;:**&emsp;&emsp;[![Core Release](https://img.shields.io/github/release/pieter-degroote/UltimateKEYS-core.svg?label=core)](https://github.com/pieter-degroote/UltimateKEYS-core/releases)  
+**Legacy release&nbsp;:**&emsp;[![Legacy Release](https://img.shields.io/github/release/pieter-degroote/UltimateKEYS-legacy.svg?label=legacy)](https://github.com/pieter-degroote/UltimateKEYS-legacy/releases)
 
 ## Keyboard Layout Image
 
 ![UltimateKEYS - Keyboard Layout Image](images/UltimateKEYS%20-%20Keyboard%20Layout%20Image.png)
 
-=&gt; CP key (blue)&nbsp;: &nbsp;**[Compose Key](https://pieter-degroote.github.io/UltimateKEYS/documentation.html#Compose_Key_Sequences)** (Multi_key), in combination with AltGr (Right Alt) (only with AutoHotkey and Linux).  
-=&gt; Note that the ISO key (next to Left Shift) is not present on standard ANSI keyboards.
+=\> CP key (blue)&nbsp;: &nbsp;**[Compose Key](https://pieter-degroote.github.io/UltimateKEYS/documentation.html#Compose_Key_Sequences)** (Multi_key), in combination with AltGr (Right Alt) (only with AutoHotkey and Linux).  
+=\> Note that the ISO key (next to Left Shift) is not present on standard ANSI keyboards.
 
 ## MSKLC - Keyboard Layout Image
 
 ![UltimateKEYS - Keyboard Layout Image](images/UltimateKEYS%20(MSKLC)%20-%20Keyboard%20Layout%20Image.png)
 
-=&gt; Without Compose Key, since MSKLC does not support multiple keystrokes as a sequence for a dead key.
+=\> Without Compose Key, since MSKLC does not support multiple keystrokes as a sequence for a dead key.
 
 ## Important Notice - Security
 
-**=&gt; Win/Linux&nbsp;: &nbsp;Only use "BASIC LATIN" characters (codes 32 to 126) for your Windows, Microsoft Live and Linux passwords&nbsp;!**  
-Otherwise, it might be impossible to type any Unicode character higher than "Basic Latin" at the login screen/prompt (due to a different keyboard configuration)&nbsp;!&emsp;**=&gt;&emsp;ACCOUNT LOCKOUT**
+**=\> Win/Linux&nbsp;: &nbsp;Only use "BASIC LATIN" characters (codes 32 to 126) for your Windows, Microsoft Live and Linux passwords&nbsp;!**  
+Otherwise, it might be impossible to type any Unicode character higher than "Basic Latin" at the login screen/prompt (due to a different keyboard configuration)&nbsp;!&emsp;**=\>&emsp;ACCOUNT LOCKOUT**
 
-**=&gt; Win/Linux&nbsp;: &nbsp;ALWAYS make your system passwords VISIBLE during modification&nbsp;!**
+**=\> Win/Linux&nbsp;: &nbsp;ALWAYS make your system passwords VISIBLE during modification&nbsp;!**
 
 ## Website, Documentation and Testing
 
-**Website&nbsp;: &nbsp;https://pieter-degroote.github.io/**
+**Website&nbsp;: &nbsp;<https://pieter-degroote.github.io/>**
 
-**Testing repository&nbsp;: &nbsp;https://github.com/pieter-degroote/UltimateKEYS-testing**
+**Testing repository&nbsp;: &nbsp;<https://github.com/pieter-degroote/UltimateKEYS-testing>**
 
-**Core repository&nbsp;: &nbsp;https://github.com/pieter-degroote/UltimateKEYS-core**
+**Core repository&nbsp;: &nbsp;<https://github.com/pieter-degroote/UltimateKEYS-core>**
+
+License of UltimateKEYS&nbsp;: &nbsp;GNU General Public License Version 3 (base layout: Public Domain).
