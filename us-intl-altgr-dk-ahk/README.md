@@ -34,7 +34,7 @@ These AutoHotkey scripts are highly customizable. To work properly, the Windows 
 - United States (US)
 - Maori (NZ Aotearoa)
 
-**_Note about the standard base US layout&nbsp;:_**
+***Note about the standard base US layout&nbsp;:***
 
 When two or more languages/keyboards are installed on the system, the default 'Alt + Shift' sequence will interfere with the AHK scripts.  
 To avoid this, you can disable the interfering key sequences at&nbsp;:  
