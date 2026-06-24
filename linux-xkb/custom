@@ -44,7 +44,7 @@ xkb_symbols "basic" {
     key <AE02> { [ 2,            at,           twosuperior,          U266B                ] };  // 2 @ ² ♫
     key <AE03> { [ 3,            numbersign,   threesuperior,        section              ] };  // 3 # ³ §
     key <AE04> { [ 4,            dollar,       sterling,             yen                  ] };  // 4 $ £ ¥
-    key <AE05> { [ 5,            percent,      EuroSign,             cent                 ] };  // 5 % € ¢
+    key <AE05> { [ 5,            percent,      EuroSign,             U2030                ] };  // 5 % € ‰
     key <AE06> { [ 6,            asciicircum,  iacute,               Iacute               ] };  // 6 ^ í Í
     key <AE07> { [ 7,            ampersand,    igrave,               Igrave               ] };  // 7 & ì Ì
     key <AE08> { [ 8,            asterisk,     doublelowquotemark,   U266A                ] };  // 8 * „ ♪
