@@ -1296,7 +1296,7 @@ NumpadDot::Send {u+002e}  ; (.) period
 >!sc006::
 <^>!sc006::Send {u+20ac}   ; (€) euro sign
 >!+sc006::
-<^>!+sc006::Send {u+00a2}  ; (¢) cent sign (dollar)
+<^>!+sc006::Send {u+2030}  ; (‰) per mille sign
 
 ; Key :  6
 >!sc007::
