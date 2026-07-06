@@ -4,7 +4,7 @@ US Intl AltGr dead keys layout in AHK (overlay scripts for US QWERTY / US-Intern
 
 Note that these scripts are based on (instead of UltimateKEYS)&nbsp;:
 
-**https://github.com/pieter-degroote/us-intl-altgr-dk**
+**<https://github.com/pieter-degroote/us-intl-altgr-dk>**
 
 ## Keyboard Layout Image
 
